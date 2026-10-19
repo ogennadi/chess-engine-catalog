@@ -1,0 +1,2566 @@
+[
+  {
+    "label": "Jinko-Chan",
+    "url": "https://lichess.org/@/Jinko-Chan",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Robert_is_Bot",
+    "url": "https://lichess.org/@/Robert_is_Bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "chrismaghuhn",
+    "url": "https://lichess.org/@/chrismaghuhn",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Tectonic-chess",
+    "url": "https://lichess.org/@/Tectonic-chess",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Petruzello",
+    "url": "https://lichess.org/@/Petruzello",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "silasly",
+    "url": "https://lichess.org/@/silasly",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "xPOI",
+    "url": "https://lichess.org/@/xPOI",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "TilapiaBot",
+    "url": "https://lichess.org/@/TilapiaBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "BockFish",
+    "url": "https://lichess.org/@/BockFish",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "setrpevecek",
+    "url": "https://lichess.org/@/setrpevecek",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "chessbot-ai",
+    "url": "https://lichess.org/@/chessbot-ai",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "elexunix_chess_bot",
+    "url": "https://lichess.org/@/elexunix_chess_bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "MinibruteforceBot",
+    "url": "https://lichess.org/@/MinibruteforceBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "MinibotAPI",
+    "url": "https://lichess.org/@/MinibotAPI",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "DeepSquare-ai",
+    "url": "https://lichess.org/@/DeepSquare-ai",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "NoesisBot",
+    "url": "https://lichess.org/@/NoesisBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "TrueZero-Bot",
+    "url": "https://lichess.org/@/TrueZero-Bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "GoatBot_BETA",
+    "url": "https://lichess.org/@/GoatBot_BETA",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "chatgpt5_5",
+    "url": "https://lichess.org/@/chatgpt5_5",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [
+      {
+        "url": "https://github.com/MotoresAjedrez/mittens",
+        "evidence_url": "https://lichess.org/@/chatgpt5_5"
+      }
+    ],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "gbot113",
+    "url": "https://lichess.org/@/gbot113",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "KestrelStrike",
+    "url": "https://lichess.org/@/KestrelStrike",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "botchessbot",
+    "url": "https://lichess.org/@/botchessbot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Ghidorah_X",
+    "url": "https://lichess.org/@/Ghidorah_X",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "PineOnPi",
+    "url": "https://lichess.org/@/PineOnPi",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "jakgro",
+    "url": "https://lichess.org/@/jakgro",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "rchessengine",
+    "url": "https://lichess.org/@/rchessengine",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "The_Baronet",
+    "url": "https://lichess.org/@/The_Baronet",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "kmpmzx",
+    "url": "https://lichess.org/@/kmpmzx",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "FeatBeWeir",
+    "url": "https://lichess.org/@/FeatBeWeir",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "TalkInkBott",
+    "url": "https://lichess.org/@/TalkInkBott",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Alarm2001",
+    "url": "https://lichess.org/@/Alarm2001",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "TomokoNN",
+    "url": "https://lichess.org/@/TomokoNN",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "TaubertdieTaubeJS",
+    "url": "https://lichess.org/@/TaubertdieTaubeJS",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "noahbot123",
+    "url": "https://lichess.org/@/noahbot123",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Ribfish-Bot",
+    "url": "https://lichess.org/@/Ribfish-Bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "TxokaBot",
+    "url": "https://lichess.org/@/TxokaBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Joey_ChessEngine",
+    "url": "https://lichess.org/@/Joey_ChessEngine",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Stockfish_bot3",
+    "url": "https://lichess.org/@/Stockfish_bot3",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Vic98lg",
+    "url": "https://lichess.org/@/Vic98lg",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "half2k",
+    "url": "https://lichess.org/@/half2k",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "XNeedNoElo",
+    "url": "https://lichess.org/@/XNeedNoElo",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "wrecker-rust",
+    "url": "https://lichess.org/@/wrecker-rust",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "stillwater_bot_2",
+    "url": "https://lichess.org/@/stillwater_bot_2",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Glimbus",
+    "url": "https://lichess.org/@/Glimbus",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "BananaChessEngine",
+    "url": "https://lichess.org/@/BananaChessEngine",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "CadeBot",
+    "url": "https://lichess.org/@/CadeBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "ElbyPer",
+    "url": "https://lichess.org/@/ElbyPer",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Py1kb-BOT",
+    "url": "https://lichess.org/@/Py1kb-BOT",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "TheAlexDestroyer",
+    "url": "https://lichess.org/@/TheAlexDestroyer",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "suniferia",
+    "url": "https://lichess.org/@/suniferia",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "DerJoshiBot69",
+    "url": "https://lichess.org/@/DerJoshiBot69",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Reprs-Bombastic-Bot",
+    "url": "https://lichess.org/@/Reprs-Bombastic-Bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "RLchess_bot",
+    "url": "https://lichess.org/@/RLchess_bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "rpiBot73",
+    "url": "https://lichess.org/@/rpiBot73",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "SiNsUaT_PRO_MAX_12",
+    "url": "https://lichess.org/@/SiNsUaT_PRO_MAX_12",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Can_Be_Weaken_Hot",
+    "url": "https://lichess.org/@/Can_Be_Weaken_Hot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "HassanEngine",
+    "url": "https://lichess.org/@/HassanEngine",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "TriTam1909",
+    "url": "https://lichess.org/@/TriTam1909",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Mr_Chess_4_ever_BOT",
+    "url": "https://lichess.org/@/Mr_Chess_4_ever_BOT",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Mboobot",
+    "url": "https://lichess.org/@/Mboobot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "zugzwang-scala",
+    "url": "https://lichess.org/@/zugzwang-scala",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Mac-Bot",
+    "url": "https://lichess.org/@/Mac-Bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Knilb",
+    "url": "https://lichess.org/@/Knilb",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "maybyen",
+    "url": "https://lichess.org/@/maybyen",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "SmolStock",
+    "url": "https://lichess.org/@/SmolStock",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "GroshBoss",
+    "url": "https://lichess.org/@/GroshBoss",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "SybAIBot",
+    "url": "https://lichess.org/@/SybAIBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "uxugin-bot",
+    "url": "https://lichess.org/@/uxugin-bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "MCUFish",
+    "url": "https://lichess.org/@/MCUFish",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "PlayMarius",
+    "url": "https://lichess.org/@/PlayMarius",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "tfgBOT",
+    "url": "https://lichess.org/@/tfgBOT",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Kaczka_stockFISH",
+    "url": "https://lichess.org/@/Kaczka_stockFISH",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "GoblinAjedrezAI",
+    "url": "https://lichess.org/@/GoblinAjedrezAI",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "BrendBot",
+    "url": "https://lichess.org/@/BrendBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "AaronsEngine",
+    "url": "https://lichess.org/@/AaronsEngine",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "ChimeraBot",
+    "url": "https://lichess.org/@/ChimeraBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "QuantumKnightV2",
+    "url": "https://lichess.org/@/QuantumKnightV2",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "RukhBot",
+    "url": "https://lichess.org/@/RukhBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "cosmos2",
+    "url": "https://lichess.org/@/cosmos2",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "StrawberryChessDev",
+    "url": "https://lichess.org/@/StrawberryChessDev",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "SybBot",
+    "url": "https://lichess.org/@/SybBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "BOTMGMG",
+    "url": "https://lichess.org/@/BOTMGMG",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "BOTbotBOTbotBotrobot",
+    "url": "https://lichess.org/@/BOTbotBOTbotBotrobot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "cybersoleil",
+    "url": "https://lichess.org/@/cybersoleil",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "ZeusNet",
+    "url": "https://lichess.org/@/ZeusNet",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "ZeroPlyNN",
+    "url": "https://lichess.org/@/ZeroPlyNN",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "TribbleChessEngine",
+    "url": "https://lichess.org/@/TribbleChessEngine",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "ZeusMiniBot",
+    "url": "https://lichess.org/@/ZeusMiniBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "varient-chess-bot1",
+    "url": "https://lichess.org/@/varient-chess-bot1",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "mechasoleil",
+    "url": "https://lichess.org/@/mechasoleil",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "MrDeepSeekGPT",
+    "url": "https://lichess.org/@/MrDeepSeekGPT",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "UserScript",
+    "url": "https://lichess.org/@/UserScript",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "OliThink-5",
+    "url": "https://lichess.org/@/OliThink-5",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "LunaNetEngine",
+    "url": "https://lichess.org/@/LunaNetEngine",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "virus_exe-bot",
+    "url": "https://lichess.org/@/virus_exe-bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "RobotJFischer",
+    "url": "https://lichess.org/@/RobotJFischer",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "MihanSolo2",
+    "url": "https://lichess.org/@/MihanSolo2",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Rxh7p",
+    "url": "https://lichess.org/@/Rxh7p",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "BaymaxMate",
+    "url": "https://lichess.org/@/BaymaxMate",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "MMC_HUANGBAI",
+    "url": "https://lichess.org/@/MMC_HUANGBAI",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Laurentos_bot",
+    "url": "https://lichess.org/@/Laurentos_bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "edixonbot",
+    "url": "https://lichess.org/@/edixonbot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "ISARFish",
+    "url": "https://lichess.org/@/ISARFish",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "PythagorasChess",
+    "url": "https://lichess.org/@/PythagorasChess",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "mjchess13",
+    "url": "https://lichess.org/@/mjchess13",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "AndoBot",
+    "url": "https://lichess.org/@/AndoBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "FastAtomicBot",
+    "url": "https://lichess.org/@/FastAtomicBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "FastYonal",
+    "url": "https://lichess.org/@/FastYonal",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "craksys_ai",
+    "url": "https://lichess.org/@/craksys_ai",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "ChesssenseEngine",
+    "url": "https://lichess.org/@/ChesssenseEngine",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "vpbot",
+    "url": "https://lichess.org/@/vpbot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Shocky_BOT",
+    "url": "https://lichess.org/@/Shocky_BOT",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "HChessBot",
+    "url": "https://lichess.org/@/HChessBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "LouisChess48-6K",
+    "url": "https://lichess.org/@/LouisChess48-6K",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Stickfish2",
+    "url": "https://lichess.org/@/Stickfish2",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "ThinkingPileORubbish",
+    "url": "https://lichess.org/@/ThinkingPileORubbish",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "ThePea",
+    "url": "https://lichess.org/@/ThePea",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "KingBobIV",
+    "url": "https://lichess.org/@/KingBobIV",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Flompiebot",
+    "url": "https://lichess.org/@/Flompiebot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Bit-64Byte",
+    "url": "https://lichess.org/@/Bit-64Byte",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "DRAGONTAMER-BOT",
+    "url": "https://lichess.org/@/DRAGONTAMER-BOT",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "VN-Bot",
+    "url": "https://lichess.org/@/VN-Bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "ELQORSANxBOTx3500",
+    "url": "https://lichess.org/@/ELQORSANxBOTx3500",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "RocketEngine",
+    "url": "https://lichess.org/@/RocketEngine",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Bit-Fish8",
+    "url": "https://lichess.org/@/Bit-Fish8",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Phoenix3-1",
+    "url": "https://lichess.org/@/Phoenix3-1",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Enjoyably3303",
+    "url": "https://lichess.org/@/Enjoyably3303",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "teeveebot",
+    "url": "https://lichess.org/@/teeveebot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "EliaImmanuelsBot",
+    "url": "https://lichess.org/@/EliaImmanuelsBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "good_bot223344",
+    "url": "https://lichess.org/@/good_bot223344",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Raab-bot",
+    "url": "https://lichess.org/@/Raab-bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "AdzukiBeanBot",
+    "url": "https://lichess.org/@/AdzukiBeanBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "hummus-bot",
+    "url": "https://lichess.org/@/hummus-bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "GetCheckMatedGame",
+    "url": "https://lichess.org/@/GetCheckMatedGame",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "gc1bot",
+    "url": "https://lichess.org/@/gc1bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "pythasaurus",
+    "url": "https://lichess.org/@/pythasaurus",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "AlphaBotical",
+    "url": "https://lichess.org/@/AlphaBotical",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "WaterspoutX",
+    "url": "https://lichess.org/@/WaterspoutX",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Rudolph-Bot",
+    "url": "https://lichess.org/@/Rudolph-Bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "chessly-bot",
+    "url": "https://lichess.org/@/chessly-bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "SerendipitousBot",
+    "url": "https://lichess.org/@/SerendipitousBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "noobic_bot",
+    "url": "https://lichess.org/@/noobic_bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "your_bot_friend",
+    "url": "https://lichess.org/@/your_bot_friend",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "gengochan",
+    "url": "https://lichess.org/@/gengochan",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "SticklebackBot",
+    "url": "https://lichess.org/@/SticklebackBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "SticklebackNNBot",
+    "url": "https://lichess.org/@/SticklebackNNBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "morphe157bot",
+    "url": "https://lichess.org/@/morphe157bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Ofish-fast",
+    "url": "https://lichess.org/@/Ofish-fast",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "liaomin",
+    "url": "https://lichess.org/@/liaomin",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "ZhangirKhanBOT",
+    "url": "https://lichess.org/@/ZhangirKhanBOT",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "LolFish-1",
+    "url": "https://lichess.org/@/LolFish-1",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Viet-AI",
+    "url": "https://lichess.org/@/Viet-AI",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "EmptikBot247",
+    "url": "https://lichess.org/@/EmptikBot247",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Mate_Bot",
+    "url": "https://lichess.org/@/Mate_Bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "CompRaptor",
+    "url": "https://lichess.org/@/CompRaptor",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "lucasma8795",
+    "url": "https://lichess.org/@/lucasma8795",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "GuineaBot3",
+    "url": "https://lichess.org/@/GuineaBot3",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "BegginerBot",
+    "url": "https://lichess.org/@/BegginerBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "aleph_bot_d6",
+    "url": "https://lichess.org/@/aleph_bot_d6",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "serversofflinebot",
+    "url": "https://lichess.org/@/serversofflinebot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Jobabot",
+    "url": "https://lichess.org/@/Jobabot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Na_Vinci",
+    "url": "https://lichess.org/@/Na_Vinci",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "EmrysBot",
+    "url": "https://lichess.org/@/EmrysBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "dangkhoi2805",
+    "url": "https://lichess.org/@/dangkhoi2805",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Viet_BOT",
+    "url": "https://lichess.org/@/Viet_BOT",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Viet-BOT",
+    "url": "https://lichess.org/@/Viet-BOT",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "QalatBotEngine",
+    "url": "https://lichess.org/@/QalatBotEngine",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "bot64jaques",
+    "url": "https://lichess.org/@/bot64jaques",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "OnlineChessBot",
+    "url": "https://lichess.org/@/OnlineChessBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Cmndr",
+    "url": "https://lichess.org/@/Cmndr",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Flawed_Formula_Test",
+    "url": "https://lichess.org/@/Flawed_Formula_Test",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [
+      {
+        "url": "https://github.com/mendelsshop/yea_fen",
+        "evidence_url": "https://lichess.org/@/Flawed_Formula_Test"
+      },
+      {
+        "url": "https://github.com/mendelsshop/yea_fen_uci",
+        "evidence_url": "https://lichess.org/@/Flawed_Formula_Test"
+      }
+    ],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "AiCaroline",
+    "url": "https://lichess.org/@/AiCaroline",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "abcbot",
+    "url": "https://lichess.org/@/abcbot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Flawed_Formula",
+    "url": "https://lichess.org/@/Flawed_Formula",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [
+      {
+        "url": "https://github.com/mendelsshop/yea_fen",
+        "evidence_url": "https://lichess.org/@/Flawed_Formula"
+      }
+    ],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "MrMolotov",
+    "url": "https://lichess.org/@/MrMolotov",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "JellyFischer",
+    "url": "https://lichess.org/@/JellyFischer",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Mega_BOT",
+    "url": "https://lichess.org/@/Mega_BOT",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "QuintBot",
+    "url": "https://lichess.org/@/QuintBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "TapoBot",
+    "url": "https://lichess.org/@/TapoBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "SchachProg",
+    "url": "https://lichess.org/@/SchachProg",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "chesster-rubenstein",
+    "url": "https://lichess.org/@/chesster-rubenstein",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Bot_ElvisTheCat",
+    "url": "https://lichess.org/@/Bot_ElvisTheCat",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "SriLankaChess",
+    "url": "https://lichess.org/@/SriLankaChess",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "The_Marcus",
+    "url": "https://lichess.org/@/The_Marcus",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Habu-py",
+    "url": "https://lichess.org/@/Habu-py",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "chessemkabot",
+    "url": "https://lichess.org/@/chessemkabot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "HYPER_CHESS4679",
+    "url": "https://lichess.org/@/HYPER_CHESS4679",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "SXDEFENDER",
+    "url": "https://lichess.org/@/SXDEFENDER",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "ZeusBOT_v1",
+    "url": "https://lichess.org/@/ZeusBOT_v1",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "THEANDROIDBOT",
+    "url": "https://lichess.org/@/THEANDROIDBOT",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "H80000000-1",
+    "url": "https://lichess.org/@/H80000000-1",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "DQN-chess",
+    "url": "https://lichess.org/@/DQN-chess",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "AIAlphaAI",
+    "url": "https://lichess.org/@/AIAlphaAI",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "evg3n413429",
+    "url": "https://lichess.org/@/evg3n413429",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "zeekat",
+    "url": "https://lichess.org/@/zeekat",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "ANTON_Bot",
+    "url": "https://lichess.org/@/ANTON_Bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "BOTvinnik808",
+    "url": "https://lichess.org/@/BOTvinnik808",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "KidOffChess",
+    "url": "https://lichess.org/@/KidOffChess",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "dsukrect",
+    "url": "https://lichess.org/@/dsukrect",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Rapid_WorldChamp",
+    "url": "https://lichess.org/@/Rapid_WorldChamp",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "apraz",
+    "url": "https://lichess.org/@/apraz",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "fougade",
+    "url": "https://lichess.org/@/fougade",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "MagnusCalsen123",
+    "url": "https://lichess.org/@/MagnusCalsen123",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "WombatEngine",
+    "url": "https://lichess.org/@/WombatEngine",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Flip_Boi_is_good_Boi",
+    "url": "https://lichess.org/@/Flip_Boi_is_good_Boi",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "DrSmartBugs",
+    "url": "https://lichess.org/@/DrSmartBugs",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Abhinav-BOT",
+    "url": "https://lichess.org/@/Abhinav-BOT",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Tigrament",
+    "url": "https://lichess.org/@/Tigrament",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "RobbAi_3J",
+    "url": "https://lichess.org/@/RobbAi_3J",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "MeetraBot",
+    "url": "https://lichess.org/@/MeetraBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Thuban_official",
+    "url": "https://lichess.org/@/Thuban_official",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "joneca-bot",
+    "url": "https://lichess.org/@/joneca-bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "knight_BOT",
+    "url": "https://lichess.org/@/knight_BOT",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "TJchessBot",
+    "url": "https://lichess.org/@/TJchessBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "GothamChessBot",
+    "url": "https://lichess.org/@/GothamChessBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "ELO_1500",
+    "url": "https://lichess.org/@/ELO_1500",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "LunaticEngine",
+    "url": "https://lichess.org/@/LunaticEngine",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "ChessFbot",
+    "url": "https://lichess.org/@/ChessFbot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Valhalla-Bot",
+    "url": "https://lichess.org/@/Valhalla-Bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "nagranis",
+    "url": "https://lichess.org/@/nagranis",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "habu-jl",
+    "url": "https://lichess.org/@/habu-jl",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "QuintiumBotAccount",
+    "url": "https://lichess.org/@/QuintiumBotAccount",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [
+      {
+        "url": "https://github.com/Quintium/ChessAI",
+        "evidence_url": "https://lichess.org/@/QuintiumBotAccount"
+      }
+    ],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "MoutonAI",
+    "url": "https://lichess.org/@/MoutonAI",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "anytimemode",
+    "url": "https://lichess.org/@/anytimemode",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "S_STOCK",
+    "url": "https://lichess.org/@/S_STOCK",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "SxCapture",
+    "url": "https://lichess.org/@/SxCapture",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "je-suis-un-robot",
+    "url": "https://lichess.org/@/je-suis-un-robot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Jallahata",
+    "url": "https://lichess.org/@/Jallahata",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "TuksuBot",
+    "url": "https://lichess.org/@/TuksuBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "TheAwesomeBot",
+    "url": "https://lichess.org/@/TheAwesomeBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "XXproyChessX1",
+    "url": "https://lichess.org/@/XXproyChessX1",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "XBBJP",
+    "url": "https://lichess.org/@/XBBJP",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Bot_TalBr",
+    "url": "https://lichess.org/@/Bot_TalBr",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Boom_Bot",
+    "url": "https://lichess.org/@/Boom_Bot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Crepusculum",
+    "url": "https://lichess.org/@/Crepusculum",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Vetinari_Computer",
+    "url": "https://lichess.org/@/Vetinari_Computer",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "FN_Waldi",
+    "url": "https://lichess.org/@/FN_Waldi",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Perceval_de_Galles",
+    "url": "https://lichess.org/@/Perceval_de_Galles",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "NeonCiv",
+    "url": "https://lichess.org/@/NeonCiv",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Baccara_BOT",
+    "url": "https://lichess.org/@/Baccara_BOT",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Wax_BOT",
+    "url": "https://lichess.org/@/Wax_BOT",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Wirtanen",
+    "url": "https://lichess.org/@/Wirtanen",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "enginuous",
+    "url": "https://lichess.org/@/enginuous",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Elmichess",
+    "url": "https://lichess.org/@/Elmichess",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "honzovy-sachy-2",
+    "url": "https://lichess.org/@/honzovy-sachy-2",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "Safrad-3",
+    "url": "https://lichess.org/@/Safrad-3",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "ChessChildren",
+    "url": "https://lichess.org/@/ChessChildren",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "DeepProcyon",
+    "url": "https://lichess.org/@/DeepProcyon",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "TensorPUpper",
+    "url": "https://lichess.org/@/TensorPUpper",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "ladoga_engine",
+    "url": "https://lichess.org/@/ladoga_engine",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "mxnet-gamemaster",
+    "url": "https://lichess.org/@/mxnet-gamemaster",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "SimpleLearnedBot",
+    "url": "https://lichess.org/@/SimpleLearnedBot",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "ChessNoobComp",
+    "url": "https://lichess.org/@/ChessNoobComp",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  },
+  {
+    "label": "freddystehtaufteddy",
+    "url": "https://lichess.org/@/freddystehtaufteddy",
+    "membership_url": "https://lichess.org/team/selfmade-bots",
+    "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+    "code_urls": [],
+    "reason": "Engine-family identity requires review; account names are not engine names.",
+    "source": "lichess",
+    "checked_at": "2026-10-18T19:46:08.537117+00:00"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ccrl",
+    "name": "CCRL 40/15",
+    "url": "https://computerchess.org.uk/4040/index.html",
+    "collector": "ccrl"
+  },
+  {
+    "id": "amateurschach",
+    "name": "Frank's Chess Page engine list",
+    "url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
+    "collector": "amateurschach"
+  },
+  {
+    "id": "ubc",
+    "name": "Ultimate Bullet Classical",
+    "url": "https://e4e6.com/",
+    "collector": "ubc"
+  },
+  {
+    "id": "lucas-chess",
+    "name": "Lucas Chess bundled Linux engines",
+    "url": "https://github.com/lukasmonk/lucaschessR6/tree/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines",
+    "collector": "lucas_chess"
+  },
+  {
+    "id": "stefan-pohl",
+    "name": "Stefan Pohl full UHO and EAS rating lists",
+    "url": "https://www.sp-cc.de/files/uho_full_list.txt",
+    "collector": "stefan_pohl"
+  },
+  {
+    "id": "engine-programming",
+    "name": "Engine Programming community engine list",
+    "url": "https://github.com/EngineProgramming/engine-list",
+    "collector": "engine_programming"
+  },
+  {
+    "id": "rwbc",
+    "name": "RWBC XB/UCI Engines Chronology",
+    "url": "https://rwbc-chess.de/",
+    "collector": "rwbc"
+  },
+  {
+    "id": "cegt",
+    "name": "CEGT all-version rating lists",
+    "url": "http://www.cegt.net/",
+    "collector": "cegt"
+  },
+  {
+    "id": "ssdf",
+    "name": "SSDF historical rating list",
+    "url": "https://ssdf.bosjo.net/list.htm",
+    "collector": "ssdf"
+  },
+  {
+    "id": "chess-engines-diary",
+    "name": "Chess Engines Diary CEDR rating lists",
+    "url": "https://chessengines.blogspot.com/p/rating-jcer.html",
+    "collector": "chess_engines_diary"
+  },
+  {
+    "id": "wiki-engines",
+    "name": "Chess Programming Wiki alphabetical engine index",
+    "url": "https://chessprogramming.org/Engines",
+    "collector": "wiki_engines"
+  },
+  {
+    "id": "lichess",
+    "name": "Lichess Selfmade bots",
+    "url": "https://lichess.org/team/selfmade-bots",
+    "collector": "lichess"
+  }
+]

@@ -1,0 +1,900 @@
+{
+  "aliases": {
+    "4k.c": "4kc",
+    "Absolute-Zero": "Absolute Zero",
+    "APILChess": "APIL chess",
+    "ArabianKnight": "Arabian Knight",
+    "BadChessEngine": "Bad Chess Engine",
+    "BugChess2": "BugChess",
+    "ChessDotCpp": "chess.cpp",
+    "ChessBin.com": "ChessCore",
+    "ChadsChess": "Chads Chess",
+    "Chess Genius": "ChessGenius",
+    "Chessplayer 2150": "Chess Player 2150",
+    "CPW": "CPW-Engine",
+    "chess-dot-cpp": "chess.cpp",
+    "Deep Sjeng c't": "Sjeng",
+    "Dragon by Komodo": "Dragon",
+    "E.T.CHESS": "E.T. Chess",
+    "ETChess": "E.T. Chess",
+    "Francesca MAD": "Francesca",
+    "Frank-Walter": "FrankWalter",
+    "Googleplex Starthinker": "Googleplex",
+    "Gnuchess": "GNU Chess",
+    "GreenLightChess": "Green Light Chess",
+    "Greenblatt Chess Program": "Mac Hack",
+    "GullChess": "Gull",
+    "Dump": "Dumb",
+    "Equisitum": "Equisetum",
+    "JackyChess": "Jacky Chess",
+    "HokusPokus": "Hokus-Pokus",
+    "KCChess": "KC Chess",
+    "Knight Dreamer": "KnightDreamer",
+    "Lc0": "Leela Chess",
+    "LittleWing": "Little Wing",
+    "LittleGoliath": "Little Goliath",
+    "Maelstorm": "Maelstrom",
+    "MagnumChess": "Magnum Chess",
+    "melsh_bot": "Melsh",
+    "MrBob": "Mr Bob",
+    "Nates Chessbot": "Nate's ChessBot",
+    "Nu'chess": "Nu-chess",
+    "paulchen332": "paulchen",
+    "Pupsi2": "Pupsi",
+    "PeacockSpider": "Peacock Spider",
+    "Rex Chess": "RexChess",
+    "RomiChess P3L": "RomiChess",
+    "Rusti-Rival": "Rusty-Rival",
+    "RivalChess": "Rival",
+    "Rival Chess": "Rival",
+    "Infraredv2": "Infrared",
+    "Sargon 1978": "Sargon",
+    "Schönemann": "Schoenemann",
+    "Shallow2": "Shallow",
+    "ShenYu": "Shen Yu",
+    "Shallow-blue": "Shallowblue",
+    "ShallowGuess": "Shallow Guess",
+    "SmallPotato": "Small Potato",
+    "SmallC": "Small-C",
+    "SilkeChess": "Silke Chess",
+    "smol": "smol.cs",
+    "TwistedLogic": "Twisted Logic",
+    "TheCrazyBishop": "The Crazy Bishop",
+    "TheKing": "The King",
+    "Tom-Thumb": "Tom Thumb",
+    "Vajolet2": "Vajolet",
+    "Wita": "Awit",
+    "WukongJS": "Wukong JS"
+  },
+  "source_aliases": [
+    {
+      "sources": [
+        "ccrl",
+        "cegt",
+        "rwbc",
+        "ubc"
+      ],
+      "family": "Ares",
+      "target": "Ares US",
+      "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Ares+5.45+64-bit",
+      "note": "CCRL and RWBC name Charles Roberson; the wiki's Ares is Frans van Gool and Erik Leenders' program."
+    },
+    {
+      "sources": [
+        "ccrl",
+        "cegt",
+        "rwbc",
+        "ubc"
+      ],
+      "family": "BBChess",
+      "target": "BBChess (SI)",
+      "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=BBChess+1.3b",
+      "note": "CCRL and RWBC name Borko Boskovic; the wiki's BBchess is Bernard Brioit's program."
+    },
+    {
+      "sources": [
+        "ccrl",
+        "cegt"
+      ],
+      "family": "Brutus",
+      "target": "Brutus NL",
+      "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Brutus+8.05+64-bit",
+      "note": "CCRL names Stephan Vermeire; the wiki's Brutus is Chrilly Donninger's FPGA program."
+    },
+    {
+      "sources": [
+        "amateurschach",
+        "ccrl",
+        "cegt",
+        "rwbc",
+        "ubc"
+      ],
+      "family": "Caligula",
+      "target": "Caligula PC",
+      "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Caligula+8.0+64-bit",
+      "note": "CCRL and RWBC name Pedro Castro; the wiki's Caligula is Gerardo Casta?o Recio's program."
+    },
+    {
+      "sources": [
+        "ccrl",
+        "rwbc",
+        "ubc"
+      ],
+      "family": "Chaturanga",
+      "target": "Chaturanga IT",
+      "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Chaturanga+2.4.3",
+      "note": "CCRL and RWBC name Stefano Malloggi; the wiki's Chaturanga is John Poduska Jr.'s program."
+    },
+    {
+      "sources": [
+        "ccrl",
+        "rwbc"
+      ],
+      "family": "Dragon",
+      "target": "Dragon FR",
+      "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Dragon+4.6",
+      "note": "CCRL and RWBC name Bruno Lucas; Dragon by Komodo is a different engine."
+    },
+    {
+      "sources": [
+        "cegt"
+      ],
+      "family": "Dragon",
+      "label_pattern": "^Dragon 4\\.6\\b",
+      "target": "Dragon FR",
+      "evidence_url": "https://chessprogramming.org/Dragon_FR",
+      "note": "Dragon 4.6 is Bruno Lucas's release; CEGT's other Dragon entries are Komodo Dragon."
+    },
+    {
+      "sources": [
+        "cegt",
+        "rwbc"
+      ],
+      "family": "Genesis",
+      "target": "Genesis IL",
+      "evidence_url": "https://chessprogramming.org/Genesis_IL",
+      "note": "RWBC names Omid David; the wiki records Genesis 2.0 released by Omid David (Eli David)."
+    },
+    {
+      "sources": [
+        "rwbc"
+      ],
+      "family": "Jester",
+      "target": "Jester US",
+      "evidence_url": "https://chessprogramming.org/Jester_US",
+      "note": "RWBC names Marty Franz; the wiki's Jester is St?phane Nguyen's program."
+    },
+    {
+      "sources": [
+        "ccrl",
+        "cegt",
+        "rwbc",
+        "ubc"
+      ],
+      "family": "Joker",
+      "target": "Joker NL",
+      "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Joker+1.1.14",
+      "note": "CCRL and RWBC name H.G. Muller; the wiki's Joker is Marc-Fran?ois Baudot and Jean-Christophe Weill's program."
+    },
+    {
+      "sources": [
+        "rwbc"
+      ],
+      "family": "Merlin",
+      "target": "Merlin (HU)",
+      "evidence_url": "https://chessprogramming.org/Merlin_(HU)",
+      "note": "RWBC names Bal?zs J?k?; the wiki's Merlin is the Vienna University of Technology program."
+    },
+    {
+      "sources": [
+        "amateurschach",
+        "ccrl",
+        "cegt",
+        "chess-engines-diary"
+      ],
+      "family": "Pawn",
+      "target": "Pawn (Coelho)",
+      "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=pawn+4.0+64-bit+4CPU",
+      "note": "CCRL names Rui Coelho (github.com/ruicoelhopedro/pawn); the wiki's Pawn (Program) is Thomas Starke's 2003-2011 freeware program."
+    },
+    {
+      "sources": [
+        "ccrl",
+        "cegt",
+        "rwbc"
+      ],
+      "family": "ProChess",
+      "target": "ProChess IT",
+      "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=ProChess+1.02AD",
+      "note": "CCRL and RWBC name Edoardo Manino; the wiki's Prochess is Tom Pronk's program."
+    },
+    {
+      "sources": [
+        "cegt"
+      ],
+      "family": "Raptor",
+      "target": "Raptor LU",
+      "evidence_url": "https://chessprogramming.org/Raptor_LU",
+      "note": "CEGT's Raptor builds (CCT16, 2015) match Steve Webber's tournament engine; the wiki's Raptor is Fr?d?ric Louguet's 2003 program."
+    },
+    {
+      "sources": [
+        "ccrl",
+        "cegt",
+        "rwbc"
+      ],
+      "family": "Robin",
+      "target": "Robin (Dachtera)",
+      "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Robin+0.983",
+      "note": "CCRL and RWBC name Piotr Dachtera; the wiki's Robin is P?ter Horv?th's MS-DOS program."
+    },
+    {
+      "sources": [
+        "ubc"
+      ],
+      "family": "Sjaak",
+      "target": "Sjaak (Glebbeek)",
+      "evidence_url": "https://chessprogramming.org/Sjaak_(Glebbeek)",
+      "note": "UBC lists SjaakII, Evert Glebbeek's engine; the wiki's Sjaak is Ronald de Man's private engine."
+    },
+    {
+      "sources": [
+        "ccrl",
+        "cegt",
+        "rwbc"
+      ],
+      "family": "Storm",
+      "target": "Storm US",
+      "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Storm+0.6",
+      "note": "CCRL and RWBC name Sean Empey; the wiki's Storm is Theo van der Storm's program."
+    },
+    {
+      "sources": [
+        "rwbc"
+      ],
+      "family": "The Turk",
+      "target": "The Turk (TR)",
+      "evidence_url": "https://chessprogramming.org/The_Turk_(TR)",
+      "note": "RWBC names Yakup Ipek; the wiki's The Turk is Yngvi Bj?rnsson and Andreas Junghanns' program."
+    },
+    {
+      "sources": [
+        "ccrl",
+        "cegt",
+        "rwbc",
+        "ubc"
+      ],
+      "family": "Zeus",
+      "target": "Zeus RU",
+      "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Zeus+1.27",
+      "note": "CCRL and RWBC name Vadim Bykov; the wiki's Zeus is Gerardo Casta?o Recio's program."
+    },
+    {
+      "sources": [
+        "rwbc"
+      ],
+      "family": "Ziggy",
+      "target": "Ziggy IS",
+      "evidence_url": "https://chessprogramming.org/Ziggy_IS",
+      "note": "RWBC names Hrafn Eir?ksson; the wiki's Ziggy is Henk Kuyer and Auke Punter's program."
+    }
+  ],
+  "lichess_accounts": {
+    "aks-mantissa": {
+      "family": "Mantissa"
+    },
+    "allrustbot": {
+      "family": "AllRustBot"
+    },
+    "antarespy": {
+      "family": "Antares"
+    },
+    "apollo_bot": {
+      "family": "Apollo (Gillespie)"
+    },
+    "aramis-bot": {
+      "family": "Aramis"
+    },
+    "arduchessbot": {
+      "family": "ArduChess"
+    },
+    "ariadne-bot": {
+      "family": "Ariadne"
+    },
+    "arvyy_bot": {
+      "family": "Arvyy"
+    },
+    "aspirebot": {
+      "family": "AspireBot"
+    },
+    "axwchessbot": {
+      "family": "Wolfchess"
+    },
+    "baby_eubos": {
+      "family": "Eubos"
+    },
+    "bbc_bot": {
+      "family": "BBChess (Ponomarev)",
+      "identity_evidence_url": "https://gitlab.com/morengo75/bbchess"
+    },
+    "bcbchess": {
+      "family": "Orca",
+      "code_urls": [
+        "https://github.com/BlueCannonBall/Orca"
+      ]
+    },
+    "beatrijs-bot": {
+      "family": "Beatrijs"
+    },
+    "betterthancris": {
+      "family": "BetterThanCris"
+    },
+    "bfiedler-bot": {
+      "family": "ZChess (Fiedler)"
+    },
+    "bitbitbot": {
+      "family": "bitbit"
+    },
+    "blue_bot_one": {
+      "family": "blue_bot_one"
+    },
+    "blueberry-engine": {
+      "family": "Blueberry"
+    },
+    "bot-4ku": {
+      "family": "4ku"
+    },
+    "bot-chocolate": {
+      "family": "Conjuror"
+    },
+    "bottideeval": {
+      "family": "TideEval"
+    },
+    "breeze_bot": {
+      "family": "Breeze",
+      "code_urls": []
+    },
+    "casanchess-nnue": {
+      "family": "Casanchess"
+    },
+    "cassiecassandra": {
+      "family": "CassieChess",
+      "code_urls": []
+    },
+    "charybdisbot": {
+      "family": "Charybdis",
+      "code_urls": []
+    },
+    "chess-2-bot": {
+      "family": "chess-3"
+    },
+    "chess3bot": {
+      "family": "Chess3 (Karpenko)"
+    },
+    "chess_ni_boss": {
+      "exclude": true,
+      "reason": "Runs Stockfish through hyperbot; not a selfmade engine."
+    },
+    "chessdotcpp": {
+      "family": "ChessDotCpp"
+    },
+    "chesswizbot": {
+      "family": "ChessWiz",
+      "code_urls": []
+    },
+    "cortexbot": {
+      "family": "Neocortex"
+    },
+    "cosettebot": {
+      "family": "Cosette"
+    },
+    "crabchess": {
+      "family": "Crab"
+    },
+    "crapbot": {
+      "family": "crap-bot"
+    },
+    "crocrodile": {
+      "family": "Crocrodile"
+    },
+    "cubixchess": {
+      "family": "CubixChess"
+    },
+    "darkelectronbot": {
+      "family": "DarkElectronBot"
+    },
+    "dartfish-engine": {
+      "family": "Dartfish"
+    },
+    "dbce": {
+      "family": "dbce"
+    },
+    "debzero": {
+      "family": "DebZero"
+    },
+    "deepbecky": {
+      "family": "DeepBecky"
+    },
+    "deepkalle": {
+      "family": "minikalle"
+    },
+    "diggydiggyhole": {
+      "family": "sunfish_c"
+    },
+    "dnipro_myko_mafia": {
+      "family": "dnipro_myko_mafia"
+    },
+    "dummyette": {
+      "family": "Dummyette",
+      "code_urls": []
+    },
+    "eclipsebot": {
+      "family": "Eclipse"
+    },
+    "entebot": {
+      "family": "entebot",
+      "code_urls": []
+    },
+    "epimetheusbot": {
+      "family": "Cepimetheus"
+    },
+    "evil2root": {
+      "family": "Evil2Root"
+    },
+    "fastchess-engine": {
+      "family": "FastChess"
+    },
+    "fataliibot": {
+      "family": "Fatalii"
+    },
+    "felabot": {
+      "family": "felabot"
+    },
+    "ferrite-bot": {
+      "family": "Hexenzsene"
+    },
+    "foxchessbot": {
+      "family": "FoxChess"
+    },
+    "freedbeast": {
+      "family": "RustKnight"
+    },
+    "funnsams_bot": {
+      "family": "Dysprosium"
+    },
+    "gambitengine": {
+      "family": "Gambit"
+    },
+    "genetic_chess_bot": {
+      "family": "Genetic Chess"
+    },
+    "giffibot": {
+      "family": "GiffiBot"
+    },
+    "grogros_zero": {
+      "family": "OptiChess",
+      "identity_evidence_url": "https://github.com/poirouxmartin/opti_chess"
+    },
+    "guitarfish-engine": {
+      "family": "Guitarfish"
+    },
+    "halcyonbot": {
+      "family": "Halcyon"
+    },
+    "homeboichessbot": {
+      "family": "Chessboi"
+    },
+    "honkuweak": {
+      "family": "HonkuWeak"
+    },
+    "hydray": {
+      "family": "HydraY"
+    },
+    "hynobiuschess": {
+      "family": "Hynobius"
+    },
+    "hypersion": {
+      "family": "Hypersion"
+    },
+    "iblunder-bot": {
+      "family": "iBlunder"
+    },
+    "iceburnengine": {
+      "family": "Avalanche"
+    },
+    "inanisbot": {
+      "family": "Inanis"
+    },
+    "instinct_v4": {
+      "family": "Instinct"
+    },
+    "jangine": {
+      "family": "Jangine"
+    },
+    "johanblunder": {
+      "family": "Koivisto"
+    },
+    "jpg-bot": {
+      "family": "Tcheran"
+    },
+    "karly64": {
+      "family": "karly-sixtyfour"
+    },
+    "khanhbell12345": {
+      "family": "Khanh_Faru"
+    },
+    "kheprichess": {
+      "family": "KhepriChess"
+    },
+    "kissengine": {
+      "family": "Kissengine"
+    },
+    "kissenginev2": {
+      "family": "Kissengine"
+    },
+    "knifexn": {
+      "family": "Knifefish"
+    },
+    "knight-to-c-sharp": {
+      "family": "Knight To C Sharp"
+    },
+    "konaz": {
+      "family": "gpt-chess"
+    },
+    "kopyto_dev": {
+      "family": "Kopyto"
+    },
+    "kybot": {
+      "family": "Eccat"
+    },
+    "labzerobot0": {
+      "family": "LabZero"
+    },
+    "lacrimabot": {
+      "family": "Lacrima"
+    },
+    "ladybugbot": {
+      "family": "Ladybug"
+    },
+    "lamanodetal": {
+      "family": "TalsHand"
+    },
+    "leorikbot": {
+      "family": "Leorik"
+    },
+    "likeawizard-bot": {
+      "family": "Tofiks"
+    },
+    "lobsterbot": {
+      "family": "lobsterbot"
+    },
+    "lunachessengine": {
+      "family": "Luna"
+    },
+    "maello_bot": {
+      "family": "Maello"
+    },
+    "maelstrom-chess": {
+      "family": "Maelstrom"
+    },
+    "martuni": {
+      "family": "Martuni"
+    },
+    "masterb_o_t": {
+      "exclude": true,
+      "reason": "Runs Stockfish through lichess-bot; not a selfmade engine."
+    },
+    "matecheckcapture": {
+      "family": "MateCheckCapture"
+    },
+    "maxwellonlc": {
+      "family": "Maxwell"
+    },
+    "mcpeasearch": {
+      "family": "Pea",
+      "code_urls": []
+    },
+    "meikechess": {
+      "family": "MeikeChess"
+    },
+    "melsh_bot": {
+      "family": "melsh_bot"
+    },
+    "milanbot": {
+      "family": "Milan"
+    },
+    "minopponentmoves": {
+      "family": "MinOpponentMoves"
+    },
+    "mochi_bot": {
+      "family": "Mochi"
+    },
+    "mysticbot": {
+      "family": "Mystic Bot"
+    },
+    "nakshatra3": {
+      "family": "Nakshatra"
+    },
+    "narc_engine": {
+      "family": "Narc Next"
+    },
+    "natesbot": {
+      "family": "NatesBot"
+    },
+    "nekomata9": {
+      "family": "Nekomata"
+    },
+    "neuroticbishop": {
+      "family": "NeuroticBishop"
+    },
+    "nilesrogoff_chessbot": {
+      "family": "nilesrogoff_chessbot"
+    },
+    "noabot": {
+      "family": "NoaChess"
+    },
+    "obi-pawnkenobot": {
+      "family": "Obi-Pawn-Kenobot"
+    },
+    "ofish": {
+      "family": "PyGo"
+    },
+    "omelettechessengine": {
+      "family": "Omelette"
+    },
+    "onionbot": {
+      "family": "onionbot"
+    },
+    "oxide-eg": {
+      "family": "Oxide-Eg"
+    },
+    "panda_engine": {
+      "family": "Black Marlin"
+    },
+    "patientjellyfish": {
+      "family": "Chrysaora"
+    },
+    "peanet0": {
+      "family": "Pea"
+    },
+    "peanet1": {
+      "family": "Pea"
+    },
+    "petty-chess": {
+      "family": "Petty-Chess"
+    },
+    "pi0w": {
+      "family": "pica2"
+    },
+    "planktonenginerust": {
+      "family": "Plankton",
+      "code_urls": []
+    },
+    "plumbot": {
+      "family": "plumbot"
+    },
+    "polaris2bot": {
+      "family": "Polaris"
+    },
+    "potato-chess-bot": {
+      "family": "potato-chess"
+    },
+    "potato_bot": {
+      "family": "Potatix"
+    },
+    "prawn_bot": {
+      "family": "Prawn"
+    },
+    "queen_stase_approx": {
+      "family": "STaSe"
+    },
+    "queensgambot": {
+      "family": "QueensGamBOT"
+    },
+    "ramses-chess": {
+      "family": "Reglisse",
+      "code_urls": [
+        "https://github.com/PaulJeFi/reglisse-chess"
+      ]
+    },
+    "ray-bot": {
+      "family": "Ray"
+    },
+    "redtail-zero": {
+      "family": "rusty-redtail"
+    },
+    "rookrusty": {
+      "family": "RookRusty"
+    },
+    "rootengine": {
+      "family": "rootchess"
+    },
+    "ruka-chess": {
+      "family": "Ruka"
+    },
+    "saherator": {
+      "family": "Saherator"
+    },
+    "saltettorrfisk": {
+      "family": "Cairn"
+    },
+    "sandybot": {
+      "family": "sandybot"
+    },
+    "sargon-1ply": {
+      "family": "Morlock"
+    },
+    "sargon-2ply": {
+      "family": "Morlock"
+    },
+    "sargon-3ply": {
+      "family": "Morlock"
+    },
+    "sargon-4ply": {
+      "family": "Morlock"
+    },
+    "schnecken_bot": {
+      "family": "schnecken_bot"
+    },
+    "schneizel2": {
+      "family": "Schneizel"
+    },
+    "seechessbot": {
+      "family": "CeeChess"
+    },
+    "sem1rose": {
+      "family": "Sem1Rose"
+    },
+    "shallowredbot": {
+      "family": "Shallow Red"
+    },
+    "shardbot": {
+      "family": "Shard",
+      "code_urls": []
+    },
+    "sharprustic": {
+      "family": "Sharp Rustic"
+    },
+    "simbelmyne-bot": {
+      "family": "Simbelmyne"
+    },
+    "simple-bot": {
+      "family": "Simple Bot",
+      "identity_evidence_url": "https://github.com/dhruvang1/chess-bot"
+    },
+    "simplelearnerbot": {
+      "family": "SimpleLearnerBot"
+    },
+    "slothcomputer": {
+      "family": "Sloth"
+    },
+    "smallbrainpy": {
+      "family": "Smallbrain"
+    },
+    "smolchessbot": {
+      "family": "smolchess"
+    },
+    "snaky-bot": {
+      "family": "Snaky"
+    },
+    "sohamchessbot": {
+      "family": "SohamChessBot"
+    },
+    "somegobot": {
+      "family": "Simplex (Cubix1729)"
+    },
+    "somepythonbot": {
+      "family": "SomePythonBot"
+    },
+    "spaceengine": {
+      "family": "Space"
+    },
+    "stepbot_chess": {
+      "family": "Stepbot"
+    },
+    "stickshark99": {
+      "family": "Stickshark"
+    },
+    "stonefishengine": {
+      "family": "Stonefish"
+    },
+    "sunfish-c": {
+      "family": "sunfish_c"
+    },
+    "sunfish-engine": {
+      "family": "Sunfish"
+    },
+    "sunfish_rs": {
+      "family": "sunfish_rs"
+    },
+    "talbotbot": {
+      "family": "Talbotbot"
+    },
+    "tdchess-bot": {
+      "family": "tdchess"
+    },
+    "theoden8_uci": {
+      "family": "dummy_chess"
+    },
+    "thera_engine": {
+      "family": "Thera"
+    },
+    "thomengine": {
+      "family": "Thom"
+    },
+    "tidymazebot": {
+      "family": "chess-go",
+      "identity_evidence_url": "https://github.com/TidyMaze/chess-go"
+    },
+    "tokenstealer": {
+      "family": "Throttle"
+    },
+    "tombot1234": {
+      "family": "tombot1234"
+    },
+    "troutbot": {
+      "family": "Trout"
+    },
+    "turobot": {
+      "family": "nimTUROCHAMP"
+    },
+    "turochamp-1ply": {
+      "family": "Morlock"
+    },
+    "turochamp-2ply": {
+      "family": "Morlock"
+    },
+    "turquoisebot": {
+      "family": "TurquoiseBOT"
+    },
+    "ultrabrick": {
+      "family": "UltraBrick"
+    },
+    "uzenatch": {
+      "family": "Uzenatch"
+    },
+    "velvet-engine": {
+      "family": "Velvet"
+    },
+    "vixen_is_very_cool": {
+      "family": "Sarah"
+    },
+    "walleye_bot": {
+      "family": "Walleye"
+    },
+    "walpurti": {
+      "family": "Numbat"
+    },
+    "weakchessengine": {
+      "family": "Weak"
+    },
+    "whitewidowbot": {
+      "family": "White Widow"
+    },
+    "winterbot": {
+      "family": "Winter"
+    },
+    "xxsaturnxx": {
+      "family": "Saturn"
+    },
+    "yukoo-bot": {
+      "family": "Yukoo"
+    },
+    "yvl-bot": {
+      "family": "yvl-chess"
+    },
+    "zagreus_engine": {
+      "family": "Zagreus"
+    },
+    "ze_rook": {
+      "family": "ZE_ROOK"
+    },
+    "zigzagz": {
+      "family": "ZigZagZ"
+    },
+    "zobristhaescher": {
+      "family": "ZobristHaescher",
+      "code_urls": []
+    }
+  }
+}
