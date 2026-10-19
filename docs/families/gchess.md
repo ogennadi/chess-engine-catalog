@@ -1,0 +1,12 @@
+# GChess
+
+- **Source availability:** not_checked
+- **Licensing:** not researched
+
+## Source code
+
+None found.
+
+## Listed by
+
+- **ccrl**: GChess — <https://computerchess.org.uk/4040/cgi/compare_engines.cgi?family=GChess&print=Rating+list>

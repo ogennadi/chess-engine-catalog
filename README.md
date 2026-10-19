@@ -32,6 +32,8 @@ How each source was found is recorded in [docs/sources](docs/sources/README.md).
 * [Chess Programming Wiki checks for every family](data/chessprogramming-wiki.json)
 * [Reviewed wiki source-code link checks](data/chessprogramming-source-code.json)
 * [Lichess accounts awaiting engine-identity review](data/unresolved-lichess.json)
+* [Source-status research (licensing and availability)](data/source-status.json)
+* [Per-family pages](docs/families/README.md)
 
 The current scope is family names, list membership, and explicitly linked source
 code. Other properties below are deferred. Missing source-code links mean "not
@@ -112,10 +114,38 @@ without inventing wiki list membership. Re-running the checker includes families
 whose only source links came from the wiki. Changed wiki identities or removed
 reviewed links require review instead of silently retaining those links.
 
-`source-status-pilot.json` is a pending-approval pilot that classifies 51
-families without source links by licensing (open source, source-available,
-proprietary, unknown) and by source availability, with evidence. It is not yet
-merged into the catalog; "source not located" never implies closed source.
+### Source-status research
+
+`data/source-status.json` records web research for families that have no source
+link from any list (and for families whose only source is a Lucas Chess copy).
+Each family is classified on two independent axes, with evidence URLs and a
+rationale:
+
+* `licensing`: `open_source`, `source_available`, `proprietary`, or `unknown`
+  (freeware binaries stay `unknown`; a wiki Commercial category is enough for
+  `proprietary`, but source is still searched for).
+* `availability`: `available`, `archived_only`, `released_not_located`,
+  `not_located`, or `not_checked`.
+
+Source from a precursor, derivative, or homonym is never attributed. A mirror
+makes source available, but originals are preferred and licensing comes only
+from the rights holder. "Source not located" never implies closed source.
+`source-status-pilot.json` is the approved 51-family pilot, now merged into this
+file.
+
+`collect.py` attaches `available` and `archived_only` source URLs to the catalog
+(source `source-status-research`) and adds a CSV `source_availability` column:
+the research result, `linked` for families with list-supplied source links, or
+`not_checked`. It also writes one page per family to
+[`docs/families`](docs/families/README.md) with all collected provenance,
+source links, licenses, and research notes.
+
+```powershell
+python source_status.py dossiers      # research inputs in .cache/research
+python source_status.py check out.json
+python source_status.py record out.json
+python source_status.py summary
+```
 
 ### Identity and coverage
 

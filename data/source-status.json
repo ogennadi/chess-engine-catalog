@@ -1,0 +1,1156 @@
+{
+ "definitions": {
+  "licensing": {
+   "open_source": "OSI/FSF-approved license or rights-holder public-domain dedication",
+   "source_available": "rights holder published source under restrictive or missing license terms",
+   "proprietary": "explicit closed-source statement, commercial product, or license limiting distribution to binaries",
+   "unknown": "insufficient evidence, including leaked or third-party-preserved code without a license"
+  },
+  "availability": {
+   "available": "a copy of the source is reachable now",
+   "archived_only": "source reachable only via an archive such as the Wayback Machine",
+   "released_not_located": "credible report that source was released, but no copy found",
+   "not_located": "no copy found; never by itself evidence of closed source",
+   "not_checked": "not yet researched"
+  },
+  "confidence": {
+   "high": "primary statement by the author/publisher or an inspected license",
+   "medium": "consistent secondary evidence (wiki category, RWBC flag, unverified license file)",
+   "low": "absence of evidence, unverified search summary, or unresolved identity"
+  },
+  "rules": [
+   "Licensing and availability are independent.",
+   "Freeware binaries without an explicit closed-source statement stay licensing=unknown.",
+   "Source of a precursor, successor, or derivative is not attributed to another family.",
+   "Third-party mirrors count as available but licensing comes only from the rights holder; originals are preferred.",
+   "A wiki Commercial category is enough for proprietary, but such engines are still searched for published source.",
+   "AI search summaries are leads, not evidence, unless the cited primary page confirms them."
+  ],
+  "tiers": {
+   "A": "wiki open-source or license category",
+   "B": "RWBC Src=yes",
+   "C": "wiki Commercial or Dedicated category",
+   "L": "only source link is a Lucas Chess bundle; search for the original",
+   "E": "other wiki-linked families",
+   "F": "list-only families",
+   "D": "RWBC Src='-' only",
+   "pilot": "51-family pilot sample"
+  }
+ },
+ "families": {
+  "Andscacs": {
+   "licensing": "source_available",
+   "availability": "available",
+   "confidence": "medium",
+   "release_scope": "0.921 only (November 2017); later versions closed",
+   "source_urls": [
+    {
+     "url": "https://github.com/MichaelB7/Andscacs",
+     "kind": "third-party mirror of released 0.921 source",
+     "license": "none stated"
+    },
+    {
+     "url": "http://www.andscacs.com/downloads/andscacs921src.zip",
+     "kind": "original author download (site offline; liveness not checked)"
+    }
+   ],
+   "evidence": [
+    {
+     "url": "https://talkchess.com/viewtopic.php?t=65632",
+     "quote": "Andscacs - New version 0.921 with source"
+    },
+    {
+     "url": "https://github.com/MichaelB7/Andscacs",
+     "quote": "Released Source of Version 9.21"
+    }
+   ],
+   "rationale": "Author released 0.921 source; no clear license located (thread discusses Stockfish-derived snippets), so not classified as open-source licensed.",
+   "searches": 3,
+   "checked_at": "2026-10-19T02:23:20+00:00",
+   "pilot_group": "modern",
+   "tier": "pilot"
+  },
+  "Ares US": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "Charles Roberson's Ares",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
+     "quote": "RWBC Src '-'"
+    }
+   ],
+   "rationale": "Offline: RWBC '-' (3% disagreement with other lists). No web search.",
+   "searches": 0,
+   "checked_at": "2026-10-19T02:49:49+00:00",
+   "identity_note": "Sampled as 'Ares'; homonym split moved the researched engine to Ares US.",
+   "pilot_group": "ambiguous",
+   "tier": "pilot"
+  },
+  "Arminius": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
+     "quote": "RWBC Src column: '-'; links are binary zip downloads only"
+    },
+    {
+     "url": "http://www.nnuss.de/Hermann/index.html",
+     "quote": "Private users may use and copy Hermann unchanged. Everything else needs the written permission of the author. (author's other engine; hint only)"
+    }
+   ],
+   "rationale": "Educated-guess hint: author distributes his other engine as binary-only freeware. No Arminius-specific license statement found, so licensing remains unknown.",
+   "searches": 2,
+   "checked_at": "2026-10-19T02:39:01+00:00",
+   "pilot_group": "modern",
+   "tier": "pilot"
+  },
+  "Bebe": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "low",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/Bebe",
+     "quote": "wiki lists no source release"
+    }
+   ],
+   "rationale": "Historical hardware-assisted program; no web search (historical engines yielded source in 3 of 5 searched cases, so this needs a search in the full pass).",
+   "searches": 0,
+   "checked_at": "2026-10-19T02:49:49+00:00",
+   "pilot_group": "historical",
+   "tier": "pilot"
+  },
+  "Belka": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "low",
+   "release_scope": "family",
+   "source_urls": [],
+   "identity_note": "Derivative of disputed Strelka 1.x (itself contested provenance); licensing cannot be inferred.",
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/Belka",
+     "quote": "an UCI compliant, experimental chess engine based on the disputed engine Strelka 1.x by Jury Osipov with modifications by Igor Korshunov"
+    }
+   ],
+   "rationale": "No source or license statement located; Russian-forum distribution not searched further in pilot (3-search cap).",
+   "searches": 1,
+   "checked_at": "2026-10-19T02:42:22+00:00",
+   "pilot_group": "modern",
+   "tier": "pilot"
+  },
+  "Belle": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "Belle hardware-era program",
+   "source_urls": [],
+   "identity_issue": "Available source is Ken Thompson's earlier PDP-11 Chess VI (catalog family 'Chess VI'); not attributed to Belle without review.",
+   "evidence": [
+    {
+     "url": "https://github.com/jasper-sinclair/PDP-11-Chess-VI-Belle",
+     "quote": "port of PDP-11 Chess VI, the software predecessor of Belle"
+    }
+   ],
+   "rationale": "Precursor source located, but Belle's hardware-assisted program source not located.",
+   "searches": 1,
+   "checked_at": "2026-10-19T02:46:42+00:00",
+   "pilot_group": "historical",
+   "tier": "pilot"
+  },
+  "BikJump": {
+   "licensing": "proprietary",
+   "availability": "not_located",
+   "confidence": "high",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "http://www.aartbik.com/MISC/bikjump.txt",
+     "quote": "This software is *not* in the public domain. However, it is freely available without any fee for education, research, and non-profit purposes."
+    },
+    {
+     "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
+     "quote": "RWBC Src column: '-'"
+    }
+   ],
+   "rationale": "Author's binary license is non-commercial freeware; 'About the sources' describes authorship only. No source distribution located. AI search summary wrongly implied modifiable source.",
+   "searches": 2,
+   "checked_at": "2026-10-19T02:39:01+00:00",
+   "pilot_group": "modern",
+   "tier": "pilot"
+  },
+  "Blunderer": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "low",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "source": "catalog",
+     "quote": "UBC-only listing; no author recorded"
+    },
+    {
+     "search": "GitHub repositories: blunderer chess",
+     "quote": "no matching engine repository"
+    },
+    {
+     "search": "web: Blunderer chess engine",
+     "quote": "no homepage or repository found"
+    }
+   ],
+   "rationale": "No author or homepage known; absence of evidence only.",
+   "searches": 3,
+   "checked_at": "2026-10-19T02:54:18+00:00",
+   "pilot_group": "random",
+   "tier": "pilot"
+  },
+  "Brainlearn": {
+   "licensing": "open_source",
+   "availability": "available",
+   "confidence": "high",
+   "release_scope": "family",
+   "source_urls": [
+    {
+     "url": "https://github.com/amchess/BrainLearn",
+     "kind": "author repository",
+     "license": "GPL-3.0 (Copying.txt, Stockfish-derived)"
+    }
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/amchess/BrainLearn",
+     "quote": "Repository contains Copying.txt, AUTHORS and src; Stockfish-derived engine by Andrea Manzo (amchess)"
+    }
+   ],
+   "rationale": "Author's own repository with GPL license file.",
+   "searches": 3,
+   "checked_at": "2026-10-19T02:39:01+00:00",
+   "pilot_group": "modern",
+   "tier": "pilot"
+  },
+  "Brutus": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "low",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/Brutus",
+     "quote": "Wiki Brutus is Chrilly Donninger's FPGA program (precursor of Hydra)"
+    },
+    {
+     "url": "https://www.chessprogramming.org/Brutus_NL",
+     "quote": "CCRL/CEGT Brutus is Stephan Vermeire's WinBoard engine, catalogued separately as Brutus NL (already source-linked)"
+    }
+   ],
+   "rationale": "After the split, this family is Chrilly Donninger's FPGA Brutus (Hydra precursor); no source evidence was researched for it.",
+   "searches": 1,
+   "identity_note": "Homonym split: CCRL/CEGT Brutus moved to Brutus NL (already source-linked); Brutus is now only Donninger's FPGA program.",
+   "needs_review": true,
+   "checked_at": "2026-10-19T02:54:18+00:00",
+   "pilot_group": "random",
+   "tier": "pilot"
+  },
+  "Capivara": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/TSCP",
+     "quote": "Legal derivatives Caligula Capivara ... (TSCP derivatives require the author's approval)"
+    },
+    {
+     "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
+     "quote": "RWBC Src column: '-'"
+    }
+   ],
+   "rationale": "Same-name GitHub repositories (udhos, sineco, bbenatti) are unrelated engines. No author source release found; TSCP-derived licensing restricts redistribution.",
+   "searches": 1,
+   "checked_at": "2026-10-19T02:39:01+00:00",
+   "pilot_group": "modern",
+   "tier": "pilot"
+  },
+  "Chess Tiger": {
+   "licensing": "proprietary",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/Chess_Tiger",
+     "quote": "Categories: Commercial, ChessBase, ChessOK, Lokasoft"
+    },
+    {
+     "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
+     "quote": "RWBC Src '-'; Dist '$$'"
+    }
+   ],
+   "rationale": "Offline rule: commercial in both wiki and RWBC. No web search performed.",
+   "searches": 0,
+   "checked_at": "2026-10-19T02:46:42+00:00",
+   "pilot_group": "commercial",
+   "tier": "pilot"
+  },
+  "Chessmaster": {
+   "licensing": "proprietary",
+   "availability": "not_located",
+   "confidence": "high",
+   "release_scope": "family",
+   "source_urls": [],
+   "identity_note": "Chessmaster 4000-XI used Johan de Koning's The King engine (separate catalog family 'The King').",
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/Chessmaster",
+     "quote": "a series of chess programs developed and released by Ubisoft (Categories: Commercial)"
+    },
+    {
+     "url": "https://github.com/thinktt/yowking",
+     "quote": "wrapper requiring an original Chessmaster binary; contains no engine source"
+    }
+   ],
+   "rationale": "Commercial product; community wrappers are not source releases.",
+   "searches": 1,
+   "checked_at": "2026-10-19T02:46:42+00:00",
+   "pilot_group": "commercial",
+   "tier": "pilot"
+  },
+  "Chessmate": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "low",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/Chessmate",
+     "quote": "Acorn Atom/Archimedes program in BASIC with inline 6502 assembly"
+    },
+    {
+     "url": "https://github.com/hoglet67/AtomSoftwareArchive",
+     "quote": "Community Atom software archive may contain the tape image (BASIC is listable); not inspected"
+    }
+   ],
+   "rationale": "Interpreted BASIC ships as source inside tape images, but no copy was inspected and licensing is unknown.",
+   "searches": 1,
+   "needs_review": true,
+   "checked_at": "2026-10-19T02:54:18+00:00",
+   "pilot_group": "random",
+   "tier": "pilot"
+  },
+  "Comet": {
+   "licensing": "proprietary",
+   "availability": "not_located",
+   "confidence": "low",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://ssdf.bosjo.net/list.htm",
+     "quote": "Comet32 / CometA90 rated as a commercial PC program by SSDF"
+    },
+    {
+     "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
+     "quote": "RWBC Src '-'"
+    }
+   ],
+   "rationale": "Weak: SSDF rating implies a sold product; no explicit license statement found. No web search.",
+   "searches": 0,
+   "checked_at": "2026-10-19T02:49:49+00:00",
+   "pilot_group": "ambiguous",
+   "tier": "pilot"
+  },
+  "CorChess": {
+   "licensing": "open_source",
+   "availability": "available",
+   "confidence": "medium",
+   "release_scope": "unspecified snapshot",
+   "source_urls": [
+    {
+     "url": "https://github.com/pi4chess/Corchess",
+     "kind": "third-party mirror",
+     "license": "GPL-3.0 (Copying.txt, Stockfish-derived)"
+    }
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/pi4chess/Corchess",
+     "quote": "UCI chess engine; repository contains Copying.txt and src"
+    },
+    {
+     "url": "https://open-chess.org/viewtopic.php?t=4084",
+     "quote": "New corchess by Ivan Ivec"
+    }
+   ],
+   "rationale": "Stockfish derivative under GPL; only a third-party mirror located, version currency unknown.",
+   "searches": 2,
+   "checked_at": "2026-10-19T02:39:01+00:00",
+   "pilot_group": "modern",
+   "tier": "pilot"
+  },
+  "Cray Blitz": {
+   "licensing": "source_available",
+   "availability": "available",
+   "confidence": "high",
+   "release_scope": "seventh major revision dated 12/09/90",
+   "source_urls": [
+    {
+     "url": "http://www.craftychess.com/downloads/crayblitz/",
+     "kind": "co-author Robert Hyatt's download directory (liveness not checked)"
+    },
+    {
+     "url": "https://github.com/swenson/cray-blitz",
+     "kind": "third-party mirror",
+     "license": "none stated"
+    }
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/swenson/cray-blitz",
+     "quote": "This source was downloaded from http://www.craftychess.com/downloads/crayblitz/ ... dated 12/09/90"
+    }
+   ],
+   "rationale": "Published by co-author Hyatt without a located license; historical Fortran/CAL source.",
+   "searches": 2,
+   "checked_at": "2026-10-19T02:46:42+00:00",
+   "pilot_group": "historical",
+   "tier": "pilot"
+  },
+  "CuckooChess": {
+   "licensing": "open_source",
+   "availability": "available",
+   "confidence": "high",
+   "release_scope": "family",
+   "source_urls": [
+    {
+     "url": "https://github.com/peterosterlund2/droidfish/tree/master/CuckooChessEngine",
+     "kind": "author repository subdirectory",
+     "license": "GPL-3.0"
+    }
+   ],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/CuckooChess",
+     "quote": "CuckooChess, an advanced free open source chess program under the GNU General Public License written in Java by Peter Osterlund"
+    },
+    {
+     "url": "https://github.com/peterosterlund2/droidfish",
+     "quote": "Repository root contains COPYING, CuckooChess and CuckooChessEngine directories"
+    }
+   ],
+   "rationale": "Author's own repository hosts the engine module; DroidFish GUI shares the repository but the engine is a separate directory.",
+   "searches": 2,
+   "checked_at": "2026-10-19T02:23:20+00:00",
+   "pilot_group": "modern",
+   "tier": "pilot"
+  },
+  "Deep Blue": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/Deep_Blue",
+     "quote": "IBM research machine; wiki lists no source release"
+    }
+   ],
+   "rationale": "Corporate research system; no release found offline. No web search (pilot offline-rule test).",
+   "searches": 0,
+   "checked_at": "2026-10-19T02:49:49+00:00",
+   "pilot_group": "historical",
+   "tier": "pilot"
+  },
+  "Dragon": {
+   "licensing": "proprietary",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "Dragon by Komodo Chess",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/Dragon_by_Komodo_Chess",
+     "quote": "a version of Komodo which combines an NNUE based evaluation with Komodo's search (Categories: Commercial)"
+    }
+   ],
+   "rationale": "Commercial Komodo product. Classification applies only to Komodo's Dragon, not Bruno Lucas's engine.",
+   "searches": 0,
+   "checked_at": "2026-10-19T02:46:42+00:00",
+   "identity_note": "Homonym split: Bruno Lucas's Dragon moved to Dragon FR; this record is Komodo's Dragon.",
+   "pilot_group": "commercial",
+   "tier": "pilot"
+  },
+  "Duchess": {
+   "licensing": "unknown",
+   "availability": "available",
+   "confidence": "low",
+   "release_scope": "6.12.03 (1981-02-15) distribution tape",
+   "needs_review": "Confirm the tape image contains source (installation job suggests compile-from-source).",
+   "source_urls": [
+    {
+     "url": "https://www.prycroft6.com.au/vs2sw/index.html",
+     "kind": "MVS 3.8 software archive listing 'DUCHESS - Chess computer program from Duke University'"
+    }
+   ],
+   "evidence": [
+    {
+     "url": "https://www.prycroft6.com.au/vs2sw/index.html",
+     "quote": "DUCHESS - Chess computer program from Duke University."
+    }
+   ],
+   "rationale": "Distribution tape supplied by co-author Eric Jensen is archived; contents not inspected in pilot.",
+   "searches": 2,
+   "checked_at": "2026-10-19T02:49:49+00:00",
+   "pilot_group": "historical",
+   "tier": "pilot"
+  },
+  "Excalibur Ivan II The Conqueror": {
+   "licensing": "proprietary",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/Excalibur_Ivan_II_The_Conqueror",
+     "quote": "Categories: 6502 ? Commercial ? Dedicated"
+    }
+   ],
+   "rationale": "Commercial dedicated chess-computer firmware; offline classification.",
+   "searches": 0,
+   "checked_at": "2026-10-19T02:54:18+00:00",
+   "pilot_group": "random",
+   "tier": "pilot"
+  },
+  "Fischer-Chess": {
+   "licensing": "unknown",
+   "availability": "released_not_located",
+   "confidence": "low",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "source": "RWBC",
+     "quote": "Src = yes; author Atul S. Vasu"
+    },
+    {
+     "url": "https://talkchess.com/viewtopic.php?t=60157",
+     "quote": "Search summary says this thread describes open-source C++ code (not verified first-hand)"
+    },
+    {
+     "search": "web: Fischer-Chess engine Atul Vasu source code",
+     "quote": "no repository on GitHub or other forges"
+    }
+   ],
+   "rationale": "Source reportedly released, but no copy or license located.",
+   "searches": 1,
+   "needs_review": true,
+   "checked_at": "2026-10-19T02:54:18+00:00",
+   "pilot_group": "random",
+   "tier": "pilot"
+  },
+  "Fritz": {
+   "licensing": "proprietary",
+   "availability": "not_located",
+   "confidence": "high",
+   "release_scope": "classic Fritz engines (Morsch/Feist era); later NNUE-era Fritz releases not separately checked",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/Fritz",
+     "quote": "a series of chess programs published by ChessBase ... (Categories: Commercial, ChessBase)"
+    }
+   ],
+   "rationale": "Commercial ChessBase product; GPL Fat Fritz 2 source belongs to the separate Fat Fritz family and is not attributed to Fritz.",
+   "searches": 1,
+   "checked_at": "2026-10-19T02:42:22+00:00",
+   "pilot_group": "commercial",
+   "tier": "pilot"
+  },
+  "Ghost": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
+     "quote": "RWBC Src '-'"
+    }
+   ],
+   "rationale": "Offline: RWBC '-'. No web search.",
+   "searches": 0,
+   "checked_at": "2026-10-19T02:49:49+00:00",
+   "pilot_group": "ambiguous",
+   "tier": "pilot"
+  },
+  "Halcyon": {
+   "licensing": "open_source",
+   "availability": "available",
+   "confidence": "high",
+   "release_scope": "family",
+   "source_urls": [
+    {
+     "url": "https://github.com/nhamil/halcyon",
+     "kind": "author repository",
+     "license": "MIT"
+    }
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/nhamil/halcyon/blob/master/LICENSE",
+     "quote": "Copyright (c) 2023 Nicholas Hamilton ... Permission is hereby granted, free of charge"
+    }
+   ],
+   "rationale": "License copyright holder matches RWBC author Nicholas Hamilton; repository describes a UCI chess engine.",
+   "searches": 4,
+   "checked_at": "2026-10-19T02:23:20+00:00",
+   "pilot_group": "modern",
+   "tier": "pilot"
+  },
+  "Hiarcs": {
+   "licensing": "proprietary",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/HIARCS",
+     "quote": "HIARCS is commercially available since 1991 (Categories: Commercial)"
+    }
+   ],
+   "rationale": "Offline rule: wiki Commercial category. No web search performed.",
+   "searches": 0,
+   "checked_at": "2026-10-19T02:46:42+00:00",
+   "pilot_group": "commercial",
+   "tier": "pilot"
+  },
+  "Hydra": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/Hydra",
+     "quote": "FPGA chess system; wiki lists no source release"
+    }
+   ],
+   "rationale": "Privately funded FPGA system; no web search.",
+   "searches": 0,
+   "checked_at": "2026-10-19T02:49:49+00:00",
+   "pilot_group": "historical",
+   "tier": "pilot"
+  },
+  "Joker NL": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "low",
+   "release_scope": "H.G. Muller's Joker",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/Joker_NL",
+     "quote": "H.G. Muller's Joker page (correct wiki identity for the rating-list engine)"
+    },
+    {
+     "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
+     "quote": "RWBC Src '-'"
+    }
+   ],
+   "rationale": "No source located; GitHub 'joker' results are Manlio Morini's unrelated engine.",
+   "searches": 1,
+   "checked_at": "2026-10-19T02:49:49+00:00",
+   "identity_note": "Sampled as 'Joker'; homonym split moved the researched engine to Joker NL.",
+   "pilot_group": "ambiguous",
+   "tier": "pilot"
+  },
+  "Junior": {
+   "licensing": "proprietary",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/Junior",
+     "quote": "Deep Junior 13 as pure UCI compatible engine is purchased as download (Categories: Commercial, ChessBase)"
+    }
+   ],
+   "rationale": "Offline rule: wiki Commercial category. No web search performed.",
+   "searches": 0,
+   "checked_at": "2026-10-19T02:46:42+00:00",
+   "pilot_group": "commercial",
+   "tier": "pilot"
+  },
+  "Kaissa": {
+   "licensing": "unknown",
+   "availability": "available",
+   "confidence": "medium",
+   "release_scope": "1992 Turbo C PC version only; original ICL mainframe assembly source not located",
+   "source_urls": [
+    {
+     "url": "https://github.com/jimablett/Kaissa",
+     "kind": "third-party port of preserved 1992 source",
+     "license": "none stated"
+    },
+    {
+     "url": "https://archive.org/details/KAISSA",
+     "kind": "archive of PC version (contents not inspected)"
+    }
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/jimablett/Kaissa",
+     "quote": "A 1992 version of the program, including its source code and manual, has been preserved and hosted online by Vladimir Medvedev"
+    }
+   ],
+   "rationale": "Source accessible via preservation/port, but no license or rights-holder release located.",
+   "searches": 2,
+   "checked_at": "2026-10-19T02:46:42+00:00",
+   "pilot_group": "historical",
+   "tier": "pilot"
+  },
+  "Lifish": {
+   "licensing": "open_source",
+   "availability": "available",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [
+    {
+     "url": "https://github.com/fredatgithub/Lifish",
+     "kind": "repository (owner may be a re-uploader)"
+    }
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/fredatgithub/Lifish",
+     "quote": "Lifish is a Light chess engine based on StockFish."
+    },
+    {
+     "url": "https://github.com/fredatgithub/Lifish",
+     "quote": "LICENSE file is 35,149 bytes, matching GPL-3.0 inherited from Stockfish (file not opened)"
+    }
+   ],
+   "rationale": "Unique name and Stockfish derivative with a GPL license file; identity with UBC 'Lifish Beta' is matched by name only.",
+   "searches": 3,
+   "checked_at": "2026-10-19T02:54:18+00:00",
+   "pilot_group": "random",
+   "tier": "pilot"
+  },
+  "MChess": {
+   "licensing": "proprietary",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/MChess",
+     "quote": "Categories: DosEngine, Commercial"
+    }
+   ],
+   "rationale": "Offline rule: commercial. No web search.",
+   "searches": 0,
+   "checked_at": "2026-10-19T02:49:49+00:00",
+   "pilot_group": "historical",
+   "tier": "pilot"
+  },
+  "Nuchess": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://www.computerhistory.org/chess/sft-431614f455002/",
+     "quote": "Chess 4.6 source code is preserved (predecessor program, not Nuchess)"
+    }
+   ],
+   "rationale": "Predecessor Chess 4.6 source is archived at the Computer History Museum; Nuchess source not located.",
+   "searches": 1,
+   "checked_at": "2026-10-19T02:46:42+00:00",
+   "pilot_group": "historical",
+   "tier": "pilot"
+  },
+  "Philou": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "source": "RWBC",
+     "quote": "Src = '-', distribution free; author Gailhac Philippe"
+    },
+    {
+     "search": "web: Philou chess engine Philippe Gailhac source code download",
+     "quote": "only binary downloads referenced"
+    }
+   ],
+   "rationale": "Freeware binary only; without an explicit closed-source statement it is not classified proprietary.",
+   "searches": 1,
+   "checked_at": "2026-10-19T02:54:18+00:00",
+   "pilot_group": "random",
+   "tier": "pilot"
+  },
+  "Phoenix": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "low",
+   "release_scope": "Jonathan Schaeffer's Phoenix",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/Phoenix",
+     "quote": "historical SPARC program; wiki lists no source release"
+    }
+   ],
+   "rationale": "Wiki-only historical entry; no web search.",
+   "searches": 0,
+   "checked_at": "2026-10-19T02:49:49+00:00",
+   "pilot_group": "ambiguous",
+   "tier": "pilot"
+  },
+  "Queen": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "low",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
+     "quote": "RWBC Src '-'; archived author software directory linked"
+    }
+   ],
+   "rationale": "Offline: RWBC '-'. Author's archived software directory not inspected.",
+   "searches": 0,
+   "checked_at": "2026-10-19T02:49:49+00:00",
+   "pilot_group": "ambiguous",
+   "tier": "pilot"
+  },
+  "Revenge": {
+   "licensing": "proprietary",
+   "availability": "not_located",
+   "confidence": "high",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/Revenge",
+     "quote": "an UCI compliant chess engine by Fabio Gobbato, released in July 2021 as commercial successor of Pedone 3.1"
+    },
+    {
+     "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
+     "quote": "RWBC Src '-'; Dist 'free ($$)'"
+    }
+   ],
+   "rationale": "Commercial product (wiki category Commercial); predecessor Pedone is a separate family.",
+   "searches": 0,
+   "checked_at": "2026-10-19T02:42:22+00:00",
+   "pilot_group": "commercial",
+   "tier": "pilot"
+  },
+  "rofChade": {
+   "licensing": "proprietary",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://rofchade.nl/?page_id=7",
+     "quote": "'Sources, sometime but not in the near future' (reported by search; page did not render text in fetch, quote unverified)"
+    },
+    {
+     "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
+     "quote": "RWBC Src '-'; Dist 'free'"
+    }
+   ],
+   "rationale": "Binary-only freeware with author statement that sources are not planned soon; confidence medium until the statement is verified directly.",
+   "searches": 2,
+   "checked_at": "2026-10-19T02:42:22+00:00",
+   "pilot_group": "commercial",
+   "tier": "pilot"
+  },
+  "Ruthorin": {
+   "licensing": "proprietary",
+   "availability": "not_located",
+   "confidence": "high",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://github.com/themreKalkan/Ruthorin-Chess",
+     "quote": "3500+ ELO Closed Source Free Chess Engine"
+    }
+   ],
+   "rationale": "Explicit closed-source statement in the author's repository; older RuthIron predecessor code is not attributed.",
+   "searches": 2,
+   "checked_at": "2026-10-19T02:54:18+00:00",
+   "pilot_group": "random",
+   "tier": "pilot"
+  },
+  "Rybka": {
+   "licensing": "proprietary",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "identity_note": "Strelka and other disputed Rybka-derived programs are separate families; their source is not Rybka's.",
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/Rybka",
+     "quote": "Categories: Commercial, ChessBase, ChessOK"
+    },
+    {
+     "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
+     "quote": "RWBC Src '-'; Dist '$$ (free)'"
+    }
+   ],
+   "rationale": "Offline rule: commercial; older free versions were binary-only. No web search performed.",
+   "searches": 0,
+   "checked_at": "2026-10-19T02:46:42+00:00",
+   "pilot_group": "commercial",
+   "tier": "pilot"
+  },
+  "Shredder": {
+   "licensing": "proprietary",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/Shredder",
+     "quote": "Shredder went commercial, distributed by Millennium 2000 GmbH (Categories: Commercial, ChessBase)"
+    }
+   ],
+   "rationale": "Offline rule: wiki Commercial category with no contrary evidence. No web search performed (pilot accuracy test).",
+   "searches": 0,
+   "checked_at": "2026-10-19T02:46:42+00:00",
+   "pilot_group": "commercial",
+   "tier": "pilot"
+  },
+  "Simple": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "low",
+   "release_scope": "Remi Coulom's Simple",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
+     "quote": "RWBC Src '-'; link: archived remi.coulom.free.fr"
+    }
+   ],
+   "rationale": "Offline: RWBC '-'. No web search.",
+   "searches": 0,
+   "checked_at": "2026-10-19T02:49:49+00:00",
+   "identity_note": "Homonym split: the simple-bot Lichess account moved to Simple Bot; this record is Remi Coulom's Simple.",
+   "pilot_group": "ambiguous",
+   "tier": "pilot"
+  },
+  "Sinapse": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "source": "RWBC",
+     "quote": "Src = '-', distribution free; previous name Go2Chess 0.10"
+    },
+    {
+     "search": "GitHub repositories: sinapse chess",
+     "quote": "0 results"
+    }
+   ],
+   "rationale": "RWBC no-source flag plus negative forge search.",
+   "searches": 1,
+   "checked_at": "2026-10-19T02:54:18+00:00",
+   "pilot_group": "random",
+   "tier": "pilot"
+  },
+  "Spark": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
+     "quote": "RWBC Src '-'"
+    },
+    {
+     "url": "https://chessprogramming.org/Spark",
+     "quote": "no Open Source category"
+    }
+   ],
+   "rationale": "Offline: RWBC '-'. No web search.",
+   "searches": 0,
+   "checked_at": "2026-10-19T02:49:49+00:00",
+   "pilot_group": "ambiguous",
+   "tier": "pilot"
+  },
+  "Storm US": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "Sean Empey's Storm",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
+     "quote": "RWBC Src '-'"
+    }
+   ],
+   "rationale": "Offline: RWBC '-'. No web search.",
+   "searches": 0,
+   "checked_at": "2026-10-19T02:49:49+00:00",
+   "identity_note": "Sampled as 'Storm'; homonym split moved the researched engine to Storm US.",
+   "pilot_group": "ambiguous",
+   "tier": "pilot"
+  },
+  "Torch": {
+   "licensing": "proprietary",
+   "availability": "not_located",
+   "confidence": "high",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/Torch",
+     "quote": "A chess engine announced by Chess.com in 2023, intended as own development for their online chess platform"
+    },
+    {
+     "url": "https://chess.fandom.com/wiki/Torch",
+     "quote": "third-party summary: Torch is closed source; unofficial standalone builds are not authorized releases"
+    },
+    {
+     "user_input": "Example of closed source engine is Torch."
+    }
+   ],
+   "rationale": "Control case. Proprietary Chess.com development; unofficial GitHub builds (e.g. Felixk45/Torch-4-UCI-chess-engine) are not source releases.",
+   "searches": 1,
+   "checked_at": "2026-10-19T02:42:22+00:00",
+   "pilot_group": "control",
+   "tier": "pilot"
+  },
+  "TSCP": {
+   "licensing": "source_available",
+   "availability": "available",
+   "confidence": "high",
+   "release_scope": "family",
+   "source_urls": [
+    {
+     "url": "https://www.tckerrigan.com/Chess/TSCP/",
+     "kind": "author download page"
+    }
+   ],
+   "evidence": [
+    {
+     "url": "https://www.tckerrigan.com/Chess/TSCP/",
+     "quote": "TSCP is copyrighted. If you want to copy it (all or part of it) or create a derivative work, you need my permission."
+    },
+    {
+     "url": "https://chessprogramming.org/TSCP",
+     "quote": "TSCP is open source, but does not fall under GPL or similar licenses"
+    }
+   ],
+   "rationale": "Source is published by the author but permission is required for copies/derivatives, so not an open-source license; wiki category 'GPL' contradicts its own text.",
+   "searches": 1,
+   "checked_at": "2026-10-19T02:23:20+00:00",
+   "pilot_group": "modern",
+   "tier": "pilot"
+  },
+  "Viper": {
+   "licensing": "open_source",
+   "availability": "archived_only",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [
+    {
+     "url": "https://web.archive.org/web/20130120092706/http://romstad.org/viper/",
+     "kind": "archived author homepage (download contents not verified)",
+     "license": "GPL"
+    }
+   ],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/Viper",
+     "quote": "Categories: UCI, Open Source, GPL ... Didactic"
+    }
+   ],
+   "rationale": "GPL per wiki; author's site only archived. viper-cluster is a separate derivative and is not attributed.",
+   "searches": 2,
+   "checked_at": "2026-10-19T02:49:49+00:00",
+   "pilot_group": "ambiguous",
+   "tier": "pilot"
+  },
+  "Virtual Kasparov": {
+   "licensing": "proprietary",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/Virtual_Kasparov",
+     "quote": "a commercial, Kasparov licensees chess program for Game Boy Advance and PlayStation, published by Titus Interactive"
+    }
+   ],
+   "rationale": "Commercial console title; offline classification.",
+   "searches": 0,
+   "checked_at": "2026-10-19T02:54:18+00:00",
+   "pilot_group": "random",
+   "tier": "pilot"
+  },
+  "Zarkov": {
+   "licensing": "proprietary",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/Zarkov",
+     "quote": "Categories: DosEngine, Commercial"
+    },
+    {
+     "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
+     "quote": "RWBC Src '-'"
+    }
+   ],
+   "rationale": "Offline rule: commercial + RWBC '-'. No web search.",
+   "searches": 0,
+   "checked_at": "2026-10-19T02:49:49+00:00",
+   "pilot_group": "historical",
+   "tier": "pilot"
+  }
+ }
+}

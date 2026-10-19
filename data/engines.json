@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T04:34:05.488869+00:00",
+  "generated_at": "2026-10-19T05:07:10.004873+00:00",
   "coverage_complete": false,
   "sources": [
     {
@@ -11375,7 +11375,20 @@
           "source": "wiki-engines"
         }
       ],
-      "source_code": [],
+      "source_code": [
+        {
+          "url": "https://github.com/MichaelB7/Andscacs",
+          "evidence_url": "https://talkchess.com/viewtopic.php?t=65632",
+          "source": "source-status-research",
+          "kind": "third-party mirror of released 0.921 source"
+        },
+        {
+          "url": "http://www.andscacs.com/downloads/andscacs921src.zip",
+          "evidence_url": "https://talkchess.com/viewtopic.php?t=65632",
+          "source": "source-status-research",
+          "kind": "original author download (site offline; liveness not checked)"
+        }
+      ],
       "chessprogramming_wiki": {
         "status": "found",
         "url": "https://chessprogramming.org/Andscacs",
@@ -11386,6 +11399,13 @@
         "titles_checked": [
           "Andscacs"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "available",
+        "licensing": "source_available",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:23:20+00:00"
       }
     },
     {
@@ -16480,6 +16500,13 @@
         "titles_checked": [
           "Ares US"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:49:49+00:00"
       }
     },
     {
@@ -17556,6 +17583,13 @@
         "titles_checked": [
           "Arminius"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:39:01+00:00"
       }
     },
     {
@@ -23865,6 +23899,13 @@
         "titles_checked": [
           "Bebe"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "low",
+        "checked_at": "2026-10-19T02:49:49+00:00"
       }
     },
     {
@@ -24148,6 +24189,13 @@
         "titles_checked": [
           "Belka"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "low",
+        "checked_at": "2026-10-19T02:42:22+00:00"
       }
     },
     {
@@ -24316,6 +24364,13 @@
         "titles_checked": [
           "Belle"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:46:42+00:00"
       }
     },
     {
@@ -26840,6 +26895,13 @@
         "titles_checked": [
           "BikJump"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "proprietary",
+        "confidence": "high",
+        "checked_at": "2026-10-19T02:39:01+00:00"
       }
     },
     {
@@ -30493,6 +30555,13 @@
         "titles_checked": [
           "Blunderer"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "low",
+        "checked_at": "2026-10-19T02:54:18+00:00"
       }
     },
     {
@@ -32609,7 +32678,14 @@
           "checked_at": "2026-10-19T01:16:59.492027+00:00"
         }
       ],
-      "source_code": [],
+      "source_code": [
+        {
+          "url": "https://github.com/amchess/BrainLearn",
+          "evidence_url": "https://github.com/amchess/BrainLearn",
+          "source": "source-status-research",
+          "kind": "author repository"
+        }
+      ],
       "chessprogramming_wiki": {
         "status": "not_found",
         "url": null,
@@ -32620,6 +32696,13 @@
         "titles_checked": [
           "Brainlearn"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "available",
+        "licensing": "open_source",
+        "confidence": "high",
+        "checked_at": "2026-10-19T02:39:01+00:00"
       }
     },
     {
@@ -34398,6 +34481,14 @@
         "titles_checked": [
           "Brutus"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "low",
+        "needs_review": true,
+        "checked_at": "2026-10-19T02:54:18+00:00"
       }
     },
     {
@@ -38907,6 +38998,13 @@
         "titles_checked": [
           "Capivara"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:39:01+00:00"
       }
     },
     {
@@ -48568,6 +48666,13 @@
         "titles_checked": [
           "Chess Tiger"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "proprietary",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:46:42+00:00"
       }
     },
     {
@@ -53335,6 +53440,13 @@
         "titles_checked": [
           "Chessmaster"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "proprietary",
+        "confidence": "high",
+        "checked_at": "2026-10-19T02:46:42+00:00"
       }
     },
     {
@@ -53365,6 +53477,14 @@
         "titles_checked": [
           "Chessmate"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "low",
+        "needs_review": true,
+        "checked_at": "2026-10-19T02:54:18+00:00"
       }
     },
     {
@@ -62163,6 +62283,13 @@
         "titles_checked": [
           "Comet"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "proprietary",
+        "confidence": "low",
+        "checked_at": "2026-10-19T02:49:49+00:00"
       }
     },
     {
@@ -62937,7 +63064,14 @@
           "checked_at": "2026-10-19T01:16:59.492027+00:00"
         }
       ],
-      "source_code": [],
+      "source_code": [
+        {
+          "url": "https://github.com/pi4chess/Corchess",
+          "evidence_url": "https://github.com/pi4chess/Corchess",
+          "source": "source-status-research",
+          "kind": "third-party mirror"
+        }
+      ],
       "chessprogramming_wiki": {
         "status": "not_found",
         "url": null,
@@ -62948,6 +63082,13 @@
         "titles_checked": [
           "CorChess"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "available",
+        "licensing": "open_source",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:39:01+00:00"
       }
     },
     {
@@ -65481,7 +65622,20 @@
           "source": "wiki-engines"
         }
       ],
-      "source_code": [],
+      "source_code": [
+        {
+          "url": "http://www.craftychess.com/downloads/crayblitz/",
+          "evidence_url": "https://github.com/swenson/cray-blitz",
+          "source": "source-status-research",
+          "kind": "co-author Robert Hyatt's download directory (liveness not checked)"
+        },
+        {
+          "url": "https://github.com/swenson/cray-blitz",
+          "evidence_url": "https://github.com/swenson/cray-blitz",
+          "source": "source-status-research",
+          "kind": "third-party mirror"
+        }
+      ],
       "chessprogramming_wiki": {
         "status": "found",
         "url": "https://chessprogramming.org/Cray_Blitz",
@@ -65492,6 +65646,13 @@
         "titles_checked": [
           "Cray Blitz"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "available",
+        "licensing": "source_available",
+        "confidence": "high",
+        "checked_at": "2026-10-19T02:46:42+00:00"
       }
     },
     {
@@ -67251,7 +67412,14 @@
           "source": "wiki-engines"
         }
       ],
-      "source_code": [],
+      "source_code": [
+        {
+          "url": "https://github.com/peterosterlund2/droidfish/tree/master/CuckooChessEngine",
+          "evidence_url": "https://chessprogramming.org/CuckooChess",
+          "source": "source-status-research",
+          "kind": "author repository subdirectory"
+        }
+      ],
       "chessprogramming_wiki": {
         "status": "found",
         "url": "https://chessprogramming.org/CuckooChess",
@@ -67262,6 +67430,13 @@
         "titles_checked": [
           "CuckooChess"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "available",
+        "licensing": "open_source",
+        "confidence": "high",
+        "checked_at": "2026-10-19T02:23:20+00:00"
       }
     },
     {
@@ -70992,6 +71167,13 @@
         "titles_checked": [
           "Deep Blue"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:49:49+00:00"
       }
     },
     {
@@ -79355,6 +79537,13 @@
         "titles_checked": [
           "Dragon by Komodo Chess"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "proprietary",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:46:42+00:00"
       }
     },
     {
@@ -81140,7 +81329,14 @@
           "source": "wiki-engines"
         }
       ],
-      "source_code": [],
+      "source_code": [
+        {
+          "url": "https://www.prycroft6.com.au/vs2sw/index.html",
+          "evidence_url": "https://www.prycroft6.com.au/vs2sw/index.html",
+          "source": "source-status-research",
+          "kind": "MVS 3.8 software archive listing 'DUCHESS - Chess computer program from Duke University'"
+        }
+      ],
       "chessprogramming_wiki": {
         "status": "found",
         "url": "https://chessprogramming.org/Duchess",
@@ -81151,6 +81347,14 @@
         "titles_checked": [
           "Duchess"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "available",
+        "licensing": "unknown",
+        "confidence": "low",
+        "needs_review": "Confirm the tape image contains source (installation job suggests compile-from-source).",
+        "checked_at": "2026-10-19T02:49:49+00:00"
       }
     },
     {
@@ -90014,6 +90218,13 @@
         "titles_checked": [
           "Ivan II The Conqueror"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "proprietary",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:54:18+00:00"
       }
     },
     {
@@ -94605,6 +94816,14 @@
         "titles_checked": [
           "Fischer-Chess"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "released_not_located",
+        "licensing": "unknown",
+        "confidence": "low",
+        "needs_review": true,
+        "checked_at": "2026-10-19T02:54:18+00:00"
       }
     },
     {
@@ -100566,6 +100785,13 @@
         "titles_checked": [
           "Fritz"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "proprietary",
+        "confidence": "high",
+        "checked_at": "2026-10-19T02:42:22+00:00"
       }
     },
     {
@@ -105115,6 +105341,13 @@
         "titles_checked": [
           "Ghost"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:49:49+00:00"
       }
     },
     {
@@ -114530,6 +114763,13 @@
         "titles_checked": [
           "Halcyon"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "available",
+        "licensing": "open_source",
+        "confidence": "high",
+        "checked_at": "2026-10-19T02:23:20+00:00"
       }
     },
     {
@@ -118873,6 +119113,13 @@
         "titles_checked": [
           "HIARCS"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "proprietary",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:46:42+00:00"
       }
     },
     {
@@ -122386,6 +122633,13 @@
         "titles_checked": [
           "Hydra"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:49:49+00:00"
       }
     },
     {
@@ -131296,6 +131550,13 @@
         "titles_checked": [
           "Joker NL"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "low",
+        "checked_at": "2026-10-19T02:49:49+00:00"
       }
     },
     {
@@ -133288,6 +133549,13 @@
         "titles_checked": [
           "Junior"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "proprietary",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:46:42+00:00"
       }
     },
     {
@@ -134264,7 +134532,20 @@
           "source": "wiki-engines"
         }
       ],
-      "source_code": [],
+      "source_code": [
+        {
+          "url": "https://github.com/jimablett/Kaissa",
+          "evidence_url": "https://github.com/jimablett/Kaissa",
+          "source": "source-status-research",
+          "kind": "third-party port of preserved 1992 source"
+        },
+        {
+          "url": "https://archive.org/details/KAISSA",
+          "evidence_url": "https://github.com/jimablett/Kaissa",
+          "source": "source-status-research",
+          "kind": "archive of PC version (contents not inspected)"
+        }
+      ],
       "chessprogramming_wiki": {
         "status": "found",
         "url": "https://chessprogramming.org/Kaissa",
@@ -134275,6 +134556,13 @@
         "titles_checked": [
           "Kaissa"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "available",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:46:42+00:00"
       }
     },
     {
@@ -147423,7 +147711,14 @@
           "checked_at": "2026-10-18T19:49:18.418245+00:00"
         }
       ],
-      "source_code": [],
+      "source_code": [
+        {
+          "url": "https://github.com/fredatgithub/Lifish",
+          "evidence_url": "https://github.com/fredatgithub/Lifish",
+          "source": "source-status-research",
+          "kind": "repository (owner may be a re-uploader)"
+        }
+      ],
       "chessprogramming_wiki": {
         "status": "not_found",
         "url": null,
@@ -147434,6 +147729,13 @@
         "titles_checked": [
           "Lifish"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "available",
+        "licensing": "open_source",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:54:18+00:00"
       }
     },
     {
@@ -157782,6 +158084,13 @@
         "titles_checked": [
           "MChess"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "proprietary",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:49:49+00:00"
       }
     },
     {
@@ -179786,6 +180095,13 @@
         "titles_checked": [
           "Nuchess"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:46:42+00:00"
       }
     },
     {
@@ -191324,6 +191640,13 @@
         "titles_checked": [
           "Philou"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:54:18+00:00"
       }
     },
     {
@@ -191354,6 +191677,13 @@
         "titles_checked": [
           "Phoenix"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "low",
+        "checked_at": "2026-10-19T02:49:49+00:00"
       }
     },
     {
@@ -204423,6 +204753,13 @@
         "titles_checked": [
           "Queen (engine)"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "low",
+        "checked_at": "2026-10-19T02:49:49+00:00"
       }
     },
     {
@@ -210708,6 +211045,13 @@
         "titles_checked": [
           "Revenge"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "proprietary",
+        "confidence": "high",
+        "checked_at": "2026-10-19T02:42:22+00:00"
       }
     },
     {
@@ -214404,6 +214748,13 @@
         "titles_checked": [
           "RofChade"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "proprietary",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:42:22+00:00"
       }
     },
     {
@@ -217757,6 +218108,13 @@
         "titles_checked": [
           "Ruthorin"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "proprietary",
+        "confidence": "high",
+        "checked_at": "2026-10-19T02:54:18+00:00"
       }
     },
     {
@@ -219213,6 +219571,13 @@
         "titles_checked": [
           "Rybka"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "proprietary",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:46:42+00:00"
       }
     },
     {
@@ -230648,6 +231013,13 @@
         "titles_checked": [
           "Shredder"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "proprietary",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:46:42+00:00"
       }
     },
     {
@@ -232234,6 +232606,13 @@
         "titles_checked": [
           "Simple"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "low",
+        "checked_at": "2026-10-19T02:49:49+00:00"
       }
     },
     {
@@ -232679,6 +233058,13 @@
         "titles_checked": [
           "Sinapse"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:54:18+00:00"
       }
     },
     {
@@ -240263,6 +240649,13 @@
         "titles_checked": [
           "Spark"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:49:49+00:00"
       }
     },
     {
@@ -246727,6 +247120,13 @@
         "titles_checked": [
           "Storm US"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:49:49+00:00"
       }
     },
     {
@@ -259372,6 +259772,13 @@
         "titles_checked": [
           "Torch"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "proprietary",
+        "confidence": "high",
+        "checked_at": "2026-10-19T02:42:22+00:00"
       }
     },
     {
@@ -261365,7 +261772,14 @@
           "source": "wiki-engines"
         }
       ],
-      "source_code": [],
+      "source_code": [
+        {
+          "url": "https://www.tckerrigan.com/Chess/TSCP/",
+          "evidence_url": "https://www.tckerrigan.com/Chess/TSCP/",
+          "source": "source-status-research",
+          "kind": "author download page"
+        }
+      ],
       "chessprogramming_wiki": {
         "status": "found",
         "url": "https://chessprogramming.org/TSCP",
@@ -261376,6 +261790,13 @@
         "titles_checked": [
           "TSCP"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "available",
+        "licensing": "source_available",
+        "confidence": "high",
+        "checked_at": "2026-10-19T02:23:20+00:00"
       }
     },
     {
@@ -268200,7 +268621,14 @@
           "source": "wiki-engines"
         }
       ],
-      "source_code": [],
+      "source_code": [
+        {
+          "url": "https://web.archive.org/web/20130120092706/http://romstad.org/viper/",
+          "evidence_url": "https://chessprogramming.org/Viper",
+          "source": "source-status-research",
+          "kind": "archived author homepage (download contents not verified)"
+        }
+      ],
       "chessprogramming_wiki": {
         "status": "found",
         "url": "https://chessprogramming.org/Viper",
@@ -268211,6 +268639,13 @@
         "titles_checked": [
           "Viper"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "archived_only",
+        "licensing": "open_source",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:49:49+00:00"
       }
     },
     {
@@ -268994,6 +269429,13 @@
         "titles_checked": [
           "Virtual Kasparov"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "proprietary",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:54:18+00:00"
       }
     },
     {
@@ -279439,6 +279881,13 @@
         "titles_checked": [
           "Zarkov"
         ]
+      },
+      "source_status": {
+        "tier": "pilot",
+        "availability": "not_located",
+        "licensing": "proprietary",
+        "confidence": "medium",
+        "checked_at": "2026-10-19T02:49:49+00:00"
       }
     },
     {

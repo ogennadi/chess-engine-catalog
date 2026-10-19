@@ -87,11 +87,16 @@ def publish(catalog, unresolved):
     if wiki_sources_path.exists():
         from collectors.wiki_sources import attach as attach_sources
         attach_sources(catalog, json.loads(wiki_sources_path.read_text(encoding="utf-8")))
+    import source_status
+    status_path = directory / "source-status.json"
+    status = json.loads(status_path.read_text(encoding="utf-8")) if status_path.exists() else {}
+    source_status.attach(catalog, status)
     engines = catalog["engines"]
     table = io.StringIO(newline="")
     writer = csv.writer(table)
     writer.writerow([
         "name", "aliases", "sources", "provenance_urls", "source_code_urls",
+        "source_availability",
         "chessprogramming_wiki_url", "chessprogramming_wiki_status",
         "chessprogramming_wiki_checked_at",
     ])
@@ -102,6 +107,7 @@ def publish(catalog, unresolved):
             "; ".join(sorted({p["source"] for p in engine["provenance"]})),
             "; ".join(sorted({p["url"] for p in engine["provenance"]})),
             "; ".join(sorted({c["url"] for c in engine["source_code"]})),
+            source_status.availability_label(engine),
             wiki.get("url") or "", wiki.get("status", "not_checked"),
             wiki.get("checked_at") or "",
         ])
@@ -116,6 +122,7 @@ def publish(catalog, unresolved):
         temporary = path.with_suffix(path.suffix + ".tmp")
         temporary.write_text(text, encoding="utf-8", newline="")
         temporary.replace(path)
+    source_status.render_family_pages(engines, status, ROOT / "docs" / "families")
 
 
 def main():
