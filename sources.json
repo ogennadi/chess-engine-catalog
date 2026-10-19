@@ -66,6 +66,36 @@
     "collector": "wiki_engines"
   },
   {
+    "id": "openbench-grantnet",
+    "name": "OpenBench: Grantnet (Andrew Grant)",
+    "url": "https://chess.grantnet.us/",
+    "collector": "openbench"
+  },
+  {
+    "id": "openbench-swehosting",
+    "name": "OpenBench: chess.swehosting.se",
+    "url": "https://chess.swehosting.se/",
+    "collector": "openbench"
+  },
+  {
+    "id": "openbench-clockwork",
+    "name": "OpenBench: Clockwork",
+    "url": "https://ob.cwchess.org/",
+    "collector": "openbench"
+  },
+  {
+    "id": "openbench-furybench",
+    "name": "OpenBench: FuryBench",
+    "url": "https://furybench.com/",
+    "collector": "openbench"
+  },
+  {
+    "id": "openbench-mattbench",
+    "name": "OpenBench: MattBench",
+    "url": "https://chess.n9x.co/index/",
+    "collector": "openbench"
+  },
+  {
     "id": "lichess",
     "name": "Lichess Selfmade bots",
     "url": "https://lichess.org/team/selfmade-bots",

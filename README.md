@@ -11,6 +11,10 @@
 * [SSDF](https://ssdf.bosjo.net/list.htm)
 * [Chess Engines Diary rating lists](https://chessengines.blogspot.com/p/rating-jcer.html)
 * [Chess Programming Wiki engine index](https://chessprogramming.org/Engines)
+* OpenBench instances: [Grantnet](https://chess.grantnet.us/),
+  [chess.swehosting.se](https://chess.swehosting.se/),
+  [Clockwork](https://ob.cwchess.org/), [FuryBench](https://furybench.com/),
+  [MattBench](https://chess.n9x.co/index/)
 
 ## Catalog
 
@@ -220,6 +224,16 @@ standalone tuning tools and controller software.
 Qualified homonymous programs stay separate; historical Atlas (1967) is not
 modern Spanish Atlas. Index-linked page titles also supply exact wiki identity
 evidence when the displayed engine name differs from its article title.
+
+Each OpenBench instance contributes only the engine directory in its sidebar
+(the stock "Engines" list, or a restyled collapsible directory), not test
+authors, diff links, or networks. The listed repository is the source link.
+Reviewed exceptions in `collectors/openbench.py` credit testing forks such as
+AndyGrant/Stockfish to the repository GitHub reports as their parent. They map
+renamed repositories to their current location and drop private links;
+MattBench's Torch entry points to a non-public Chess.com repository. The
+CalvinBench instance (kelseyde.pythonanywhere.com) returned HTTP 404 when
+checked and is not registered.
 
 ## properties
 * UCI v xboard v Custom

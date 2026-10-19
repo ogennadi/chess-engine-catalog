@@ -121,6 +121,7 @@ Arminius
 Arrester
 Artemis 37TR_PrO
 Arthur
+Artisan
 Arvyy
 Askaig
 asmFish
@@ -144,6 +145,7 @@ Avalanche
 Averno
 AviChess
 Awesome
+AwesomeOpossum
 Awit
 Ax
 Axiom
@@ -218,6 +220,7 @@ BlackMamba
 BLANK
 Blaze
 Blikskottel
+Blini
 Blitz
 Blitz Monster
 BlitzKibitz
@@ -342,6 +345,7 @@ Championship Chess
 Chancellor
 ChandraChess
 CHAOS
+Chaos (Quinniboi10)
 Chareth
 Charlie
 Charly
@@ -363,6 +367,7 @@ Chenglite
 Cheops
 Cheoss
 Chepla
+Cherry
 Chers
 Ches
 Chesley
@@ -732,6 +737,7 @@ Ethereal
 Etude
 Eubos
 Eugen
+Eunoia
 Euwe
 Evaluator
 EveAnn
@@ -761,6 +767,7 @@ Facon
 Fafis
 Faile
 Fairy-Max
+Fairy-Stockfish
 Falcon
 FastChess
 Fat Fritz
@@ -847,6 +854,7 @@ Gadget
 Gaia
 Galahad
 Galjoen
+Galumph
 Gambiet
 Gambit
 Gambit Fruit
@@ -1165,6 +1173,7 @@ LadyGambit
 LaGrande
 LambChop
 Lambergar
+Laminar
 LaMoSca
 Lancaster
 LaPetite
@@ -1172,6 +1181,7 @@ LarsenVB
 Laser
 Latista
 Laurifer
+Lazarus
 LazySMP
 LChess
 Leaf
@@ -2032,6 +2042,7 @@ Stepbot
 Steve Stuart Chess
 Stickshark
 Sting
+Stoat
 Stobor
 StockDory
 StockfiNN
@@ -2218,6 +2229,7 @@ Victoire
 Video Chess
 Videopac C 7010
 Viktor
+Vine
 Violet (Deep)
 Viper
 Viridithas
@@ -2230,6 +2242,7 @@ Vividmind
 Vixen
 Voyager
 Wahoo
+WakWak
 Waldi
 Walleye
 Wappler

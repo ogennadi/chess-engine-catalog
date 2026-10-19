@@ -38,6 +38,12 @@ REJECTED_CANDIDATES = {
         "reason": "The Space article describes an evaluation term, not rustam-cpp's Space engine.",
         "identity_evidence_url": "https://github.com/rustam-cpp/Space-Engine",
     }],
+    "Chaos (Quinniboi10)": [{
+        "title": "CHAOS",
+        "url": BASE_URL + "CHAOS",
+        "reason": "The wiki's CHAOS is the 1970s mainframe program, not Quinniboi10's modern engine.",
+        "identity_evidence_url": "https://github.com/Quinniboi10/Chaos",
+    }],
     "Chess": [{
         "title": "Chess",
         "url": BASE_URL + "Chess",

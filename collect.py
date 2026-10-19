@@ -151,7 +151,10 @@ def main():
                 status.update(counts)
             else:
                 module = importlib.import_module("collectors." + source["collector"])
-                rows = module.collect(fetch)
+                if getattr(module, "COLLECT_FROM_SOURCE_URL", False):
+                    rows = module.collect(fetch, source["url"])
+                else:
+                    rows = module.collect(fetch)
                 warnings = getattr(module.collect, "last_warnings", [])
                 if warnings:
                     status["warnings"] = warnings

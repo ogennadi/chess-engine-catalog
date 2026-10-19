@@ -1378,6 +1378,17 @@
         "Arthur"
       ]
     },
+    "Artisan": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Artisan"
+      ]
+    },
     "Arvyy": {
       "status": "not_found",
       "url": null,
@@ -1637,6 +1648,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Awesome"
+      ]
+    },
+    "AwesomeOpossum": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "AwesomeOpossum"
       ]
     },
     "Awit": {
@@ -2454,6 +2476,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Blikskottel"
+      ]
+    },
+    "Blini": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Blini"
       ]
     },
     "Blitz": {
@@ -3826,6 +3859,27 @@
         "CHAOS"
       ]
     },
+    "Chaos (Quinniboi10)": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Chaos (Quinniboi10)",
+        "Chaos"
+      ],
+      "rejected_candidates": [
+        {
+          "title": "CHAOS",
+          "url": "https://chessprogramming.org/CHAOS",
+          "reason": "The wiki's CHAOS is the 1970s mainframe program, not Quinniboi10's modern engine.",
+          "identity_evidence_url": "https://github.com/Quinniboi10/Chaos"
+        }
+      ],
+      "reason": "No matching indexed engine page found; reviewed lookalikes were rejected."
+    },
     "Chareth": {
       "status": "not_found",
       "url": null,
@@ -4055,6 +4109,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Chepla"
+      ]
+    },
+    "Cherry": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Cherry"
       ]
     },
     "Chers": {
@@ -8131,6 +8196,17 @@
         "Eugen"
       ]
     },
+    "Eunoia": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Eunoia"
+      ]
+    },
     "Euwe": {
       "status": "not_found",
       "url": null,
@@ -8448,6 +8524,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Fairy-Max"
+      ]
+    },
+    "Fairy-Stockfish": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Fairy-Stockfish"
       ]
     },
     "Falcon": {
@@ -9395,6 +9482,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Galjoen"
+      ]
+    },
+    "Galumph": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Galumph"
       ]
     },
     "Gambiet": {
@@ -11111,7 +11209,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "Icarus"
+        "Icarus",
+        "icarus"
       ]
     },
     "iCE": {
@@ -12899,6 +12998,17 @@
         "Lambergar"
       ]
     },
+    "Laminar": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Laminar"
+      ]
+    },
     "LaMoSca": {
       "status": "not_found",
       "url": null,
@@ -12974,6 +13084,17 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "Laurifer"
+      ]
+    },
+    "Lazarus": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Lazarus"
       ]
     },
     "LazySMP": {
@@ -20112,7 +20233,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "Sable"
+        "Sable",
+        "sable"
       ]
     },
     "Sabrina": {
@@ -22507,6 +22629,17 @@
         "Sting"
       ]
     },
+    "Stoat": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Stoat"
+      ]
+    },
     "Stobor": {
       "status": "found",
       "url": "https://chessprogramming.org/Stobor",
@@ -24556,6 +24689,17 @@
         "Viktor"
       ]
     },
+    "Vine": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Vine"
+      ]
+    },
     "Violet (Deep)": {
       "status": "not_found",
       "url": null,
@@ -24686,6 +24830,17 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "Wahoo"
+      ]
+    },
+    "WakWak": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "WakWak"
       ]
     },
     "Waldi": {
