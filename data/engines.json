@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T04:16:01.025749+00:00",
+  "generated_at": "2026-10-19T04:34:05.488869+00:00",
   "coverage_complete": false,
   "sources": [
     {
@@ -136,6 +136,54 @@
       "status": "collected",
       "checked_at": "2026-10-19T04:08:47.802480+00:00",
       "observations": 66
+    },
+    {
+      "id": "openbench-sirius",
+      "name": "OpenBench: Sirius (mcthouacbb)",
+      "url": "https://mcthouacbb.pythonanywhere.com/",
+      "status": "collected",
+      "checked_at": "2026-10-19T04:08:14.450203+00:00",
+      "observations": 6
+    },
+    {
+      "id": "openbench-lynx",
+      "name": "OpenBench: Lynx",
+      "url": "https://openbench.lynx-chess.com/",
+      "status": "collected",
+      "checked_at": "2026-10-19T04:29:08.000141+00:00",
+      "observations": 1
+    },
+    {
+      "id": "openbench-kaichung",
+      "name": "OpenBench: Kai Chung (Onslaught)",
+      "url": "https://openbench.kaichung.dev/",
+      "status": "collected",
+      "checked_at": "2026-10-19T04:29:15.768142+00:00",
+      "observations": 1
+    },
+    {
+      "id": "openbench-gyatso",
+      "name": "OpenBench: GyatsoChess",
+      "url": "https://gyatsoyt.pythonanywhere.com/",
+      "status": "collected",
+      "checked_at": "2026-10-19T04:29:19.232018+00:00",
+      "observations": 2
+    },
+    {
+      "id": "openbench-sscg13",
+      "name": "OpenBench: sscg13",
+      "url": "https://sscg13.pythonanywhere.com/",
+      "status": "collected",
+      "checked_at": "2026-10-19T04:29:21.590677+00:00",
+      "observations": 7
+    },
+    {
+      "id": "openbench-lczero",
+      "name": "OpenBench: Leela Chess Zero",
+      "url": "https://bench.lczero.org/",
+      "status": "collected",
+      "checked_at": "2026-10-19T04:29:27.999045+00:00",
+      "observations": 3
     },
     {
       "id": "lichess",
@@ -8102,6 +8150,13 @@
         },
         {
           "label": "Altair",
+          "url": "https://mcthouacbb.pythonanywhere.com/",
+          "project_url": "https://github.com/Alex2262/AltairChessEngine",
+          "source": "openbench-sirius",
+          "checked_at": "2026-10-19T04:08:14.450203+00:00"
+        },
+        {
+          "label": "Altair",
           "url": "https://chess.swehosting.se/",
           "project_url": "https://github.com/Alex2262/AltairChessEngine",
           "source": "openbench-swehosting",
@@ -8246,6 +8301,11 @@
           "url": "https://github.com/Alex2262/AltairChessEngine",
           "evidence_url": "https://github.com/EngineProgramming/engine-list/blob/e48b281cb78d757d974e1eeb5e84024d4b1aef9e/README.md",
           "source": "engine-programming"
+        },
+        {
+          "url": "https://github.com/Alex2262/AltairChessEngine",
+          "evidence_url": "https://mcthouacbb.pythonanywhere.com/",
+          "source": "openbench-sirius"
         },
         {
           "url": "https://github.com/Alex2262/AltairChessEngine",
@@ -13584,6 +13644,37 @@
         "method": "main-namespace-title-index",
         "titles_checked": [
           "Apotheosis"
+        ]
+      }
+    },
+    {
+      "name": "Aquarii",
+      "aliases": [],
+      "provenance": [
+        {
+          "label": "Aquarii",
+          "url": "https://mcthouacbb.pythonanywhere.com/",
+          "project_url": "https://github.com/Mcthouacbb/Aquarii",
+          "source": "openbench-sirius",
+          "checked_at": "2026-10-19T04:08:14.450203+00:00"
+        }
+      ],
+      "source_code": [
+        {
+          "url": "https://github.com/Mcthouacbb/Aquarii",
+          "evidence_url": "https://mcthouacbb.pythonanywhere.com/",
+          "source": "openbench-sirius"
+        }
+      ],
+      "chessprogramming_wiki": {
+        "status": "not_found",
+        "url": null,
+        "title": null,
+        "checked_at": "2026-10-19T00:44:50.443299+00:00",
+        "evidence_url": "https://chessprogramming.org/search-index.json",
+        "method": "main-namespace-title-index",
+        "titles_checked": [
+          "Aquarii"
         ]
       }
     },
@@ -31199,6 +31290,37 @@
         "method": "reviewed-title-alias",
         "titles_checked": [
           "Bogol"
+        ]
+      }
+    },
+    {
+      "name": "Bongcloud",
+      "aliases": [],
+      "provenance": [
+        {
+          "label": "Bongcloud",
+          "url": "https://sscg13.pythonanywhere.com/",
+          "project_url": "https://github.com/sireButItsUnique/sireButItsAnEngine",
+          "source": "openbench-sscg13",
+          "checked_at": "2026-10-19T04:29:21.590677+00:00"
+        }
+      ],
+      "source_code": [
+        {
+          "url": "https://github.com/sireButItsUnique/sireButItsAnEngine",
+          "evidence_url": "https://sscg13.pythonanywhere.com/",
+          "source": "openbench-sscg13"
+        }
+      ],
+      "chessprogramming_wiki": {
+        "status": "not_found",
+        "url": null,
+        "title": null,
+        "checked_at": "2026-10-19T00:44:50.443299+00:00",
+        "evidence_url": "https://chessprogramming.org/search-index.json",
+        "method": "main-namespace-title-index",
+        "titles_checked": [
+          "Bongcloud"
         ]
       }
     },
@@ -100458,6 +100580,13 @@
         },
         {
           "label": "Frolic",
+          "url": "https://sscg13.pythonanywhere.com/",
+          "project_url": "https://github.com/sscg13/Frolic",
+          "source": "openbench-sscg13",
+          "checked_at": "2026-10-19T04:29:21.590677+00:00"
+        },
+        {
+          "label": "Frolic",
           "original_name": "Frolic",
           "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
           "listing_url": "https://rwbc-chess.de/",
@@ -100563,6 +100692,11 @@
         }
       ],
       "source_code": [
+        {
+          "url": "https://github.com/sscg13/Frolic",
+          "evidence_url": "https://sscg13.pythonanywhere.com/",
+          "source": "openbench-sscg13"
+        },
         {
           "url": "https://github.com/sscg13/sscg13-chess-engine",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
@@ -113323,7 +113457,9 @@
     },
     {
       "name": "Gyatso",
-      "aliases": [],
+      "aliases": [
+        "GyatsoChess"
+      ],
       "provenance": [
         {
           "label": "Gyatso",
@@ -113340,6 +113476,13 @@
           "checked_at": "2026-10-19T01:16:59.492027+00:00"
         },
         {
+          "label": "GyatsoChess",
+          "url": "https://gyatsoyt.pythonanywhere.com/",
+          "project_url": "https://github.com/GyatsoYT/GyatsoChess",
+          "source": "openbench-gyatso",
+          "checked_at": "2026-10-19T04:29:19.232018+00:00"
+        },
+        {
           "label": "Gyatso 1.0.0 avx2",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -113349,7 +113492,13 @@
           "checked_at": "2026-10-18T19:49:18.418245+00:00"
         }
       ],
-      "source_code": [],
+      "source_code": [
+        {
+          "url": "https://github.com/GyatsoYT/GyatsoChess",
+          "evidence_url": "https://gyatsoyt.pythonanywhere.com/",
+          "source": "openbench-gyatso"
+        }
+      ],
       "chessprogramming_wiki": {
         "status": "not_found",
         "url": null,
@@ -113358,7 +113507,8 @@
         "evidence_url": "https://chessprogramming.org/search-index.json",
         "method": "main-namespace-title-index",
         "titles_checked": [
-          "Gyatso"
+          "Gyatso",
+          "GyatsoChess"
         ]
       }
     },
@@ -145457,7 +145607,9 @@
       "name": "Leela Chess",
       "aliases": [
         "Lc0",
-        "LC0"
+        "LC0",
+        "Leela",
+        "Leela-dag-preview"
       ],
       "provenance": [
         {
@@ -146183,6 +146335,20 @@
           "source": "lucas-chess"
         },
         {
+          "label": "Leela",
+          "url": "https://bench.lczero.org/",
+          "project_url": "https://github.com/LeelaChessZero/lc0",
+          "source": "openbench-lczero",
+          "checked_at": "2026-10-19T04:29:27.999045+00:00"
+        },
+        {
+          "label": "Leela-dag-preview",
+          "url": "https://bench.lczero.org/",
+          "project_url": "https://github.com/LeelaChessZero/lc0",
+          "source": "openbench-lczero",
+          "checked_at": "2026-10-19T04:29:27.999045+00:00"
+        },
+        {
           "label": "Lc0",
           "original_name": "Lc0",
           "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
@@ -146340,6 +146506,11 @@
         }
       ],
       "source_code": [
+        {
+          "url": "https://github.com/LeelaChessZero/lc0",
+          "evidence_url": "https://bench.lczero.org/",
+          "source": "openbench-lczero"
+        },
         {
           "url": "https://github.com/LeelaChessZero/lc0",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
@@ -152116,7 +152287,9 @@
     },
     {
       "name": "Lynx",
-      "aliases": [],
+      "aliases": [
+        "lynx"
+      ],
       "provenance": [
         {
           "label": "Lynx",
@@ -152229,6 +152402,13 @@
           "revision": "e48b281cb78d757d974e1eeb5e84024d4b1aef9e",
           "checked_at": "2026-10-19T00:36:42.496040+00:00",
           "source": "engine-programming"
+        },
+        {
+          "label": "lynx",
+          "url": "https://openbench.lynx-chess.com/",
+          "project_url": "https://github.com/lynx-chess/Lynx",
+          "source": "openbench-lynx",
+          "checked_at": "2026-10-19T04:29:08.000141+00:00"
         },
         {
           "label": "Lynx",
@@ -152361,6 +152541,11 @@
         },
         {
           "url": "https://github.com/lynx-chess/Lynx",
+          "evidence_url": "https://openbench.lynx-chess.com/",
+          "source": "openbench-lynx"
+        },
+        {
+          "url": "https://github.com/lynx-chess/Lynx",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
         }
@@ -152373,7 +152558,8 @@
         "evidence_url": "https://chessprogramming.org/search-index.json",
         "method": "main-namespace-title-index",
         "titles_checked": [
-          "Lynx"
+          "Lynx",
+          "lynx"
         ]
       }
     },
@@ -165586,6 +165772,37 @@
         "method": "reviewed-title-alias",
         "titles_checked": [
           "Monsoon"
+        ]
+      }
+    },
+    {
+      "name": "Montecraplo",
+      "aliases": [],
+      "provenance": [
+        {
+          "label": "Montecraplo",
+          "url": "https://sscg13.pythonanywhere.com/",
+          "project_url": "https://github.com/kevlu8/Montecraplo",
+          "source": "openbench-sscg13",
+          "checked_at": "2026-10-19T04:29:21.590677+00:00"
+        }
+      ],
+      "source_code": [
+        {
+          "url": "https://github.com/kevlu8/Montecraplo",
+          "evidence_url": "https://sscg13.pythonanywhere.com/",
+          "source": "openbench-sscg13"
+        }
+      ],
+      "chessprogramming_wiki": {
+        "status": "not_found",
+        "url": null,
+        "title": null,
+        "checked_at": "2026-10-19T00:44:50.443299+00:00",
+        "evidence_url": "https://chessprogramming.org/search-index.json",
+        "method": "main-namespace-title-index",
+        "titles_checked": [
+          "Montecraplo"
         ]
       }
     },
@@ -182753,13 +182970,23 @@
     },
     {
       "name": "Onslaught",
-      "aliases": [],
+      "aliases": [
+        "Axiom"
+      ],
       "provenance": [
         {
           "label": "Onslaught",
           "url": "https://computerchess.org.uk/4040/cgi/compare_engines.cgi?family=Onslaught&print=Rating+list",
           "source": "ccrl",
           "checked_at": "2026-10-18T19:53:20.932911+00:00"
+        },
+        {
+          "label": "Axiom",
+          "url": "https://openbench.kaichung.dev/",
+          "project_url": "https://github.com/kachhy/Axiom",
+          "source": "openbench-kaichung",
+          "checked_at": "2026-10-19T04:29:15.768142+00:00",
+          "identity_evidence_url": "https://github.com/kachhy/Onslaught"
         },
         {
           "label": "Onslaught",
@@ -182875,6 +183102,11 @@
           "url": "https://github.com/kachhy/Onslaught",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
           "source": "rwbc"
+        },
+        {
+          "url": "https://github.com/kachhy/Onslaught",
+          "evidence_url": "https://openbench.kaichung.dev/",
+          "source": "openbench-kaichung"
         }
       ],
       "chessprogramming_wiki": {
@@ -182885,7 +183117,8 @@
         "evidence_url": "https://chessprogramming.org/search-index.json",
         "method": "main-namespace-title-index",
         "titles_checked": [
-          "Onslaught"
+          "Onslaught",
+          "Axiom"
         ]
       }
     },
@@ -202907,6 +203140,13 @@
         },
         {
           "label": "PZChessBot",
+          "url": "https://sscg13.pythonanywhere.com/",
+          "project_url": "https://github.com/kevlu8/PZChessBot",
+          "source": "openbench-sscg13",
+          "checked_at": "2026-10-19T04:29:21.590677+00:00"
+        },
+        {
+          "label": "PZChessBot",
           "original_name": "PZChessBot",
           "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
           "listing_url": "https://rwbc-chess.de/",
@@ -203029,6 +203269,11 @@
           "url": "https://github.com/kevlu8/PZChessBot",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
           "source": "rwbc"
+        },
+        {
+          "url": "https://github.com/kevlu8/PZChessBot",
+          "evidence_url": "https://sscg13.pythonanywhere.com/",
+          "source": "openbench-sscg13"
         },
         {
           "url": "https://github.com/kevlu8/PZChessBot",
@@ -212588,7 +212833,9 @@
     },
     {
       "name": "Rodent",
-      "aliases": [],
+      "aliases": [
+        "Rodent-V"
+      ],
       "provenance": [
         {
           "label": "Rodent, GitHub",
@@ -213033,6 +213280,13 @@
           "source": "lucas-chess"
         },
         {
+          "label": "Rodent-V",
+          "url": "https://gyatsoyt.pythonanywhere.com/",
+          "project_url": "https://github.com/nescitus/Rodent-V",
+          "source": "openbench-gyatso",
+          "checked_at": "2026-10-19T04:29:19.232018+00:00"
+        },
+        {
           "label": "Rodent#",
           "original_name": "Rodent#",
           "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
@@ -213401,6 +213655,11 @@
           "url": "https://github.com/nescitus/Rodent-V",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
           "source": "rwbc"
+        },
+        {
+          "url": "https://github.com/nescitus/Rodent-V",
+          "evidence_url": "https://gyatsoyt.pythonanywhere.com/",
+          "source": "openbench-gyatso"
         },
         {
           "url": "https://github.com/nescitus/Rodent_II",
@@ -229340,6 +229599,37 @@
       }
     },
     {
+      "name": "Short",
+      "aliases": [],
+      "provenance": [
+        {
+          "label": "Short",
+          "url": "https://sscg13.pythonanywhere.com/",
+          "project_url": "https://github.com/sscg13/Short",
+          "source": "openbench-sscg13",
+          "checked_at": "2026-10-19T04:29:21.590677+00:00"
+        }
+      ],
+      "source_code": [
+        {
+          "url": "https://github.com/sscg13/Short",
+          "evidence_url": "https://sscg13.pythonanywhere.com/",
+          "source": "openbench-sscg13"
+        }
+      ],
+      "chessprogramming_wiki": {
+        "status": "not_found",
+        "url": null,
+        "title": null,
+        "checked_at": "2026-10-19T00:44:50.443299+00:00",
+        "evidence_url": "https://chessprogramming.org/search-index.json",
+        "method": "main-namespace-title-index",
+        "titles_checked": [
+          "Short"
+        ]
+      }
+    },
+    {
       "name": "Shredder",
       "aliases": [],
       "provenance": [
@@ -232745,6 +233035,13 @@
           "source": "engine-programming"
         },
         {
+          "label": "Sirius",
+          "url": "https://mcthouacbb.pythonanywhere.com/",
+          "project_url": "https://github.com/Mcthouacbb/Sirius",
+          "source": "openbench-sirius",
+          "checked_at": "2026-10-19T04:08:14.450203+00:00"
+        },
+        {
           "label": "Sirius 9.0 v3",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -232759,6 +233056,11 @@
           "url": "https://github.com/Mcthouacbb/Sirius",
           "evidence_url": "https://github.com/EngineProgramming/engine-list/blob/e48b281cb78d757d974e1eeb5e84024d4b1aef9e/README.md",
           "source": "engine-programming"
+        },
+        {
+          "url": "https://github.com/Mcthouacbb/Sirius",
+          "evidence_url": "https://mcthouacbb.pythonanywhere.com/",
+          "source": "openbench-sirius"
         },
         {
           "url": "https://github.com/mcthouacbb/Sirius",
@@ -242073,6 +242375,20 @@
         },
         {
           "label": "Stash",
+          "url": "https://mcthouacbb.pythonanywhere.com/",
+          "project_url": "https://github.com/mhouppin/stash-bot",
+          "source": "openbench-sirius",
+          "checked_at": "2026-10-19T04:08:14.450203+00:00"
+        },
+        {
+          "label": "Stash",
+          "url": "https://sscg13.pythonanywhere.com/",
+          "project_url": "https://github.com/mhouppin/stash-bot",
+          "source": "openbench-sscg13",
+          "checked_at": "2026-10-19T04:29:21.590677+00:00"
+        },
+        {
+          "label": "Stash",
           "original_name": "Stash",
           "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
           "listing_url": "https://rwbc-chess.de/",
@@ -242219,6 +242535,16 @@
           "url": "https://github.com/mhouppin/stash-bot",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
           "source": "rwbc"
+        },
+        {
+          "url": "https://github.com/mhouppin/stash-bot",
+          "evidence_url": "https://mcthouacbb.pythonanywhere.com/",
+          "source": "openbench-sirius"
+        },
+        {
+          "url": "https://github.com/mhouppin/stash-bot",
+          "evidence_url": "https://sscg13.pythonanywhere.com/",
+          "source": "openbench-sscg13"
         },
         {
           "url": "https://gitlab.com/mhouppin/stash-bot",
@@ -245074,6 +245400,13 @@
         },
         {
           "label": "Stockfish",
+          "url": "https://bench.lczero.org/",
+          "project_url": "https://github.com/AndyGrant/Stockfish",
+          "source": "openbench-lczero",
+          "checked_at": "2026-10-19T04:29:27.999045+00:00"
+        },
+        {
+          "label": "Stockfish",
           "url": "https://chess.n9x.co/index/",
           "project_url": "https://github.com/AndyGrant/Stockfish",
           "source": "openbench-mattbench",
@@ -245584,6 +245917,11 @@
           "url": "https://github.com/official-stockfish/Stockfish",
           "evidence_url": "https://github.com/AndyGrant/Stockfish",
           "source": "openbench-mattbench"
+        },
+        {
+          "url": "https://github.com/official-stockfish/Stockfish",
+          "evidence_url": "https://github.com/AndyGrant/Stockfish",
+          "source": "openbench-lczero"
         },
         {
           "url": "https://github.com/official-stockfish/Stockfish",
@@ -268189,6 +268527,13 @@
         },
         {
           "label": "Viridithas",
+          "url": "https://mcthouacbb.pythonanywhere.com/",
+          "project_url": "https://github.com/cosmobobak/viridithas",
+          "source": "openbench-sirius",
+          "checked_at": "2026-10-19T04:08:14.450203+00:00"
+        },
+        {
+          "label": "Viridithas",
           "url": "https://chess.swehosting.se/",
           "project_url": "https://github.com/cosmobobak/viridithas",
           "source": "openbench-swehosting",
@@ -268532,6 +268877,11 @@
           "url": "https://github.com/cosmobobak/viridithas",
           "evidence_url": "https://github.com/EngineProgramming/engine-list/blob/e48b281cb78d757d974e1eeb5e84024d4b1aef9e/README.md",
           "source": "engine-programming"
+        },
+        {
+          "url": "https://github.com/cosmobobak/viridithas",
+          "evidence_url": "https://mcthouacbb.pythonanywhere.com/",
+          "source": "openbench-sirius"
         },
         {
           "url": "https://github.com/cosmobobak/viridithas",
@@ -273336,6 +273686,13 @@
           "project_url": "https://github.com/TheTilted096/Wilted-Chess-Engine",
           "source": "openbench-mattbench",
           "checked_at": "2026-10-19T04:08:47.802480+00:00"
+        },
+        {
+          "label": "Wilted",
+          "url": "https://sscg13.pythonanywhere.com/",
+          "project_url": "https://github.com/TheTilted096/Wilted-Chess-Engine",
+          "source": "openbench-sscg13",
+          "checked_at": "2026-10-19T04:29:21.590677+00:00"
         }
       ],
       "source_code": [
@@ -273343,6 +273700,11 @@
           "url": "https://github.com/THETILTED1/Wilted-Chess-Engine",
           "evidence_url": "https://chess.n9x.co/index/",
           "source": "openbench-mattbench"
+        },
+        {
+          "url": "https://github.com/THETILTED1/Wilted-Chess-Engine",
+          "evidence_url": "https://sscg13.pythonanywhere.com/",
+          "source": "openbench-sscg13"
         }
       ],
       "chessprogramming_wiki": {
@@ -273927,6 +274289,13 @@
         },
         {
           "label": "Winter",
+          "url": "https://mcthouacbb.pythonanywhere.com/",
+          "project_url": "https://github.com/rosenthj/Winter",
+          "source": "openbench-sirius",
+          "checked_at": "2026-10-19T04:08:14.450203+00:00"
+        },
+        {
+          "label": "Winter",
           "original_name": "Winter",
           "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
           "listing_url": "https://rwbc-chess.de/",
@@ -274071,6 +274440,11 @@
           "url": "https://github.com/rosenthj/Winter",
           "evidence_url": "https://lichess.org/@/WinterBot",
           "source": "lichess"
+        },
+        {
+          "url": "https://github.com/rosenthj/Winter",
+          "evidence_url": "https://mcthouacbb.pythonanywhere.com/",
+          "source": "openbench-sirius"
         },
         {
           "url": "https://github.com/rosenthj/Winter",
@@ -282337,7 +282711,7 @@
     "checked_at": "2026-10-19T00:44:50.443299+00:00",
     "main_namespace_pages": 4269,
     "found": 1202,
-    "not_found": 1158,
+    "not_found": 1162,
     "needs_review": 0,
     "not_checked": 0
   },

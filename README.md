@@ -14,7 +14,15 @@
 * OpenBench instances: [Grantnet](https://chess.grantnet.us/),
   [chess.swehosting.se](https://chess.swehosting.se/),
   [Clockwork](https://ob.cwchess.org/), [FuryBench](https://furybench.com/),
-  [MattBench](https://chess.n9x.co/index/)
+  [MattBench](https://chess.n9x.co/index/),
+  [Sirius](https://mcthouacbb.pythonanywhere.com/),
+  [Lynx](https://openbench.lynx-chess.com/),
+  [Kai Chung](https://openbench.kaichung.dev/),
+  [GyatsoChess](https://gyatsoyt.pythonanywhere.com/),
+  [sscg13](https://sscg13.pythonanywhere.com/),
+  [Leela Chess Zero](https://bench.lczero.org/)
+
+How each source was found is recorded in [docs/sources](docs/sources/README.md).
 
 ## Catalog
 
@@ -228,12 +236,18 @@ evidence when the displayed engine name differs from its article title.
 Each OpenBench instance contributes only the engine directory in its sidebar
 (the stock "Engines" list, or a restyled collapsible directory), not test
 authors, diff links, or networks. The listed repository is the source link.
+The first five instances were named from the `#openbench-instances` channel of
+the OpenBench Discord (linked from the OpenBench README); since the Discord
+requires a login, their URLs were confirmed from public repositories. The
+remaining instances were found by GitHub code search for OpenBench instance
+URLs. Each instance's discovery evidence, plus the candidates that were not
+registered (offline, mirrors, or variant-only), is in
+[docs/sources](docs/sources/README.md).
 Reviewed exceptions in `collectors/openbench.py` credit testing forks such as
 AndyGrant/Stockfish to the repository GitHub reports as their parent. They map
-renamed repositories to their current location and drop private links;
-MattBench's Torch entry points to a non-public Chess.com repository. The
-CalvinBench instance (kelseyde.pythonanywhere.com) returned HTTP 404 when
-checked and is not registered.
+renamed repositories to their current location, drop private links, and skip
+variant-only (e.g. shatranj) engines. MattBench's Torch entry points to a
+non-public Chess.com repository.
 
 ## properties
 * UCI v xboard v Custom

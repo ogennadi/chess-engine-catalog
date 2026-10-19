@@ -1,4 +1,6 @@
+import json
 import unittest
+from pathlib import Path
 
 from collectors.openbench import collect, parse
 
@@ -48,6 +50,26 @@ class OpenBenchTests(unittest.TestCase):
     def test_missing_engine_directory_is_an_error(self):
         with self.assertRaises(ValueError):
             parse("<ul><li class='header'>Tests</li></ul>", "https://ob.example/")
+
+    def test_variant_only_engines_are_skipped(self):
+        page = (
+            '<ul><li class="header">Engines</li>'
+            '<li><a href="https://github.com/sscg13/Frolic">Frolic</a></li>'
+            '<li><a href="https://github.com/sscg13/Prolix">Prolix</a></li></ul>'
+        )
+        self.assertEqual([row["family"] for row in parse(page, "https://ob.example/")], ["Frolic"])
+
+
+class SourceProvenanceTests(unittest.TestCase):
+    def test_every_registered_source_has_a_provenance_page(self):
+        root = Path(__file__).resolve().parent.parent
+        sources = json.loads((root / "sources.json").read_text(encoding="utf-8"))
+        index = (root / "docs" / "sources" / "README.md").read_text(encoding="utf-8")
+        for source in sources:
+            page = root / "docs" / "sources" / (source["id"] + ".md")
+            self.assertTrue(page.exists(), page)
+            self.assertIn(source["url"], page.read_text(encoding="utf-8"))
+            self.assertIn(f"({source['id']}.md)", index)
 
 
 if __name__ == "__main__":

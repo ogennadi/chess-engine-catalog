@@ -96,6 +96,42 @@
     "collector": "openbench"
   },
   {
+    "id": "openbench-sirius",
+    "name": "OpenBench: Sirius (mcthouacbb)",
+    "url": "https://mcthouacbb.pythonanywhere.com/",
+    "collector": "openbench"
+  },
+  {
+    "id": "openbench-lynx",
+    "name": "OpenBench: Lynx",
+    "url": "https://openbench.lynx-chess.com/",
+    "collector": "openbench"
+  },
+  {
+    "id": "openbench-kaichung",
+    "name": "OpenBench: Kai Chung (Onslaught)",
+    "url": "https://openbench.kaichung.dev/",
+    "collector": "openbench"
+  },
+  {
+    "id": "openbench-gyatso",
+    "name": "OpenBench: GyatsoChess",
+    "url": "https://gyatsoyt.pythonanywhere.com/",
+    "collector": "openbench"
+  },
+  {
+    "id": "openbench-sscg13",
+    "name": "OpenBench: sscg13",
+    "url": "https://sscg13.pythonanywhere.com/",
+    "collector": "openbench"
+  },
+  {
+    "id": "openbench-lczero",
+    "name": "OpenBench: Leela Chess Zero",
+    "url": "https://bench.lczero.org/",
+    "collector": "openbench"
+  },
+  {
     "id": "lichess",
     "name": "Lichess Selfmade bots",
     "url": "https://lichess.org/team/selfmade-bots",

@@ -98,6 +98,7 @@ APIL chess
 Apollo
 Apollo (Gillespie)
 Apotheosis
+Aquarii
 Arabian Knight
 Arachne
 Aramis
@@ -240,6 +241,7 @@ Bobby
 Bobcat
 Bodo
 Bogol
+Bongcloud
 Booot
 BootChess
 Boris
@@ -1388,6 +1390,7 @@ Monik
 Monochrome
 Monolith
 Monsoon
+Montecraplo
 monty
 Mooboo
 Moonforge
@@ -1939,6 +1942,7 @@ Shen Yu
 Shess
 Shield
 Shippo
+Short
 Shredder
 Shredder (Deep)
 Shrike

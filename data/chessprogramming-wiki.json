@@ -1124,6 +1124,17 @@
         "Apotheosis"
       ]
     },
+    "Aquarii": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Aquarii"
+      ]
+    },
     "Arabian Knight": {
       "status": "not_found",
       "url": null,
@@ -2696,6 +2707,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Bogol"
+      ]
+    },
+    "Bongcloud": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Bongcloud"
       ]
     },
     "Booot": {
@@ -10471,7 +10493,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "Gyatso"
+        "Gyatso",
+        "GyatsoChess"
       ]
     },
     "Gödel": {
@@ -13697,7 +13720,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "Lynx"
+        "Lynx",
+        "lynx"
       ]
     },
     "m1.0": {
@@ -15375,6 +15399,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Monsoon"
+      ]
+    },
+    "Montecraplo": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Montecraplo"
       ]
     },
     "monty": {
@@ -17125,7 +17160,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "Onslaught"
+        "Onslaught",
+        "Axiom"
       ]
     },
     "Onyx": {
@@ -21483,6 +21519,17 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "Shippo"
+      ]
+    },
+    "Short": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Short"
       ]
     },
     "Shredder": {

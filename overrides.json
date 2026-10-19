@@ -27,12 +27,15 @@
     "Greenblatt Chess Program": "Mac Hack",
     "GreenLightChess": "Green Light Chess",
     "GullChess": "Gull",
+    "GyatsoChess": "Gyatso",
     "HokusPokus": "Hokus-Pokus",
     "Infraredv2": "Infrared",
     "JackyChess": "Jacky Chess",
     "KCChess": "KC Chess",
     "Knight Dreamer": "KnightDreamer",
     "Lc0": "Leela Chess",
+    "Leela": "Leela Chess",
+    "Leela-dag-preview": "Leela Chess",
     "LittleGoliath": "Little Goliath",
     "LittleWing": "Little Wing",
     "Maelstorm": "Maelstrom",
@@ -47,6 +50,7 @@
     "Rex Chess": "RexChess",
     "Rival Chess": "Rival",
     "RivalChess": "Rival",
+    "Rodent-V": "Rodent",
     "RomiChess P3L": "RomiChess",
     "Rusti-Rival": "Rusty-Rival",
     "Sargon 1978": "Sargon",
@@ -287,6 +291,15 @@
       "target": "Chaos (Quinniboi10)",
       "evidence_url": "https://github.com/Quinniboi10/Chaos",
       "note": "MattBench links Quinniboi10's modern engine; the wiki's CHAOS is the 1970s mainframe program."
+    },
+    {
+      "sources": [
+        "openbench-kaichung"
+      ],
+      "family": "Axiom",
+      "target": "Onslaught",
+      "evidence_url": "https://github.com/kachhy/Onslaught",
+      "note": "Kai Chung's instance links kachhy/Axiom, which GitHub redirects to kachhy/Onslaught (CCRL: Onslaught by Kai Chung); the existing Axiom is InternetHamburger's engine."
     }
   ],
   "lichess_accounts": {

@@ -38,6 +38,15 @@ MOVED = {
     "https://github.com/dsekercioglu/blackmarlin": "https://github.com/jnlt3/blackmarlin",
     "https://github.com/jeffreyan11/uci-chess-engine":
         "https://github.com/jeffreyan11/laser-chess-engine",
+    "https://github.com/kachhy/axiom": "https://github.com/kachhy/Onslaught",
+}
+# Reviewed variant-only engines (shatranj, atomic, crazyhouse, ...); the
+# catalog covers chess engines, so these sidebar entries are skipped.
+VARIANT_ONLY = {
+    "https://github.com/sscg13/prolix": "Shatranj engine",
+    "https://github.com/thetilted096/tilted-shatranj-engine": "Shatranj engine",
+    "https://github.com/sscg13/oranj": "Shatranj engine",
+    "https://github.com/sscg13/pzchessbot": "Shatranj fork of PZChessBot",
 }
 
 
@@ -52,7 +61,7 @@ def parse(text, page_url):
     for href, label in LINK.findall(match.group(1)):
         name = html.unescape(re.sub(r"<[^>]+>", "", label)).replace("\u2197", "").strip()
         project_url = html.unescape(href).strip().rstrip("/")
-        if not name or name.casefold() in seen:
+        if not name or name.casefold() in seen or project_url.casefold() in VARIANT_ONLY:
             continue
         seen.add(name.casefold())
         parts = urlsplit(project_url)
