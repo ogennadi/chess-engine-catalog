@@ -355,17 +355,17 @@ def authors(engine):
     """Author names recorded by the lists, as (name, [source ids]); duplicates in other word orders are merged."""
     found = []
     # Natural-order sources first: RWBC writes "Surname Given", which would otherwise be shown.
-    for source in ("wiki-engines", "computer-chess-org", "rwbc"):
+    for source in ("wiki-engines", "computer-chess-org", "lucas-chess", "rwbc"):
         for item in engine.get("provenance", []):
             if item.get("source") != source:
                 continue
             if source == "wiki-engines":
                 prefix = f"{item.get('listed_name', '')} by "
                 names = [item["label"][len(prefix):]] if item.get("label", "").startswith(prefix) else []
-            elif source == "computer-chess-org":
-                names = [item.get("author") or ""]
-            else:
+            elif source == "rwbc":
                 names = str(item.get("authors") or "").splitlines()
+            else:
+                names = [item.get("author") or ""]
             for value in names:
                 value = value.strip().strip("*").strip()
                 words = name_words(value)

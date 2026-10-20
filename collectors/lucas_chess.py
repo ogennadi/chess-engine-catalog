@@ -73,9 +73,11 @@ def definitions(text):
             if not isinstance(executable, str):
                 raise ValueError(f"No static engine name for {folder}")
             family = re.split(r"[-_]v?\d", executable, maxsplit=1, flags=re.I)[0]
+        author = constant(node.args[1])
         result[folder] = {
             "family": family, "label": key if isinstance(key, str) else folder,
             "homepage": constant(node.args[3]),
+            "author": author.strip() if isinstance(author, str) else "",
         }
     if not result:
         raise ValueError("Lucas Chess configuration contained no engine definitions")
@@ -134,6 +136,7 @@ def collect(fetch):
             "family": engine["family"], "label": engine["label"], "url": url,
             "listing_url": SOURCE_URL, "configuration_url": CONFIG_URL,
             "revision": REVISION, "directory": folder, "code_urls": code,
+            **({"author": engine["author"]} if engine["author"] else {}),
         })
     timestamps = [
         getattr(fetch, "checked_at", {}).get(url)

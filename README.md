@@ -54,7 +54,8 @@ refreshes collection or research. `dist/` is gitignored; only the generator
   "Source available" includes archived-only copies. Filters are kept in the URL
   (`?q=...&availability=available|archived|unavailable`) for bookmarking. Without
   JavaScript the full table is shown.
-* `families/*.html`: authors (from the CPW engine list, computer-chess.org and RWBC, with
+* `families/*.html`: authors (from the CPW engine list, computer-chess.org, the Lucas Chess
+  engine configuration and RWBC, with
   word-order duplicates merged), aliases, related families, source links (with licence and
   release scope where researched), provenance lists, Chess Programming Wiki link, research
   findings and evidence quotations, and open questions listed apart from reviewed decisions.

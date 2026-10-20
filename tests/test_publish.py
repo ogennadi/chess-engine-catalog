@@ -195,6 +195,9 @@ class PublishTests(unittest.TestCase):
         porter = {"provenance": [{"source": "rwbc", "authors": "Tridgel Andrew\n(Ablett Jim)"}]}
         self.assertEqual(publish.authors(porter), [("Tridgel Andrew", ["rwbc"])])
         self.assertEqual(publish.also_credited(porter), ["Ablett Jim"])
+        lucas = {"provenance": [{"source": "lucas-chess", "author": "Lucas Monge"},
+                                {"source": "computer-chess-org", "author": "Lucas Monge"}]}
+        self.assertEqual(publish.authors(lucas), [("Lucas Monge", ["computer-chess-org", "lucas-chess"])])
         alpha = self.family("alpha")
         self.assertLess(alpha.index("<dt>Author</dt>"), alpha.index("<dt>Source availability</dt>"))
         self.assertIn("Not recorded by the collected lists", alpha)

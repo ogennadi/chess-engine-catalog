@@ -37,13 +37,14 @@ mas("toga", "", "", "", "DeepToga1.9.6nps", 0)
         replies = {
             lucas.TREE_URL: json.dumps({"tree": [{"type": t, "path": p} for t, p in paths]}),
             lucas.RAW_URL + lucas.CONFIG_PATH:
-                'mas("amoeba", "", "2.6", "https://github.com/abulmo/amoeba", "Amoeba-2.6", 0)',
+                'mas("amoeba", "Richard Delorme", "2.6", "https://github.com/abulmo/amoeba", "Amoeba-2.6", 0)',
             lucas.RAW_URL + lucas.PREFIX + "amoeba/source.url":
                 "[InternetShortcut]\nURL=https://svn.example.org/chess/",
         }
         rows = lucas.collect(lambda url: replies[url])
         self.assertEqual(len(rows), 1)
         self.assertEqual(rows[0]["family"], "Amoeba")
+        self.assertEqual(rows[0]["author"], "Richard Delorme")
         self.assertEqual(rows[0]["revision"], lucas.REVISION)
         self.assertEqual(len(rows[0]["code_urls"]), 3)
         self.assertIn("https://svn.example.org/chess", [

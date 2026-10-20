@@ -421,6 +421,27 @@
       "related": "Chess 0.5",
       "note": "The Finnish Shy (Kasanen, Korhonen, Saari), written in Algol, is named by the wiki as one of the programs that originated from Chess 0.5.",
       "evidence_url": "https://chessprogramming.org/Chess_0.5"
+    },
+    {
+      "family": "Eguzki",
+      "relation": "derived_from",
+      "related": "Rodent",
+      "note": "Lucas Monge's weak engine (formerly Fox); its main.cpp says it is 'a minimal adaptation of Pawel Koziol's MiniRodent', the small version in Koziol's Rodent line.",
+      "evidence_url": "https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/eguzki/src.7z"
+    },
+    {
+      "family": "Eguzkilore",
+      "relation": "derived_from",
+      "related": "Rodent",
+      "note": "Lucas Monge's weaker engine (formerly FoxCub); its main.cpp describes it as a minimal adaptation of Pawel Koziol's MiniRodent. Separate from Eguzki: a different Lucas Chess engine with its own source archive.",
+      "evidence_url": "https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/eguzkilore/src.7z"
+    },
+    {
+      "family": "Irina",
+      "relation": "derived_from",
+      "related": "Winglet",
+      "note": "computer-chess.org describes Lucas Monge's Irina as 'C source; winglet derivative'.",
+      "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list"
     }
   ],
   "lichess_accounts": {
