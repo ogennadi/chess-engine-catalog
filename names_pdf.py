@@ -1,11 +1,12 @@
 """Write a compact, printable PDF listing every family whose source code is available.
 
-    python names_pdf.py [--out PATH] [--paper letter|a4] [--min-size PT]
+    python names_pdf.py [--out PATH] [--paper letter|a4] [--orientation portrait|landscape] [--min-size PT]
 
 Reads data/engines.json (run collect.py first). Families whose availability is linked,
-available, or archived_only are listed alphabetically under letter headings, in as many
-columns as fit. The largest font size (not below --min-size) that achieves the fewest
-pages is chosen. Uses only the standard library and the PDF base-14 Helvetica fonts,
+available, or archived_only are numbered and listed alphabetically under letter headings,
+in as many columns as fit (portrait pages by default). The default 16 pt minimum is about the
+smallest text that 20/20 vision can read from 9 feet; the largest size up to 4 pt above
+it that still gives the fewest pages is chosen. Uses only the standard library and the PDF base-14 Helvetica fonts,
 horizontally condensed. The output is generated, so it is gitignored.
 """
 
@@ -24,7 +25,7 @@ MARGIN = 18
 GUTTER = 6
 LEADING = 1.13
 CONDENSE = 85
-MAX_SIZE = 8.0
+SIZE_RANGE = 4.0
 DAGGER = "\u2020"
 
 # Helvetica and Helvetica-Bold advance widths (1/1000 em) for ASCII 32-126, from the Adobe AFM files.
@@ -88,7 +89,7 @@ def layout(rows, size, page_size, title_lines):
     numbers = number_width(rows, size)
 
     def capacity():
-        top = height - MARGIN - (title_lines * 11 if first_page else 0)
+        top = height - MARGIN - (title_height(size) if first_page else 0)
         return int((top - MARGIN) // line)
 
     def close_column():
@@ -114,14 +115,27 @@ def layout(rows, size, page_size, title_lines):
     return pages
 
 
-def choose(rows, page_size, min_size):
+def choose(rows, page_size, min_size, max_pages=None):
+    if max_pages:
+        # Largest size (in 0.25 pt steps) that still fits within the page limit.
+        size, best = min_size, None
+        while (pages := len(layout(rows, size, page_size, 2))) <= max_pages:
+            best = (size, pages)
+            size += 0.25
+        if best is None:
+            raise SystemExit(f"{min_size:g} pt needs more than {max_pages} pages; lower --min-size")
+        return best
     candidates = []
-    size = MAX_SIZE
+    size = min_size + SIZE_RANGE
     while size >= min_size - 1e-9:
         candidates.append((len(layout(rows, size, page_size, 2)), -size))
         size -= 0.25
     pages, negative = min(candidates)
     return -negative, pages
+
+
+def title_height(size):
+    return size * (1.3 + 1.0) * LEADING + size * 0.4
 
 
 def pdf_string(text):
@@ -140,14 +154,22 @@ def render(rows, count, size, page_size, out):
         parts = []
         top = height - MARGIN
         if number == 1:
-            title = f"Chess engines with available source code \u2014 {count} families"
+            title = f"Chess engines with available source code \u2014 {count:,} families"
             subtitle = (
                 f"Generated {date.today().isoformat()} from data/engines.json. "
                 f"{DAGGER} = archived copy only (e.g. Wayback Machine)."
             )
-            parts.append(b"BT /F2 9 Tf %.2f %.2f Td " % (MARGIN, top - 9) + pdf_string(title) + b" Tj ET")
-            parts.append(b"BT /F1 6.5 Tf %.2f %.2f Td " % (MARGIN, top - 19) + pdf_string(subtitle) + b" Tj ET")
-            top -= 22
+            # Shrink the title lines if needed so they fit the page width.
+            usable = width - 2 * MARGIN
+            big = size * 1.3
+            title_size = min(big, usable / (text_width(title, "F2", 1) * 100 / CONDENSE))
+            sub_size = min(size, usable / text_width(subtitle, "F1", 1))
+            parts.append(b"BT 100 Tz /F2 %.2f Tf %.2f %.2f Td " % (title_size, MARGIN, top - big) + pdf_string(title) + b" Tj ET")
+            parts.append(
+                b"BT %d Tz /F1 %.2f Tf %.2f %.2f Td " % (CONDENSE, sub_size, MARGIN, top - big * LEADING - size)
+                + pdf_string(subtitle) + b" Tj ET"
+            )
+            top -= title_height(size)
         for x, column in columns:
             parts.append(b"BT %d Tz" % CONDENSE)
             for i, (text, heading, index) in enumerate(column):
@@ -163,7 +185,7 @@ def render(rows, count, size, page_size, out):
             parts.append(b"ET")
         footer = f"{number} / {len(pages)}"
         parts.append(
-            b"BT /F1 6 Tf %.2f %.2f Td " % (width / 2 - text_width(footer, "F1", 6) / 2, MARGIN / 2 - 2)
+            b"BT %d Tz 0.45 g /F1 6 Tf %.2f %.2f Td " % (CONDENSE, width / 2 - text_width(footer, "F1", 6) / 2, MARGIN / 2 - 2)
             + pdf_string(footer) + b" Tj ET"
         )
         streams.append(zlib.compress(b"\n".join(parts)))
@@ -203,11 +225,17 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--out", type=Path, default=ROOT / "data" / "source-available-engines.pdf")
     parser.add_argument("--paper", choices=sorted(PAPER), default="letter")
-    parser.add_argument("--min-size", type=float, default=6.0, help="Smallest font size in points (default 6)")
+    parser.add_argument("--orientation", choices=["landscape", "portrait"], default="portrait")
+    parser.add_argument("--min-size", type=float, default=16.0, help="Smallest font size in points (default 16)")
+    parser.add_argument(
+        "--max-pages", type=int, default=15,
+        help="Use the largest font that fits in this many pages (default 15; 0 = fewest pages instead)",
+    )
     args = parser.parse_args()
     rows, count = entries()
-    page_size = PAPER[args.paper]
-    size, _ = choose(rows, page_size, args.min_size)
+    portrait = PAPER[args.paper]
+    page_size = portrait if args.orientation == "portrait" else (portrait[1], portrait[0])
+    size, _ = choose(rows, page_size, args.min_size, args.max_pages)
     pages = render(rows, count, size, page_size, args.out)
     print(f"Wrote {args.out} ({count} families, {pages} pages, {size:g} pt)")
 

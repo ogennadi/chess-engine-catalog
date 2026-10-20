@@ -34,6 +34,7 @@
     "GreenLightChess": "Green Light Chess",
     "GullChess": "Gull",
     "GyatsoChess": "Gyatso",
+    "Gödel": "Godel",
     "HokusPokus": "Hokus-Pokus",
     "Infraredv2": "Infrared",
     "JackyChess": "Jacky Chess",
@@ -66,6 +67,7 @@
     "Shallow2": "Shallow",
     "ShallowGuess": "Shallow Guess",
     "ShenYu": "Shen Yu",
+    "Sierzant": "Sierżant",
     "SilkeChess": "Silke Chess",
     "Sjaak II": "Sjaak (Glebbeek)",
     "SmallC": "Small-C",
@@ -346,6 +348,26 @@
       "target": "Axon (Sinclair)",
       "evidence_url": "https://chessprogramming.org/Axon",
       "note": "RWBC names Jasper Sinclair (2022-2024); the wiki's Axon is Vladan Vuckovic's 2001 assembly program."
+    },
+    {
+      "sources": [
+        "computer-chess-org",
+        "rwbc"
+      ],
+      "family": "Morphy",
+      "target": "Morphy (Walstra)",
+      "evidence_url": "https://www.chessprogramming.org/Morphy",
+      "note": "RWBC and computer-chess.org list Eric Walstra's WinBoard engine; the wiki's Morphy is John Aker's 1981 program for dedicated chess computers."
+    },
+    {
+      "sources": [
+        "computer-chess-org",
+        "rwbc"
+      ],
+      "family": "Jupiter",
+      "target": "Jupiter (Andersen)",
+      "evidence_url": "https://www.chessprogramming.org/Jupiter",
+      "note": "RWBC and computer-chess.org list Michael Andersen's WinBoard engine; the wiki's Jupiter is Javier Ros Padilla's 1993 Turbo Pascal program."
     }
   ],
   "lichess_accounts": {
