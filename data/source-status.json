@@ -355,10 +355,10 @@
    "checked_at": "2026-10-19T21:12:29+00:00"
   },
   "Aestra": {
-   "tier": "F",
+   "tier": "review",
    "licensing": "open_source",
    "availability": "available",
-   "confidence": "medium",
+   "confidence": "high",
    "source_urls": [
     {
      "url": "https://github.com/Iudwgerte1/aestra",
@@ -373,16 +373,29 @@
     },
     {
      "url": "https://raw.githubusercontent.com/Iudwgerte1/aestra/main/README.md",
-     "quote": "Aestra is a UCI-compliant chess engine written in C++17."
+     "quote": "Aestra is free software distributed under the terms of the GNU General Public License, version 3"
     },
     {
      "url": "https://raw.githubusercontent.com/Iudwgerte1/aestra/main/LICENSE",
      "quote": "GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007"
+    },
+    {
+     "url": "https://api.github.com/repos/Iudwgerte1/aestra/releases",
+     "quote": "2.1.0 (2026-08-19) assets Aestra-avx2.exe ...; 1.0.0 'The first release of Aestra! Estimated CCRL elo at 2106'"
+    },
+    {
+     "url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Aestra%202.1.0%2064-bit",
+     "quote": "Aestra 2.1.0 64-bit (3004 +41 -41) ... This is the only Aestra version we tested."
+    },
+    {
+     "url": "https://computerchess.org.uk/4040/index.html",
+     "quote": "Aestra 2.1.0 64-bit listed with CCRL open-source marker (span class=\"oss\")"
     }
    ],
-   "rationale": "Only Aestra chess engine found; GPL-3.0 repository. Dossier has no author to cross-check against CCRL, so confidence medium.",
+   "rationale": "The only Aestra chess engine repo (created July 2026) publishes release 2.1.0 with Windows binaries in August 2026, exactly the single version CCRL tested and flags as open source; release notes target CCRL. GPL-3.0 license inspected.",
+   "notes": "Review: checked repo dates/releases against the CCRL listing (version 2.1.0, CCRL open-source flag, release notes citing CCRL Elo); identity now supported, confidence raised medium -> high, status otherwise unchanged.",
    "searches": 1,
-   "checked_at": "2026-10-20T00:28:52+00:00"
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "AI Chess": {
    "tier": "E",
@@ -1307,6 +1320,36 @@
    "rationale": "Michel Gaillard's homepage says the release zips contain sources (no license stated), but the zips are gone and were never archived; the RWBC Mega folder could not be inspected.",
    "searches": 3,
    "checked_at": "2026-10-19T15:03:37+00:00"
+  },
+  "Axon": {
+   "tier": "review",
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "low",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/Axon",
+     "quote": "Axon (Geniss Axon), a chess engine by primary author Vladan Vučković ... written in compact 16-bit 8086 assembly"
+    },
+    {
+     "url": "https://arxiv.org/abs/cs/0406038",
+     "quote": "a machine language routine that implements our theoretical assumptions is attached. The routine is part of the Axon chess program"
+    },
+    {
+     "search": "GitHub repositories: axon chess",
+     "quote": "only unrelated 2025-2026 projects (nickandreey51-create/Axon, Skiddle-Labs/axon-engine Go engine)"
+    },
+    {
+     "search": "web: \"Axon\" chess engine Vladan Vučković source code assembly Geniss",
+     "quote": "only academic papers with code excerpts; no source release found"
+    }
+   ],
+   "rationale": "Vučković's Axon is described only in academic papers (which include isolated assembly routines, not the engine source); the author site chess.elfak.ni.ac.rs did not respond and no source release or repository was found.",
+   "notes": "Review: new family, researched from scratch (wiki Axon by Vladan Vučković, not Sinclair's RWBC Axon); no source located. Wayback check of chess.elfak.ni.ac.rs was not possible (archive.org returned 429/offline).",
+   "searches": 3,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "Axon (Sinclair)": {
    "tier": "B",
@@ -2443,28 +2486,42 @@
    "checked_at": "2026-10-19T21:35:58+00:00"
   },
   "Brutus": {
+   "tier": "review",
    "licensing": "unknown",
    "availability": "not_located",
    "confidence": "low",
-   "release_scope": "family",
+   "release_scope": "family (FPGA program 2000-2003, evolved into Hydra)",
    "source_urls": [],
    "evidence": [
     {
-     "url": "https://chessprogramming.org/Brutus",
-     "quote": "Wiki Brutus is Chrilly Donninger's FPGA program (precursor of Hydra)"
+     "url": "https://www.chessprogramming.org/Brutus",
+     "quote": "Brutus , a FPGA based chess entity developed by Chrilly Donninger , supported by Alex Kure and Ulf Lorenz"
+    },
+    {
+     "url": "https://www.chessprogramming.org/Brutus",
+     "quote": "ChessBase , surely interested in the commercial aspects of such a machine, engaged Chrilly Donninger"
+    },
+    {
+     "url": "https://www.chessprogramming.org/Brutus",
+     "quote": "Brutus' FPGA definition was written in the Verilog hardware description language"
     },
     {
      "url": "https://www.chessprogramming.org/Brutus_NL",
-     "quote": "CCRL/CEGT Brutus is Stephan Vermeire's WinBoard engine, catalogued separately as Brutus NL (already source-linked)"
+     "quote": "CCRL/CEGT Brutus is Stephan Vermeire's WinBoard engine, catalogued separately as Brutus NL"
+    },
+    {
+     "search": "GitHub repositories: brutus chess fpga",
+     "quote": "0 results"
+    },
+    {
+     "search": "Brutus FPGA chess Donninger Verilog source code published or released",
+     "quote": "only architecture descriptions and papers; unrelated student FPGA chess repos; no Brutus source"
     }
    ],
-   "rationale": "After the split, this family is Chrilly Donninger's FPGA Brutus (Hydra precursor); no source evidence was researched for it.",
-   "searches": 1,
-   "identity_note": "Homonym split: CCRL/CEGT Brutus moved to Brutus NL (already source-linked); Brutus is now only Donninger's FPGA program.",
-   "needs_review": true,
-   "checked_at": "2026-10-19T02:54:18+00:00",
-   "pilot_group": "random",
-   "tier": "pilot"
+   "rationale": "Identity is settled: this family is Donninger's ChessBase-sponsored FPGA machine (Hydra precursor); the WinBoard Brutus is the separate Brutus NL family. No Verilog or PC-side source was ever published as far as found; no explicit closed-source statement and no wiki Commercial category, so licensing stays unknown.",
+   "notes": "Review: Confirmed the homonym split (wiki page lists only Donninger's FPGA Brutus, no Commercial category) and searched GitHub/web for its Verilog or host source, finding none. Status unchanged; needs_review cleared because identity is resolved.",
+   "searches": 3,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "Brutus NL": {
    "tier": "B",
@@ -2797,7 +2854,7 @@
    "notes": "Reviewed with the user on 2026-10-20."
   },
   "Capture R1": {
-   "tier": "F",
+   "tier": "review",
    "licensing": "unknown",
    "availability": "not_located",
    "confidence": "low",
@@ -2808,19 +2865,34 @@
      "quote": "Capture R1 2172 18 18 1017 50.1%"
     },
     {
+     "url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/3061.html",
+     "quote": "Capture R1 -2172 1017 ... opponents Chess Tiger 14.0, Deep Fritz 6, Hiarcs 8, Gandalf 4.32, Amyan 1.597, Fruit 1.5"
+    },
+    {
+     "url": "http://www.chessica.de/winboard.html",
+     "quote": "Ungefähre Spielstärken von 150 Engines ... Amyan 1.43 Capture R1 WildCat 2.44 Bionic 4.01 Dragon 4.1"
+    },
+    {
      "url": "https://www.chessprogramming.org/Capture_(program)",
      "quote": "Capture, a Chess Engine Communication Protocol compatible chess program by Sylvain Renard"
     },
     {
-     "search": "\"Capture R1\" chess engine",
-     "quote": "no page specifically about 'Capture R1'; no source found"
+     "search": "GitHub repositories: capture chess engine winboard",
+     "quote": "0 results"
+    },
+    {
+     "search": "\"Capture R1\" winboard; \"Capture R1\" chess engine WinBoard Sylvain Renard download",
+     "quote": "no download, homepage or source release found"
+    },
+    {
+     "search": "Wayback CDX wbec-ridderkerk.nl/html/details1/Ca*",
+     "quote": "only Cassandre.html; no WBEC Capture page"
     }
    ],
-   "rationale": "Known only from a CEGT list entry; possibly Sylvain Renard's Capture, for which no source release is known.",
-   "identity_issue": "Link between CEGT 'Capture R1' and Sylvain Renard's Capture is not confirmed.",
-   "needs_review": true,
-   "searches": 1,
-   "checked_at": "2026-10-20T00:28:52+00:00"
+   "rationale": "Capture R1 was a WinBoard engine of about 2001 (Chessica's WinBoard list) and is most plausibly Sylvain Renard's CECP program Capture; no source, homepage or license statement was found for it under any identity.",
+   "notes": "Review: added Chessica (c. 2001 WinBoard engine list) and CEGT opponent-era evidence, which make Renard's Capture the likely identity; no source found under any candidate identity, so status is unchanged and the identity question no longer affects it (needs_review cleared).",
+   "searches": 5,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "Carnivor": {
    "tier": "B",
@@ -4528,6 +4600,7 @@
    "tier": "pilot"
   },
   "Chessmate": {
+   "tier": "review",
    "licensing": "unknown",
    "availability": "not_located",
    "confidence": "low",
@@ -4535,20 +4608,26 @@
    "source_urls": [],
    "evidence": [
     {
-     "url": "https://chessprogramming.org/Chessmate",
-     "quote": "Acorn Atom/Archimedes program in BASIC with inline 6502 assembly"
+     "url": "https://www.chessprogramming.org/Chessmate",
+     "quote": "Chessmate, a chess program by Wim van der Maaten written in BBC BASIC and inline Assembly, first for the 6502 processor of the Acorn Atom and later for the ARM processor of the Acorn Archimedes"
     },
     {
-     "url": "https://github.com/hoglet67/AtomSoftwareArchive",
-     "quote": "Community Atom software archive may contain the tape image (BASIC is listable); not inspected"
+     "url": "https://www.chessprogramming.org/Chessmate",
+     "quote": "Chessmate had its debut at the DOCCC 1985 ... DOCCC 1992 and DOCCC 1993 on the Archimedes"
+    },
+    {
+     "url": "https://api.github.com/repos/hoglet67/AtomSoftwareArchive/git/trees/HEAD?recursive=1",
+     "quote": "4028 entries; chess items are CHESSPP, Games3/CHESS, dave/BB/CHESSBB, dave/PP/CHESS only - no Chessmate or van der Maaten"
+    },
+    {
+     "search": "web: \"Chessmate\" \"van der Maaten\" Acorn Atom OR Archimedes chess program",
+     "quote": "only the CPW page; no published copy or download"
     }
    ],
-   "rationale": "Interpreted BASIC ships as source inside tape images, but no copy was inspected and licensing is unknown.",
-   "searches": 1,
-   "needs_review": true,
-   "checked_at": "2026-10-19T02:54:18+00:00",
-   "pilot_group": "random",
-   "tier": "pilot"
+   "rationale": "Identity is clear (Wim van der Maaten's Dutch tournament program), but there is no evidence it was ever distributed; the Atom software archive does not contain it, so no source (BASIC listing) was located.",
+   "notes": "Review: confirmed identity via CPW and checked the full Atom software archive tree (no Chessmate); the earlier tape-image lead is unfounded, so the archive URL was dropped and needs_review cleared. Status unchanged.",
+   "searches": 3,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "ChessOne": {
    "tier": "B",
@@ -7690,28 +7769,44 @@
    "checked_at": "2026-10-19T21:49:05+00:00"
   },
   "Duchess": {
-   "licensing": "unknown",
+   "tier": "review",
+   "licensing": "source_available",
    "availability": "available",
-   "confidence": "low",
-   "release_scope": "6.12.03 (1981-02-15) distribution tape",
-   "needs_review": "Confirm the tape image contains source (installation job suggests compile-from-source).",
+   "confidence": "high",
+   "release_scope": "Duchess 6.12.03 (1981-02-15) distribution tape, incl. DUCHESS6.SOURCE and MACLIB",
    "source_urls": [
     {
-     "url": "https://www.prycroft6.com.au/vs2sw/index.html",
-     "kind": "MVS 3.8 software archive listing 'DUCHESS - Chess computer program from Duke University'"
+     "url": "https://www.prycroft6.com.au/vs2sw/download/duchess6.zip",
+     "kind": "AWS tape image of the Duchess distribution tape supplied by co-author Eric Jensen (Prycroft Six MVS archive)",
+     "license": "Copyright Duke University 1978; permission to copy, not for profit"
     }
    ],
    "evidence": [
     {
      "url": "https://www.prycroft6.com.au/vs2sw/index.html",
-     "quote": "DUCHESS - Chess computer program from Duke University."
+     "quote": "The zip file contains an AWS tape image of the Duchess distribution tape kindly supplied by Eric Jensen"
+    },
+    {
+     "url": "https://www.prycroft6.com.au/vs2sw/index.html",
+     "quote": "If you choose to reassemble Duchess and use HLASM for the task"
+    },
+    {
+     "source": "inspected duchess6.zip tape image (EBCDIC)",
+     "quote": "datasets DUCHESS6.SOURCE, DUCHESS6.MACLIB ... TITLE 'SEARCH -- ALPHA-BETA SEARCH ROUTINE'"
+    },
+    {
+     "source": "inspected duchess6.zip tape image (EBCDIC)",
+     "quote": "Written at Duke University by: Tom Truscott ... Bruce Wright ... Eric Jensen"
+    },
+    {
+     "source": "inspected duchess6.zip tape image (EBCDIC)",
+     "quote": "Copyright Duke University 1978. General permission to copy, but not for profit, all or part of this material is granted"
     }
    ],
-   "rationale": "Distribution tape supplied by co-author Eric Jensen is archived; contents not inspected in pilot.",
-   "searches": 2,
-   "checked_at": "2026-10-19T02:49:49+00:00",
-   "pilot_group": "historical",
-   "tier": "pilot"
+   "rationale": "The archived distribution tape contains the System/370 assembler source of Duchess (SOURCE and MACLIB datasets with the alpha-beta search routine), provided by co-author Eric Jensen. Its Duke University notice allows copying only not-for-profit, so source_available rather than open_source.",
+   "notes": "Review: Downloaded and decoded the tape image; confirmed it contains the assembler source and a Duke non-commercial copy permission. Changed licensing unknown -> source_available and confidence low -> high; needs_review cleared.",
+   "searches": 1,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "Duck": {
    "tier": "E",
@@ -9040,19 +9135,32 @@
    "checked_at": "2026-10-19T21:49:41+00:00"
   },
   "Expositor": {
-   "tier": "B",
+   "tier": "review",
    "licensing": "open_source",
-   "availability": "archived_only",
-   "confidence": "medium",
-   "release_scope": "GitHub repo expo-dev/expositor (releases 2WN29, 2BR17, 4WR02); repo deleted by late 2025",
+   "availability": "available",
+   "confidence": "high",
+   "release_scope": "4WR02 full source tree (expositor-4WR02/) in the RWBC-linked e4e6.com package; author's GitHub repo expo-dev/expositor (releases 2WN29, 2BR17, 4WR02) deleted by late 2025",
    "source_urls": [
     {
+     "url": "https://e4e6.com/download/Expositor%204WR02.rar",
+     "kind": "third-party download of 4WR02 release including full source tree (216 MB RAR)",
+     "license": "AGPL-3.0"
+    },
+    {
      "url": "http://web.archive.org/web/20240309131253/https://github.com/expo-dev/expositor",
-     "kind": "Wayback snapshot of original repository (partial: only some src/*.rs file pages archived)",
+     "kind": "Wayback snapshot of original repository (partial)",
      "license": "AGPL-3.0"
     }
    ],
    "evidence": [
+    {
+     "source": "dossier: RWBC Src=yes (author Kade)",
+     "quote": "web: https://expositor.dev/ https://e4e6.com/download/Expositor%204WR02.rar"
+    },
+    {
+     "url": "https://e4e6.com/download/Expositor%204WR02.rar",
+     "quote": "RAR listing (via HTTP range reads): Expositor 4WR02/expositor-4WR02/Cargo.toml, license (34524 bytes), readme.md, src/main.rs, src/search.rs, src/nnue.rs, src/movegen.rs ... plus amd/*.exe binaries"
+    },
     {
      "url": "http://web.archive.org/web/20240309131253id_/https://github.com/expo-dev/expositor",
      "quote": "expo-dev / expositor ... UCI chess engine expositor.dev License AGPL-3.0 license"
@@ -9062,23 +9170,18 @@
      "quote": "20240309 200; 20251207 404; 20260226 404"
     },
     {
-     "search": "Wayback CDX prefix github.com/expo-dev/expositor/",
-     "quote": "archived blob pages: src/movegen.rs, nnue.rs, resolve.rs, tablebase.rs, training.rs, uci.rs, util.rs"
-    },
-    {
-     "url": "https://expositor.dev/",
-     "quote": "redirects to typ.dev ('Corrigenda'); no source link"
+     "url": "https://api.github.com/repos/expo-dev/expositor",
+     "quote": "HTTP 404 (repository still deleted, 2026-10)"
     },
     {
      "search": "GitHub repositories: expositor chess / expositor language:Rust; code search for README text",
      "quote": "no fork or mirror found"
     }
    ],
-   "rationale": "Author's GitHub repo was AGPL-3.0 (seen on archived page) but now returns 404; only a partial set of source file pages survives in Wayback and no mirror was found.",
-   "needs_review": true,
-   "identity_issue": "Not an identity problem: the archived copy is incomplete (no full snapshot or source tarball found), so archived_only may overstate availability.",
+   "rationale": "The author's GitHub repository (AGPL-3.0) is gone, but the RWBC-linked 4WR02 package on e4e6.com still downloads and contains the complete Rust source tree with its license file, so source is available now.",
+   "notes": "Review: walked the RWBC-linked e4e6.com RAR headers and found the full expositor-4WR02 source tree (Cargo.toml, src/*.rs, license), so availability changes archived_only -> available and confidence medium -> high; needs_review cleared. The 34524-byte license file matches the AGPL-3.0 text length but its text was not extracted.",
    "searches": 5,
-   "checked_at": "2026-10-19T16:03:32+00:00"
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "Fafis": {
    "tier": "E",
@@ -9705,31 +9808,48 @@
    "checked_at": "2026-10-19T05:36:46+00:00"
   },
   "Fischer-Chess": {
-   "licensing": "unknown",
-   "availability": "released_not_located",
-   "confidence": "low",
-   "release_scope": "family",
-   "source_urls": [],
-   "evidence": [
+   "tier": "review",
+   "licensing": "open_source",
+   "availability": "archived_only",
+   "confidence": "high",
+   "release_scope": "family (Google Code git trunk, C++)",
+   "source_urls": [
     {
-     "source": "RWBC",
-     "quote": "Src = yes; author Atul S. Vasu"
-    },
-    {
-     "url": "https://talkchess.com/viewtopic.php?t=60157",
-     "quote": "Search summary says this thread describes open-source C++ code (not verified first-hand)"
-    },
-    {
-     "search": "web: Fischer-Chess engine Atul Vasu source code",
-     "quote": "no repository on GitHub or other forges"
+     "url": "https://storage.googleapis.com/google-code-archive-source/v2/code.google.com/fischer-chess/source-archive.zip",
+     "kind": "Google Code Archive snapshot of the author's project (code.google.com/p/fischer-chess)",
+     "license": "GPL-2.0-or-later (source headers); project metadata lists Apache-2.0"
     }
    ],
-   "rationale": "Source reportedly released, but no copy or license located.",
-   "searches": 1,
-   "needs_review": true,
-   "checked_at": "2026-10-19T02:54:18+00:00",
-   "pilot_group": "random",
-   "tier": "pilot"
+   "evidence": [
+    {
+     "source": "dossier: RWBC Src=yes, author Vasu Atul S.",
+     "quote": "web: http://code.google.com/p/fischer-chess/"
+    },
+    {
+     "source": "dossier: computer-chess.org comment",
+     "quote": "C++ source; buggy engine; Mac64, Win"
+    },
+    {
+     "url": "https://storage.googleapis.com/google-code-archive/v2/code.google.com/fischer-chess/project.json",
+     "quote": "\"name\":\"fischer-chess\",\"summary\":\"Chess Engine\" ... \"license\":\"asf20\" ... \"hasSource\":true"
+    },
+    {
+     "url": "https://storage.googleapis.com/google-code-archive-source/v2/code.google.com/fischer-chess/source-archive.zip",
+     "quote": "trunk/src/engine.h: Copyright (C) 2005 Atul S. Vasu ... GNU General Public License ... either version 2 of the License, or (at your option) any later version"
+    },
+    {
+     "url": "https://drive.google.com/drive/folders/0B9voFYjJVtn_YTBqZHlLYzU4X3M",
+     "quote": "Google Drive: Sign-in (folder no longer public)"
+    },
+    {
+     "search": "GitHub repositories: fischer chess vasu",
+     "quote": "0 results"
+    }
+   ],
+   "rationale": "The RWBC-linked Google Code project by Atul S. Vasu survives in the Google Code Archive with full C++ source whose headers carry a GPL-2.0-or-later notice by the author; the live hosts (Google Code, Drive folder) are gone, so archived_only.",
+   "notes": "Review: located and inspected the Google Code Archive source zip (133 entries, author copyright + GPL headers), resolving the earlier unverified report; changed unknown/released_not_located/low to open_source/archived_only/high and cleared needs_review.",
+   "searches": 2,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "Fischer-Schneider": {
    "tier": "E",
@@ -9872,11 +9992,11 @@
    "checked_at": "2026-10-20T01:10:41+00:00"
   },
   "Fornax": {
-   "tier": "B",
+   "tier": "review",
    "licensing": "source_available",
    "availability": "archived_only",
    "confidence": "high",
-   "release_scope": "Source published for v1.2, v3.0 and v4.0 on the author's site",
+   "release_scope": "Source published for v1.x, v3.0 and v4.0 on the author's site (v3.0/v4.0 trees archived)",
    "source_urls": [
     {
      "url": "https://web.archive.org/web/20221208052938/https://desert-flashgun.com/sourcecode/fornax-v4-0",
@@ -9885,7 +10005,7 @@
     },
     {
      "url": "https://desert-flashgun.com/api/public/file/chess/fornax-v4-0.zip",
-     "kind": "author download (zip) - live site returned HTTP 521 on 2026-10-19; zip not in Wayback",
+     "kind": "author download (zip) - live site still HTTP 521 on 2026-10-20; zip never captured by Wayback",
      "license": "none stated"
     }
    ],
@@ -9899,22 +10019,26 @@
      "quote": "Fornax chess engine v4.0 by Anders ... LICENSE Binaries may be used and redistributed freely."
     },
     {
-     "source": "Wayback CDX for desert-flashgun.com/sourcecode/",
-     "quote": "fornax-v3-0 and fornax-v4-0 source files (src/eval/eval.cpp, makefile, README.txt) archived with status 200"
+     "url": "https://biokirr.com/Chess/CCRL-Forum/viewtopic.php?f=7&t=12558",
+     "quote": "I have not given it an open source license (yet). But it is free to use and the source code is available for perusing."
     },
     {
-     "source": "live check of https://desert-flashgun.com/fornax/versions",
+     "source": "Wayback CDX for desert-flashgun.com (matchType=domain), 2026-10-20",
+     "quote": "sourcecode/fornax-v3-0 and fornax-v4-0 files (src/eval/eval.cpp, src/search/search.cpp, makefile, README.txt) archived with status 200; no /api/ or .zip URLs captured"
+    },
+    {
+     "source": "live check of https://desert-flashgun.com/fornax/versions and the v4.0 zip URL, 2026-10-20",
      "quote": "HTTP/1.1 521"
     },
     {
-     "search": "GitHub repositories: fornax chess",
+     "search": "GitHub repositories: fornax chess; fornax engine uci",
      "quote": "0 results"
     }
    ],
-   "rationale": "Author Anders Fuglseth published C++ source on desert-flashgun.com; README license covers only binaries, so source_available. Site currently down (521), source files browsable via Wayback.",
-   "notes": "Live site may be temporarily down; re-check desert-flashgun.com later.",
-   "searches": 2,
-   "checked_at": "2026-10-19T16:26:46+00:00"
+   "rationale": "Author Anders Fuglseth published the C/C++ source on desert-flashgun.com and stated on the CCRL forum that it has no open-source license but is available for perusing, so source_available. The site is still down (521) and the zip was never archived; the v3.0/v4.0 source trees remain browsable file-by-file in the Wayback Machine.",
+   "notes": "Review: Rechecked the live site (still HTTP 521) and the full Wayback CDX for the domain (no zip captured); added the author's CCRL-forum license statement. Status unchanged. The RWBC-linked Proton Drive share (drive.proton.me/urls/9TRAQG8SXC) responds but its contents could not be inspected without JavaScript.",
+   "searches": 4,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "FrancescaMAD": {
    "tier": "F",
@@ -11603,10 +11727,11 @@
    "checked_at": "2026-10-19T22:05:28+00:00"
   },
   "Happy-Chess": {
-   "tier": "E",
+   "tier": "review",
    "licensing": "unknown",
    "availability": "not_located",
-   "confidence": "low",
+   "confidence": "medium",
+   "release_scope": "C64 type-in listing, Happy Computer 02/1988 (packed machine code entered with the MSE checksummer)",
    "source_urls": [],
    "evidence": [
     {
@@ -11614,15 +11739,22 @@
      "quote": "gab es als Programmlisting in der Computerzeitschrift Happy Computer Ausgabe 02/1988 als Listing zum Abtippen"
     },
     {
-     "url": "https://archive.org/metadata/happycomputer-magazine-1988-02",
-     "quote": "no such item (only other 1988 issues found on archive.org)"
+     "url": "https://archive.org/download/Happy.Computer.N52.1988.02-Cartman/Happy.Computer.N52.1988.02-Cartman_djvu.txt",
+     "quote": "Das Programm liegt in gepackter Version vor ... Es muß mit dem MSE eingegeben werden und wird mit »Run« automatisch entpackt"
+    },
+    {
+     "url": "https://archive.org/download/Happy.Computer.N52.1988.02-Cartman/Happy.Computer.N52.1988.02-Cartman_djvu.txt",
+     "quote": "Happy-Chess von Thomas Starke ... Sprache: Assembler ... Länge in Byte 6195 ... Programm muß nach dem Starten erst entpackt werden"
+    },
+    {
+     "search": "archive.org advancedsearch: identifier happy* 1988",
+     "quote": "Happy.Computer.N52.1988.02-Cartman (scan with OCR text) found"
     }
    ],
-   "rationale": "C64 6502 program by Thomas Starke published as a type-in listing in Happy Computer 02/1988 and on game-collection disks. Machine-language type-in listings of that era were usually hex dumps rather than assembly source; the issue scan was not located, so source status is unconfirmed.",
-   "needs_review": true,
-   "notes": "If a scan of Happy Computer 02/1988 is found, check whether the listing is assembly source or a hex/MSE dump.",
-   "searches": 2,
-   "checked_at": "2026-10-19T22:05:28+00:00"
+   "rationale": "The Happy Computer 02/1988 scan shows the published listing was a packed 6195-byte machine-code program to be typed in with the MSE checksum loader, not assembly source; no source release by Thomas Starke was found, and no license statement exists.",
+   "notes": "Review: located the Happy Computer 02/1988 scan on archive.org; the listing is a packed MSE machine-code dump (not source), so the open question is resolved. Status unchanged (unknown/not_located), confidence low -> medium, needs_review cleared.",
+   "searches": 4,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "HeavyChess": {
    "tier": "A",
@@ -12296,7 +12428,7 @@
    "checked_at": "2026-10-19T22:05:28+00:00"
   },
   "Igorrit": {
-   "tier": "A",
+   "tier": "review",
    "licensing": "source_available",
    "availability": "available",
    "confidence": "medium",
@@ -12305,7 +12437,7 @@
     {
      "url": "https://github.com/FireFather/igorrit",
      "kind": "third-party mirror",
-     "license": "none stated"
+     "license": "none stated (UCI id string claims PUBLICDOMAIN)"
     }
    ],
    "evidence": [
@@ -12318,15 +12450,26 @@
      "quote": "#define EPONYM \"Igorrit\""
     },
     {
+     "url": "https://raw.githubusercontent.com/FireFather/igorrit/main/src/ingresso.c",
+     "quote": "id copyright Yakov Petrovich Golyadkin, 92th plus 93th year from Revolution, PUBLICDOMAIN (workers)"
+    },
+    {
      "source": "dossier: CPW categories Open Source/Derivative",
      "quote": "an UCI compliant open source chess engine and third incarnation of the Ippolit and RobboLito series"
+    },
+    {
+     "url": "http://digilander.libero.it/taioscacchi/programmi/robbolito-p.html",
+     "quote": "dead; redirects to the libero.it homepage"
+    },
+    {
+     "search": "GitHub repositories: igorrit",
+     "quote": "only FireFather/igorrit is a chess engine"
     }
    ],
-   "rationale": "Igorrit source (Ippolit/RobboLito series) is available on a GitHub mirror; it was published anonymously without a license file.",
-   "needs_review": true,
-   "notes": "Anonymous authors; the Ippolit family's provenance and rights holder are disputed (alleged Rybka derivation), so licensing is uncertain.",
-   "searches": 1,
-   "checked_at": "2026-10-19T05:36:46+00:00"
+   "rationale": "Igorrit source is available via FireFather's mirror. The only rights statement is a pseudonymous 'PUBLICDOMAIN' UCI string with no LICENSE file, and the Ippolit family's authorship is anonymous and disputed, so it cannot be confirmed as a rights-holder dedication: source_available.",
+   "notes": "Review: inspected the mirror's README and sources (no LICENSE; pseudonymous PUBLICDOMAIN claim in ingresso.c) and found the original taioscacchi host dead; classification unchanged (source_available/available/medium), needs_review cleared because the provenance question is a policy matter that this evidence cannot settle further.",
+   "searches": 2,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "iiChess": {
    "tier": "B",
@@ -13473,34 +13616,50 @@
    "checked_at": "2026-10-19T20:28:15+00:00"
   },
   "KasparovChess": {
-   "tier": "B",
-   "licensing": "unknown",
-   "availability": "not_located",
-   "confidence": "low",
+   "tier": "review",
+   "licensing": "open_source",
+   "availability": "released_not_located",
+   "confidence": "medium",
+   "release_scope": "Eric Liu's Java UCI engine, GitHub repo eliucs/kasparov(-chess-ai), 71 commits by June 2018; repository since removed",
    "source_urls": [],
    "evidence": [
     {
+     "source": "dossier: computer-chess.org comment",
+     "quote": "Kasparov, Eric Liu: Java source; cross-platform jar file (links github.com/eliucs/kasparov and the Drive jar)"
+    },
+    {
      "source": "dossier: RWBC Src=yes",
      "quote": "KasparovChess, Liu Eric, src yes, dist free"
+    },
+    {
+     "source": "Wayback snapshot of https://github.com/eliucs/kasparov (20251117172600)",
+     "quote": "301 -> https://github.com/ericyhliu/kasparov-chess-ai"
+    },
+    {
+     "url": "https://web.archive.org/web/20180617163313/https://github.com/eliucs/kasparov-chess-ai",
+     "quote": "kasparov-chess-ai: UCI compatible chess AI built in Java ... 71 commits ... MIT Java 100.0% ... src/main/ java .gitignore .travis.yml LICENSE README.md pom.xml"
+    },
+    {
+     "source": "GitHub API, 2026-10-20",
+     "quote": "repos/eliucs/kasparov and repos/ericyhliu/kasparov-chess-ai: 404 Not Found; user ericyhliu has 2 public repos (atom, ericyhliu)"
+    },
+    {
+     "source": "Wayback CDX for github.com/eliucs/kasparov-chess-ai/ and raw.githubusercontent.com/eliucs/kasparov",
+     "quote": "only the repository landing page and tree-commit fragment archived; no source files"
     },
     {
      "url": "https://drive.google.com/open?id=1SgjMCfuft4PMIJee_BFAF8jKoy1yiIvb",
      "quote": "KasparovChess-1.0.0.jar.7z - Google Drive (jar contains only kasparov/*.class files, no .java sources)"
     },
     {
-     "url": "https://talkchess.com/viewtopic.php?t=84676",
-     "quote": "KasparovChess is a strong UCI chess engine derived from LazySMP 9.0 (different author/program)"
-    },
-    {
-     "search": "GitHub repositories: KasparovChess; kasparov chess engine language:Java; code \"package kasparov\" PVTable",
-     "quote": "no matching repository by Eric Liu"
+     "search": "GitHub repositories: kasparov chess engine java; kasparov in:name language:Java; kasparov-chess-ai",
+     "quote": "no copy or fork of eliucs/kasparov-chess-ai"
     }
    ],
-   "rationale": "RWBC flags source available, but the RWBC-linked download is a compiled Java jar without sources and no repository by Eric Liu was found. A 2024 TalkChess 'KasparovChess' by LazySMP is a different program.",
-   "needs_review": true,
-   "identity_issue": "Name collides with a 2024 LazySMP-derived engine and the KasparovChess Android app; RWBC src=yes not substantiated.",
-   "searches": 4,
-   "checked_at": "2026-10-19T16:50:00+00:00"
+   "rationale": "Identity resolved: computer-chess.org ties Eric Liu's 'Kasparov' to github.com/eliucs/kasparov, which redirects to the renamed account's kasparov-chess-ai, an MIT-licensed Java UCI engine (2018). The repository is now gone, and the Wayback Machine holds only its landing page, not the source files, so the source was released but no copy was located.",
+   "notes": "Review: Followed the computer-chess.org GitHub link through Wayback to the renamed repo ericyhliu/kasparov-chess-ai (MIT, Java UCI engine), which resolves identity; the 2024 LazySMP-derived KasparovChess and the Android app are different programs. Changed licensing unknown -> open_source (license shown on the archived repo page; LICENSE text not seen), availability not_located -> released_not_located, confidence low -> medium; needs_review cleared. Software Heritage may hold a copy but its anti-bot check blocked the lookup.",
+   "searches": 7,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "KasparovX": {
    "tier": "F",
@@ -14245,15 +14404,36 @@
    "checked_at": "2026-10-19T05:36:46+00:00"
   },
   "Latista": {
-   "tier": "F",
+   "tier": "review",
    "licensing": "unknown",
    "availability": "not_located",
-   "confidence": "low",
+   "confidence": "medium",
+   "release_scope": "Latista 1.2-1.5 (2005-2006) Windows binaries; renamed Sinobyl in 2008",
    "source_urls": [],
    "evidence": [
     {
      "url": "https://www.chessprogramming.org/Sinobyl",
      "quote": "Sinobyl , initially called Latista and in 2008 renamed to Sinobyl due to trademark issues"
+    },
+    {
+     "search": "Wayback CDX oldre.com/chess/*",
+     "quote": "latista/ page (2005); download/Latista120.zip, Latista130.zip, Latista140.zip, Latista150.zip, egbb.zip (2006); sinobyl/ page (2008)"
+    },
+    {
+     "url": "https://web.archive.org/web/20050206062152id_/http://oldre.com:80/chess/latista/",
+     "quote": "The Latista Chess Engine A chess program written by Eric Oldre. License Latista is free for personal use. Download Latista 1.2.0"
+    },
+    {
+     "url": "https://web.archive.org/web/20060721135735id_/http://www.oldre.com:80/chess/latista/download/Latista150.zip",
+     "quote": "contents: latista.book, Latista.exe, latista.ini, Latista.jpg, Readme.txt, Latista.bmp (no source files)"
+    },
+    {
+     "url": "https://web.archive.org/web/20060715081739id_/http://www.oldre.com:80/chess/latista/download/Latista120.zip",
+     "quote": "contents: Readme.txt, Latista.exe, Latista.jpg (no source files)"
+    },
+    {
+     "url": "https://web.archive.org/web/20081203113326id_/http://www.oldre.com:80/chess/sinobyl/",
+     "quote": "Sinobyl is free for personal use. Download Sinobyl 1.5 ... Sinobyl 1.4 ... End-game bitbase files"
     },
     {
      "url": "http://www.talkchess.com/forum/viewtopic.php?t=52700",
@@ -14264,11 +14444,10 @@
      "quote": "only NoraGrace-Chess (C# successor) and an unrelated repo"
     }
    ],
-   "rationale": "Eric Oldre's C++ engine (later Sinobyl); no Latista/Sinobyl C++ source located. NoraGrace (open source C#) is a successor and not counted.",
-   "notes": "CPW cites an Assembla SVN 'trunk/Sinobyl' (C# port leading to NoraGrace), now offline. Wayback CDX/availability lookups for oldre.com/chess/latista failed (archive offline / HTTP 429).",
-   "needs_review": true,
+   "rationale": "Eric Oldre's archived Latista/Sinobyl pages offer only binary packages under a 'free for personal use' license, and the archived 1.2 and 1.5 zips contain no source. NoraGrace (open-source C#) is a successor and not counted. No explicit closed-source statement, so licensing stays unknown.",
+   "notes": "Review: Wayback lookups now succeeded; the author's archived pages and Latista 1.2/1.5 zips are binary-only ('free for personal use'), confirming no Latista source release. Status unchanged (unknown/not_located), confidence low -> medium, needs_review cleared.",
    "searches": 3,
-   "checked_at": "2026-10-20T01:13:32+00:00"
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "LazySMP": {
    "tier": "F",
@@ -14929,10 +15108,11 @@
    "checked_at": "2026-10-20T01:13:32+00:00"
   },
   "LunaChess": {
-   "tier": "F",
+   "tier": "review",
    "licensing": "open_source",
    "availability": "available",
-   "confidence": "medium",
+   "confidence": "high",
+   "release_scope": "family (0.4.0 at tag luna_0.4; later versions renamed Luna)",
    "source_urls": [
     {
      "url": "https://github.com/Mergener/lunachess",
@@ -14942,21 +15122,34 @@
    ],
    "evidence": [
     {
-     "url": "https://github.com/Mergener/lunachess",
-     "quote": "A UCI chess engine."
+     "url": "https://raw.githubusercontent.com/Mergener/lunachess/luna_0.4/src/lunacli/uci.cpp",
+     "quote": "std::cout << \"id name LunaChess\" ... \"id author Thomas Mergener\""
     },
     {
-     "url": "https://api.github.com/repos/Mergener/lunachess/tags",
-     "quote": "luna_2.0.0, luna_1.1, luna_1.0, luna_0.4, luna_0.1"
+     "url": "https://raw.githubusercontent.com/Mergener/lunachess/luna_0.4/CMakeLists.txt",
+     "quote": "set(LUNA_VERSION_MAJOR \"0\") set(LUNA_VERSION_MINOR \"4\") set(LUNA_VERSION_PATCH \"0\")"
+    },
+    {
+     "url": "https://api.github.com/repos/Mergener/lunachess/commits/luna_0.4",
+     "quote": "2023-07-07T22:40:00Z Luna 0.4.0"
     },
     {
      "url": "https://raw.githubusercontent.com/Mergener/lunachess/main/LICENSE.md",
      "quote": "MIT License Copyright (c) 2023 Thomas Mergener"
+    },
+    {
+     "url": "https://e4e6.com/ubc_ratings.php",
+     "quote": "Engines in LunaChess family ... 582. 2154 LunaChess 0.4.0 AB"
+    },
+    {
+     "search": "GitHub repositories: lunachess; luna chess engine",
+     "quote": "other Luna/lunachess repos (oriyonay, lipeeeee RL engine, bylyztg 2026 v1.0.0 downloads) do not match a 0.4.0 UCI engine named LunaChess"
     }
    ],
-   "rationale": "Thomas Mergener's lunachess repo has a luna_0.4 tag matching 'LunaChess 0.4.0'; MIT license. Identity inferred from name/version (no author in dossier).",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:13:32+00:00"
+   "rationale": "At tag luna_0.4 (commit 'Luna 0.4.0', July 2023) Mergener's engine identifies itself over UCI as 'LunaChess', version 0.4.0, matching the UBC label; the repo carries an MIT license.",
+   "notes": "Review: identity confirmed through the UCI id string and version at the luna_0.4 tag, so confidence rose from medium to high; status otherwise unchanged. UBC lists 'Luna 2.0.0 avx2' as a separate 'Luna' family, which is the later version of this same repository.",
+   "searches": 3,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "Luzhin": {
    "tier": "B",
@@ -15122,10 +15315,11 @@
    "checked_at": "2026-10-19T16:50:00+00:00"
   },
   "Maestro": {
-   "tier": "F",
+   "tier": "review",
    "licensing": "open_source",
    "availability": "available",
-   "confidence": "medium",
+   "confidence": "high",
+   "release_scope": "family; catalogued label is the Jim Ablett compile of v1.2.1 (Dec 2024)",
    "source_urls": [
     {
      "url": "https://github.com/Hin-Yu-Evan-Fung/Maestro-Chess-Engine",
@@ -15135,21 +15329,30 @@
    ],
    "evidence": [
     {
+     "url": "https://chessengines.blogspot.com/2024/12/maestro-chess-engine-121-ja-strong-uci.html",
+     "quote": "Maestro Chess Engine - strong UCI chess engine that uses Stockfish NNUE Author: Evan Fung v.1.2.1: Added support for CPUS that don't have the PEXT instruction Jim Ablett compiles"
+    },
+    {
      "url": "https://github.com/Hin-Yu-Evan-Fung/Maestro-Chess-Engine",
      "quote": "A strong UCI chess engine that uses Stockfish NNUE"
     },
     {
-     "url": "https://api.github.com/repos/Hin-Yu-Evan-Fung/Maestro-Chess-Engine/tags",
-     "quote": "V1.3, V1.2.1, V1.2, V1.1, V1.0, V1.0-HCE"
+     "url": "https://github.com/Hin-Yu-Evan-Fung/Maestro-Chess-Engine/releases/tag/V1.2.1",
+     "quote": "Version 1.2.1 of the Maestro Chess Engine (2024-12-03) - Added support for CPUS that don't have the PEXT instruction"
     },
     {
-     "url": "https://api.github.com/repos/Hin-Yu-Evan-Fung/Maestro-Chess-Engine",
-     "quote": "license spdx_id: GPL-3.0"
+     "url": "https://raw.githubusercontent.com/Hin-Yu-Evan-Fung/Maestro-Chess-Engine/main/LICENSE",
+     "quote": "GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007"
+    },
+    {
+     "url": "https://chessengines.blogspot.com/2024/12/maestro-121-ja-wins-group-e-20-amateur.html",
+     "quote": "The winner was the Maestro 1.2.1 JA engine"
     }
    ],
-   "rationale": "Repository has a V1.2.1 tag matching 'Maestro 1.2.1 JA' (JA = Jim Ablett compile of public source); GPL-3.0 per GitHub license detection.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:13:32+00:00"
+   "rationale": "Chess Engines Diary (the catalogue source) names the author Evan Fung, uses the repository's exact tagline, and quotes the v1.2.1 release note verbatim; the repository Hin-Yu-Evan-Fung/Maestro-Chess-Engine carries a GPL-3.0 LICENSE.",
+   "notes": "Review: Confirmed identity via the Chess Engines Diary post for 'Maestro Chess Engine 1.2.1 JA' (author Evan Fung, same tagline and v1.2.1 changelog as the GitHub release) and read the LICENSE file. Status unchanged; confidence raised medium -> high.",
+   "searches": 4,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "Magellan": {
    "tier": "E",
@@ -15895,38 +16098,46 @@
    "checked_at": "2026-10-19T20:28:15+00:00"
   },
   "Mephisto Engines": {
-   "tier": "F",
-   "licensing": "unknown",
+   "tier": "review",
+   "licensing": "proprietary",
    "availability": "not_located",
-   "confidence": "low",
-   "release_scope": "2012 Windows UCI releases of Ed Schröder's old Mephisto/Rebel programs",
+   "confidence": "medium",
+   "release_scope": "2012 Windows UCI package (mephisto-138d-uci-setup.zip) running the original Mephisto ROM programs of Ed Schröder (Rebel 5.0, MM4, MM5) and Richard Lang (Amsterdam, Dallas, Roma) under emulation",
    "source_urls": [],
    "evidence": [
     {
      "source": "dossier: computer-chess.org comment",
-     "quote": "Mephisto Engines, Ed Schröder, 2012 Releases, Win"
+     "quote": "Mephisto Engines, Ed Schröder, Win"
     },
     {
-     "url": "https://talkchess.com/viewtopic.php?t=43890",
-     "quote": "The old Mephisto's Rebel 5.0, MM4, MM5, Mephisto Amsterdam, Dallas, Glasgow and Roma are now available as UCI engines"
+     "url": "https://web.archive.org/web/20160318031755id_/http://rebel13.nl/dedicated/dedicated%2520as%2520uci.html",
+     "quote": "The old Mephisto's Rebel 5.0, MM4 and MM5 are now available as UCI engines ... In the download package you will also find the Richard Lang programs: the Mephisto Amsterdam, Dallas and Roma"
+    },
+    {
+     "url": "https://web.archive.org/web/20160318031755id_/http://rebel13.nl/dedicated/dedicated%2520as%2520uci.html",
+     "quote": "The Mephisto's Rebel 5.0, MM4 and MM5 are the inalienable property of Ed Schröder and thus are protected by copyright but are available here with his express permission."
     },
     {
      "url": "https://talkchess.com/viewtopic.php?t=43890",
      "quote": "I suppose the engines are running on two different emulators"
     },
     {
-     "url": "https://prodeo.actieforum.com/t1929-an-mephisto-mm5-running-with-12-000-mhz-as-uci-engine",
-     "quote": "It's a fake guys, I checked the source code and it is nothing like my early work"
+     "url": "https://web.archive.org/web/20160122181650id_/http://rebel13.nl/download/open%2520source.html",
+     "quote": "rebel13.nl 'Open Source' download page (archived) lists no Mephisto source or listing"
     },
     {
      "url": "http://rebel13.nl/windows/rebel's%20with%20uci.html",
-     "quote": "Error code: 526 (site currently unreachable)"
+     "quote": "Error code: 526 (live site still unreachable, 2026-10)"
+    },
+    {
+     "search": "Ed Schröder Mephisto MM4 MM5 Rebel 5.0 6502 assembler source code published",
+     "quote": "no rights-holder publication of the 6502 source found; only a third-party C translation of MM5 (see notes)"
     }
    ],
-   "rationale": "Free Windows binaries running the original ROM programs under emulation; no source release by Ed Schröder found and no explicit license statement seen, so licensing stays unknown.",
-   "notes": "Wayback lookup for the rebel13.nl page was rate-limited (429); kirr.homeunix.org mirror host no longer resolves.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:06:40+00:00"
+   "rationale": "The package distributes the original commercial Mephisto ROM programs as binaries under emulation; the rights holders' page reserves copyright and grants only permission to distribute. No source or listing published by Schröder or Lang was found.",
+   "notes": "Review: retrieved the archived rebel13.nl pages (live site still 526); the copyright notice and commercial Mephisto origin change licensing unknown -> proprietary (medium). A hobbyist 22,000-line C translation of MM5 (Frank Brenner, GitHub Admiralatlantis/Schach-MM5-UCI, now 404; 2026 forum reports Ed Schröder later consented) is a third-party derivative and is not counted.",
+   "searches": 3,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "Mephisto Europa": {
    "tier": "C",
@@ -17002,35 +17213,52 @@
    "checked_at": "2026-10-19T22:53:05+00:00"
   },
   "Mittens": {
-   "tier": "F",
-   "licensing": "unknown",
-   "availability": "released_not_located",
-   "confidence": "low",
-   "needs_review": true,
-   "identity_issue": "CCRL 40/15 lists 'Mittens 1.0 64-bit' (2843, marked open source) and the catalog also has 'Mittens 0.9' and lichess Mittens-Bot (account created 2023-06). The only GitHub candidate, MotoresAjedrez/mittens (Rust, MIT, by 'Tavito', created 2026-07, Cargo version 0.8.0, lichess bot @chatgpt5_5), has a CCRL build preset but no 0.9/1.0 tag, so it is unconfirmed that it is the rated engine.",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://computerchess.org.uk/4040/cgi/compare_engines.cgi?family=Mittens&print=Rating+list",
-     "quote": "Mittens 1.0 64-bit 2843 (span class=\"oss\" = Open source colour)"
-    },
+   "tier": "review",
+   "licensing": "open_source",
+   "availability": "available",
+   "confidence": "medium",
+   "release_scope": "CCRL 'Mittens 1.0' = Tavito's Amateur Series build (Aug 2026); 2023 lichess Mittens-Bot not covered",
+   "source_urls": [
     {
      "url": "https://github.com/MotoresAjedrez/mittens",
-     "quote": "Mittens Chess Engine ... Un motor de ajedrez escrito en Rust ... ## Mittens CCRL: Windows and Linux"
+     "kind": "original repository",
+     "license": "MIT"
+    }
+   ],
+   "evidence": [
+    {
+     "url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Mittens%201.0%2064-bit",
+     "quote": "Mittens 1.0 64-bit (2843 +63 -63) ... This is the only Mittens version we tested. ... Crustik 0.3.0 64-bit ... Meltdown 1.11 64-bit"
+    },
+    {
+     "url": "https://talkchess.com/viewtopic.php?t=86709",
+     "quote": "126th Amateur Series Division 11 ... Mittens 1.0 64-bit (AI assisted) (new) Crustik 0.3.0 64-bit (promoted)"
+    },
+    {
+     "url": "https://api.github.com/repos/MotoresAjedrez/mittens/releases",
+     "quote": "amateur-series-v1 2026-08-26: Build especial para la Amateur Series (Graham Banks) ... Autor: Tavito (MotoresAjedrez) Motor UCI en Rust, NNUE"
     },
     {
      "url": "https://raw.githubusercontent.com/MotoresAjedrez/mittens/main/LICENSE",
      "quote": "MIT License Copyright (c) 2026 Tavito"
     },
     {
+     "url": "https://lichess.org/api/user/Mittens-Bot",
+     "quote": "createdAt 2023-06-02, last seen 2023-06-14, 42 games, bio: imgur link only"
+    },
+    {
+     "url": "https://lichess.org/api/user/chatgpt5_5",
+     "quote": "BOT, created 2026-06-14, flag ES, bio: \"Don't let the mittens fool you.\" links: https://github.com/MotoresAjedrez/mittens"
+    },
+    {
      "search": "GitHub repositories: Mittens chess engine; mittens uci",
      "quote": "only MotoresAjedrez/mittens, Himanshu2214/Mittens (Python, 2026) and an unrelated parody repo"
     }
    ],
-   "rationale": "CCRL marks Mittens as open source, but the only candidate repository could not be tied to the rated 0.9/1.0 versions or the 2023 Mittens-Bot account, so no source is counted.",
-   "notes": "Candidate (unverified): https://github.com/MotoresAjedrez/mittens (MIT).",
-   "searches": 4,
-   "checked_at": "2026-10-20T01:06:40+00:00"
+   "rationale": "Tavito published an 'Amateur Series' build for Graham Banks on 2026-08-26 and the CCRL-run 126th Amateur Series (thread opened 2026-09-03) introduced 'Mittens 1.0 64-bit (AI assisted) (new)' against the same opponents CCRL lists, so the CCRL engine is the MIT-licensed MotoresAjedrez/mittens; CCRL assigned the 1.0 version label.",
+   "notes": "Review: tied CCRL Mittens 1.0 to MotoresAjedrez/mittens via the Amateur Series build and talkchess division thread, changing unknown/released_not_located/low to open_source/available/medium. The lichess bot chatgpt5_5 links the repo, which confirms the author runs it as a 2026 bot but adds no rating-list tie (it is not a catalogued label). needs_review kept only for splitting off the unrelated 2023 lichess Mittens-Bot label. MittensCEDR is a separate family. Decision: the unrelated 2023 lichess \"Mittens-Bot\" account is kept unresolved (overrides.json), so this family is the CCRL engine only.",
+   "searches": 3,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "MittensCEDR": {
    "tier": "F",
@@ -19097,10 +19325,11 @@
    "checked_at": "2026-10-19T23:08:51+00:00"
   },
   "Nullstar": {
-   "tier": "F",
+   "tier": "review",
    "licensing": "open_source",
    "availability": "available",
    "confidence": "high",
+   "release_scope": "family; CCRL tested Nullstar 032 (GitHub release nullstar-032, 2026-07-30)",
    "source_urls": [
     {
      "url": "https://github.com/jasper-sinclair/nullstar",
@@ -19110,6 +19339,14 @@
    ],
    "evidence": [
     {
+     "url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Nullstar%20032%2064-bit",
+     "quote": "Nullstar 032 64-bit #255 (3083 +21 -21) ... This is the only Nullstar version we tested."
+    },
+    {
+     "url": "https://github.com/jasper-sinclair/nullstar/releases",
+     "quote": "nullstar-032 Nullstar 032 (2026-07-30); also Nullstar 027, Nullstar 003"
+    },
+    {
      "url": "https://github.com/jasper-sinclair/nullstar",
      "quote": "Nullstar is an experimental UCI chess engine by Jasper Sinclair."
     },
@@ -19118,10 +19355,10 @@
      "quote": "GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007"
     }
    ],
-   "rationale": "Only engine of this name found; author repository contains src/ and a GPL-3.0 LICENSE. Dossier lists no CCRL author, but name and 2026 timeframe match the CCRL entry.",
-   "notes": "Repository README says it follows the author's Kobra, BBCE and Cobra engines.",
-   "searches": 1,
-   "checked_at": "2026-10-20T01:44:13+00:00"
+   "rationale": "The only CCRL-tested version, Nullstar 032, matches the repository's release nullstar-032 (repo created July 2026), and no other engine of this name exists. The author repository contains the source with a GPL-3.0 LICENSE.",
+   "notes": "Review: Matched the CCRL entry (Nullstar 032 64-bit) to the GitHub release nullstar-032 by Jasper Sinclair; identity confirmed. Status unchanged. The README says Nullstar follows the author's Kobra, BBCE and Cobra engines.",
+   "searches": 2,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "Numbit": {
    "tier": "B",
@@ -21137,7 +21374,7 @@
    "notes": "Reviewed with the user on 2026-10-20. Left as released_not_located; the DeepBrutePos source zip is gone."
   },
   "Pupsi": {
-   "tier": "B",
+   "tier": "review",
    "licensing": "unknown",
    "availability": "not_located",
    "confidence": "low",
@@ -21156,19 +21393,26 @@
      "quote": "archive contains Pupsi2.exe, PupsiEngine.dll, readme.txt, options.txt, book and oracles; no source files"
     },
     {
-     "search": "GitHub repositories: pupsi chess",
-     "quote": "0 results"
+     "url": "https://web.archive.org/web/20140329032351id_/http://wbec-ridderkerk.nl/html/details1/Pupsi.html",
+     "quote": "Pupsi2 is a chess engine supporting the UCI protocol. It is written entirely in C# ... This is probably going to be the last version ever of Pupsi."
     },
     {
-     "search": "\"Pupsi2\" chess engine Jesper Nielsen source code",
-     "quote": "no source release or repository found; only rating-list pages"
+     "search": "Wayback CDX wbec-ridderkerk.nl/downloada/pupsi/*",
+     "quote": "no captures of pupsi2_009.zip"
+    },
+    {
+     "search": "GitHub repositories: pupsi chess; pupsi2",
+     "quote": "0 results; only unrelated rpalka/pupsi20 (PyQt5 test)"
+    },
+    {
+     "search": "Pupsi chess engine C# Jesper Nielsen source code download",
+     "quote": "only binary downloads (e.g. Chess Engines Diary 2012 post); no source release"
     }
    ],
-   "rationale": "RWBC flags source, but the archived 0.09 package is binary-only (C#/.NET) and no source release or repository was found. Freeware with no closed-source statement stays unknown.",
-   "needs_review": true,
-   "notes": "RWBC Src=yes could not be substantiated; perhaps refers to decompilable .NET assembly or an unlocated release.",
-   "searches": 4,
-   "checked_at": "2026-10-19T18:08:53+00:00"
+   "rationale": "The author's readme (release history 0.16-0.09, 2006-2012) and the archived 0.09 package describe a binary-only .NET release; no source release or repository was found, so the RWBC Src=yes flag is unsubstantiated. Freeware without a closed-source statement stays unknown.",
+   "notes": "Review: added the author's readme (WBEC page), WBEC download CDX and new GitHub/web searches; nothing supports RWBC's Src=yes, which appears to be an error. Status unchanged (unknown/not_located/low); needs_review cleared.",
+   "searches": 7,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "QBBEngine": {
    "tier": "A",
@@ -21623,10 +21867,11 @@
    "checked_at": "2026-10-19T18:08:53+00:00"
   },
   "Ravager": {
-   "tier": "F",
+   "tier": "review",
    "licensing": "open_source",
    "availability": "available",
    "confidence": "high",
+   "release_scope": "family (releases v1, v2.0, v2.1, v3.3.0)",
    "source_urls": [
     {
      "url": "https://github.com/erensh27/Ravager",
@@ -21636,8 +21881,16 @@
    ],
    "evidence": [
     {
-     "url": "https://github.com/erensh27/Ravager",
-     "quote": "A strong UCI chess engine written in C"
+     "url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Ravager%202.0%2064-bit",
+     "quote": "Ravager 2.0 64-bit #161-162 (3327 +20 -20) ... This is the only Ravager version we tested."
+    },
+    {
+     "url": "https://raw.githubusercontent.com/erensh27/Ravager/main/README.md",
+     "quote": "| Version | CCRL 40/15 | ... | Ravager 2 | 3324 |"
+    },
+    {
+     "url": "https://api.github.com/repos/erensh27/Ravager/releases",
+     "quote": "v2.0 2026-08-23T10:55:57Z Ravager 2"
     },
     {
      "url": "https://raw.githubusercontent.com/erensh27/Ravager/main/README.md",
@@ -21648,9 +21901,10 @@
      "quote": "AGPL-3.0 LICENSE"
     }
    ],
-   "rationale": "Only chess engine named Ravager on GitHub; AGPL-3.0 licensed. The dossier has no CCRL author, but the name and recent date fit the CCRL entry.",
-   "searches": 1,
-   "checked_at": "2026-10-20T01:44:13+00:00"
+   "rationale": "The repository's README reports its own CCRL 40/15 rating for Ravager 2, matching CCRL's only tested version (Ravager 2.0 64-bit), and a v2.0 release exists; AGPL-3.0 license.",
+   "notes": "Review: identity confirmed by the README's CCRL 40/15 table and the v2.0 release matching the CCRL entry; status unchanged.",
+   "searches": 2,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "RCS Granit": {
    "tier": "C",
@@ -22405,34 +22659,38 @@
    "checked_at": "2026-10-20T01:45:59+00:00"
   },
   "SABA Videoplay 20": {
-   "tier": "C",
+   "tier": "review",
    "licensing": "proprietary",
    "availability": "not_located",
    "confidence": "medium",
+   "release_scope": "family (1979 Channel F / SABA Videoplay ROM cartridge)",
    "source_urls": [],
    "evidence": [
+    {
+     "url": "https://www.chessprogramming.org/SABA_Videoplay_20",
+     "quote": "a ROM cartridge video chess game by the now defunct German electronics manufacturer SABA ... first released in 1979"
+    },
+    {
+     "url": "https://www.chessprogramming.org/SABA_Videoplay_20",
+     "quote": "an exclusive in-house development of SABA , today available as disassembled source code"
+    },
     {
      "source": "dossier: wiki categories",
      "quote": "Commercial, Console, F8"
     },
     {
-     "source": "dossier: wiki snippet",
-     "quote": "an exclusive in-house development of SABA 2 , today available as disassembled source code"
-    },
-    {
      "source": "channelf.se veswiki disassembly page (viewed, not linked as source)",
-     "quote": "complete disassembly of the SABA Videoplay 20 made with Peter Trauner's f8tool . Original code is most likely copyright © SABA."
+     "quote": "complete disassembly of the SABA Videoplay 20 made with Peter Trauner's f8tool . Original code is most likely copyright (c) SABA."
     },
     {
      "search": "GitHub repositories: Videocart 20 Schach Channel F",
      "quote": "0 results"
     }
    ],
-   "rationale": "Commercial 1979 Channel F cartridge by SABA. The only 'source' is a hobbyist disassembly of the ROM made with a third-party tool, not a listing published by the rights holder, so it does not count as source availability.",
-   "notes": "A third-party F8 disassembly exists on the channelf.se veswiki (linked from the wiki page); excluded per the ROM-dump/rights-holder rule. Owner may want to decide whether such disassemblies should count.",
-   "needs_review": true,
+   "rationale": "Commercial 1979 cartridge developed in-house by SABA (wiki Commercial category). The only 'source' is a hobbyist disassembly of the ROM made with a third-party tool, not a listing published by the rights holder, so under the review rules it is not source; no authorized source release was found.",
+   "notes": "Review: Rechecked the CPW page (Commercial category; disassembly is third-party via veswiki/f8tool). Applied the owner's rule that hobbyist disassemblies are not source; status unchanged and needs_review cleared.",
    "searches": 1,
-   "checked_at": "2026-10-19T20:42:55+00:00"
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "Saitek Brute Force": {
    "tier": "C",
@@ -24279,12 +24537,10 @@
    "checked_at": "2026-10-19T21:14:13+00:00"
   },
   "Sjaak": {
-   "tier": "E",
+   "tier": "review",
    "licensing": "unknown",
    "availability": "not_located",
-   "confidence": "low",
-   "needs_review": true,
-   "identity_issue": "Dossier merges CPW 'Sjaak (TrojanKnight) by Ronald de Man' (private) with CEGT label 'Sjaak 4.37 w32 1CPU'; the CEGT entry may be a different program (e.g. Evert Glebbeek's open-source Sjaak namesake). Glebbeek's Sjaak source is not attributed to de Man's engine.",
+   "confidence": "medium",
    "source_urls": [],
    "evidence": [
     {
@@ -24292,21 +24548,30 @@
      "quote": "a private chess, Antichess , and later Atomic Chess playing program by Ronald de Man"
     },
     {
-     "source": "dossier: CPW intro",
-     "quote": "Namesake Sjaak by Evert Glebbeek"
+     "url": "https://chessprogramming.org/Sjaak_(Glebbeek)",
+     "quote": "Sjaak, an open source engine under the GNU General Public Licence by Evert Glebbeek ... not to confused with Ronald de Man's older private engine with the same name"
+    },
+    {
+     "url": "https://chessprogramming.org/Sjaak_(Glebbeek)",
+     "quote": "Sjaak 263 by Evert Glebbeek, CCC, October 31, 2011 ... Sjaak 437 by Evert Glebbeek, CCC, December 11, 2011 ... Sjaak 468 JA available by Jim Ablett"
+    },
+    {
+     "url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/3305.html",
+     "quote": "Sjaak 4.37 w32 1CPU -1694 ... opponents Arion 1.7, Cinnamon 2.0 x64, Gunborg 1.0 x64, Robocide Feb2013 w32"
     },
     {
      "search": "GitHub repositories: Sjaak chess de Man",
      "quote": "0 results"
     },
     {
-     "search": "CEGT \"Sjaak 4.37\" chess engine",
-     "quote": "no identification of a 4.37 version; only Glebbeek's Sjaak and de Man's private Sjaak mentioned"
+     "search": "\"Sjaak 4.37\" chess engine",
+     "quote": "no separate engine of that name/version found"
     }
    ],
-   "rationale": "Ronald de Man's Sjaak is private (CPW Private category); no source located. CEGT label identity unresolved.",
-   "searches": 2,
-   "checked_at": "2026-10-19T23:20:00+00:00"
+   "rationale": "Ronald de Man's Sjaak is a private program (CPW) with no source located. The CEGT 'Sjaak 4.37' label matches Glebbeek's revision-numbered Sjaak releases (Sjaak 437, Dec 2011; w32 build era 2012-2013), so Glebbeek's GPL source is not attributed to de Man's engine.",
+   "notes": "Review: CPW's Glebbeek Sjaak page lists a 'Sjaak 437' release (Dec 2011) matching the CEGT label, so the CEGT entry is Glebbeek's open-source Sjaak (GPL per CPW; a SjaakII soft fork exists at RMKirkpatrick/SjaakII). De Man status unchanged (unknown/not_located), confidence low -> medium; needs_review kept only for the label split decision. Decision: the CEGT \"Sjaak 4.37\" label now maps to Sjaak (Glebbeek) via source_aliases; this record covers only de Man's engine.",
+   "searches": 5,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "Sjaak (Glebbeek)": {
    "tier": "A",
@@ -24378,34 +24643,44 @@
    "checked_at": "2026-10-20T02:36:12+00:00"
   },
   "Skaki": {
-   "tier": "B",
-   "licensing": "unknown",
-   "availability": "not_located",
-   "confidence": "low",
-   "source_urls": [],
+   "tier": "review",
+   "licensing": "source_available",
+   "availability": "available",
+   "confidence": "medium",
+   "release_scope": "Skaki 1.22 (2005) source in the archived 1.22 package; 1.23 bugfix (JA build) binary only",
+   "source_urls": [
+    {
+     "url": "https://mega.nz/folder/P10URKzI#5hiV02lv1VgBTg3LxUBiew/file/rokCyCoI",
+     "kind": "third-party mirror (RWBC-linked Jim Ablett collection: Engines/JA Collection/SKAKI/ARCHIVE/skaki122.zip)",
+     "license": "none stated"
+    }
+   ],
    "evidence": [
     {
      "source": "dossier: RWBC Src=yes, authors Lazarou Greg / Philippou Christos",
-     "quote": "web: only RWBC mega.nz folder"
+     "quote": "web: https://mega.nz/folder/P10URKzI#5hiV02lv1VgBTg3LxUBiew/folder/qs8BxCqT"
+    },
+    {
+     "search": "MEGA public-folder API listing of the RWBC folder (node qs8BxCqT = Engines/JA Collection)",
+     "quote": "Engines/JA Collection/SKAKI/skaki123_bugfix-ja.zip; Engines/JA Collection/SKAKI/ARCHIVE/skaki122.zip"
+    },
+    {
+     "url": "https://mega.nz/folder/P10URKzI#5hiV02lv1VgBTg3LxUBiew/file/rokCyCoI",
+     "quote": "skaki122.zip: skaki122/skaki-changes.txt 'Engine : Skaki 1.22 Authors: G.Lazarou / C.Phillippou'; skaki122/skaki-src/BOARD.CPP, ENGINE.CPP, THINK.CPP, SKAKI.DSP ..."
+    },
+    {
+     "url": "https://mega.nz/folder/P10URKzI#5hiV02lv1VgBTg3LxUBiew/file/2g0yjCRZ",
+     "quote": "skaki123_bugfix-ja.zip contains only skaki123_bugfix-ja/Skaki.exe"
     },
     {
      "search": "GitHub repositories: skaki chess",
      "quote": "6 results, all unrelated projects (Rust server, Java/Python games)"
-    },
-    {
-     "search": "Skaki chess engine Greg Lazarou Christos Philippou winboard source",
-     "quote": "only binary builds (Skaki 1.23 JA by Jim Ablett) referenced; no source location"
-    },
-    {
-     "url": "https://www.chessprogramming.org/Skaki",
-     "quote": "HTTP 404 (no CPW page)"
     }
    ],
-   "rationale": "RWBC flags source and a Jim Ablett compile (1.23 JA) suggests source existed, but no source copy or author page was located.",
-   "needs_review": true,
-   "notes": "Source may be inside the RWBC mega.nz package, which could not be inspected.",
-   "searches": 4,
-   "checked_at": "2026-10-19T18:08:53+00:00"
+   "rationale": "The RWBC-linked Jim Ablett collection holds the Skaki 1.22 package with the authors' changes file and full C++ (MSVC) source; no license text or header appears in the sources, so source_available via a third-party mirror.",
+   "notes": "Review: listed and decrypted the RWBC MEGA folder and inspected skaki122.zip, which contains the 1.22 C++ source; changed unknown/not_located/low to source_available/available/medium and cleared needs_review. No original author site was found.",
+   "searches": 5,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "Sky II": {
    "tier": "F",
@@ -24611,40 +24886,38 @@
    "checked_at": "2026-10-19T20:40:46+00:00"
   },
   "Sofia": {
-   "tier": "F",
-   "licensing": "source_available",
-   "availability": "available",
+   "tier": "review",
+   "licensing": "unknown",
+   "availability": "not_located",
    "confidence": "low",
-   "needs_review": true,
-   "identity_issue": "UBC lists only 'Sofia 1.0' with no author; the GitHub engine 'Sofia' by Naveen Attri has a release named 'Sofia V1.0' (April 2025) and is a UCI engine, but no link between the UBC entry and this repo was found.",
-   "source_urls": [
-    {
-     "url": "https://github.com/Naveen-Attri/Sofia-Chess_Engine",
-     "kind": "original repository (identity unconfirmed)",
-     "license": "none stated"
-    }
-   ],
+   "release_scope": "UBC lists only 'Sofia 1.0' (no author)",
+   "source_urls": [],
    "evidence": [
     {
+     "url": "https://e4e6.com/ubc_ratings.php",
+     "quote": "664. 1820 13 Sofia 1.0 49% 2411 ... Engines in Sofia family (list updated 2025-12-28; no author or link)"
+    },
+    {
      "url": "https://github.com/Naveen-Attri/Sofia-Chess_Engine",
-     "quote": "Sofia (meaning wisdom) is a lightweight, educational chess engine written in C++17 ... UCI-based engine"
+     "quote": "Sofia (meaning wisdom) is a lightweight, educational chess engine written in C++17 ... UCI-based engine (candidate, identity unconfirmed)"
     },
     {
      "url": "https://github.com/Naveen-Attri/Sofia-Chess_Engine/releases",
-     "quote": "Sofia V1.0 (tag Basic, 2025-04-12)"
+     "quote": "Sofia V1.0 (tag Basic, 2025-04-12), asset sofia.exe"
     },
     {
-     "search": "\"Sofia 1.0\" chess engine UCI author download",
-     "quote": "no recognized engine named Sofia 1.0 found"
+     "search": "GitHub repositories: sofia chess",
+     "quote": "13 results; only engine candidates Naveen-Attri/Sofia-Chess_Engine and williamtechlabs/sofia-chess (empty, Sept 2026)"
     },
     {
-     "search": "GitHub repositories: sofia chess engine",
-     "quote": "2 results: Naveen-Attri/Sofia-Chess_Engine, williamtechlabs/sofia-chess"
+     "search": "\"Sofia\" UCI chess engine 1.0 release 2025 talkchess OR github OR \"chess engines diary\"",
+     "quote": "No relevant web results found."
     }
    ],
-   "rationale": "A plausible match (UCI engine 'Sofia' with a V1.0 release) has public source without a license file, but identity with the UBC entry is unconfirmed.",
-   "searches": 2,
-   "checked_at": "2026-10-20T02:36:12+00:00"
+   "rationale": "UBC gives no author or link for 'Sofia 1.0'. Naveen Attri's GitHub engine (Sofia V1.0, April 2025, Windows binary, no license file) is plausible by name, date and strength (~1820), but nothing ties it to the UBC entry, so under the strict identity rule it is not counted.",
+   "notes": "Review: Checked the UBC listing (all views; no author, own 'Sofia family'), the candidate repo's releases, and other GitHub/web results; no tie found. Downgraded source_available/available -> unknown/not_located because the identity is unconfirmed; the candidate repo is kept only as evidence. Decision: the Naveen-Attri repo is rejected (name-only match); left not_located.",
+   "searches": 4,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "Soft Jacqueline Bras": {
    "tier": "E",
@@ -25143,12 +25416,11 @@
    "checked_at": "2026-10-20T00:10:37+00:00"
   },
   "StockfiNN": {
-   "tier": "F",
+   "tier": "review",
    "licensing": "unknown",
    "availability": "not_located",
    "confidence": "low",
-   "needs_review": true,
-   "identity_issue": "StockfiNN appears to be jjoshua2's NNUE network distributed with a build of nodchip's GPL Stockfish-NNUE; unclear whether any StockfiNN-specific source changes exist.",
+   "source_urls": [],
    "evidence": [
     {
      "url": "https://talkchess.com/forum3/viewtopic.php?t=74497",
@@ -25160,13 +25432,21 @@
     },
     {
      "url": "https://api.github.com/users/jjoshua2/repos?per_page=100",
-     "quote": "Stockfish (fork of official-stockfish/Stockfish, created 2020-08-07); no StockfiNN-named repo or branch"
+     "quote": "Stockfish (fork of official-stockfish/Stockfish, created 2020-08-07); no StockfiNN-named repo"
+    },
+    {
+     "url": "https://api.github.com/repos/jjoshua2/Stockfish/commits/0bac7d5e",
+     "quote": "jjoshua2 2020-08-10 'testing slower net': NNUE_HALFKP_384X2_32_32_H_INCLUDED ... EvalFile nn-483b00a71a5e.nnue (branch net1)"
+    },
+    {
+     "url": "https://www.patreon.com/posts/stockfinn-0-5-39716356",
+     "quote": "HTTP 403 to curl; search summary says StockfiNN 0.5 'Experimental' is Patreon membership content"
     }
    ],
-   "rationale": "StockfiNN 0.2 was released via Patreon by jjoshua2 as a net plus binary of the (GPL) Stockfish-NNUE code base; no StockfiNN-specific source release was found, and the upstream Stockfish-NNUE source is not counted for this family.",
-   "notes": "Upstream code: https://github.com/nodchip/Stockfish (GPL-3.0).",
-   "searches": 3,
-   "checked_at": "2026-10-20T02:36:12+00:00"
+   "rationale": "StockfiNN is jjoshua2's NNUE build of GPL Stockfish distributed through Patreon; no source labelled as StockfiNN was found. A matching-era experimental branch exists in his Stockfish fork but cannot be tied to the released builds, so it is not counted.",
+   "notes": "Review: checked jjoshua2/Stockfish branches; found the unlabelled net1 branch with custom 384x2 NNUE changes from August 2020, a plausible but unconfirmed StockfiNN code base. Status unchanged (unknown/not_located/low); still needs a human decision on whether to accept that branch. Upstream code: https://github.com/nodchip/Stockfish (GPL-3.0). Decision: the unlabelled net1 branch is not accepted as StockfiNN source; left not_located.",
+   "searches": 4,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "Stoofvlees": {
    "tier": "E",
@@ -25373,12 +25653,12 @@
    "checked_at": "2026-10-20T02:36:12+00:00"
   },
   "Strong Malt": {
-   "tier": "F",
-   "licensing": "unknown",
+   "tier": "review",
+   "licensing": "proprietary",
    "availability": "not_located",
-   "confidence": "low",
-   "needs_review": true,
-   "identity_issue": "CCRL marks Strong Malt as open source, apparently because guest engines reuse the Rebel/Chess System Tal search code; no Strong Malt source release was found and the shared code base is a different program.",
+   "confidence": "medium",
+   "release_scope": "family (1.0, 2.0)",
+   "source_urls": [],
    "evidence": [
     {
      "url": "https://rebel7775.wixsite.com/rebel/guest-engines",
@@ -25386,7 +25666,11 @@
     },
     {
      "url": "https://rebel7775.wixsite.com/rebel/guest-engines",
-     "quote": "While Guest engines use the same search of Rebel and Cstal the NNUE evaluation should be unique"
+     "quote": "In principle REBEL is guest engine running under the source code of Chess System Tal with the exception that the NNUE evaluation is created by the REBEL author himself"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/ChrisWhittington/Chess-System-Tal-NNUE-2/main/README.md",
+     "quote": "Public executable, private source code"
     },
     {
      "url": "https://drive.google.com/file/d/1XkDIL1vHsdSx47UVHSkGXSYTfgnEDIWh/view",
@@ -25397,13 +25681,18 @@
      "quote": "Strong Malt 2.0 64-bit / Strong Malt 1.0 64-bit (span class oss = Open source)"
     },
     {
-     "search": "GitHub repositories: strong malt chess; singlemalt chess",
-     "quote": "0 results"
+     "search": "GitHub repositories: strong malt chess; singlemalt chess; Chess System Tal Whittington",
+     "quote": "no Strong Malt/Single Malt repo; only ChrisWhittington/Chess-System-Tal-NNUE-2 (README only) and a copy"
+    },
+    {
+     "search": "web: \"Strong Malt\" 2.0 chess engine Weststrate Secelle source code",
+     "quote": "binary releases only; talkchess t=86238 discusses lineage, no source"
     }
    ],
-   "rationale": "Official download (Ed Schröder's Rebel guest-engines page) is binary-only; no Strong Malt or Single Malt source found. CCRL's open-source flag likely reflects the shared Rebel/CSTal search code, which is not counted for this family.",
-   "searches": 4,
-   "checked_at": "2026-10-20T02:36:12+00:00"
+   "rationale": "Strong Malt is a Rebel guest engine built on the Chess System Tal NNUE code base, whose repository states 'Public executable, private source code'; the official download is binary-only and no Strong Malt source exists anywhere, so CCRL's open-source flag appears to be an error.",
+   "notes": "Review: found that the shared CSTal-NNUE code base is explicitly private-source and the Rebel guest-engine page lists only binaries; changed licensing unknown/low to proprietary/medium, availability stays not_located, identity_issue and needs_review cleared. CCRL's 'oss' marking conflicts with this and could be reported to CCRL.",
+   "searches": 6,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "Stupid": {
    "tier": "A",
@@ -25994,6 +26283,44 @@
    "searches": 3,
    "checked_at": "2026-10-20T00:10:37+00:00",
    "notes": "Reviewed with the user on 2026-10-20. The lichess bot TempoEngine is split into its own family."
+  },
+  "TempoEngine": {
+   "tier": "review",
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "low",
+   "release_scope": "lichess BOT account TempoEngine (created 2026-08-21)",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://lichess.org/api/user/TempoEngine",
+     "quote": "username TempoEngine, title BOT, createdAt 2026-08-21, profile: none"
+    },
+    {
+     "search": "GitHub repositories: TempoEngine",
+     "quote": "2 results: Alekssasho/TempoEngine (real-time game engine), Exynos9820/TempoEngine (C#, 2024) - not chess"
+    },
+    {
+     "search": "GitHub repositories: tempo chess engine lichess bot",
+     "quote": "1 result: ethanstoner/tempo-chess (created 2026-09-27)"
+    },
+    {
+     "url": "https://github.com/ethanstoner/tempo-chess",
+     "quote": "Live on Lichess as prospedplayer through the official lichess-bot bridge"
+    },
+    {
+     "search": "GitHub code: \"TempoEngine\" lichess; TempoEngine repo:ethanstoner/tempo-chess",
+     "quote": "0 results"
+    },
+    {
+     "search": "\"TempoEngine\" lichess bot chess engine",
+     "quote": "AI summary attributed ethanstoner/tempo-chess to TempoEngine, but the cited README names the bot prospedplayer"
+    }
+   ],
+   "rationale": "The TempoEngine lichess BOT has no profile or linked repository. The only similar project, ethanstoner/tempo-chess (MIT), runs as a different bot (prospedplayer) and its first commit (2026-09-26) is after TempoEngine's account was created, so it is not attributed. No source located.",
+   "notes": "Review: New family researched from scratch. Candidate ethanstoner/tempo-chess (MIT, C++20) was rejected on identity: its README names lichess bot prospedplayer, not TempoEngine. Distinct from the 2004 Tempo engine.",
+   "searches": 5,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "Tenax": {
    "tier": "F",
@@ -26600,7 +26927,7 @@
    "checked_at": "2026-10-20T02:36:12+00:00"
   },
   "Toga Log": {
-   "tier": "A",
+   "tier": "review",
    "licensing": "open_source",
    "availability": "not_located",
    "confidence": "low",
@@ -26611,27 +26938,34 @@
      "quote": "UCI, Open Source, GPL, ... Derivative"
     },
     {
-     "url": "http://web.archive.org/web/20180821000845/http://members.aon.at/josefd/Toga%20LOG.html",
-     "quote": "Toga LOG / Toga Logviewer / Toga LOG User Manual (links to Toga LOG.zip etc.)"
+     "url": "https://web.archive.org/web/20080117230252id_/http://members.aon.at:80/josefd/Toga%2520LOG.html",
+     "quote": "Toga LOG [Toga LOG.zip] / Toga Logviewer [Toga Logviewer.zip] / Toga LOG User Manual [Toga LOG User Manual.zip]"
     },
     {
      "search": "Wayback CDX members.aon.at/josefd/*",
-     "quote": "Toga LOG.html captured, but Toga LOG.zip never captured (User Manual zip only as 301)"
+     "quote": "Toga LOG.html captured 2008; Toga LOG.zip and Toga Logviewer.zip never captured (User Manual zip only as 301)"
+    },
+    {
+     "url": "https://web.archive.org/web/20110703083035id_/http://rybkaforum.net/cgi-bin/rybkaforum/topic_show.pl?tid=103",
+     "quote": "I added comprehensive logging to the Toga engine. My engine version \"Toga LOG\" is downloadable from http://members.aon.at/josefd/Toga%20LOG.html"
+    },
+    {
+     "url": "https://archive.org/download/manualzilla-id-5798052/5798052_djvu.txt",
+     "quote": "With the term \"Toga\" I refer to the open source chess engine created as \"Fruit 2.1\" ... Logging does not slow down the engine (anyway, my build seems to be a bit slower"
     },
     {
      "url": "https://talkchess.com/viewtopic.php?t=27197",
-     "quote": "the engine itself was lost ... here is the link: http://members.aon.at/josefd/Toga%20LOG.html"
+     "quote": "I have printed text of the user manual, but the engine itself was lost."
     },
     {
-     "search": "GitHub repositories: toga log chess",
-     "quote": "0 results"
+     "search": "GitHub repositories: toga log chess; code search \"Toga LOG\"; web: \"Toga LOG\" Josef download zip source",
+     "quote": "no copy of Toga LOG source or package found (only CPW mirrors and Toga II repos)"
     }
    ],
-   "rationale": "Toga Log is a derivative of GPL Toga II and CPW tags it GPL/Open Source, but the author's download zip was not archived and no copy of its source was found; whether the zip contained source is unverified.",
-   "needs_review": true,
-   "identity_issue": "Contents of author's Toga LOG.zip unknown (may be binary only); GPL status inferred from CPW category and Toga II lineage.",
-   "searches": 3,
-   "checked_at": "2026-10-19T14:05:45+00:00"
+   "rationale": "Toga Log is Josef D.'s logging derivative of GPL Toga II and CPW tags it GPL/Open Source, but the author's zip was never archived, his announcement and manual mention only the engine build, and no copy of its source was found.",
+   "notes": "Review: re-checked Wayback (zip still uncaptured), the archived Rybka Forum announcement and the user manual on archive.org; none mention a source release. Status unchanged (open_source/not_located/low); still unresolved whether source was ever published. Decision: no evidence the source was ever published; left not_located.",
+   "searches": 6,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "Toga Returns": {
    "tier": "B",
@@ -27578,15 +27912,20 @@
    "checked_at": "2026-10-19T23:55:19+00:00"
   },
   "Valiant": {
-   "tier": "F",
+   "tier": "review",
    "licensing": "source_available",
    "availability": "available",
    "confidence": "medium",
-   "release_scope": "Python src/ folders seen for Valiant Mk4 (and sibling projects) in the author's Dropbox; later Mk folders beyond the first 50 MB of the 135 MB folder zip not inspected",
+   "release_scope": "Python source for Mk1-Mk7 releases (e.g. Mk7, April 2023) in the author's Dropbox; Mk 8 (announced on the Dropbox 2023-04-27) is no longer in the folder",
    "source_urls": [
     {
      "url": "https://www.dropbox.com/sh/tfiwhx900g4ni42/AABEm29llAn1MaG8D6yW8ZO7a?dl=0",
      "kind": "author Dropbox folder (\"Chess engine Releases\")",
+     "license": "none stated (README: porting allowed)"
+    },
+    {
+     "url": "https://www.dropbox.com/scl/fo/qqcc7tbo4nlrt55lwi2re/ALWkYY9Bpv0R7IlIUt9pJhE/Valiant%20Mk7.zip?rlkey=ao2zky3uwe21y18ga0o44cge0&dl=0",
+     "kind": "author download (zip, Valiant Mk7 with src/)",
      "license": "none stated"
     }
    ],
@@ -27596,18 +27935,30 @@
      "quote": "https://www.dropbox.com/sh/tfiwhx900g4ni42/AABEm29llAn1MaG8D6yW8ZO7a?dl=0"
     },
     {
-     "search": "listing of local file headers in the Dropbox folder zip (first 50 MB)",
-     "quote": "Valiant Mk4/src/search.py ... Valiant Mk4/src/uci.py"
+     "url": "https://www.dropbox.com/sh/tfiwhx900g4ni42/AABEm29llAn1MaG8D6yW8ZO7a?dl=0",
+     "quote": "share page listing: Valiant Mk1.zip, Mk2, Mk2 Tournament, Mk3 ''FAILIURE'', Mk3.1, Mk3.2, Mk3.2 ''ARCHER'', Mk4, Mk V, Mk6, Mk7, TicTacToe, Euler Chess; folders Alecto, 'Failed versions, fix at your own risk.' - no Mk8"
     },
     {
-     "url": "https://chessengines.blogspot.com/2023/03/chess-engine-valiant-mk-v.html",
-     "quote": "Aspiration Window code partially fixed, still disabled as it does not work (check the source if you want a crack at it)"
+     "url": "https://www.dropbox.com/scl/fo/qqcc7tbo4nlrt55lwi2re/ALWkYY9Bpv0R7IlIUt9pJhE/Valiant%20Mk7.zip?rlkey=ao2zky3uwe21y18ga0o44cge0&dl=0",
+     "quote": "Valiant Mk7/src/search.py, evaluation.py, uci.py, tt.py ... README.txt: 'Made by Jedidiah F. Sessions ... FINAL BUILD: 02/04/2023 [MARK 7]'"
+    },
+    {
+     "url": "https://www.dropbox.com/scl/fo/qqcc7tbo4nlrt55lwi2re/ALWkYY9Bpv0R7IlIUt9pJhE/Valiant%20Mk7.zip?rlkey=ao2zky3uwe21y18ga0o44cge0&dl=0",
+     "quote": "If you want to port this engine to another language, I will not stop you; go ahead."
+    },
+    {
+     "url": "https://talkchess.com/viewtopic.php?t=81572&start=20",
+     "quote": "Enderjed (Jedidiah F. Sessions), Apr 27, 2023: After extensive testing and debugging, Mk8 has finally been released on the Dropbox."
+    },
+    {
+     "url": "https://talkchess.com/viewtopic.php?t=81572",
+     "quote": "I have used Disservin's python chess engine as most of the baseline ... The source code of 3.1 is bundled in the zip with the executable"
     }
    ],
-   "rationale": "Author's release folder contains Python source for Valiant versions; no license seen, so source_available.",
-   "notes": "Author per Chess Engines Diary: Jedidiah F. Sessions (England). Folder zip is 135 MB; only the first 50 MB was inspected.",
-   "searches": 2,
-   "checked_at": "2026-10-20T02:09:39+00:00"
+   "rationale": "The author's Dropbox release folder (decoded share-page listing) holds Valiant Mk1-Mk7 zips; the 7.6 MB Mk7 zip contains the full Python src/ tree, so source is available. No license file: the README only informally permits ports, so source_available. Mk 8 itself was announced on the same Dropbox but is not in the current listing.",
+   "notes": "Review: decoded the Dropbox share page listing (no download over 50 MB; only the 7.6 MB Mk7 zip fetched) and confirmed src/ in Mk7; Mk8 is absent from the folder, so the catalogued Mk 8 source is not located even though earlier versions' source is. Status unchanged (source_available/available/medium); Valiant is based on Disservin's python-chess-engine.",
+   "searches": 4,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "VanillaChess": {
    "tier": "A",
@@ -28445,12 +28796,18 @@
    "checked_at": "2026-10-20T02:09:39+00:00"
   },
   "Woodpecker": {
-   "tier": "A",
+   "tier": "review",
    "licensing": "source_available",
-   "availability": "released_not_located",
-   "confidence": "low",
-   "release_scope": "Woodpecker 0.1 (2007); later 0.2 / 2.11.5 status unknown",
-   "source_urls": [],
+   "availability": "archived_only",
+   "confidence": "high",
+   "release_scope": "Woodpecker 0.1 alpha ('1.01 alpha', 2007) source; woodpecker_02 zip is binary-only",
+   "source_urls": [
+    {
+     "url": "https://web.archive.org/web/20121119131130/http://mypage.sbor.net/e_k/woodpecker_01_alpha.zip",
+     "kind": "Wayback snapshot of author download (zip with src/)",
+     "license": "none stated (copyright Korniloff E)"
+    }
+   ],
    "evidence": [
     {
      "source": "dossier: wiki_intro",
@@ -28461,27 +28818,30 @@
      "quote": "Korniloff Evgeniy / src - / free"
     },
     {
-     "url": "http://web.archive.org/web/2015/http://kirr.homeunix.org/chess/engines/Jim%20Ablett/WOODPECKER/",
-     "quote": "woodpecker 0.1 fixed gcc src + linux64 binary.zip 2013-08-10 118K (zip not archived)"
+     "source": "Wayback CDX for mypage.sbor.net/e_k/",
+     "quote": "woodpecker_01_alpha.zip 200 20121119131130; woodpecker_02.zip 200 20121119081425"
     },
     {
-     "url": "http://web.archive.org/web/20081004132046/http://www.sbor.net:80/~e_k/win/",
-     "quote": "woodpecker_01_alpha.zip 07-Nov-2007 170K ... woodpecker_02.zip 29-Dec-2007 86K (zips not archived)"
+     "source": "inspected woodpecker_01_alpha.zip from Wayback",
+     "quote": "woodpecker_01_alpha/src/: main.c, search.c, genmov.c, score.c, hash.c, learn.c, chess.h ... (138 KB of C)"
     },
     {
-     "url": "https://sourceforge.net/projects/obender/files/",
-     "quote": "OBender source files (main.c, genmov.c, ...) - precursor, not counted"
+     "source": "inspected woodpecker_01_alpha/readme",
+     "quote": "*** Woodpecker 1.01 alpha*** (modified OBender 3.1.0) chess-engine for WinBoard(XBoard), Arena, ... copyrigh(c) Korniloff E"
     },
     {
-     "search": "GitHub repositories: woodpecker chess korniloff",
-     "quote": "0 results"
+     "source": "inspected woodpecker_01_alpha/src/chess.h and main.c",
+     "quote": "#define PROG_NAME \"Woodpecker\" ... @author Korniloff E. 2007"
+    },
+    {
+     "source": "inspected woodpecker_02.zip from Wayback",
+     "quote": "readme, version, Kaissa.bk, woodpecker.exe - no src"
     }
    ],
-   "rationale": "CPW calls Woodpecker open source and Jim Ablett's folder listed a 'fixed gcc src' package, but neither that zip nor the author's woodpecker zips were archived, and RWBC marks no source. No license seen. OBender (precursor) source on SourceForge is not attributed to Woodpecker.",
-   "needs_review": true,
-   "identity_issue": "Conflicting signals: CPW 'Open Source' and Ablett 'src' package vs RWBC Src='-'; contents of author zips unknown.",
-   "searches": 3,
-   "checked_at": "2026-10-19T14:05:45+00:00"
+   "rationale": "The author's own woodpecker_01_alpha.zip, archived by the Wayback Machine from mypage.sbor.net, contains Korniloff's C source for Woodpecker (PROG_NAME \"Woodpecker\"). The readme carries only a copyright line and no license, so source_available rather than open_source; the later 0.2 zip is binary-only, which may explain RWBC's Src='-'.",
+   "notes": "Review: Found the author's zips in the Wayback Machine under mypage.sbor.net/e_k/ (the earlier check looked only at sbor.net/~e_k/win/), downloaded them, and confirmed 0.1 alpha includes src/ with no license. Changed availability released_not_located -> archived_only and confidence low -> high; needs_review/identity_issue cleared. The Ablett/Norbert mirrors on calc.biokirr.com are behind an anti-bot check and were not inspected.",
+   "searches": 2,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "Woodpusher": {
    "tier": "E",
@@ -28856,57 +29216,87 @@
    "checked_at": "2026-10-20T02:09:39+00:00"
   },
   "YuliGM": {
-   "tier": "F",
-   "licensing": "unknown",
+   "tier": "review",
+   "licensing": "proprietary",
    "availability": "not_located",
-   "confidence": "low",
+   "confidence": "medium",
    "source_urls": [],
    "evidence": [
     {
-     "url": "https://chessengines.blogspot.com/2023/10/yuligm-pro-11-new-version-our-testers.html",
-     "quote": "YuliGM Pro 11.1 - new version (Our testers start testing today)"
+     "url": "https://chessengines.blogspot.com/2026/03/yuligm-2026-new-version-strong-engines.html",
+     "quote": "March 30, 2026 YuliGM 2026 - new version (Only for our testers, testing is already underway). Chess Engines Diary Rating CEDR=3756"
+    },
+    {
+     "url": "https://chessengines.blogspot.com/2022/10/chess-engine-yuligm-pro-4-stockfish.html",
+     "quote": "Chess engine: YuliGM PrO 4 is another clone of the Stockfish engine."
+    },
+    {
+     "url": "https://chessengines.blogspot.com/search/label/YuliGM",
+     "quote": "YuliGM Pro 20 and Cool Iris 15, both built on the legendary Stockfish code"
+    },
+    {
+     "url": "https://api.github.com/users/MastacticaTeoria/repos?per_page=100",
+     "quote": "YuliGM, yuligm-ok, YuliGM-ARENA, YuliGM-PLEY, yuligm-pro-elite all created 2026-03-31; 'Plataforma de Ajedrez ... YULIGM PRO - Predator Edition ... Motor Stockfish integrado'"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/MastacticaTeoria/YuliGM/main/02_Web_Comercial/index.html",
+     "quote": "V26 PRO 25€ ACQUIRE ELITE EDITION 25€ ACQUIRE ... DISEÑADO POR YULIESKY RODRIGUEZ"
     },
     {
      "search": "GitHub repositories: yuligm",
      "quote": "only MastacticaTeoria web-platform repos (HTML/Socket.io sites), no engine source"
     },
     {
-     "url": "https://raw.githubusercontent.com/MastacticaTeoria/YuliGM/main/02_Web_Comercial/index.html",
-     "quote": "V26 PRO 25€ ACQUIRE ELITE EDITION 25€ ACQUIRE ... DISEÑADO POR YULIESKY RODRIGUEZ"
+     "search": "YuliGM chess engine author Yuliesky Rodriguez Stockfish",
+     "quote": "lead only: summary names Yuliesky Rodriguez as YuliGM author; confirmed only by the YULIGM PRO sales page credit"
     }
    ],
-   "rationale": "Engine distributed to Chess Engines Diary testers; the related GitHub repos are only marketing/web front-ends selling a PRO edition, with no engine source. No explicit license statement for the non-Pro YuliGM.",
-   "needs_review": true,
-   "identity_issue": "MastacticaTeoria's YuliGM web repos (by Yuliesky Rodriguez) match the name but it is not confirmed they are the same author as the CEDR-tested engine.",
-   "searches": 2,
-   "checked_at": "2026-10-20T02:09:39+00:00"
+   "rationale": "YuliGM is a Stockfish-derived engine given privately to Chess Engines Diary testers; the YULIGM PRO sales site (credited to Yuliesky Rodriguez, set up the day after CEDR received YuliGM 2026) sells a 'V26 PRO' edition for 25€, i.e. a commercial product, and no engine source is published.",
+   "notes": "Review: matched the product line (YuliGM PRO, V26 = 2026), the CEDR 'Stockfish clone' tag and the repo creation date (2026-03-31, one day after CEDR's YuliGM 2026 post), which supports the same author; licensing changed unknown -> proprietary (commercial sale), confidence low -> medium, needs_review cleared. As a Stockfish clone its GPL obligations are unmet as far as found.",
+   "searches": 3,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "YuliGM Pro": {
-   "tier": "F",
+   "tier": "review",
    "licensing": "proprietary",
    "availability": "not_located",
-   "confidence": "low",
+   "confidence": "medium",
+   "release_scope": "family",
    "source_urls": [],
    "evidence": [
     {
+     "url": "https://open-chess.org/viewtopic.php?t=3864",
+     "quote": "YuliGMPrO9 ... Real Name: Yuliesky rodriguez ... YuliGM Pro 13.0 https://t.me/mastacticateoria"
+    },
+    {
+     "url": "https://open-chess.org/viewtopic.php?t=3864",
+     "quote": "APOCALYPSE: In the original YuliGM PrO, the engine parameters are hidden ... the original of this engine is my work which can be purchased at this email address"
+    },
+    {
      "url": "https://raw.githubusercontent.com/MastacticaTeoria/YuliGM/main/02_Web_Comercial/index.html",
-     "quote": "YULIGM PRO - PREDATOR ELITE EDITION ... V26 PRO 25€ ACQUIRE ELITE EDITION"
+     "quote": "YULIGM PRO - PREDATOR ELITE EDITION ... V26 PRO 25€ ACQUIRE ... DISEÑADO POR YULIESKY RODRIGUEZ"
+    },
+    {
+     "url": "https://api.github.com/users/MastacticaTeoria",
+     "quote": "name: Yuliesky Rodriguez; repos YuliGM, YuliGM-ARENA, yuligm-ok, YuliGM-PLEY, yuligm-pro-elite (HTML web apps, no engine source)"
     },
     {
      "url": "https://chessengines.blogspot.com/2026/04/yuligm-pro-apex-new-version-strong.html",
      "quote": "YuliGM Pro Apex - new version (Only for our testers, testing is already underway)"
     },
     {
-     "search": "GitHub repositories: yuligm",
-     "quote": "MastacticaTeoria/yuligm-pro-elite: \"Plataforma de Ajedrez ... Motor Stockfish integrado\" (web app, no engine source)"
+     "url": "https://chessengines.blogspot.com/2025/08/fritz-20-examines-yuligm-20-pro-08082025.html",
+     "quote": "We just received the YuliGM 20 Pro engine for testing ... [White \"YuliGM Pro 20\"] [Black \"Fritz 20\"]"
+    },
+    {
+     "search": "web: \"YuliGM\" chess engine author Yuliesky Rodriguez Stockfish UCI",
+     "quote": "binaries distributed privately/for sale; no source repository"
     }
    ],
-   "rationale": "A YuliGM PRO edition is offered for sale (25€) and versions are distributed only to testers; no source found. Sold product suggests proprietary, but the identity link is unverified, so low confidence.",
-   "needs_review": true,
-   "identity_issue": "Sales page is in MastacticaTeoria's repo by Yuliesky Rodriguez; not confirmed to be the same YuliGM Pro tested by Chess Engines Diary.",
-   "notes": "Apparently Stockfish-derived; if so, GPL obligations may apply, but no source distribution was found.",
-   "searches": 2,
-   "checked_at": "2026-10-20T02:09:39+00:00"
+   "rationale": "YuliGM Pro is distributed by Yuliesky Rodriguez (OpenChess real name, Telegram 'mastacticateoria' = GitHub MastacticaTeoria) as a paid/tester-only product with hidden parameters; his GitHub holds only web front-ends and a 25€ sales page, and no engine source exists, so proprietary and not_located.",
+   "notes": "Review: tied the MastacticaTeoria sales page to the engine via the author's OpenChess posts (same real name and Telegram handle, links to Chess Engines Diary), so the identity_issue is resolved; licensing stays proprietary, confidence raised from low to medium and needs_review cleared. Authorship is disputed (another OpenChess user claims the 'original' YuliGM PrO is his paid work) and the engine appears Stockfish-derived, but no source distribution was found either way.",
+   "searches": 4,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "Yuliirma": {
    "tier": "F",

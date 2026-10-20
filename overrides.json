@@ -257,12 +257,13 @@
     },
     {
       "sources": [
+        "cegt",
         "ubc"
       ],
       "family": "Sjaak",
       "target": "Sjaak (Glebbeek)",
       "evidence_url": "https://chessprogramming.org/Sjaak_(Glebbeek)",
-      "note": "UBC lists SjaakII, Evert Glebbeek's engine; the wiki's Sjaak is Ronald de Man's private engine."
+      "note": "UBC lists SjaakII and CEGT 'Sjaak 4.37' is revision 437 (Dec 2011), both Evert Glebbeek's engine; the wiki's Sjaak is Ronald de Man's private engine."
     },
     {
       "sources": [
@@ -689,6 +690,11 @@
     },
     "minopponentmoves": {
       "family": "MinOpponentMoves"
+    },
+    "mittens-bot": {
+      "unresolved": true,
+      "identity_evidence_url": "https://lichess.org/api/user/Mittens-Bot",
+      "note": "2023 bot (42 games, inactive since 2023-06-14); nothing ties it to the 2026 CCRL Mittens (MotoresAjedrez/mittens)."
     },
     "mochi_bot": {
       "family": "Mochi"

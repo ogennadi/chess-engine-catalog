@@ -76,7 +76,7 @@ def collect(fetch, known_names, overrides):
             continue
         family = override.get("family") if override else None
         method = "reviewed-profile" if family else None
-        if family is None:
+        if family is None and not (override and override.get("unresolved")):
             # Match only to already attested families; never turn an arbitrary
             # account handle or generic repository name into an engine name.
             keys = {name_key(account)}

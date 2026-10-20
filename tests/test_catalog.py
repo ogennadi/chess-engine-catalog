@@ -184,6 +184,10 @@ class LichessTests(unittest.TestCase):
         rows, unresolved, _ = collect(fetch, [], {"somebot": {"family": "Actual engine"}})
         self.assertEqual(rows[0]["family"], "Actual engine")
         self.assertEqual(unresolved, [])
+        rows, unresolved, _ = collect(fetch, ["Some"], {})
+        self.assertEqual(rows[0]["family"], "Some")
+        rows, unresolved, _ = collect(fetch, ["Some"], {"somebot": {"unresolved": True}})
+        self.assertEqual((rows, len(unresolved)), ([], 1))
 
 
 if __name__ == "__main__":
