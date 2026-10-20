@@ -568,7 +568,8 @@ Source availability is not a licence assessment, and “Source not located” do
     body = f"""
 <form id="filters" role="search" hidden>
 <div class="field"><label for="search">Search names and aliases</label>
-<input id="search" name="q" type="search" autocomplete="off" spellcheck="false"></div>
+<div class="search-box"><input id="search" name="q" type="search" autocomplete="off" spellcheck="false">
+<button type="button" id="clear-search" aria-label="Clear search" hidden>&times;</button></div></div>
 <div class="field"><label for="availability">Source availability</label>
 <select id="availability" name="availability">
 <option value="all">All families</option>

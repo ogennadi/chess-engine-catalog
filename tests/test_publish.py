@@ -140,6 +140,7 @@ class PublishTests(unittest.TestCase):
 
     def test_filters_hidden_without_javascript_and_dark_default(self):
         self.assertIn('<form id="filters" role="search" hidden>', self.index)
+        self.assertIn('<button type="button" id="clear-search" aria-label="Clear search" hidden>', self.index)
         self.assertIn('<option value="available">Source available (including archived only)</option>', self.index)
         self.assertIn('<html lang="en" data-theme="dark">', self.index)
         self.assertNotIn(" hidden>", "".join(r[2] for r in self.rows()))

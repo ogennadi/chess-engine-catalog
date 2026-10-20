@@ -20,6 +20,7 @@
   if (!form) return;
   const search = form.querySelector("#search");
   const availability = form.querySelector("#availability");
+  const clear = form.querySelector("#clear-search");
   const count = document.querySelector("#match-count");
   const empty = document.querySelector("#no-results");
   const normalize = (value) => value.normalize("NFKD").replace(/\p{M}/gu, "").toLowerCase();
@@ -38,6 +39,7 @@
 
   const apply = (save) => {
     const query = normalize(search.value.trim());
+    if (clear) clear.hidden = search.value === "";
     const filter = filters[availability.value] || filters.all;
     let matches = 0;
     for (const row of rows) {
@@ -76,6 +78,13 @@
     apply(true);
   });
   search.addEventListener("input", () => apply(true));
+  if (clear) {
+    clear.addEventListener("click", () => {
+      search.value = "";
+      apply(true);
+      search.focus();
+    });
+  }
   availability.addEventListener("change", () => apply(true));
   form.addEventListener("reset", (event) => {
     event.preventDefault();
