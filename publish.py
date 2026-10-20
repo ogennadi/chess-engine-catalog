@@ -13,6 +13,7 @@ import json
 import posixpath
 import re
 import shutil
+import unicodedata
 from collections import Counter
 from html import escape
 from pathlib import Path
@@ -276,6 +277,65 @@ def availability(engine):
     return source_status.availability_label(engine)
 
 
+def name_words(name):
+    folded = unicodedata.normalize("NFKD", name.casefold())
+    return frozenset(re.findall(r"\w+", "".join(c for c in folded if not unicodedata.combining(c)))) - {"and"}
+
+
+def authors(engine):
+    """Author names recorded by the lists, as (name, [source ids]); duplicates in other word orders are merged."""
+    found = []
+    # Natural-order sources first: RWBC writes "Surname Given", which would otherwise be shown.
+    for source in ("wiki-engines", "computer-chess-org", "rwbc"):
+        for item in engine.get("provenance", []):
+            if item.get("source") != source:
+                continue
+            if source == "wiki-engines":
+                prefix = f"{item.get('listed_name', '')} by "
+                names = [item["label"][len(prefix):]] if item.get("label", "").startswith(prefix) else []
+            elif source == "computer-chess-org":
+                names = [item.get("author") or ""]
+            else:
+                names = str(item.get("authors") or "").splitlines()
+            for value in names:
+                value = value.strip().strip("*").strip()
+                words = name_words(value)
+                # RWBC parenthesises some names, e.g. "(Ablett Jim)"; they are shown separately by also_credited().
+                if not words or value in ("-", "?") or value.startswith("("):
+                    continue
+                for entry in found:
+                    if words <= entry[2]:
+                        if source not in entry[1]:
+                            entry[1].append(source)
+                        break
+                else:
+                    absorbed = [i for i, entry in enumerate(found) if entry[2] <= words]
+                    sources = list(dict.fromkeys([s for i in absorbed for s in found[i][1]] + [source]))
+                    at = absorbed[0] if absorbed else len(found)
+                    found = [entry for i, entry in enumerate(found) if i not in absorbed]
+                    found.insert(at, (value, sources, words))
+    return [(value, sources) for value, sources, _ in found]
+
+
+def also_credited(engine):
+    names = []
+    for item in engine.get("provenance", []):
+        if item.get("source") == "rwbc":
+            for line in str(item.get("authors") or "").splitlines():
+                line = line.strip().strip("*").strip()
+                if line.startswith("(") and line.endswith(")") and line[1:-1].strip() not in names:
+                    names.append(line[1:-1].strip())
+    return names
+
+
+def author_html(engine, registry):
+    items = [
+        f"{text(value)} <span class=\"muted\">({text(', '.join(registry.get(s, {}).get('name', s) for s in sources))})</span>"
+        for value, sources in authors(engine)
+    ]
+    return "; ".join(items) if items else '<span class="muted">Not recorded by the collected lists</span>'
+
+
 def research_licences(record):
     return {item["url"].rstrip("/").casefold(): item for item in record.get("source_urls", [])}
 
@@ -448,6 +508,9 @@ def family_page(engine, record, registry, overrides, slugs, wiki_review, generat
         confidence = None
     body = '<p><a href="../index.html">← All engine families</a></p>'
     body += definition_list([
+        ("Author", author_html(engine, registry)),
+        ("Also credited", text("; ".join(also_credited(engine))) + ' <span class="muted">(listed in parentheses '
+         "by RWBC)</span>" if also_credited(engine) else None),
         ("Source availability", f'<strong>{text(AVAILABILITY[state])}</strong> '
                                 f'<span class="muted">({text(AVAILABILITY_DETAIL[state])})</span>'),
         ("Licensing assessment", licensing),

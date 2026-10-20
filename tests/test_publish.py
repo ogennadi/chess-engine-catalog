@@ -162,6 +162,25 @@ class PublishTests(unittest.TestCase):
         self.assertIn("javascript:alert(1)", evil)
         self.assertIn("Beta &lt;b&gt;source&lt;/b&gt; zip", self.family("beta"))
 
+    def test_family_page_shows_deduplicated_authors_first(self):
+        engine = {"name": "Abbess", "provenance": [
+            {"source": "rwbc", "authors": "Pope Robert\n*Diaz Daniel*\n-"},
+            {"source": "computer-chess-org", "author": "Robert Pope, Daniel Díaz"},
+            {"source": "wiki-engines", "listed_name": "Abbess", "label": "Abbess by Robert Pope"},
+        ]}
+        self.assertEqual(publish.authors(engine), [
+            ("Robert Pope, Daniel Díaz", ["wiki-engines", "computer-chess-org", "rwbc"]),
+        ])
+        self.assertEqual(publish.authors({"provenance": [
+            {"source": "rwbc", "authors": "Atkin Larry\nFrey Peter"},
+        ]}), [("Atkin Larry", ["rwbc"]), ("Frey Peter", ["rwbc"])])
+        porter = {"provenance": [{"source": "rwbc", "authors": "Tridgel Andrew\n(Ablett Jim)"}]}
+        self.assertEqual(publish.authors(porter), [("Tridgel Andrew", ["rwbc"])])
+        self.assertEqual(publish.also_credited(porter), ["Ablett Jim"])
+        alpha = self.family("alpha")
+        self.assertLess(alpha.index("<dt>Author</dt>"), alpha.index("<dt>Source availability</dt>"))
+        self.assertIn("Not recorded by the collected lists", alpha)
+
     def test_family_page_research_details(self):
         beta = self.family("beta")
         for expected in ("Archived source only", "Unknown", "Medium", "Beta 1.0 only", "none stated",
