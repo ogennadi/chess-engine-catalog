@@ -50,7 +50,7 @@ FAMILY_ALIASES = {
 }
 # Same-named programs by different authors: (list label, author substring) -> family.
 HOMONYMS = {
-    ("Chess", "Stanback"): "Chess (Stanback)",
+    ("Chess", "Stanback"): "GNU Chess",
     ("Chess(2)", "Lattanzi"): "Chess (Lattanzi)",
     ("Chess(3)", "Sonkoly"): "Chess-3",
     ("Chess(4)", "Cimbalista"): "Chess",

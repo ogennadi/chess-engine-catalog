@@ -5,7 +5,10 @@
     "APILChess": "APIL chess",
     "ArabianKnight": "Arabian Knight",
     "BadChessEngine": "Bad Chess Engine",
+    "Betsabe": "Betsabe II",
     "BlackMarlin": "Black Marlin",
+    "Bringer (Der)": "Der Bringer",
+    "BrutusChess": "Brutus NL",
     "BugChess2": "BugChess",
     "ChadsChess": "Chads Chess",
     "Chess Genius": "ChessGenius",
@@ -15,7 +18,9 @@
     "Chessplayer 2150": "Chess Player 2150",
     "CPW": "CPW-Engine",
     "Deep Sjeng c't": "Sjeng",
+    "DoubleCheck": "DiscoCheck",
     "Dragon by Komodo": "Dragon",
+    "Dragon of MORS": "MORS",
     "Dump": "Dumb",
     "E.T.CHESS": "E.T. Chess",
     "Equisitum": "Equisetum",
@@ -23,6 +28,7 @@
     "Francesca MAD": "Francesca",
     "Frank-Walter": "FrankWalter",
     "Gnuchess": "GNU Chess",
+    "Goedel": "Godel",
     "Googleplex Starthinker": "Googleplex",
     "Greenblatt Chess Program": "Mac Hack",
     "GreenLightChess": "Green Light Chess",
@@ -31,7 +37,6 @@
     "HokusPokus": "Hokus-Pokus",
     "Infraredv2": "Infrared",
     "JackyChess": "Jacky Chess",
-    "KCChess": "KC Chess",
     "Knight Dreamer": "KnightDreamer",
     "Lc0": "Leela Chess",
     "Leela": "Leela Chess",
@@ -46,6 +51,7 @@
     "Nu'chess": "Nu-chess",
     "paulchen332": "paulchen",
     "PeacockSpider": "Peacock Spider",
+    "Porucnik": "Porucznik",
     "Pupsi2": "Pupsi",
     "Rex Chess": "RexChess",
     "Rival Chess": "Rival",
@@ -55,19 +61,23 @@
     "Rusti-Rival": "Rusty-Rival",
     "Sargon 1978": "Sargon",
     "Schönemann": "Schoenemann",
+    "SCP/GNUchess": "GNU Chess",
     "Shallow-blue": "Shallowblue",
     "Shallow2": "Shallow",
     "ShallowGuess": "Shallow Guess",
     "ShenYu": "Shen Yu",
     "SilkeChess": "Silke Chess",
+    "Sjaak II": "Sjaak (Glebbeek)",
     "SmallC": "Small-C",
     "SmallPotato": "Small Potato",
+    "Smash (Deep)": "Smash",
     "smol": "smol.cs",
     "TheCrazyBishop": "The Crazy Bishop",
     "TheKing": "The King",
     "Tom-Thumb": "Tom Thumb",
     "TwistedLogic": "Twisted Logic",
     "Vajolet2": "Vajolet",
+    "Why Not": "Y!",
     "Wita": "Awit",
     "WukongJS": "Wukong JS"
   },
@@ -316,6 +326,25 @@
       "target": "Onslaught",
       "evidence_url": "https://github.com/kachhy/Onslaught",
       "note": "Kai Chung's instance links kachhy/Axiom, which GitHub redirects to kachhy/Onslaught (CCRL: Onslaught by Kai Chung); the existing Axiom is InternetHamburger's engine."
+    },
+    {
+      "sources": [
+        "rwbc",
+        "computer-chess-org"
+      ],
+      "family": "KCChess",
+      "target": "KCChess (Serebryany)",
+      "evidence_url": "https://sourceforge.net/projects/kcchess/",
+      "note": "RWBC and computer-chess.org name Konstantin Serebryany's C engine (SourceForge kcchess); the wiki's KC Chess is Phillips and Bruce's 1990 Turbo Pascal program."
+    },
+    {
+      "sources": [
+        "rwbc"
+      ],
+      "family": "Axon",
+      "target": "Axon (Sinclair)",
+      "evidence_url": "https://chessprogramming.org/Axon",
+      "note": "RWBC names Jasper Sinclair (2022-2024); the wiki's Axon is Vladan Vuckovic's 2001 assembly program."
     }
   ],
   "lichess_accounts": {
@@ -392,6 +421,10 @@
     "breeze_bot": {
       "family": "Breeze",
       "code_urls": []
+    },
+    "caps-bot": {
+      "family": "CAPS (Motors)",
+      "identity_evidence_url": "https://lichess.org/api/user/CAPS-Bot"
     },
     "casanchess-nnue": {
       "family": "Casanchess"
@@ -491,6 +524,18 @@
     },
     "ferrite-bot": {
       "family": "Hexenzsene"
+    },
+    "flawed_formula": {
+      "family": "yea_fen",
+      "code_urls": [
+        "https://github.com/mendelsshop/yea_fen"
+      ]
+    },
+    "flawed_formula_test": {
+      "family": "yea_fen",
+      "code_urls": [
+        "https://github.com/mendelsshop/yea_fen"
+      ]
     },
     "foxchessbot": {
       "family": "FoxChess"
@@ -647,6 +692,10 @@
     },
     "mochi_bot": {
       "family": "Mochi"
+    },
+    "myopic-bot": {
+      "family": "Hyperopic",
+      "identity_evidence_url": "https://lichess.org/api/user/myopic-bot"
     },
     "mysticbot": {
       "family": "Mystic Bot"
@@ -851,6 +900,9 @@
     },
     "tdchess-bot": {
       "family": "tdchess"
+    },
+    "tempoengine": {
+      "family": "TempoEngine"
     },
     "theoden8_uci": {
       "family": "dummy_chess"

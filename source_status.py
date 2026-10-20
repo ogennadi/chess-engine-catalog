@@ -53,6 +53,7 @@ TIERS = {
     "F": "list-only families",
     "D": "RWBC Src='-' only",
     "pilot": "51-family pilot sample",
+    "review": "added or corrected during the review of ambiguous cases",
 }
 OPEN_CATEGORIES = re.compile(r"open source|gpl|mit|bsd|public domain|licen|apache|mpl|unlicense", re.I)
 CLOSED_CATEGORIES = re.compile(r"^(commercial|dedicated)", re.I)

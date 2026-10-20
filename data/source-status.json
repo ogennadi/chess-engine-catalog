@@ -1308,7 +1308,7 @@
    "searches": 3,
    "checked_at": "2026-10-19T15:03:37+00:00"
   },
-  "Axon": {
+  "Axon (Sinclair)": {
    "tier": "B",
    "licensing": "unknown",
    "availability": "released_not_located",
@@ -1337,8 +1337,8 @@
      "quote": "Vuckovic's 16-bit assembly Axon source not found publicly"
     }
    ],
-   "identity_issue": "RWBC's Axon is by Jasper Sinclair (USA, 2022-2024); the dossier wiki_url points to the unrelated Axon by Vladan Vuckovic (Serbia, 8086 assembly, 2001), whose source is not public.",
-   "needs_review": true,
+   "identity_issue": null,
+   "needs_review": false,
    "rationale": "RWBC lists a Jasper Sinclair Axon download including source (served via RWBC's Proton/Google Drive backup, not inspected); the former GitHub repo is gone and no license could be seen.",
    "searches": 4,
    "checked_at": "2026-10-19T15:03:37+00:00"
@@ -1781,39 +1781,6 @@
    "rationale": "Private engine that plays on ICC and in online tournaments; never publicly released, no source located.",
    "searches": 2,
    "checked_at": "2026-10-19T21:31:00+00:00"
-  },
-  "Betsabe": {
-   "tier": "A",
-   "licensing": "open_source",
-   "availability": "available",
-   "confidence": "low",
-   "needs_review": true,
-   "identity_issue": "Dossier mixes the 1990s DOS-era Betsabe (SCCC 1993/94, Minimax-based) with Betsabe II (labels include 'Betsabe II 2020', CPW page is Betsabe II). Source status below is that of Betsabe II; no source of the original 1990s Betsabe was found. Likely a duplicate of family 'Betsabe II'.",
-   "release_scope": "Betsabe II only; original 1990s Betsabe source not located",
-   "source_urls": [
-    {
-     "url": "https://calc.biokirr.com/chess/engines/Jim%20Ablett/BETSABE%20II/ARCHIVE/",
-     "kind": "third-party mirror (Jim Ablett 'fixed src' zips of Betsabe II; listing verified via Wayback 2017, live site behind anti-bot check)",
-     "license": "GPL (per CPW, not inspected)"
-    }
-   ],
-   "evidence": [
-    {
-     "url": "https://chessprogramming.org/Betsabe",
-     "quote": "Betsabe II is successor of Betsabe, which already played various Spanish Computer Chess Championships in the 90s"
-    },
-    {
-     "url": "https://web.archive.org/web/20171214002412/http://kirr.homeunix.org/chess/engines/Jim%20Ablett/BETSABE%20II/ARCHIVE/",
-     "quote": "betsabe-II%20128%20fixed%20%20src.zip ... betsabeII%20-%201.0%20linux%20ported%20src%20code%20ja.zip"
-    },
-    {
-     "search": "GitHub repositories: betsabe chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Same evidence as Betsabe II (GPL per CPW, source copies in Jim Ablett's directory); the pre-2011 Betsabe has no known source release.",
-   "searches": 1,
-   "checked_at": "2026-10-19T05:36:46+00:00"
   },
   "Betsabe II": {
    "tier": "A",
@@ -2499,28 +2466,7 @@
    "pilot_group": "random",
    "tier": "pilot"
   },
-  "Brutus RND": {
-   "tier": "F",
-   "licensing": "unknown",
-   "availability": "not_located",
-   "confidence": "low",
-   "source_urls": [],
-   "evidence": [
-    {
-     "search": "\"Brutus RND\" chess engine",
-     "quote": "summary claims a random-mover variant of Stephan Vermeire's Brutus; download links mostly lost; no source cited"
-    },
-    {
-     "url": "https://www.chessprogramming.org/Brutus",
-     "quote": "Namesake Brutus by Stephan Vermeire"
-    }
-   ],
-   "rationale": "Only known from UBC listing; no author page, repository or source located.",
-   "identity_issue": "Relation to Stephan Vermeire's Brutus is only suggested by an AI search summary and not confirmed.",
-   "searches": 1,
-   "checked_at": "2026-10-20T00:28:52+00:00"
-  },
-  "BrutusChess": {
+  "Brutus NL": {
    "tier": "B",
    "licensing": "open_source",
    "availability": "archived_only",
@@ -2549,7 +2495,29 @@
    ],
    "rationale": "Stephan Vermeire's release zip includes full C++ source declared to be under the GNU license; the author site is gone and the zip survives only on the Wayback Machine.",
    "searches": 2,
-   "checked_at": "2026-10-19T15:03:37+00:00"
+   "checked_at": "2026-10-19T15:03:37+00:00",
+   "needs_review": false
+  },
+  "Brutus RND": {
+   "tier": "F",
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "low",
+   "source_urls": [],
+   "evidence": [
+    {
+     "search": "\"Brutus RND\" chess engine",
+     "quote": "summary claims a random-mover variant of Stephan Vermeire's Brutus; download links mostly lost; no source cited"
+    },
+    {
+     "url": "https://www.chessprogramming.org/Brutus",
+     "quote": "Namesake Brutus by Stephan Vermeire"
+    }
+   ],
+   "rationale": "Only known from UBC listing; no author page, repository or source located.",
+   "identity_issue": "Relation to Stephan Vermeire's Brutus is only suggested by an AI search summary and not confirmed.",
+   "searches": 1,
+   "checked_at": "2026-10-20T00:28:52+00:00"
   },
   "Bs6676": {
    "tier": "E",
@@ -2776,8 +2744,8 @@
    "licensing": "unknown",
    "availability": "not_located",
    "confidence": "low",
-   "needs_review": true,
-   "identity_issue": "Family merges Hans Berliner's 1974 CAPS (wiki) with the lichess label CAPS-Bot, which is an unrelated modern Rust engine (CAPS in toanth/motors, GPL-3.0). Record covers Berliner's CAPS; the lichess bot may deserve a separate family.",
+   "needs_review": false,
+   "identity_issue": null,
    "source_urls": [],
    "evidence": [
     {
@@ -2798,9 +2766,35 @@
     }
    ],
    "rationale": "No source for Berliner's 1970s CMU program located. The Rust CAPS behind the lichess CAPS-Bot label is open source (GPL-3.0) but is a different program and is not attributed here.",
-   "notes": "Rust CAPS source: https://github.com/toanth/motors (GPL-3.0) - applies to the lichess CAPS-Bot only.",
+   "notes": "Rust CAPS source: https://github.com/toanth/motors (GPL-3.0) - applies to the lichess CAPS-Bot only. Reviewed with the user on 2026-10-20. The lichess CAPS-Bot (toanth/motors) is split into family CAPS (Motors).",
    "searches": 4,
    "checked_at": "2026-10-19T21:35:58+00:00"
+  },
+  "CAPS (Motors)": {
+   "tier": "review",
+   "licensing": "open_source",
+   "availability": "available",
+   "confidence": "high",
+   "source_urls": [
+    {
+     "url": "https://github.com/toanth/motors",
+     "kind": "original repository",
+     "license": "GPL-3.0"
+    }
+   ],
+   "evidence": [
+    {
+     "url": "https://lichess.org/api/user/CAPS-Bot",
+     "quote": "Hi, I'm CAPS (Chess-playing Alpha-beta Pruning Search), a work-in-progress chess engine written in Rust."
+    },
+    {
+     "url": "https://github.com/toanth/motors",
+     "quote": "A collection of various games and engines (license GPL-3.0); README: Chess-playing Alpha-beta Pruning Search (CAPS)"
+    }
+   ],
+   "rationale": "The lichess bot describes itself as CAPS, the Rust chess engine in toanth/motors, which is GPL-3.0.",
+   "checked_at": "2026-10-20T03:10:00+00:00",
+   "notes": "Reviewed with the user on 2026-10-20."
   },
   "Capture R1": {
    "tier": "F",
@@ -3444,41 +3438,6 @@
    "rationale": "Freeware Chess 4.1 by Lattanzi/Manzo/Munter; described as a GNU Chess derivative but no source release or copy found (author zip not archived); binary freeware only stays unknown.",
    "notes": "As a GNU Chess derivative it may be GPL-obligated, but no published source was seen.",
    "searches": 2,
-   "checked_at": "2026-10-20T00:32:00+00:00"
-  },
-  "Chess (Stanback)": {
-   "tier": "F",
-   "licensing": "open_source",
-   "availability": "available",
-   "confidence": "medium",
-   "release_scope": "Stanback's final GnuChess-era 'Chess' version (late 1980s)",
-   "source_urls": [
-    {
-     "url": "https://john.stanback.net/gnuchess.zip",
-     "kind": "author download (zip)",
-     "license": "GPL (GNU 'copying' file included; text not extracted)"
-    }
-   ],
-   "evidence": [
-    {
-     "url": "http://john.stanback.net/",
-     "quote": "in 1987-88 I contributed my program to become the GnuChess program. My final version can be downloaded by clicking here"
-    },
-    {
-     "url": "http://john.stanback.net/",
-     "quote": "In 1987 I posted the source code on the rec.games chess newsgroup."
-    },
-    {
-     "url": "https://john.stanback.net/gnuchess.zip",
-     "quote": "zip listing: MAKEFILE, GNUCHESS.C, ALPHADSP.C, NONDSP.C, GNUCHESS.H, gnuchess.exe, xchess.exe, copying"
-    },
-    {
-     "source": "dossier: computer-chess.org comment",
-     "quote": "The original 'Chess' program; only JA download is XB-compatible"
-    }
-   ],
-   "rationale": "Author's homepage links his final version (C source plus GNU 'copying' file) of the program that became GNU Chess; GPL inferred from the included copying file whose imploded content could not be extracted, hence medium.",
-   "searches": 0,
    "checked_at": "2026-10-20T00:32:00+00:00"
   },
   "Chess 0.5X": {
@@ -7639,47 +7598,6 @@
    "searches": 3,
    "checked_at": "2026-10-20T00:37:26+00:00"
   },
-  "DoubleCheck": {
-   "tier": "F",
-   "licensing": "open_source",
-   "availability": "archived_only",
-   "confidence": "medium",
-   "release_scope": "DoubleCheck 1.0-3.4 (2011-2012) by Lucas Braesch; renamed DiscoCheck from 3.5. Only the DiscoCheck 3.7.1 source zip (containing the same codebase and the DoubleCheck history) was located.",
-   "needs_review": true,
-   "identity_issue": "Source copy found is DiscoCheck 3.7.1, the renamed continuation of DoubleCheck (same codebase, history lists DoubleCheck 2.5.1-3.4); no DoubleCheck-named source archive located.",
-   "source_urls": [
-    {
-     "url": "http://web.archive.org/web/20130928162356/http://www.wbec-ridderkerk.nl/html/downloada/doublecheck/DiscoCheck_371.zip",
-     "kind": "Wayback snapshot of WBEC download (DiscoCheck 3.7.1, renamed DoubleCheck, with src/)",
-     "license": "GPL-3.0"
-    }
-   ],
-   "evidence": [
-    {
-     "url": "https://www.chessprogramming.org/DiscoCheck",
-     "quote": "DiscoCheck , (former DoubleCheck) a free open source engine by Lucas Braesch, released under the GNU General Public License"
-    },
-    {
-     "url": "http://web.archive.org/web/20130323154346/http://wbec-ridderkerk.nl/html/details1/DoubleCheck.html",
-     "quote": "DiscoCheck (former DoubleCheck) ... (Windows-x64, Linux-x64 and sources included!)"
-    },
-    {
-     "url": "http://web.archive.org/web/20130928162356/http://www.wbec-ridderkerk.nl/html/downloada/doublecheck/DiscoCheck_371.zip",
-     "quote": "copying.txt: version 3 of the GNU General Public License; history.txt: DiscoCheck 3.5 (ABBA) ... DoubleCheck 3.4"
-    },
-    {
-     "url": "https://github.com/lucasart/chess",
-     "quote": "HTTP 404 (former homepage repo linked by WBEC)"
-    },
-    {
-     "source": "dossier: CCRL list (cached)",
-     "quote": "DoubleCheck 1.0 ... 3.1 listed with class=\"oss\""
-    }
-   ],
-   "rationale": "Lucas Braesch's DoubleCheck was GPL open source (CPW, CCRL oss); his GitHub repo lucasart/chess is gone and the only located source is the Wayback copy of the GPL-3 DiscoCheck 3.7.1 zip that continues the same codebase.",
-   "searches": 4,
-   "checked_at": "2026-10-20T00:37:26+00:00"
-  },
   "Drago": {
    "tier": "A",
    "licensing": "source_available",
@@ -7750,36 +7668,6 @@
    "notes": "Not to be confused with Dragon RU (Yuri Shpeer) or Komodo Dragon.",
    "searches": 1,
    "checked_at": "2026-10-19T21:49:05+00:00"
-  },
-  "Dragon of MORS": {
-   "tier": "F",
-   "licensing": "open_source",
-   "availability": "available",
-   "confidence": "high",
-   "source_urls": [
-    {
-     "url": "https://github.com/TMagnusN/mors",
-     "kind": "original repository",
-     "license": "AGPL-3.0"
-    }
-   ],
-   "evidence": [
-    {
-     "url": "https://raw.githubusercontent.com/TMagnusN/mors/HEAD/README.md",
-     "quote": "The current stable release is **Dragon of MORS 0.2.0**."
-    },
-    {
-     "url": "https://api.github.com/repos/TMagnusN/mors",
-     "quote": "A superhuman chess engine built for fast, precise analysis. | C++ | AGPL-3.0"
-    },
-    {
-     "url": "https://api.github.com/repos/TMagnusN/mors/releases",
-     "quote": "0.2.0 | Dragon of MORS 0.2.0"
-    }
-   ],
-   "rationale": "Author's GitHub repo hosts Dragon of MORS 0.2.0 (the CCRL-listed version) with AGPL-3.0 license.",
-   "searches": 2,
-   "checked_at": "2026-10-20T00:37:26+00:00"
   },
   "Dragon RU": {
    "tier": "E",
@@ -11272,35 +11160,6 @@
    "searches": 3,
    "checked_at": "2026-10-20T01:10:41+00:00"
   },
-  "Goedel": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "http://web.archive.org/web/20220926075250/https://sites.google.com/site/godelchessengine/",
-     "quote": "G?del source code is not available at the moment, but probably will be released within a few years."
-    },
-    {
-     "url": "http://web.archive.org/web/2022/https://sites.google.com/site/godelchessengine/license",
-     "quote": "Anyone is permitted to use this software, but its distribution is not allowed without the consent of the author. ... Modification of the software is not permitted."
-    },
-    {
-     "url": "http://web.archive.org/web/20201010113446/https://sites.google.com/site/godelchessengine/downloads",
-     "quote": "Godel_7.0.zip Juan Manuel V?zquez"
-    },
-    {
-     "url": "https://talkchess.com/forum3/viewtopic.php?t=73173",
-     "quote": "Released G?del 7.0 for Linux, Windows, Android and Raspberry pi"
-    }
-   ],
-   "rationale": "'Goedel 7.0' is the transliterated name of G?del 7.0 by Juan Manuel V?zquez; author states source not available and license forbids redistribution/modification.",
-   "searches": 0,
-   "notes": "Same engine as the Godel family (G?del 7.0); evidence shared.",
-   "checked_at": "2026-10-20T01:10:41+00:00"
-  },
   "Golch": {
    "tier": "E",
    "licensing": "unknown",
@@ -11556,10 +11415,11 @@
     }
    ],
    "rationale": "Kai Himstedt's PhD project offered the source of its Cluster Toga base engine via an email request form, which is now dead (404) and the archived copy is only the form; no copy of the code or of the full GridChess system was found.",
-   "needs_review": true,
+   "needs_review": false,
    "identity_issue": "The released code is Cluster Toga, the base engine used inside GridChess, not the complete GridChess system (Crafty-based proxy plus workers); may belong to a separate Cluster Toga family.",
    "searches": 3,
-   "checked_at": "2026-10-19T22:33:05+00:00"
+   "checked_at": "2026-10-19T22:33:05+00:00",
+   "notes": "Reviewed with the user on 2026-10-20. No Cluster Toga family is created; no collected list includes one."
   },
   "GridProtector": {
    "tier": "E",
@@ -12335,6 +12195,32 @@
    "rationale": "Author repo holds the Hyperia v2 source and its CCRL 3233 rating matches the listing; no license file or header, so source_available.",
    "searches": 1,
    "checked_at": "2026-10-20T01:10:41+00:00"
+  },
+  "Hyperopic": {
+   "tier": "review",
+   "licensing": "source_available",
+   "availability": "available",
+   "confidence": "high",
+   "source_urls": [
+    {
+     "url": "https://github.com/th0masb/hyperopic",
+     "kind": "original repository",
+     "license": "none stated"
+    }
+   ],
+   "evidence": [
+    {
+     "url": "https://lichess.org/api/user/myopic-bot",
+     "quote": "Moved to account @Hyperopic ... links: https://github.com/th0masb/hyperopic"
+    },
+    {
+     "url": "https://api.github.com/repos/th0masb/hyperopic",
+     "quote": "Serverless chess engine deployed on AWS and playable via the Lichess website (no license)"
+    }
+   ],
+   "rationale": "The myopic-bot profile links th0masb's Hyperopic (formerly Myopic) repository, which has no license file.",
+   "checked_at": "2026-10-20T03:10:00+00:00",
+   "notes": "Reviewed with the user on 2026-10-20."
   },
   "Hypra-Chess": {
    "tier": "E",
@@ -13678,10 +13564,11 @@
     }
    ],
    "rationale": "Rights holders declared the program public domain and published the Turbo Pascal source; originals survive on Wayback and a GitHub mirror exists. Confidence medium because of the unresolved RWBC author attribution.",
-   "identity_issue": "RWBC row 'KCChess' lists author Serebryany Konstantin, whereas CPW KC Chess is by R. Kevin Phillips and Craig S. Bruce (1990, DOS). The RWBC entry may be a different engine or a WinBoard adaptation; findings apply to the Phillips/Bruce program.",
-   "needs_review": true,
+   "identity_issue": null,
+   "needs_review": false,
    "searches": 4,
-   "checked_at": "2026-10-19T05:36:46+00:00"
+   "checked_at": "2026-10-19T05:36:46+00:00",
+   "notes": "Reviewed with the user on 2026-10-20. Serebryany's KCChess (RWBC, computer-chess.org) is split into its own family."
   },
   "Kches6": {
    "tier": "E",
@@ -17248,10 +17135,11 @@
     }
    ],
    "identity_issue": "Only the successor Typhoon's source is published (git.acknak.org/cgit/typhoon.git, mirror github.com/scottgasch/typhoon; 'Copyright (c) Scott Gasch', no license file). It is based largely on Monsoon code, but no Monsoon-specific source release was found.",
-   "needs_review": true,
+   "needs_review": false,
    "rationale": "Author publishes source of the successor Typhoon, not of Monsoon itself; per identity rules Monsoon is recorded as not located.",
    "searches": 2,
-   "checked_at": "2026-10-19T22:53:05+00:00"
+   "checked_at": "2026-10-19T22:53:05+00:00",
+   "notes": "Reviewed with the user on 2026-10-20. Successor Typhoon's public source is not counted for Monsoon."
   },
   "Morgoth": {
    "tier": "E",
@@ -17634,10 +17522,11 @@
     }
    ],
    "rationale": "Wiki says Edwards released Myopic under a Creative Commons license (not OSI-approved, so source_available); original public.me.com download is dead and talkchess/Wayback were unreachable, so no copy located. The Lichess label myopic-bot belongs to a different Rust engine by th0masb (now Hyperopic) whose source is on GitHub, but it is not counted for this family.",
-   "identity_issue": "Family merges Steven Edwards' Arduino Myopic (wiki) with Lichess 'myopic-bot', which is th0masb's Rust engine Myopic/Hyperopic (source at https://github.com/th0masb/hyperopic). These are different programs.",
-   "needs_review": true,
+   "identity_issue": null,
+   "needs_review": false,
    "searches": 4,
-   "checked_at": "2026-10-19T05:43:20+00:00"
+   "checked_at": "2026-10-19T05:43:20+00:00",
+   "notes": "Reviewed with the user on 2026-10-20. The lichess myopic-bot (th0masb) is split into family Hyperopic."
   },
   "Mythos": {
    "tier": "F",
@@ -20707,7 +20596,7 @@
    "searches": 1,
    "checked_at": "2026-10-19T20:31:21+00:00"
   },
-  "Porucnik": {
+  "Porucznik": {
    "tier": "B",
    "licensing": "source_available",
    "availability": "available",
@@ -20738,37 +20627,6 @@
    "rationale": "Author's live site offers Porucznik 9 with C++ source in the zip; no license, so source_available.",
    "searches": 1,
    "checked_at": "2026-10-19T17:47:03+00:00"
-  },
-  "Porucznik": {
-   "tier": "A",
-   "licensing": "source_available",
-   "availability": "archived_only",
-   "confidence": "high",
-   "release_scope": "Porucznik 9 (zip with src/PORUCZNIK9.CPP); predecessor Sierżant zips also archived but not counted",
-   "source_urls": [
-    {
-     "url": "https://web.archive.org/web/20150515030350/http://strony.toya.net.pl/%7Esierzant29/Porucznik9.zip",
-     "kind": "Wayback snapshot of author download (zip incl. src/)",
-     "license": "none stated"
-    }
-   ],
-   "evidence": [
-    {
-     "url": "https://web.archive.org/web/20150515030350/http://strony.toya.net.pl/%7Esierzant29/Porucznik9.zip",
-     "quote": "Porucznik9/src/PORUCZNIK9.CPP, OBLICZ33.h, GEN15.h ... PORUCZNIK9.exe; no license text"
-    },
-    {
-     "source": "dossier: wiki_intro",
-     "quote": "Porucznik , a WinBoard compliant open source chess engine by Mariusz Rostek , written in C++"
-    },
-    {
-     "search": "GitHub repositories: porucznik",
-     "quote": "no chess-engine repositories"
-    }
-   ],
-   "rationale": "Author's site (strony.toya.net.pl/~sierzant29, linked from the wiki) distributed the C++ source with the binary; reachable now only via Wayback; no license found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T05:43:20+00:00"
   },
   "POS": {
    "tier": "B",
@@ -21248,7 +21106,7 @@
    "licensing": "source_available",
    "availability": "released_not_located",
    "confidence": "low",
-   "needs_review": true,
+   "needs_review": false,
    "identity_issue": "PuppetMaster is a mode of Folkert van Heusden's DeepBrutePos; the author's source link is for DeepBrutePos, and it is unverified whether that archive contains the puppet-master mode.",
    "source_urls": [],
    "evidence": [
@@ -21275,7 +21133,8 @@
    ],
    "rationale": "The author's DeepBrutePos page advertises a source archive, but the link is dead and no archived or mirrored copy was found; license unknown.",
    "searches": 3,
-   "checked_at": "2026-10-19T23:20:56+00:00"
+   "checked_at": "2026-10-19T23:20:56+00:00",
+   "notes": "Reviewed with the user on 2026-10-20. Left as released_not_located; the DeepBrutePos source zip is gone."
   },
   "Pupsi": {
    "tier": "B",
@@ -23604,45 +23463,6 @@
    "searches": 1,
    "checked_at": "2026-10-19T20:40:46+00:00"
   },
-  "SCP/GNUchess": {
-   "tier": "F",
-   "licensing": "open_source",
-   "availability": "available",
-   "confidence": "high",
-   "release_scope": "John Stanback's final GNU Chess version (author download)",
-   "source_urls": [
-    {
-     "url": "http://john.stanback.net/gnuchess.zip",
-     "kind": "author download (zip, C source + DOS exe)",
-     "license": "GNU Chess General Public License (FSF, 1986/1987)"
-    }
-   ],
-   "evidence": [
-    {
-     "url": "http://john.stanback.net/",
-     "quote": "In 1987 I posted the source code on the rec.games chess newsgroup. It can still be downloaded as the SCP (Stanback Chess Program)."
-    },
-    {
-     "url": "http://john.stanback.net/",
-     "quote": "I contributed my program to become the GnuChess program. My final version can be downloaded by clicking here"
-    },
-    {
-     "url": "http://john.stanback.net/gnuchess.zip",
-     "quote": "zip contains MAKEFILE, GNUCHESS.C, ALPHADSP.C, NONDSP.C, GNUCHESS.H, copying"
-    },
-    {
-     "url": "http://john.stanback.net/gnuchess.zip",
-     "quote": "GNU CHESS GENERAL PUBLIC LICENSE Copyright (C) 1986,1987 Free Software Foundation, Inc."
-    },
-    {
-     "source": "dossier: computer-chess.org comment",
-     "quote": "SCP == Stanback Chess Program aka GNUchess; this engine is the last GNUchess version involving John Stanback"
-    }
-   ],
-   "rationale": "Author's homepage links his final GNU Chess source zip; the included 'copying' file is the FSF GNU Chess GPL.",
-   "searches": 0,
-   "checked_at": "2026-10-20T01:45:59+00:00"
-  },
   "Screamer": {
    "tier": "E",
    "licensing": "unknown",
@@ -24529,36 +24349,6 @@
    "searches": 2,
    "checked_at": "2026-10-19T14:05:45+00:00"
   },
-  "Sjaak II": {
-   "tier": "B",
-   "licensing": "open_source",
-   "availability": "available",
-   "confidence": "high",
-   "source_urls": [
-    {
-     "url": "http://www.eglebbk.dds.nl/program/download/sjaakii-1.4.1-src.tar.gz",
-     "kind": "author download (tar.gz)",
-     "license": "GPL"
-    }
-   ],
-   "evidence": [
-    {
-     "url": "http://www.eglebbk.dds.nl/program/chess-download.html",
-     "quote": "Both Jazz and Sjaak are distributed under the terms of the GNU General Public Licence."
-    },
-    {
-     "url": "http://www.eglebbk.dds.nl/program/chess-download.html",
-     "quote": "Sjaak II 1.4.1 source (.tar.gz) ... Sjaak II 1.0 RC5 source (.tar.gz) Sjaak r524 source (.tar.gz)"
-    },
-    {
-     "url": "http://www.eglebbk.dds.nl/program/download/sjaakii-1.4.1-src.tar.gz",
-     "quote": "HTTP 200, application/x-gzip, 306043 bytes"
-    }
-   ],
-   "rationale": "Evert Glebbeek's site hosts source tarballs for all Sjaak II releases and states GPL distribution.",
-   "searches": 0,
-   "checked_at": "2026-10-19T18:08:53+00:00"
-  },
   "Sjeng (Deep)": {
    "tier": "F",
    "licensing": "proprietary",
@@ -24703,12 +24493,17 @@
    "licensing": "open_source",
    "availability": "archived_only",
    "confidence": "high",
-   "release_scope": "smash v0.1 (2003) source tarball archived; later Smash 1.0.x / Deep Smash releases archived only as binaries",
+   "release_scope": "smash v0.1 (2003) source tarball archived; later Smash 1.0.x / Deep Smash releases archived only as binaries; 1.0.3 source (2006) also archived",
    "source_urls": [
     {
      "url": "http://web.archive.org/web/20031031001018/http://www.cli.di.unipi.it:80/~sambati/prog/smash.tar.bz2",
      "kind": "Wayback snapshot of author download (tar.bz2)",
      "license": "GPL-2.0-or-later"
+    },
+    {
+     "url": "https://web.archive.org/web/2009id_/http://www.cli.di.unipi.it/~sambati/prog/smash.tar.bz2",
+     "kind": "Wayback snapshot of author download (tar.bz2)",
+     "license": "GPL-2.0"
     }
    ],
    "evidence": [
@@ -24727,26 +24522,7 @@
     {
      "search": "GitHub repositories: smash chess sambati",
      "quote": "0 results"
-    }
-   ],
-   "rationale": "Author's 2003 tarball (archived on Wayback) contains full C++ source with GPL-2 headers and LICENSE. Author site and g-sei.org page are dead; later versions found only as binary zips, so only an early version is reachable via archive.",
-   "searches": 3,
-   "checked_at": "2026-10-19T14:05:45+00:00"
-  },
-  "Smash (Deep)": {
-   "tier": "B",
-   "licensing": "open_source",
-   "availability": "archived_only",
-   "confidence": "high",
-   "release_scope": "1.0.3 source (2006); 1.0.3a third-party update not verified",
-   "source_urls": [
-    {
-     "url": "https://web.archive.org/web/2009id_/http://www.cli.di.unipi.it/~sambati/prog/smash.tar.bz2",
-     "kind": "Wayback snapshot of author download (tar.bz2)",
-     "license": "GPL-2.0"
-    }
-   ],
-   "evidence": [
+    },
     {
      "url": "https://web.archive.org/web/20090227050449/http://www.cli.di.unipi.it:80/~sambati/prog/smash.html",
      "quote": "Sono disponibili anche i sorgenti ... Adesso Smash con supporto SMP si chiama Deep Smash"
@@ -24764,9 +24540,10 @@
      "quote": "Deep Smash 1.0.3a UCI and open source (GPL) chess engine written by Maurizio Sambati."
     }
    ],
-   "rationale": "Author's university page offered the source tarball (GPLv2 LICENSE inside); the original site is gone and the tarball is retrievable from the Wayback Machine.",
-   "searches": 2,
-   "checked_at": "2026-10-19T18:08:53+00:00"
+   "rationale": "Author's 2003 tarball (archived on Wayback) contains full C++ source with GPL-2 headers and LICENSE. Author site and g-sei.org page are dead; later versions found only as binary zips, so only an early version is reachable via archive.",
+   "searches": 3,
+   "checked_at": "2026-10-19T14:05:45+00:00",
+   "needs_review": false
   },
   "Smaug": {
    "tier": "A",
@@ -26196,8 +25973,8 @@
    "licensing": "unknown",
    "availability": "not_located",
    "confidence": "low",
-   "needs_review": true,
-   "identity_issue": "Family merges the 2004 academic Tempo (Autonès et al., NN/L-system research engine) with the lichess BOT 'TempoEngine' (account created 2026); these are probably unrelated and the lichess bot's engine/author is unidentified.",
+   "needs_review": false,
+   "identity_issue": null,
    "source_urls": [],
    "evidence": [
     {
@@ -26215,7 +25992,8 @@
    ],
    "rationale": "No source for the 2004 research Tempo was found, and the lichess TempoEngine bot could not be linked to any repository.",
    "searches": 3,
-   "checked_at": "2026-10-20T00:10:37+00:00"
+   "checked_at": "2026-10-20T00:10:37+00:00",
+   "notes": "Reviewed with the user on 2026-10-20. The lichess bot TempoEngine is split into its own family."
   },
   "Tenax": {
    "tier": "F",
@@ -28445,27 +28223,6 @@
    ],
    "rationale": "Martin Bryant's program was sold commercially by BBC Soft (publishing rights later with Longman Logotron); author page offers copies of versions, not source. No source located.",
    "searches": 2,
-   "checked_at": "2026-10-19T23:57:16+00:00"
-  },
-  "Why Not": {
-   "tier": "E",
-   "licensing": "unknown",
-   "availability": "not_located",
-   "confidence": "low",
-   "identity_issue": "Same program as Y! (Why Not) by Ulf Rathsman; CPW label 'Why Not (Y!)' points to the Y! page.",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: CPW intro",
-     "quote": "Y! (Why Not), a chess program written by primary author Ulf Rathsman ... written in 6502 assembly"
-    },
-    {
-     "search": "Ulf Rathsman \"Y!\" OR \"Why Not\" chess program 6502 TurboKit source code",
-     "quote": "no source or disassembly found"
-    }
-   ],
-   "rationale": "1980s tournament program in 6502 assembly on TurboKit TK20; no released source found.",
-   "searches": 1,
    "checked_at": "2026-10-19T23:57:16+00:00"
   },
   "Wii Chess": {
