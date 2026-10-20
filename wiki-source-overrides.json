@@ -1404,16 +1404,6 @@
     "code_urls": [],
     "links_sha256": "0843b51374bf191885d41905d3cbc3deb019aa5dbd6fc7b0b3ca45c9f33543d2"
   },
-  "ChessBin.com": {
-    "wiki_url": "https://chessprogramming.org/ChessCore",
-    "note": "Article identifies ChessCore (ChessBin.com); linked MIT C# engine is the cross-platform conversion, not necessarily the original ChessBin release.",
-    "code_urls": [
-      {
-        "url": "https://github.com/3583Bytes/ChessCore",
-        "note": "Article alias/redirect identifies the converted .NET Core engine; caveat: not the original ChessBin implementation."
-      }
-    ]
-  },
   "ChessBrain": {
     "wiki_url": "https://chessprogramming.org/ChessBrain",
     "note": "SourceForge link is msgCourier networking infrastructure, not ChessBrain engine source.",
@@ -1425,7 +1415,8 @@
     "note": "Introduction explicitly identifies the MIT-licensed ChessCore engine and its GitHub publication.",
     "code_urls": [
       {
-        "url": "https://github.com/3583Bytes/ChessCore"
+        "url": "https://github.com/3583Bytes/ChessCore",
+        "note": "Article alias/redirect identifies the converted .NET Core engine; caveat: not the original ChessBin implementation."
       }
     ],
     "links_sha256": "a1f46826557e59f3ea6ae3f35381128c90c7795ce7a25cd2db2e647b5a8ace95"
@@ -3079,17 +3070,6 @@
     "code_urls": [],
     "links_sha256": "1d4e777007e4bd468be23a902c543ecc87038de79d249bad3107a699ecc7e33b"
   },
-  "Greenblatt Chess Program": {
-    "wiki_url": "https://chessprogramming.org/Mac_Hack",
-    "note": "Article identifies Greenblatt Chess Program as Mac Hack VI and explicitly links archived 1980 Mac Hack source.",
-    "code_urls": [
-      {
-        "url": "https://github.com/PDP-10/its/tree/master/src/chprog",
-        "source_release": "1980 Mac Hack (OCM 470 and accompanying files)",
-        "note": "Historical source archive maintained by Lars Brinkhoff and Eric Swenson; not necessarily the original 1966-67 release."
-      }
-    ]
-  },
   "Greif": {
     "wiki_url": "https://chessprogramming.org/Greif",
     "note": "No explicit source link in cached links; generic engine homepages are not evidence of code.",
@@ -3920,7 +3900,7 @@
     "code_urls": [],
     "links_sha256": "93db5df6e5abf734b67fc13edb7a7119dc7dd7b8f40303dbfa0a43e2816f685a"
   },
-  "Maia Chess": {
+  "Maia": {
     "wiki_url": "https://chessprogramming.org/Maia_Chess",
     "note": "The introduction identifies Maia's GPLv3 Python code and scripts; the explicitly named maia-chess repository qualifies, unlike unrelated books, visualizers or the Lc0 runtime dependency.",
     "code_urls": [
@@ -4885,7 +4865,7 @@
     "code_urls": [],
     "links_sha256": "d19a5d68baabf2e566fd1b0e1ec977cfbb6512e20e38b4bd40075c2efed84bf6"
   },
-  "paulchen332": {
+  "paulchen": {
     "wiki_url": "https://chessprogramming.org/Paulchen332",
     "note": "Open source BSD-2 UCI engine; GitHub repository linked.",
     "code_urls": [
@@ -6675,12 +6655,6 @@
     "code_urls": [],
     "links_sha256": "f2ef665210772f56adb2177fb3e8a98864b78d3b369ab4ddc28a3536a6c5ec2d"
   },
-  "Why Not": {
-    "wiki_url": "https://chessprogramming.org/Y%21",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "b3280c8718cc494dc8f6423284bc37d2be961fc0b2deca58813e7105f4b103d2"
-  },
   "Wii Chess": {
     "wiki_url": "https://chessprogramming.org/Wii_Chess",
     "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
@@ -6710,11 +6684,6 @@
     "note": "Godot and Kenny are separately named derivatives; not assigned as Winglet source.",
     "code_urls": [],
     "links_sha256": "a609f0b68dbe7bcd10d1efea4281dec67e01c96351360b6c8daa06a7fc8fab79"
-  },
-  "Wita": {
-    "wiki_url": "https://chessprogramming.org/Awit",
-    "note": "Linked source listing is explicitly the later Awit program, not verified Wita source.",
-    "code_urls": []
   },
   "Witchess": {
     "wiki_url": "https://chessprogramming.org/Witchess",

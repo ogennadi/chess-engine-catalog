@@ -7,6 +7,7 @@ from urllib.parse import urljoin, urlsplit
 
 
 SOURCE_ID = "chessprogramming-wiki"
+DERIVED_SOURCES = {SOURCE_ID, "source-status-research"}
 
 
 class PageLinks(HTMLParser):
@@ -45,9 +46,10 @@ def check(engines, fetch, reviews):
     results = {}
     for engine in engines:
         wiki = engine.get("chessprogramming_wiki", {})
-        if wiki.get("status") != "found" or any(
-            code.get("source") != SOURCE_ID for code in engine["source_code"]
-        ):
+        # Research links are attached after this check and often came from the wiki page itself,
+        # so only links from the provenance lists count as independent coverage.
+        covered = any(code.get("source") not in DERIVED_SOURCES for code in engine["source_code"])
+        if wiki.get("status") != "found" or (covered and engine["name"] not in reviews):
             continue
         url = wiki["url"]
         parser = PageLinks(url)
@@ -79,6 +81,12 @@ def check(engines, fetch, reviews):
             result["status"] = "found" if result["code_urls"] else "no_source_link_found"
         results[engine["name"]] = result
     return {"engines": results}
+
+
+def orphan_reviews(engines, reviews):
+    """Reviewed wiki pages whose family no longer exists (renamed or merged)."""
+    names = {engine["name"] for engine in engines}
+    return sorted(name for name in reviews if name not in names)
 
 
 def attach(catalog, results):

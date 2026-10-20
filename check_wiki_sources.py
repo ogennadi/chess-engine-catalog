@@ -5,7 +5,7 @@ import json
 
 from collect import ROOT, publish
 from collectors.http import Fetcher
-from collectors.wiki_sources import check
+from collectors.wiki_sources import check, orphan_reviews
 
 
 def main():
@@ -18,6 +18,9 @@ def main():
     reviews = json.loads((ROOT / "wiki-source-overrides.json").read_text(encoding="utf-8"))
     fetch = Fetcher(ROOT / ".cache" / "http", refresh=args.refresh, offline=args.offline)
     results = check(catalog["engines"], fetch, reviews)
+    for name in orphan_reviews(catalog["engines"], reviews):
+        print(f"WARNING: wiki-source-overrides.json reviews {name!r}, which is not a catalog family "
+              "(renamed or merged?); review it", flush=True)
     path = ROOT / "data" / "chessprogramming-source-code.json"
     temporary = path.with_suffix(".json.tmp")
     temporary.write_text(json.dumps(results, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

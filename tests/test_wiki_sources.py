@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from collectors.wiki_sources import SOURCE_ID, PageLinks, attach, check, links_digest
+from collectors.wiki_sources import SOURCE_ID, PageLinks, attach, check, links_digest, orphan_reviews
 
 
 class WikiSourceTests(unittest.TestCase):
@@ -72,6 +72,14 @@ class WikiSourceTests(unittest.TestCase):
         self.assertEqual(check([unchecked], no_fetch, {}), {"engines": {}})
         wiki_only = self.engine(codes=[{"url": "https://example.com/source", "source": SOURCE_ID}])
         self.assertIn("Engine", check([wiki_only], self.fetch(""), {})["engines"])
+
+    def test_research_links_do_not_skip_and_reviewed_pages_are_always_rechecked(self):
+        researched = self.engine(codes=[{"url": "https://example.com/s", "source": "source-status-research"}])
+        self.assertIn("Engine", check([researched], self.fetch(""), {})["engines"])
+        covered = self.engine(codes=[{"url": "https://example.com/s", "source": "computer-chess-org"}])
+        self.assertEqual(check([covered], self.fetch(""), self.review([]))["engines"]["Engine"]["status"],
+                         "no_source_link_found")
+        self.assertEqual(orphan_reviews([self.engine()], {**self.review([]), "Renamed": {}}), ["Renamed"])
 
     def test_missing_reviewed_link_or_changed_identity_fails(self):
         review = self.review([{"url": "https://github.com/a/engine"}])

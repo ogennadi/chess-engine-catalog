@@ -142,7 +142,10 @@ index. Failed index requests or malformed responses fail explicitly and do not
 overwrite the previous results.
 
 `check_wiki_sources.py` examines wiki-linked families that have no source-code
-link from another source. `wiki-source-overrides.json` records reviewed engine
+link from a provenance list (links attached from research records do not count),
+plus every family already reviewed in `wiki-source-overrides.json`, so reviewed
+results are never dropped. Reviews whose family was renamed or merged are reported
+as warnings. `wiki-source-overrides.json` records reviewed engine
 links and negative decisions: repository links to dependencies, other engines,
 author profiles, and the wiki's own software are not engine-source evidence.
 Unreviewed pages are flagged `needs_review`, not automatically accepted.
