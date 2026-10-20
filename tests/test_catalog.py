@@ -6,7 +6,7 @@ from pathlib import Path
 from unittest.mock import MagicMock, patch
 from urllib.error import HTTPError
 
-from collect import merge, publish, unused_source_aliases
+from collect import merge, publish, unused_not_source, unused_source_aliases
 from collectors.http import Fetcher
 from collectors.lichess import collect, repository_links
 
@@ -59,11 +59,37 @@ class MergeTests(unittest.TestCase):
         self.assertNotIn("identity_evidence_url", engines["Dragon"]["provenance"][0])
         self.assertEqual(unused_source_aliases([komodo], rules), rules)
 
+    def test_not_source_urls_are_recorded_but_not_linked(self):
+        row = self.observation("Isa", "one")
+        row["code_urls"] = [
+            {"url": "https://github.com/d/Isa-NNUE-releases/", "evidence_url": row["url"]},
+            {"url": "https://github.com/d/Isa", "evidence_url": row["url"]},
+        ]
+        other = {**self.observation("Other", "one"),
+                 "code_urls": [{"url": "https://github.com/d/isa-nnue-releases", "evidence_url": row["url"]}]}
+        rules = [
+            {"family": "Isa", "url": "https://github.com/d/isa-nnue-releases",
+             "evidence_url": "https://example.org/isa", "note": "Binaries only."},
+            {"family": "Gone", "url": "https://example.org/gone", "evidence_url": "https://example.org", "note": "x"},
+        ]
+        engines = {e["name"]: e for e in merge([row, other], {}, (), rules)}
+        self.assertEqual([c["url"] for c in engines["Isa"]["source_code"]], ["https://github.com/d/Isa"])
+        self.assertEqual(engines["Isa"]["rejected_source_code"], [{
+            "url": "https://github.com/d/Isa-NNUE-releases/", "evidence_url": row["url"], "source": "one",
+            "reason": "Binaries only.", "review_evidence_url": "https://example.org/isa",
+        }])
+        # Rules are family-specific, so another family's identical link is kept.
+        self.assertEqual(len(engines["Other"]["source_code"]), 1)
+        self.assertEqual(unused_not_source(list(engines.values()), rules), rules[1:])
+
     def test_reviewed_source_aliases_are_well_formed(self):
         overrides = json.loads((Path(__file__).parents[1] / "overrides.json").read_text(encoding="utf-8"))
         for rule in overrides["source_aliases"]:
             self.assertTrue(rule["sources"] and rule["evidence_url"].startswith("https://"), rule)
             self.assertNotEqual(rule["family"].casefold(), rule["target"].casefold(), rule)
+        for rule in overrides["not_source_urls"]:
+            self.assertTrue(rule["family"] and rule["note"], rule)
+            self.assertTrue(rule["url"].startswith("https://") and rule["evidence_url"].startswith("https://"), rule)
 
 
 class PublishTests(unittest.TestCase):

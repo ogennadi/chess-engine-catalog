@@ -205,6 +205,13 @@ Pawn (Coelho). Each rule cites author evidence, usually the CCRL details page;
 affected provenance records carry it as `identity_evidence_url`. A rule that
 matches nothing is reported as a warning during collection.
 
+Some lists label binary-only release repositories as source code. Reviewed
+`not_source_urls` rules in `overrides.json` (family, URL, note, evidence URL)
+keep such a link out of that family's `source_code`; it is recorded under
+`rejected_source_code` and shown with the evidence on the family page. Examples
+are Cheng's `cheng4_releases` and Bumblebee's `BumblebeeReleases`. Unmatched
+rules are reported as warnings.
+
 Lucas Chess is collected from the pinned Linux-engine directory revision linked
 above. Its engine configuration is parsed without executing it and checked
 against the repository's directory listing. Multiple Maia strength models and

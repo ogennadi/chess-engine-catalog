@@ -366,6 +366,11 @@ def reviewed_decisions(engine, record, overrides, slugs, wiki_review):
                 f"Listing “{text(item['label'])}” attributed to this family. {text(item.get('identity_note', ''))} "
                 + (link(evidence, "Evidence") if evidence else "")
             )
+    for code in engine.get("rejected_source_code", []):
+        decisions.append(
+            f"Not counted as source code: {link(code['url'])} (listed by {text(code['source'])}). "
+            f"{text(code['reason'])} {link(code['review_evidence_url'], 'Evidence')}"
+        )
     wiki = engine.get("chessprogramming_wiki", {})
     if wiki.get("method", "").startswith("reviewed"):
         decisions.append(f"Chess Programming Wiki page “{text(wiki.get('title', ''))}” matched by a reviewed mapping.")

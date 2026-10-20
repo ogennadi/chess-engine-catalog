@@ -30,7 +30,10 @@ CATALOG = {
         }]),
         engine("Beta"),
         engine("Gamma", wiki={"status": "found", "url": "https://chessprogramming.org/Gamma", "title": "Gamma"}),
-        engine("Delta"),
+        {**engine("Delta"), "rejected_source_code": [{
+            "url": "https://github.com/d/delta-releases", "evidence_url": "https://example.org/list",
+            "source": "ccrl", "reason": "Binaries only.", "review_evidence_url": "https://example.org/delta-bin",
+        }]},
         engine("Evil", code=[{"url": "javascript:alert(1)", "evidence_url": "javascript:alert(2)", "source": "ccrl"}]),
     ],
 }
@@ -186,6 +189,9 @@ class PublishTests(unittest.TestCase):
         self.assertNotIn("Successor", delta_open)
         self.assertIn("Successor&#x27;s code is not Delta&#x27;s.", delta_reviewed)
         self.assertIn("Reviewed with the user.", delta_reviewed)
+        self.assertIn('Not counted as source code: <a href="https://github.com/d/delta-releases"', delta_reviewed)
+        self.assertIn("Binaries only.", delta_reviewed)
+        self.assertNotIn("delta-releases", self.family("delta").split('id="decisions"')[0])
         beta_open, _ = sections(self.family("beta"))
         self.assertIn("Licence for https://web.archive.org/beta.zip is not clearly established", beta_open)
 

@@ -42,8 +42,13 @@ def unused_source_aliases(observations, rules):
     return [rule for rule in rules if id(rule) not in used]
 
 
-def merge(observations, aliases, source_aliases=()):
+def url_key(url):
+    return url.strip().rstrip("/").casefold()
+
+
+def merge(observations, aliases, source_aliases=(), not_source=()):
     canonical = {identity_key(alias): target for alias, target in aliases.items()}
+    rejected = {url_key(rule["url"]): rule for rule in not_source}
     engines = {}
     for item in observations:
         raw_name = item["family"].strip()
@@ -66,14 +71,31 @@ def merge(observations, aliases, source_aliases=()):
             engine["provenance"].append(provenance)
         for code in item.get("code_urls", []):
             code = {**code, "source": item["source"]}
+            rule = rejected.get(url_key(code["url"]))
+            if rule and identity_key(rule["family"]) == key:
+                # Reviewed: the list links this URL as source, but it holds no source code.
+                entry = {**code, "reason": rule["note"], "review_evidence_url": rule["evidence_url"]}
+                if entry not in engine.setdefault("rejected_source_code", []):
+                    engine["rejected_source_code"].append(entry)
+                continue
             if code not in engine["source_code"]:
                 engine["source_code"].append(code)
     result = sorted(engines.values(), key=lambda engine: identity_key(engine["name"]))
     for engine in result:
         engine["aliases"].sort(key=identity_key)
         engine["source_code"].sort(key=lambda code: (code["url"], code["evidence_url"]))
+        if "rejected_source_code" in engine:
+            engine["rejected_source_code"].sort(key=lambda code: (code["url"], code["source"]))
         engine["provenance"].sort(key=lambda p: (p["source"], p["label"], p["url"]))
     return result
+
+
+def unused_not_source(engines, rules):
+    used = {
+        (identity_key(engine["name"]), url_key(code["url"]))
+        for engine in engines for code in engine.get("rejected_source_code", [])
+    }
+    return [rule for rule in rules if (identity_key(rule["family"]), url_key(rule["url"])) not in used]
 
 
 def publish(catalog, unresolved):
@@ -192,7 +214,8 @@ def main():
                         rows.append({
                             **provenance, "family": engine["name"],
                             "code_urls": [
-                                code for code in engine["source_code"]
+                                {k: code[k] for k in ("url", "evidence_url")} if "reason" in code else code
+                                for code in engine["source_code"] + engine.get("rejected_source_code", [])
                                 if code.get("source") == source["id"]
                                 or code["evidence_url"] == provenance["url"]
                             ],
@@ -224,12 +247,19 @@ def main():
             for source in statuses
         ),
         "sources": statuses,
-        "engines": merge(observations, overrides["aliases"], overrides["source_aliases"]),
+        "engines": merge(
+            observations, overrides["aliases"], overrides["source_aliases"], overrides.get("not_source_urls", [])
+        ),
     }
     for rule in unused_source_aliases(observations, overrides["source_aliases"]):
         print(
             f"WARNING: source alias {rule['family']} -> {rule['target']} "
             f"matched no {'/'.join(rule['sources'])} entry; review overrides.json",
+            flush=True,
+        )
+    for rule in unused_not_source(catalog["engines"], overrides.get("not_source_urls", [])):
+        print(
+            f"WARNING: not-source URL {rule['url']} matched no {rule['family']} link; review overrides.json",
             flush=True,
         )
     publish(catalog, unresolved)

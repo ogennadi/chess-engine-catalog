@@ -371,6 +371,26 @@
       "note": "RWBC and computer-chess.org list Michael Andersen's WinBoard engine; the wiki's Jupiter is Javier Ros Padilla's 1993 Turbo Pascal program."
     }
   ],
+  "not_source_urls": [
+    {
+      "family": "Bumblebee",
+      "url": "https://github.com/zd3nik/BumblebeeReleases",
+      "evidence_url": "https://github.com/zd3nik/BumblebeeReleases",
+      "note": "Binary releases only. Repository description: \"Binary releases of my private Bumblebee chess engine\"; README: \"At some point I may release the source code for Bumblebee. But for the foreseeable it will remain private.\""
+    },
+    {
+      "family": "Cheng",
+      "url": "https://github.com/kmar/cheng4_releases",
+      "evidence_url": "https://github.com/kmar/cheng4_releases",
+      "note": "Binary releases only: a README plus cheng4_*.zip release assets (checked 2026-10-20). The Cheng4 source repository, github.com/kmar/cheng4, returned HTTP 404 on the same date."
+    },
+    {
+      "family": "Isa",
+      "url": "https://github.com/Dany1962/Isa-NNUE-releases",
+      "evidence_url": "https://github.com/Dany1962/Isa-NNUE-releases",
+      "note": "Release zips of Windows executables only; isa_3_8.zip and Isa 4_5.zip contain .exe builds, a readme, a licence and an opening book, but no source (checked 2026-10-20)."
+    }
+  ],
   "lichess_accounts": {
     "aks-mantissa": {
       "family": "Mantissa"

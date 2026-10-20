@@ -3915,6 +3915,33 @@
    "searches": 1,
    "checked_at": "2026-10-19T05:36:46+00:00"
   },
+  "Bumblebee": {
+   "tier": "review",
+   "licensing": "proprietary",
+   "availability": "not_located",
+   "confidence": "high",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://github.com/zd3nik/BumblebeeReleases",
+     "quote": "Binary releases of my private Bumblebee chess engine"
+    },
+    {
+     "url": "https://github.com/zd3nik/BumblebeeReleases",
+     "quote": "At some point I may release the source code for Bumblebee.  But for the foreseeable it will remain private."
+    },
+    {
+     "url": "https://api.github.com/users/zd3nik/repos",
+     "quote": "Shawn Chidester's public repositories (2026-10-20) include Clubfoot, Bitfoot, Clunk, aperft and SenjoUCIAdapter, but no Bumblebee source."
+    }
+   ],
+   "rationale": "The author's release repository states that the engine is private and that source will not be released for the foreseeable future; the lists' source links point to this binary-only repository.",
+   "identity_note": "Earlier engines by the same author (Clubfoot, Bitfoot, Clunk) are open but are separate programs; their source is not Bumblebee's.",
+   "needs_review": false,
+   "notes": "Reviewed with the user on 2026-10-20: binary-only release repositories are not counted as source links.",
+   "searches": 1,
+   "checked_at": "2026-10-20T16:15:00+00:00"
+  },
   "Butcher": {
    "tier": "D",
    "licensing": "unknown",

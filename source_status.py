@@ -295,6 +295,11 @@ def render_family_pages(engines, status, directory):
                 lines.append(f"- <{code['url']}>{kind} â€” evidence: <{code['evidence_url']}> [{code.get('source', '')}]")
         else:
             lines.append("None found.")
+        for code in engine.get("rejected_source_code", []):
+            lines.append(
+                f"- Not source code: <{code['url']}> [{code['source']}] — {code['reason']} "
+                f"Evidence: <{code['review_evidence_url']}>"
+            )
         if record:
             lines += ["", "## Research notes", "", record.get("rationale", "")]
             for key, label in (("release_scope", "Release scope"), ("identity_issue", "Identity issue"), ("notes", "Notes")):
