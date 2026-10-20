@@ -54,9 +54,14 @@ refreshes collection or research. `dist/` is gitignored; only the generator
   "Source available" includes archived-only copies. Filters are kept in the URL
   (`?q=...&availability=available|archived|unavailable`) for bookmarking. Without
   JavaScript the full table is shown.
-* `families/*.html`: aliases, source links (with licence and release scope where
-  researched), provenance lists, Chess Programming Wiki link, research findings and
-  evidence quotations, and open questions listed apart from reviewed decisions.
+* `families/*.html`: authors (from the CPW engine list, computer-chess.org and RWBC, with
+  word-order duplicates merged), aliases, related families, source links (with licence and
+  release scope where researched), provenance lists, Chess Programming Wiki link, research
+  findings and evidence quotations, and open questions listed apart from reviewed decisions.
+  "Related families" shows reviewed `related_families` entries from `overrides.json`
+  (`derived_from`, `successor_of` or `same_name`, with a note and evidence URL; shown on both
+  pages) and `source_aliases` splits, then lists families sharing the same base name
+  (e.g. Atlas and Atlas (1967)) explicitly as not reviewed.
 * `sources.html`: all provenance lists with descriptions, collection status, and
   discovery notes from `docs/sources`, plus the methodology and research definitions.
 * `downloads/`: the printable PDF (as `names_pdf.py` makes it), `engines.csv`,
@@ -194,6 +199,10 @@ stripping is heuristic, so unusual release names may still need manual aliases.
 Cross-source aliases also reconcile CCRL family labels with observed version
 names (for example, BugChess2 under BugChess, Vajolet2 under Vajolet, and
 Dragon by Komodo under Dragon). Original names remain in aliases/provenance.
+RWBC sorts some names by a trailing qualifier, such as "Shredder (Deep)" and "Critter
+(Chess)"; reviewed aliases merge these into the base family when the author and links
+match. Where the lists group a commercial successor with an open predecessor (Deep Sjeng
+under Sjeng), the research record's release scope states which releases the source covers.
 
 Same-named but different programs are kept apart. `source_aliases` in
 `overrides.json` reassigns a source's entries (optionally only labels matching a

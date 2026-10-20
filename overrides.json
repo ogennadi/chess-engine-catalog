@@ -2,6 +2,7 @@
   "aliases": {
     "4k.c": "4kc",
     "Absolute-Zero": "Absolute Zero",
+    "Ant (& Gi-Ant)": "Ant",
     "APILChess": "APIL chess",
     "ArabianKnight": "Arabian Knight",
     "BadChessEngine": "Bad Chess Engine",
@@ -18,6 +19,7 @@
     "ChessDotCpp": "chess.cpp",
     "Chessplayer 2150": "Chess Player 2150",
     "CPW": "CPW-Engine",
+    "Critter (Chess)": "Critter",
     "Deep Sjeng c't": "Sjeng",
     "DoubleCheck": "DiscoCheck",
     "Dragon by Komodo": "Dragon",
@@ -28,6 +30,7 @@
     "ETChess": "E.T. Chess",
     "Francesca MAD": "Francesca",
     "Frank-Walter": "FrankWalter",
+    "Frenzee (Deep)": "Frenzee",
     "Gnuchess": "GNU Chess",
     "Goedel": "Godel",
     "Googleplex Starthinker": "Googleplex",
@@ -36,9 +39,12 @@
     "GullChess": "Gull",
     "GyatsoChess": "Gyatso",
     "Gödel": "Godel",
+    "Hiarcs (Deep)": "Hiarcs",
     "HokusPokus": "Hokus-Pokus",
     "Infraredv2": "Infrared",
     "JackyChess": "Jacky Chess",
+    "Jazz (Orchestra)": "Jazz",
+    "Junior (Deep)": "Junior",
     "Knight Dreamer": "KnightDreamer",
     "Lc0": "Leela Chess",
     "Leela": "Leela Chess",
@@ -51,6 +57,7 @@
     "MrBob": "Mr Bob",
     "Nates Chessbot": "Nate's ChessBot",
     "Nu'chess": "Nu-chess",
+    "Patzer (Deep)": "Patzer",
     "paulchen332": "paulchen",
     "PeacockSpider": "Peacock Spider",
     "Porucnik": "Porucznik",
@@ -68,9 +75,11 @@
     "Shallow2": "Shallow",
     "ShallowGuess": "Shallow Guess",
     "ShenYu": "Shen Yu",
+    "Shredder (Deep)": "Shredder",
     "Sierzant": "Sierżant",
     "SilkeChess": "Silke Chess",
     "Sjaak II": "Sjaak (Glebbeek)",
+    "Sjeng (Deep)": "Sjeng",
     "SmallC": "Small-C",
     "SmallPotato": "Small Potato",
     "Smash (Deep)": "Smash",
@@ -389,6 +398,29 @@
       "url": "https://github.com/Dany1962/Isa-NNUE-releases",
       "evidence_url": "https://github.com/Dany1962/Isa-NNUE-releases",
       "note": "Release zips of Windows executables only; isa_3_8.zip and Isa 4_5.zip contain .exe builds, a readme, a licence and an opening book, but no source (checked 2026-10-20)."
+    }
+  ],
+  "related_families": [
+    {
+      "family": "Chess 0.5X",
+      "relation": "derived_from",
+      "related": "Chess 0.5",
+      "note": "Wim Elsenaar's PDP-11 assembly port of Atkin and Frey's Pascal Chess 0.5, developed so far that the wiki says it 'seemed to qualify for a new entry'. Chess 0.5 source does not cover Chess 0.5X.",
+      "evidence_url": "https://chessprogramming.org/Chess_0.5X"
+    },
+    {
+      "family": "Merlin",
+      "relation": "derived_from",
+      "related": "Chess 0.5",
+      "note": "The Austrian Merlin (Kaindl, Horacek, Wagner, Schreier) started from Chess 0.5 and was developed further in Pascal and CDC assembly; not Merlin (GB) or Merlin (HU).",
+      "evidence_url": "https://chessprogramming.org/Chess_0.5"
+    },
+    {
+      "family": "Shy",
+      "relation": "derived_from",
+      "related": "Chess 0.5",
+      "note": "The Finnish Shy (Kasanen, Korhonen, Saari), written in Algol, is named by the wiki as one of the programs that originated from Chess 0.5.",
+      "evidence_url": "https://chessprogramming.org/Chess_0.5"
     }
   ],
   "lichess_accounts": {

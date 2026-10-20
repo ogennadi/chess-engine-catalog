@@ -1373,19 +1373,7 @@
     {
      "search": "web: Tom Vijlbrief \"Ant\" chess engine WinBoard download source",
      "quote": "only binary download pages (e.g. Ant 6.06); no source"
-    }
-   ],
-   "rationale": "WinBoard engine distributed as binaries via engine collections; no source release or license found.",
-   "searches": 2,
-   "checked_at": "2026-10-19T21:12:29+00:00"
-  },
-  "Ant (& Gi-Ant)": {
-   "tier": "D",
-   "licensing": "unknown",
-   "availability": "not_located",
-   "confidence": "low",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "url": "https://rwbc-chess.de/download.htm",
      "quote": "208 Ant 3.42 - 6.06 old original versions Tom Vijlbrief (NLD) 2026-02-18 (no '(+src)' marker)"
@@ -1403,9 +1391,10 @@
      "quote": "summary: no verified source download or repository (unverified lead)"
     }
    ],
-   "rationale": "Ant/Gi-Ant versions survive only as binary collections (RWBC, Leisner); no source release found.",
-   "searches": 2,
-   "checked_at": "2026-10-20T10:07:47+00:00"
+   "rationale": "WinBoard engine distributed as binaries via engine collections; no source release or license found.",
+   "searches": 4,
+   "checked_at": "2026-10-20T10:07:47+00:00",
+   "notes": "Merged on 2026-10-20 with the record for RWBC's 'Ant (& Gi-Ant)' row, which is the same family (same author; RWBC qualifies names, e.g. 'X (Deep)' for Deep X)."
   },
   "APIL chess": {
    "tier": "A",
@@ -7957,7 +7946,7 @@
    "searches": 2,
    "checked_at": "2026-10-20T00:32:00+00:00"
   },
-  "Critter (Chess)": {
+  "Critter": {
    "tier": "F",
    "licensing": "open_source",
    "availability": "available",
@@ -7999,7 +7988,8 @@
    ],
    "rationale": "Richard Vida published the Pascal OpenCritter source (GPL) on SourceForge; a GPL-2.0 mirror exists on GitHub. The strong C/C++ Critter versions were not open-sourced, hence the release scope.",
    "searches": 1,
-   "checked_at": "2026-10-20T00:32:00+00:00"
+   "checked_at": "2026-10-20T00:32:00+00:00",
+   "notes": "Merged on 2026-10-20 with the record for RWBC's 'Critter (Chess)' row, which is the same family (same author; RWBC qualifies names, e.g. 'X (Deep)' for Deep X)."
   },
   "Crux": {
    "tier": "D",
@@ -13484,7 +13474,7 @@
    "searches": 2,
    "checked_at": "2026-10-19T22:33:05+00:00"
   },
-  "Frenzee (Deep)": {
+  "Frenzee": {
    "tier": "D",
    "licensing": "unknown",
    "availability": "not_located",
@@ -13506,11 +13496,16 @@
     {
      "search": "Frenzee chess engine Sune Fischer source code",
      "quote": "AI summary: source not public; no release statement found (unverified)"
+    },
+    {
+     "url": "https://web.archive.org/web/20061204195709/http://www.geocities.com/ruleren/sources.html",
+     "quote": "Sources page offers only egtb_dll.zip (Nalimov endgame-table DLL example) and crbmg.zip (rotated bitboard move generator demo); no Frenzee engine source."
     }
    ],
-   "rationale": "Author's archived homepage lists only engine binaries, a GUI and opening books; deepfrenzee_3.0.zip was not captured by the archive. No source located; no explicit closed-source statement.",
+   "rationale": "Author's archived homepage lists only engine binaries, a GUI and opening books; deepfrenzee_3.0.zip was not captured by the archive. No source located; no explicit closed-source statement. The wiki-linked 'Sources' page holds only side projects (an EGTB DLL and a move-generator demo), not the engine.",
    "searches": 2,
-   "checked_at": "2026-10-20T11:11:25+00:00"
+   "checked_at": "2026-10-20T11:11:25+00:00",
+   "notes": "Merged on 2026-10-20 with the record for RWBC's 'Frenzee (Deep)' row, which is the same family (same author; RWBC qualifies names, e.g. 'X (Deep)' for Deep X)."
   },
   "Fridolin": {
    "tier": "A",
@@ -15910,24 +15905,6 @@
    "checked_at": "2026-10-19T22:05:28+00:00"
   },
   "Hiarcs": {
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "release_scope": "family",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://chessprogramming.org/HIARCS",
-     "quote": "HIARCS is commercially available since 1991 (Categories: Commercial)"
-    }
-   ],
-   "rationale": "Offline rule: wiki Commercial category. No web search performed.",
-   "searches": 0,
-   "checked_at": "2026-10-19T02:46:42+00:00",
-   "pilot_group": "commercial",
-   "tier": "pilot"
-  },
-  "Hiarcs (Deep)": {
    "tier": "D",
    "licensing": "proprietary",
    "availability": "not_located",
@@ -15945,11 +15922,16 @@
     {
      "search": "GitHub repositories: hiarcs chess engine",
      "quote": "only an unrelated Stockfish homebrew repo mentioning Hiarcs Chess Explorer"
+    },
+    {
+     "url": "https://chessprogramming.org/HIARCS",
+     "quote": "HIARCS is commercially available since 1991 (Categories: Commercial)"
     }
    ],
    "rationale": "HIARCS is a commercial engine sold by its author's company; no source published.",
    "searches": 1,
-   "checked_at": "2026-10-20T11:25:14+00:00"
+   "checked_at": "2026-10-20T11:25:14+00:00",
+   "notes": "Merged on 2026-10-20 with the record for RWBC's 'Hiarcs (Deep)' row, which is the same family (same author; RWBC qualifies names, e.g. 'X (Deep)' for Deep X)."
   },
   "Hiarcs Master": {
    "tier": "F",
@@ -17318,43 +17300,16 @@
     {
      "search": "GitHub repositories: jazz chess engine glebbeek",
      "quote": "no results"
-    }
-   ],
-   "rationale": "Author site still serves Jazz source tarballs; COPYING is GPLv3.",
-   "searches": 1,
-   "checked_at": "2026-10-19T05:36:46+00:00"
-  },
-  "Jazz (Orchestra)": {
-   "tier": "B",
-   "licensing": "open_source",
-   "availability": "available",
-   "confidence": "high",
-   "release_scope": "Jazz r640-r840 source tarballs on author site",
-   "source_urls": [
-    {
-     "url": "http://www.eglebbk.dds.nl/program/download/jazz-840-src.tar.gz",
-     "kind": "author download (tar.gz, r840 source)",
-     "license": "GPL-3.0-or-later"
-    },
-    {
-     "url": "http://www.eglebbk.dds.nl/program/chess-download.html",
-     "kind": "author download page (all versions)",
-     "license": "GPL-3.0"
-    }
-   ],
-   "evidence": [
-    {
-     "url": "http://www.eglebbk.dds.nl/program/chess-download.html",
-     "quote": "Both Jazz and Sjaak are distributed under the terms of the GNU General Public Licence."
     },
     {
      "source": "downloaded jazz-840-src.tar.gz Jazz/COPYING and src/eval/evaluate.c",
      "quote": "Jazz, a program for playing chess Copyright (C) 2009, 2011 Evert Glebbeek ... either version 3 of the License"
     }
    ],
-   "rationale": "Evert Glebbeek's own site hosts Jazz source tarballs with GPLv3 COPYING and headers inspected.",
-   "searches": 0,
-   "checked_at": "2026-10-19T16:26:46+00:00"
+   "rationale": "Author site still serves Jazz source tarballs; COPYING is GPLv3.",
+   "searches": 1,
+   "checked_at": "2026-10-19T16:26:46+00:00",
+   "notes": "Merged on 2026-10-20 with the record for RWBC's 'Jazz (Orchestra)' row, which is the same family (same author; RWBC qualifies names, e.g. 'X (Deep)' for Deep X)."
   },
   "Jchess": {
    "tier": "B",
@@ -17818,24 +17773,6 @@
    "checked_at": "2026-10-20T01:13:32+00:00"
   },
   "Junior": {
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "release_scope": "family",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://chessprogramming.org/Junior",
-     "quote": "Deep Junior 13 as pure UCI compatible engine is purchased as download (Categories: Commercial, ChessBase)"
-    }
-   ],
-   "rationale": "Offline rule: wiki Commercial category. No web search performed.",
-   "searches": 0,
-   "checked_at": "2026-10-19T02:46:42+00:00",
-   "pilot_group": "commercial",
-   "tier": "pilot"
-  },
-  "Junior (Deep)": {
    "tier": "D",
    "licensing": "proprietary",
    "availability": "not_located",
@@ -17853,11 +17790,16 @@
     {
      "search": "GitHub repositories: \"Deep Junior\" chess Bushinsky",
      "quote": "no results"
+    },
+    {
+     "url": "https://chessprogramming.org/Junior",
+     "quote": "Deep Junior 13 as pure UCI compatible engine is purchased as download (Categories: Commercial, ChessBase)"
     }
    ],
    "rationale": "Commercial engine sold with license keys (HIARCS distribution); no source release found.",
    "searches": 1,
-   "checked_at": "2026-10-20T12:22:09+00:00"
+   "checked_at": "2026-10-20T12:22:09+00:00",
+   "notes": "Merged on 2026-10-20 with the record for RWBC's 'Junior (Deep)' row, which is the same family (same author; RWBC qualifies names, e.g. 'X (Deep)' for Deep X)."
   },
   "Junior Chess": {
    "tier": "C",
@@ -26206,35 +26148,6 @@
    "checked_at": "2026-10-19T22:51:43+00:00"
   },
   "Patzer": {
-   "tier": "E",
-   "licensing": "unknown",
-   "availability": "not_located",
-   "confidence": "low",
-   "source_urls": [],
-   "evidence": [
-    {
-     "search": "GitHub repositories: Patzer chess Pfister",
-     "quote": "0 results"
-    },
-    {
-     "search": "GitHub repositories: patzer chess engine",
-     "quote": "only unrelated engines (ntietz/patzer Rust, Rmark92/Patzer JS, dfrezell/patzer Go)"
-    },
-    {
-     "search": "\"Patzer\" chess engine Roland Pfister source code",
-     "quote": "no source release by Roland Pfister found; only wiki pages and unrelated namesakes"
-    },
-    {
-     "source": "dossier: computer-chess.org comment",
-     "quote": "Win; mp; FRC; own endgame bitbases (Dead Engine List)"
-    }
-   ],
-   "rationale": "Freeware WinBoard/UCI engine by Roland Pfister, also sold as ChessBase Young Talent; no source release or repository found, no explicit closed-source statement seen.",
-   "notes": "Namesake GitHub projects called patzer are unrelated to Pfister's engine.",
-   "searches": 3,
-   "checked_at": "2026-10-19T22:51:43+00:00"
-  },
-  "Patzer (Deep)": {
    "tier": "D",
    "licensing": "proprietary",
    "availability": "not_located",
@@ -26256,11 +26169,28 @@
     {
      "search": "GitHub repositories: patzer chess pfister",
      "quote": "0 results"
+    },
+    {
+     "search": "GitHub repositories: Patzer chess Pfister",
+     "quote": "0 results"
+    },
+    {
+     "search": "GitHub repositories: patzer chess engine",
+     "quote": "only unrelated engines (ntietz/patzer Rust, Rmark92/Patzer JS, dfrezell/patzer Go)"
+    },
+    {
+     "search": "\"Patzer\" chess engine Roland Pfister source code",
+     "quote": "no source release by Roland Pfister found; only wiki pages and unrelated namesakes"
+    },
+    {
+     "source": "dossier: computer-chess.org comment",
+     "quote": "Win; mp; FRC; own endgame bitbases (Dead Engine List)"
     }
    ],
    "rationale": "Patzer was sold commercially (ChessBase Young Talent) and the WB/UCI/SMP 3.61 distribution readme says it is not freeware and may not be redistributed without permission; binaries only, no source found.",
-   "searches": 1,
-   "checked_at": "2026-10-20T12:33:18+00:00"
+   "searches": 4,
+   "checked_at": "2026-10-20T12:33:18+00:00",
+   "notes": "Namesake GitHub projects called patzer are unrelated to Pfister's engine. Merged on 2026-10-20 with the record for RWBC's 'Patzer (Deep)' row, which is the same family (same author; RWBC qualifies names, e.g. 'X (Deep)' for Deep X)."
   },
   "Paul": {
    "tier": "E",
@@ -31473,24 +31403,6 @@
    "checked_at": "2026-10-19T19:55:17+00:00"
   },
   "Shredder": {
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "release_scope": "family",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://chessprogramming.org/Shredder",
-     "quote": "Shredder went commercial, distributed by Millennium 2000 GmbH (Categories: Commercial, ChessBase)"
-    }
-   ],
-   "rationale": "Offline rule: wiki Commercial category with no contrary evidence. No web search performed (pilot accuracy test).",
-   "searches": 0,
-   "checked_at": "2026-10-19T02:46:42+00:00",
-   "pilot_group": "commercial",
-   "tier": "pilot"
-  },
-  "Shredder (Deep)": {
    "tier": "D",
    "licensing": "proprietary",
    "availability": "not_located",
@@ -31508,11 +31420,16 @@
     {
      "search": "GitHub repositories: shredder chess meyer-kahlen",
      "quote": "0 results"
+    },
+    {
+     "url": "https://chessprogramming.org/Shredder",
+     "quote": "Shredder went commercial, distributed by Millennium 2000 GmbH (Categories: Commercial, ChessBase)"
     }
    ],
    "rationale": "Deep Shredder is a commercial product sold by its author's company; no published source.",
    "searches": 1,
-   "checked_at": "2026-10-20T13:31:58+00:00"
+   "checked_at": "2026-10-20T13:31:58+00:00",
+   "notes": "Merged on 2026-10-20 with the record for RWBC's 'Shredder (Deep)' row, which is the same family (same author; RWBC qualifies names, e.g. 'X (Deep)' for Deep X)."
   },
   "Shrike": {
    "tier": "E",
@@ -31970,12 +31887,24 @@
    "searches": 1,
    "checked_at": "2026-10-20T13:31:58+00:00"
   },
-  "Sjeng (Deep)": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
+  "Sjeng": {
+   "tier": "review",
+   "licensing": "open_source",
+   "availability": "available",
    "confidence": "medium",
+   "release_scope": "The original Sjeng (later 'Sjeng Free') releases only; the commercial Deep Sjeng 1.x-3.x releases have no public source.",
+   "source_urls": [
+    {
+     "url": "https://github.com/gcp/sjeng",
+     "kind": "author's repository (Gian-Carlo Pascutto)",
+     "license": "GPL-2.0"
+    }
+   ],
    "evidence": [
+    {
+     "url": "https://github.com/gcp/sjeng",
+     "quote": "A chess and chess variants playing program. (GitHub licence: GPL-2.0; README: 'What is Sjeng ? Sjeng is a chessprogram that plays many variants.')"
+    },
     {
      "url": "http://sjeng.org/deepsjeng3.html",
      "quote": "Deep Sjeng 3.x is no longer for sale. Download Deep Sjeng WC2008 update (only for previous customers)."
@@ -31993,10 +31922,10 @@
      "quote": "0 results"
     }
    ],
-   "rationale": "Deep Sjeng was a commercial product by Gian-Carlo Pascutto (sold, update only for customers); no public source release located. The earlier GPL 'Sjeng Free' is a different (precursor) program and is not counted.",
-   "notes": "A Deep Sjeng 3.x derived code base is included in the licensed SPEC CPU2017 benchmark (631.deepsjeng), which is not a public source release.",
-   "searches": 1,
-   "checked_at": "2026-10-20T02:36:12+00:00"
+   "rationale": "Pascutto's GPL Sjeng is published on GitHub (gcp/sjeng). Deep Sjeng, its commercial successor that CEGT, SSDF, UBC and RWBC list under the same family, was sold without source (Deep Sjeng 3.x is no longer for sale; updates were only for previous customers), so the source covers the GPL Sjeng releases only.",
+   "notes": "A Deep Sjeng 3.x derived code base is included in the licensed SPEC CPU2017 benchmark (631.deepsjeng), which is not a public source release. Merged on 2026-10-20 with RWBC's 'Sjeng (Deep)' row: the lists group Deep Sjeng with Sjeng, so the family keeps both and release_scope limits the source to GPL Sjeng.",
+   "searches": 2,
+   "checked_at": "2026-10-20T16:30:00+00:00"
   },
   "Skaki": {
    "tier": "review",

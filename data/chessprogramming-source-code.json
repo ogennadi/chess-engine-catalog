@@ -46226,16 +46226,8 @@
     "Frenzee": {
       "wiki_url": "https://chessprogramming.org/Frenzee",
       "checked_at": "2026-10-19T00:46:56.306827+00:00",
-      "status": "found",
-      "code_urls": [
-        {
-          "url": "https://web.archive.org/web/20061204195709/http://www.geocities.com/ruleren/sources.html",
-          "note": "Historical archived source landing page; current source availability not verified.",
-          "evidence_url": "https://chessprogramming.org/Frenzee",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T00:46:56.306827+00:00"
-        }
-      ],
+      "status": "no_source_link_found",
+      "code_urls": [],
       "external_links": [
         {
           "url": "https://commons.wikimedia.org/wiki/File:Physiognomy.jpg",
@@ -46386,7 +46378,7 @@
           "label": "CC BY-SA 3.0"
         }
       ],
-      "note": "Wiki explicitly links an archived Frenzee Sources page."
+      "note": "The wiki links an archived 'Sources' page, but it holds only side projects by the author (egtb_dll.zip, a Nalimov endgame-table DLL example, and crbmg.zip, a rotated-bitboard move generator demo), not Frenzee's engine source (checked 2026-10-20)."
     },
     "Freyr": {
       "wiki_url": "https://chessprogramming.org/Freyr",

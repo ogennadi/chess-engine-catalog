@@ -90,6 +90,11 @@ class MergeTests(unittest.TestCase):
         for rule in overrides["not_source_urls"]:
             self.assertTrue(rule["family"] and rule["note"], rule)
             self.assertTrue(rule["url"].startswith("https://") and rule["evidence_url"].startswith("https://"), rule)
+        from publish import RELATIONS
+        for rule in overrides["related_families"]:
+            self.assertIn(rule["relation"], RELATIONS, rule)
+            self.assertNotEqual(rule["family"], rule["related"], rule)
+            self.assertTrue(rule["note"] and rule["evidence_url"].startswith("https://"), rule)
 
 
 class PublishTests(unittest.TestCase):

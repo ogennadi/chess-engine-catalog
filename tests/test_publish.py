@@ -63,6 +63,9 @@ REGISTRY = [
 OVERRIDES = {"aliases": {"Alpha-Chess": "Alpha"}, "source_aliases": [{
     "sources": ["ccrl"], "family": "Gamma", "target": "Gamma (Smith)",
     "evidence_url": "https://example.org/gamma-author", "note": "Different author.",
+}], "related_families": [{
+    "family": "Delta", "relation": "derived_from", "related": "Alpha",
+    "note": "Port of Alpha.", "evidence_url": "https://example.org/delta-port",
 }]}
 DOCS = {
     "ccrl": "# CCRL\n\n- **URL:** <https://example.org/list>\n\n## How it was found\n\n"
@@ -161,6 +164,21 @@ class PublishTests(unittest.TestCase):
         self.assertNotIn('href="javascript:', evil + self.index)
         self.assertIn("javascript:alert(1)", evil)
         self.assertIn("Beta &lt;b&gt;source&lt;/b&gt; zip", self.family("beta"))
+
+    def test_related_families_reviewed_both_ways_and_similar_names_flagged(self):
+        related = lambda html: html.split('id="related"')[1].split("</section>")[0]
+        delta = related(self.family("delta"))
+        self.assertIn('<strong>Derived from:</strong> <a href="alpha.html">Alpha</a>. Port of Alpha.', delta)
+        self.assertIn('href="https://example.org/delta-port"', delta)
+        self.assertIn('<strong>Has derivative:</strong> <a href="delta.html">Delta</a>', related(self.family("alpha")))
+        self.assertIn("<strong>Same name, different program:</strong> Gamma (Smith).", related(self.family("gamma")))
+        self.assertNotIn('id="related"', self.family("beta"))
+        engines = [{"name": n, "provenance": []} for n in ("Atlas", "Atlas (1967)", "Atlas (Bell)", "Atlantis")]
+        similar = publish.similar_names(engines)
+        rules = {"related_families": [{"family": "Atlas (Bell)", "relation": "same_name", "related": "Atlas"}]}
+        self.assertEqual(publish.related_families(engines[0], rules, similar),
+                         ([("Same name, different program", "Atlas (Bell)", "", None)], ["Atlas (1967)"]))
+        self.assertEqual(publish.related_families(engines[3], rules, similar), ([], []))
 
     def test_family_page_shows_deduplicated_authors_first(self):
         engine = {"name": "Abbess", "provenance": [

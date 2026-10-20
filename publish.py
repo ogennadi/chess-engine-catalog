@@ -277,6 +277,75 @@ def availability(engine):
     return source_status.availability_label(engine)
 
 
+# Reviewed relation -> (label on the family's page, label on the related family's page).
+RELATIONS = {
+    "derived_from": ("Derived from", "Has derivative"),
+    "successor_of": ("Successor of", "Succeeded by"),
+    "same_name": ("Same name, different program", "Same name, different program"),
+}
+
+
+def base_name(name):
+    """Name without a trailing qualifier, so "Atlas (1967)" groups with "Atlas"."""
+    return collect.identity_key(re.sub(r"\s*\([^()]*\)$", "", name)) or collect.identity_key(name)
+
+
+def similar_names(engines):
+    groups = {}
+    for engine in engines:
+        groups.setdefault(base_name(engine["name"]), []).append(engine["name"])
+    return groups
+
+
+def related_families(engine, overrides, similar):
+    """Reviewed relationships in both directions, then unreviewed families sharing the base name."""
+    name = engine["name"]
+    reviewed = []
+    for rule in overrides.get("related_families", []):
+        forward, backward = RELATIONS[rule["relation"]]
+        if name == rule["family"]:
+            reviewed.append((forward, rule["related"], rule.get("note", ""), rule.get("evidence_url")))
+        elif name == rule["related"]:
+            reviewed.append((backward, rule["family"], rule.get("note", ""), rule.get("evidence_url")))
+    for rule in overrides.get("source_aliases", []):
+        if name in (rule.get("family"), rule.get("target")) and rule["family"] != rule["target"]:
+            other = rule["target"] if name == rule["family"] else rule["family"]
+            reviewed.append((RELATIONS["same_name"][0], other, rule.get("note", ""), rule.get("evidence_url")))
+    unique, seen = [], set()
+    for item in reviewed:
+        if (item[0], item[1]) not in seen:
+            seen.add((item[0], item[1]))
+            unique.append(item)
+    known = {other for _, other, _, _ in unique}
+    unreviewed = [other for other in similar.get(base_name(name), []) if other != name and other not in known]
+    return unique, sorted(unreviewed, key=str.casefold)
+
+
+def related_section(engine, overrides, slugs, similar, author_of):
+    reviewed, unreviewed = related_families(engine, overrides, similar)
+    if not reviewed and not unreviewed:
+        return ""
+
+    def family_link(other):
+        html = f'<a href="{slugs[other]}.html">{text(other)}</a>' if other in slugs else text(other)
+        if author_of.get(other):
+            html += f' <span class="muted">by {text(author_of[other])}</span>'
+        return html
+
+    body = ""
+    if reviewed:
+        body += "<ul>" + "".join(
+            f"<li><strong>{text(label)}:</strong> {family_link(other)}. {text(note)}"
+            f"{' ' + link(evidence, 'Evidence') if evidence else ''}</li>"
+            for label, other, note, evidence in reviewed
+        ) + "</ul>"
+    if unreviewed:
+        body += ('<p>Families with a similar name, <strong>not reviewed</strong> as related; '
+                 "listed to help tell them apart:</p><ul>"
+                 + "".join(f"<li>{family_link(other)}</li>" for other in unreviewed) + "</ul>")
+    return section("Related families", body, "related")
+
+
 def name_words(name):
     folded = unicodedata.normalize("NFKD", name.casefold())
     return frozenset(re.findall(r"\w+", "".join(c for c in folded if not unicodedata.combining(c)))) - {"and"}
@@ -480,7 +549,7 @@ def provenance_entry(item):
     return f"<li><strong>{text(item['label'])}</strong>{definition_list(pairs, 'metadata')}</li>"
 
 
-def family_page(engine, record, registry, overrides, slugs, wiki_review, generated_at):
+def family_page(engine, record, registry, overrides, slugs, wiki_review, generated_at, similar=None, author_of=None):
     name = engine["name"]
     state = availability(engine)
     aliases = all_aliases(engine, overrides)
@@ -528,6 +597,7 @@ def family_page(engine, record, registry, overrides, slugs, wiki_review, generat
         "<ul>" + "".join(f"<li>{text(a)}</li>" for a in aliases) + "</ul>"
         if aliases else "<p>No other names recorded.</p>"
     ), "names")
+    body += related_section(engine, overrides, slugs, similar or {}, author_of or {})
 
     codes = engine.get("source_code", [])
     if codes:
@@ -758,10 +828,16 @@ def build(catalog, status, registry, overrides, wiki_reviews, docs, out):
     (out / "index.html").write_text(index_page(catalog, overrides, slugs), encoding="utf-8")
     (out / "sources.html").write_text(sources_page(catalog, registry, docs), encoding="utf-8")
     written = set()
+    similar = similar_names(catalog["engines"])
+    author_of = {e["name"]: "; ".join(value for value, _ in authors(e)) for e in catalog["engines"]}
+    for rule in overrides.get("related_families", []):
+        for name in (rule["family"], rule["related"]):
+            if name not in slugs:
+                print(f"WARNING: related_families names unknown family {name!r}; review overrides.json")
     for engine in catalog["engines"]:
         name = engine["name"]
         html = family_page(engine, status.get("families", {}).get(name, {}), registry_by_id,
-                           overrides, slugs, wiki_reviews.get(name, {}), generated_at)
+                           overrides, slugs, wiki_reviews.get(name, {}), generated_at, similar, author_of)
         filename = slugs[name] + ".html"
         (out / "families" / filename).write_text(html, encoding="utf-8")
         written.add(filename)
