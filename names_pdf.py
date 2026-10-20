@@ -26,6 +26,8 @@ GUTTER = 6
 LEADING = 1.13
 CONDENSE = 85
 SIZE_RANGE = 4.0
+# Upper bound so short lists do not grow until a single row no longer fits a page.
+MAX_SIZE = 48.0
 DAGGER = "\u2020"
 
 # Helvetica and Helvetica-Bold advance widths (1/1000 em) for ASCII 32-126, from the Adobe AFM files.
@@ -52,9 +54,10 @@ def text_width(text, font, size):
     return sum(widths.get(c, 556) for c in text) * size / 1000 * CONDENSE / 100
 
 
-def entries():
+def entries(catalog=None):
     """Return (text, is_heading, index) rows and the family count; headings have no index."""
-    catalog = json.loads((ROOT / "data" / "engines.json").read_text(encoding="utf-8"))
+    if catalog is None:
+        catalog = json.loads((ROOT / "data" / "engines.json").read_text(encoding="utf-8"))
     names = sorted(
         (e["name"] + (DAGGER if source_status.availability_label(e) == "archived_only" else ""))
         for e in catalog["engines"] if source_status.availability_label(e) in AVAILABLE
@@ -119,7 +122,7 @@ def choose(rows, page_size, min_size, max_pages=None):
     if max_pages:
         # Largest size (in 0.25 pt steps) that still fits within the page limit.
         size, best = min_size, None
-        while (pages := len(layout(rows, size, page_size, 2))) <= max_pages:
+        while size <= MAX_SIZE and (pages := len(layout(rows, size, page_size, 2))) <= max_pages:
             best = (size, pages)
             size += 0.25
         if best is None:

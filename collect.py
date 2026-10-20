@@ -92,6 +92,23 @@ def publish(catalog, unresolved):
     status = json.loads(status_path.read_text(encoding="utf-8")) if status_path.exists() else {}
     source_status.attach(catalog, status)
     engines = catalog["engines"]
+    outputs = {
+        "engines.json": json.dumps(catalog, ensure_ascii=False, indent=2) + "\n",
+        "engines.csv": catalog_csv(engines),
+        "engine-names.txt": "".join(engine["name"] + "\n" for engine in engines),
+        "unresolved-lichess.json": json.dumps(unresolved, ensure_ascii=False, indent=2) + "\n",
+    }
+    for filename, text in outputs.items():
+        path = directory / filename
+        temporary = path.with_suffix(path.suffix + ".tmp")
+        temporary.write_text(text, encoding="utf-8", newline="")
+        temporary.replace(path)
+    source_status.render_family_pages(engines, status, ROOT / "docs" / "families")
+
+
+def catalog_csv(engines):
+    """Spreadsheet export of catalog engines (with source status already attached)."""
+    import source_status
     table = io.StringIO(newline="")
     writer = csv.writer(table)
     writer.writerow([
@@ -111,18 +128,7 @@ def publish(catalog, unresolved):
             wiki.get("url") or "", wiki.get("status", "not_checked"),
             wiki.get("checked_at") or "",
         ])
-    outputs = {
-        "engines.json": json.dumps(catalog, ensure_ascii=False, indent=2) + "\n",
-        "engines.csv": table.getvalue(),
-        "engine-names.txt": "".join(engine["name"] + "\n" for engine in engines),
-        "unresolved-lichess.json": json.dumps(unresolved, ensure_ascii=False, indent=2) + "\n",
-    }
-    for filename, text in outputs.items():
-        path = directory / filename
-        temporary = path.with_suffix(path.suffix + ".tmp")
-        temporary.write_text(text, encoding="utf-8", newline="")
-        temporary.replace(path)
-    source_status.render_family_pages(engines, status, ROOT / "docs" / "families")
+    return table.getvalue()
 
 
 def main():
