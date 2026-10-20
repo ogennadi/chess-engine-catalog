@@ -56,6 +56,9 @@ _NON_ENGINE = {
     "universal chess interface", "chess engines", "engine list", "chess gui",
     "fpga", "hardware", "platforms", "computers", "related links",
     "droidfish", "picochess", "raspberry turk",
+    # Chess problem solvers (wiki Category:Problem) that do not play games.
+    # LL Chess and Wilhelm share that category but are game-playing programs.
+    "alybadix", "chest", "gustav", "popeye",
 }
 
 _SHARED_FAMILY_ARTICLES = {

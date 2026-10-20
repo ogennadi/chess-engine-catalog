@@ -132,6 +132,12 @@
     "collector": "openbench"
   },
   {
+    "id": "computer-chess-org",
+    "name": "Computer-Chess Wiki chess engine list",
+    "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
+    "collector": "computer_chess_org"
+  },
+  {
     "id": "lichess",
     "name": "Lichess Selfmade bots",
     "url": "https://lichess.org/team/selfmade-bots",

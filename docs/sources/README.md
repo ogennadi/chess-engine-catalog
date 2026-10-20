@@ -1,7 +1,7 @@
 # Engine sources
 
 One page per source registered in [`sources.json`](../../sources.json), recording how it was found.
-Collection timestamps and per-source status are in [`data/engines.json`](../../data/engines.json).
+Collection timestamps and per-source status are in `data/engines.json`, which `collect.py` generates.
 
 | Source | URL |
 |---|---|
@@ -27,6 +27,7 @@ Collection timestamps and per-source status are in [`data/engines.json`](../../d
 | [OpenBench: GyatsoChess](openbench-gyatso.md) | <https://gyatsoyt.pythonanywhere.com/> |
 | [OpenBench: sscg13](openbench-sscg13.md) | <https://sscg13.pythonanywhere.com/> |
 | [OpenBench: Leela Chess Zero](openbench-lczero.md) | <https://bench.lczero.org/> |
+| [Computer-Chess Wiki chess engine list](computer-chess-org.md) | <http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list> |
 | [Lichess Selfmade bots](lichess.md) | <https://lichess.org/team/selfmade-bots> |
 
 ## OpenBench candidates not registered

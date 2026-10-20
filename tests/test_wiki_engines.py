@@ -44,6 +44,8 @@ class WikiEngineTests(unittest.TestCase):
         <li><a href="/DroidFish">DroidFish</a></li>
         <li><a href="/PicoChess">PicoChess</a></li>
         <li><a href="/Raspberry_Turk">Raspberry Turk</a></li>
+        <li><a href="/Chest">Chest</a></li>
+        <li><a href="/Popeye">Popeye</a></li>
         <li><a href="#related">Related</a></li>
         <li><a href="https://elsewhere.invalid/Engine">External</a></li>
         """))
@@ -193,7 +195,10 @@ class WikiEngineTests(unittest.TestCase):
                 self.skipTest("Engine index is not cached locally")
         self.assertGreater(len(rows), 1000)
         self.assertGreater(len({row["family"].casefold() for row in rows}), 1000)
-        self.assertFalse({"DroidFish", "PicoChess", "Raspberry Turk"} & {row["family"] for row in rows})
+        self.assertFalse(
+            {"DroidFish", "PicoChess", "Raspberry Turk", "Alybadix", "Chest", "Gustav", "Popeye"}
+            & {row["family"] for row in rows}
+        )
         self.assertTrue(all(row["checked_at"] == fetch.checked_at[wiki.SOURCE_URL] for row in rows))
         self.assertTrue(all(row["listing_url"] == wiki.SOURCE_URL for row in rows))
         self.assertTrue(all(not row["code_urls"] for row in rows))

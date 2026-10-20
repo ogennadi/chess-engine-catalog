@@ -77,7 +77,8 @@
         "ccrl",
         "cegt",
         "rwbc",
-        "ubc"
+        "ubc",
+        "computer-chess-org"
       ],
       "family": "Ares",
       "target": "Ares US",
@@ -89,7 +90,8 @@
         "ccrl",
         "cegt",
         "rwbc",
-        "ubc"
+        "ubc",
+        "computer-chess-org"
       ],
       "family": "BBChess",
       "target": "BBChess (SI)",
@@ -99,7 +101,8 @@
     {
       "sources": [
         "ccrl",
-        "cegt"
+        "cegt",
+        "computer-chess-org"
       ],
       "family": "Brutus",
       "target": "Brutus NL",
@@ -112,7 +115,8 @@
         "ccrl",
         "cegt",
         "rwbc",
-        "ubc"
+        "ubc",
+        "computer-chess-org"
       ],
       "family": "Caligula",
       "target": "Caligula PC",
@@ -123,7 +127,8 @@
       "sources": [
         "ccrl",
         "rwbc",
-        "ubc"
+        "ubc",
+        "computer-chess-org"
       ],
       "family": "Chaturanga",
       "target": "Chaturanga IT",
@@ -133,7 +138,8 @@
     {
       "sources": [
         "ccrl",
-        "rwbc"
+        "rwbc",
+        "computer-chess-org"
       ],
       "family": "Dragon",
       "target": "Dragon FR",
@@ -153,7 +159,8 @@
     {
       "sources": [
         "cegt",
-        "rwbc"
+        "rwbc",
+        "computer-chess-org"
       ],
       "family": "Genesis",
       "target": "Genesis IL",
@@ -162,7 +169,8 @@
     },
     {
       "sources": [
-        "rwbc"
+        "rwbc",
+        "computer-chess-org"
       ],
       "family": "Jester",
       "target": "Jester US",
@@ -174,7 +182,8 @@
         "ccrl",
         "cegt",
         "rwbc",
-        "ubc"
+        "ubc",
+        "computer-chess-org"
       ],
       "family": "Joker",
       "target": "Joker NL",
@@ -183,7 +192,8 @@
     },
     {
       "sources": [
-        "rwbc"
+        "rwbc",
+        "computer-chess-org"
       ],
       "family": "Merlin",
       "target": "Merlin (HU)",
@@ -206,7 +216,8 @@
       "sources": [
         "ccrl",
         "cegt",
-        "rwbc"
+        "rwbc",
+        "computer-chess-org"
       ],
       "family": "ProChess",
       "target": "ProChess IT",
@@ -226,7 +237,8 @@
       "sources": [
         "ccrl",
         "cegt",
-        "rwbc"
+        "rwbc",
+        "computer-chess-org"
       ],
       "family": "Robin",
       "target": "Robin (Dachtera)",
@@ -246,7 +258,8 @@
       "sources": [
         "ccrl",
         "cegt",
-        "rwbc"
+        "rwbc",
+        "computer-chess-org"
       ],
       "family": "Storm",
       "target": "Storm US",
@@ -255,7 +268,8 @@
     },
     {
       "sources": [
-        "rwbc"
+        "rwbc",
+        "computer-chess-org"
       ],
       "family": "The Turk",
       "target": "The Turk (TR)",
@@ -267,7 +281,8 @@
         "ccrl",
         "cegt",
         "rwbc",
-        "ubc"
+        "ubc",
+        "computer-chess-org"
       ],
       "family": "Zeus",
       "target": "Zeus RU",
@@ -276,7 +291,8 @@
     },
     {
       "sources": [
-        "rwbc"
+        "rwbc",
+        "computer-chess-org"
       ],
       "family": "Ziggy",
       "target": "Ziggy IS",

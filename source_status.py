@@ -143,12 +143,17 @@ def build_dossiers():
         lucas_only = engine["source_code"] and all(c["source"] == "lucas-chess" for c in engine["source_code"])
         if engine["source_code"] and not lucas_only:
             continue
-        if status["families"].get(engine["name"], {}).get("tier") == "pilot":
+        if engine["name"] in status["families"]:
             continue
         rwbc = [
             {"name": p["row"][1], "author": p["row"][2], "src": p["row"][11], "dist": p["row"][18],
              "alias": p["row"][16], "previous": p["row"][17], "info": p["row"][24][:300], "web": p["row"][25]}
             for p in engine["provenance"] if p["source"] == "rwbc" and p.get("row")
+        ]
+        cco = [
+            {"name": p["label"], "author": p.get("author", ""), "section": p.get("section", ""),
+             "comment": p.get("comment", ""), "links": p.get("links", [])}
+            for p in engine["provenance"] if p["source"] == "computer-chess-org"
         ]
         labels = sorted({p["label"] for p in engine["provenance"]})
         ccrl = sorted({
@@ -167,7 +172,10 @@ def build_dossiers():
             tier = "L"
         elif any(OPEN_CATEGORIES.search(c) for c in categories):
             tier = "A"
-        elif "yes" in {f.casefold() for f in flags}:
+        elif "yes" in {f.casefold() for f in flags} or any(
+            p["section"] == "Source Code Only List" or re.search(r"(?<!no )\bsource\b", p["comment"], re.I)
+            for p in cco
+        ):
             tier = "B"
         elif any(CLOSED_CATEGORIES.search(c) for c in categories):
             tier = "C"
@@ -180,7 +188,7 @@ def build_dossiers():
         dossiers.append({
             "name": engine["name"], "tier": tier, "aliases": engine["aliases"],
             "sources": sorted({p["source"] for p in engine["provenance"]}),
-            "labels": labels[:8], "ccrl_authors": ccrl, "rwbc": rwbc,
+            "labels": labels[:8], "ccrl_authors": ccrl, "rwbc": rwbc, "computer_chess_org": cco,
             "project_urls": sorted({p["project_url"] for p in engine["provenance"] if p.get("project_url")}),
             "lucas_source_urls": [c["url"] for c in engine["source_code"]] if lucas_only else [],
             "wiki_url": wiki_url, "wiki_categories": categories, "wiki_intro": intro,
@@ -283,7 +291,7 @@ def render_family_pages(engines, status, directory):
         if engine["source_code"]:
             for code in sorted(engine["source_code"], key=lambda c: c["url"]):
                 kind = f" ({code['kind']})" if code.get("kind") else ""
-                lines.append(f"- <{code['url']}>{kind} — evidence: <{code['evidence_url']}> [{code.get('source', '')}]")
+                lines.append(f"- <{code['url']}>{kind} â€” evidence: <{code['evidence_url']}> [{code.get('source', '')}]")
         else:
             lines.append("None found.")
         if record:
@@ -308,7 +316,7 @@ def render_family_pages(engines, status, directory):
             labels = sorted({p["label"] for p in observed})
             urls = sorted({p["url"] for p in observed})
             more = f" (+{len(labels) - 5} more)" if len(labels) > 5 else ""
-            lines.append(f"- **{source}**: {', '.join(_md(l) for l in labels[:5])}{more} — <{urls[0]}>")
+            lines.append(f"- **{source}**: {', '.join(_md(l) for l in labels[:5])}{more} â€” <{urls[0]}>")
         (directory / f"{slug}.md").write_text("\n".join(lines) + "\n", encoding="utf-8", newline="")
         written.add(f"{slug}.md")
         index.append(
