@@ -5002,12 +5002,12 @@
    "searches": 1,
    "checked_at": "2026-10-19T21:35:58+00:00"
   },
-  "Cheng3": {
-   "tier": "B",
+  "Cheng": {
+   "tier": "review",
    "licensing": "open_source",
    "availability": "available",
    "confidence": "high",
-   "release_scope": "Cheng3 1.02-1.07 (GPLv3 from 1.02); successor Cheng 4 is a separate program",
+   "release_scope": "Cheng3 1.02-1.07 author zips (GPL-3.0). Cheng4 source was published at github.com/kmar/cheng4 (zlib per the wiki), but that repository returned HTTP 404 on 2026-10-20; kmar/cheng4_releases holds only binary release zips, so current Cheng4 source is not verified.",
    "source_urls": [
     {
      "url": "https://www.vlasak.biz/cheng/cheng3_uci_v1.07.zip",
@@ -5022,6 +5022,10 @@
    ],
    "evidence": [
     {
+     "url": "https://chessprogramming.org/Cheng",
+     "quote": "Cheng, an UCI compliant open source chess engine by Martin Sedlak, written in C++ as exercise in generic programming, first released as Cheng3 in April 2011. ... Cheng4 0.38, released in January 2015, is available at GitHub under the permissive zlib license"
+    },
+    {
      "url": "https://www.vlasak.biz/cheng/",
      "quote": "Cheng3 ver. 1.07 01/2012 include sources ... Cheng3 ver. 1.06 11/2011 include sources"
     },
@@ -5032,11 +5036,18 @@
     {
      "source": "cheng3_uci\\src\\license.txt inside zip",
      "quote": "GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007"
+    },
+    {
+     "url": "https://api.github.com/users/kmar/repos",
+     "quote": "kmar's public repositories on 2026-10-20 include cheng4_releases (README.md and binary release zips only); github.com/kmar/cheng4 returns HTTP 404."
     }
    ],
-   "rationale": "Martin Sedlák's engine homepage serves the Cheng3 zips containing full source and a GPLv3 license file.",
+   "rationale": "Martin Sedlák's engine homepage serves the Cheng3 zips containing full source and a GPLv3 license file. Cheng3 and Cheng4 are releases of one engine, Cheng.",
    "searches": 0,
-   "checked_at": "2026-10-19T15:03:37+00:00"
+   "checked_at": "2026-10-20T16:05:00+00:00",
+   "identity_note": "Cheng3 (RWBC) merged into Cheng: the Chess Programming Wiki describes Cheng as first released as Cheng3 in April 2011, with Cheng4 as its later version.",
+   "needs_review": false,
+   "notes": "Reviewed with the user on 2026-10-20; previously recorded as separate family Cheng3, wrongly treating Cheng 4 as a separate program."
   },
   "Cheoss": {
    "tier": "D",
