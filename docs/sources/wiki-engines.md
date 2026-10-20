@@ -6,6 +6,6 @@
 
 ## How it was found
 
-Listed in the README's Engine Lists by the repository owner.
+Added as an engine source by the repository owner.
 
-Collection details are in the main [README](../../README.md).
+Collection details are in [docs/collecting.md](../collecting.md).

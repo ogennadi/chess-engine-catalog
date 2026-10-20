@@ -10,4 +10,4 @@ Suggested by the repository owner during source-status research; research agents
 already been citing computer-chess.org downloads as source evidence. The page was last
 modified on 2020-06-06.
 
-Collection details are in the main [README](../../README.md).
+Collection details are in [docs/collecting.md](../collecting.md).
