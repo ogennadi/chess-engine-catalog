@@ -101,13 +101,12 @@ class PublishTests(unittest.TestCase):
 
     def test_writes_complete_site_with_downloads(self):
         for path in ("index.html", "sources.html", "assets/site.css", "assets/site.js", "assets/theme.js",
-                     "downloads/engines.csv", "downloads/engines.json", "downloads/source-status.json",
-                     "downloads/source-available-engines.pdf"):
+                     "downloads/engines.csv", "downloads/source-available-engines.pdf"):
             self.assertTrue((self.out / path).is_file(), path)
+        self.assertFalse(list((self.out / "downloads").glob("*.json")))
+        self.assertIn(publish.REPOSITORY_FILES + "data/engines.json", self.index)
         self.assertEqual(len(list((self.out / "families").glob("*.html"))), 5)
         self.assertTrue((self.out / "downloads/source-available-engines.pdf").read_bytes().startswith(b"%PDF"))
-        self.assertIn("Beta", json.loads((self.out / "downloads/engines.json").read_text(encoding="utf-8"))
-                      ["engines"][1]["name"])
         self.assertTrue((self.out / "downloads/engines.csv").read_text(encoding="utf-8").startswith("name,aliases"))
         self.assertEqual(self.result[0], 5)
 

@@ -4,7 +4,7 @@ A deduplicated catalog of chess-engine families collected from public engine lis
 (rating lists, wikis, OpenBench instances and others), with source-code links,
 Chess Programming Wiki links, and researched source availability and licensing for
 each family. It is published as a static website with search, filters, a printable PDF
-and CSV/JSON downloads.
+and a CSV download (the JSON data stays in the repository).
 
 ## Generate the website
 

@@ -705,8 +705,8 @@ def index_page(catalog, overrides, slugs):
 <a href="{REPOSITORY}">Research repository</a>
 </div>
 <p class="muted">Data downloads: <a href="downloads/engines.csv" download>CSV</a> ·
-<a href="downloads/engines.json" download>JSON</a> ·
-<a href="downloads/source-status.json" download>research records (JSON)</a>.
+<a href="{REPOSITORY_FILES}data/engines.json">JSON</a> ·
+<a href="{REPOSITORY_FILES}data/source-status.json">research records (JSON)</a> (in the repository).
 Source availability is not a licence assessment, and “Source not located” does not mean closed-source.</p>
 """
     body = f"""
@@ -854,8 +854,9 @@ def build(catalog, status, registry, overrides, wiki_reviews, docs, out):
         shutil.copyfile(ROOT / "site_assets" / asset, out / "assets" / asset)
 
     downloads = out / "downloads"
-    for filename, data in (("engines.json", catalog), ("source-status.json", status)):
-        (downloads / filename).write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    for retired in ("engines.json", "source-status.json"):
+        # Earlier versions copied the JSON data into the site; it is now linked from the repository.
+        (downloads / retired).unlink(missing_ok=True)
     (downloads / "engines.csv").write_text(collect.catalog_csv(catalog["engines"]), encoding="utf-8", newline="")
     rows, count = names_pdf.entries(catalog)
     if not count:

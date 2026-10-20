@@ -25,8 +25,9 @@ refreshes collection or research. `dist/` is gitignored; only the generator
   (e.g. Atlas and Atlas (1967)) explicitly as not reviewed.
 * `sources.html`: all provenance lists with descriptions, collection status, and
   discovery notes from `docs/sources`, plus the methodology and research definitions.
-* `downloads/`: the printable PDF (as `names_pdf.py` makes it), `engines.csv`,
-  `engines.json`, and `source-status.json`.
+* `downloads/`: the printable PDF (as `names_pdf.py` makes it) and `engines.csv`. The
+  JSON catalog and research records are not copied into the site, to keep it small; the
+  index links to them in the repository instead.
 
 Pages are dark by default; the theme toggle stores the visitor's choice in
 `localStorage`. All links are relative, and there are no external scripts, fonts, or
