@@ -198,6 +198,11 @@ class PublishTests(unittest.TestCase):
         lucas = {"provenance": [{"source": "lucas-chess", "author": "Lucas Monge"},
                                 {"source": "computer-chess-org", "author": "Lucas Monge"}]}
         self.assertEqual(publish.authors(lucas), [("Lucas Monge", ["computer-chess-org", "lucas-chess"])])
+        frank = {"source": "amateurschach", "authors": ["Mikko Aarnos", "Norman Schmidt"]}
+        self.assertEqual(publish.authors({"provenance": [frank]}),
+                         [("Mikko Aarnos", ["amateurschach"]), ("Norman Schmidt", ["amateurschach"])])
+        self.assertEqual(publish.authors({"provenance": [frank, *lucas["provenance"]]}),
+                         [("Lucas Monge", ["computer-chess-org", "lucas-chess"])])
         alpha = self.family("alpha")
         self.assertLess(alpha.index("<dt>Author</dt>"), alpha.index("<dt>Source availability</dt>"))
         self.assertIn("Not recorded by the collected lists", alpha)
@@ -261,6 +266,14 @@ class PublishTests(unittest.TestCase):
             publish.build(CATALOG, STATUS, REGISTRY, OVERRIDES, {}, DOCS, publish.ROOT)
         with tempfile.TemporaryDirectory() as temp, self.assertRaises(ValueError):
             publish.build(CATALOG, STATUS, REGISTRY[:1], OVERRIDES, {}, DOCS, Path(temp))
+
+    def test_accented_names_sort_with_base_letter(self):
+        names = ["Zappa", "\u00c9cume", "Eagle", "\u00c9chec", "Fruit"]
+        self.assertEqual(sorted(names, key=publish.source_status.name_sort_key),
+                         ["Eagle", "\u00c9chec", "\u00c9cume", "Fruit", "Zappa"])
+        catalog = {"engines": [{**engine(n), "source_code": [{"url": "https://x.org"}]} for n in names]}
+        rows, _ = publish.names_pdf.entries(catalog)
+        self.assertEqual([r[0] for r in rows if r[1]], ["E", "F", "Z"])
 
 
 if __name__ == "__main__":

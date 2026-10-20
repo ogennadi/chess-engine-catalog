@@ -4,8 +4,8 @@
 
 Builds only from local files: data/engines.json, data/source-status.json, sources.json,
 overrides.json, wiki-source-overrides.json and docs/sources/. It never accesses the network
-and never refreshes collection or research; run collect.py (for example with --offline)
-first if data/engines.json is missing or stale.
+and never refreshes collection or research. data/engines.json is committed; rerun collect.py
+(for example with --offline) after changing overrides or research so it is not stale.
 """
 
 import argparse
@@ -270,7 +270,7 @@ def all_aliases(engine, overrides):
             if alternate and alternate != "-" and not alternate.startswith("("):
                 names.add(alternate)
     names.discard(engine["name"])
-    return sorted(names, key=str.casefold)
+    return sorted(names, key=lambda name: (name.casefold(), name))
 
 
 def availability(engine):
@@ -282,6 +282,7 @@ RELATIONS = {
     "derived_from": ("Derived from", "Has derivative"),
     "successor_of": ("Successor of", "Succeeded by"),
     "same_name": ("Same name, different program", "Same name, different program"),
+    "distinct_from": ("Not to be confused with", "Not to be confused with"),
 }
 
 
@@ -318,7 +319,7 @@ def related_families(engine, overrides, similar):
             unique.append(item)
     known = {other for _, other, _, _ in unique}
     unreviewed = [other for other in similar.get(base_name(name), []) if other != name and other not in known]
-    return unique, sorted(unreviewed, key=str.casefold)
+    return unique, sorted(unreviewed, key=lambda name: (name.casefold(), name))
 
 
 def related_section(engine, overrides, slugs, similar, author_of):
@@ -355,7 +356,10 @@ def authors(engine):
     """Author names recorded by the lists, as (name, [source ids]); duplicates in other word orders are merged."""
     found = []
     # Natural-order sources first: RWBC writes "Surname Given", which would otherwise be shown.
-    for source in ("wiki-engines", "computer-chess-org", "lucas-chess", "rwbc"):
+    for source in ("wiki-engines", "computer-chess-org", "lucas-chess", "rwbc", "amateurschach"):
+        # Frank's author column has ditto marks and typos, so it only fills gaps.
+        if source == "amateurschach" and found:
+            break
         for item in engine.get("provenance", []):
             if item.get("source") != source:
                 continue
@@ -364,6 +368,8 @@ def authors(engine):
                 names = [item["label"][len(prefix):]] if item.get("label", "").startswith(prefix) else []
             elif source == "rwbc":
                 names = str(item.get("authors") or "").splitlines()
+            elif source == "amateurschach":
+                names = list(item.get("authors") or [])
             else:
                 names = [item.get("author") or ""]
             for value in names:
@@ -811,7 +817,7 @@ def build(catalog, status, registry, overrides, wiki_reviews, docs, out):
         raise ValueError("output must not be the repository root or one of its parents")
     # Work on a copy so attaching research never changes the caller's catalog.
     catalog = json.loads(json.dumps(catalog))
-    catalog["engines"].sort(key=lambda e: e["name"].casefold())
+    catalog["engines"].sort(key=lambda e: source_status.name_sort_key(e["name"]))
     source_status.attach(catalog, status)
     slugs = source_status.family_slugs(catalog["engines"])
     if len(slugs) != len(catalog["engines"]):

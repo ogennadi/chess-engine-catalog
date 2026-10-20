@@ -241,6 +241,14 @@ def _slug(name):
     return re.sub(r"[^a-z0-9]+", "-", ascii_name.casefold()).strip("-") or "family"
 
 
+def name_sort_key(name):
+    """Alphabetical key that files accented names with their base letter (Échec under E)."""
+    import unicodedata
+    folded = name.casefold()
+    base = "".join(c for c in unicodedata.normalize("NFKD", folded) if not unicodedata.combining(c))
+    return base, folded, name
+
+
 def family_slugs(engines):
     slugs, used = {}, set()
     for engine in sorted(engines, key=lambda e: e["name"].casefold()):

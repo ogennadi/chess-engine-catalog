@@ -26,6 +26,10 @@ FAMILY_ALIASES = {
     "Slow Chess Blitz": "Slow Chess",
     "Carp + Carp": "Carp",
 }
+AUTHOR_FIXES = {
+    "Norman Schmdit": "Norman Schmidt",
+    "Vasik Raylich": "Vasik Rajlich",
+}
 
 
 def original_url(url):
@@ -117,15 +121,33 @@ def row_families(cell):
     return list(MULTIPLE_FAMILIES.get(primary, (FAMILY_ALIASES.get(primary, primary),)))
 
 
+def row_authors(text, ditto):
+    """Author-column names. A leading '"' repeats the last non-ditto author above;
+    '+ Name' marks a Stockfish derivative's author; '. the ... developers' is a group."""
+    text = text.strip()
+    if text.startswith('"'):
+        text = ditto + text[1:]
+    names = []
+    for part in re.sub(r"^[+.]\s*", "", text).split(","):
+        part = re.sub(r"\s*\bet al\.?$", "", part.strip()).strip()
+        if part and part not in ('"', "-", "?", "authors") and not part.startswith("the "):
+            names.append(AUTHOR_FIXES.get(part, part))
+    return names
+
+
 def collect(fetch):
     parser = EngineTable()
     parser.feed(fetch(SOURCE_URL))
     if not parser.rows:
         raise ValueError("Archived Frank's Chess Page contained no recognized engine rows")
     observations = []
+    ditto = ""
     for row in parser.rows:
         cell = row[0]
         families = row_families(cell)
+        authors = row_authors(row[2]["text"], ditto)
+        if not row[2]["text"].startswith('"'):
+            ditto = row[2]["text"]
         for family in families:
             if not family:
                 raise ValueError(f"Empty engine-family name in {cell['text']!r}")
@@ -148,6 +170,6 @@ def collect(fetch):
             observations.append({
                 "family": family, "label": cell["text"], "url": SOURCE_URL,
                 "original_url": ORIGINAL_URL, "snapshot": SNAPSHOT,
-                "code_urls": code,
+                "code_urls": code, "authors": authors,
             })
     return observations

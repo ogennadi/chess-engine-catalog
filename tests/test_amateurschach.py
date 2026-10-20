@@ -69,6 +69,26 @@ class ArchivedEngineTests(unittest.TestCase):
             "https://github.com/TomHyer/Roc", "https://github.com/TomHyer/Roc2",
         ])
 
+    def test_author_column_resolves_ditto_marks_and_derivative_markers(self):
+        self.assertEqual(frank.row_authors('", Norman Schmidt', "Mikko Aarnos"),
+                         ["Mikko Aarnos", "Norman Schmidt"])
+        self.assertEqual(frank.row_authors("+ Andrea Manzo, et al.", ""), ["Andrea Manzo"])
+        self.assertEqual(frank.row_authors(". the Sfish developers, authors", ""), [])
+        self.assertEqual(frank.row_authors("T. Gaksch, D. Kappe et al.", ""), ["T. Gaksch", "D. Kappe"])
+        self.assertEqual(frank.row_authors("Milos Tatarevic, Norman Schmdit", ""),
+                         ["Milos Tatarevic", "Norman Schmidt"])
+        cells = "<td>-</td>"
+        html = (
+            f'<tr><td><a href="https://github.com/mAarnos/Hakkapeliitta">Hakkapeliitta</a></td>{cells}'
+            f"<td>Mikko Aarnos</td>{cells * 5}</tr>"
+            f'<tr><td>Hakkapelitta, <a href="https://github.com/FireFather/hakkapeliitta-nnue">Firefather</a></td>'
+            f'{cells}<td>", Norman Schmidt</td>{cells * 5}</tr>'
+            f'<tr><td><a href="https://example.org/x">Next</a></td>{cells}<td>"</td>{cells * 5}</tr>'
+        )
+        rows = frank.collect(lambda url: html)
+        self.assertEqual([r["authors"] for r in rows],
+                         [["Mikko Aarnos"], ["Mikko Aarnos", "Norman Schmidt"], ["Mikko Aarnos"]])
+
     def test_versions_and_footnotes_are_not_names(self):
         for text, expected in [
             ("\u00b2 CuckooChess, Dropbox", "CuckooChess"),

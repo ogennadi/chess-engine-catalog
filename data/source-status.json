@@ -3128,26 +3128,6 @@
    "searches": 1,
    "checked_at": "2026-10-20T10:04:31+00:00"
   },
-  "Blitz Monster": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "low",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki_categories",
-     "quote": "Dedicated, Experimental; an experimental version of Novag's Super Constellation or its successor Constellation Expert ... by David Kittinger"
-    },
-    {
-     "search": "GitHub repositories: novag constellation chess source",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Experimental tournament version of a commercial Novag dedicated computer program by David Kittinger; no source published. Proprietary inferred from commercial dedicated-computer origin.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:04:09+00:00"
-  },
   "Blitzter": {
    "tier": "D",
    "licensing": "unknown",
@@ -5361,50 +5341,6 @@
    "searches": 1,
    "checked_at": "2026-10-20T00:32:00+00:00"
   },
-  "Chess Champion Mark IV": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "low",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki_intro",
-     "quote": "a dedicated chess computer manufactured and released by SciSys in 1981 ... a 12 KiB Philidor Software program written by Mike Johnson"
-    },
-    {
-     "search": "GitHub repositories: scisys chess champion",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial dedicated computer; no source located. Proprietary inferred from commercial hardware product.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:04:09+00:00"
-  },
-  "Chess Champion Mark V": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "low",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki_intro",
-     "quote": "a dedicated chess computer manufactured by Scisys-W Ltd. Hong Kong from 1981"
-    },
-    {
-     "search": "GitHub repositories: scisys chess champion",
-     "quote": "0 results"
-    },
-    {
-     "search": "SciSys \"Chess Champion Mark V\" David Broughton Mark Taylor program source code",
-     "quote": "no evidence that the source code has been released, archived, or made accessible"
-    }
-   ],
-   "rationale": "Commercial dedicated computer; no source located. Proprietary inferred from commercial hardware product.",
-   "searches": 2,
-   "checked_at": "2026-10-19T20:04:09+00:00"
-  },
   "Chess Champion MK I": {
    "tier": "C",
    "licensing": "proprietary",
@@ -5448,50 +5384,6 @@
    "rationale": "Commercial Novag dedicated chess computer; no rights-holder source listing found. Microchess source is a precursor and not attributed here.",
    "searches": 1,
    "checked_at": "2026-10-19T21:32:14+00:00"
-  },
-  "Chess Champion Pocket Chess": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki_categories",
-     "quote": "F8, Dedicated, Commercial; a dedicated travel chess computer by SciSys and identical by Novag , first released in 1980"
-    },
-    {
-     "search": "GitHub repositories: scisys chess champion",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial dedicated travel computer; wiki Commercial category; no source located.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:04:09+00:00"
-  },
-  "Chess Champion Super System III": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: CPW categories",
-     "quote": "6502, Dedicated, Master"
-    },
-    {
-     "source": "dossier: CPW intro",
-     "quote": "Novag's third dedicated chess computer released in 1979"
-    },
-    {
-     "search": "Novag \"Super System III\" chess computer 1979 program source code listing or ROM disassembly",
-     "quote": "no public source listing or disassembly found; only manuals, reviews and collector pages"
-    }
-   ],
-   "rationale": "Commercial dedicated chess computer (Novag/SciSys, 1979) whose program only shipped in ROM; no rights-holder source or listing was found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:21:48+00:00"
   },
   "Chess Fighter": {
    "tier": "E",
@@ -7673,30 +7565,6 @@
     }
    ],
    "rationale": "Prototype of the commercial Conic 7013 dedicated computer; MAME driver code is emulator source, not the chess program, and no program source was found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:21:48+00:00"
-  },
-  "Constellation": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: CPW categories",
-     "quote": "Dedicated, 6502, Astronomy"
-    },
-    {
-     "source": "dossier: CPW intro",
-     "quote": "manufactured and market in 1983 by Novag , running a program developed by primary author David Kittinger"
-    },
-    {
-     "search": "Novag Constellation 1983 David Kittinger 6502 program source code listing",
-     "quote": "no released source or published listing; only ROM dumps"
-    }
-   ],
-   "rationale": "Commercial Novag dedicated chess computer; ROM firmware only, no source release found.",
    "searches": 1,
    "checked_at": "2026-10-19T20:21:48+00:00"
   },
@@ -14326,25 +14194,6 @@
    "searches": 3,
    "checked_at": "2026-10-19T05:36:46+00:00"
   },
-  "GK 2100": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
-    {
-     "source": "dossier: wiki intro",
-     "quote": "a dedicated chess computer released in 1993 by Saitek , running a program by Frans Morsch on an 8-bit H8 processor"
-    },
-    {
-     "search": "GitHub repositories: Saitek GK 2100 Morsch",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial dedicated computer firmware; ROM dumps are not source; none located.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:20:30+00:00"
-  },
   "Glass": {
    "tier": "D",
    "licensing": "proprietary",
@@ -14708,29 +14557,6 @@
    "rationale": "Freeware beta distributed as binary only; no source located.",
    "searches": 1,
    "checked_at": "2026-10-20T11:25:14+00:00"
-  },
-  "Graduate Chess": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
-    {
-     "source": "dossier: wiki categories (Mini Chess)",
-     "quote": "HMCS4xC, Commercial, Dedicated"
-    },
-    {
-     "source": "dossier: wiki intro",
-     "quote": "along with Junior Chess and Graduate Chess, a series of portable dedicated chess computers manufactured and sold by SciSys"
-    },
-    {
-     "search": "GitHub repositories: SciSys chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial SciSys dedicated computer (4-bit Hitachi microcontroller ROM); no source located.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:20:30+00:00"
   },
   "Grandmaster": {
    "tier": "C",
@@ -15631,23 +15457,6 @@
     {
      "url": "https://chessprogramming.org/HIARCS",
      "quote": "HIARCS is commercially available since 1991 (Categories: Commercial)"
-    }
-   ],
-   "rationale": "HIARCS is a commercial engine sold by its author's company; no source published.",
-   "searches": 1,
-   "checked_at": "2026-10-20T11:25:14+00:00",
-   "notes": "Merged on 2026-10-20 with the record for RWBC's 'Hiarcs (Deep)' row, which is the same family (same author; RWBC qualifies names, e.g. 'X (Deep)' for Deep X)."
-  },
-  "Hiarcs Master": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://www.chessprogramming.org/HIARCS",
-     "quote": "HIARCS is commercially available since 1991."
     },
     {
      "url": "https://www.chessprogramming.org/HIARCS",
@@ -15658,9 +15467,10 @@
      "quote": "only unrelated board-theme/Stockfish repos"
     }
    ],
-   "rationale": "Hiarcs Master 1/2 were early-1990s commercial HIARCS PC versions by Mark Uniacke; no source release found.",
-   "searches": 1,
-   "checked_at": "2026-10-20T01:10:41+00:00"
+   "rationale": "HIARCS is a commercial engine sold by its author's company, including the early-1990s Hiarcs Master 1 and 2 PC versions; no source published.",
+   "searches": 2,
+   "checked_at": "2026-10-20T11:25:14+00:00",
+   "notes": "Merged on 2026-10-20 with the record for RWBC's 'Hiarcs (Deep)' row, which is the same family (same author; RWBC qualifies names, e.g. 'X (Deep)' for Deep X). Also merged on 2026-10-20 with SSDF's 'Hiarcs Master' family at the user's request: Hiarcs Master 1 and 2 were early commercial HIARCS releases by the same author, Mark Uniacke."
   },
   "HiTech": {
    "tier": "E",
@@ -16503,11 +16313,22 @@
     {
      "search": "GitHub repositories: SciSys chess",
      "quote": "0 results"
+    },
+    {
+     "url": "https://www.chessprogramming.org/Intelligent_Chess",
+     "quote": "a dedicated chess computer and early forerunner of both chess database and chess display system"
+    },
+    {
+     "search": "GitHub repositories: scisys chess",
+     "quote": "0 results"
     }
    ],
-   "rationale": "Commercial SciSys/Philidor product; no source located.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:20:30+00:00"
+   "rationale": "1980 SciSys commercial dedicated chess computer developed by Philidor Software; no published source or rights-holder listing found.",
+   "searches": 2,
+   "checked_at": "2026-10-19T20:40:46+00:00",
+   "source_urls": [],
+   "notes": "Merged on 2026-10-20 with the 'SciSys Intelligent Chess' row, which the wiki engine index lists as '= Intelligent Chess' and links to the same page. Intelligent Chess Software is a different program (see Related families).",
+   "needs_review": false
   },
   "Intelligent Chess Software": {
    "tier": "E",
@@ -17506,29 +17327,6 @@
    "checked_at": "2026-10-20T12:22:09+00:00",
    "notes": "Merged on 2026-10-20 with the record for RWBC's 'Junior (Deep)' row, which is the same family (same author; RWBC qualifies names, e.g. 'X (Deep)' for Deep X)."
   },
-  "Junior Chess": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
-    {
-     "source": "dossier: wiki categories (Mini Chess)",
-     "quote": "HMCS4xC, Commercial, Dedicated"
-    },
-    {
-     "source": "dossier: wiki intro",
-     "quote": "along with Junior Chess and Graduate Chess, a series of portable dedicated chess computers manufactured and sold by SciSys"
-    },
-    {
-     "search": "GitHub repositories: SciSys chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial SciSys dedicated computer (Mini Chess series); no source located.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:20:30+00:00"
-  },
   "Jupiter": {
    "tier": "D",
    "licensing": "unknown",
@@ -17786,70 +17584,6 @@
    ],
    "rationale": "2003 commercial mass-market program (The Learning Company/Jamdat) using licensed Ruffian engine; no source release found. Wiki Commercial category -> proprietary.",
    "searches": 2,
-   "checked_at": "2026-10-19T20:28:15+00:00"
-  },
-  "Kasparov GK-2000": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://www.chessprogramming.org/GK_2100",
-     "quote": "a dedicated chess computer released in 1993 by Saitek , running a program by Frans Morsch on an 8-bit H8 processor"
-    },
-    {
-     "search": "Saitek Kasparov GK-2000 GK-2100 chess computer programmer H8",
-     "quote": "only ROM dumps/MAME emulation driver, no published program source"
-    }
-   ],
-   "rationale": "Saitek dedicated chess computer (H8 CPU) with Frans Morsch program; commercial firmware, ROM dumps are not source.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:13:32+00:00"
-  },
-  "Kasparov President/GK-2100": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://www.chessprogramming.org/GK_2100",
-     "quote": "a dedicated chess computer released in 1993 by Saitek , running a program by Frans Morsch"
-    },
-    {
-     "source": "CPW GK 2100 categories",
-     "quote": "Category:Dedicated, Category:H8"
-    }
-   ],
-   "rationale": "Commercial Saitek dedicated computer; no source or rights-holder listing published.",
-   "searches": 1,
-   "checked_at": "2026-10-20T01:13:32+00:00"
-  },
-  "Kasparov SPARC": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki categories",
-     "quote": "Dedicated, SPARC"
-    },
-    {
-     "url": "https://chessprogramming.org/Kasparov_Sparc",
-     "quote": "a chess computer module by Saitek , with a SPARC processor, and a program by Kathe and Dan Spracklen"
-    },
-    {
-     "search": "GitHub repositories: Kasparov Sparc chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial dedicated Saitek module with Spracklen program; ROM firmware only, no published source or listing found.",
-   "searches": 1,
    "checked_at": "2026-10-19T20:28:15+00:00"
   },
   "KasparovChess": {
@@ -20773,22 +20507,6 @@
     {
      "search": "Ed Schröder released source code 6502 Rebel Mephisto Polgar Milano assembly listing",
      "quote": "summary: no official source/listing released (lead only)"
-    }
-   ],
-   "rationale": "Commercial dedicated chess computers (Lang/Schröder programs); available downloads are emulator + ROM dumps, which are not source.",
-   "searches": 2,
-   "checked_at": "2026-10-19T20:28:15+00:00"
-  },
-  "Mephisto (H)": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki categories",
-     "quote": "Dedicated"
     },
     {
      "url": "https://chessprogramming.org/Mephisto_(H)",
@@ -20797,19 +20515,7 @@
     {
      "search": "GitHub repositories: mephisto chess computer",
      "quote": "only mephisto-emu (MM2 emulator) and Chesstimation; no Henne/Nitsche source"
-    }
-   ],
-   "rationale": "Commercial dedicated Mephisto I-III computers by Henne/Nitsche; ROM firmware only, no published source or listing found.",
-   "searches": 0,
-   "checked_at": "2026-10-19T20:28:15+00:00"
-  },
-  "Mephisto Academy": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "source": "dossier: SSDF label",
      "quote": "Mephisto Academy 6502 5 MHz"
@@ -20821,19 +20527,7 @@
     {
      "search": "GitHub repositories: mephisto chess",
      "quote": "only emulators, ROM collections and unrelated projects; no program source"
-    }
-   ],
-   "rationale": "Commercial dedicated chess computer by Hegener & Glaser (CPW category Dedicated); no rights-holder source release found. ROM dumps/emulators are not source.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:06:40+00:00"
-  },
-  "Mephisto Almeria": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "source": "dossier: wiki categories",
      "quote": "Dedicated, 68000"
@@ -20847,26 +20541,6 @@
      "quote": "summary: no published source; only MAME ROM dumps and docs (lead only; ChessComputer/ChessComputers repo checked: schematic PDF only)"
     },
     {
-     "search": "GitHub repositories: mephisto chess computer",
-     "quote": "only Chesstimation board adapter and mephisto-emu emulator; no program source"
-    }
-   ],
-   "rationale": "Commercial Hegener & Glaser dedicated module with Richard Lang 68000 program; ROM firmware only (ROM dumps/emulation are not source); no published source or listing found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:28:15+00:00"
-  },
-  "Mephisto Amsterdam": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki categories",
-     "quote": "Dedicated, 68000"
-    },
-    {
      "url": "https://chessprogramming.org/Mephisto_Amsterdam",
      "quote": "a dedicated chess computer module with a 68000 CPU at 12 MHz for Mephisto module systems by Hegener & Glaser"
     },
@@ -20875,45 +20549,9 @@
      "quote": "contains roms/amsterd/amsterda-l.bin ROM dumps + MESS UCI wrapper; no source"
     },
     {
-     "search": "GitHub repositories: mephisto chess computer",
-     "quote": "only Chesstimation board adapter and mephisto-emu emulator; no program source"
-    }
-   ],
-   "rationale": "Commercial Hegener & Glaser dedicated module with Richard Lang 68000 program; ROM firmware only (ROM dumps/emulation are not source); no published source or listing found.",
-   "searches": 0,
-   "checked_at": "2026-10-19T20:28:15+00:00"
-  },
-  "Mephisto Atlanta": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
      "source": "dossier: SSDF labels",
      "quote": "Mephisto Atlanta SH7034 20 MHz; Mephisto Atlanta Brute F. SH7034 20 MHz"
     },
-    {
-     "url": "https://www.chessprogramming.org/Mephisto",
-     "quote": "Mephisto was a family of dedicated chess computers, produced and traded by Hegener & Glaser since 1980"
-    },
-    {
-     "search": "GitHub repositories: mephisto chess",
-     "quote": "only emulators, ROM collections and unrelated projects; no program source"
-    }
-   ],
-   "rationale": "Commercial dedicated chess computer of the Mephisto line (CPW category Dedicated); no rights-holder source release found.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:06:40+00:00"
-  },
-  "Mephisto Berlin": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
     {
      "source": "dossier: SSDF label",
      "quote": "Mephisto Berlin 68000 12 MHz"
@@ -20923,48 +20561,8 @@
      "quote": "In 1985 Richard Lang became primary Mephisto programmer. All his Mephisto programs were written in 68000 Assembly"
     },
     {
-     "search": "GitHub repositories: mephisto chess",
-     "quote": "only emulators, ROM collections and unrelated projects; no program source"
-    }
-   ],
-   "rationale": "Commercial Hegener & Glaser dedicated computer (68000, Richard Lang era); no rights-holder source release found.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:06:40+00:00"
-  },
-  "Mephisto Berlin Pro": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
      "source": "dossier: SSDF label",
      "quote": "Mephisto Berlin Pro 68020 24 MHz"
-    },
-    {
-     "url": "https://www.chessprogramming.org/Mephisto",
-     "quote": "In 1985 Richard Lang became primary Mephisto programmer. All his Mephisto programs were written in 68000 Assembly"
-    },
-    {
-     "search": "GitHub repositories: mephisto chess",
-     "quote": "only emulators, ROM collections and unrelated projects; no program source"
-    }
-   ],
-   "rationale": "Commercial Hegener & Glaser dedicated computer (68020, Richard Lang era); no rights-holder source release found.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:06:40+00:00"
-  },
-  "Mephisto Dallas": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki categories",
-     "quote": "Dedicated, 68000"
     },
     {
      "url": "https://chessprogramming.org/Mephisto_Dallas",
@@ -20974,23 +20572,6 @@
      "url": "https://web.archive.org/web/20160321143204/http://www.top-5000.nl/dl/mephisto-138d-uci-setup.zip",
      "quote": "contains roms/dallas16 and roms/dallas32 ROM dumps + MESS UCI wrapper; no source"
     },
-    {
-     "search": "GitHub repositories: mephisto chess computer",
-     "quote": "only Chesstimation board adapter and mephisto-emu emulator; no program source"
-    }
-   ],
-   "rationale": "Commercial Hegener & Glaser dedicated module with Richard Lang 68000 program; ROM firmware only (ROM dumps/emulation are not source); no published source or listing found.",
-   "searches": 0,
-   "checked_at": "2026-10-19T20:28:15+00:00"
-  },
-  "Mephisto Engines": {
-   "tier": "review",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "release_scope": "2012 Windows UCI package (mephisto-138d-uci-setup.zip) running the original Mephisto ROM programs of Ed Schröder (Rebel 5.0, MM4, MM5) and Richard Lang (Amsterdam, Dallas, Roma) under emulation",
-   "source_urls": [],
-   "evidence": [
     {
      "source": "dossier: computer-chess.org comment",
      "quote": "Mephisto Engines, Ed Schröder, Win"
@@ -21018,20 +20599,7 @@
     {
      "search": "Ed Schröder Mephisto MM4 MM5 Rebel 5.0 6502 assembler source code published",
      "quote": "no rights-holder publication of the 6502 source found; only a third-party C translation of MM5 (see notes)"
-    }
-   ],
-   "rationale": "The package distributes the original commercial Mephisto ROM programs as binaries under emulation; the rights holders' page reserves copyright and grants only permission to distribute. No source or listing published by Schröder or Lang was found.",
-   "notes": "Review: retrieved the archived rebel13.nl pages (live site still 526); the copyright notice and commercial Mephisto origin change licensing unknown -> proprietary (medium). A hobbyist 22,000-line C translation of MM5 (Frank Brenner, GitHub Admiralatlantis/Schach-MM5-UCI, now 404; 2026 forum reports Ed Schröder later consented) is a third-party derivative and is not counted.",
-   "searches": 3,
-   "checked_at": "2026-10-20T04:05:15+00:00"
-  },
-  "Mephisto Europa": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "source": "dossier: wiki categories",
      "quote": "Dedicated, 6800"
@@ -21041,22 +20609,6 @@
      "quote": "a low cost dedicated chess computer released in 1987 by Hegener & Glaser"
     },
     {
-     "search": "GitHub repositories: mephisto chess computer",
-     "quote": "only Chesstimation board adapter and mephisto-emu emulator; no program source"
-    }
-   ],
-   "rationale": "Commercial low-cost dedicated chess computer with Frans Morsch program in MCU-internal ROM; no published source or listing found.",
-   "searches": 0,
-   "checked_at": "2026-10-19T20:28:15+00:00"
-  },
-  "Mephisto Genius": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
      "source": "dossier: SSDF labels",
      "quote": "Mephisto Genius 68030 33 MHz; Mephisto Genius 2 486/50-66 MHz"
     },
@@ -21064,22 +20616,6 @@
      "url": "https://www.chessprogramming.org/Mephisto",
      "quote": "WMCCC 1993 Munich Mephisto Wundermaschine Mephisto Genius 68030"
     },
-    {
-     "search": "GitHub repositories: mephisto chess",
-     "quote": "only emulators, ROM collections and unrelated projects; no program source"
-    }
-   ],
-   "rationale": "Commercial Richard Lang Genius program sold as Mephisto dedicated/PC products; no rights-holder source release found.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:06:40+00:00"
-  },
-  "Mephisto Gideon Pro": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
     {
      "source": "dossier: SSDF label",
      "quote": "Mephisto Gideon Pro 486/50-66 MHz"
@@ -21091,95 +20627,63 @@
     {
      "url": "https://prodeo.actieforum.com/t1929-an-mephisto-mm5-running-with-12-000-mhz-as-uci-engine",
      "quote": "It's a fake guys, I checked the source code and it is nothing like my early work"
-    }
-   ],
-   "rationale": "Commercial Mephisto-branded release of Ed Schröder's Gideon program; no source release by the rights holder found.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:06:40+00:00"
-  },
-  "Mephisto London": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "source": "dossier: SSDF labels",
      "quote": "Mephisto London 68000 12 MHz; 68020 12 MHz; 68030 33 MHz"
-    },
-    {
-     "url": "https://www.chessprogramming.org/Mephisto",
-     "quote": "In 1985 Richard Lang became primary Mephisto programmer. All his Mephisto programs were written in 68000 Assembly"
-    },
-    {
-     "search": "GitHub repositories: mephisto chess",
-     "quote": "only emulators, ROM collections and unrelated projects; no program source"
-    }
-   ],
-   "rationale": "Commercial Hegener & Glaser dedicated computer (Richard Lang); no rights-holder source release found.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:06:40+00:00"
-  },
-  "Mephisto Lyon": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki categories",
-     "quote": "Dedicated, 68000"
     },
     {
      "url": "https://chessprogramming.org/Mephisto_Lyon",
      "quote": "a set of dedicated chess computer modules by Hegener & Glaser for their Mephisto module systems with a program by Richard Lang"
     },
     {
-     "search": "Richard Lang Mephisto 68000 assembly source code published Amsterdam Dallas Almeria Lyon",
-     "quote": "summary: no published source; only MAME ROM dumps and docs (lead only; ChessComputer/ChessComputers repo checked: schematic PDF only)"
+     "url": "https://www.chessprogramming.org/Mephisto_MM_II",
+     "quote": "a dedicated chess computer module for Mephisto module systems by Hegener & Glaser launched in 1985 with a Plymate based program by Ulf Rathsman"
+    },
+    {
+     "url": "https://github.com/BierLiebHaber/mephisto-emu",
+     "quote": "Experimental emulator for the Mephisto MM2 chess computer (emulator, not program source)"
+    },
+    {
+     "url": "https://www.chessprogramming.org/Mephisto_MM_IV",
+     "quote": "a dedicated chess computer module for Mephisto module systems by Hegener & Glaser launched in 1987 as successor of Mephisto Rebell. Ed Schröder's program run on a 65C02"
+    },
+    {
+     "url": "https://www.chessprogramming.org/Mephisto_MM_V",
+     "quote": "a dedicated chess computer module for Mephisto module systems by Hegener & Glaser launched in 1990 as successor of the Mephisto MM IV"
+    },
+    {
+     "url": "https://chessprogramming.org/Mephisto_MM_II",
+     "quote": "a dedicated chess computer module for Mephisto module systems by Hegener & Glaser launched in 1985 with a Plymate based program by Ulf Rathsman"
+    },
+    {
+     "source": "dossier: wiki categories",
+     "quote": "Dedicated, 6502, Demonology"
     },
     {
      "search": "GitHub repositories: mephisto chess computer",
-     "quote": "only Chesstimation board adapter and mephisto-emu emulator; no program source"
-    }
-   ],
-   "rationale": "Commercial Hegener & Glaser dedicated module with Richard Lang 68000 program; ROM firmware only (ROM dumps/emulation are not source); no published source or listing found.",
-   "searches": 0,
-   "checked_at": "2026-10-19T20:28:15+00:00"
-  },
-  "Mephisto Mega IV": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+     "quote": "only Chesstimation (board adapter) and BierLiebHaber/mephisto-emu (emulator for the MM2); no program source"
+    },
+    {
+     "url": "https://chessprogramming.org/Mephisto_MM_IV",
+     "quote": "a dedicated chess computer module for Mephisto module systems by Hegener & Glaser launched in 1987"
+    },
+    {
+     "search": "Ed Schröder 6502 Mephisto MM IV MM V Rebel assembler source code published",
+     "quote": "no documented release of the 6502 source found (search summary only, unconfirmed lead)"
+    },
+    {
+     "search": "GitHub repositories: mephisto chess computer / mephisto chess source",
+     "quote": "no MM IV program source"
+    },
+    {
+     "url": "https://chessprogramming.org/Mephisto_MM_V",
+     "quote": "a dedicated chess computer module for Mephisto module systems by Hegener & Glaser launched in 1990"
+    },
     {
      "source": "dossier: SSDF labels",
      "quote": "Mephisto Mega IV 6502 4.9 MHz; Mephisto Mega IV Brute F. 6502 4.9 MHz"
     },
-    {
-     "url": "https://www.chessprogramming.org/Mephisto",
-     "quote": "Mephisto was a family of dedicated chess computers, produced and traded by Hegener & Glaser since 1980"
-    },
-    {
-     "url": "https://prodeo.actieforum.com/t1929-an-mephisto-mm5-running-with-12-000-mhz-as-uci-engine",
-     "quote": "It's a fake guys, I checked the source code and it is nothing like my early work"
-    }
-   ],
-   "rationale": "Commercial 6502 dedicated computer (Ed Schröder's Rebel family); Schröder has not published his 6502 source.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:06:40+00:00"
-  },
-  "Mephisto Milano": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
     {
      "source": "dossier: wiki categories",
      "quote": "Dedicated, 6502"
@@ -21193,22 +20697,6 @@
      "quote": "summary: no official 6502 source/listing released (lead only)"
     },
     {
-     "search": "GitHub repositories: mephisto chess computer",
-     "quote": "only Chesstimation board adapter and mephisto-emu emulator; no program source"
-    }
-   ],
-   "rationale": "Commercial dedicated chess computer with Ed Schröder's Rebel-based 6502 program; no published source or listing found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:28:15+00:00"
-  },
-  "Mephisto Milano Pro": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
      "source": "dossier: SSDF label",
      "quote": "Mephisto Milano Pro SH7034 20 MHz"
     },
@@ -21217,206 +20705,17 @@
      "quote": "See also ... Mephisto Milano Pro"
     },
     {
-     "search": "GitHub repositories: mephisto chess",
-     "quote": "only emulators, ROM collections and unrelated projects; no program source"
-    }
-   ],
-   "rationale": "Commercial Mephisto dedicated computer (CPW category Dedicated); no rights-holder source release found.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:06:40+00:00"
-  },
-  "Mephisto MM 2": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://www.chessprogramming.org/Mephisto_MM_II",
-     "quote": "a dedicated chess computer module for Mephisto module systems by Hegener & Glaser launched in 1985 with a Plymate based program by Ulf Rathsman"
-    },
-    {
-     "url": "https://github.com/BierLiebHaber/mephisto-emu",
-     "quote": "Experimental emulator for the Mephisto MM2 chess computer (emulator, not program source)"
-    }
-   ],
-   "rationale": "Commercial dedicated module; only emulators/ROM-based projects exist, which are not source; no rights-holder release found.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:06:40+00:00"
-  },
-  "Mephisto MM 4": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://www.chessprogramming.org/Mephisto_MM_IV",
-     "quote": "a dedicated chess computer module for Mephisto module systems by Hegener & Glaser launched in 1987 as successor of Mephisto Rebell. Ed Schröder's program run on a 65C02"
-    },
-    {
-     "url": "https://prodeo.actieforum.com/t1929-an-mephisto-mm5-running-with-12-000-mhz-as-uci-engine",
-     "quote": "It's a fake guys, I checked the source code and it is nothing like my early work"
-    }
-   ],
-   "rationale": "Commercial dedicated module by Ed Schröder; 2012 UCI version runs the ROM under emulation; no author source release found.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:06:40+00:00"
-  },
-  "Mephisto MM 5": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://www.chessprogramming.org/Mephisto_MM_V",
-     "quote": "a dedicated chess computer module for Mephisto module systems by Hegener & Glaser launched in 1990 as successor of the Mephisto MM IV"
-    },
-    {
-     "url": "https://prodeo.actieforum.com/t1929-an-mephisto-mm5-running-with-12-000-mhz-as-uci-engine",
-     "quote": "It's a fake guys, I checked the source code and it is nothing like my early work"
-    }
-   ],
-   "rationale": "Commercial dedicated module by Ed Schröder; a circulating 'MM5 UCI' source was disowned by Schröder as not his code, so it does not count.",
-   "notes": "A third-party 'MM5 running at 12 MHz as UCI engine' with source appeared on GitHub and was taken down; Schröder called it a fake.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:06:40+00:00"
-  },
-  "Mephisto MM II": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://chessprogramming.org/Mephisto_MM_II",
-     "quote": "a dedicated chess computer module for Mephisto module systems by Hegener & Glaser launched in 1985 with a Plymate based program by Ulf Rathsman"
-    },
-    {
-     "source": "dossier: wiki categories",
-     "quote": "Dedicated, 6502, Demonology"
-    },
-    {
-     "search": "GitHub repositories: mephisto chess computer",
-     "quote": "only Chesstimation (board adapter) and BierLiebHaber/mephisto-emu (emulator for the MM2); no program source"
-    }
-   ],
-   "rationale": "Commercial dedicated-computer ROM program (Hegener & Glaser); no source release by Rathsman or H&G found. An emulator/ROM dump is not source.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:34:14+00:00"
-  },
-  "Mephisto MM IV": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://chessprogramming.org/Mephisto_MM_IV",
-     "quote": "a dedicated chess computer module for Mephisto module systems by Hegener & Glaser launched in 1987"
-    },
-    {
-     "source": "dossier: wiki categories",
-     "quote": "Dedicated, 6502, Demonology"
-    },
-    {
-     "search": "Ed Schröder 6502 Mephisto MM IV MM V Rebel assembler source code published",
-     "quote": "no documented release of the 6502 source found (search summary only, unconfirmed lead)"
-    },
-    {
-     "search": "GitHub repositories: mephisto chess computer / mephisto chess source",
-     "quote": "no MM IV program source"
-    }
-   ],
-   "rationale": "Commercial dedicated module with Ed Schröder's 6502 program; no source publication found. Ed's rebel13.nl site currently errors (HTTP 526).",
-   "searches": 3,
-   "checked_at": "2026-10-19T20:34:14+00:00"
-  },
-  "Mephisto MM V": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://chessprogramming.org/Mephisto_MM_V",
-     "quote": "a dedicated chess computer module for Mephisto module systems by Hegener & Glaser launched in 1990"
-    },
-    {
-     "source": "dossier: wiki categories",
-     "quote": "Dedicated"
-    },
-    {
-     "search": "Ed Schröder 6502 Mephisto MM IV MM V Rebel assembler source code published",
-     "quote": "no documented release of the 6502 source found (search summary only, unconfirmed lead)"
-    }
-   ],
-   "rationale": "Commercial dedicated module (Rebel 6502 program by Ed Schröder); no source release located.",
-   "searches": 2,
-   "checked_at": "2026-10-19T20:34:14+00:00"
-  },
-  "Mephisto Modena": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
      "source": "dossier: SSDF label",
      "quote": "Mephisto Modena 6502 4 MHz"
     },
-    {
-     "url": "https://www.chessprogramming.org/Mephisto",
-     "quote": "Mephisto was a family of dedicated chess computers, produced and traded by Hegener & Glaser since 1980"
-    },
-    {
-     "search": "GitHub repositories: mephisto chess",
-     "quote": "only emulators, ROM collections and unrelated projects; no program source"
-    }
-   ],
-   "rationale": "Commercial 6502 dedicated computer of the Mephisto line; no rights-holder source release found.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:06:40+00:00"
-  },
-  "Mephisto Mondial": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
     {
      "url": "https://chessprogramming.org/Mephisto_Mondial",
      "quote": "a dedicated chess computer released in 1985 by Hegener & Glaser, running a program for a 6502 processor by Frans Morsch - his commercial debut"
     },
     {
-     "source": "dossier: wiki categories",
-     "quote": "Dedicated, 6502, Demonology"
-    },
-    {
      "search": "GitHub repositories: mephisto chess computer",
      "quote": "no Mondial program source"
-    }
-   ],
-   "rationale": "Commercial dedicated computer by Hegener & Glaser (Frans Morsch program); no source release found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:34:14+00:00"
-  },
-  "Mephisto Montreux": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "url": "https://chessprogramming.org/Mephisto_Montreux",
      "quote": "The program by Johan de Koning derived from The King"
@@ -21428,22 +20727,6 @@
     {
      "search": "GitHub repositories: mephisto chess computer",
      "quote": "no Montreux program source"
-    }
-   ],
-   "rationale": "Commercial dedicated computer (Hegener & Glaser/Saitek) running Johan de Koning's The King derivative; The King is a closed commercial engine; no source found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:34:14+00:00"
-  },
-  "Mephisto Nigel Short": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://chessprogramming.org/Mephisto_Milano",
-     "quote": "a dedicated chess computer by Hegener & Glaser launched in 1991. The Rebel based 8-bit program by Ed Schröder"
     },
     {
      "source": "dossier: wiki categories",
@@ -21452,43 +20735,11 @@
     {
      "search": "Ed Schröder 6502 Mephisto MM IV MM V Rebel assembler source code published",
      "quote": "no documented release of Schröder's 6502 sources (search summary only, unconfirmed lead)"
-    }
-   ],
-   "rationale": "Nigel Short is a Milano variant (CPW page Mephisto Milano); commercial dedicated program by Ed Schröder; no source located.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:34:14+00:00"
-  },
-  "Mephisto Polgar": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "url": "https://chessprogramming.org/Mephisto_Polgar",
      "quote": "a dedicated chess computer module for Mephisto module systems by Hegener & Glaser launched in 1989. The Rebel based 8-bit program by Ed Schröder"
     },
-    {
-     "source": "dossier: wiki categories",
-     "quote": "Dedicated"
-    },
-    {
-     "search": "Ed Schröder 6502 Mephisto MM IV MM V Rebel assembler source code published",
-     "quote": "no documented release of Schröder's 6502 sources (search summary only, unconfirmed lead)"
-    }
-   ],
-   "rationale": "Commercial dedicated module; no source release located.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:34:14+00:00"
-  },
-  "Mephisto Portorose": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
     {
      "url": "https://chessprogramming.org/Mephisto_Portorose",
      "quote": "a set of dedicated chess computer modules by Hegener & Glaser for their Mephisto module systems with a program by Richard Lang"
@@ -21500,43 +20751,7 @@
     {
      "search": "GitHub repositories: richard lang chess 68000",
      "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial dedicated modules with Richard Lang's program; Lang's programs (Psion/Genius) are closed; no source found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:34:14+00:00"
-  },
-  "Mephisto Rebell": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://chessprogramming.org/Mephisto_Rebell",
-     "quote": "a dedicated chess computer module for Mephisto module systems by Hegener & Glaser launched in 1986"
     },
-    {
-     "source": "dossier: wiki categories",
-     "quote": "Dedicated"
-    },
-    {
-     "search": "Ed Schröder 6502 Mephisto MM IV MM V Rebel assembler source code published",
-     "quote": "no documented release of the 6502 Rebel source (search summary only, unconfirmed lead)"
-    }
-   ],
-   "rationale": "Ed Schröder's first commercial dedicated program; no source release located (rebel13.nl currently errors).",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:34:14+00:00"
-  },
-  "Mephisto RISC": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
     {
      "url": "https://chessprogramming.org/Mephisto_RISC",
      "quote": "Produced by TASC , and similar to the ChessMachine , it used an ARM2 RISC processor to run the Gideon based program of Ed Schröder's Rebel family"
@@ -21548,19 +20763,7 @@
     {
      "search": "GitHub repositories: gideon chess schroder",
      "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial dedicated module (Gideon by Ed Schröder, produced by TASC); no source found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:34:14+00:00"
-  },
-  "Mephisto RISC2": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "url": "https://www.chessprogramming.org/Mephisto_RISC",
      "quote": "The RISC 2 Modul launched in 1994, was updated with Gideon 3.1 of the ChessMachine"
@@ -21568,43 +20771,19 @@
     {
      "url": "https://www.chessprogramming.org/Mephisto_RISC",
      "quote": "a dedicated chess computer module for Mephisto Module Systems by Hegener & Glaser"
-    }
-   ],
-   "rationale": "Commercial TASC/Hegener & Glaser module running Ed Schröder's Gideon; no source release found.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:06:40+00:00"
-  },
-  "Mephisto Roma": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
+    {
+     "url": "https://chessprogramming.org/Mephisto_Rebell",
+     "quote": "a dedicated chess computer module for Mephisto module systems by Hegener & Glaser launched in 1986"
+    },
+    {
+     "search": "Ed Schröder 6502 Mephisto MM IV MM V Rebel assembler source code published",
+     "quote": "no documented release of the 6502 Rebel source (search summary only, unconfirmed lead)"
+    },
     {
      "url": "https://chessprogramming.org/Mephisto_Roma",
      "quote": "a set of dedicated chess computer modules by Hegener & Glaser released in 1987"
     },
-    {
-     "source": "dossier: wiki categories",
-     "quote": "Dedicated, Demonology, 68000, Geography"
-    },
-    {
-     "search": "GitHub repositories: richard lang chess 68000",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial dedicated modules with Richard Lang's program; no source found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:34:14+00:00"
-  },
-  "Mephisto Roma II": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
     {
      "source": "dossier: SSDF label",
      "quote": "Mephisto Roma II 68000 10 MHz"
@@ -21614,61 +20793,24 @@
      "quote": "a set of dedicated chess computer modules by Hegener & Glaser released in 1987 for their Mephisto module systems"
     },
     {
-     "search": "GitHub repositories: mephisto chess",
-     "quote": "only emulators, ROM collections and unrelated projects; no program source"
-    }
-   ],
-   "rationale": "Commercial dedicated module (Richard Lang); no rights-holder source release found.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:06:40+00:00"
-  },
-  "Mephisto Super Mondial": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
      "source": "dossier: SSDF label",
      "quote": "Mephisto Super Mondial 6502 4 MHz"
     },
     {
-     "url": "https://www.chessprogramming.org/Mephisto",
-     "quote": "Mephisto was a family of dedicated chess computers, produced and traded by Hegener & Glaser since 1980"
-    },
-    {
      "search": "GitHub repositories: mephisto chess",
      "quote": "only emulators (e.g. Mephisto Mondial II emulator), ROM collections; no program source"
-    }
-   ],
-   "rationale": "Commercial 6502 dedicated computer of the Mephisto line; no rights-holder source release found.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:06:40+00:00"
-  },
-  "Mephisto Vancouver": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "url": "https://chessprogramming.org/Mephisto_Vancouver",
      "quote": "a set of dedicated chess computer modules by Hegener & Glaser for their Mephisto module systems with a program by Richard Lang"
-    },
-    {
-     "source": "dossier: wiki categories",
-     "quote": "Dedicated, Demonology, 68000, Geography"
-    },
-    {
-     "search": "GitHub repositories: richard lang chess 68000",
-     "quote": "0 results"
     }
    ],
-   "rationale": "Commercial dedicated modules with Richard Lang's program; no source found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:34:14+00:00"
+   "rationale": "Commercial Hegener & Glaser (later Saitek) Mephisto dedicated chess computers; no rights-holder source release located for any model. ROM dumps, emulations and third-party reconstructions are not source.",
+   "searches": 54,
+   "checked_at": "2026-10-20T04:05:15+00:00",
+   "identity_issue": "Mephisto is a brand of dedicated chess computers rather than a single program: the merged models run different programs, by different authors, on different hardware.",
+   "notes": "Merged on 2026-10-20 at the user's request, following the Chess Programming Wiki Mephisto page, which describes Mephisto as a family of dedicated chess computers produced by Hegener & Glaser from 1980. Caveats: Mephisto I-III (the wiki's Mephisto (H) page) were by Elmar Henne and Thomas Nitsche; from 1985 Richard Lang was the primary programmer, writing in 68000 assembly (the WMCCC models Amsterdam, Dallas, Roma, Almeria, Portorose, Lyon and Vancouver); other models carry programs by Craig Barnes, Kaare Danielsen, Julio Kaplan, Johan de Koning, Frans Morsch, Ulf Rathsman, Eric van Riet Paap and Ed Schröder; the 1993 Wundermaschine ran Genius on an 80486; after Saitek acquired the trademark in 1994 the programs were no longer Lang's. 'Mephisto Engines' is Ed Schröder's computer-chess.org listing of Mephisto programs. SSDF rates individual models, so results under this family cover several distinct programs. Notes carried over from the merged records: Mephisto Engines: Review: retrieved the archived rebel13.nl pages (live site still 526); the copyright notice and commercial Mephisto origin change licensing unknown -> proprietary (medium). A hobbyist 22,000-line C translation of MM5 (Frank Brenner, GitHub Admiralatlantis/Schach-MM5-UCI, now 404; 2026 forum reports Ed Schröder later consented) is a third-party derivative and is not counted. Mephisto MM 5: A third-party 'MM5 running at 12 MHz as UCI engine' with source appeared on GitHub and was taken down; Schröder called it a fake.",
+   "needs_review": false
   },
   "Merlin": {
    "tier": "E",
@@ -22063,30 +21205,6 @@
    "searches": 2,
    "checked_at": "2026-10-19T22:53:05+00:00"
   },
-  "Mini Chess": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://chessprogramming.org/Mini_Chess",
-     "quote": "a series of portable dedicated chess computers manufactured and sold by SciSys , first released in early 1981"
-    },
-    {
-     "source": "dossier: wiki categories",
-     "quote": "HMCS4xC, Commercial, Dedicated, Chess Suffix"
-    },
-    {
-     "search": "GitHub repositories: saitek scisys chess disassembly",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial SciSys dedicated computer (4-bit Hitachi MCU ROM); wiki Commercial category; ROM dumps/emulation are not source.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:34:14+00:00"
-  },
   "MiniChessAI": {
    "tier": "D",
    "licensing": "unknown",
@@ -22199,7 +21317,7 @@
    "licensing": "open_source",
    "availability": "available",
    "confidence": "medium",
-   "release_scope": "CCRL 'Mittens 1.0' = Tavito's Amateur Series build (Aug 2026); 2023 lichess Mittens-Bot not covered",
+   "release_scope": "CCRL 'Mittens 1.0' = Tavito's Amateur Series build (Aug 2026); 2023 lichess Mittens-Bot not covered; Chess Engines Diary 'MittensCEDR' = the repository's CEDR tournament builds (UCI name 'Mittens CEDR')",
    "source_urls": [
     {
      "url": "https://github.com/MotoresAjedrez/mittens",
@@ -22235,27 +21353,7 @@
     {
      "search": "GitHub repositories: Mittens chess engine; mittens uci",
      "quote": "only MotoresAjedrez/mittens, Himanshu2214/Mittens (Python, 2026) and an unrelated parody repo"
-    }
-   ],
-   "rationale": "Tavito published an 'Amateur Series' build for Graham Banks on 2026-08-26 and the CCRL-run 126th Amateur Series (thread opened 2026-09-03) introduced 'Mittens 1.0 64-bit (AI assisted) (new)' against the same opponents CCRL lists, so the CCRL engine is the MIT-licensed MotoresAjedrez/mittens; CCRL assigned the 1.0 version label.",
-   "notes": "Review: tied CCRL Mittens 1.0 to MotoresAjedrez/mittens via the Amateur Series build and talkchess division thread, changing unknown/released_not_located/low to open_source/available/medium. The lichess bot chatgpt5_5 links the repo, which confirms the author runs it as a 2026 bot but adds no rating-list tie (it is not a catalogued label). needs_review kept only for splitting off the unrelated 2023 lichess Mittens-Bot label. MittensCEDR is a separate family. Decision: the unrelated 2023 lichess \"Mittens-Bot\" account is kept unresolved (overrides.json), so this family is the CCRL engine only.",
-   "searches": 3,
-   "checked_at": "2026-10-20T04:05:15+00:00"
-  },
-  "MittensCEDR": {
-   "tier": "F",
-   "licensing": "open_source",
-   "availability": "available",
-   "confidence": "high",
-   "release_scope": "MittensCEDR is the CEDR tournament build of the Mittens engine",
-   "source_urls": [
-    {
-     "url": "https://github.com/MotoresAjedrez/mittens",
-     "kind": "original repository",
-     "license": "MIT"
-    }
-   ],
-   "evidence": [
+    },
     {
      "search": "GitHub repositories: MittensCEDR",
      "quote": "MotoresAjedrez/mittens \"Mittens Chess Engine\", topics include mittenscedr"
@@ -22263,15 +21361,12 @@
     {
      "url": "https://raw.githubusercontent.com/MotoresAjedrez/mittens/main/README.md",
      "quote": "Las compilaciones de torneo se identifican en UCI como `Mittens CEDR Windows`"
-    },
-    {
-     "url": "https://raw.githubusercontent.com/MotoresAjedrez/mittens/main/LICENSE",
-     "quote": "MIT License Copyright (c) 2026 Tavito"
     }
    ],
-   "rationale": "Repository README states tournament builds identify as 'Mittens CEDR'; MIT LICENSE file present.",
-   "searches": 1,
-   "checked_at": "2026-10-20T01:44:12+00:00"
+   "rationale": "Tavito published an 'Amateur Series' build for Graham Banks on 2026-08-26 and the CCRL-run 126th Amateur Series (thread opened 2026-09-03) introduced 'Mittens 1.0 64-bit (AI assisted) (new)' against the same opponents CCRL lists, so the CCRL engine is the MIT-licensed MotoresAjedrez/mittens; CCRL assigned the 1.0 version label.",
+   "notes": "Review: tied CCRL Mittens 1.0 to MotoresAjedrez/mittens via the Amateur Series build and talkchess division thread, changing unknown/released_not_located/low to open_source/available/medium. The lichess bot chatgpt5_5 links the repo, which confirms the author runs it as a 2026 bot but adds no rating-list tie (it is not a catalogued label). needs_review kept only for splitting off the unrelated 2023 lichess Mittens-Bot label. Decision: the unrelated 2023 lichess \"Mittens-Bot\" account is kept unresolved (overrides.json), so this family is the CCRL engine only. Merged on 2026-10-20 with the 'MittensCEDR' family at the user's request: the repository README says tournament builds identify as 'Mittens CEDR', and its topics include mittenscedr.",
+   "searches": 4,
+   "checked_at": "2026-10-20T04:05:15+00:00"
   },
   "MLChess": {
    "tier": "A",
@@ -24112,19 +23207,7 @@
     {
      "search": "\"Noonian\" winboard chess engine Charles Roberson",
      "quote": "summary describes the engine and binaries in old download lists; no source mentioned"
-    }
-   ],
-   "rationale": "Binary-only WinBoard engine (also known as NoonianChess, succeeded by Ares); no source or license found.",
-   "searches": 2,
-   "checked_at": "2026-10-20T12:33:18+00:00"
-  },
-  "NoonianChess": {
-   "tier": "E",
-   "licensing": "unknown",
-   "availability": "not_located",
-   "confidence": "low",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "url": "http://web.archive.org/web/2003/http://home.pacifier.com:80/~noonian/GameTheory/NCdownload.html",
      "quote": "Linux NoonianChess Rev 2.10 (6/25/2000) Binary with 24M hash tables"
@@ -24138,9 +23221,10 @@
      "quote": "only wiki/forum release announcements; no source repository"
     }
    ],
-   "rationale": "Author's archived download page offers Linux/Windows binaries and opening books only; no source release found. Freeware without closed-source statement, so licensing unknown.",
-   "searches": 2,
-   "checked_at": "2026-10-19T23:08:51+00:00"
+   "rationale": "Binary-only WinBoard engine by Charles Roberson (also known as NoonianChess, succeeded by Ares); the author's archived download page offers binaries and opening books only; no source or license found.",
+   "searches": 4,
+   "checked_at": "2026-10-20T12:33:18+00:00",
+   "notes": "Merged on 2026-10-20 with the wiki's 'NoonianChess' family at the user's request: same program and author (Charles Roberson), named Noonian by RWBC and computer-chess.org."
   },
   "Northphrax": {
    "tier": "F",
@@ -24221,12 +23305,11 @@
    "searches": 1,
    "checked_at": "2026-10-19T23:08:51+00:00"
   },
-  "Novag Citrine": {
+  "Novag": {
    "tier": "C",
    "licensing": "proprietary",
    "availability": "not_located",
    "confidence": "medium",
-   "source_urls": [],
    "evidence": [
     {
      "url": "https://chessprogramming.org/Novag_Citrine",
@@ -24239,18 +23322,7 @@
     {
      "search": "GitHub repositories: novag chess source",
      "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial Novag dedicated computer with Kittinger's ROM program; no source found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:34:14+00:00"
-  },
-  "Novag Constellation": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
+    },
     {
      "source": "dossier: wiki intro",
      "quote": "a dedicated chess computer with a 8-bit 6502 CPU and 16 KB ROM and 2 KB RAM , manufactured and market in 1983 by Novag"
@@ -24266,18 +23338,7 @@
     {
      "search": "David Kittinger Novag chess computer program source code published (Constellation, Super Expert, Sapphire)",
      "quote": "no official source publication found; only ROM dumps for emulation (not source)"
-    }
-   ],
-   "rationale": "Commercially sold Novag dedicated chess computer by David Kittinger; no published source located. ROM dumps are not source.",
-   "searches": 3,
-   "checked_at": "2026-10-19T20:31:21+00:00"
-  },
-  "Novag Constellation Primo": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
+    },
     {
      "source": "dossier: SSDF label",
      "quote": "Novag Constellation Primo 6301Y 2 MHz"
@@ -24287,51 +23348,13 @@
      "quote": "Novag Industries Ltd. is a designer and manufacturer of dedicated chess computers"
     },
     {
-     "search": "GitHub repositories: novag chess source",
-     "quote": "0 results"
-    },
-    {
      "search": "Novag chess computer program source code published Kittinger Diablo Ruby Sapphire Quattro Primo",
      "quote": "no official source publication found; only interface drivers and collector documentation"
-    }
-   ],
-   "rationale": "Commercially sold Novag dedicated chess computer; no published program source located. ROM dumps are not source.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:44:12+00:00"
-  },
-  "Novag Diablo": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
+    },
     {
      "source": "dossier: SSDF label",
      "quote": "Novag Diablo 68000 16 MHz"
     },
-    {
-     "url": "https://www.chessprogramming.org/Novag",
-     "quote": "Novag Industries Ltd. is a designer and manufacturer of dedicated chess computers"
-    },
-    {
-     "search": "GitHub repositories: novag chess source",
-     "quote": "0 results"
-    },
-    {
-     "search": "Novag chess computer program source code published Kittinger Diablo Ruby Sapphire Quattro Primo",
-     "quote": "no official source publication found; only interface drivers and collector documentation"
-    }
-   ],
-   "rationale": "Commercial Novag dedicated chess computer (68000, Kittinger program); no published source located. ROM dumps are not source.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:44:12+00:00"
-  },
-  "Novag Diamond": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
     {
      "source": "dossier: wiki intro (Novag Sapphire page)",
      "quote": "released in 1994, along with the desktop Diamond version with a pressure sensory board with the same prog[ram]"
@@ -24341,124 +23364,25 @@
      "quote": "running a program based on WChess by David Kittinger in 64 KiB of ROM"
     },
     {
-     "search": "GitHub repositories: novag chess; kittinger chess",
-     "quote": "0 results for both"
-    },
-    {
      "search": "David Kittinger Novag chess computer program source code published (Constellation, Super Expert, Sapphire)",
      "quote": "no official source publication found"
-    }
-   ],
-   "rationale": "Commercial Novag dedicated computer (desktop twin of Sapphire, WChess-based); no source located.",
-   "searches": 2,
-   "checked_at": "2026-10-19T20:31:21+00:00"
-  },
-  "Novag Expert": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
+    },
     {
      "source": "dossier: wiki intro",
      "quote": "a series of dedicated chess computers by Novag with 6502 programs by David Kittinger"
-    },
-    {
-     "search": "GitHub repositories: novag chess; kittinger chess",
-     "quote": "0 results for both"
     },
     {
      "search": "David Kittinger Novag chess computer program source code published (Constellation, Super Expert, Sapphire)",
      "quote": "no official source publication found; MESS/MAME ROM dumps only"
-    }
-   ],
-   "rationale": "Commercial dedicated computers; only ROM dumps for emulation exist (not source).",
-   "searches": 2,
-   "checked_at": "2026-10-19T20:31:21+00:00"
-  },
-  "Novag Forte": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
-    {
-     "source": "dossier: wiki intro",
-     "quote": "a series of dedicated chess computers by Novag with 6502 programs by David Kittinger"
     },
-    {
-     "search": "GitHub repositories: novag chess; kittinger chess",
-     "quote": "0 results for both"
-    },
-    {
-     "search": "David Kittinger Novag chess computer program source code published (Constellation, Super Expert, Sapphire)",
-     "quote": "no official source publication found"
-    }
-   ],
-   "rationale": "Commercial Novag dedicated computers (sister line of Novag Expert); no source located.",
-   "searches": 2,
-   "checked_at": "2026-10-19T20:31:21+00:00"
-  },
-  "Novag Forte A": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
     {
      "source": "dossier: SSDF label",
      "quote": "Novag Forte A 6502 5 MHz"
     },
     {
-     "url": "https://www.chessprogramming.org/Novag",
-     "quote": "Novag Industries Ltd. is a designer and manufacturer of dedicated chess computers"
-    },
-    {
-     "search": "GitHub repositories: novag chess source",
-     "quote": "0 results"
-    },
-    {
-     "search": "Novag chess computer program source code published Kittinger Diablo Ruby Sapphire Quattro Primo",
-     "quote": "no official source publication found; only interface drivers and collector documentation"
-    }
-   ],
-   "rationale": "Commercial Novag dedicated chess computer (Novag Forte line, Kittinger 6502 program); no published source located.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:44:12+00:00"
-  },
-  "Novag Forte B": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
-    {
      "source": "dossier: SSDF label",
      "quote": "Novag Forte B 6502 5 MHz"
     },
-    {
-     "url": "https://www.chessprogramming.org/Novag",
-     "quote": "Novag Industries Ltd. is a designer and manufacturer of dedicated chess computers"
-    },
-    {
-     "search": "GitHub repositories: novag chess source",
-     "quote": "0 results"
-    },
-    {
-     "search": "Novag chess computer program source code published Kittinger Diablo Ruby Sapphire Quattro Primo",
-     "quote": "no official source publication found; only interface drivers and collector documentation"
-    }
-   ],
-   "rationale": "Commercial Novag dedicated chess computer (Novag Forte line, Kittinger 6502 program); no published source located.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:44:12+00:00"
-  },
-  "Novag Micro Chess": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
     {
      "source": "dossier: wiki categories",
      "quote": "F8, Commercial, Dedicated, Chess Suffix"
@@ -24468,125 +23392,21 @@
      "quote": "one of Novag's first dedicated chess computer with a program by David Kittinger , first released in 1981"
     },
     {
-     "search": "GitHub repositories: novag chess; kittinger chess",
-     "quote": "0 results for both"
-    }
-   ],
-   "rationale": "Wiki Commercial category; F8 microcontroller program by Kittinger; no source located.",
-   "notes": "Not to be confused with Peter Jennings' MicroChess (different program).",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:31:21+00:00"
-  },
-  "Novag Quattro": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
-    {
      "source": "dossier: SSDF label",
      "quote": "Novag Quattro 6502 4 MHz"
     },
-    {
-     "url": "https://www.chessprogramming.org/Novag",
-     "quote": "Novag Industries Ltd. is a designer and manufacturer of dedicated chess computers"
-    },
-    {
-     "search": "GitHub repositories: novag chess source",
-     "quote": "0 results"
-    },
-    {
-     "search": "Novag chess computer program source code published Kittinger Diablo Ruby Sapphire Quattro Primo",
-     "quote": "no official source publication found; only interface drivers and collector documentation"
-    }
-   ],
-   "rationale": "Commercially sold Novag dedicated chess computer; no published program source located. ROM dumps are not source.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:44:12+00:00"
-  },
-  "Novag Ruby": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
     {
      "source": "dossier: SSDF label",
      "quote": "Novag Ruby H8 10 MHz"
     },
     {
-     "url": "https://www.chessprogramming.org/Novag",
-     "quote": "Novag Industries Ltd. is a designer and manufacturer of dedicated chess computers"
-    },
-    {
-     "search": "GitHub repositories: novag chess source",
-     "quote": "0 results"
-    },
-    {
-     "search": "Novag chess computer program source code published Kittinger Diablo Ruby Sapphire Quattro Primo",
-     "quote": "no official source publication found; only interface drivers and collector documentation"
-    }
-   ],
-   "rationale": "Commercially sold Novag dedicated chess computer; no published program source located. ROM dumps are not source.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:44:12+00:00"
-  },
-  "Novag Sapphire": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
-    {
      "source": "dossier: wiki intro",
      "quote": "a portable dedicated chess computer by Novag with a Hitachi H8 8-bit microcontroller , running a program based on WChess by David Kittinger"
     },
     {
-     "search": "GitHub repositories: novag chess; kittinger chess",
-     "quote": "0 results for both"
-    },
-    {
-     "search": "David Kittinger Novag chess computer program source code published (Constellation, Super Expert, Sapphire)",
-     "quote": "no official source publication found"
-    }
-   ],
-   "rationale": "Commercial Novag dedicated computer based on the commercial WChess; no source located.",
-   "searches": 2,
-   "checked_at": "2026-10-19T20:31:21+00:00"
-  },
-  "Novag Sapphire II": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
-    {
      "source": "dossier: SSDF label",
      "quote": "Novag Sapphire II H8/325 32 MHz"
     },
-    {
-     "url": "https://www.chessprogramming.org/Novag",
-     "quote": "Novag Industries Ltd. is a designer and manufacturer of dedicated chess computers"
-    },
-    {
-     "search": "GitHub repositories: novag chess source",
-     "quote": "0 results"
-    },
-    {
-     "search": "Novag chess computer program source code published Kittinger Diablo Ruby Sapphire Quattro Primo",
-     "quote": "no official source publication found; only interface drivers and collector documentation"
-    }
-   ],
-   "rationale": "Commercial Novag dedicated chess computer (Sapphire line, Kittinger program); no published source located.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:44:12+00:00"
-  },
-  "Novag Savant": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
     {
      "source": "dossier: wiki intro",
      "quote": "a dedicated chess computer released in 1981 by Novag Industries LTD . The Savant had a Z80 CPU"
@@ -24596,21 +23416,6 @@
      "quote": "competed at the Commercial Group of the WMCCC 1981"
     },
     {
-     "search": "GitHub repositories: novag chess; kittinger chess",
-     "quote": "0 results for both"
-    }
-   ],
-   "rationale": "Commercially sold Novag dedicated computer (program based on Kittinger's MyChess, a precursor not counted here); no source located.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:31:21+00:00"
-  },
-  "Novag Star Sapphire": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
-    {
      "source": "dossier: SSDF label",
      "quote": "Novag Star Sapphire H8S/2312 25 MHz"
     },
@@ -24618,25 +23423,6 @@
      "url": "https://www.chessprogramming.org/Novag",
      "quote": "Kittinger made a last update for the Novag Star Diamond in 2003"
     },
-    {
-     "search": "GitHub repositories: novag chess source",
-     "quote": "0 results"
-    },
-    {
-     "search": "Novag chess computer program source code published Kittinger Diablo Ruby Sapphire Quattro Primo",
-     "quote": "no official source publication found; only interface drivers and collector documentation"
-    }
-   ],
-   "rationale": "Commercial Novag dedicated chess computer (Kittinger program); no published source located.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:44:12+00:00"
-  },
-  "Novag Super Constellation": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
     {
      "source": "dossier: SSDF label",
      "quote": "Novag Super Constellation 6502 4 MHz"
@@ -24646,52 +23432,9 @@
      "quote": "In the following years the Robot Adversary , Constellation and most notably the Super Constellation appeared."
     },
     {
-     "search": "GitHub repositories: novag chess source",
-     "quote": "0 results"
-    },
-    {
-     "search": "Novag chess computer program source code published Kittinger Diablo Ruby Sapphire Quattro Primo",
-     "quote": "no official source publication found; only interface drivers and collector documentation"
-    }
-   ],
-   "rationale": "Commercial Novag dedicated chess computer with David Kittinger's program; no published source located.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:44:12+00:00"
-  },
-  "Novag Super Expert B": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
-    {
      "source": "dossier: SSDF label",
      "quote": "Novag Super Expert B 6502 6 MHz sel 4"
     },
-    {
-     "url": "https://www.chessprogramming.org/Novag",
-     "quote": "Novag Industries Ltd. is a designer and manufacturer of dedicated chess computers"
-    },
-    {
-     "search": "GitHub repositories: novag chess source",
-     "quote": "0 results"
-    },
-    {
-     "search": "Novag chess computer program source code published Kittinger Diablo Ruby Sapphire Quattro Primo",
-     "quote": "no official source publication found; only interface drivers and collector documentation"
-    }
-   ],
-   "rationale": "Commercial Novag dedicated chess computer (Expert line, Kittinger 6502 program); no published source located.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:44:12+00:00"
-  },
-  "Novag Super Expert C": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
     {
      "url": "https://www.chessprogramming.org/Novag_Expert",
      "quote": "a series of dedicated chess computers by Novag with 6502 programs by David Kittinger"
@@ -24703,19 +23446,7 @@
     {
      "search": "Novag Super Expert Super Nova Super VIP chess computer program source code published David Kittinger",
      "quote": "no evidence of an official source publication; only ROM dumps for emulation (unverified summary)"
-    }
-   ],
-   "rationale": "Commercial dedicated chess computer (Novag, program by David Kittinger); only ROM dumps/emulator drivers exist, which are not source. No published source located.",
-   "searches": 1,
-   "checked_at": "2026-10-20T01:44:13+00:00"
-  },
-  "Novag Super Expert/Forte A": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "url": "https://www.chessprogramming.org/Novag_Expert",
      "quote": "Along with Novag Forte , the Expert was successor of the Super Constellation"
@@ -24727,19 +23458,7 @@
     {
      "search": "Novag Super Expert Super Nova Super VIP chess computer program source code published David Kittinger",
      "quote": "only ROM images for emulation exist (unverified summary)"
-    }
-   ],
-   "rationale": "Commercial Novag dedicated computer (Kittinger 6502 program); firmware dumps are not source and no source publication was found.",
-   "searches": 1,
-   "checked_at": "2026-10-20T01:44:13+00:00"
-  },
-  "Novag Super Nova": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "url": "https://raw.githubusercontent.com/mamedev/mame/master/src/mame/novag/vip.cpp",
      "quote": "The LCD is the same as the one in Primo / Supremo / Super Nova."
@@ -24751,54 +23470,79 @@
     {
      "search": "Novag Super Expert Super Nova Super VIP chess computer program source code published David Kittinger",
      "quote": "source code ... has not been published (unverified summary)"
-    }
-   ],
-   "rationale": "Commercial Novag HD6301Y dedicated chess computer by David Kittinger; no source publication located, only emulation ROM dumps.",
-   "searches": 1,
-   "checked_at": "2026-10-20T01:44:13+00:00"
-  },
-  "Novag Super VIP": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "url": "https://raw.githubusercontent.com/mamedev/mame/master/src/mame/novag/vip.cpp",
      "quote": "Novag VIP & Super VIP"
     },
     {
-     "url": "https://raw.githubusercontent.com/mamedev/mame/master/src/mame/novag/vip.cpp",
-     "quote": "chess engine is similar to other HD6301/3Y ones by David Kittinger"
-    },
-    {
      "search": "Novag Super Expert Super Nova Super VIP chess computer program source code published David Kittinger",
      "quote": "No evidence of an official source code publication (unverified summary)"
-    }
-   ],
-   "rationale": "Commercial Novag dedicated chess computer (Kittinger HD6301Y program); emulator driver/ROM dumps are not program source; nothing published found.",
-   "searches": 1,
-   "checked_at": "2026-10-20T01:44:13+00:00"
-  },
-  "Novag X": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "low",
-   "evidence": [
+    },
     {
      "source": "dossier: wiki intro",
      "quote": "experimental or not yet commercially available dedicated chess computers by Novag with programs by primary author David Kittinger"
     },
     {
-     "search": "GitHub repositories: novag chess; kittinger chess",
-     "quote": "0 results for both"
+     "source": "dossier: CPW categories",
+     "quote": "Dedicated, 6502, Astronomy"
+    },
+    {
+     "source": "dossier: CPW intro",
+     "quote": "manufactured and market in 1983 by Novag , running a program developed by primary author David Kittinger"
+    },
+    {
+     "search": "Novag Constellation 1983 David Kittinger 6502 program source code listing",
+     "quote": "no released source or published listing; only ROM dumps"
+    },
+    {
+     "source": "dossier: wiki intro",
+     "quote": "a dedicated chess computer released in 1981 by Novag Industries LTD ... The program was based on David Kittinger's MyChess"
+    },
+    {
+     "search": "GitHub repositories: Novag chess Kittinger",
+     "quote": "0 results"
+    },
+    {
+     "search": "David Kittinger MyChess Z80 source code listing published Novag Savant",
+     "quote": "summary: original Z80 source for the Savant not published (lead only)"
+    },
+    {
+     "source": "dossier: wiki categories",
+     "quote": "Dedicated, 6502, Astronomy, Kittinger Quotes"
+    },
+    {
+     "url": "https://www.chessprogramming.org/Super_Constellation",
+     "quote": "manufactured and market in 1984 by Novag , running a program developed by primary author David Kittinger"
+    },
+    {
+     "search": "GitHub repositories: constellation novag chess",
+     "quote": "0 results"
+    },
+    {
+     "source": "dossier: wiki intro",
+     "quote": "Novag's 1982 release of a dedicated chess computer ... Robot Adversary had a 32 KiB Z80 program by David Kittinger based on MyChess"
+    },
+    {
+     "search": "David Kittinger MyChess Z80 source code listing published Novag Savant",
+     "quote": "summary: no official Z80 source listing for MyChess/Novag programs published (lead only)"
+    },
+    {
+     "source": "dossier: wiki_categories",
+     "quote": "Dedicated, Experimental; an experimental version of Novag's Super Constellation or its successor Constellation Expert ... by David Kittinger"
+    },
+    {
+     "search": "GitHub repositories: novag constellation chess source",
+     "quote": "0 results"
     }
    ],
-   "rationale": "Novag in-house experimental tournament prototypes of commercial products; never published, no source located.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:31:21+00:00"
+   "rationale": "Commercial Novag dedicated chess computers with David Kittinger's programs; no rights-holder source release located for any model. ROM dumps and emulator drivers are not source.",
+   "searches": 46,
+   "checked_at": "2026-10-20T01:44:13+00:00",
+   "source_urls": [],
+   "identity_issue": "Novag is a manufacturer's product line: the merged models run successive versions of David Kittinger's programs on different hardware, and the wiki's Novag page is an organization page rather than an engine page.",
+   "notes": "Merged on 2026-10-20 at the user's request to group the Novag families as far as the evidence supports. The Chess Programming Wiki Novag page says Peter Auge hired David Kittinger in 1981, whose MyChess went into the Micro Chess, Super Sensor IV and Savant, followed by the Robot Adversary, Constellation and Super Constellation, and that he kept writing Novag programs for over 20 years, until the Star Diamond (2003). This family therefore covers Kittinger's Novag computers: the Constellation, Expert, Forte, Sapphire/Diamond, Citrine, Ruby and later models, and the experimental Novag X and Blitz Monster tournament versions. Caveats: the Sapphire and Diamond run a WChess-based program; SSDF rates individual models, so results under this family cover several program versions. Novag's earlier models are kept separate because they ran other authors' programs: Chess Champion MK I (a CompuChess clone), MK II (Peter Jennings), Chess Partner 2000 (shared with SciSys); the Super System III, manufactured by SciSys, is grouped under Saitek/SciSys. Kittinger's PC programs MyChess and WChess remain separate families (see Related families). Notes carried over from the merged records: Novag Micro Chess: Not to be confused with Peter Jennings' MicroChess (different program).",
+   "needs_review": false
   },
   "Now": {
    "tier": "E",
@@ -27119,29 +25863,6 @@
    "searches": 1,
    "checked_at": "2026-10-20T13:07:11+00:00"
   },
-  "President Chess": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "low",
-   "evidence": [
-    {
-     "source": "dossier: wiki intro",
-     "quote": "a prototype of a dedicated chess computer by SciSys with a Sensory Board and an early program by Julio Kaplan"
-    },
-    {
-     "source": "dossier: wiki intro",
-     "quote": "It was never r[eleased]"
-    },
-    {
-     "search": "GitHub repositories: scisys chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Unreleased SciSys commercial prototype; no source located.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:31:21+00:00"
-  },
   "Prochess": {
    "tier": "E",
    "licensing": "unknown",
@@ -28673,26 +27394,6 @@
    "searches": 1,
    "checked_at": "2026-10-19T23:20:00+00:00"
   },
-  "RISC 2500": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki intro",
-     "quote": "a dedicated chess computer with an ARM6 32Bit RISC Processor at 14 MHz, produced and market by Saitek in 1992, running a The King based program by Johan de Koning"
-    },
-    {
-     "search": "GitHub repositories: RISC 2500 chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial Saitek dedicated computer with a firmware program by Johan de Koning (The King); no source publication found. ROM dumps are not source.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:42:55+00:00"
-  },
   "RobboLito": {
    "tier": "A",
    "licensing": "open_source",
@@ -28805,30 +27506,6 @@
    "rationale": "Known only as a WinBoard executable preserved by collectors (2024 TalkChess thread); no source found anywhere. Norbert's collection mirror is bot-protected and was not inspected.",
    "searches": 2,
    "checked_at": "2026-10-20T13:31:58+00:00"
-  },
-  "Robot Adversary": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki intro",
-     "quote": "Novag's 1982 release of a dedicated chess computer ... Robot Adversary had a 32 KiB Z80 program by David Kittinger based on MyChess"
-    },
-    {
-     "search": "GitHub repositories: Novag chess Kittinger",
-     "quote": "0 results"
-    },
-    {
-     "search": "David Kittinger MyChess Z80 source code listing published Novag Savant",
-     "quote": "summary: no official Z80 source listing for MyChess/Novag programs published (lead only)"
-    }
-   ],
-   "rationale": "Commercial Novag dedicated computer with Kittinger's Z80 firmware; no source publication by rights holders located.",
-   "searches": 2,
-   "checked_at": "2026-10-19T20:42:55+00:00"
   },
   "Roce": {
    "tier": "D",
@@ -29306,22 +27983,7 @@
     {
      "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
      "quote": "RWBC Src '-'; Dist '$$ (free)'"
-    }
-   ],
-   "rationale": "Offline rule: commercial; older free versions were binary-only. No web search performed.",
-   "searches": 0,
-   "checked_at": "2026-10-19T02:46:42+00:00",
-   "pilot_group": "commercial",
-   "tier": "pilot"
-  },
-  "Rybka WinFinder": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "release_scope": "Rybka WinFinder 2.2 (special Rybka 2.2 build, later offered as free 'Rybka Classics' binary)",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "url": "https://www.chessprogramming.org/Rybka",
      "quote": "Categories: UCI ? Commercial ? ChessBase ? ChessOK"
@@ -29335,10 +27997,12 @@
      "quote": "only identifies it as a Rybka variant by Vasik Rajlich; no source release found"
     }
    ],
-   "rationale": "WinFinder is a Rybka 2.2 variant by Vasik Rajlich; Rybka is a commercial closed-source engine and only free binaries of old versions were released. No source located.",
-   "notes": "Old Rybka versions were later released as free binaries; this does not imply source availability.",
+   "rationale": "Offline rule: commercial; older free versions were binary-only. No web search performed.",
    "searches": 2,
-   "checked_at": "2026-10-20T01:45:59+00:00"
+   "checked_at": "2026-10-20T01:45:59+00:00",
+   "pilot_group": "commercial",
+   "tier": "pilot",
+   "notes": "Merged on 2026-10-20 with the 'Rybka WinFinder' family at the user's request: WinFinder 2.2 is a special build of Rybka 2.2 by Vasik Rajlich, later offered as a free 'Rybka Classics' binary. Old Rybka versions were later released as free binaries; this does not imply source availability."
   },
   "SABA Videoplay 20": {
    "tier": "review",
@@ -29448,7 +28112,7 @@
    "searches": 2,
    "checked_at": "2026-10-20T13:31:58+00:00"
   },
-  "Saitek Brute Force": {
+  "Saitek/SciSys": {
    "tier": "C",
    "licensing": "proprietary",
    "availability": "not_located",
@@ -29466,19 +28130,7 @@
     {
      "search": "Saitek Kasparov dedicated chess computer program source code published Frans Morsch Brute Force President Sparc",
      "quote": "summary: no record of official source publication (lead only)"
-    }
-   ],
-   "rationale": "Commercial Saitek dedicated module with Frans Morsch firmware; no source published by rights holders found. ROM dumps are not source.",
-   "searches": 2,
-   "checked_at": "2026-10-19T20:42:55+00:00"
-  },
-  "Saitek Galileo": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "source": "dossier: wiki intro (SciSys Leonardo)",
      "quote": "a dedicated chess computer by SciSys released in 1986 ... a basic program on board - written by Julio Kaplan and Craig Barnes of Heuristic Software"
@@ -29486,19 +28138,7 @@
     {
      "search": "GitHub repositories: SciSys Leonardo chess",
      "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial SciSys/Saitek dedicated module system (Galileo = Leonardo variant) with Heuristic Software firmware; no source publication found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:42:55+00:00"
-  },
-  "Saitek Kasparov Blitz": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "url": "https://github.com/mamedev/mame/blob/master/src/mame/saitek/blitz.cpp",
      "quote": "This is the last Saitek chess computer with Julio Kaplan's involvement (Heuristic Software)"
@@ -29510,163 +28150,27 @@
     {
      "search": "Saitek SciSys chess computer program source code listing published Kaplan Barnes",
      "quote": "no published source listing found; only ROM dumps and emulator drivers"
-    }
-   ],
-   "rationale": "Commercial dedicated chess computer (Saitek, Kaplan/Barnes program); only ROM dumps/emulation exist, which are not source.",
-   "searches": 1,
-   "checked_at": "2026-10-20T01:45:59+00:00"
-  },
-  "Saitek Kasparov Brute Force": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "url": "https://github.com/mamedev/mame/blob/master/src/mame/saitek/leonardo.cpp",
      "quote": "Brute Force (H8, Frans Morsch)"
     },
     {
-     "search": "Saitek SciSys chess computer program source code listing published Kaplan Barnes",
-     "quote": "no published source listing found; only ROM dumps and emulator drivers"
-    }
-   ],
-   "rationale": "Commercial Saitek OSA expansion module (H8, program by Frans Morsch); no published source located, ROM dumps are not source.",
-   "searches": 1,
-   "checked_at": "2026-10-20T01:45:59+00:00"
-  },
-  "Saitek Leonardo Maestro A": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
      "url": "https://github.com/mamedev/mame/blob/master/src/mame/saitek/leonardo.cpp",
      "quote": "Maestro (65C02, Kaplan/Barnes)"
     },
-    {
-     "search": "Saitek SciSys chess computer program source code listing published Kaplan Barnes",
-     "quote": "no published source listing found; only ROM dumps and emulator drivers"
-    }
-   ],
-   "rationale": "Commercial dedicated chess computer module (Kaplan/Barnes); no published source located, ROM dumps are not source.",
-   "searches": 1,
-   "checked_at": "2026-10-20T01:45:59+00:00"
-  },
-  "Saitek Leonardo Maestro B": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://github.com/mamedev/mame/blob/master/src/mame/saitek/leonardo.cpp",
-     "quote": "Maestro (65C02, Kaplan/Barnes)"
-    },
-    {
-     "search": "Saitek SciSys chess computer program source code listing published Kaplan Barnes",
-     "quote": "no published source listing found; only ROM dumps and emulator drivers"
-    }
-   ],
-   "rationale": "Commercial dedicated chess computer module (Kaplan/Barnes); no published source located, ROM dumps are not source.",
-   "searches": 1,
-   "checked_at": "2026-10-20T01:45:59+00:00"
-  },
-  "Saitek Maestro D": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://github.com/mamedev/mame/blob/master/src/mame/saitek/leonardo.cpp",
-     "quote": "Maestro (65C02, Kaplan/Barnes)"
-    },
-    {
-     "search": "Saitek SciSys chess computer program source code listing published Kaplan Barnes",
-     "quote": "no published source listing found; only ROM dumps and emulator drivers"
-    }
-   ],
-   "rationale": "Commercial Saitek Maestro module program (Kaplan/Barnes); no published source located, ROM dumps are not source.",
-   "searches": 1,
-   "checked_at": "2026-10-20T01:45:59+00:00"
-  },
-  "Saitek President": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
     {
      "source": "dossier: wiki intro",
      "quote": "a dedicated chess computer released in 1993 by Saitek , running a program by Frans Morsch on an 8-bit H8 processor"
     },
     {
-     "search": "GitHub repositories: Saitek chess Morsch",
-     "quote": "0 results"
-    },
-    {
-     "search": "Saitek Kasparov dedicated chess computer program source code published Frans Morsch Brute Force President Sparc",
-     "quote": "summary: no record of official source publication (lead only)"
-    }
-   ],
-   "rationale": "Commercial Saitek dedicated computer with Frans Morsch firmware; no source publication found.",
-   "searches": 2,
-   "checked_at": "2026-10-19T20:42:55+00:00"
-  },
-  "Saitek Renaissance": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki intro (SciSys Leonardo)",
-     "quote": "a dedicated chess computer by SciSys released in 1986 ... expandable with modules with own processors and programs"
-    },
-    {
-     "search": "GitHub repositories: SciSys Leonardo chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial SciSys/Saitek modular dedicated computer (Leonardo family, Kaplan/Barnes base program); no source publication found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:42:55+00:00"
-  },
-  "Saitek RISC 2500": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
      "url": "https://github.com/mamedev/mame/blob/master/src/mame/saitek/risc2500.cpp",
      "quote": "The chess engine (The King) is also compatible with Tasc's The ChessMachine software."
     },
     {
-     "search": "Saitek SciSys chess computer program source code listing published Kaplan Barnes",
-     "quote": "no published source listing found; only ROM dumps and emulator drivers"
-    }
-   ],
-   "rationale": "Commercial dedicated chess computer running The King (Tasc); no published source located, ROM dumps are not source.",
-   "searches": 1,
-   "checked_at": "2026-10-20T01:45:59+00:00"
-  },
-  "Saitek Simultano/Corona C": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+     "source": "dossier: wiki intro (SciSys Leonardo)",
+     "quote": "a dedicated chess computer by SciSys released in 1986 ... expandable with modules with own processors and programs"
+    },
     {
      "url": "https://github.com/mamedev/mame/blob/master/src/mame/saitek/stratos.cpp",
      "quote": "The first Corona is engine version C."
@@ -29675,22 +28179,6 @@
      "url": "https://github.com/mamedev/mame/blob/master/src/mame/saitek/simultano.cpp",
      "quote": "Saitek Simultano, it is related to Saitek Stratos, see stratos.cpp"
     },
-    {
-     "search": "Saitek SciSys chess computer program source code listing published Kaplan Barnes",
-     "quote": "no published source listing found; only ROM dumps and emulator drivers"
-    }
-   ],
-   "rationale": "Commercial dedicated chess computer (Stratos-family Kaplan/Barnes engine); no published source located, ROM dumps are not source.",
-   "searches": 1,
-   "checked_at": "2026-10-20T01:45:59+00:00"
-  },
-  "Saitek Sparc": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
     {
      "source": "dossier: wiki intro",
      "quote": "a chess computer module by Saitek , with a SPARC processor, and a program by Kathe and Dan Spracklen"
@@ -29702,91 +28190,254 @@
     {
      "search": "Saitek Kasparov dedicated chess computer program source code published Frans Morsch Brute Force President Sparc",
      "quote": "summary: Sparc module not open source, no official source publication (lead only)"
-    }
-   ],
-   "rationale": "Commercial Saitek module with Spracklen firmware; no source publication found (the Spracklens' earlier Sargon listings are a different program).",
-   "searches": 2,
-   "checked_at": "2026-10-19T20:42:55+00:00"
-  },
-  "Saitek Stratos/Analys B": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "url": "https://github.com/mamedev/mame/blob/master/src/mame/saitek/stratos.cpp",
      "quote": "The initial Stratos/Turbo King (PRG ROM labels known: M,K,L,P) are probably engine version B"
     },
     {
-     "search": "Saitek SciSys chess computer program source code listing published Kaplan Barnes",
-     "quote": "no published source listing found; only ROM dumps and emulator drivers"
-    }
-   ],
-   "rationale": "Commercial dedicated chess computer (Kaplan/Barnes engine); no published source located, ROM dumps are not source.",
-   "searches": 1,
-   "checked_at": "2026-10-20T01:45:59+00:00"
-  },
-  "Saitek Superstar": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
      "url": "https://github.com/mamedev/mame/blob/master/src/mame/saitek/superstar.cpp",
      "quote": "Superstar 36K: - 32KB ROM (custom label, same program as tstar432)"
     },
-    {
-     "search": "Saitek SciSys chess computer program source code listing published Kaplan Barnes",
-     "quote": "no published source listing found; only ROM dumps and emulator drivers"
-    }
-   ],
-   "rationale": "Commercial SciSys dedicated chess computer (Kaplan/Barnes); no published source located, ROM dumps are not source.",
-   "searches": 1,
-   "checked_at": "2026-10-20T01:45:59+00:00"
-  },
-  "Saitek Turboking II": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
     {
      "url": "https://github.com/mamedev/mame/blob/master/src/mame/saitek/stratos.cpp",
      "quote": "officially there isn't a \"Turbo King II\" or \"Corona II\""
     },
     {
-     "search": "Saitek SciSys chess computer program source code listing published Kaplan Barnes",
-     "quote": "no published source listing found; only ROM dumps and emulator drivers"
-    }
-   ],
-   "rationale": "Commercial dedicated chess computer (Stratos/Turbo King family, Kaplan/Barnes); no published source located, ROM dumps are not source.",
-   "searches": 1,
-   "checked_at": "2026-10-20T01:45:59+00:00"
-  },
-  "Saitek Turbostar 432": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
      "url": "https://github.com/mamedev/mame/blob/master/src/mame/saitek/superstar.cpp",
      "quote": "Starting from Turbostar 432, SciSys started using the \"Kasparov Chess Computer\""
     },
     {
-     "search": "Saitek SciSys chess computer program source code listing published Kaplan Barnes",
-     "quote": "no published source listing found; only ROM dumps and emulator drivers"
+     "source": "dossier: wiki intro (SciSys Explorer)",
+     "quote": "a series of SciSys dedicated chess computers released from 1983 to 85 ... running the 6800 branch of the LogiChess program by Kaare Danielsen"
+    },
+    {
+     "search": "GitHub repositories: LogiChess",
+     "quote": "only unrelated TypeScript 'logichess' projects and BrettHallen/Chess_MCU (hardware tinkering with the SciSys TE1 MCU, no program source)"
+    },
+    {
+     "search": "Kaare Danielsen LogiChess source code 6800 SciSys Explorer Companion II",
+     "quote": "summary: 6800 LogiChess source not made public (lead only)"
+    },
+    {
+     "search": "fetched https://www.chessprogramming.org/LogiChess, grep source|listing|disassembl",
+     "quote": "no matches; external links are danielsen.com resume, hiarcs, schach-computer.info pages"
+    },
+    {
+     "source": "dossier: wiki snippet (SciSys Explorer)",
+     "quote": "the Concord II , released in 1985, at 7.2 MHz with permanent brain"
+    },
+    {
+     "source": "dossier: wiki intro (SciSys Explorer)",
+     "quote": "running the 6800 branch of the LogiChess program by Kaare Danielsen"
+    },
+    {
+     "search": "GitHub repositories: LogiChess",
+     "quote": "no repository with LogiChess program source"
+    },
+    {
+     "source": "dossier: wiki intro",
+     "quote": "The SciSys Explorer was Danielsen's first commercial LogiTech release"
+    },
+    {
+     "search": "fetched https://www.chessprogramming.org/LogiChess, grep source|listing|disassembl",
+     "quote": "no matches"
+    },
+    {
+     "source": "dossier: wiki categories (Mini Chess)",
+     "quote": "HMCS4xC, Commercial, Dedicated, Chess Suffix"
+    },
+    {
+     "source": "dossier: wiki intro",
+     "quote": "Mini Chess , (SciSys Mini Chess) along with Junior Chess and Graduate Chess, a series of portable dedicated chess computers manufactured and sold by SciSys"
+    },
+    {
+     "search": "GitHub repositories: SciSys Mini Chess HD44801",
+     "quote": "0 results"
+    },
+    {
+     "source": "dossier: wiki categories (Mini Chess page)",
+     "quote": "HMCS4xC, Commercial, Dedicated, Chess Suffix"
+    },
+    {
+     "url": "https://www.chessprogramming.org/Mini_Chess",
+     "quote": "along with Junior Chess and Graduate Chess, a series of portable dedicated chess computers manufactured and sold by SciSys"
+    },
+    {
+     "search": "GitHub repositories: scisys chess",
+     "quote": "0 results"
+    },
+    {
+     "source": "dossier: wiki categories",
+     "quote": "Dedicated, 6800"
+    },
+    {
+     "url": "https://www.chessprogramming.org/SciSys_Leonardo",
+     "quote": "a dedicated chess computer by SciSys released in 1986"
+    },
+    {
+     "source": "dossier: wiki categories",
+     "quote": "HMCS4xC, Commercial, Dedicated, Chess Suffix"
+    },
+    {
+     "url": "https://www.chessprogramming.org/Mini_Chess",
+     "quote": "a series of portable dedicated chess computers manufactured and sold by SciSys , first released in early 1981"
+    },
+    {
+     "source": "dossier: wiki categories",
+     "quote": "6502, Dedicated, Nobility"
+    },
+    {
+     "url": "https://www.chessprogramming.org/President_Chess",
+     "quote": "a prototype of a dedicated chess computer by SciSys with a Sensory Board and an early program by Julio Kaplan"
+    },
+    {
+     "source": "dossier: wiki categories",
+     "quote": "Dedicated, Chess Suffix"
+    },
+    {
+     "url": "https://www.chessprogramming.org/Sensor_Chess",
+     "quote": "a dedicated chess computer manufactured by SciSys with Sensory Board and 6502 processor at 2 MHz, released in 1981"
+    },
+    {
+     "source": "dossier: wiki categories",
+     "quote": "Dedicated, 6502, Astronomy, Queenadreena"
+    },
+    {
+     "url": "https://www.chessprogramming.org/Superstar",
+     "quote": "a series of dedicated chess computers manufactured by SciSys , released in 1983 and 1984"
+    },
+    {
+     "source": "dossier: CPW intro",
+     "quote": "a series of dedicated chess computers manufactured by SciSys ... 32 KiB of ROM within a 6502 processor"
+    },
+    {
+     "search": "GitHub repositories: Turbostar chess",
+     "quote": "0 results"
+    },
+    {
+     "source": "dossier: wiki categories",
+     "quote": "Dedicated"
+    },
+    {
+     "url": "https://www.chessprogramming.org/SciSys_X",
+     "quote": "an experimental, not yet commercially available dedicated chess computer produced by SciSys Ltd."
+    },
+    {
+     "source": "dossier: wiki_intro",
+     "quote": "a dedicated chess computer manufactured and released by SciSys in 1981 ... a 12 KiB Philidor Software program written by Mike Johnson"
+    },
+    {
+     "search": "GitHub repositories: scisys chess champion",
+     "quote": "0 results"
+    },
+    {
+     "source": "dossier: wiki_intro",
+     "quote": "a dedicated chess computer manufactured by Scisys-W Ltd. Hong Kong from 1981"
+    },
+    {
+     "search": "SciSys \"Chess Champion Mark V\" David Broughton Mark Taylor program source code",
+     "quote": "no evidence that the source code has been released, archived, or made accessible"
+    },
+    {
+     "source": "dossier: wiki_categories",
+     "quote": "F8, Dedicated, Commercial; a dedicated travel chess computer by SciSys and identical by Novag , first released in 1980"
+    },
+    {
+     "source": "dossier: CPW categories",
+     "quote": "6502, Dedicated, Master"
+    },
+    {
+     "source": "dossier: CPW intro",
+     "quote": "Novag's third dedicated chess computer released in 1979"
+    },
+    {
+     "search": "Novag \"Super System III\" chess computer 1979 program source code listing or ROM disassembly",
+     "quote": "no public source listing or disassembly found; only manuals, reviews and collector pages"
+    },
+    {
+     "url": "https://chessprogramming.org/Mini_Chess",
+     "quote": "a series of portable dedicated chess computers manufactured and sold by SciSys , first released in early 1981"
+    },
+    {
+     "search": "GitHub repositories: saitek scisys chess disassembly",
+     "quote": "0 results"
+    },
+    {
+     "source": "dossier: wiki categories (Mini Chess)",
+     "quote": "HMCS4xC, Commercial, Dedicated"
+    },
+    {
+     "source": "dossier: wiki intro",
+     "quote": "along with Junior Chess and Graduate Chess, a series of portable dedicated chess computers manufactured and sold by SciSys"
+    },
+    {
+     "search": "GitHub repositories: SciSys chess",
+     "quote": "0 results"
+    },
+    {
+     "source": "dossier: CPW intro",
+     "quote": "Turbostar , (SciSys Kasparov Turbostar) a series of dedicated chess computers manufactured by SciSys"
+    },
+    {
+     "search": "GitHub repositories: turbostar chess",
+     "quote": "0 results"
+    },
+    {
+     "source": "dossier: wiki intro",
+     "quote": "a prototype of a dedicated chess computer by SciSys with a Sensory Board and an early program by Julio Kaplan"
+    },
+    {
+     "source": "dossier: wiki intro",
+     "quote": "It was never r[eleased]"
+    },
+    {
+     "search": "GitHub repositories: Saitek GK 2100 Morsch",
+     "quote": "0 results"
+    },
+    {
+     "url": "https://www.chessprogramming.org/GK_2100",
+     "quote": "a dedicated chess computer released in 1993 by Saitek , running a program by Frans Morsch on an 8-bit H8 processor"
+    },
+    {
+     "search": "Saitek Kasparov GK-2000 GK-2100 chess computer programmer H8",
+     "quote": "only ROM dumps/MAME emulation driver, no published program source"
+    },
+    {
+     "url": "https://www.chessprogramming.org/GK_2100",
+     "quote": "a dedicated chess computer released in 1993 by Saitek , running a program by Frans Morsch"
+    },
+    {
+     "source": "CPW GK 2100 categories",
+     "quote": "Category:Dedicated, Category:H8"
+    },
+    {
+     "source": "dossier: wiki categories",
+     "quote": "Dedicated, SPARC"
+    },
+    {
+     "url": "https://chessprogramming.org/Kasparov_Sparc",
+     "quote": "a chess computer module by Saitek , with a SPARC processor, and a program by Kathe and Dan Spracklen"
+    },
+    {
+     "search": "GitHub repositories: Kasparov Sparc chess",
+     "quote": "0 results"
+    },
+    {
+     "source": "dossier: wiki intro",
+     "quote": "a dedicated chess computer with an ARM6 32Bit RISC Processor at 14 MHz, produced and market by Saitek in 1992, running a The King based program by Johan de Koning"
+    },
+    {
+     "search": "GitHub repositories: RISC 2500 chess",
+     "quote": "0 results"
     }
    ],
-   "rationale": "Commercial SciSys dedicated chess computer (Kaplan/Barnes); no published source located, ROM dumps are not source.",
-   "searches": 1,
-   "checked_at": "2026-10-20T01:45:59+00:00"
+   "rationale": "Commercial Saitek/SciSys dedicated chess computers and modules; no rights-holder source release located for any model. ROM dumps and emulator drivers are not source.",
+   "searches": 52,
+   "checked_at": "2026-10-20T01:45:59+00:00",
+   "identity_issue": "Saitek/SciSys (one company, named SciSys until 1987 and Saitek after) is a manufacturer's product line rather than a single program: the merged models run different programs, by different authors, on different hardware, and the wiki's Saitek page is an organization page.",
+   "notes": "Merged on 2026-10-20 into Saitek/SciSys at the user's request (Saitek*, SciSys* and the unprefixed products listed on the Chess Programming Wiki Saitek page). The wiki says Saitek traded as SciSys-W Ltd from 1979 until 1987. Caveats: early models (Chess Champion Super System III, Mark IV, Mark V, Pocket Chess, Mini/Graduate/Junior Chess) had Philidor Software programs by Mike Johnson, David Broughton and Mark Taylor with David Levy; from 1981 to 1990 Julio Kaplan's Heuristic Software (with Craig Barnes) wrote most programs (Sensor Chess, Superstar, Turbostar, Leonardo, Galileo, Renaissance, Stratos, Maestro and others); Kaare Danielsen wrote the Explorer, Concord II and Companion II; in the 1990s Dan and Kathe Spracklen (Sparc), Johan de Koning (RISC 2500, The King) and Frans Morsch (Brute Force, President, GK 2100/2000) contributed. The Super System III was also sold by Novag. SciSys X was an experimental 1981 tournament prototype whose author is uncertain. SSDF rates individual models, so results under this family cover several distinct programs. Licensing was previously recorded as unknown for: SciSys X (unknown); as commercial products of the same company they are treated as proprietary.",
+   "needs_review": false
   },
   "SamChess": {
    "tier": "B",
@@ -29866,54 +28517,6 @@
    "searches": 3,
    "checked_at": "2026-10-19T23:20:00+00:00"
   },
-  "Savant": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki intro",
-     "quote": "a dedicated chess computer released in 1981 by Novag Industries LTD ... The program was based on David Kittinger's MyChess"
-    },
-    {
-     "search": "GitHub repositories: Novag chess Kittinger",
-     "quote": "0 results"
-    },
-    {
-     "search": "David Kittinger MyChess Z80 source code listing published Novag Savant",
-     "quote": "summary: original Z80 source for the Savant not published (lead only)"
-    }
-   ],
-   "rationale": "Commercial Novag dedicated computer with Kittinger's Z80 firmware; no source publication found.",
-   "searches": 2,
-   "checked_at": "2026-10-19T20:42:55+00:00"
-  },
-  "SC 1": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "low",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki intro",
-     "quote": "The SC 1 was merely a prototype kind of a chess computer ... a plain copy of Ron Nelson's program of a Chess Challenger manufactured by Fidelity Electronics"
-    },
-    {
-     "search": "GitHub repositories: Schachcomputer SC2 U880",
-     "quote": "0 results"
-    },
-    {
-     "search": "Schachcomputer SC2 DDR VEB Funkwerk Erfurt Quellcode Programm listing Chess Challenger",
-     "quote": "summary: no original listing public; only ROM dumps/emulator support (lead only)"
-    }
-   ],
-   "rationale": "East German prototype (12-20 units) running a copy of Fidelity's proprietary Chess Challenger ROM program; no source by any rights holder found. Not sold commercially itself, hence low confidence on licensing.",
-   "searches": 2,
-   "checked_at": "2026-10-19T20:42:55+00:00"
-  },
   "SC 2": {
    "tier": "C",
    "licensing": "proprietary",
@@ -29932,11 +28535,19 @@
     {
      "search": "Schachcomputer SC2 DDR VEB Funkwerk Erfurt Quellcode Programm listing Chess Challenger",
      "quote": "summary: original listing not public; only unofficial disassembly/ROM dumps and MAME driver (lead only)"
+    },
+    {
+     "source": "dossier: wiki intro",
+     "quote": "The SC 1 was merely a prototype kind of a chess computer ... a plain copy of Ron Nelson's program of a Chess Challenger manufactured by Fidelity Electronics"
+    },
+    {
+     "search": "Schachcomputer SC2 DDR VEB Funkwerk Erfurt Quellcode Programm listing Chess Challenger",
+     "quote": "summary: no original listing public; only ROM dumps/emulator support (lead only)"
     }
    ],
-   "rationale": "Mass-produced GDR dedicated computer running a modified clone of Fidelity's proprietary CC10 program; only ROM dumps/emulator drivers exist, which are not source.",
-   "notes": "MAME's sc2.cpp is a hardware emulation driver, not the chess program source.",
-   "searches": 2,
+   "rationale": "GDR dedicated computers by VEB Funkwerk Erfurt: the SC 1 prototype (12-20 units, 1981) and the mass-produced SC 2 (1981-1983) ran copies of Fidelity's proprietary Chess Challenger program; only ROM dumps/emulator drivers exist, which are not source.",
+   "notes": "MAME's sc2.cpp is a hardware emulation driver, not the chess program source. Merged on 2026-10-20 with SC 1 at the user's request: the SC 1 was the prototype predecessor of the SC 2 from the same manufacturer, both running Ron Nelson's Chess Challenger program (SC 1 a plain copy, SC 2 slightly modified).",
+   "searches": 4,
    "checked_at": "2026-10-19T20:42:55+00:00"
   },
   "Scaramanga": {
@@ -30156,327 +28767,6 @@
    "searches": 1,
    "checked_at": "2026-10-19T23:20:00+00:00"
   },
-  "SciSys Companion II": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki intro (SciSys Explorer)",
-     "quote": "a series of SciSys dedicated chess computers released from 1983 to 85 ... running the 6800 branch of the LogiChess program by Kaare Danielsen"
-    },
-    {
-     "search": "GitHub repositories: LogiChess",
-     "quote": "only unrelated TypeScript 'logichess' projects and BrettHallen/Chess_MCU (hardware tinkering with the SciSys TE1 MCU, no program source)"
-    },
-    {
-     "search": "Kaare Danielsen LogiChess source code 6800 SciSys Explorer Companion II",
-     "quote": "summary: 6800 LogiChess source not made public (lead only)"
-    },
-    {
-     "search": "fetched https://www.chessprogramming.org/LogiChess, grep source|listing|disassembl",
-     "quote": "no matches; external links are danielsen.com resume, hiarcs, schach-computer.info pages"
-    }
-   ],
-   "rationale": "Commercial SciSys dedicated computer running Danielsen's 4K LogiChess ROM; no source publication found.",
-   "searches": 2,
-   "checked_at": "2026-10-19T20:42:55+00:00"
-  },
-  "SciSys Concord II": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki snippet (SciSys Explorer)",
-     "quote": "the Concord II , released in 1985, at 7.2 MHz with permanent brain"
-    },
-    {
-     "source": "dossier: wiki intro (SciSys Explorer)",
-     "quote": "running the 6800 branch of the LogiChess program by Kaare Danielsen"
-    },
-    {
-     "search": "GitHub repositories: LogiChess",
-     "quote": "no repository with LogiChess program source"
-    },
-    {
-     "search": "Kaare Danielsen LogiChess source code 6800 SciSys Explorer Companion II",
-     "quote": "summary: 6800 LogiChess source not made public (lead only)"
-    }
-   ],
-   "rationale": "Commercial SciSys dedicated computer running Danielsen's LogiChess ROM; no source publication found.",
-   "searches": 2,
-   "checked_at": "2026-10-19T20:42:55+00:00"
-  },
-  "SciSys Explorer": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki intro",
-     "quote": "The SciSys Explorer was Danielsen's first commercial LogiTech release"
-    },
-    {
-     "search": "GitHub repositories: LogiChess",
-     "quote": "no repository with LogiChess program source"
-    },
-    {
-     "search": "Kaare Danielsen LogiChess source code 6800 SciSys Explorer Companion II",
-     "quote": "summary: 6800 LogiChess source not made public (lead only)"
-    },
-    {
-     "search": "fetched https://www.chessprogramming.org/LogiChess, grep source|listing|disassembl",
-     "quote": "no matches"
-    }
-   ],
-   "rationale": "Commercial SciSys dedicated computer running Danielsen's LogiChess ROM; no source publication found.",
-   "searches": 2,
-   "checked_at": "2026-10-19T20:42:55+00:00"
-  },
-  "SciSys Graduate Chess": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki categories (Mini Chess)",
-     "quote": "HMCS4xC, Commercial, Dedicated, Chess Suffix"
-    },
-    {
-     "source": "dossier: wiki intro",
-     "quote": "Mini Chess , (SciSys Mini Chess) along with Junior Chess and Graduate Chess, a series of portable dedicated chess computers manufactured and sold by SciSys"
-    },
-    {
-     "search": "GitHub repositories: SciSys Mini Chess HD44801",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial SciSys pocket chess computer (HD44801 4-bit MCU ROM program); wiki Commercial category and no source publication found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:42:55+00:00"
-  },
-  "SciSys Intelligent Chess": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki categories",
-     "quote": "Commercial, Chess Suffix, Console"
-    },
-    {
-     "url": "https://www.chessprogramming.org/Intelligent_Chess",
-     "quote": "a dedicated chess computer and early forerunner of both chess database and chess display system"
-    },
-    {
-     "search": "GitHub repositories: scisys chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "1980 SciSys commercial dedicated chess computer; wiki Commercial category; no published source or rights-holder listing found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:40:46+00:00"
-  },
-  "SciSys Junior Chess": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki categories (Mini Chess page)",
-     "quote": "HMCS4xC, Commercial, Dedicated, Chess Suffix"
-    },
-    {
-     "url": "https://www.chessprogramming.org/Mini_Chess",
-     "quote": "along with Junior Chess and Graduate Chess, a series of portable dedicated chess computers manufactured and sold by SciSys"
-    },
-    {
-     "search": "GitHub repositories: scisys chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial SciSys dedicated computer (Hitachi HD44801 4-bit MCU firmware); no source published by the rights holder found. ROM dumps are not source.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:40:46+00:00"
-  },
-  "SciSys Leonardo": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki categories",
-     "quote": "Dedicated, 6800"
-    },
-    {
-     "url": "https://www.chessprogramming.org/SciSys_Leonardo",
-     "quote": "a dedicated chess computer by SciSys released in 1986"
-    },
-    {
-     "search": "GitHub repositories: scisys chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercially sold SciSys/Saitek dedicated chess computer (firmware in ROM); wiki page has no mention of published source; none found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:40:46+00:00"
-  },
-  "SciSys Mini Chess": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki categories",
-     "quote": "HMCS4xC, Commercial, Dedicated, Chess Suffix"
-    },
-    {
-     "url": "https://www.chessprogramming.org/Mini_Chess",
-     "quote": "a series of portable dedicated chess computers manufactured and sold by SciSys , first released in early 1981"
-    },
-    {
-     "search": "GitHub repositories: scisys chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial SciSys dedicated computer; wiki Commercial category; no source published by the rights holder found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:40:46+00:00"
-  },
-  "SciSys President": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "low",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki categories",
-     "quote": "6502, Dedicated, Nobility"
-    },
-    {
-     "url": "https://www.chessprogramming.org/President_Chess",
-     "quote": "a prototype of a dedicated chess computer by SciSys with a Sensory Board and an early program by Julio Kaplan"
-    },
-    {
-     "search": "GitHub repositories: scisys chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "SciSys prototype dedicated computer with company firmware; no source located; proprietary inferred from commercial manufacturer context (prototype, so low confidence).",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:40:46+00:00"
-  },
-  "SciSys Sensor Chess": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki categories",
-     "quote": "Dedicated, Chess Suffix"
-    },
-    {
-     "url": "https://www.chessprogramming.org/Sensor_Chess",
-     "quote": "a dedicated chess computer manufactured by SciSys with Sensory Board and 6502 processor at 2 MHz, released in 1981"
-    },
-    {
-     "search": "GitHub repositories: scisys chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercially sold SciSys dedicated computer with Julio Kaplan firmware in 4 KiB ROM; no rights-holder source or listing found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:40:46+00:00"
-  },
-  "SciSys Superstar": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki categories",
-     "quote": "Dedicated, 6502, Astronomy, Queenadreena"
-    },
-    {
-     "url": "https://www.chessprogramming.org/Superstar",
-     "quote": "a series of dedicated chess computers manufactured by SciSys , released in 1983 and 1984"
-    },
-    {
-     "search": "GitHub repositories: scisys chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial SciSys dedicated computers running Heuristic Software (Julio Kaplan) firmware; no published source found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:40:46+00:00"
-  },
-  "SciSys Turbostar": {
-   "tier": "E",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: CPW intro",
-     "quote": "a series of dedicated chess computers manufactured by SciSys ... 32 KiB of ROM within a 6502 processor"
-    },
-    {
-     "search": "GitHub repositories: Turbostar chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial dedicated chess computer (Heuristic Software/Julio Kaplan program); no published source or listing by rights holder found. ROM dumps are not source.",
-   "searches": 1,
-   "checked_at": "2026-10-19T23:20:00+00:00"
-  },
-  "SciSys X": {
-   "tier": "C",
-   "licensing": "unknown",
-   "availability": "not_located",
-   "confidence": "low",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki categories",
-     "quote": "Dedicated"
-    },
-    {
-     "url": "https://www.chessprogramming.org/SciSys_X",
-     "quote": "an experimental, not yet commercially available dedicated chess computer produced by SciSys Ltd."
-    },
-    {
-     "search": "GitHub repositories: scisys chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Experimental 1981 tournament prototype; author uncertain per wiki; no source or licensing statement found.",
-   "identity_issue": "Wiki notes ICGA lists Kevin O'Connell as author but it was likely a Philidor Software program by Mark Taylor and/or David Broughton.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:40:46+00:00"
-  },
   "Screamer": {
    "tier": "E",
    "licensing": "unknown",
@@ -30690,30 +28980,6 @@
    "notes": "UCI id author string ('markku and daniel') differs from RWBC author Tomi Salonen; repo is the one RWBC links.",
    "searches": 2,
    "checked_at": "2026-10-19T18:08:53+00:00"
-  },
-  "Sensor Chess": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki categories",
-     "quote": "Dedicated, Chess Suffix"
-    },
-    {
-     "url": "https://www.chessprogramming.org/Sensor_Chess",
-     "quote": "a dedicated chess computer manufactured by SciSys with Sensory Board and 6502 processor at 2 MHz, released in 1981"
-    },
-    {
-     "search": "GitHub repositories: scisys chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Same product as SciSys Sensor Chess: commercially sold SciSys dedicated computer with Julio Kaplan ROM firmware; no rights-holder source found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:40:46+00:00"
   },
   "SF-POLY": {
    "tier": "F",
@@ -33040,30 +31306,6 @@
    "searches": 1,
    "checked_at": "2026-10-19T18:08:53+00:00"
   },
-  "Super Constellation": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki categories",
-     "quote": "Dedicated, 6502, Astronomy, Kittinger Quotes"
-    },
-    {
-     "url": "https://www.chessprogramming.org/Super_Constellation",
-     "quote": "manufactured and market in 1984 by Novag , running a program developed by primary author David Kittinger"
-    },
-    {
-     "search": "GitHub repositories: constellation novag chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial Novag dedicated computer (ROM firmware); no rights-holder source or listing found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:40:46+00:00"
-  },
   "SuperChess": {
    "tier": "C",
    "licensing": "proprietary",
@@ -33091,30 +31333,6 @@
    "rationale": "Commercial ZX81/Spectrum tape releases; only tape images exist; no author-published source or listing found.",
    "notes": "The BASIC portion is inherently readable from the tape images, but that is a commercial binary distribution, not a source release.",
    "searches": 2,
-   "checked_at": "2026-10-19T20:40:46+00:00"
-  },
-  "Superstar": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki categories",
-     "quote": "Dedicated, 6502, Astronomy, Queenadreena"
-    },
-    {
-     "url": "https://www.chessprogramming.org/Superstar",
-     "quote": "a series of dedicated chess computers manufactured by SciSys , released in 1983 and 1984"
-    },
-    {
-     "search": "GitHub repositories: scisys chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Same product as SciSys Superstar: commercial SciSys dedicated computers with Heuristic Software firmware; no published source found.",
-   "searches": 1,
    "checked_at": "2026-10-19T20:40:46+00:00"
   },
   "Supra": {
@@ -35303,26 +33521,6 @@
    "searches": 2,
    "checked_at": "2026-10-19T20:54:10+00:00"
   },
-  "Turbostar": {
-   "tier": "E",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: CPW intro",
-     "quote": "Turbostar , (SciSys Kasparov Turbostar) a series of dedicated chess computers manufactured by SciSys"
-    },
-    {
-     "search": "GitHub repositories: turbostar chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial dedicated chess computer (SciSys, program by Heuristic Software/Julio Kaplan); ROM firmware is not source and no published listing was found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T23:55:19+00:00"
-  },
   "Turgenev": {
    "tier": "B",
    "licensing": "open_source",
@@ -35688,12 +33886,17 @@
    "licensing": "source_available",
    "availability": "available",
    "confidence": "high",
-   "release_scope": "Usurpator I (6800) and Usurpator II (6502) assembly listings published in book form (Wolfkamp); later C rewrite Usurpator V (2005) not released",
+   "release_scope": "Usurpator I (6800) and Usurpator II (6502) assembly listings published in book form (Wolfkamp); later C rewrite Usurpator V (2005) not released; the WinBoard emulator wrapper for Usurpator II (usurpatorIIemu.exe) source not located",
    "source_urls": [
     {
      "url": "http://retro.hansotten.nl/uploads/files/usurpatorII.zip",
      "kind": "third-party transcription of the published Usurpator II book listing (AIM 65 original + KIM-1 port, with book PDF)",
      "license": "none stated (COPYRIGHT 1983 H.G. Muller)"
+    },
+    {
+     "url": "http://retro.hansotten.nl/uploads/files/Computerschaak-6800-6502_NL.pdf",
+     "kind": "scan of the author's published book with source listings",
+     "license": "none stated"
     }
    ],
    "evidence": [
@@ -35716,31 +33919,7 @@
     {
      "search": "GitHub repositories: usurpator chess",
      "quote": "0 results"
-    }
-   ],
-   "rationale": "Author Harm Geert Muller published the full assembly source as a book listing; a verified retyped transcription is downloadable from Hans Otten's retro site. Only a copyright notice, no license, so source_available.",
-   "searches": 2,
-   "checked_at": "2026-10-19T23:55:19+00:00"
-  },
-  "UsurpatorII": {
-   "tier": "D",
-   "licensing": "source_available",
-   "availability": "available",
-   "confidence": "medium",
-   "release_scope": "Original 6502 Usurpator II (1981/1983) as published in Muller's book; the WinBoard emulator wrapper (usurpatorIIemu.exe) source not located",
-   "source_urls": [
-    {
-     "url": "http://retro.hansotten.nl/uploads/files/usurpatorII.zip",
-     "kind": "third-party retyped source of the book listing (AIM 65 and KIM-1 .asm/.lst) plus book scan",
-     "license": "none stated (COPYRIGHT 1983 H.G. Muller)"
     },
-    {
-     "url": "http://retro.hansotten.nl/uploads/files/Computerschaak-6800-6502_NL.pdf",
-     "kind": "scan of the author's published book with source listings",
-     "license": "none stated"
-    }
-   ],
-   "evidence": [
     {
      "source": "dossier: RWBC Src=-",
      "quote": "UsurpatorII, Muller Harm-Geert, src '-', web usurpatorIIemu.exe"
@@ -35762,10 +33941,10 @@
      "quote": "no chess-related repos"
     }
    ],
-   "rationale": "The rights holder published the full 6502 assembly source in a book; a retyped, verified copy and the book scan are downloadable from Hans Otten's retro site. No license beyond copyright, so source_available.",
-   "notes": "RWBC entry points to usurpatorIIemu.exe (30 KB, still online), an emulator by Muller running the original 6502 program under WinBoard; the emulator's own source was not found.",
-   "searches": 2,
-   "checked_at": "2026-10-20T14:14:52+00:00"
+   "rationale": "Author Harm Geert Muller published the full assembly source as a book listing; a verified retyped transcription is downloadable from Hans Otten's retro site. Only a copyright notice, no license, so source_available.",
+   "searches": 4,
+   "checked_at": "2026-10-20T14:14:52+00:00",
+   "notes": "Merged on 2026-10-20 with UsurpatorII (RWBC's entry for the 6502 Usurpator II) at the user's request; both are Harm Geert Muller's program. RWBC entry points to usurpatorIIemu.exe (30 KB, still online), an emulator by Muller running the original 6502 program under WinBoard; the emulator's own source was not found."
   },
   "Usurper": {
    "tier": "D",

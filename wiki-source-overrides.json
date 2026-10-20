@@ -732,12 +732,6 @@
     ],
     "links_sha256": "2c05f900fa51ee50cc3934c4c66f803fd16b600444bcc6a0b65698681df0e812"
   },
-  "Blitz Monster": {
-    "wiki_url": "https://chessprogramming.org/Blitz_Monster",
-    "note": "No qualifying source link found on this page. Blitz Monster's dedicated-computer tournament and product histories do not provide engine source.",
-    "code_urls": [],
-    "links_sha256": "1fdec0054782b507fb6f122f64a7970fb6f003849f36313b1203e07d1bf233bb"
-  },
   "Blondie25": {
     "wiki_url": "https://chessprogramming.org/Blondie25",
     "note": "No qualifying source link found on this page. Blondie25's research publications and press release do not identify a source distribution.",
@@ -1267,18 +1261,6 @@
     "code_urls": [],
     "links_sha256": "a4beaf213838b5485ddc085ac34b14349705782abc8d4f750e7d73e729ac4a40"
   },
-  "Chess Champion Mark IV": {
-    "wiki_url": "https://chessprogramming.org/Chess_Champion_Mark_IV",
-    "note": "No explicit source link in cached links; generic engine homepages are not evidence of code.",
-    "code_urls": [],
-    "links_sha256": "ba24ea475f23900f72c61b4f6b5b7b67019881767157e64426fa407d09b1173b"
-  },
-  "Chess Champion Mark V": {
-    "wiki_url": "https://chessprogramming.org/Chess_Champion_Mark_V",
-    "note": "No explicit source link in cached links; generic engine homepages are not evidence of code.",
-    "code_urls": [],
-    "links_sha256": "e82a0d0d49197e0bcb8015743ccd806a5e1cbc15f7bb1e76c9e0eb2c2f3a5109"
-  },
   "Chess Champion MK I": {
     "wiki_url": "https://chessprogramming.org/Chess_Champion_MK_I",
     "note": "Candidates are Google Books citations, not engine source.",
@@ -1290,18 +1272,6 @@
     "note": "No explicit source link in cached links; generic engine homepages are not evidence of code.",
     "code_urls": [],
     "links_sha256": "6489aa3c1d4e46014a11c4c0df8174d9fa74620e24d68d6e86bb86e93e342f62"
-  },
-  "Chess Champion Pocket Chess": {
-    "wiki_url": "https://chessprogramming.org/Chess_Champion_Pocket_Chess",
-    "note": "No explicit source link in cached links; generic engine homepages are not evidence of code.",
-    "code_urls": [],
-    "links_sha256": "56c3e28cfe6b49745379d5124088378ac5dbde1265bcabe977704406690a8713"
-  },
-  "Chess Champion Super System III": {
-    "wiki_url": "https://chessprogramming.org/Chess_Champion_Super_System_III",
-    "note": "No explicit source link in cached links; generic engine homepages are not evidence of code.",
-    "code_urls": [],
-    "links_sha256": "614e2d7cb07dab8b10a6a1200bf0973b34f464e19c86e67c299e5dd66f50ddf2"
   },
   "Chess Fighter": {
     "wiki_url": "https://chessprogramming.org/Chess_Fighter",
@@ -1688,12 +1658,6 @@
     "note": "No explicit source link in cached links; generic engine homepages are not evidence of code.",
     "code_urls": [],
     "links_sha256": "21d455537f9d753817c2769cc67cbad65cb68dafe4b9a67d9d499a66c12e1daf"
-  },
-  "Constellation": {
-    "wiki_url": "https://chessprogramming.org/Constellation",
-    "note": "No explicit source link in cached links; generic engine homepages are not evidence of code.",
-    "code_urls": [],
-    "links_sha256": "7d98fc05b48740505075b0873f8016d8953936e277a20ff81bc2b70593f56352"
   },
   "ConvChess": {
     "wiki_url": "https://chessprogramming.org/ConvChess",
@@ -2897,12 +2861,6 @@
     "code_urls": [],
     "links_sha256": "4c3c18cb0738c7bf358b4345727deeb8bf65a2df69cebc14e1a55a63fcd65638"
   },
-  "GK 2100": {
-    "wiki_url": "https://chessprogramming.org/GK_2100",
-    "note": "No explicit source link in cached links; generic engine homepages are not evidence of code.",
-    "code_urls": [],
-    "links_sha256": "885bf96a5c2fd38e36f5746915730b18d78d99901ae680a3a72ab92782fed740"
-  },
   "Glass": {
     "wiki_url": "https://chessprogramming.org/Glass",
     "note": "No GitHub/GitLab/SourceForge repository or explicit same-engine source link in page links; only homepages, downloads, forums, binaries or reference links.",
@@ -2986,12 +2944,6 @@
     "note": "No GitHub/GitLab/SourceForge repository or explicit same-engine source link in page links; only homepages, downloads, forums, binaries or reference links.",
     "code_urls": [],
     "links_sha256": "26c42994f662c8505b5937c6532f67a9bce2edb360374ec2cc1cffe79e2806e7"
-  },
-  "Graduate Chess": {
-    "wiki_url": "https://chessprogramming.org/Mini_Chess",
-    "note": "No explicit source link in cached links; generic engine homepages are not evidence of code.",
-    "code_urls": [],
-    "links_sha256": "236f01d75566636fe1269bd3df639076ef752371670b5be5bca2867cce7de35a"
   },
   "Grandmaster": {
     "wiki_url": "https://chessprogramming.org/Grandmaster",
@@ -3495,12 +3447,6 @@
     "code_urls": [],
     "links_sha256": "131882b8344e3c650533422f798fd675c98bc9b341b44d379744dfc99a516509"
   },
-  "Junior Chess": {
-    "wiki_url": "https://chessprogramming.org/Mini_Chess",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "236f01d75566636fe1269bd3df639076ef752371670b5be5bca2867cce7de35a"
-  },
   "Jupiter": {
     "wiki_url": "https://chessprogramming.org/Jupiter",
     "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
@@ -3554,12 +3500,6 @@
     "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
     "code_urls": [],
     "links_sha256": "ee5571a8855c12b165186f40358b507991472d3745543b2949adaf65677dc951"
-  },
-  "Kasparov SPARC": {
-    "wiki_url": "https://chessprogramming.org/Kasparov_Sparc",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "b7d3a22323093430daf42359b119887e239ae8135f926af4beb2e006b0c6e605"
   },
   "KC Chess": {
     "wiki_url": "https://chessprogramming.org/KC_Chess",
@@ -4031,120 +3971,6 @@
     "code_urls": [],
     "links_sha256": "40c69684d8b6c9b8539e7c8de799a49ca82bfdcfa8716f22d7fc658f8ca35c46"
   },
-  "Mephisto (H)": {
-    "wiki_url": "https://chessprogramming.org/Mephisto_(H)",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "5720837e2014c08aa2a9783240cc07979dcf01d22103befddfc18034d98b98df"
-  },
-  "Mephisto Almeria": {
-    "wiki_url": "https://chessprogramming.org/Mephisto_Almeria",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "316c8dd633a85bc2e3a0645032c70cb3781da8da4a2335db1c8197e4debf3877"
-  },
-  "Mephisto Amsterdam": {
-    "wiki_url": "https://chessprogramming.org/Mephisto_Amsterdam",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "6de4b729e3cc77b4d07aea6c848667bf71c89d287f206355195574ac9511f9ee"
-  },
-  "Mephisto Dallas": {
-    "wiki_url": "https://chessprogramming.org/Mephisto_Dallas",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "82867d7294df9f23fd4154b20fbda59dbcd483ed750436fd20cd912a99857277"
-  },
-  "Mephisto Europa": {
-    "wiki_url": "https://chessprogramming.org/Mephisto_Europa",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "9a1682b6ad5f7928c21233f70a0f0baafb5f10245b6ef7452196e8c90875b2f6"
-  },
-  "Mephisto Lyon": {
-    "wiki_url": "https://chessprogramming.org/Mephisto_Lyon",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "c4959ab9460a9713d0a8b975f6907051e34c0854f1019f54d5380fa981d2c844"
-  },
-  "Mephisto Milano": {
-    "wiki_url": "https://chessprogramming.org/Mephisto_Milano",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "30d7ebaa32676a3182eb7be0c94b53825474c2d37ceef26211e18a664a535682"
-  },
-  "Mephisto MM II": {
-    "wiki_url": "https://chessprogramming.org/Mephisto_MM_II",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "7aff713628ce77fda76dc6b5673aba1c74110b86d0cf4eb218aab8dfae1d7ed3"
-  },
-  "Mephisto MM IV": {
-    "wiki_url": "https://chessprogramming.org/Mephisto_MM_IV",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "df801c0cdf1d12e8935b3551b71603eaffa9171120d209c611350f30781c8a37"
-  },
-  "Mephisto MM V": {
-    "wiki_url": "https://chessprogramming.org/Mephisto_MM_V",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "3ef83c010845be3c050fab7bb67bc4a128879299641ce1bd2cddab59fbb65fbe"
-  },
-  "Mephisto Mondial": {
-    "wiki_url": "https://chessprogramming.org/Mephisto_Mondial",
-    "note": "Candidates concern dedicated-computer history, not source.",
-    "code_urls": [],
-    "links_sha256": "2f88f6016b153a5f605be22358c3e5807c8786a58b359deb3f7b366a124667ef"
-  },
-  "Mephisto Montreux": {
-    "wiki_url": "https://chessprogramming.org/Mephisto_Montreux",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "9c912efe54e1e4f9dbd717b619531d80b83d72f710f73d0925ab8dda19b0e653"
-  },
-  "Mephisto Nigel Short": {
-    "wiki_url": "https://chessprogramming.org/Mephisto_Milano",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "30d7ebaa32676a3182eb7be0c94b53825474c2d37ceef26211e18a664a535682"
-  },
-  "Mephisto Polgar": {
-    "wiki_url": "https://chessprogramming.org/Mephisto_Polgar",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "5ade77878c5bd1a26decaf7c8723f19d63ced97685244b635fe15059329d0434"
-  },
-  "Mephisto Portorose": {
-    "wiki_url": "https://chessprogramming.org/Mephisto_Portorose",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "4feb918abdee8850fad7e68f0921b08568392fd761f76601099568b5d0a27222"
-  },
-  "Mephisto Rebell": {
-    "wiki_url": "https://chessprogramming.org/Mephisto_Rebell",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "fa7b164027f522c37c7814b863e283a4ca1050cd31a39ff1945c07a969eda2fc"
-  },
-  "Mephisto RISC": {
-    "wiki_url": "https://chessprogramming.org/Mephisto_RISC",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "15ee82d7470190acb1e52057e2a9661dfd7ef30347c47585e3740dfb5d5a787d"
-  },
-  "Mephisto Roma": {
-    "wiki_url": "https://chessprogramming.org/Mephisto_Roma",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "851854d9417009b86a2e4cd06106ba7cf09bab982e0162f3ece1b2a1ae83bd5a"
-  },
-  "Mephisto Vancouver": {
-    "wiki_url": "https://chessprogramming.org/Mephisto_Vancouver",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "925ddcb8819ea9260e5a3727f5bd60c62635d2fec0f92a8923a5c4824851c342"
-  },
   "Merlin": {
     "wiki_url": "https://chessprogramming.org/Merlin",
     "note": "Candidate is a Google Books bibliographic link, not engine source.",
@@ -4255,12 +4081,6 @@
     "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
     "code_urls": [],
     "links_sha256": "3a6a96f0f87d241737d82f3bfcc777a4e0aa4c6e384a2fa2165400ab7198657a"
-  },
-  "Mini Chess": {
-    "wiki_url": "https://chessprogramming.org/Mini_Chess",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "236f01d75566636fe1269bd3df639076ef752371670b5be5bca2867cce7de35a"
   },
   "MiniMax": {
     "wiki_url": "https://chessprogramming.org/Minimax_(program)",
@@ -4554,12 +4374,6 @@
     "code_urls": [],
     "links_sha256": "55e40cb2fba818f0e836bddf5ef606c65a81f57e5129bdf7295d48ae3c25255a"
   },
-  "NoonianChess": {
-    "wiki_url": "https://chessprogramming.org/NoonianChess",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "b2f7f23022127b56c8a7f0c862469b12ff507a87e6b803a2e952be58eb2315ec"
-  },
   "NotChess": {
     "wiki_url": "https://chessprogramming.org/NotChess",
     "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
@@ -4571,60 +4385,6 @@
     "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
     "code_urls": [],
     "links_sha256": "b16d1b2708c45c1e7edf9e6101e191c60dd275d06254676eb37a71ac8313766a"
-  },
-  "Novag Citrine": {
-    "wiki_url": "https://chessprogramming.org/Novag_Citrine",
-    "note": "Savannah project and releases are for novagdrv, a computer-interface driver, not the Citrine chess engine.",
-    "code_urls": [],
-    "links_sha256": "532c7ba1766fc838511700f692105a0fb69c602bd5074db113b24aff5a9c6078"
-  },
-  "Novag Constellation": {
-    "wiki_url": "https://chessprogramming.org/Constellation",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "7d98fc05b48740505075b0873f8016d8953936e277a20ff81bc2b70593f56352"
-  },
-  "Novag Diamond": {
-    "wiki_url": "https://chessprogramming.org/Novag_Sapphire",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "f0a0818fe5484af63403d3eba89cce45f48de2a0db09a721f65403e1a6c86d93"
-  },
-  "Novag Expert": {
-    "wiki_url": "https://chessprogramming.org/Novag_Expert",
-    "note": "Candidate is an emulator software-list resource, not an explicit Novag Expert source link.",
-    "code_urls": [],
-    "links_sha256": "e2e6d82aa2b97a08c1db7d031a27fa70e2238c68382facc3a1ddda111e9acc16"
-  },
-  "Novag Forte": {
-    "wiki_url": "https://chessprogramming.org/Novag_Forte",
-    "note": "Candidate is an emulator software-list resource, not an explicit Novag Forte source link.",
-    "code_urls": [],
-    "links_sha256": "e93905c091d1d06e5bf113736decc90f23737fce9dee15b4bedae7041b743d79"
-  },
-  "Novag Micro Chess": {
-    "wiki_url": "https://chessprogramming.org/Novag_Micro_Chess",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "96961a57319fb4272508dbb876b2cda1da59857d0d5300c29ac5ca42b60b73bf"
-  },
-  "Novag Sapphire": {
-    "wiki_url": "https://chessprogramming.org/Novag_Sapphire",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "f0a0818fe5484af63403d3eba89cce45f48de2a0db09a721f65403e1a6c86d93"
-  },
-  "Novag Savant": {
-    "wiki_url": "https://chessprogramming.org/Savant",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "0e385b4cf8cbdfeffb9279fb9eb46961f79df0cd8fae82d5a6dfc1d694398bb8"
-  },
-  "Novag X": {
-    "wiki_url": "https://chessprogramming.org/Novag_X",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "e1d70c7a3063879d7c954a2d0ffa146f3651ac8f1bd27067c4b359a92768d5fe"
   },
   "Now": {
     "wiki_url": "https://chessprogramming.org/Now",
@@ -5037,12 +4797,6 @@
     "code_urls": [],
     "links_sha256": "a5459f0b226e290460d7957468f347423c58f70e2d401fd2aa35b5e3231e845e"
   },
-  "President Chess": {
-    "wiki_url": "https://chessprogramming.org/President_Chess",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "fa1a4041837d7d09f15e180c7417f67304bdb0fb8a9ad45f9af02b1f6764d3d5"
-  },
   "Prochess": {
     "wiki_url": "https://chessprogramming.org/Prochess",
     "note": "Tom Pronk's Prochess, not Edoardo Manino's ProChess IT. No GitHub/GitLab/SourceForge repository or explicit same-engine source link in page links; only homepages, downloads, forums, binaries or reference links.",
@@ -5292,12 +5046,6 @@
     "code_urls": [],
     "links_sha256": "0163fe4c08737bd7f225cebbaa062cc299ecdc40f7378b537d5fe7165ccb2a1f"
   },
-  "RISC 2500": {
-    "wiki_url": "https://chessprogramming.org/RISC_2500",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "bf0d6438796d45e811963d4473eea395e913ae6ea5c4c394a432cb8c187b73f1"
-  },
   "RobboLito": {
     "wiki_url": "https://chessprogramming.org/RobboLito",
     "note": "No GitHub/GitLab/SourceForge repository or explicit same-engine source link in page links; only homepages, downloads, forums, binaries or reference links.",
@@ -5309,12 +5057,6 @@
     "note": "No GitHub/GitLab/SourceForge repository or explicit same-engine source link in page links; only homepages, downloads, forums, binaries or reference links.",
     "code_urls": [],
     "links_sha256": "7bd8e5ad088f8dbba8f36dfa9545daae2e37691a6653b7e8db8a2b2186764837"
-  },
-  "Robot Adversary": {
-    "wiki_url": "https://chessprogramming.org/Robot_Adversary",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "cfa5ec6ca604cc43baa2fb47e0cdc233ebedddb1e8d1a68da175521810ab4598"
   },
   "Roce": {
     "wiki_url": "https://chessprogramming.org/ROCE",
@@ -5416,36 +5158,6 @@
     "code_urls": [],
     "links_sha256": "71ddd35d7edd2170be2e43e2aeeb7cccde68fc04d18924ee706a0b5a2eb659de"
   },
-  "Saitek Brute Force": {
-    "wiki_url": "https://chessprogramming.org/Saitek_Brute_Force",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "2b34d275b3c69e780bcc0dfaaf6dff009649b4bbbaf19bec13595b2c92d10ef0"
-  },
-  "Saitek Galileo": {
-    "wiki_url": "https://chessprogramming.org/SciSys_Leonardo",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "57b7920306aecd5133614a406875a6ffc7fd90b2b15a94a010510578f883ecf6"
-  },
-  "Saitek President": {
-    "wiki_url": "https://chessprogramming.org/Saitek_President",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "e583698c353c1484cd05a2d67a94597d6ac7917e61ddff11730f2f46c37ac0e2"
-  },
-  "Saitek Renaissance": {
-    "wiki_url": "https://chessprogramming.org/SciSys_Leonardo",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "57b7920306aecd5133614a406875a6ffc7fd90b2b15a94a010510578f883ecf6"
-  },
-  "Saitek Sparc": {
-    "wiki_url": "https://chessprogramming.org/Kasparov_Sparc",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "b7d3a22323093430daf42359b119887e239ae8135f926af4beb2e006b0c6e605"
-  },
   "SAL": {
     "wiki_url": "https://chessprogramming.org/SAL",
     "note": "Wiki identifies these links as source of this engine.",
@@ -5478,18 +5190,6 @@
     "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
     "code_urls": [],
     "links_sha256": "15b9fd4f261a2ee26321e7b786db36781a24d01225014ad4dc785c9e38c30b47"
-  },
-  "Savant": {
-    "wiki_url": "https://chessprogramming.org/Savant",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "0e385b4cf8cbdfeffb9279fb9eb46961f79df0cd8fae82d5a6dfc1d694398bb8"
-  },
-  "SC 1": {
-    "wiki_url": "https://chessprogramming.org/SC_1",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "56ec5d99670d7959375dabdb51093925d1f9338e976e8fe6c8c1944f72b85f42"
   },
   "SC 2": {
     "wiki_url": "https://chessprogramming.org/SC_2",
@@ -5562,84 +5262,6 @@
     "code_urls": [],
     "links_sha256": "35ecd0724764886937d8239565c3e33791717667c7e692e57246042d2b57df93"
   },
-  "SciSys Companion II": {
-    "wiki_url": "https://chessprogramming.org/SciSys_Explorer",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "8f9c3eced4cdf8f7c1c7a83a8588b3499217047cb77171bdf0f640aca4827647"
-  },
-  "SciSys Concord II": {
-    "wiki_url": "https://chessprogramming.org/SciSys_Explorer",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "8f9c3eced4cdf8f7c1c7a83a8588b3499217047cb77171bdf0f640aca4827647"
-  },
-  "SciSys Explorer": {
-    "wiki_url": "https://chessprogramming.org/SciSys_Explorer",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "8f9c3eced4cdf8f7c1c7a83a8588b3499217047cb77171bdf0f640aca4827647"
-  },
-  "SciSys Graduate Chess": {
-    "wiki_url": "https://chessprogramming.org/Mini_Chess",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "236f01d75566636fe1269bd3df639076ef752371670b5be5bca2867cce7de35a"
-  },
-  "SciSys Intelligent Chess": {
-    "wiki_url": "https://chessprogramming.org/Intelligent_Chess",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "78b1ac5b1ddf6b3b051b058ce32481ea5b8e8112d478df5689c06077e599699e"
-  },
-  "SciSys Junior Chess": {
-    "wiki_url": "https://chessprogramming.org/Mini_Chess",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "236f01d75566636fe1269bd3df639076ef752371670b5be5bca2867cce7de35a"
-  },
-  "SciSys Leonardo": {
-    "wiki_url": "https://chessprogramming.org/SciSys_Leonardo",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "57b7920306aecd5133614a406875a6ffc7fd90b2b15a94a010510578f883ecf6"
-  },
-  "SciSys Mini Chess": {
-    "wiki_url": "https://chessprogramming.org/Mini_Chess",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "236f01d75566636fe1269bd3df639076ef752371670b5be5bca2867cce7de35a"
-  },
-  "SciSys President": {
-    "wiki_url": "https://chessprogramming.org/President_Chess",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "fa1a4041837d7d09f15e180c7417f67304bdb0fb8a9ad45f9af02b1f6764d3d5"
-  },
-  "SciSys Sensor Chess": {
-    "wiki_url": "https://chessprogramming.org/Sensor_Chess",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "a5263ff5f3d04f5385c6d97b0ff7d75abb905fc807f28f3c8f3d85d7507a3da9"
-  },
-  "SciSys Superstar": {
-    "wiki_url": "https://chessprogramming.org/Superstar",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "f9b52aca20419380f33d1a1eb215034277c40bb89bb704f7c5c8cc589f091c6b"
-  },
-  "SciSys Turbostar": {
-    "wiki_url": "https://chessprogramming.org/Turbostar",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "d9c1eb77a6255796d3f651d14acf5d4dc79ee82963aca886661d822079fc6295"
-  },
-  "SciSys X": {
-    "wiki_url": "https://chessprogramming.org/SciSys_X",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "6f0b3ff8f37a759551260a75d80c0da0cfdcad277eb34830e1cb1b7b76000896"
-  },
   "SCP": {
     "wiki_url": "https://chessprogramming.org/SCP",
     "note": "Historical John Stanback engine source published at comp.sources.games in May 1987.",
@@ -5675,12 +5297,6 @@
     "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
     "code_urls": [],
     "links_sha256": "ae1e5920a4440182485fc8fceee137b737b8fc4a85bf0595b5b94c8f0d185738"
-  },
-  "Sensor Chess": {
-    "wiki_url": "https://chessprogramming.org/Sensor_Chess",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "a5263ff5f3d04f5385c6d97b0ff7d75abb905fc807f28f3c8f3d85d7507a3da9"
   },
   "Sfinks": {
     "wiki_url": "https://chessprogramming.org/Sfinks",
@@ -6089,23 +5705,11 @@
     ],
     "links_sha256": "3200a29e4db2eba7412cee0e9322c02dbc1ea7596b79fca3a3e0b32f2f86443a"
   },
-  "Super Constellation": {
-    "wiki_url": "https://chessprogramming.org/Super_Constellation",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "60aa92221b4bb1d9159479b22c07a3855281b92610f47ea3a4d96df300a31b22"
-  },
   "SuperChess": {
     "wiki_url": "https://chessprogramming.org/SuperChess",
     "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
     "code_urls": [],
     "links_sha256": "872ab6a340efb5bbe0b26f10e6f33bc5aa4eecc40aacb31c78495a2cf8a56776"
-  },
-  "Superstar": {
-    "wiki_url": "https://chessprogramming.org/Superstar",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "f9b52aca20419380f33d1a1eb215034277c40bb89bb704f7c5c8cc589f091c6b"
   },
   "Surprise": {
     "wiki_url": "https://chessprogramming.org/Surprise",
@@ -6392,12 +5996,6 @@
     "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
     "code_urls": [],
     "links_sha256": "8aaf75a03abdf388fbc03e2285c07141d3d133006d4c7e589808c78f531e3c0a"
-  },
-  "Turbostar": {
-    "wiki_url": "https://chessprogramming.org/Turbostar",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "d9c1eb77a6255796d3f651d14acf5d4dc79ee82963aca886661d822079fc6295"
   },
   "Turning Point": {
     "wiki_url": "https://chessprogramming.org/Turning_Point",
@@ -6873,5 +6471,23 @@
     "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
     "code_urls": [],
     "links_sha256": "0a9817d7fb39cb8b2b63acea07f270ac27a422459d746f0f66cfb609caa44068"
+  },
+  "Noonian": {
+    "wiki_url": "https://chessprogramming.org/NoonianChess",
+    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
+    "code_urls": [],
+    "links_sha256": "b2f7f23022127b56c8a7f0c862469b12ff507a87e6b803a2e952be58eb2315ec"
+  },
+  "Novag": {
+    "wiki_url": "https://chessprogramming.org/Novag",
+    "note": "Organization page: links are company histories, articles, trademark and court records, photo collections and David Kittinger's homepage; none is a source repository, archive or listing.",
+    "code_urls": [],
+    "links_sha256": "22a1d8a82a7a54a535b254bc49531c6e2dbbdb53ec4799d7442e9881d6ef8d03"
+  },
+  "Saitek/SciSys": {
+    "wiki_url": "https://chessprogramming.org/Saitek",
+    "note": "Organization page for the SciSys/Saitek company; its links are Wikipedia, people, product-database and dealer pages, not program source; the GitHub link is lichess's chessground board UI.",
+    "code_urls": [],
+    "links_sha256": "f706210fbd64a5747e55c96d86ce7316314e79a021ce0af7d4e6668dd54209de"
   }
 }

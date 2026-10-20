@@ -156,7 +156,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "ACE"
+        "ACE",
+        "Ace"
       ]
     },
     "ACE(2)TM": {
@@ -516,7 +517,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "ALChess"
+        "ALChess",
+        "AlChess"
       ]
     },
     "Alcibiades": {
@@ -550,6 +552,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Alder"
+      ]
+    },
+    "Alderon": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Alderon"
       ]
     },
     "Alex": {
@@ -772,17 +785,6 @@
         "Altar"
       ]
     },
-    "Alybadix": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Alybadix",
-      "title": "Alybadix",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Alybadix"
-      ]
-    },
     "Amateur": {
       "status": "found",
       "url": "https://chessprogramming.org/Amateur",
@@ -858,6 +860,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Amyan"
+      ]
+    },
+    "AmySharp": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "AmySharp"
       ]
     },
     "Anaconda": {
@@ -1003,6 +1016,17 @@
         "Anodos"
       ]
     },
+    "Anshul": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Anshul"
+      ]
+    },
     "Ant": {
       "status": "found",
       "url": "https://chessprogramming.org/Ant",
@@ -1014,17 +1038,6 @@
         "Ant"
       ]
     },
-    "Ant (& Gi-Ant)": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Ant (& Gi-Ant)"
-      ]
-    },
     "Antares": {
       "status": "not_found",
       "url": null,
@@ -1034,6 +1047,17 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "Antares"
+      ]
+    },
+    "Antonius": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Antonius"
       ]
     },
     "Anubis": {
@@ -1056,6 +1080,17 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "Anura"
+      ]
+    },
+    "APE": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "APE"
       ]
     },
     "Apep": {
@@ -1332,6 +1367,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Armageddon"
+      ]
+    },
+    "Armageddon (Kasabasic)": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Armageddon (Kasabasic)"
       ]
     },
     "Armageddon II": {
@@ -1726,6 +1772,27 @@
       "titles_checked": [
         "Axon"
       ]
+    },
+    "Axon (Sinclair)": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Axon (Sinclair)",
+        "Axon"
+      ],
+      "rejected_candidates": [
+        {
+          "title": "Axon",
+          "url": "https://chessprogramming.org/Axon",
+          "reason": "The wiki's Axon is Vladan Vučković's 2001 assembly program, not Jasper Sinclair's engine.",
+          "identity_evidence_url": "https://chessprogramming.org/Axon"
+        }
+      ],
+      "reason": "No matching indexed engine page found; reviewed lookalikes were rejected."
     },
     "AXWChessBot": {
       "status": "not_found",
@@ -2144,7 +2211,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "BeRoChess"
+        "BeRoChess",
+        "BeroChess"
       ]
     },
     "Berserk": {
@@ -2178,17 +2246,6 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Bestia"
-      ]
-    },
-    "Betsabe": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Betsabe",
-      "title": "Betsabe",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "exact-title-or-catalog-alias",
-      "titles_checked": [
-        "Betsabe"
       ]
     },
     "Betsabe II": {
@@ -2268,6 +2325,17 @@
         "BigLion"
       ]
     },
+    "BigLion80": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "BigLion80"
+      ]
+    },
     "BikJump": {
       "status": "found",
       "url": "https://chessprogramming.org/BikJump",
@@ -2290,6 +2358,17 @@
         "Bills Bare Bones Chess"
       ]
     },
+    "BinaryTurk": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "BinaryTurk"
+      ]
+    },
     "Bionic": {
       "status": "found",
       "url": "https://chessprogramming.org/Bionic",
@@ -2310,6 +2389,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Bionic Impakt"
+      ]
+    },
+    "BishBosh": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "BishBosh"
       ]
     },
     "Bismark": {
@@ -2423,6 +2513,17 @@
         "Black-Cat"
       ]
     },
+    "BlackAndRight": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "BlackAndRight"
+      ]
+    },
     "BlackBishop": {
       "status": "found",
       "url": "https://chessprogramming.org/BlackBishop",
@@ -2511,17 +2612,6 @@
         "Blitz"
       ]
     },
-    "Blitz Monster": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Blitz_Monster",
-      "title": "Blitz Monster",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Blitz Monster"
-      ]
-    },
     "BlitzKibitz": {
       "status": "not_found",
       "url": null,
@@ -2531,6 +2621,17 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "BlitzKibitz"
+      ]
+    },
+    "BlitzKibitz/Amaterasu": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "BlitzKibitz/Amaterasu"
       ]
     },
     "Blitzkrieg": {
@@ -2908,6 +3009,17 @@
         "Breeze"
       ]
     },
+    "Breeze Chess": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Breeze Chess"
+      ]
+    },
     "BremboCE": {
       "status": "found",
       "url": "https://chessprogramming.org/BremboCE",
@@ -2939,17 +3051,6 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Bright"
-      ]
-    },
-    "Bringer (Der)": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Bringer (Der)"
       ]
     },
     "Brogle": {
@@ -3018,17 +3119,6 @@
         "Brutus RND"
       ]
     },
-    "BrutusChess": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "BrutusChess"
-      ]
-    },
     "Bs6676": {
       "status": "found",
       "url": "https://chessprogramming.org/Bs6676",
@@ -3060,6 +3150,17 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "Bubble"
+      ]
+    },
+    "Buchess": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Buchess"
       ]
     },
     "BugChess": {
@@ -3184,6 +3285,17 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "c4ke"
+      ]
+    },
+    "CacophinChess": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "CacophinChess"
       ]
     },
     "Cadabra": {
@@ -3371,6 +3483,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "CAPS"
+      ]
+    },
+    "CAPS (Motors)": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "CAPS (Motors)"
       ]
     },
     "Captain": {
@@ -4067,17 +4190,6 @@
         "Cheng"
       ]
     },
-    "Cheng3": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Cheng3"
-      ]
-    },
     "Chengine": {
       "status": "not_found",
       "url": null,
@@ -4219,6 +4331,17 @@
         "Chess (John Krause)"
       ]
     },
+    "Chess (Lattanzi)": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Chess (Lattanzi)"
+      ]
+    },
     "Chess (Program)": {
       "status": "found",
       "url": "https://chessprogramming.org/Chess_(Program)",
@@ -4228,6 +4351,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Chess (Program)"
+      ]
+    },
+    "Chess (Waugh)": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Chess (Waugh)"
       ]
     },
     "Chess 0.5": {
@@ -4307,17 +4441,6 @@
         "Chess Brain"
       ]
     },
-    "Chess Challenger": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Chess_Challenger",
-      "title": "Chess Challenger",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Chess Challenger"
-      ]
-    },
     "Chess Champion 2175": {
       "status": "not_found",
       "url": null,
@@ -4327,28 +4450,6 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "Chess Champion 2175"
-      ]
-    },
-    "Chess Champion Mark IV": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Chess_Champion_Mark_IV",
-      "title": "Chess Champion Mark IV",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Chess Champion Mark IV"
-      ]
-    },
-    "Chess Champion Mark V": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Chess_Champion_Mark_V",
-      "title": "Chess Champion Mark V",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Chess Champion Mark V"
       ]
     },
     "Chess Champion MK I": {
@@ -4371,28 +4472,6 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Chess Champion MK II"
-      ]
-    },
-    "Chess Champion Pocket Chess": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Chess_Champion_Pocket_Chess",
-      "title": "Chess Champion Pocket Chess",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Chess Champion Pocket Chess"
-      ]
-    },
-    "Chess Champion Super System III": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Chess_Champion_Super_System_III",
-      "title": "Chess Champion Super System III",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Chess Champion Super System III"
       ]
     },
     "Chess Fighter": {
@@ -4560,6 +4639,17 @@
         "Chess Wizard"
       ]
     },
+    "Chess Zero": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Chess Zero"
+      ]
+    },
     "Chess-3": {
       "status": "not_found",
       "url": null,
@@ -4604,6 +4694,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Chess-at-nite"
+      ]
+    },
+    "Chess-Engine": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Chess-Engine"
       ]
     },
     "chess-go": {
@@ -4741,6 +4842,17 @@
         "Chessatron"
       ]
     },
+    "Chessboard Engine": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Chessboard Engine"
+      ]
+    },
     "Chessboi": {
       "status": "not_found",
       "url": null,
@@ -4760,7 +4872,19 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "Chessbot"
+        "Chessbot",
+        "ChessBot"
+      ]
+    },
+    "ChessBotUCI": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "ChessBotUCI"
       ]
     },
     "ChessbotX": {
@@ -4771,7 +4895,19 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "ChessbotX"
+        "ChessbotX",
+        "ChessBotX"
+      ]
+    },
+    "Chessbox gnu4j": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Chessbox gnu4j"
       ]
     },
     "ChessBrain": {
@@ -4807,6 +4943,17 @@
         "ChessCore"
       ]
     },
+    "Chesscraft": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Chesscraft"
+      ]
+    },
     "ChessEngine": {
       "status": "not_found",
       "url": null,
@@ -4816,6 +4963,39 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "ChessEngine"
+      ]
+    },
+    "ChessEngine (Clarity)": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "ChessEngine (Clarity)"
+      ]
+    },
+    "ChessEngine (Lou)": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "ChessEngine (Lou)"
+      ]
+    },
+    "ChessEngine (Socha)": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "ChessEngine (Socha)"
       ]
     },
     "Chesser": {
@@ -5027,6 +5207,17 @@
         "Chessnut"
       ]
     },
+    "ChessOne": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "ChessOne"
+      ]
+    },
     "chessplusplus": {
       "status": "not_found",
       "url": null,
@@ -5035,7 +5226,19 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "chessplusplus"
+        "chessplusplus",
+        "ChessPlusPlus"
+      ]
+    },
+    "ChessProj": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "ChessProj"
       ]
     },
     "ChessPuter": {
@@ -5058,6 +5261,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Chesstar"
+      ]
+    },
+    "Chesster": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Chesster"
       ]
     },
     "Chessterfield": {
@@ -5102,17 +5316,6 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "ChessWiz"
-      ]
-    },
-    "Chest": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Chest",
-      "title": "Chest",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Chest"
       ]
     },
     "Chester": {
@@ -5311,6 +5514,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "CilkChess"
+      ]
+    },
+    "Cinag": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Cinag"
       ]
     },
     "Cinder": {
@@ -5610,6 +5824,17 @@
         "Coda"
       ]
     },
+    "CodeWatchersChessEngine": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "CodeWatchersChessEngine"
+      ]
+    },
     "Codfish": {
       "status": "not_found",
       "url": null,
@@ -5662,7 +5887,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "Colchess"
+        "Colchess",
+        "ColChess"
       ]
     },
     "Colossus": {
@@ -5685,6 +5911,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Combusken"
+      ]
+    },
+    "Combustion": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Combustion"
       ]
     },
     "Comet": {
@@ -5841,17 +6078,6 @@
         "Conqueror"
       ]
     },
-    "Constellation": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Constellation",
-      "title": "Constellation",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Constellation"
-      ]
-    },
     "ConvChess": {
       "status": "found",
       "url": "https://chessprogramming.org/ConvChess",
@@ -5962,6 +6188,17 @@
         "Crab"
       ]
     },
+    "Crab (Kleng)": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Crab (Kleng)"
+      ]
+    },
     "Crabby": {
       "status": "found",
       "url": "https://chessprogramming.org/Crabby",
@@ -6061,17 +6298,6 @@
         "Critter"
       ]
     },
-    "Critter (Chess)": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Critter (Chess)"
-      ]
-    },
     "Crocrodile": {
       "status": "not_found",
       "url": null,
@@ -6081,6 +6307,17 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "Crocrodile"
+      ]
+    },
+    "Crust": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Crust"
       ]
     },
     "Crustik": {
@@ -6180,6 +6417,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Cupcake"
+      ]
+    },
+    "CvpChessEngine": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "CvpChessEngine"
       ]
     },
     "Cwtch": {
@@ -6301,6 +6549,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Cyclone"
+      ]
+    },
+    "Cyclone xTreme": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Cyclone xTreme"
       ]
     },
     "Cyclops": {
@@ -6630,7 +6889,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "Dchess"
+        "Dchess",
+        "DChess"
       ]
     },
     "DCP": {
@@ -6675,6 +6935,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Deep Blue"
+      ]
+    },
+    "Deep Bug": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Deep Bug"
       ]
     },
     "Deep Pink": {
@@ -6809,6 +7080,17 @@
         "Defenchess"
       ]
     },
+    "Defeo": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Defeo"
+      ]
+    },
     "Delfi": {
       "status": "found",
       "url": "https://chessprogramming.org/Delfi",
@@ -6895,6 +7177,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Demolito"
+      ]
+    },
+    "Demon": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Demon"
       ]
     },
     "Dendron": {
@@ -7271,7 +7564,7 @@
         "Dorpsgek"
       ]
     },
-    "DoubleCheck": {
+    "Doughboy": {
       "status": "not_found",
       "url": null,
       "title": null,
@@ -7279,7 +7572,18 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "DoubleCheck"
+        "Doughboy"
+      ]
+    },
+    "Doumi": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Doumi"
       ]
     },
     "Drago": {
@@ -7326,17 +7630,6 @@
         "Dragon FR"
       ]
     },
-    "Dragon of MORS": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Dragon of MORS"
-      ]
-    },
     "Dragon RU": {
       "status": "found",
       "url": "https://chessprogramming.org/Dragon_RU",
@@ -7379,6 +7672,17 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "Dragontooth"
+      ]
+    },
+    "DreamChess": {
+      "status": "found",
+      "url": "https://chessprogramming.org/DreamChess",
+      "title": "DreamChess",
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "exact-title-or-catalog-alias",
+      "titles_checked": [
+        "DreamChess"
       ]
     },
     "Dreamer": {
@@ -7511,6 +7815,17 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "Dummyette"
+      ]
+    },
+    "Durandal": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Durandal"
       ]
     },
     "Dutch": {
@@ -7777,6 +8092,17 @@
         "Eidolon"
       ]
     },
+    "Eire": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Eire"
+      ]
+    },
     "El Ajedrecista": {
       "status": "found",
       "url": "https://chessprogramming.org/El_Ajedrecista",
@@ -7799,15 +8125,15 @@
         "Eleanor"
       ]
     },
-    "Elegance": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Elegance",
-      "title": "Elegance",
+    "Electronic Grand Master": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
       "checked_at": "2026-10-19T00:44:50.443299+00:00",
       "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
+      "method": "main-namespace-title-index",
       "titles_checked": [
-        "Elegance"
+        "Electronic Grand Master"
       ]
     },
     "Elektro": {
@@ -7863,17 +8189,6 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "Elf"
-      ]
-    },
-    "Elite": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Elite",
-      "title": "Elite",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Elite"
       ]
     },
     "Elixir": {
@@ -7973,6 +8288,17 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "Emerald Chess"
+      ]
+    },
+    "EmptedKiller": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "EmptedKiller"
       ]
     },
     "Endamat": {
@@ -8405,28 +8731,6 @@
         "ExCE"
       ]
     },
-    "Excel": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Excel",
-      "title": "Excel",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Excel"
-      ]
-    },
-    "Excellence": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Excellence",
-      "title": "Excellence",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Excellence"
-      ]
-    },
     "Excelsior": {
       "status": "found",
       "url": "https://chessprogramming.org/Excelsior",
@@ -8746,7 +9050,7 @@
         "Fidelity"
       ]
     },
-    "Fidelity Avant Garde": {
+    "Fiesty": {
       "status": "not_found",
       "url": null,
       "title": null,
@@ -8754,161 +9058,7 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "Fidelity Avant Garde"
-      ]
-    },
-    "Fidelity Elegance": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Fidelity Elegance"
-      ]
-    },
-    "Fidelity Elite A/S": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Fidelity Elite A/S"
-      ]
-    },
-    "Fidelity Elite Version 5": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Fidelity Elite Version 5"
-      ]
-    },
-    "Fidelity Elite Version 9": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Fidelity Elite Version 9"
-      ]
-    },
-    "Fidelity Excel Club": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Fidelity Excel Club"
-      ]
-    },
-    "Fidelity Excel Mach IIa": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Fidelity Excel Mach IIa"
-      ]
-    },
-    "Fidelity Excel Mach IIc": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Fidelity Excel Mach IIc"
-      ]
-    },
-    "Fidelity Excellence": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Fidelity Excellence"
-      ]
-    },
-    "Fidelity Mach III": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Fidelity Mach III"
-      ]
-    },
-    "Fidelity Mach IV": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Fidelity Mach IV"
-      ]
-    },
-    "Fidelity Par Excellence": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Fidelity Par Excellence"
-      ]
-    },
-    "Fidelity Phantom": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Fidelity_Phantom",
-      "title": "Fidelity Phantom",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Fidelity Phantom"
-      ]
-    },
-    "Fidelity Prestige": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Fidelity Prestige"
-      ]
-    },
-    "Fidelity Travel Master": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Fidelity Travel Master"
+        "Fiesty"
       ]
     },
     "Fimbulwinter": {
@@ -8920,6 +9070,17 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "Fimbulwinter"
+      ]
+    },
+    "Finny": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Finny"
       ]
     },
     "Fire": {
@@ -9329,17 +9490,6 @@
         "Frenzee"
       ]
     },
-    "Frenzee (Deep)": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Frenzee (Deep)"
-      ]
-    },
     "Freyr": {
       "status": "found",
       "url": "https://chessprogramming.org/Freyr",
@@ -9427,6 +9577,39 @@
       "titles_checked": [
         "Fruit Reloaded",
         "Fruit reloaded"
+      ]
+    },
+    "Fruitfly": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Fruitfly"
+      ]
+    },
+    "Fry": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Fry"
+      ]
+    },
+    "FSharpChess": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "FSharpChess"
       ]
     },
     "FUSc#": {
@@ -9537,6 +9720,17 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "Gambit"
+      ]
+    },
+    "Gambit (Gupta)": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Gambit (Gupta)"
       ]
     },
     "Gambit Fruit": {
@@ -9668,7 +9862,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "GearHeart"
+        "GearHeart",
+        "Gearheart"
       ]
     },
     "Gecko": {
@@ -9792,6 +9987,17 @@
         "GES"
       ]
     },
+    "GFC": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "GFC"
+      ]
+    },
     "GFCv2": {
       "status": "not_found",
       "url": null,
@@ -9913,17 +10119,6 @@
         "Gk"
       ]
     },
-    "GK 2100": {
-      "status": "found",
-      "url": "https://chessprogramming.org/GK_2100",
-      "title": "GK 2100",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "GK 2100"
-      ]
-    },
     "Gladiator": {
       "status": "not_found",
       "url": null,
@@ -10020,7 +10215,9 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "Godel"
+        "Godel",
+        "Goedel",
+        "Gödel"
       ]
     },
     "Godot": {
@@ -10032,17 +10229,6 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Godot"
-      ]
-    },
-    "Goedel": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Goedel"
       ]
     },
     "Gogobello": {
@@ -10186,17 +10372,6 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "gpt-chess"
-      ]
-    },
-    "Graduate Chess": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mini_Chess",
-      "title": "Mini Chess",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Mini Chess"
       ]
     },
     "Grail": {
@@ -10397,6 +10572,17 @@
         "Gromit3"
       ]
     },
+    "Groupycat": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Groupycat"
+      ]
+    },
     "Guitarfish": {
       "status": "not_found",
       "url": null,
@@ -10428,6 +10614,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Gullydeckel"
+      ]
+    },
+    "Gumble": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Gumble"
       ]
     },
     "Gunborg": {
@@ -10463,17 +10660,6 @@
         "Gupta"
       ]
     },
-    "Gustav": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Gustav",
-      "title": "Gustav",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Gustav"
-      ]
-    },
     "GVNA": {
       "status": "found",
       "url": "https://chessprogramming.org/GVNA",
@@ -10495,17 +10681,6 @@
       "titles_checked": [
         "Gyatso",
         "GyatsoChess"
-      ]
-    },
-    "Gödel": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Gödel"
       ]
     },
     "Hactar": {
@@ -10637,7 +10812,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "Hanzo The Razor"
+        "Hanzo The Razor",
+        "Hanzo the Razor"
       ]
     },
     "Happy-Chess": {
@@ -10836,28 +11012,6 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "HIARCS"
-      ]
-    },
-    "Hiarcs (Deep)": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Hiarcs (Deep)"
-      ]
-    },
-    "Hiarcs Master": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Hiarcs Master"
       ]
     },
     "Hippocampe": {
@@ -11169,6 +11323,17 @@
         "Hyperia"
       ]
     },
+    "Hyperopic": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Hyperopic"
+      ]
+    },
     "Hypersion": {
       "status": "not_found",
       "url": null,
@@ -11266,7 +11431,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "ichess"
+        "ichess",
+        "iChess"
       ]
     },
     "Ifrit": {
@@ -11321,7 +11487,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "iiChess"
+        "iiChess",
+        "Iichess"
       ]
     },
     "Ikarus": {
@@ -11501,6 +11668,17 @@
         "InterChess"
       ]
     },
+    "Inuyasha": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Inuyasha"
+      ]
+    },
     "Invictus": {
       "status": "found",
       "url": "https://chessprogramming.org/Invictus",
@@ -11532,6 +11710,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Ippolit"
+      ]
+    },
+    "Ippos": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Ippos"
       ]
     },
     "IQ23": {
@@ -11810,6 +11999,17 @@
         "Javalin"
       ]
     },
+    "JavaRival": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "JavaRival"
+      ]
+    },
     "JavaScript-Chess": {
       "status": "found",
       "url": "https://chessprogramming.org/JavaScript-Chess",
@@ -11843,17 +12043,6 @@
         "Jazz"
       ]
     },
-    "Jazz (Orchestra)": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Jazz (Orchestra)"
-      ]
-    },
     "jChecs": {
       "status": "not_found",
       "url": null,
@@ -11873,7 +12062,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "Jchess"
+        "Jchess",
+        "JChess"
       ]
     },
     "Jellyfish": {
@@ -12071,7 +12261,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "JSBam"
+        "JSBam",
+        "JsBaM"
       ]
     },
     "Juggernaut": {
@@ -12083,6 +12274,28 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "Juggernaut"
+      ]
+    },
+    "Jukebox": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Jukebox"
+      ]
+    },
+    "Julien's Chess3": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Julien's Chess3"
       ]
     },
     "Jumbo": {
@@ -12118,28 +12331,6 @@
         "Junior"
       ]
     },
-    "Junior (Deep)": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Junior (Deep)"
-      ]
-    },
-    "Junior Chess": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mini_Chess",
-      "title": "Mini Chess",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Mini Chess"
-      ]
-    },
     "Jupiter": {
       "status": "found",
       "url": "https://chessprogramming.org/Jupiter",
@@ -12150,6 +12341,27 @@
       "titles_checked": [
         "Jupiter"
       ]
+    },
+    "Jupiter (Andersen)": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Jupiter (Andersen)",
+        "Jupiter"
+      ],
+      "rejected_candidates": [
+        {
+          "title": "Jupiter",
+          "url": "https://chessprogramming.org/Jupiter",
+          "reason": "The wiki's Jupiter is Javier Ros Padilla's 1993 Turbo Pascal program, not Michael Andersen's WinBoard engine.",
+          "identity_evidence_url": "https://chessprogramming.org/Jupiter"
+        }
+      ],
+      "reason": "No matching indexed engine page found; reviewed lookalikes were rejected."
     },
     "JustBot": {
       "status": "not_found",
@@ -12181,7 +12393,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "KACE"
+        "KACE",
+        "Kace"
       ]
     },
     "KafieChess": {
@@ -12283,6 +12496,17 @@
         "karly-sixtyfour"
       ]
     },
+    "Karotten": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Karotten"
+      ]
+    },
     "Kasparov Chessmate": {
       "status": "found",
       "url": "https://chessprogramming.org/Kasparov_Chessmate",
@@ -12292,39 +12516,6 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Kasparov Chessmate"
-      ]
-    },
-    "Kasparov GK-2000": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Kasparov GK-2000"
-      ]
-    },
-    "Kasparov President/GK-2100": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Kasparov President/GK-2100"
-      ]
-    },
-    "Kasparov SPARC": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Kasparov_Sparc",
-      "title": "Kasparov Sparc",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Kasparov Sparc"
       ]
     },
     "KasparovChess": {
@@ -12338,6 +12529,17 @@
         "KasparovChess"
       ]
     },
+    "KasparovX": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "KasparovX"
+      ]
+    },
     "KC Chess": {
       "status": "found",
       "url": "https://chessprogramming.org/KC_Chess",
@@ -12347,6 +12549,18 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "KC Chess"
+      ]
+    },
+    "KCChess (Serebryany)": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "KCChess (Serebryany)",
+        "KCChess"
       ]
     },
     "Kches6": {
@@ -13250,6 +13464,17 @@
         "Leorik"
       ]
     },
+    "LesserProphet": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "LesserProphet"
+      ]
+    },
     "Leverett CP": {
       "status": "found",
       "url": "https://chessprogramming.org/Leverett_CP",
@@ -13272,6 +13497,17 @@
         "LG Revival"
       ]
     },
+    "LibchessEngine": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "LibchessEngine"
+      ]
+    },
     "LibraChess": {
       "status": "not_found",
       "url": null,
@@ -13281,6 +13517,17 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "LibraChess"
+      ]
+    },
+    "Lichen": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Lichen"
       ]
     },
     "Lifish": {
@@ -13393,6 +13640,17 @@
         "Goliath"
       ]
     },
+    "Little Lelouch": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Little Lelouch"
+      ]
+    },
     "Little Rook Chess": {
       "status": "found",
       "url": "https://chessprogramming.org/Little_Rook_Chess",
@@ -13492,6 +13750,17 @@
         "Lodocase"
       ]
     },
+    "Lododcase": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Lododcase"
+      ]
+    },
     "LogiChess": {
       "status": "found",
       "url": "https://chessprogramming.org/LogiChess",
@@ -13558,6 +13827,17 @@
         "Loper 82"
       ]
     },
+    "Lopez": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Lopez"
+      ]
+    },
     "LordKing": {
       "status": "not_found",
       "url": null,
@@ -13600,6 +13880,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "LTChess"
+      ]
+    },
+    "Luciole": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Luciole"
       ]
     },
     "Lumac0": {
@@ -14420,391 +14711,6 @@
         "Mephisto"
       ]
     },
-    "Mephisto (H)": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mephisto_(H)",
-      "title": "Mephisto (H)",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Mephisto (H)"
-      ]
-    },
-    "Mephisto Academy": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Mephisto Academy"
-      ]
-    },
-    "Mephisto Almeria": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mephisto_Almeria",
-      "title": "Mephisto Almeria",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "exact-title-or-catalog-alias",
-      "titles_checked": [
-        "Mephisto Almeria"
-      ]
-    },
-    "Mephisto Amsterdam": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mephisto_Amsterdam",
-      "title": "Mephisto Amsterdam",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "exact-title-or-catalog-alias",
-      "titles_checked": [
-        "Mephisto Amsterdam"
-      ]
-    },
-    "Mephisto Atlanta": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Mephisto Atlanta"
-      ]
-    },
-    "Mephisto Berlin": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Mephisto Berlin"
-      ]
-    },
-    "Mephisto Berlin Pro": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Mephisto Berlin Pro"
-      ]
-    },
-    "Mephisto Dallas": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mephisto_Dallas",
-      "title": "Mephisto Dallas",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "exact-title-or-catalog-alias",
-      "titles_checked": [
-        "Mephisto Dallas"
-      ]
-    },
-    "Mephisto Europa": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mephisto_Europa",
-      "title": "Mephisto Europa",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Mephisto Europa"
-      ]
-    },
-    "Mephisto Genius": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Mephisto Genius"
-      ]
-    },
-    "Mephisto Gideon Pro": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Mephisto Gideon Pro"
-      ]
-    },
-    "Mephisto London": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Mephisto London"
-      ]
-    },
-    "Mephisto Lyon": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mephisto_Lyon",
-      "title": "Mephisto Lyon",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "exact-title-or-catalog-alias",
-      "titles_checked": [
-        "Mephisto Lyon"
-      ]
-    },
-    "Mephisto Mega IV": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Mephisto Mega IV"
-      ]
-    },
-    "Mephisto Milano": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mephisto_Milano",
-      "title": "Mephisto Milano",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Mephisto Milano"
-      ]
-    },
-    "Mephisto Milano Pro": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Mephisto Milano Pro"
-      ]
-    },
-    "Mephisto MM 2": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Mephisto MM 2"
-      ]
-    },
-    "Mephisto MM 4": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Mephisto MM 4"
-      ]
-    },
-    "Mephisto MM 5": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Mephisto MM 5"
-      ]
-    },
-    "Mephisto MM II": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mephisto_MM_II",
-      "title": "Mephisto MM II",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Mephisto MM II"
-      ]
-    },
-    "Mephisto MM IV": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mephisto_MM_IV",
-      "title": "Mephisto MM IV",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Mephisto MM IV"
-      ]
-    },
-    "Mephisto MM V": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mephisto_MM_V",
-      "title": "Mephisto MM V",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Mephisto MM V"
-      ]
-    },
-    "Mephisto Modena": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Mephisto Modena"
-      ]
-    },
-    "Mephisto Mondial": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mephisto_Mondial",
-      "title": "Mephisto Mondial",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Mephisto Mondial"
-      ]
-    },
-    "Mephisto Montreux": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mephisto_Montreux",
-      "title": "Mephisto Montreux",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Mephisto Montreux"
-      ]
-    },
-    "Mephisto Nigel Short": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mephisto_Milano",
-      "title": "Mephisto Milano",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Mephisto Milano"
-      ]
-    },
-    "Mephisto Polgar": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mephisto_Polgar",
-      "title": "Mephisto Polgar",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Mephisto Polgar"
-      ]
-    },
-    "Mephisto Portorose": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mephisto_Portorose",
-      "title": "Mephisto Portorose",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "exact-title-or-catalog-alias",
-      "titles_checked": [
-        "Mephisto Portorose"
-      ]
-    },
-    "Mephisto Rebell": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mephisto_Rebell",
-      "title": "Mephisto Rebell",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Mephisto Rebell"
-      ]
-    },
-    "Mephisto RISC": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mephisto_RISC",
-      "title": "Mephisto RISC",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Mephisto RISC"
-      ]
-    },
-    "Mephisto RISC2": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Mephisto RISC2"
-      ]
-    },
-    "Mephisto Roma": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mephisto_Roma",
-      "title": "Mephisto Roma",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "exact-title-or-catalog-alias",
-      "titles_checked": [
-        "Mephisto Roma"
-      ]
-    },
-    "Mephisto Roma II": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Mephisto Roma II"
-      ]
-    },
-    "Mephisto Super Mondial": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Mephisto Super Mondial"
-      ]
-    },
-    "Mephisto Vancouver": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mephisto_Vancouver",
-      "title": "Mephisto Vancouver",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "exact-title-or-catalog-alias",
-      "titles_checked": [
-        "Mephisto Vancouver"
-      ]
-    },
     "Merlin": {
       "status": "found",
       "url": "https://chessprogramming.org/Merlin",
@@ -15080,17 +14986,6 @@
         "Mini"
       ]
     },
-    "Mini Chess": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mini_Chess",
-      "title": "Mini Chess",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Mini Chess"
-      ]
-    },
     "Minic": {
       "status": "found",
       "url": "https://chessprogramming.org/Minic",
@@ -15144,7 +15039,8 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "MiniMardi",
-        "Minimardi"
+        "Minimardi",
+        "miniMardi"
       ]
     },
     "MiniMax": {
@@ -15243,17 +15139,7 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "Mittens"
-      ]
-    },
-    "MittensCEDR": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
+        "Mittens",
         "MittensCEDR"
       ]
     },
@@ -15287,7 +15173,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "MOBMAT"
+        "MOBMAT",
+        "MobMat"
       ]
     },
     "Moby": {
@@ -15299,6 +15186,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Moby"
+      ]
+    },
+    "MochaChess": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "MochaChess"
       ]
     },
     "MOCHI": {
@@ -15501,6 +15399,38 @@
         "Morphy"
       ]
     },
+    "Morphy (danem)": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Morphy (danem)"
+      ]
+    },
+    "Morphy (Walstra)": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Morphy (Walstra)",
+        "Morphy"
+      ],
+      "rejected_candidates": [
+        {
+          "title": "Morphy",
+          "url": "https://chessprogramming.org/Morphy",
+          "reason": "The wiki's Morphy is John Aker's 1981 dedicated-computer program, not Erik Walstra's WinBoard engine.",
+          "identity_evidence_url": "https://chessprogramming.org/Morphy"
+        }
+      ],
+      "reason": "No matching indexed engine page found; reviewed lookalikes were rejected."
+    },
     "MorphyChess": {
       "status": "not_found",
       "url": null,
@@ -15520,7 +15450,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "MORS"
+        "MORS",
+        "Dragon of MORS"
       ]
     },
     "Motor": {
@@ -16152,6 +16083,17 @@
         "Neptune"
       ]
     },
+    "Neptune (Leszczynski)": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Neptune (Leszczynski)"
+      ]
+    },
     "Nero": {
       "status": "found",
       "url": "https://chessprogramming.org/Nero",
@@ -16194,6 +16136,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "NeuroChess"
+      ]
+    },
+    "neuroGrape": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "neuroGrape"
       ]
     },
     "Neurologic": {
@@ -16240,6 +16193,17 @@
         "Neurosis"
       ]
     },
+    "neuroStock": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "neuroStock"
+      ]
+    },
     "NeuroticBishop": {
       "status": "not_found",
       "url": null,
@@ -16249,6 +16213,17 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "NeuroticBishop"
+      ]
+    },
+    "newHC": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "newHC"
       ]
     },
     "NewRival": {
@@ -16394,7 +16369,7 @@
         "nilesrogoff_chessbot"
       ]
     },
-    "nimTUROCHAMP": {
+    "Nimród": {
       "status": "not_found",
       "url": null,
       "title": null,
@@ -16402,6 +16377,18 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
+        "Nimród"
+      ]
+    },
+    "NimTuroChamp": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "NimTuroChamp",
         "nimTUROCHAMP"
       ]
     },
@@ -16483,17 +16470,6 @@
       ]
     },
     "Noonian": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Noonian"
-      ]
-    },
-    "NoonianChess": {
       "status": "found",
       "url": "https://chessprogramming.org/NoonianChess",
       "title": "NoonianChess",
@@ -16559,257 +16535,15 @@
         "Nova Chess"
       ]
     },
-    "Novag Citrine": {
+    "Novag": {
       "status": "found",
-      "url": "https://chessprogramming.org/Novag_Citrine",
-      "title": "Novag Citrine",
+      "url": "https://chessprogramming.org/Novag",
+      "title": "Novag",
       "checked_at": "2026-10-19T00:44:50.443299+00:00",
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "reviewed-title-alias",
       "titles_checked": [
-        "Novag Citrine"
-      ]
-    },
-    "Novag Constellation": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Constellation",
-      "title": "Constellation",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Constellation"
-      ]
-    },
-    "Novag Constellation Primo": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Novag Constellation Primo"
-      ]
-    },
-    "Novag Diablo": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Novag Diablo"
-      ]
-    },
-    "Novag Diamond": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Novag_Sapphire",
-      "title": "Novag Sapphire",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Novag Sapphire"
-      ]
-    },
-    "Novag Expert": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Novag_Expert",
-      "title": "Novag Expert",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Novag Expert"
-      ]
-    },
-    "Novag Forte": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Novag_Forte",
-      "title": "Novag Forte",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Novag Forte"
-      ]
-    },
-    "Novag Forte A": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Novag Forte A"
-      ]
-    },
-    "Novag Forte B": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Novag Forte B"
-      ]
-    },
-    "Novag Micro Chess": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Novag_Micro_Chess",
-      "title": "Novag Micro Chess",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Novag Micro Chess"
-      ]
-    },
-    "Novag Quattro": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Novag Quattro"
-      ]
-    },
-    "Novag Ruby": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Novag Ruby"
-      ]
-    },
-    "Novag Sapphire": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Novag_Sapphire",
-      "title": "Novag Sapphire",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Novag Sapphire"
-      ]
-    },
-    "Novag Sapphire II": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Novag Sapphire II"
-      ]
-    },
-    "Novag Savant": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Savant",
-      "title": "Savant",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Savant"
-      ]
-    },
-    "Novag Star Sapphire": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Novag Star Sapphire"
-      ]
-    },
-    "Novag Super Constellation": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Novag Super Constellation"
-      ]
-    },
-    "Novag Super Expert B": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Novag Super Expert B"
-      ]
-    },
-    "Novag Super Expert C": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Novag Super Expert C"
-      ]
-    },
-    "Novag Super Expert/Forte A": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Novag Super Expert/Forte A"
-      ]
-    },
-    "Novag Super Nova": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Novag Super Nova"
-      ]
-    },
-    "Novag Super VIP": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Novag Super VIP"
-      ]
-    },
-    "Novag X": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Novag_X",
-      "title": "Novag X",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Novag X"
+        "Novag"
       ]
     },
     "Now": {
@@ -17141,6 +16875,17 @@
         "onionbot"
       ]
     },
+    "OnionChess": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "OnionChess"
+      ]
+    },
     "Onno": {
       "status": "found",
       "url": "https://chessprogramming.org/Onno",
@@ -17173,6 +16918,17 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "Onyx"
+      ]
+    },
+    "Opa-Chess": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Opa-Chess"
       ]
     },
     "OptiChess": {
@@ -17318,6 +17074,17 @@
         "P4wn"
       ]
     },
+    "Pa-project": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Pa-project"
+      ]
+    },
     "Pachera": {
       "status": "found",
       "url": "https://chessprogramming.org/Pachera",
@@ -17404,17 +17171,6 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Papa"
-      ]
-    },
-    "Par Excellence": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Par_Excellence",
-      "title": "Par Excellence",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Par Excellence"
       ]
     },
     "Parabelle": {
@@ -17560,17 +17316,6 @@
         "Patzer"
       ]
     },
-    "Patzer (Deep)": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Patzer (Deep)"
-      ]
-    },
     "Paul": {
       "status": "found",
       "url": "https://chessprogramming.org/Paul",
@@ -17671,6 +17416,17 @@
         "Pawny"
       ]
     },
+    "PayFleens": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "PayFleens"
+      ]
+    },
     "pChess": {
       "status": "not_found",
       "url": null,
@@ -17747,6 +17503,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Pedone"
+      ]
+    },
+    "Pegasus": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Pegasus"
       ]
     },
     "Pentagon": {
@@ -17892,6 +17659,17 @@
         "Pharaon"
       ]
     },
+    "PhEngin": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "PhEngin"
+      ]
+    },
     "Philemon": {
       "status": "not_found",
       "url": null,
@@ -17967,6 +17745,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "PICcolino"
+      ]
+    },
+    "PicoLisp Chess": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "PicoLisp Chess"
       ]
     },
     "Pierre": {
@@ -18300,17 +18089,6 @@
         "PoorLittlePinkus"
       ]
     },
-    "Popeye": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Popeye",
-      "title": "Popeye",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Popeye"
-      ]
-    },
     "Popochin": {
       "status": "not_found",
       "url": null,
@@ -18331,17 +18109,6 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Portfish"
-      ]
-    },
-    "Porucnik": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Porucnik"
       ]
     },
     "Porucznik": {
@@ -18496,7 +18263,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "Prechess"
+        "Prechess",
+        "PreChess"
       ]
     },
     "Predateur": {
@@ -18532,17 +18300,6 @@
         "Presbyter"
       ]
     },
-    "President Chess": {
-      "status": "found",
-      "url": "https://chessprogramming.org/President_Chess",
-      "title": "President Chess",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "President Chess"
-      ]
-    },
     "Priessnitz": {
       "status": "not_found",
       "url": null,
@@ -18563,17 +18320,6 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Princhess"
-      ]
-    },
-    "Private Line": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Private_Line",
-      "title": "Private Line",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Private Line"
       ]
     },
     "Prochess": {
@@ -18629,6 +18375,17 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "Project Invincible"
+      ]
+    },
+    "Projekt Schachengine 2013": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Projekt Schachengine 2013"
       ]
     },
     "Prokopakop": {
@@ -18848,7 +18605,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "PulChess"
+        "PulChess",
+        "Pulchess"
       ]
     },
     "Pulsar": {
@@ -19238,6 +18996,17 @@
         "Raid"
       ]
     },
+    "Rainbow Serpent": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Rainbow Serpent"
+      ]
+    },
     "Rainman": {
       "status": "not_found",
       "url": null,
@@ -19269,6 +19038,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "RamJet"
+      ]
+    },
+    "Randomizer": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Randomizer"
       ]
     },
     "Ranita": {
@@ -19546,6 +19326,17 @@
         "Reglisse"
       ]
     },
+    "RelaxChess": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "RelaxChess"
+      ]
+    },
     "Renegade": {
       "status": "not_found",
       "url": null,
@@ -19711,17 +19502,6 @@
         "Rice"
       ]
     },
-    "RISC 2500": {
-      "status": "found",
-      "url": "https://chessprogramming.org/RISC_2500",
-      "title": "RISC 2500",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "RISC 2500"
-      ]
-    },
     "Rival": {
       "status": "found",
       "url": "https://chessprogramming.org/Rival",
@@ -19798,17 +19578,6 @@
         "RoboKewlper"
       ]
     },
-    "Robot Adversary": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Robot_Adversary",
-      "title": "Robot Adversary",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Robot Adversary"
-      ]
-    },
     "Roc": {
       "status": "found",
       "url": "https://chessprogramming.org/Roc",
@@ -19818,17 +19587,6 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Roc"
-      ]
-    },
-    "Roc2": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Roc2"
       ]
     },
     "Roce": {
@@ -19884,6 +19642,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "RofChade"
+      ]
+    },
+    "Roller": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Roller"
       ]
     },
     "RomiChess": {
@@ -20038,6 +19807,17 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "RubyKnight"
+      ]
+    },
+    "Ruci": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Ruci"
       ]
     },
     "Rudim": {
@@ -20228,17 +20008,6 @@
         "Rybka"
       ]
     },
-    "Rybka WinFinder": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Rybka WinFinder"
-      ]
-    },
     "SABA Videoplay 20": {
       "status": "found",
       "url": "https://chessprogramming.org/SABA_Videoplay_20",
@@ -20328,180 +20097,26 @@
         "Saherator"
       ]
     },
-    "Saitek Brute Force": {
+    "Sahistii Mascati Chess": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Sahistii Mascati Chess"
+      ]
+    },
+    "Saitek/SciSys": {
       "status": "found",
-      "url": "https://chessprogramming.org/Saitek_Brute_Force",
-      "title": "Saitek Brute Force",
+      "url": "https://chessprogramming.org/Saitek",
+      "title": "Saitek",
       "checked_at": "2026-10-19T00:44:50.443299+00:00",
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "reviewed-title-alias",
       "titles_checked": [
-        "Saitek Brute Force"
-      ]
-    },
-    "Saitek Galileo": {
-      "status": "found",
-      "url": "https://chessprogramming.org/SciSys_Leonardo",
-      "title": "SciSys Leonardo",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "SciSys Leonardo"
-      ]
-    },
-    "Saitek Kasparov Blitz": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Saitek Kasparov Blitz"
-      ]
-    },
-    "Saitek Kasparov Brute Force": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Saitek Kasparov Brute Force"
-      ]
-    },
-    "Saitek Leonardo Maestro A": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Saitek Leonardo Maestro A"
-      ]
-    },
-    "Saitek Leonardo Maestro B": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Saitek Leonardo Maestro B"
-      ]
-    },
-    "Saitek Maestro D": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Saitek Maestro D"
-      ]
-    },
-    "Saitek President": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Saitek_President",
-      "title": "Saitek President",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Saitek President"
-      ]
-    },
-    "Saitek Renaissance": {
-      "status": "found",
-      "url": "https://chessprogramming.org/SciSys_Leonardo",
-      "title": "SciSys Leonardo",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "SciSys Leonardo"
-      ]
-    },
-    "Saitek RISC 2500": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Saitek RISC 2500"
-      ]
-    },
-    "Saitek Simultano/Corona C": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Saitek Simultano/Corona C"
-      ]
-    },
-    "Saitek Sparc": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Kasparov_Sparc",
-      "title": "Kasparov Sparc",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Kasparov Sparc"
-      ]
-    },
-    "Saitek Stratos/Analys B": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Saitek Stratos/Analys B"
-      ]
-    },
-    "Saitek Superstar": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Saitek Superstar"
-      ]
-    },
-    "Saitek Turboking II": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Saitek Turboking II"
-      ]
-    },
-    "Saitek Turbostar 432": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Saitek Turbostar 432"
+        "Saitek"
       ]
     },
     "SAL": {
@@ -20603,6 +20218,17 @@
         "Saruman"
       ]
     },
+    "Sashimi": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Sashimi"
+      ]
+    },
     "Satana": {
       "status": "found",
       "url": "https://chessprogramming.org/Satana",
@@ -20625,15 +20251,15 @@
         "Saturn"
       ]
     },
-    "Savant": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Savant",
-      "title": "Savant",
+    "Savant (He)": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
       "checked_at": "2026-10-19T00:44:50.443299+00:00",
       "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
+      "method": "main-namespace-title-index",
       "titles_checked": [
-        "Savant"
+        "Savant (He)"
       ]
     },
     "Sayuri": {
@@ -20645,17 +20271,6 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Sayuri"
-      ]
-    },
-    "SC 1": {
-      "status": "found",
-      "url": "https://chessprogramming.org/SC_1",
-      "title": "SC 1",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "SC 1"
       ]
     },
     "SC 2": {
@@ -20868,149 +20483,6 @@
         "Scidlet"
       ]
     },
-    "SciSys Companion II": {
-      "status": "found",
-      "url": "https://chessprogramming.org/SciSys_Explorer",
-      "title": "SciSys Explorer",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "SciSys Explorer"
-      ]
-    },
-    "SciSys Concord II": {
-      "status": "found",
-      "url": "https://chessprogramming.org/SciSys_Explorer",
-      "title": "SciSys Explorer",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "SciSys Explorer"
-      ]
-    },
-    "SciSys Explorer": {
-      "status": "found",
-      "url": "https://chessprogramming.org/SciSys_Explorer",
-      "title": "SciSys Explorer",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "SciSys Explorer"
-      ]
-    },
-    "SciSys Graduate Chess": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mini_Chess",
-      "title": "Mini Chess",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Mini Chess"
-      ]
-    },
-    "SciSys Intelligent Chess": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Intelligent_Chess",
-      "title": "Intelligent Chess",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Intelligent Chess"
-      ]
-    },
-    "SciSys Junior Chess": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mini_Chess",
-      "title": "Mini Chess",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Mini Chess"
-      ]
-    },
-    "SciSys Leonardo": {
-      "status": "found",
-      "url": "https://chessprogramming.org/SciSys_Leonardo",
-      "title": "SciSys Leonardo",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "SciSys Leonardo"
-      ]
-    },
-    "SciSys Mini Chess": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Mini_Chess",
-      "title": "Mini Chess",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Mini Chess"
-      ]
-    },
-    "SciSys President": {
-      "status": "found",
-      "url": "https://chessprogramming.org/President_Chess",
-      "title": "President Chess",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "President Chess"
-      ]
-    },
-    "SciSys Sensor Chess": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Sensor_Chess",
-      "title": "Sensor Chess",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Sensor Chess"
-      ]
-    },
-    "SciSys Superstar": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Superstar",
-      "title": "Superstar",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Superstar"
-      ]
-    },
-    "SciSys Turbostar": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Turbostar",
-      "title": "Turbostar",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Turbostar"
-      ]
-    },
-    "SciSys X": {
-      "status": "found",
-      "url": "https://chessprogramming.org/SciSys_X",
-      "title": "SciSys X",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "SciSys X"
-      ]
-    },
     "Scoria": {
       "status": "not_found",
       "url": null,
@@ -21208,28 +20680,6 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Senpai"
-      ]
-    },
-    "Sensor Chess": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Sensor_Chess",
-      "title": "Sensor Chess",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Sensor Chess"
-      ]
-    },
-    "Sensory 9": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Sensory_9",
-      "title": "Sensory 9",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Sensory 9"
       ]
     },
     "Sentinel": {
@@ -21510,6 +20960,17 @@
         "Shield"
       ]
     },
+    "Shikamaru": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Shikamaru"
+      ]
+    },
     "Shippo": {
       "status": "not_found",
       "url": null,
@@ -21532,6 +20993,17 @@
         "Short"
       ]
     },
+    "ShouldntExist": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "ShouldntExist"
+      ]
+    },
     "Shredder": {
       "status": "found",
       "url": "https://chessprogramming.org/Shredder",
@@ -21541,17 +21013,6 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Shredder"
-      ]
-    },
-    "Shredder (Deep)": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Shredder (Deep)"
       ]
     },
     "Shrike": {
@@ -21609,7 +21070,7 @@
         "Siberian Chess"
       ]
     },
-    "Sierzant": {
+    "Siboney": {
       "status": "not_found",
       "url": null,
       "title": null,
@@ -21617,7 +21078,7 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "Sierzant"
+        "Siboney"
       ]
     },
     "Sierżant": {
@@ -21852,17 +21313,6 @@
         "Sjaak (Glebbeek)"
       ]
     },
-    "Sjaak II": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Sjaak II"
-      ]
-    },
     "Sjakk": {
       "status": "found",
       "url": "https://chessprogramming.org/Sjakk",
@@ -21883,17 +21333,6 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Sjeng"
-      ]
-    },
-    "Sjeng (Deep)": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Sjeng (Deep)"
       ]
     },
     "Skaki": {
@@ -22059,17 +21498,6 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Smash"
-      ]
-    },
-    "Smash (Deep)": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "Smash (Deep)"
       ]
     },
     "Smaug": {
@@ -22280,6 +21708,17 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "SomePythonBot"
+      ]
+    },
+    "Son Of Mainsworthy": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Son Of Mainsworthy"
       ]
     },
     "Soomi": {
@@ -23007,17 +22446,6 @@
         "Sunsetter"
       ]
     },
-    "Super Constellation": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Super_Constellation",
-      "title": "Super Constellation",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Super Constellation"
-      ]
-    },
     "SuperChess": {
       "status": "found",
       "url": "https://chessprogramming.org/SuperChess",
@@ -23049,17 +22477,6 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Superpawn"
-      ]
-    },
-    "Superstar": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Superstar",
-      "title": "Superstar",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Superstar"
       ]
     },
     "Superultra": {
@@ -23205,6 +22622,28 @@
         "TACTICAL"
       ]
     },
+    "Tactician": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Tactician"
+      ]
+    },
+    "Tactix": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Tactix"
+      ]
+    },
     "Taktix": {
       "status": "not_found",
       "url": null,
@@ -23346,6 +22785,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "TASC R40"
+      ]
+    },
+    "Tate": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Tate"
       ]
     },
     "Tcheran": {
@@ -23491,6 +22941,17 @@
         "Tempo (engine)"
       ]
     },
+    "TempoEngine": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "TempoEngine"
+      ]
+    },
     "Tenax": {
       "status": "not_found",
       "url": null,
@@ -23522,6 +22983,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Terra"
+      ]
+    },
+    "TestEngine": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "TestEngine"
       ]
     },
     "Testina": {
@@ -23645,6 +23117,28 @@
         "The Turk (TR)"
       ]
     },
+    "TheMadPrune": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "TheMadPrune"
+      ]
+    },
+    "ThePlayer Engine": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "ThePlayer Engine"
+      ]
+    },
     "Thera": {
       "status": "not_found",
       "url": null,
@@ -23676,6 +23170,17 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "Thom"
+      ]
+    },
+    "Thor": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Thor"
       ]
     },
     "Thor's Hammer": {
@@ -23788,6 +23293,17 @@
         "Timea"
       ]
     },
+    "Tinapa": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Tinapa"
+      ]
+    },
     "Tinker": {
       "status": "found",
       "url": "https://chessprogramming.org/Tinker",
@@ -23830,6 +23346,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Tiny Chess 86"
+      ]
+    },
+    "Tippy": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Tippy"
       ]
     },
     "Titan": {
@@ -23888,6 +23415,17 @@
         "Toga"
       ]
     },
+    "Toga CMLX": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Toga CMLX"
+      ]
+    },
     "Toga Log": {
       "status": "found",
       "url": "https://chessprogramming.org/Toga_Log",
@@ -23897,6 +23435,39 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Toga Log"
+      ]
+    },
+    "Toga Returns": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Toga Returns"
+      ]
+    },
+    "Toga The Killer": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Toga The Killer"
+      ]
+    },
+    "Toga Toy": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Toga Toy"
       ]
     },
     "Toledo": {
@@ -23929,7 +23500,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "Toledo NanoChess"
+        "Toledo NanoChess",
+        "Toledo Nanochess"
       ]
     },
     "Tom Thumb": {
@@ -24021,6 +23593,17 @@
         "Torch"
       ]
     },
+    "Tordenskiold": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Tordenskiold"
+      ]
+    },
     "Tornado": {
       "status": "found",
       "url": "https://chessprogramming.org/Tornado",
@@ -24063,6 +23646,28 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "TRACE"
+      ]
+    },
+    "Trappist": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Trappist"
+      ]
+    },
+    "TrappyBeowulf": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "TrappyBeowulf"
       ]
     },
     "Treebeard": {
@@ -24241,17 +23846,6 @@
         "Turbo Chess (GB)"
       ]
     },
-    "Turbostar": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Turbostar",
-      "title": "Turbostar",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Turbostar"
-      ]
-    },
     "Turbulence": {
       "status": "not_found",
       "url": null,
@@ -24305,6 +23899,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Turochamp"
+      ]
+    },
+    "Turochamp (Baroja)": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Turochamp (Baroja)"
       ]
     },
     "TurquoiseBOT": {
@@ -24527,17 +24132,6 @@
         "Usurpator"
       ]
     },
-    "UsurpatorII": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "UsurpatorII"
-      ]
-    },
     "Usurper": {
       "status": "not_found",
       "url": null,
@@ -24547,6 +24141,17 @@
       "method": "main-namespace-title-index",
       "titles_checked": [
         "Usurper"
+      ]
+    },
+    "UTopAI": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "UTopAI"
       ]
     },
     "Uzenatch": {
@@ -25132,17 +24737,6 @@
         "Whitespine"
       ]
     },
-    "Why Not": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Y%21",
-      "title": "Y!",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Y!"
-      ]
-    },
     "Wii Chess": {
       "status": "found",
       "url": "https://chessprogramming.org/Wii_Chess",
@@ -25506,6 +25100,17 @@
         "Yace"
       ]
     },
+    "Yaka": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Yaka"
+      ]
+    },
     "Yakka": {
       "status": "not_found",
       "url": null,
@@ -25537,6 +25142,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "YChess"
+      ]
+    },
+    "yea_fen": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "yea_fen"
       ]
     },
     "YNCT": {
@@ -25767,7 +25383,8 @@
       "evidence_url": "https://chessprogramming.org/search-index.json",
       "method": "main-namespace-title-index",
       "titles_checked": [
-        "Zchess2"
+        "Zchess2",
+        "ZChess2"
       ]
     },
     "ZCT": {
@@ -26024,6 +25641,17 @@
         "Zoe"
       ]
     },
+    "Zoe Opponent Engine": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Zoe Opponent Engine"
+      ]
+    },
     "Zoidberg": {
       "status": "not_found",
       "url": null,
@@ -26068,6 +25696,17 @@
         "Zorland Chess"
       ]
     },
+    "ZotChess": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "ZotChess"
+      ]
+    },
     "Zotron": {
       "status": "not_found",
       "url": null,
@@ -26088,6 +25727,17 @@
       "method": "reviewed-title-alias",
       "titles_checked": [
         "Zugzwang (Program)"
+      ]
+    },
+    "Zugzwang (Despa)": {
+      "status": "not_found",
+      "url": null,
+      "title": null,
+      "checked_at": "2026-10-19T00:44:50.443299+00:00",
+      "evidence_url": "https://chessprogramming.org/search-index.json",
+      "method": "main-namespace-title-index",
+      "titles_checked": [
+        "Zugzwang (Despa)"
       ]
     },
     "Zurichess": {

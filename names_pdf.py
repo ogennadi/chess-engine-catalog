@@ -62,10 +62,11 @@ def entries(catalog=None):
         (e["name"] + (DAGGER if source_status.availability_label(e) == "archived_only" else ""))
         for e in catalog["engines"] if source_status.availability_label(e) in AVAILABLE
     )
-    names.sort(key=str.casefold)
+    names.sort(key=source_status.name_sort_key)
     rows, current = [], None
     for index, name in enumerate(names, 1):
-        letter = name[0].upper() if name[0].isalpha() else "#"
+        initial = source_status.name_sort_key(name[0])[0].upper()
+        letter = initial if initial.isalpha() else "#"
         if letter != current:
             rows.append((letter, True, None))
             current = letter

@@ -24,6 +24,11 @@ TITLE_ALIASES = {
     "Little Goliath Evolution": "Goliath",
     "Loop": "Loop (Program)",
     "Loop-List": "Loop (Program)",
+    "Mephisto": "Mephisto",
+    "Noonian": "NoonianChess",
+    "Novag": "Novag",
+    "Saitek/SciSys": "Saitek",
+    "SC 2": "SC 2",
     "Predateur": "Pr\u00e9dateur",
     "Queen": "Queen (engine)",
     "rofChade": "RofChade",
@@ -33,6 +38,24 @@ TITLE_ALIASES = {
 }
 REVIEW_CANDIDATES = {}
 REJECTED_CANDIDATES = {
+    "Axon (Sinclair)": [{
+        "title": "Axon",
+        "url": BASE_URL + "Axon",
+        "reason": "The wiki's Axon is Vladan Vu\u010dkovi\u0107's 2001 assembly program, not Jasper Sinclair's engine.",
+        "identity_evidence_url": BASE_URL + "Axon",
+    }],
+    "Jupiter (Andersen)": [{
+        "title": "Jupiter",
+        "url": BASE_URL + "Jupiter",
+        "reason": "The wiki's Jupiter is Javier Ros Padilla's 1993 Turbo Pascal program, not Michael Andersen's WinBoard engine.",
+        "identity_evidence_url": BASE_URL + "Jupiter",
+    }],
+    "Morphy (Walstra)": [{
+        "title": "Morphy",
+        "url": BASE_URL + "Morphy",
+        "reason": "The wiki's Morphy is John Aker's 1981 dedicated-computer program, not Erik Walstra's WinBoard engine.",
+        "identity_evidence_url": BASE_URL + "Morphy",
+    }],
     "Space": [{
         "title": "Space",
         "url": BASE_URL + "Space",
