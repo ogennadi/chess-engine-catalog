@@ -1267,12 +1267,6 @@
     "code_urls": [],
     "links_sha256": "a4beaf213838b5485ddc085ac34b14349705782abc8d4f750e7d73e729ac4a40"
   },
-  "Chess Challenger": {
-    "wiki_url": "https://chessprogramming.org/Chess_Challenger",
-    "note": "Candidate is a Google Books citation with source query parameter, not engine source.",
-    "code_urls": [],
-    "links_sha256": "600daa088d3bcc36cddcc647dcb1e9678c439d28e911359dc1781aaf1969c675"
-  },
   "Chess Champion Mark IV": {
     "wiki_url": "https://chessprogramming.org/Chess_Champion_Mark_IV",
     "note": "No explicit source link in cached links; generic engine homepages are not evidence of code.",
@@ -2262,12 +2256,6 @@
     "code_urls": [],
     "links_sha256": "50d1cb9eb2d583c98fba8b3dc8e9df2417ae6a72208f45412f919b7cbb9efd7d"
   },
-  "Elegance": {
-    "wiki_url": "https://chessprogramming.org/Elegance",
-    "note": "No explicit source link in cached links; generic engine homepages are not evidence of code.",
-    "code_urls": [],
-    "links_sha256": "150ffbe7da2e24035d995430f26d2ea51c408323df6303184e7403faced54b05"
-  },
   "Elektro": {
     "wiki_url": "https://chessprogramming.org/Elektro",
     "note": "No explicit source link in cached links; generic engine homepages are not evidence of code.",
@@ -2285,12 +2273,6 @@
     "note": "No explicit source link in cached links; generic engine homepages are not evidence of code.",
     "code_urls": [],
     "links_sha256": "f8ac977d377fa7536513734de4cdeec74298c1533d039144954c3f0310ad5851"
-  },
-  "Elite": {
-    "wiki_url": "https://chessprogramming.org/Elite",
-    "note": "No explicit source link in cached links; generic engine homepages are not evidence of code.",
-    "code_urls": [],
-    "links_sha256": "d1e6791f3dcf05e76ecca31af06726bbd3c3731930bf49122b553b37348eddbe"
   },
   "Elsa": {
     "wiki_url": "https://chessprogramming.org/Elsa",
@@ -2450,18 +2432,6 @@
     "code_urls": [],
     "links_sha256": "1095f3cad03fd27870ce5795e10a80fa366281cfad13d4928d5158d92896e361"
   },
-  "Excel": {
-    "wiki_url": "https://chessprogramming.org/Excel",
-    "note": "No explicit source link in cached links; generic engine homepages are not evidence of code.",
-    "code_urls": [],
-    "links_sha256": "0d420214896fb32ec944443067b00315aaf1a1d1b49a0454af6b60191e37df3b"
-  },
-  "Excellence": {
-    "wiki_url": "https://chessprogramming.org/Excellence",
-    "note": "No explicit source link in cached links; generic engine homepages are not evidence of code.",
-    "code_urls": [],
-    "links_sha256": "079062b04b0b53d46c417e08e151103fc6ac845bc4b73e9634cf90036a7a352c"
-  },
   "Excelsior": {
     "wiki_url": "https://chessprogramming.org/Excelsior",
     "note": "No explicit source link in cached links; generic engine homepages are not evidence of code.",
@@ -2598,12 +2568,6 @@
     "note": "No explicit source link in cached links; generic engine homepages are not evidence of code.",
     "code_urls": [],
     "links_sha256": "d10fad0cde7a3a596e2bb624c6da4453e7bde23ebbe412a8d55637dbf1aaa6cd"
-  },
-  "Fidelity Phantom": {
-    "wiki_url": "https://chessprogramming.org/Fidelity_Phantom",
-    "note": "No explicit source link in cached links; generic engine homepages are not evidence of code.",
-    "code_urls": [],
-    "links_sha256": "8d5b078f9e71cc4602a14ed2335149356f51c420e9181f8127bed01955ce8252"
   },
   "FireFly": {
     "wiki_url": "https://chessprogramming.org/FireFly",
@@ -4793,12 +4757,6 @@
     "code_urls": [],
     "links_sha256": "383d1b1ce530bf7d10941db62271e7826965d6ad1f605138a35e5da261f7662e"
   },
-  "Par Excellence": {
-    "wiki_url": "https://chessprogramming.org/Par_Excellence",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "87cbd04b777102d77ef4234ebaf7ca4105ae15898734e265ac9ba8cb9fdc381e"
-  },
   "Parabelle": {
     "wiki_url": "https://chessprogramming.org/Parabelle",
     "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
@@ -5084,12 +5042,6 @@
     "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
     "code_urls": [],
     "links_sha256": "fa1a4041837d7d09f15e180c7417f67304bdb0fb8a9ad45f9af02b1f6764d3d5"
-  },
-  "Private Line": {
-    "wiki_url": "https://chessprogramming.org/Private_Line",
-    "note": "No explicit source link in the cached entry; generic engine homepages are not evidence of source availability.",
-    "code_urls": [],
-    "links_sha256": "50d6e22ed9f1a0df03d575f6e6241442133821b97e741995f655a0f982d652a6"
   },
   "Prochess": {
     "wiki_url": "https://chessprogramming.org/Prochess",
@@ -5729,12 +5681,6 @@
     "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
     "code_urls": [],
     "links_sha256": "a5263ff5f3d04f5385c6d97b0ff7d75abb905fc807f28f3c8f3d85d7507a3da9"
-  },
-  "Sensory 9": {
-    "wiki_url": "https://chessprogramming.org/Sensory_9",
-    "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
-    "code_urls": [],
-    "links_sha256": "4a44dc59dd2b4d57e7294efd8765f6de980e1600794e5bfbfc582fff17dc5e4f"
   },
   "Sfinks": {
     "wiki_url": "https://chessprogramming.org/Sfinks",

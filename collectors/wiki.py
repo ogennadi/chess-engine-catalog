@@ -15,6 +15,7 @@ TITLE_ALIASES = {
     "Der Bringer": "Bringer",
     "Dragon": "Dragon by Komodo Chess",
     "E.T. Chess": "E.T.Chess",
+    "Fidelity": "Fidelity",
     "Fortress": "Fortress (Engine)",
     "Karballo": "Carballo",
     "Leela Chess": "Leela Chess Zero",

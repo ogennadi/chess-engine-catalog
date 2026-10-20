@@ -5342,30 +5342,6 @@
    "searches": 1,
    "checked_at": "2026-10-19T21:32:14+00:00"
   },
-  "Chess Challenger": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "low",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki_intro",
-     "quote": "a series of dedicated chess computers produced and market by Fidelity Electronics ... with a program by Ron Nelson"
-    },
-    {
-     "search": "GitHub repositories: chess challenger fidelity source",
-     "quote": "0 results"
-    },
-    {
-     "search": "Fidelity Chess Challenger Ron Nelson original program source code listing published",
-     "quote": "no known publicly published listing; only ROM dumps/emulation"
-    }
-   ],
-   "rationale": "Commercial dedicated computer series; ROM dumps are not source; no published listing found. Proprietary inferred from commercial hardware product.",
-   "searches": 2,
-   "checked_at": "2026-10-19T20:04:09+00:00"
-  },
   "Chess Champion 2175": {
    "tier": "F",
    "licensing": "proprietary",
@@ -10996,26 +10972,6 @@
    "searches": 1,
    "checked_at": "2026-10-19T21:49:41+00:00"
   },
-  "Elegance": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki intro",
-     "quote": "a dedicated chess computer of the Chess Challenger series by Fidelity Electronics , produced and distributed since 1984"
-    },
-    {
-     "search": "GitHub repositories: fidelity elegance chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercially distributed Fidelity dedicated computer (Spracklen program); firmware only, no source found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:18:02+00:00"
-  },
   "Elektro": {
    "tier": "E",
    "licensing": "unknown",
@@ -11159,30 +11115,6 @@
    "rationale": "Author's (archived) download page offers only Win32/Linux binaries, the Elf3D GUI and an opening book; no source package. Non-commercial redistribution license applies to binaries; no source located.",
    "searches": 1,
    "checked_at": "2026-10-20T11:11:25+00:00"
-  },
-  "Elite": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki intro",
-     "quote": "a family of dedicated chess computers manufactured by Sidney Samole's company Fidelity Electronics with programs by Dan and Kathe Spracklen"
-    },
-    {
-     "search": "GitHub repositories: fidelity elite chess",
-     "quote": "0 results"
-    },
-    {
-     "search": "GitHub repositories: spracklen chess 6502",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial Fidelity dedicated computers; no source found. Published Sargon listings are a different (precursor) program and are not counted.",
-   "searches": 2,
-   "checked_at": "2026-10-19T20:18:02+00:00"
   },
   "Elsa": {
    "tier": "E",
@@ -12125,53 +12057,6 @@
    "searches": 2,
    "checked_at": "2026-10-19T16:03:32+00:00"
   },
-  "Excel": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: wiki intro",
-     "quote": "a family of the dedicated Chess Challenger series by Fidelity Electronics , produced and distributed from 1987 to 1989"
-    },
-    {
-     "search": "GitHub repositories: fidelity excel 68000 chess",
-     "quote": "0 results"
-    },
-    {
-     "search": "GitHub repositories: spracklen chess 6502",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial Fidelity dedicated computer with Sargon III based 68000 program by the Spracklens; no source found. Sargon listings (precursor) not counted.",
-   "searches": 2,
-   "checked_at": "2026-10-19T20:18:02+00:00"
-  },
-  "Excellence": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
-    {
-     "source": "dossier: wiki intro",
-     "quote": "a dedicated chess computer by Fidelity Electronics , produced and distributed since 1985"
-    },
-    {
-     "source": "dossier: wiki categories",
-     "quote": "Dedicated"
-    },
-    {
-     "search": "Fidelity Electronics chess computer Spracklen 6502 program source code listing published",
-     "quote": "no official source listing found; only ROM dumps/emulation"
-    }
-   ],
-   "rationale": "Commercial dedicated computer (Spracklen 6502 firmware); ROM dumps are not source; no rights-holder listing located.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:20:30+00:00"
-  },
   "Excelsior": {
    "tier": "D",
    "licensing": "unknown",
@@ -12554,19 +12439,79 @@
     {
      "search": "Fidelity Electronics chess computer Spracklen 6502 program source code listing published",
      "quote": "no official source listing found"
-    }
-   ],
-   "rationale": "Commercial dedicated computers; the earlier Sargon book listing is a precursor and not counted; no Fidelity program source located.",
-   "searches": 2,
-   "checked_at": "2026-10-19T20:20:30+00:00"
-  },
-  "Fidelity Avant Garde": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
+    {
+     "source": "dossier: wiki_intro",
+     "quote": "a series of dedicated chess computers produced and market by Fidelity Electronics ... with a program by Ron Nelson"
+    },
+    {
+     "search": "GitHub repositories: chess challenger fidelity source",
+     "quote": "0 results"
+    },
+    {
+     "search": "Fidelity Chess Challenger Ron Nelson original program source code listing published",
+     "quote": "no known publicly published listing; only ROM dumps/emulation"
+    },
+    {
+     "source": "dossier: wiki intro",
+     "quote": "a dedicated chess computer of the Chess Challenger series by Fidelity Electronics , produced and distributed since 1984"
+    },
+    {
+     "search": "GitHub repositories: fidelity elegance chess",
+     "quote": "0 results"
+    },
+    {
+     "source": "dossier: wiki intro",
+     "quote": "a family of dedicated chess computers manufactured by Sidney Samole's company Fidelity Electronics with programs by Dan and Kathe Spracklen"
+    },
+    {
+     "search": "GitHub repositories: fidelity elite chess",
+     "quote": "0 results"
+    },
+    {
+     "search": "GitHub repositories: spracklen chess 6502",
+     "quote": "0 results"
+    },
+    {
+     "source": "dossier: wiki intro",
+     "quote": "a family of the dedicated Chess Challenger series by Fidelity Electronics , produced and distributed from 1987 to 1989"
+    },
+    {
+     "search": "GitHub repositories: fidelity excel 68000 chess",
+     "quote": "0 results"
+    },
+    {
+     "source": "dossier: wiki intro",
+     "quote": "a dedicated chess computer by Fidelity Electronics , produced and distributed since 1985"
+    },
+    {
+     "source": "dossier: wiki categories",
+     "quote": "Dedicated"
+    },
+    {
+     "search": "Fidelity Electronics chess computer Spracklen 6502 program source code listing published",
+     "quote": "no official source listing found; only ROM dumps/emulation"
+    },
+    {
+     "source": "dossier: wiki intro",
+     "quote": "a dedicated chess computer by Fidelity Electronics , produced and distributed since 1986 as successor of the Excellence with an positional improved Sargon based 6502 program by Dan and Kathe Spracklen"
+    },
+    {
+     "search": "GitHub repositories: fidelity excellence chess",
+     "quote": "0 results"
+    },
+    {
+     "source": "dossier: wiki intro",
+     "quote": "a dedicated chess computer of the Elite series by Fidelity Electronics with a 6502 processor and a Sargon based program by Dan and Kathe Spracklen"
+    },
+    {
+     "source": "dossier: CPW intro",
+     "quote": "a dedicated chess computer of the Sensory Chess Challenger series by Fidelity Electronics , released in 1982"
+    },
+    {
+     "search": "GitHub repositories: Sensory 9 chess Spracklen",
+     "quote": "0 results"
+    },
     {
      "url": "https://www.chessprogramming.org/Fidelity_Electronics",
      "quote": "Fidelity Elite Avant Garde Dan and Kathe Spracklen 6502 , 5 MHz"
@@ -12574,19 +12519,7 @@
     {
      "url": "https://www.chessprogramming.org/Elite",
      "quote": "Elite (Fidelity Elite), a family of dedicated chess computers manufactured by Sidney Samole's company Fidelity Electronics; Category:Dedicated"
-    }
-   ],
-   "rationale": "Commercial dedicated chess computer (Spracklen program in ROM); no published source listing found. ROM dumps are not source.",
-   "searches": 0,
-   "checked_at": "2026-10-20T00:37:26+00:00"
-  },
-  "Fidelity Elegance": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "url": "https://www.chessprogramming.org/Elegance",
      "quote": "Elegance (Fidelity Elegance, Elegance Chess Challenger), a dedicated chess computer of the Chess Challenger series by Fidelity Electronics; Category:Dedicated"
@@ -12594,19 +12527,7 @@
     {
      "url": "https://www.chessprogramming.org/Fidelity_Electronics",
      "quote": "Fidelity Elegance Dan and Kathe Spracklen 6502 , 3, 3.6 MHz"
-    }
-   ],
-   "rationale": "Commercial dedicated chess computer; no published source listing found. ROM dumps are not source.",
-   "searches": 0,
-   "checked_at": "2026-10-20T00:37:26+00:00"
-  },
-  "Fidelity Elite A/S": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "url": "https://www.chessprogramming.org/Fidelity_Electronics",
      "quote": "Fidelity Elite A/S Budapest Dan and Kathe Spracklen 6502 , 3.2 MHz WMCCC 1983 , 1st"
@@ -12614,19 +12535,7 @@
     {
      "url": "https://www.chessprogramming.org/Elite",
      "quote": "a family of dedicated chess computers manufactured by Sidney Samole's company Fidelity Electronics; Category:Dedicated"
-    }
-   ],
-   "rationale": "Commercial dedicated chess computer; no published source listing found. ROM dumps are not source.",
-   "searches": 0,
-   "checked_at": "2026-10-20T00:37:26+00:00"
-  },
-  "Fidelity Elite Version 5": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "url": "https://www.chessprogramming.org/Elite",
      "quote": "Elite (Fidelity Elite), a family of dedicated chess computers ... with programs by Dan and Kathe Spracklen; Category:Dedicated"
@@ -12634,40 +12543,12 @@
     {
      "url": "https://www.chessprogramming.org/Fidelity_Electronics",
      "quote": "Fidelity Elite Avant Garde V2 Dan and Kathe Spracklen 68000 , 16 MHz"
-    }
-   ],
-   "rationale": "Commercial Fidelity Elite dedicated computer (68000 version); no published source listing found. ROM dumps are not source.",
-   "searches": 0,
-   "checked_at": "2026-10-20T00:37:26+00:00"
-  },
-  "Fidelity Elite Version 9": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "url": "https://www.chessprogramming.org/Fidelity_Electronics",
      "quote": "Fidelity Elite Avant Garde V9 Dan and Kathe Spracklen 68030 , 32 MHz"
     },
     {
-     "url": "https://www.chessprogramming.org/Elite",
-     "quote": "a family of dedicated chess computers manufactured by Sidney Samole's company Fidelity Electronics; Category:Dedicated"
-    }
-   ],
-   "rationale": "Commercial dedicated chess computer (68030, 32 MHz, matches SSDF label); no published source listing found. ROM dumps are not source.",
-   "searches": 0,
-   "checked_at": "2026-10-20T00:37:26+00:00"
-  },
-  "Fidelity Excel Club": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
      "url": "https://www.chessprogramming.org/Excel",
      "quote": "a family of the dedicated Chess Challenger series by Fidelity Electronics, produced and distributed from 1987 to 1989"
     },
@@ -12678,169 +12559,27 @@
     {
      "search": "Spracklen Fidelity Excel Mach III Mach IV 68000 chess program source code published or released",
      "quote": "lead only: summary reports no official source release; only ROM images for emulation"
-    }
-   ],
-   "rationale": "Commercial Fidelity dedicated chess computer (Spracklen 68000 program); no rights-holder source release found. Excel Club is an edition of the Excel 68000 family.",
-   "searches": 1,
-   "notes": "Only ROM images (used by MAME) circulate; ROM dumps are not source.",
-   "checked_at": "2026-10-20T01:10:41+00:00"
-  },
-  "Fidelity Excel Mach IIa": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://www.chessprogramming.org/Excel",
-     "quote": "a family of the dedicated Chess Challenger series by Fidelity Electronics, produced and distributed from 1987 to 1989"
     },
     {
      "url": "https://www.chessprogramming.org/Excel",
      "quote": "128 KiB for the Mach II"
     },
-    {
-     "search": "Spracklen Fidelity Excel Mach III Mach IV 68000 chess program source code published or released",
-     "quote": "lead only: summary reports no official source release; only ROM images for emulation"
-    }
-   ],
-   "rationale": "Commercial Fidelity dedicated chess computer (Spracklen 68000 program); no rights-holder source release found.",
-   "searches": 1,
-   "notes": "Only ROM images (used by MAME) circulate; ROM dumps are not source.",
-   "checked_at": "2026-10-20T01:10:41+00:00"
-  },
-  "Fidelity Excel Mach IIc": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://www.chessprogramming.org/Excel",
-     "quote": "a family of the dedicated Chess Challenger series by Fidelity Electronics, produced and distributed from 1987 to 1989"
-    },
-    {
-     "url": "https://www.chessprogramming.org/Excel",
-     "quote": "128 KiB for the Mach II"
-    },
-    {
-     "search": "Spracklen Fidelity Excel Mach III Mach IV 68000 chess program source code published or released",
-     "quote": "lead only: summary reports no official source release; only ROM images for emulation"
-    }
-   ],
-   "rationale": "Commercial Fidelity dedicated chess computer (Spracklen 68000 program); no rights-holder source release found.",
-   "searches": 1,
-   "notes": "Only ROM images (used by MAME) circulate; ROM dumps are not source.",
-   "checked_at": "2026-10-20T01:10:41+00:00"
-  },
-  "Fidelity Excellence": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
     {
      "url": "https://www.chessprogramming.org/Excellence",
      "quote": "a dedicated chess computer by Fidelity Electronics, produced and distributed since 1985"
-    },
-    {
-     "url": "https://www.chessprogramming.org/Fidelity_Electronics",
-     "quote": "Sidney Samole was the man who dreamed, patented and produced the first commercial chess computer."
-    },
-    {
-     "search": "Spracklen Fidelity Excel Mach III Mach IV 68000 chess program source code published or released",
-     "quote": "lead only: summary reports no official source release; only ROM images for emulation"
-    }
-   ],
-   "rationale": "Commercial Fidelity dedicated chess computer (Spracklen 6502 program); no rights-holder source release found.",
-   "searches": 1,
-   "notes": "Only ROM images (used by MAME) circulate; ROM dumps are not source.",
-   "checked_at": "2026-10-20T01:10:41+00:00"
-  },
-  "Fidelity Mach III": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://www.chessprogramming.org/Excel",
-     "quote": "a family of the dedicated Chess Challenger series by Fidelity Electronics, produced and distributed from 1987 to 1989"
     },
     {
      "url": "https://www.chessprogramming.org/Excel",
      "quote": "The 68000 Mach III was rated 2265 by the United States Chess Federation"
     },
     {
-     "search": "Spracklen Fidelity Excel Mach III Mach IV 68000 chess program source code published or released",
-     "quote": "lead only: summary reports no official source release; only ROM images for emulation"
-    }
-   ],
-   "rationale": "Commercial Fidelity dedicated chess computer (Spracklen 68000 program); no rights-holder source release found.",
-   "searches": 1,
-   "notes": "Only ROM images (used by MAME) circulate; ROM dumps are not source.",
-   "checked_at": "2026-10-20T01:10:41+00:00"
-  },
-  "Fidelity Mach IV": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://www.chessprogramming.org/Excel",
-     "quote": "a family of the dedicated Chess Challenger series by Fidelity Electronics, produced and distributed from 1987 to 1989"
-    },
-    {
      "url": "https://www.chessprogramming.org/Excel",
      "quote": "its successor, the 68020 32-bit Mach IV"
     },
     {
-     "search": "Spracklen Fidelity Excel Mach III Mach IV 68000 chess program source code published or released",
-     "quote": "lead only: summary reports no official source release; only ROM images for emulation"
-    }
-   ],
-   "rationale": "Commercial Fidelity dedicated chess computer (Spracklen 68020 program); no rights-holder source release found.",
-   "searches": 1,
-   "notes": "Only ROM images (used by MAME) circulate; ROM dumps are not source.",
-   "checked_at": "2026-10-20T01:10:41+00:00"
-  },
-  "Fidelity Par Excellence": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
      "url": "https://www.chessprogramming.org/Par_Excellence",
      "quote": "a dedicated chess computer by Fidelity Electronics, produced and distributed since 1986"
     },
-    {
-     "url": "https://www.chessprogramming.org/Fidelity_Electronics",
-     "quote": "Sidney Samole was the man who dreamed, patented and produced the first commercial chess computer."
-    },
-    {
-     "search": "Spracklen Fidelity Excel Mach III Mach IV 68000 chess program source code published or released",
-     "quote": "lead only: summary reports no official source release; only ROM images for emulation"
-    }
-   ],
-   "rationale": "Commercial Fidelity dedicated chess computer (Spracklen 6502 program); no rights-holder source release found.",
-   "searches": 1,
-   "notes": "Only ROM images (used by MAME) circulate; ROM dumps are not source.",
-   "checked_at": "2026-10-20T01:10:41+00:00"
-  },
-  "Fidelity Phantom": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
     {
      "source": "dossier: wiki intro",
      "quote": "a series of robot type dedicated chess computers by Fidelity Electronics with a 6502 program by Dan and Kathe Spracklen"
@@ -12852,56 +12591,22 @@
     {
      "search": "Fidelity Electronics chess computer Spracklen 6502 program source code listing published (Excellence, Phantom, Elite)",
      "quote": "no official source listing published"
-    }
-   ],
-   "rationale": "Commercial dedicated robot computer; no source located.",
-   "searches": 2,
-   "checked_at": "2026-10-19T20:20:30+00:00"
-  },
-  "Fidelity Prestige": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "url": "https://www.chessprogramming.org/Fidelity_Electronics",
      "quote": "Fidelity Prestige | Dan and Kathe Spracklen | 6502"
     },
     {
      "url": "https://www.chessprogramming.org/Fidelity_Electronics",
-     "quote": "Sidney Samole was the man who dreamed, patented and produced the first commercial chess computer."
-    },
-    {
-     "search": "Spracklen Fidelity Excel Mach III Mach IV 68000 chess program source code published or released",
-     "quote": "lead only: summary reports no official source release; only ROM images for emulation"
-    }
-   ],
-   "rationale": "Commercial Fidelity dedicated chess computer (Spracklen 6502 program); no rights-holder source release found.",
-   "searches": 1,
-   "notes": "Only ROM images (used by MAME) circulate; ROM dumps are not source.",
-   "checked_at": "2026-10-20T01:10:41+00:00"
-  },
-  "Fidelity Travel Master": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "https://www.chessprogramming.org/Fidelity_Electronics",
      "quote": "1992 | Fidelity Travel Master | Frans Morsch"
-    },
-    {
-     "url": "https://www.chessprogramming.org/Fidelity_Electronics",
-     "quote": "Sidney Samole was the man who dreamed, patented and produced the first commercial chess computer."
     }
    ],
-   "rationale": "Commercial Fidelity dedicated chess computer with a Frans Morsch program; no rights-holder source release found.",
-   "searches": 0,
-   "checked_at": "2026-10-20T01:10:41+00:00"
+   "rationale": "Commercial Fidelity Electronics dedicated chess computers; no rights-holder source release located for any model. Published Sargon book listings are a precursor and not counted; ROM dumps are not source.",
+   "searches": 23,
+   "checked_at": "2026-10-20T01:10:41+00:00",
+   "identity_issue": "Fidelity is a manufacturer's product line rather than a single program: the merged models run different programs, by different authors, on different hardware.",
+   "notes": "Merged on 2026-10-20 at the user's request, following the Chess Programming Wiki Fidelity page, which describes Fidelity as a family of dedicated chess computers and lists Chess Challenger, Elegance, Elite, Excel, Excellence, Fidelity Phantom, Par Excellence and Private Line among Fidelity computers. Caveats: the early programs were written by Ron Nelson; from 1980/81 most programs were Dan and Kathe Spracklen's Sargon-based programs (6502, later 68000, 68020 and 68030); the 1992 Travel Master runs a Frans Morsch program; the Fidelity Phantom robot was later sold by Hegener & Glaser as the Mephisto Phantom; Sensory 9 is the Sensory Chess Challenger 9. SSDF rates individual models, so results listed under this family cover several distinct programs.",
+   "needs_review": false
   },
   "Fimbulwinter": {
    "tier": "B",
@@ -25910,29 +25615,6 @@
    "searches": 1,
    "checked_at": "2026-10-19T22:51:43+00:00"
   },
-  "Par Excellence": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
-    {
-     "source": "dossier: wiki intro",
-     "quote": "a dedicated chess computer by Fidelity Electronics , produced and distributed since 1986 as successor of the Excellence with an positional improved Sargon based 6502 program by Dan and Kathe Spracklen"
-    },
-    {
-     "source": "dossier: wiki categories",
-     "quote": "Dedicated"
-    },
-    {
-     "search": "GitHub repositories: fidelity excellence chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercially sold Fidelity dedicated computer; the earlier published Sargon book listing is a precursor and not counted; no source located.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:31:21+00:00"
-  },
   "Parabelle": {
    "tier": "E",
    "licensing": "unknown",
@@ -27457,25 +27139,6 @@
     }
    ],
    "rationale": "Unreleased SciSys commercial prototype; no source located.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:31:21+00:00"
-  },
-  "Private Line": {
-   "tier": "C",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "evidence": [
-    {
-     "source": "dossier: wiki intro",
-     "quote": "a dedicated chess computer of the Elite series by Fidelity Electronics with a 6502 processor and a Sargon based program by Dan and Kathe Spracklen"
-    },
-    {
-     "search": "GitHub repositories: fidelity excellence chess",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial Fidelity dedicated computer; Sargon book listing is a precursor and not counted; no source located.",
    "searches": 1,
    "checked_at": "2026-10-19T20:31:21+00:00"
   },
@@ -31051,26 +30714,6 @@
    "rationale": "Same product as SciSys Sensor Chess: commercially sold SciSys dedicated computer with Julio Kaplan ROM firmware; no rights-holder source found.",
    "searches": 1,
    "checked_at": "2026-10-19T20:40:46+00:00"
-  },
-  "Sensory 9": {
-   "tier": "E",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
-    {
-     "source": "dossier: CPW intro",
-     "quote": "a dedicated chess computer of the Sensory Chess Challenger series by Fidelity Electronics , released in 1982"
-    },
-    {
-     "search": "GitHub repositories: Sensory 9 chess Spracklen",
-     "quote": "0 results"
-    }
-   ],
-   "rationale": "Commercial Fidelity dedicated chess computer (6502 assembly by the Spracklens); no published source/listing by rights holder found. ROM dumps are not source.",
-   "searches": 1,
-   "checked_at": "2026-10-19T23:20:00+00:00"
   },
   "SF-POLY": {
    "tier": "F",

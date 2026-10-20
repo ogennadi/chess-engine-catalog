@@ -207,6 +207,11 @@ RWBC sorts some names by a trailing qualifier, such as "Shredder (Deep)" and "Cr
 (Chess)"; reviewed aliases merge these into the base family when the author and links
 match. Where the lists group a commercial successor with an open predecessor (Deep Sjeng
 under Sjeng), the research record's release scope states which releases the source covers.
+Dedicated-computer product lines can be grouped as one family when the wiki treats them
+as one: the wiki's Fidelity page groups Fidelity Electronics' models (Chess Challenger,
+Elite, Excel, Phantom, the SSDF-rated models, and others), so these are aliases of
+Fidelity. The research notes record that the models run different programs by different
+authors.
 
 Same-named but different programs are kept apart. `source_aliases` in
 `overrides.json` reassigns a source's entries (optionally only labels matching a
