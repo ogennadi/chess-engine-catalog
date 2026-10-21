@@ -110036,7 +110036,124 @@
       ],
       "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded."
     },
-    "Toledo": {
+    "Toledo 2000": {
+      "wiki_url": "https://chessprogramming.org/Toledo_2000",
+      "checked_at": "2026-10-19T01:43:30.623568+00:00",
+      "status": "no_source_link_found",
+      "code_urls": [],
+      "external_links": [
+        {
+          "url": "https://en.wikipedia.org/wiki/View_of_Toledo",
+          "label": "View of Toledo"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Metropolitan_Museum_of_Art",
+          "label": "Metropolitan Museum of Art"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Google_Arts_%26_Culture",
+          "label": "Google Art Project"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/La_Puebla_de_Montalb%C3%A1n",
+          "label": "La Puebla de Montalbán"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Province_of_Toledo",
+          "label": "Province of Toledo"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Toledo,_Spain",
+          "label": "Toledo"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Paris",
+          "label": "Paris"
+        },
+        {
+          "url": "https://www.game-ai-forum.org/icga-tournaments/program.php?id=29",
+          "label": "Toledo's ICGA Tournaments"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Toledo",
+          "label": "Toledo (disambiguation page) from Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Toledo,_Spain",
+          "label": "Toledo, Spain from Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/View_of_Toledo",
+          "label": "View of Toledo from Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Toledo,_Ohio",
+          "label": "Toledo, Ohio from Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Twin_towns_and_sister_cities",
+          "label": "sister city"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Province_of_Toledo",
+          "label": "Province of Toledo from Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Kingdom_of_Toledo",
+          "label": "Kingdom of Toledo from Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Holy_Toledo_%28disambiguation%29",
+          "label": "Holy Toledo (disambiguation) from Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Taifa_of_Toledo",
+          "label": "Taifa of Toledo from Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/A_Closer_View",
+          "label": "Toledo"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Podgorica",
+          "label": "Podgorica"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Montenegro",
+          "label": "Montenegro"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/YouTube",
+          "label": "YouTube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=64LvkzK3jY0",
+          "label": "Watch on YouTube"
+        },
+        {
+          "url": "https://www.game-ai-forum.org/icga-tournaments/round.php?tournament=5&round=1&id=16",
+          "label": "Paris 1997 - Chess - Round 1 - Game 16 (ICGA Tournaments)"
+        },
+        {
+          "url": "https://lichess.org",
+          "label": "lichess.org"
+        },
+        {
+          "url": "https://lichess.org/patron",
+          "label": "consider supporting us"
+        },
+        {
+          "url": "https://github.com/lichess-org/chessground",
+          "label": "chessground"
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "label": "CC BY-SA 3.0"
+        }
+      ],
+      "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded."
+    },
+    "Toledo NanoChess": {
       "wiki_url": "https://chessprogramming.org/Toledo",
       "checked_at": "2026-10-19T01:43:29.811435+00:00",
       "status": "no_source_link_found",
@@ -110184,123 +110301,6 @@
         }
       ],
       "note": "Author profile and books about source are not direct engine-source links."
-    },
-    "Toledo 2000": {
-      "wiki_url": "https://chessprogramming.org/Toledo_2000",
-      "checked_at": "2026-10-19T01:43:30.623568+00:00",
-      "status": "no_source_link_found",
-      "code_urls": [],
-      "external_links": [
-        {
-          "url": "https://en.wikipedia.org/wiki/View_of_Toledo",
-          "label": "View of Toledo"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Metropolitan_Museum_of_Art",
-          "label": "Metropolitan Museum of Art"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Google_Arts_%26_Culture",
-          "label": "Google Art Project"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/La_Puebla_de_Montalb%C3%A1n",
-          "label": "La Puebla de Montalbán"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Province_of_Toledo",
-          "label": "Province of Toledo"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Toledo,_Spain",
-          "label": "Toledo"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Paris",
-          "label": "Paris"
-        },
-        {
-          "url": "https://www.game-ai-forum.org/icga-tournaments/program.php?id=29",
-          "label": "Toledo's ICGA Tournaments"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Toledo",
-          "label": "Toledo (disambiguation page) from Wikipedia"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Toledo,_Spain",
-          "label": "Toledo, Spain from Wikipedia"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/View_of_Toledo",
-          "label": "View of Toledo from Wikipedia"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Toledo,_Ohio",
-          "label": "Toledo, Ohio from Wikipedia"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Twin_towns_and_sister_cities",
-          "label": "sister city"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Province_of_Toledo",
-          "label": "Province of Toledo from Wikipedia"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Kingdom_of_Toledo",
-          "label": "Kingdom of Toledo from Wikipedia"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Holy_Toledo_%28disambiguation%29",
-          "label": "Holy Toledo (disambiguation) from Wikipedia"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Taifa_of_Toledo",
-          "label": "Taifa of Toledo from Wikipedia"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/A_Closer_View",
-          "label": "Toledo"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Podgorica",
-          "label": "Podgorica"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Montenegro",
-          "label": "Montenegro"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/YouTube",
-          "label": "YouTube"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=64LvkzK3jY0",
-          "label": "Watch on YouTube"
-        },
-        {
-          "url": "https://www.game-ai-forum.org/icga-tournaments/round.php?tournament=5&round=1&id=16",
-          "label": "Paris 1997 - Chess - Round 1 - Game 16 (ICGA Tournaments)"
-        },
-        {
-          "url": "https://lichess.org",
-          "label": "lichess.org"
-        },
-        {
-          "url": "https://lichess.org/patron",
-          "label": "consider supporting us"
-        },
-        {
-          "url": "https://github.com/lichess-org/chessground",
-          "label": "chessground"
-        },
-        {
-          "url": "https://creativecommons.org/licenses/by-sa/3.0/",
-          "label": "CC BY-SA 3.0"
-        }
-      ],
-      "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded."
     },
     "Torch": {
       "wiki_url": "https://chessprogramming.org/Torch",

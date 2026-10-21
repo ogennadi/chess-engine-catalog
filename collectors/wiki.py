@@ -33,6 +33,7 @@ TITLE_ALIASES = {
     "Queen": "Queen (engine)",
     "rofChade": "RofChade",
     "Shallowblue": "Shallow Blue",
+    "Toledo NanoChess": "Toledo",
     "Vajolet": "Vajolet",
     "VanillaChess": "Vanilla Chess",
 }

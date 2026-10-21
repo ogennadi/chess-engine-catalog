@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T17:27:16.487740+00:00",
+  "generated_at": "2026-10-21T14:09:30.276520+00:00",
   "coverage_complete": false,
   "sources": [
     {
@@ -210,8 +210,130 @@
   "engines": [
     {
       "name": "#Chess",
-      "aliases": [],
+      "aliases": [
+        "SharpChess"
+      ],
       "provenance": [
+        {
+          "label": "SharpChess",
+          "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
+          "section": "Dead Engine List",
+          "author": "Albert Bertilsson",
+          "version": "0.06",
+          "protocol": "XB",
+          "comment": "C# source; Win",
+          "links": [
+            "https://web.archive.org/web/20070607093301/http://www.albert.nu/default.asp?sub=programs/default.asp?sub=sharpchess/main.htm"
+          ],
+          "date_added": "2003/03/01",
+          "checked_at": "2026-10-19T18:34:57.193219+00:00",
+          "source": "computer-chess-org",
+          "identity_evidence_url": "https://chessprogramming.org/SharpChess"
+        },
+        {
+          "label": "SharpChess",
+          "original_name": "SharpChess",
+          "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
+          "listing_url": "https://rwbc-chess.de/",
+          "sheet_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
+          "rank": 1015,
+          "authors": "Bertilsson Albert",
+          "alternate_names": "",
+          "previous_names": "",
+          "distribution": "free",
+          "source_flag": "yes",
+          "links": [
+            "https://web.archive.org/web/20070607093301/http://www.albert.nu/default.asp?sub=programs/default.asp?sub=sharpchess/main.htm"
+          ],
+          "row": [
+            "1015",
+            "SharpChess",
+            "Bertilsson Albert",
+            "SWE",
+            "",
+            "",
+            "0.06",
+            "2003-03",
+            "2003-03",
+            "F",
+            "XB",
+            "yes",
+            "C#",
+            "-",
+            "-",
+            "-",
+            "",
+            "",
+            "free",
+            "0.01",
+            "2002-12-16",
+            "23.6",
+            "23.8",
+            "",
+            "",
+            "https://web.archive.org/web/20070607093301/http://www.albert.nu/default.asp?sub=programs/default.asp?sub=sharpchess/main.htm"
+          ],
+          "headers": [
+            "",
+            "Name\n(color description\ns. TOC)",
+            "Author L.N. F.N.",
+            "CC3",
+            "F1",
+            "F2",
+            "LR/LV (dev)",
+            "",
+            "",
+            "RC\n(s. TOC)",
+            "Prot",
+            "Src",
+            "PL",
+            "NN\nNNUE",
+            "MP",
+            "EGT",
+            "N-Alias\n(base/add.)",
+            "N-Pre\nLV",
+            "Dist.",
+            "Vers. FR",
+            "",
+            "",
+            "",
+            "CMD (arg) Config\nExamples",
+            "Peculiarities + Bugs + Info",
+            "Web/Download"
+          ],
+          "sheet_metadata": [
+            "10/18/2026",
+            "",
+            "",
+            "Alpha List (current count :: 1241)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "declared_count": 1241,
+          "checked_at": "2026-10-19T01:17:00.508078+00:00",
+          "source": "rwbc",
+          "identity_evidence_url": "https://chessprogramming.org/SharpChess"
+        },
         {
           "label": "#Chess",
           "listed_name": "#Chess",
@@ -8029,7 +8151,17 @@
           "note": "Third-party ALICE distribution; the wiki explicitly references Src/include/Bitboard.h at this location.",
           "evidence_url": "https://chessprogramming.org/Alice",
           "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:30:59.612741+00:00"
+          "checked_at": "2026-10-19T01:30:59.612741+00:00",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "DNS: host not found"
+          }
+        },
+        {
+          "url": "https://web.archive.org/web/20201106232442/http://kirr.homeunix.org/chess/engines/Jim%20Ablett/ALICE/",
+          "evidence_url": "https://web.archive.org/web/20201106232442/http://kirr.homeunix.org/chess/engines/Jim%20Ablett/ALICE/",
+          "source": "link-review",
+          "kind": "Wayback snapshot of the original Jim Ablett download directory (2020-11-06)"
         }
       ],
       "chessprogramming_wiki": {
@@ -14326,7 +14458,9 @@
     },
     {
       "name": "Apep",
-      "aliases": [],
+      "aliases": [
+        "ApepCE"
+      ],
       "provenance": [
         {
           "label": "Apep",
@@ -14350,31 +14484,7 @@
           "project_url": "https://github.com/tildedave/apep-chess-engine",
           "checked_at": "2026-10-19T18:34:57.193219+00:00",
           "source": "computer-chess-org"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/tildedave/apep-chess-engine",
-          "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "Apep"
-        ]
-      }
-    },
-    {
-      "name": "ApepCE",
-      "aliases": [],
-      "provenance": [
+        },
         {
           "label": "ApepCE",
           "original_name": "ApepCE",
@@ -14483,6 +14593,11 @@
       "source_code": [
         {
           "url": "https://github.com/tildedave/apep-chess-engine",
+          "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
+          "source": "computer-chess-org"
+        },
+        {
+          "url": "https://github.com/tildedave/apep-chess-engine",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
           "source": "rwbc"
         }
@@ -14495,7 +14610,7 @@
         "evidence_url": "https://chessprogramming.org/search-index.json",
         "method": "main-namespace-title-index",
         "titles_checked": [
-          "ApepCE"
+          "Apep"
         ]
       }
     },
@@ -18805,7 +18920,9 @@
     },
     {
       "name": "Armageddon",
-      "aliases": [],
+      "aliases": [
+        "Armageddon II"
+      ],
       "provenance": [
         {
           "label": "Armageddon",
@@ -18830,83 +18947,6 @@
           "checked_at": "2026-10-19T18:34:57.193219+00:00",
           "source": "computer-chess-org"
         },
-        {
-          "label": "Armageddon",
-          "listed_name": "Armageddon",
-          "url": "https://chessprogramming.org/Engines#alphabetical-list",
-          "listing_url": "https://chessprogramming.org/Engines",
-          "project_url": "https://chessprogramming.org/Armageddon",
-          "page_title": "Armageddon",
-          "page_path": "/Armageddon",
-          "section": "A",
-          "checked_at": "2026-10-19T00:59:52.557009+00:00",
-          "source": "wiki-engines"
-        }
-      ],
-      "source_code": [],
-      "chessprogramming_wiki": {
-        "status": "found",
-        "url": "https://chessprogramming.org/Armageddon",
-        "title": "Armageddon",
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "reviewed-title-alias",
-        "titles_checked": [
-          "Armageddon"
-        ]
-      },
-      "source_status": {
-        "tier": "E",
-        "availability": "not_located",
-        "licensing": "unknown",
-        "confidence": "low",
-        "checked_at": "2026-10-19T21:12:29+00:00"
-      }
-    },
-    {
-      "name": "Armageddon (Kasabasic)",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "Armageddon(2)",
-          "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "section": "2011 Releases",
-          "author": "many + Djordje Kasabasic",
-          "version": "1.0",
-          "protocol": "UCI",
-          "comment": "C source; mp; Win; this is a Fire derivative; program has same name as an existing engine",
-          "links": [
-            "https://www.mediafire.com/file/alk4s7ez5mq9cfi/Armageddon+1.0+Ippolit.rar"
-          ],
-          "date_added": "2011/03/09",
-          "checked_at": "2026-10-19T18:34:57.193219+00:00",
-          "source": "computer-chess-org"
-        }
-      ],
-      "source_code": [],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "Armageddon (Kasabasic)"
-        ]
-      },
-      "source_status": {
-        "tier": "B",
-        "availability": "not_located",
-        "licensing": "unknown",
-        "confidence": "low",
-        "checked_at": "2026-10-19T19:08:40+00:00"
-      }
-    },
-    {
-      "name": "Armageddon II",
-      "aliases": [],
-      "provenance": [
         {
           "label": "Armageddon II",
           "original_name": "Armageddon II",
@@ -19009,6 +19049,58 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Armageddon",
+          "listed_name": "Armageddon",
+          "url": "https://chessprogramming.org/Engines#alphabetical-list",
+          "listing_url": "https://chessprogramming.org/Engines",
+          "project_url": "https://chessprogramming.org/Armageddon",
+          "page_title": "Armageddon",
+          "page_path": "/Armageddon",
+          "section": "A",
+          "checked_at": "2026-10-19T00:59:52.557009+00:00",
+          "source": "wiki-engines"
+        }
+      ],
+      "source_code": [],
+      "chessprogramming_wiki": {
+        "status": "found",
+        "url": "https://chessprogramming.org/Armageddon",
+        "title": "Armageddon",
+        "checked_at": "2026-10-19T00:44:50.443299+00:00",
+        "evidence_url": "https://chessprogramming.org/search-index.json",
+        "method": "reviewed-title-alias",
+        "titles_checked": [
+          "Armageddon"
+        ]
+      },
+      "source_status": {
+        "tier": "D",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "low",
+        "checked_at": "2026-10-20T10:04:31+00:00"
+      }
+    },
+    {
+      "name": "Armageddon (Kasabasic)",
+      "aliases": [],
+      "provenance": [
+        {
+          "label": "Armageddon(2)",
+          "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
+          "section": "2011 Releases",
+          "author": "many + Djordje Kasabasic",
+          "version": "1.0",
+          "protocol": "UCI",
+          "comment": "C source; mp; Win; this is a Fire derivative; program has same name as an existing engine",
+          "links": [
+            "https://www.mediafire.com/file/alk4s7ez5mq9cfi/Armageddon+1.0+Ippolit.rar"
+          ],
+          "date_added": "2011/03/09",
+          "checked_at": "2026-10-19T18:34:57.193219+00:00",
+          "source": "computer-chess-org"
         }
       ],
       "source_code": [],
@@ -19020,15 +19112,15 @@
         "evidence_url": "https://chessprogramming.org/search-index.json",
         "method": "main-namespace-title-index",
         "titles_checked": [
-          "Armageddon II"
+          "Armageddon (Kasabasic)"
         ]
       },
       "source_status": {
-        "tier": "D",
+        "tier": "B",
         "availability": "not_located",
         "licensing": "unknown",
         "confidence": "low",
-        "checked_at": "2026-10-20T10:04:31+00:00"
+        "checked_at": "2026-10-19T19:08:40+00:00"
       }
     },
     {
@@ -22523,7 +22615,11 @@
           "source_release": "Awit-Wita historical archive",
           "evidence_url": "https://chessprogramming.org/Awit",
           "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:31:17.275251+00:00"
+          "checked_at": "2026-10-19T01:31:17.275251+00:00",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404 (also via https and ~tony)"
+          }
         },
         {
           "url": "http://webdocs.cs.ualberta.ca/%7Etony/Public/Awit-Wita-ComputerChess/AlgolwSupport/awit.pdf",
@@ -22531,7 +22627,17 @@
           "source_release": "historical Algol W",
           "evidence_url": "https://chessprogramming.org/Awit",
           "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:31:17.275251+00:00"
+          "checked_at": "2026-10-19T01:31:17.275251+00:00",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404"
+          }
+        },
+        {
+          "url": "https://web.archive.org/web/20251201025348/https://webdocs.cs.ualberta.ca/~tony/Public/Awit-Wita-ComputerChess/",
+          "evidence_url": "https://web.archive.org/web/20251201025348/https://webdocs.cs.ualberta.ca/~tony/Public/Awit-Wita-ComputerChess/",
+          "source": "link-review",
+          "kind": "Wayback snapshot of the original page (2025-12-01)"
         }
       ],
       "chessprogramming_wiki": {
@@ -25652,7 +25758,17 @@
           "note": "Dedicated university project page for the GPL ANSI C BBChess engine.",
           "evidence_url": "https://chessprogramming.org/BBChess_(SI)",
           "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:31:23.812741+00:00"
+          "checked_at": "2026-10-19T01:31:23.812741+00:00",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "connection timed out"
+          }
+        },
+        {
+          "url": "https://web.archive.org/web/20120125054457/http://labraj.uni-mb.si:80/en/Chess_program_BBChess",
+          "evidence_url": "https://web.archive.org/web/20120125054457/http://labraj.uni-mb.si:80/en/Chess_program_BBChess",
+          "source": "link-review",
+          "kind": "Wayback snapshot of the original page (2012-01-25)"
         }
       ],
       "chessprogramming_wiki": {
@@ -32579,8 +32695,28 @@
     },
     {
       "name": "BlitzKibitz",
-      "aliases": [],
+      "aliases": [
+        "BlitzKibitz/Amaterasu"
+      ],
       "provenance": [
+        {
+          "label": "BlitzKibitz/Amaterasu",
+          "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
+          "section": "2011 Releases",
+          "author": "Valentin Stanciu & Claudiu Bogdan Mihail",
+          "version": "1.0",
+          "protocol": "XB",
+          "comment": "C++ source; Win",
+          "links": [
+            "https://github.com/svalentin/blitzkibitz/releases",
+            "http://kirr.homeunix.org/chess/engines/Jim%20Ablett/",
+            "https://code.google.com/p/blitzkibitz/"
+          ],
+          "date_added": "2011/02/11",
+          "project_url": "https://github.com/svalentin/blitzkibitz/releases",
+          "checked_at": "2026-10-19T18:34:57.193219+00:00",
+          "source": "computer-chess-org"
+        },
         {
           "label": "BlitzKibitz",
           "original_name": "BlitzKibitz",
@@ -32689,6 +32825,11 @@
       "source_code": [
         {
           "url": "https://github.com/svalentin/blitzkibitz",
+          "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
+          "source": "computer-chess-org"
+        },
+        {
+          "url": "https://github.com/svalentin/blitzkibitz",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
           "source": "rwbc"
         }
@@ -32702,48 +32843,6 @@
         "method": "main-namespace-title-index",
         "titles_checked": [
           "BlitzKibitz"
-        ]
-      }
-    },
-    {
-      "name": "BlitzKibitz/Amaterasu",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "BlitzKibitz/Amaterasu",
-          "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "section": "2011 Releases",
-          "author": "Valentin Stanciu & Claudiu Bogdan Mihail",
-          "version": "1.0",
-          "protocol": "XB",
-          "comment": "C++ source; Win",
-          "links": [
-            "https://github.com/svalentin/blitzkibitz/releases",
-            "http://kirr.homeunix.org/chess/engines/Jim%20Ablett/",
-            "https://code.google.com/p/blitzkibitz/"
-          ],
-          "date_added": "2011/02/11",
-          "project_url": "https://github.com/svalentin/blitzkibitz/releases",
-          "checked_at": "2026-10-19T18:34:57.193219+00:00",
-          "source": "computer-chess-org"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/svalentin/blitzkibitz",
-          "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "BlitzKibitz/Amaterasu"
         ]
       }
     },
@@ -34573,37 +34672,6 @@
       }
     },
     {
-      "name": "Bongcloud",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "Bongcloud",
-          "url": "https://sscg13.pythonanywhere.com/",
-          "project_url": "https://github.com/sireButItsUnique/sireButItsAnEngine",
-          "source": "openbench-sscg13",
-          "checked_at": "2026-10-19T04:29:21.590677+00:00"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/sireButItsUnique/sireButItsAnEngine",
-          "evidence_url": "https://sscg13.pythonanywhere.com/",
-          "source": "openbench-sscg13"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "Bongcloud"
-        ]
-      }
-    },
-    {
       "name": "Booot",
       "aliases": [],
       "provenance": [
@@ -36162,18 +36230,36 @@
         {
           "url": "https://bitbucket.org/waterreaction/brainless",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "source": "computer-chess-org",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404 (Bitbucket removed Mercurial repositories in 2020)"
+          }
         },
         {
           "url": "https://bitbucket.org/waterreaction/brainless",
           "evidence_url": "https://chessprogramming.org/Brainless",
           "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T00:45:49.081585+00:00"
+          "checked_at": "2026-10-19T00:45:49.081585+00:00",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404 (Bitbucket removed Mercurial repositories in 2020)"
+          }
         },
         {
           "url": "https://bitbucket.org/waterreaction/brainless",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
-          "source": "rwbc"
+          "source": "rwbc",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404 (Bitbucket removed Mercurial repositories in 2020)"
+          }
+        },
+        {
+          "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://bitbucket.org/waterreaction/brainless",
+          "evidence_url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://bitbucket.org/waterreaction/brainless",
+          "source": "link-review",
+          "kind": "Software Heritage archive of the original repository (last visit 2020-07-16)"
         }
       ],
       "chessprogramming_wiki": {
@@ -41771,7 +41857,9 @@
     },
     {
       "name": "Calculon",
-      "aliases": [],
+      "aliases": [
+        "CalculonX"
+      ],
       "provenance": [
         {
           "label": "Calculon",
@@ -41792,58 +41880,6 @@
           "checked_at": "2026-10-19T18:34:57.193219+00:00",
           "source": "computer-chess-org"
         },
-        {
-          "label": "Calculon 0.4.2 InBetween",
-          "url": "https://e4e6.com/ubc_ratings.php",
-          "request_data": {
-            "type": "type3"
-          },
-          "source": "ubc",
-          "checked_at": "2026-10-18T19:49:18.418245+00:00"
-        },
-        {
-          "label": "Calculon by Barry Smith",
-          "listed_name": "Calculon",
-          "url": "https://chessprogramming.org/Engines#alphabetical-list",
-          "listing_url": "https://chessprogramming.org/Engines",
-          "project_url": "https://chessprogramming.org/Calculon",
-          "page_title": "Calculon",
-          "page_path": "/Calculon",
-          "section": "C",
-          "checked_at": "2026-10-19T00:59:52.557009+00:00",
-          "source": "wiki-engines"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/BarrySW19/CalculonX",
-          "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
-        },
-        {
-          "url": "https://github.com/BarrySW19/CalculonX",
-          "note": "Repository named CalculonX; wiki cites it as the open source Calculon host.",
-          "evidence_url": "https://chessprogramming.org/Calculon",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T00:45:55.670479+00:00"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "found",
-        "url": "https://chessprogramming.org/Calculon",
-        "title": "Calculon",
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "reviewed-title-alias",
-        "titles_checked": [
-          "Calculon"
-        ]
-      }
-    },
-    {
-      "name": "CalculonX",
-      "aliases": [],
-      "provenance": [
         {
           "label": "CalculonX",
           "original_name": "CalculonX",
@@ -41949,9 +41985,42 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Calculon 0.4.2 InBetween",
+          "url": "https://e4e6.com/ubc_ratings.php",
+          "request_data": {
+            "type": "type3"
+          },
+          "source": "ubc",
+          "checked_at": "2026-10-18T19:49:18.418245+00:00"
+        },
+        {
+          "label": "Calculon by Barry Smith",
+          "listed_name": "Calculon",
+          "url": "https://chessprogramming.org/Engines#alphabetical-list",
+          "listing_url": "https://chessprogramming.org/Engines",
+          "project_url": "https://chessprogramming.org/Calculon",
+          "page_title": "Calculon",
+          "page_path": "/Calculon",
+          "section": "C",
+          "checked_at": "2026-10-19T00:59:52.557009+00:00",
+          "source": "wiki-engines"
         }
       ],
       "source_code": [
+        {
+          "url": "https://github.com/BarrySW19/CalculonX",
+          "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
+          "source": "computer-chess-org"
+        },
+        {
+          "url": "https://github.com/BarrySW19/CalculonX",
+          "note": "Repository named CalculonX; wiki cites it as the open source Calculon host.",
+          "evidence_url": "https://chessprogramming.org/Calculon",
+          "source": "chessprogramming-wiki",
+          "checked_at": "2026-10-19T00:45:55.670479+00:00"
+        },
         {
           "url": "https://github.com/BarrySW19/CalculonX",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
@@ -41959,14 +42028,14 @@
         }
       ],
       "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
+        "status": "found",
+        "url": "https://chessprogramming.org/Calculon",
+        "title": "Calculon",
         "checked_at": "2026-10-19T00:44:50.443299+00:00",
         "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
+        "method": "reviewed-title-alias",
         "titles_checked": [
-          "CalculonX"
+          "Calculon"
         ]
       }
     },
@@ -55308,8 +55377,27 @@
     },
     {
       "name": "Chess3",
-      "aliases": [],
+      "aliases": [
+        "Julien's Chess3"
+      ],
       "provenance": [
+        {
+          "label": "Julien's Chess3",
+          "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
+          "section": "2019 Releases",
+          "author": "Julien Rialland",
+          "version": "0.2",
+          "protocol": "XB",
+          "comment": "Python source; buggy engine; requires Python interpreter with '-u' option invoked (to disable i/o buffering); formerly known as 'Chess3'",
+          "links": [
+            "https://github.com/jrialland/python-chess",
+            "https://docs.python.org/2/using/cmdline.html#cmdoption-u"
+          ],
+          "date_added": "2019/06/30",
+          "project_url": "https://github.com/jrialland/python-chess",
+          "checked_at": "2026-10-19T18:34:57.193219+00:00",
+          "source": "computer-chess-org"
+        },
         {
           "label": "Chess3",
           "original_name": "Chess3",
@@ -55415,6 +55503,11 @@
         }
       ],
       "source_code": [
+        {
+          "url": "https://github.com/jrialland/python-chess",
+          "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
+          "source": "computer-chess-org"
+        },
         {
           "url": "https://github.com/jrialland/python-chess",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
@@ -57017,7 +57110,17 @@
         {
           "url": "https://github.com/ForestBits/chessengine",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "source": "computer-chess-org",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
+        },
+        {
+          "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/ForestBits/chessengine",
+          "evidence_url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/ForestBits/chessengine",
+          "source": "link-review",
+          "kind": "Software Heritage archive of the original repository (last visit 2021-09-04)"
         }
       ],
       "chessprogramming_wiki": {
@@ -58205,47 +58308,6 @@
         "licensing": "unknown",
         "confidence": "medium",
         "checked_at": "2026-10-19T19:08:40+00:00"
-      }
-    },
-    {
-      "name": "Chesslib",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "Chesslib 0.0.3 dev_1c05597 bmi2 JA",
-          "url": "https://e4e6.com/ubc_ratings.php",
-          "request_data": {
-            "type": "type3"
-          },
-          "source": "ubc",
-          "checked_at": "2026-10-18T19:49:18.418245+00:00"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/fathzer-games/chesslib-uci-engine",
-          "evidence_url": "https://api.github.com/repos/fathzer-games/chesslib-uci-engine/commits/1c05597",
-          "source": "source-status-research",
-          "kind": "original repository"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "Chesslib"
-        ]
-      },
-      "source_status": {
-        "tier": "F",
-        "availability": "available",
-        "licensing": "open_source",
-        "confidence": "high",
-        "checked_at": "2026-10-20T00:32:00+00:00"
       }
     },
     {
@@ -63657,7 +63719,9 @@
     },
     {
       "name": "CL-U-E",
-      "aliases": [],
+      "aliases": [
+        "Chesslib"
+      ],
       "provenance": [
         {
           "label": "CL-U-E",
@@ -63762,6 +63826,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Chesslib 0.0.3 dev_1c05597 bmi2 JA",
+          "url": "https://e4e6.com/ubc_ratings.php",
+          "request_data": {
+            "type": "type3"
+          },
+          "source": "ubc",
+          "checked_at": "2026-10-18T19:49:18.418245+00:00"
         }
       ],
       "source_code": [
@@ -63788,7 +63861,7 @@
         "availability": "available",
         "licensing": "open_source",
         "confidence": "high",
-        "checked_at": "2026-10-19T16:03:32+00:00"
+        "checked_at": "2026-10-20T00:32:00+00:00"
       }
     },
     {
@@ -75095,12 +75168,20 @@
         {
           "url": "https://github.com/op12no2/chess-archive",
           "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Cwtch+6+64-bit",
-          "source": "ccrl"
+          "source": "ccrl",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
         },
         {
           "url": "https://github.com/op12no2/chess-archive",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
-          "source": "amateurschach"
+          "source": "amateurschach",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
         },
         {
           "url": "https://github.com/op12no2/cwtch",
@@ -75608,7 +75689,9 @@
     },
     {
       "name": "Cyclone",
-      "aliases": [],
+      "aliases": [
+        "Cyclone xTreme"
+      ],
       "provenance": [
         {
           "label": "Cyclone 1.0 beta 1CPU",
@@ -75751,6 +75834,23 @@
           "source": "cegt"
         },
         {
+          "label": "Cyclone xTreme",
+          "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
+          "section": "2009 Releases",
+          "author": "Norman Schmidt (Kranium)",
+          "version": "Stormpack",
+          "protocol": "UCI",
+          "comment": "C++ source; Toga/Fruit clone; FRC; Win; mp(16 threads max); multi-pv; very configurable; uses Daniel Shawul's egbb files; Polyglot books",
+          "links": [
+            "http://users.telenet.be/chesslogik/cyclone.htm",
+            "http://hardy.uhasselt.be/Toga/posix_versions/more_ports/"
+          ],
+          "date_added": "2009/09/24",
+          "project_url": "http://users.telenet.be/chesslogik/cyclone.htm",
+          "checked_at": "2026-10-19T18:34:57.193219+00:00",
+          "source": "computer-chess-org"
+        },
+        {
           "label": "Cyclone",
           "listed_name": "Cyclone",
           "url": "https://chessprogramming.org/Engines#alphabetical-list",
@@ -75787,55 +75887,6 @@
         "availability": "available",
         "licensing": "open_source",
         "confidence": "medium",
-        "checked_at": "2026-10-19T05:36:46+00:00"
-      }
-    },
-    {
-      "name": "Cyclone xTreme",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "Cyclone xTreme",
-          "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "section": "2009 Releases",
-          "author": "Norman Schmidt (Kranium)",
-          "version": "Stormpack",
-          "protocol": "UCI",
-          "comment": "C++ source; Toga/Fruit clone; FRC; Win; mp(16 threads max); multi-pv; very configurable; uses Daniel Shawul's egbb files; Polyglot books",
-          "links": [
-            "http://users.telenet.be/chesslogik/cyclone.htm",
-            "http://hardy.uhasselt.be/Toga/posix_versions/more_ports/"
-          ],
-          "date_added": "2009/09/24",
-          "project_url": "http://users.telenet.be/chesslogik/cyclone.htm",
-          "checked_at": "2026-10-19T18:34:57.193219+00:00",
-          "source": "computer-chess-org"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/FireFather/cyclone-xTreme",
-          "evidence_url": "https://github.com/FireFather/cyclone-xTreme",
-          "source": "source-status-research",
-          "kind": "original author repository (re-published 2023)"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "Cyclone xTreme"
-        ]
-      },
-      "source_status": {
-        "tier": "B",
-        "availability": "available",
-        "licensing": "open_source",
-        "confidence": "high",
         "checked_at": "2026-10-19T19:08:40+00:00"
       }
     },
@@ -80824,7 +80875,17 @@
           "note": "Historical source landing page; wiki describes personal-use restrictions, not unrestricted redistribution. Link liveness not verified.",
           "evidence_url": "https://chessprogramming.org/Delfi",
           "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T00:46:21.166763+00:00"
+          "checked_at": "2026-10-19T00:46:21.166763+00:00",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404 (the site root now serves an IIS error page)"
+          }
+        },
+        {
+          "url": "https://web.archive.org/web/20241007035725/http://www.msbsoftware.it/delfi/source.htm",
+          "evidence_url": "https://web.archive.org/web/20241007035725/http://www.msbsoftware.it/delfi/source.htm",
+          "source": "link-review",
+          "kind": "Wayback snapshot of the original source page (2024-10-07)"
         }
       ],
       "chessprogramming_wiki": {
@@ -87925,7 +87986,11 @@
         {
           "url": "https://github.com/ZirconiumX/Dorpsgek",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "source": "computer-chess-org",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
         },
         {
           "url": "https://web.archive.org/web/20180821032641/https://github.com/ZirconiumX/Dorpsgek",
@@ -87933,6 +87998,12 @@
           "evidence_url": "https://chessprogramming.org/Dorpsgek",
           "source": "chessprogramming-wiki",
           "checked_at": "2026-10-19T00:46:33.180858+00:00"
+        },
+        {
+          "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/ZirconiumX/Dorpsgek",
+          "evidence_url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/ZirconiumX/Dorpsgek",
+          "source": "link-review",
+          "kind": "Software Heritage archive of the original repository (last visit 2020-04-10)"
         }
       ],
       "chessprogramming_wiki": {
@@ -93276,8 +93347,28 @@
     },
     {
       "name": "EGM",
-      "aliases": [],
+      "aliases": [
+        "Electronic Grand Master"
+      ],
       "provenance": [
+        {
+          "label": "Electronic Grand Master",
+          "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
+          "section": "2015 Releases",
+          "author": "Benny Abramovici",
+          "version": "EGM TM",
+          "protocol": "UCI",
+          "comment": "C++ source; mp; Mac, Win",
+          "links": [
+            "https://github.com/eventhorizon02/Chess-engine",
+            "https://drive.google.com/drive/folders/0B5Ao6h_yMCl6ay04RjVtUDVTUG8",
+            "https://drive.google.com/drive/folders/0B9voFYjJVtn_YTBqZHlLYzU4X3M"
+          ],
+          "date_added": "2015/12/21",
+          "project_url": "https://github.com/eventhorizon02/Chess-engine",
+          "checked_at": "2026-10-19T18:34:57.193219+00:00",
+          "source": "computer-chess-org"
+        },
         {
           "label": "EGM",
           "original_name": "EGM",
@@ -93386,9 +93477,8 @@
       "source_code": [
         {
           "url": "https://github.com/eventhorizon02/Chess-engine",
-          "evidence_url": "https://github.com/eventhorizon02/Chess-engine",
-          "source": "source-status-research",
-          "kind": "original repository"
+          "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
+          "source": "computer-chess-org"
         }
       ],
       "chessprogramming_wiki": {
@@ -94129,48 +94219,6 @@
         "method": "main-namespace-title-index",
         "titles_checked": [
           "Eleanor"
-        ]
-      }
-    },
-    {
-      "name": "Electronic Grand Master",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "Electronic Grand Master",
-          "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "section": "2015 Releases",
-          "author": "Benny Abramovici",
-          "version": "EGM TM",
-          "protocol": "UCI",
-          "comment": "C++ source; mp; Mac, Win",
-          "links": [
-            "https://github.com/eventhorizon02/Chess-engine",
-            "https://drive.google.com/drive/folders/0B5Ao6h_yMCl6ay04RjVtUDVTUG8",
-            "https://drive.google.com/drive/folders/0B9voFYjJVtn_YTBqZHlLYzU4X3M"
-          ],
-          "date_added": "2015/12/21",
-          "project_url": "https://github.com/eventhorizon02/Chess-engine",
-          "checked_at": "2026-10-19T18:34:57.193219+00:00",
-          "source": "computer-chess-org"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/eventhorizon02/Chess-engine",
-          "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "Electronic Grand Master"
         ]
       }
     },
@@ -95255,13 +95303,27 @@
         {
           "url": "https://github.com/flok99/Embla",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "source": "computer-chess-org",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
         },
         {
           "url": "https://github.com/flok99/embla",
           "evidence_url": "https://chessprogramming.org/Embla",
           "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T00:46:38.864162+00:00"
+          "checked_at": "2026-10-19T00:46:38.864162+00:00",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
+        },
+        {
+          "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/flok99/Embla",
+          "evidence_url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/flok99/Embla",
+          "source": "link-review",
+          "kind": "Software Heritage archive of the original repository (last visit 2019-03-09)"
         }
       ],
       "chessprogramming_wiki": {
@@ -95433,7 +95495,9 @@
     },
     {
       "name": "Emerald",
-      "aliases": [],
+      "aliases": [
+        "Emerald Chess"
+      ],
       "provenance": [
         {
           "label": "Emerald",
@@ -95537,6 +95601,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Emerald Chess 0.2.0 avx2",
+          "url": "https://e4e6.com/ubc_ratings.php",
+          "request_data": {
+            "type": "type3"
+          },
+          "source": "ubc",
+          "checked_at": "2026-10-18T19:49:18.418245+00:00"
         }
       ],
       "source_code": [
@@ -95555,40 +95628,6 @@
         "method": "main-namespace-title-index",
         "titles_checked": [
           "Emerald"
-        ]
-      }
-    },
-    {
-      "name": "Emerald Chess",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "Emerald Chess 0.2.0 avx2",
-          "url": "https://e4e6.com/ubc_ratings.php",
-          "request_data": {
-            "type": "type3"
-          },
-          "source": "ubc",
-          "checked_at": "2026-10-18T19:49:18.418245+00:00"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/UndefinedCpp/EmeraldChessEngine",
-          "evidence_url": "https://github.com/UndefinedCpp/EmeraldChessEngine",
-          "source": "source-status-research",
-          "kind": "original repository"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "Emerald Chess"
         ]
       },
       "source_status": {
@@ -102513,6 +102552,11 @@
       ],
       "source_code": [
         {
+          "url": "https://sourceforge.net/projects/faile/",
+          "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
+          "source": "computer-chess-org"
+        },
+        {
           "url": "http://prdownloads.sourceforge.net/faile/faile_1_4_4.tar.gz",
           "evidence_url": "https://faile.sourceforge.net/download.php.html",
           "source": "source-status-research",
@@ -102522,12 +102566,11 @@
           "url": "https://git.code.sf.net/p/faile/code",
           "evidence_url": "https://faile.sourceforge.net/download.php.html",
           "source": "source-status-research",
-          "kind": "original repository (SourceForge git)"
-        },
-        {
-          "url": "https://sourceforge.net/projects/faile/",
-          "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "kind": "original repository (SourceForge git)",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404 in a browser (git clone URL, not a web page)"
+          }
         }
       ],
       "chessprogramming_wiki": {
@@ -102701,7 +102744,17 @@
           "url": "http://hgm.nubati.net/cgi-bin/gitweb.cgi?p=fairymax.git;a=summary",
           "evidence_url": "https://chessprogramming.org/Fairy-Max",
           "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T00:46:49.682645+00:00"
+          "checked_at": "2026-10-19T00:46:49.682645+00:00",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404 (gitweb removed; site root still up)"
+          }
+        },
+        {
+          "url": "https://salsa.debian.org/games-team/fairymax",
+          "evidence_url": "https://salsa.debian.org/games-team/fairymax",
+          "source": "link-review",
+          "kind": "Debian Games Team packaging repository with the upstream source"
         }
       ],
       "chessprogramming_wiki": {
@@ -103463,13 +103516,27 @@
         {
           "url": "https://github.com/flok99/feeks",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "source": "computer-chess-org",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
         },
         {
           "url": "https://github.com/flok99/feeks",
           "evidence_url": "https://chessprogramming.org/Feeks",
           "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:35:41.109583+00:00"
+          "checked_at": "2026-10-19T01:35:41.109583+00:00",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
+        },
+        {
+          "url": "https://github.com/folkertvanheusden/Feeks",
+          "evidence_url": "https://github.com/folkertvanheusden/Feeks",
+          "source": "link-review",
+          "kind": "author Folkert van Heusden's current repository"
         }
       ],
       "chessprogramming_wiki": {
@@ -103649,12 +103716,26 @@
         {
           "url": "http://bitbucket.org/Felice_Pollano/felpo-ii",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "source": "computer-chess-org",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404 (Bitbucket removed Mercurial repositories in 2020)"
+          }
         },
         {
           "url": "https://bitbucket.org/Felice_Pollano/felpo-ii",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
-          "source": "rwbc"
+          "source": "rwbc",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404 (Bitbucket removed Mercurial repositories in 2020)"
+          }
+        },
+        {
+          "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://bitbucket.org/Felice_Pollano/felpo-ii",
+          "evidence_url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://bitbucket.org/Felice_Pollano/felpo-ii",
+          "source": "link-review",
+          "kind": "Software Heritage archive of the original repository (last visit 2020-07-16)"
         }
       ],
       "chessprogramming_wiki": {
@@ -104783,7 +104864,17 @@
         {
           "url": "https://github.com/edlich/Finny",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "source": "computer-chess-org",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
+        },
+        {
+          "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/edlich/Finny",
+          "evidence_url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/edlich/Finny",
+          "source": "link-review",
+          "kind": "Software Heritage archive of the original repository (last visit 2024-06-28)"
         }
       ],
       "chessprogramming_wiki": {
@@ -107415,7 +107506,9 @@
     },
     {
       "name": "Flying-Dutchman",
-      "aliases": [],
+      "aliases": [
+        "The Flying Dutchman"
+      ],
       "provenance": [
         {
           "label": "flying-dutchman-bot",
@@ -107529,6 +107622,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "The Flying Dutchman 0.1.0",
+          "url": "https://e4e6.com/ubc_ratings.php",
+          "request_data": {
+            "type": "type3"
+          },
+          "source": "ubc",
+          "checked_at": "2026-10-18T19:49:18.418245+00:00"
         }
       ],
       "source_code": [
@@ -107548,6 +107650,13 @@
         "titles_checked": [
           "Flying-Dutchman"
         ]
+      },
+      "source_status": {
+        "tier": "B",
+        "availability": "available",
+        "licensing": "open_source",
+        "confidence": "high",
+        "checked_at": "2026-10-21T04:45:00+00:00"
       }
     },
     {
@@ -117220,7 +117329,9 @@
     },
     {
       "name": "GFC",
-      "aliases": [],
+      "aliases": [
+        "GFCv2"
+      ],
       "provenance": [
         {
           "label": "GFC",
@@ -117240,45 +117351,7 @@
           "project_url": "https://sites.google.com/site/chronosce/downloads",
           "checked_at": "2026-10-19T18:34:57.193219+00:00",
           "source": "computer-chess-org"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://drive.google.com/file/d/1Cv9MtcTZmfLqp-p7jwgg4Hrx2mYjnFoI/view",
-          "evidence_url": "https://drive.google.com/embeddedfolderview?id=1XZwemBbJmADo3wPfb1G9ZFFBsgB9bzMl#list",
-          "source": "source-status-research",
-          "kind": "author download (zip, GFC v2 source + Release build) via Google Drive folder embedded on author site"
         },
-        {
-          "url": "https://drive.google.com/file/d/163sU-XpB-X86ey1shNV-TBXgdOPrmsSy/view",
-          "evidence_url": "https://drive.google.com/embeddedfolderview?id=1XZwemBbJmADo3wPfb1G9ZFFBsgB9bzMl#list",
-          "source": "source-status-research",
-          "kind": "author download (zip, GFC v1 src/)"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "GFC"
-        ]
-      },
-      "source_status": {
-        "tier": "B",
-        "availability": "available",
-        "licensing": "source_available",
-        "confidence": "high",
-        "checked_at": "2026-10-19T20:05:41+00:00"
-      }
-    },
-    {
-      "name": "GFCv2",
-      "aliases": [],
-      "provenance": [
         {
           "label": "GFCv2#",
           "original_name": "GFCv2#",
@@ -117386,8 +117459,20 @@
       ],
       "source_code": [
         {
+          "url": "https://drive.google.com/file/d/1Cv9MtcTZmfLqp-p7jwgg4Hrx2mYjnFoI/view",
+          "evidence_url": "https://drive.google.com/embeddedfolderview?id=1XZwemBbJmADo3wPfb1G9ZFFBsgB9bzMl#list",
+          "source": "source-status-research",
+          "kind": "author download (zip, GFC v2 source + Release build) via Google Drive folder embedded on author site"
+        },
+        {
+          "url": "https://drive.google.com/file/d/163sU-XpB-X86ey1shNV-TBXgdOPrmsSy/view",
+          "evidence_url": "https://drive.google.com/embeddedfolderview?id=1XZwemBbJmADo3wPfb1G9ZFFBsgB9bzMl#list",
+          "source": "source-status-research",
+          "kind": "author download (zip, GFC v1 src/)"
+        },
+        {
           "url": "https://web.archive.org/web/20201009233749id_/https://db5ece14-a-62cb3a1a-s-sites.googlegroups.com/site/chronosce/downloads/GFCv2.zip?attachauth=ANoY7coQpdlj0IM8UnhFA5dKYnpRQn9NVTgXeyvFNQHDo-HGVnGBqHXxVRulnaIyAodM0DjSX0-ILAtrabtzDlr52q1xk8thDiusNSVLVpXOZcSH2os8xzuGoEstzaG8wskqPV51lFdkdUbP-1IB5ZLmMI6_g6eaaqUv6gOV1zpfOe8kOzeZDzpH0d8PnoO0ZemsBmPKa39cB3WqBeIG7JFXK5YXR6v7wA%3D%3D&attredirects=0",
-          "evidence_url": "https://web.archive.org/web/20090219221722/http://sites.google.com/site/chronosce/downloads",
+          "evidence_url": "https://drive.google.com/embeddedfolderview?id=1XZwemBbJmADo3wPfb1G9ZFFBsgB9bzMl#list",
           "source": "source-status-research",
           "kind": "Wayback snapshot of author download (zip with C++ source + exe)"
         }
@@ -117400,15 +117485,15 @@
         "evidence_url": "https://chessprogramming.org/search-index.json",
         "method": "main-namespace-title-index",
         "titles_checked": [
-          "GFCv2"
+          "GFC"
         ]
       },
       "source_status": {
         "tier": "B",
-        "availability": "archived_only",
+        "availability": "available",
         "licensing": "source_available",
         "confidence": "high",
-        "checked_at": "2026-10-19T16:26:46+00:00"
+        "checked_at": "2026-10-19T20:05:41+00:00"
       }
     },
     {
@@ -117973,7 +118058,11 @@
         {
           "url": "https://github.com/gideongrinberg/gce",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
-          "source": "rwbc"
+          "source": "rwbc",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found; no Software Heritage or Wayback copy found"
+          }
         }
       ],
       "chessprogramming_wiki": {
@@ -118948,12 +119037,20 @@
         {
           "url": "https://bitbucket.org/waterreaction/giraffe",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
-          "source": "rwbc"
+          "source": "rwbc",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404 (Bitbucket removed Mercurial repositories in 2020)"
+          }
         },
         {
           "url": "https://bitbucket.org/waterreaction/giraffedownloads",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "source": "computer-chess-org",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404"
+          }
         },
         {
           "url": "https://github.com/ianfab/Giraffe",
@@ -120878,7 +120975,11 @@
           "source_release": "GNU Chess 5 (fork)",
           "evidence_url": "https://chessprogramming.org/GNU_Chess",
           "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T00:47:11.729944+00:00"
+          "checked_at": "2026-10-19T00:47:11.729944+00:00",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
         }
       ],
       "chessprogramming_wiki": {
@@ -138146,18 +138247,30 @@
         {
           "url": "https://bitbucket.org/abrenkman/ifrit_chess_engine",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "source": "computer-chess-org",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404 (Bitbucket removed Mercurial repositories in 2020)"
+          }
         },
         {
           "url": "https://bitbucket.org/abrenkman/ifrit_chess_engine",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
-          "source": "rwbc"
+          "source": "rwbc",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404 (Bitbucket removed Mercurial repositories in 2020)"
+          }
         },
         {
           "url": "https://bitbucket.org/abrenkman/ifrit_chess_engine/src/default/",
           "evidence_url": "https://chessprogramming.org/Ifrit",
           "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T00:47:29.311201+00:00"
+          "checked_at": "2026-10-19T00:47:29.311201+00:00",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404"
+          }
         },
         {
           "url": "https://github.com/LongWayA/Ifrit_chess_engine",
@@ -140843,12 +140956,26 @@
         {
           "url": "https://github.com/angyjoe/intellichess",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "source": "computer-chess-org",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
         },
         {
           "url": "https://sourceforge.net/projects/intellichess/",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "source": "computer-chess-org",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404"
+          }
+        },
+        {
+          "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/angyjoe/intellichess",
+          "evidence_url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/angyjoe/intellichess",
+          "source": "link-review",
+          "kind": "Software Heritage archive of the original repository (last visit 2021-01-01)"
         }
       ],
       "chessprogramming_wiki": {
@@ -146517,8 +146644,139 @@
     },
     {
       "name": "Joker IT",
-      "aliases": [],
+      "aliases": [
+        "Joker2"
+      ],
       "provenance": [
+        {
+          "label": "Joker2",
+          "url": "https://computerchess.org.uk/4040/cgi/compare_engines.cgi?family=Joker2&print=Rating+list",
+          "source": "ccrl",
+          "checked_at": "2026-10-18T19:53:20.932911+00:00"
+        },
+        {
+          "label": "Joker(2)",
+          "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
+          "section": "2017 Releases",
+          "author": "Manlio Morini",
+          "version": "0.7.7",
+          "protocol": "UCI",
+          "comment": "C++ source; Linux, Win; poorly named: Joker engine already exists",
+          "links": [
+            "https://github.com/morinim/joker",
+            "https://drive.google.com/open?id=0B-PM8aD2-9I4Tkh2ZTFkbnRmVnM",
+            "http://www.eosdev.it/joker/"
+          ],
+          "date_added": "2017/09/22",
+          "project_url": "https://github.com/morinim/joker",
+          "checked_at": "2026-10-19T18:34:57.193219+00:00",
+          "source": "computer-chess-org"
+        },
+        {
+          "label": "Joker2",
+          "original_name": "Joker2",
+          "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
+          "listing_url": "https://rwbc-chess.de/",
+          "sheet_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
+          "rank": 584,
+          "authors": "Morini Manlio",
+          "alternate_names": "",
+          "previous_names": "",
+          "distribution": "free",
+          "source_flag": "yes",
+          "links": [
+            "https://www.eosdev.it/joker/",
+            "https://github.com/morinim/joker",
+            "https://drive.google.com/open?id=0B-PM8aD2-9I4Tkh2ZTFkbnRmVnM"
+          ],
+          "row": [
+            "584",
+            "Joker2",
+            "Morini Manlio",
+            "ITA",
+            "",
+            "",
+            "-",
+            "2001-09",
+            "2017-09",
+            "C1",
+            "XB",
+            "yes",
+            "C++",
+            "-",
+            "-",
+            "NAL",
+            "",
+            "",
+            "free",
+            "0.7.7 LC",
+            "2017-09-18",
+            "9.1",
+            "9.1",
+            "",
+            "",
+            "https://www.eosdev.it/joker/\nhttps://github.com/morinim/joker\nhttps://drive.google.com/open?id=0B-PM8aD2-9I4Tkh2ZTFkbnRmVnM"
+          ],
+          "headers": [
+            "",
+            "Name\n(color description\ns. TOC)",
+            "Author L.N. F.N.",
+            "CC3",
+            "F1",
+            "F2",
+            "LR/LV (dev)",
+            "",
+            "",
+            "RC\n(s. TOC)",
+            "Prot",
+            "Src",
+            "PL",
+            "NN\nNNUE",
+            "MP",
+            "EGT",
+            "N-Alias\n(base/add.)",
+            "N-Pre\nLV",
+            "Dist.",
+            "Vers. FR",
+            "",
+            "",
+            "",
+            "CMD (arg) Config\nExamples",
+            "Peculiarities + Bugs + Info",
+            "Web/Download"
+          ],
+          "sheet_metadata": [
+            "10/18/2026",
+            "",
+            "",
+            "Alpha List (current count :: 1241)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "declared_count": 1241,
+          "checked_at": "2026-10-19T01:17:00.508078+00:00",
+          "source": "rwbc"
+        },
         {
           "label": "Joker by Manlio Morini",
           "listed_name": "Joker",
@@ -146536,11 +146794,21 @@
       "source_code": [
         {
           "url": "https://github.com/morinim/joker",
+          "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
+          "source": "computer-chess-org"
+        },
+        {
+          "url": "https://github.com/morinim/joker",
           "source_release": "1998–2001 development, published 2017",
           "note": "Historical source artifact, not evidence of a current release.",
           "evidence_url": "https://chessprogramming.org/Joker_IT",
           "source": "chessprogramming-wiki",
           "checked_at": "2026-10-19T01:37:24.710842+00:00"
+        },
+        {
+          "url": "https://github.com/morinim/joker",
+          "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Joker2+0.7.7+64-bit",
+          "source": "ccrl"
         }
       ],
       "chessprogramming_wiki": {
@@ -146750,164 +147018,6 @@
         "licensing": "unknown",
         "confidence": "low",
         "checked_at": "2026-10-19T02:49:49+00:00"
-      }
-    },
-    {
-      "name": "Joker2",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "Joker2",
-          "url": "https://computerchess.org.uk/4040/cgi/compare_engines.cgi?family=Joker2&print=Rating+list",
-          "source": "ccrl",
-          "checked_at": "2026-10-18T19:53:20.932911+00:00"
-        },
-        {
-          "label": "Joker(2)",
-          "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "section": "2017 Releases",
-          "author": "Manlio Morini",
-          "version": "0.7.7",
-          "protocol": "UCI",
-          "comment": "C++ source; Linux, Win; poorly named: Joker engine already exists",
-          "links": [
-            "https://github.com/morinim/joker",
-            "https://drive.google.com/open?id=0B-PM8aD2-9I4Tkh2ZTFkbnRmVnM",
-            "http://www.eosdev.it/joker/"
-          ],
-          "date_added": "2017/09/22",
-          "project_url": "https://github.com/morinim/joker",
-          "checked_at": "2026-10-19T18:34:57.193219+00:00",
-          "source": "computer-chess-org"
-        },
-        {
-          "label": "Joker2",
-          "original_name": "Joker2",
-          "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
-          "listing_url": "https://rwbc-chess.de/",
-          "sheet_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
-          "rank": 584,
-          "authors": "Morini Manlio",
-          "alternate_names": "",
-          "previous_names": "",
-          "distribution": "free",
-          "source_flag": "yes",
-          "links": [
-            "https://www.eosdev.it/joker/",
-            "https://github.com/morinim/joker",
-            "https://drive.google.com/open?id=0B-PM8aD2-9I4Tkh2ZTFkbnRmVnM"
-          ],
-          "row": [
-            "584",
-            "Joker2",
-            "Morini Manlio",
-            "ITA",
-            "",
-            "",
-            "-",
-            "2001-09",
-            "2017-09",
-            "C1",
-            "XB",
-            "yes",
-            "C++",
-            "-",
-            "-",
-            "NAL",
-            "",
-            "",
-            "free",
-            "0.7.7 LC",
-            "2017-09-18",
-            "9.1",
-            "9.1",
-            "",
-            "",
-            "https://www.eosdev.it/joker/\nhttps://github.com/morinim/joker\nhttps://drive.google.com/open?id=0B-PM8aD2-9I4Tkh2ZTFkbnRmVnM"
-          ],
-          "headers": [
-            "",
-            "Name\n(color description\ns. TOC)",
-            "Author L.N. F.N.",
-            "CC3",
-            "F1",
-            "F2",
-            "LR/LV (dev)",
-            "",
-            "",
-            "RC\n(s. TOC)",
-            "Prot",
-            "Src",
-            "PL",
-            "NN\nNNUE",
-            "MP",
-            "EGT",
-            "N-Alias\n(base/add.)",
-            "N-Pre\nLV",
-            "Dist.",
-            "Vers. FR",
-            "",
-            "",
-            "",
-            "CMD (arg) Config\nExamples",
-            "Peculiarities + Bugs + Info",
-            "Web/Download"
-          ],
-          "sheet_metadata": [
-            "10/18/2026",
-            "",
-            "",
-            "Alpha List (current count :: 1241)",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "declared_count": 1241,
-          "checked_at": "2026-10-19T01:17:00.508078+00:00",
-          "source": "rwbc"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/morinim/joker",
-          "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
-        },
-        {
-          "url": "https://github.com/morinim/joker",
-          "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Joker2+0.7.7+64-bit",
-          "source": "ccrl"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "Joker2"
-        ]
       }
     },
     {
@@ -147903,47 +148013,6 @@
         "licensing": "unknown",
         "confidence": "low",
         "checked_at": "2026-10-20T01:13:32+00:00"
-      }
-    },
-    {
-      "name": "Julien's Chess3",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "Julien's Chess3",
-          "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "section": "2019 Releases",
-          "author": "Julien Rialland",
-          "version": "0.2",
-          "protocol": "XB",
-          "comment": "Python source; buggy engine; requires Python interpreter with '-u' option invoked (to disable i/o buffering); formerly known as 'Chess3'",
-          "links": [
-            "https://github.com/jrialland/python-chess",
-            "https://docs.python.org/2/using/cmdline.html#cmdoption-u"
-          ],
-          "date_added": "2019/06/30",
-          "project_url": "https://github.com/jrialland/python-chess",
-          "checked_at": "2026-10-19T18:34:57.193219+00:00",
-          "source": "computer-chess-org"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/jrialland/python-chess",
-          "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "Julien's Chess3"
-        ]
       }
     },
     {
@@ -150157,7 +150226,9 @@
     },
     {
       "name": "Kallisto",
-      "aliases": [],
+      "aliases": [
+        "Kallisto II"
+      ],
       "provenance": [
         {
           "label": "Kallisto 1.82-1.83 486/50-66 MHz",
@@ -150175,6 +150246,16 @@
           "listing_url": "https://ssdf.bosjo.net/list.htm",
           "data_url": "https://ssdf.bosjo.net/long.txt",
           "rank": 291,
+          "section": "SSDF rating list",
+          "checked_at": "2026-10-19T01:00:17.865883+00:00",
+          "source": "ssdf"
+        },
+        {
+          "label": "Kallisto II 64MB P200 MHz MMX",
+          "url": "https://ssdf.bosjo.net/list.htm",
+          "listing_url": "https://ssdf.bosjo.net/list.htm",
+          "data_url": "https://ssdf.bosjo.net/long.txt",
+          "rank": 257,
           "section": "SSDF rating list",
           "checked_at": "2026-10-19T01:00:17.865883+00:00",
           "source": "ssdf"
@@ -150206,41 +150287,6 @@
       },
       "source_status": {
         "tier": "E",
-        "availability": "not_located",
-        "licensing": "proprietary",
-        "confidence": "medium",
-        "checked_at": "2026-10-19T22:09:02+00:00"
-      }
-    },
-    {
-      "name": "Kallisto II",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "Kallisto II 64MB P200 MHz MMX",
-          "url": "https://ssdf.bosjo.net/list.htm",
-          "listing_url": "https://ssdf.bosjo.net/list.htm",
-          "data_url": "https://ssdf.bosjo.net/long.txt",
-          "rank": 257,
-          "section": "SSDF rating list",
-          "checked_at": "2026-10-19T01:00:17.865883+00:00",
-          "source": "ssdf"
-        }
-      ],
-      "source_code": [],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "Kallisto II"
-        ]
-      },
-      "source_status": {
-        "tier": "F",
         "availability": "not_located",
         "licensing": "proprietary",
         "confidence": "medium",
@@ -151452,12 +151498,26 @@
         {
           "url": "https://github.com/mwyngaarden/Keele",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "source": "computer-chess-org",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found; no Software Heritage copy"
+          }
         },
         {
           "url": "https://github.com/mwyngaarden/Keele",
           "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Keele+1.0+64-bit",
-          "source": "ccrl"
+          "source": "ccrl",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found; no Software Heritage copy"
+          }
+        },
+        {
+          "url": "https://web.archive.org/web/20201202192851/https://github.com/mwyngaarden/Keele",
+          "evidence_url": "https://web.archive.org/web/20201202192851/https://github.com/mwyngaarden/Keele",
+          "source": "link-review",
+          "kind": "Wayback snapshot of the original repository page (2020-12-02)"
         }
       ],
       "chessprogramming_wiki": {
@@ -152737,12 +152797,20 @@
         {
           "url": "https://github.com/JacquesRW/Kimbo",
           "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Kimbo+1.0.0+64-bit",
-          "source": "ccrl"
-        },
+          "source": "ccrl",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found; no Software Heritage or Wayback copy found"
+          }
+        }
+      ],
+      "rejected_source_code": [
         {
           "url": "https://github.com/JacquesRW/akimbo",
           "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Kimbo+1.0.0+64-bit",
-          "source": "ccrl"
+          "source": "ccrl",
+          "reason": "akimbo is the author's later, separately named engine (created 2022-10-22), not Kimbo's source; the Kimbo repository itself is gone (checked 2026-10-21).",
+          "review_evidence_url": "https://github.com/jw1912/akimbo"
         }
       ],
       "chessprogramming_wiki": {
@@ -152755,6 +152823,13 @@
         "titles_checked": [
           "Kimbo"
         ]
+      },
+      "source_status": {
+        "tier": "B",
+        "availability": "released_not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-21T14:00:00+00:00"
       }
     },
     {
@@ -166070,7 +166145,9 @@
     },
     {
       "name": "Little Lelouch",
-      "aliases": [],
+      "aliases": [
+        "LittleLelouch"
+      ],
       "provenance": [
         {
           "label": "Little Lelouch",
@@ -166087,6 +166164,110 @@
           "project_url": "https://github.com/AbdelrhmanIbrahim/Little_Lelouch_01",
           "checked_at": "2026-10-19T18:34:57.193219+00:00",
           "source": "computer-chess-org"
+        },
+        {
+          "label": "LittleLelouch",
+          "original_name": "LittleLelouch",
+          "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
+          "listing_url": "https://rwbc-chess.de/",
+          "sheet_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
+          "rank": 658,
+          "authors": "Ibrahim Abdelrhman",
+          "alternate_names": "",
+          "previous_names": "",
+          "distribution": "free",
+          "source_flag": "yes",
+          "links": [
+            "https://github.com/AbdelrhmanIbrahim/Little_Lelouch_01",
+            "https://github.com/AbdelrhmanIbrahim/Little_Lelouch_01/tree/ae26d7f0c5b1000b8de37c8155081ffa06e521b1/Debug"
+          ],
+          "row": [
+            "658",
+            "LittleLelouch",
+            "Ibrahim Abdelrhman",
+            "EGY",
+            "",
+            "",
+            "-",
+            "2016-10",
+            "2016-10",
+            "E*",
+            "UCI",
+            "yes",
+            "C++",
+            "-",
+            "-",
+            "-",
+            "",
+            "",
+            "free",
+            "0.1 (debug)",
+            "2016-10-20",
+            "10.0",
+            "10.0",
+            "",
+            "",
+            "https://github.com/AbdelrhmanIbrahim/Little_Lelouch_01\nhttps://github.com/AbdelrhmanIbrahim/Little_Lelouch_01/tree/ae26d7f0c5b1000b8de37c8155081ffa06e521b1/Debug"
+          ],
+          "headers": [
+            "",
+            "Name\n(color description\ns. TOC)",
+            "Author L.N. F.N.",
+            "CC3",
+            "F1",
+            "F2",
+            "LR/LV (dev)",
+            "",
+            "",
+            "RC\n(s. TOC)",
+            "Prot",
+            "Src",
+            "PL",
+            "NN\nNNUE",
+            "MP",
+            "EGT",
+            "N-Alias\n(base/add.)",
+            "N-Pre\nLV",
+            "Dist.",
+            "Vers. FR",
+            "",
+            "",
+            "",
+            "CMD (arg) Config\nExamples",
+            "Peculiarities + Bugs + Info",
+            "Web/Download"
+          ],
+          "sheet_metadata": [
+            "10/18/2026",
+            "",
+            "",
+            "Alpha List (current count :: 1241)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "declared_count": 1241,
+          "checked_at": "2026-10-19T01:17:00.508078+00:00",
+          "source": "rwbc"
         }
       ],
       "source_code": [
@@ -166094,6 +166275,11 @@
           "url": "https://github.com/AbdelrhmanIbrahim/Little_Lelouch_01",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
           "source": "computer-chess-org"
+        },
+        {
+          "url": "https://github.com/AbdelrhmanIbrahim/Little_Lelouch_01",
+          "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
+          "source": "rwbc"
         }
       ],
       "chessprogramming_wiki": {
@@ -166319,134 +166505,6 @@
         "method": "reviewed-title-alias",
         "titles_checked": [
           "Little Wing"
-        ]
-      }
-    },
-    {
-      "name": "LittleLelouch",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "LittleLelouch",
-          "original_name": "LittleLelouch",
-          "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
-          "listing_url": "https://rwbc-chess.de/",
-          "sheet_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
-          "rank": 658,
-          "authors": "Ibrahim Abdelrhman",
-          "alternate_names": "",
-          "previous_names": "",
-          "distribution": "free",
-          "source_flag": "yes",
-          "links": [
-            "https://github.com/AbdelrhmanIbrahim/Little_Lelouch_01",
-            "https://github.com/AbdelrhmanIbrahim/Little_Lelouch_01/tree/ae26d7f0c5b1000b8de37c8155081ffa06e521b1/Debug"
-          ],
-          "row": [
-            "658",
-            "LittleLelouch",
-            "Ibrahim Abdelrhman",
-            "EGY",
-            "",
-            "",
-            "-",
-            "2016-10",
-            "2016-10",
-            "E*",
-            "UCI",
-            "yes",
-            "C++",
-            "-",
-            "-",
-            "-",
-            "",
-            "",
-            "free",
-            "0.1 (debug)",
-            "2016-10-20",
-            "10.0",
-            "10.0",
-            "",
-            "",
-            "https://github.com/AbdelrhmanIbrahim/Little_Lelouch_01\nhttps://github.com/AbdelrhmanIbrahim/Little_Lelouch_01/tree/ae26d7f0c5b1000b8de37c8155081ffa06e521b1/Debug"
-          ],
-          "headers": [
-            "",
-            "Name\n(color description\ns. TOC)",
-            "Author L.N. F.N.",
-            "CC3",
-            "F1",
-            "F2",
-            "LR/LV (dev)",
-            "",
-            "",
-            "RC\n(s. TOC)",
-            "Prot",
-            "Src",
-            "PL",
-            "NN\nNNUE",
-            "MP",
-            "EGT",
-            "N-Alias\n(base/add.)",
-            "N-Pre\nLV",
-            "Dist.",
-            "Vers. FR",
-            "",
-            "",
-            "",
-            "CMD (arg) Config\nExamples",
-            "Peculiarities + Bugs + Info",
-            "Web/Download"
-          ],
-          "sheet_metadata": [
-            "10/18/2026",
-            "",
-            "",
-            "Alpha List (current count :: 1241)",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "declared_count": 1241,
-          "checked_at": "2026-10-19T01:17:00.508078+00:00",
-          "source": "rwbc"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/AbdelrhmanIbrahim/Little_Lelouch_01",
-          "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
-          "source": "rwbc"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "LittleLelouch"
         ]
       }
     },
@@ -169188,7 +169246,9 @@
     },
     {
       "name": "Luna",
-      "aliases": [],
+      "aliases": [
+        "LunaChess"
+      ],
       "provenance": [
         {
           "label": "Luna",
@@ -169317,6 +169377,15 @@
           },
           "source": "ubc",
           "checked_at": "2026-10-18T19:49:18.418245+00:00"
+        },
+        {
+          "label": "LunaChess 0.4.0 AB",
+          "url": "https://e4e6.com/ubc_ratings.php",
+          "request_data": {
+            "type": "type3"
+          },
+          "source": "ubc",
+          "checked_at": "2026-10-18T19:49:18.418245+00:00"
         }
       ],
       "source_code": [
@@ -169346,6 +169415,13 @@
         "titles_checked": [
           "Luna"
         ]
+      },
+      "source_status": {
+        "tier": "review",
+        "availability": "available",
+        "licensing": "open_source",
+        "confidence": "high",
+        "checked_at": "2026-10-20T04:05:15+00:00"
       }
     },
     {
@@ -169386,47 +169462,6 @@
         "licensing": "open_source",
         "confidence": "high",
         "checked_at": "2026-10-20T01:13:32+00:00"
-      }
-    },
-    {
-      "name": "LunaChess",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "LunaChess 0.4.0 AB",
-          "url": "https://e4e6.com/ubc_ratings.php",
-          "request_data": {
-            "type": "type3"
-          },
-          "source": "ubc",
-          "checked_at": "2026-10-18T19:49:18.418245+00:00"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/Mergener/lunachess",
-          "evidence_url": "https://raw.githubusercontent.com/Mergener/lunachess/luna_0.4/src/lunacli/uci.cpp",
-          "source": "source-status-research",
-          "kind": "original repository"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "LunaChess"
-        ]
-      },
-      "source_status": {
-        "tier": "review",
-        "availability": "available",
-        "licensing": "open_source",
-        "confidence": "high",
-        "checked_at": "2026-10-20T04:05:15+00:00"
       }
     },
     {
@@ -171919,7 +171954,11 @@
         {
           "url": "https://github.com/zzhangb4/chess-engine-in-C-v1.0",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "source": "computer-chess-org",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found; no Software Heritage or Wayback copy found"
+          }
         }
       ],
       "chessprogramming_wiki": {
@@ -172551,9 +172590,45 @@
       }
     },
     {
-      "name": "Mango",
-      "aliases": [],
+      "name": "MangoPaola",
+      "aliases": [
+        "Mango",
+        "MangoPaolaAjedrez"
+      ],
       "provenance": [
+        {
+          "label": "MangoPaolaAjedrez",
+          "url": "https://computerchess.org.uk/4040/cgi/compare_engines.cgi?family=MangoPaolaAjedrez&print=Rating+list",
+          "source": "ccrl",
+          "checked_at": "2026-10-18T19:53:20.932911+00:00"
+        },
+        {
+          "label": "MangoPaola 1.0",
+          "url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
+          "listing_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
+          "rank": 3214,
+          "section": "CEGT 4/40",
+          "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/3214.html",
+          "checked_at": "2026-10-19T01:00:15.809575+00:00",
+          "source": "cegt"
+        },
+        {
+          "label": "MangoPaola",
+          "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
+          "section": "2013 Releases",
+          "author": "José Andrés Morales Linares",
+          "version": "4.1",
+          "protocol": "XB",
+          "comment": "C source; own GUI; Linux, Mac, Win",
+          "links": [
+            "http://mangocomputerca.blogspot.com.es/",
+            "http://julien.marcel.free.fr/macchess/Chess_on_Mac/Engines.html"
+          ],
+          "date_added": "2013/08/28",
+          "project_url": "http://mangocomputerca.blogspot.com.es/",
+          "checked_at": "2026-10-19T18:34:57.193219+00:00",
+          "source": "computer-chess-org"
+        },
         {
           "label": "Mango",
           "original_name": "Mango",
@@ -172680,101 +172755,11 @@
         "evidence_url": "https://chessprogramming.org/search-index.json",
         "method": "main-namespace-title-index",
         "titles_checked": [
-          "Mango"
-        ]
-      }
-    },
-    {
-      "name": "MangoPaola",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "MangoPaola 1.0",
-          "url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
-          "listing_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
-          "rank": 3214,
-          "section": "CEGT 4/40",
-          "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/3214.html",
-          "checked_at": "2026-10-19T01:00:15.809575+00:00",
-          "source": "cegt"
-        },
-        {
-          "label": "MangoPaola",
-          "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "section": "2013 Releases",
-          "author": "José Andrés Morales Linares",
-          "version": "4.1",
-          "protocol": "XB",
-          "comment": "C source; own GUI; Linux, Mac, Win",
-          "links": [
-            "http://mangocomputerca.blogspot.com.es/",
-            "http://julien.marcel.free.fr/macchess/Chess_on_Mac/Engines.html"
-          ],
-          "date_added": "2013/08/28",
-          "project_url": "http://mangocomputerca.blogspot.com.es/",
-          "checked_at": "2026-10-19T18:34:57.193219+00:00",
-          "source": "computer-chess-org"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/mango-computer/mango-paola-xboard",
-          "evidence_url": "http://mangocomputerca.blogspot.com/p/descargas.html",
-          "source": "source-status-research",
-          "kind": "original repository (author José Andrés Morales Linares)"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
           "MangoPaola"
         ]
       },
       "source_status": {
         "tier": "B",
-        "availability": "available",
-        "licensing": "open_source",
-        "confidence": "high",
-        "checked_at": "2026-10-19T19:55:17+00:00"
-      }
-    },
-    {
-      "name": "MangoPaolaAjedrez",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "MangoPaolaAjedrez",
-          "url": "https://computerchess.org.uk/4040/cgi/compare_engines.cgi?family=MangoPaolaAjedrez&print=Rating+list",
-          "source": "ccrl",
-          "checked_at": "2026-10-18T19:53:20.932911+00:00"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/mango-computer/mango-paola",
-          "evidence_url": "https://github.com/mango-computer/mango-paola",
-          "source": "source-status-research",
-          "kind": "original repository (publisher Mango Computer)"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "MangoPaolaAjedrez"
-        ]
-      },
-      "source_status": {
-        "tier": "F",
         "availability": "available",
         "licensing": "open_source",
         "confidence": "high",
@@ -175674,7 +175659,9 @@
     },
     {
       "name": "Maxima",
-      "aliases": [],
+      "aliases": [
+        "Maxima2"
+      ],
       "provenance": [
         {
           "label": "Maxima",
@@ -175707,6 +175694,23 @@
           "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/2463.html",
           "checked_at": "2026-10-19T01:00:15.809575+00:00",
           "source": "cegt"
+        },
+        {
+          "label": "Maxima2",
+          "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
+          "section": "2016 Releases",
+          "author": "Hermen Reitsma & Erik van het Hof",
+          "version": "2.0.0 DC",
+          "protocol": "UCI",
+          "comment": "C++ source; Win",
+          "links": [
+            "https://github.com/hof/qm2",
+            "https://www.dropbox.com/s/4jzbi8te42319wf/qm2-master.7z?dl=0"
+          ],
+          "date_added": "2016/06/27",
+          "project_url": "https://github.com/hof/qm2",
+          "checked_at": "2026-10-19T18:34:57.193219+00:00",
+          "source": "computer-chess-org"
         },
         {
           "label": "Maxima",
@@ -175812,52 +175816,6 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/hof/qm2",
-          "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
-          "source": "rwbc"
-        },
-        {
-          "url": "https://github.com/hof/qm2",
-          "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
-          "source": "amateurschach"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "Maxima"
-        ]
-      }
-    },
-    {
-      "name": "Maxima2",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "Maxima2",
-          "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "section": "2016 Releases",
-          "author": "Hermen Reitsma & Erik van het Hof",
-          "version": "2.0.0 DC",
-          "protocol": "UCI",
-          "comment": "C++ source; Win",
-          "links": [
-            "https://github.com/hof/qm2",
-            "https://www.dropbox.com/s/4jzbi8te42319wf/qm2-master.7z?dl=0"
-          ],
-          "date_added": "2016/06/27",
-          "project_url": "https://github.com/hof/qm2",
-          "checked_at": "2026-10-19T18:34:57.193219+00:00",
-          "source": "computer-chess-org"
         },
         {
           "label": "Maxima2",
@@ -175880,20 +175838,24 @@
         },
         {
           "url": "https://github.com/hof/qm2",
-          "evidence_url": "https://chessprogramming.org/Maxima2",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:38:21.853764+00:00"
+          "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
+          "source": "rwbc"
+        },
+        {
+          "url": "https://github.com/hof/qm2",
+          "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
+          "source": "amateurschach"
         }
       ],
       "chessprogramming_wiki": {
-        "status": "found",
-        "url": "https://chessprogramming.org/Maxima2",
-        "title": "Maxima2",
+        "status": "not_found",
+        "url": null,
+        "title": null,
         "checked_at": "2026-10-19T00:44:50.443299+00:00",
         "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "reviewed-title-alias",
+        "method": "main-namespace-title-index",
         "titles_checked": [
-          "Maxima2"
+          "Maxima"
         ]
       }
     },
@@ -178984,7 +178946,9 @@
     },
     {
       "name": "MicroChess",
-      "aliases": [],
+      "aliases": [
+        "MicroChess 1976"
+      ],
       "provenance": [
         {
           "label": "MicroChess",
@@ -179003,61 +178967,6 @@
           "checked_at": "2026-10-19T18:34:57.193219+00:00",
           "source": "computer-chess-org"
         },
-        {
-          "label": "MicroChess",
-          "listed_name": "MicroChess",
-          "url": "https://chessprogramming.org/Engines#alphabetical-list",
-          "listing_url": "https://chessprogramming.org/Engines",
-          "project_url": "https://chessprogramming.org/MicroChess",
-          "page_title": "MicroChess",
-          "page_path": "/MicroChess",
-          "section": "M",
-          "checked_at": "2026-10-19T00:59:52.557009+00:00",
-          "source": "wiki-engines"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "http://archive.computerhistory.org/projects/chess/related_materials/software/4-1.MicroChess_%20Source.1976.JENNINGS/4-1.MicroChess_%20Source.1976.JENNINGS.pdf",
-          "source_release": "1976 MicroChess",
-          "note": "Archived PDF source listing, not a machine-readable source archive.",
-          "evidence_url": "https://chessprogramming.org/MicroChess",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:38:52.789004+00:00"
-        },
-        {
-          "url": "http://benlo.com/files/Microchess6502.txt",
-          "source_release": "Historical 6502 MicroChess",
-          "note": "Explicitly labeled 6502 source code; no exact version is established by the cached entry.",
-          "evidence_url": "https://chessprogramming.org/MicroChess",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:38:52.789004+00:00"
-        },
-        {
-          "url": "http://www.computerhistory.org/chess/full_record.php?iid=sft-431e19dae0914",
-          "source_release": "1976 MicroChess",
-          "note": "Museum record explicitly labeled Microchess source code; historical source listing.",
-          "evidence_url": "https://chessprogramming.org/MicroChess",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:38:52.789004+00:00"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "found",
-        "url": "https://chessprogramming.org/MicroChess",
-        "title": "MicroChess",
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "reviewed-title-alias",
-        "titles_checked": [
-          "MicroChess"
-        ]
-      }
-    },
-    {
-      "name": "MicroChess 1976",
-      "aliases": [],
-      "provenance": [
         {
           "label": "MicroChess 1976",
           "original_name": "MicroChess 1976",
@@ -179161,9 +179070,45 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "MicroChess",
+          "listed_name": "MicroChess",
+          "url": "https://chessprogramming.org/Engines#alphabetical-list",
+          "listing_url": "https://chessprogramming.org/Engines",
+          "project_url": "https://chessprogramming.org/MicroChess",
+          "page_title": "MicroChess",
+          "page_path": "/MicroChess",
+          "section": "M",
+          "checked_at": "2026-10-19T00:59:52.557009+00:00",
+          "source": "wiki-engines"
         }
       ],
       "source_code": [
+        {
+          "url": "http://archive.computerhistory.org/projects/chess/related_materials/software/4-1.MicroChess_%20Source.1976.JENNINGS/4-1.MicroChess_%20Source.1976.JENNINGS.pdf",
+          "source_release": "1976 MicroChess",
+          "note": "Archived PDF source listing, not a machine-readable source archive.",
+          "evidence_url": "https://chessprogramming.org/MicroChess",
+          "source": "chessprogramming-wiki",
+          "checked_at": "2026-10-19T01:38:52.789004+00:00"
+        },
+        {
+          "url": "http://benlo.com/files/Microchess6502.txt",
+          "source_release": "Historical 6502 MicroChess",
+          "note": "Explicitly labeled 6502 source code; no exact version is established by the cached entry.",
+          "evidence_url": "https://chessprogramming.org/MicroChess",
+          "source": "chessprogramming-wiki",
+          "checked_at": "2026-10-19T01:38:52.789004+00:00"
+        },
+        {
+          "url": "http://www.computerhistory.org/chess/full_record.php?iid=sft-431e19dae0914",
+          "source_release": "1976 MicroChess",
+          "note": "Museum record explicitly labeled Microchess source code; historical source listing.",
+          "evidence_url": "https://chessprogramming.org/MicroChess",
+          "source": "chessprogramming-wiki",
+          "checked_at": "2026-10-19T01:38:52.789004+00:00"
+        },
         {
           "url": "http://www.andreadrian.de/schach/microchessw.c",
           "evidence_url": "http://www.andreadrian.de/schach/microchessw.c",
@@ -179178,14 +179123,14 @@
         }
       ],
       "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
+        "status": "found",
+        "url": "https://chessprogramming.org/MicroChess",
+        "title": "MicroChess",
         "checked_at": "2026-10-19T00:44:50.443299+00:00",
         "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
+        "method": "reviewed-title-alias",
         "titles_checked": [
-          "MicroChess 1976"
+          "MicroChess"
         ]
       },
       "source_status": {
@@ -191097,6 +191042,15 @@
       ],
       "provenance": [
         {
+          "label": "NatesBot",
+          "url": "https://lichess.org/@/NatesBot",
+          "membership_url": "https://lichess.org/team/selfmade-bots",
+          "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+          "identity_method": "reviewed-profile",
+          "source": "lichess",
+          "checked_at": "2026-10-18T19:46:08.537117+00:00"
+        },
+        {
           "label": "Nates Chessbot",
           "original_name": "Nates Chessbot",
           "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
@@ -191213,9 +191167,8 @@
       "source_code": [
         {
           "url": "https://github.com/Nateml/ChessBot",
-          "evidence_url": "https://github.com/Nateml/ChessBot",
-          "source": "source-status-research",
-          "kind": "original repository"
+          "evidence_url": "https://lichess.org/@/NatesBot",
+          "source": "lichess"
         }
       ],
       "chessprogramming_wiki": {
@@ -191236,39 +191189,6 @@
         "licensing": "source_available",
         "confidence": "high",
         "checked_at": "2026-10-19T17:47:03+00:00"
-      }
-    },
-    {
-      "name": "NatesBot",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "NatesBot",
-          "url": "https://lichess.org/@/NatesBot",
-          "membership_url": "https://lichess.org/team/selfmade-bots",
-          "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
-          "identity_method": "reviewed-profile",
-          "source": "lichess",
-          "checked_at": "2026-10-18T19:46:08.537117+00:00"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/Nateml/ChessBot",
-          "evidence_url": "https://lichess.org/@/NatesBot",
-          "source": "lichess"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "NatesBot"
-        ]
       }
     },
     {
@@ -196707,7 +196627,9 @@
     },
     {
       "name": "Nicarao",
-      "aliases": [],
+      "aliases": [
+        "Nicarao_Chess"
+      ],
       "provenance": [
         {
           "label": "Nicarao",
@@ -196814,39 +196736,6 @@
           "source": "rwbc"
         },
         {
-          "label": "Nicarao 1085a5f GS",
-          "url": "https://e4e6.com/ubc_ratings.php",
-          "request_data": {
-            "type": "type3"
-          },
-          "source": "ubc",
-          "checked_at": "2026-10-18T19:49:18.418245+00:00"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/DeybisMelendez/nicarao",
-          "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
-          "source": "rwbc"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "Nicarao"
-        ]
-      }
-    },
-    {
-      "name": "Nicarao_Chess",
-      "aliases": [],
-      "provenance": [
-        {
           "label": "Nicarao_Chess",
           "original_name": "Nicarao_Chess",
           "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
@@ -196948,11 +196837,25 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Nicarao 1085a5f GS",
+          "url": "https://e4e6.com/ubc_ratings.php",
+          "request_data": {
+            "type": "type3"
+          },
+          "source": "ubc",
+          "checked_at": "2026-10-18T19:49:18.418245+00:00"
         }
       ],
       "source_code": [
         {
           "url": "https://github.com/DeybisMelendez/NicaraoChess",
+          "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
+          "source": "rwbc"
+        },
+        {
+          "url": "https://github.com/DeybisMelendez/nicarao",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
           "source": "rwbc"
         }
@@ -196965,7 +196868,7 @@
         "evidence_url": "https://chessprogramming.org/search-index.json",
         "method": "main-namespace-title-index",
         "titles_checked": [
-          "Nicarao_Chess"
+          "Nicarao"
         ]
       }
     },
@@ -200304,8 +200207,10 @@
       }
     },
     {
-      "name": "Numpty",
-      "aliases": [],
+      "name": "Numpty chess",
+      "aliases": [
+        "Numpty"
+      ],
       "provenance": [
         {
           "label": "Numpty",
@@ -200425,45 +200330,7 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "http://web.archive.org/web/2020id_/https://sites.google.com/site/numptychess/Numpty_Recharged_64.7z?attredirects=0",
-          "evidence_url": "http://web.archive.org/web/20201020102648/https://sites.google.com/site/numptychess/",
-          "source": "source-status-research",
-          "kind": "Wayback snapshot of author download (7z with source)"
         },
-        {
-          "url": "http://web.archive.org/web/2020id_/https://sites.google.com/site/numptychess/Numpty_Recharged_32.7z?attredirects=0",
-          "evidence_url": "http://web.archive.org/web/20201020102648/https://sites.google.com/site/numptychess/",
-          "source": "source-status-research",
-          "kind": "Wayback snapshot of author download (32-bit, stated to include source)"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "Numpty"
-        ]
-      },
-      "source_status": {
-        "tier": "B",
-        "availability": "archived_only",
-        "licensing": "source_available",
-        "confidence": "high",
-        "checked_at": "2026-10-19T17:47:03+00:00"
-      }
-    },
-    {
-      "name": "Numpty chess",
-      "aliases": [],
-      "provenance": [
         {
           "label": "Numpty chess",
           "listed_name": "Numpty chess",
@@ -200479,8 +200346,20 @@
       ],
       "source_code": [
         {
+          "url": "http://web.archive.org/web/2020id_/https://sites.google.com/site/numptychess/Numpty_Recharged_64.7z?attredirects=0",
+          "evidence_url": "http://web.archive.org/web/20201020102648/https://sites.google.com/site/numptychess/",
+          "source": "source-status-research",
+          "kind": "Wayback snapshot of author download (7z with source)"
+        },
+        {
+          "url": "http://web.archive.org/web/2020id_/https://sites.google.com/site/numptychess/Numpty_Recharged_32.7z?attredirects=0",
+          "evidence_url": "http://web.archive.org/web/20201020102648/https://sites.google.com/site/numptychess/",
+          "source": "source-status-research",
+          "kind": "Wayback snapshot of author download (32-bit, stated to include source)"
+        },
+        {
           "url": "https://web.archive.org/web/20201020102737/https://sites.google.com/site/numptychess/N_O_m_e_g_a.zip?attredirects=0",
-          "evidence_url": "https://web.archive.org/web/20120205100033/https://sites.google.com/site/numptychess/home",
+          "evidence_url": "http://web.archive.org/web/20201020102648/https://sites.google.com/site/numptychess/",
           "source": "source-status-research",
           "kind": "Wayback snapshot of author download (zip with N_O_m_e_g_a.bas)"
         }
@@ -200501,7 +200380,7 @@
         "availability": "archived_only",
         "licensing": "source_available",
         "confidence": "high",
-        "checked_at": "2026-10-19T05:43:20+00:00"
+        "checked_at": "2026-10-19T17:47:03+00:00"
       }
     },
     {
@@ -200824,7 +200703,17 @@
           "note": "Wiki explicitly states Sources of various versions are hosted by Jim Ablett and cites this OBENDER directory; directory may also contain binaries.",
           "evidence_url": "https://chessprogramming.org/OBender",
           "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T00:48:23.404593+00:00"
+          "checked_at": "2026-10-19T00:48:23.404593+00:00",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "DNS: host not found"
+          }
+        },
+        {
+          "url": "https://web.archive.org/web/20201106232507/http://kirr.homeunix.org/chess/engines/Jim%20Ablett/OBENDER/",
+          "evidence_url": "https://web.archive.org/web/20201106232507/http://kirr.homeunix.org/chess/engines/Jim%20Ablett/OBENDER/",
+          "source": "link-review",
+          "kind": "Wayback snapshot of the original Jim Ablett download directory (2020-11-06)"
         }
       ],
       "chessprogramming_wiki": {
@@ -203031,7 +202920,17 @@
         {
           "url": "https://github.com/GuyClicking/Omelette-chess-engine",
           "evidence_url": "https://lichess.org/@/OmeletteChessEngine",
-          "source": "lichess"
+          "source": "lichess",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
+        },
+        {
+          "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/GuyClicking/Omelette-chess-engine",
+          "evidence_url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/GuyClicking/Omelette-chess-engine",
+          "source": "link-review",
+          "kind": "Software Heritage archive of the original repository (last visit 2021-07-22)"
         }
       ],
       "chessprogramming_wiki": {
@@ -212795,7 +212694,17 @@
           "note": "Source of the named Phoenix derivative itself, not another engine sharing the Phoenix name.",
           "evidence_url": "https://chessprogramming.org/Phoenix_(Rahul)",
           "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:40:53.025533+00:00"
+          "checked_at": "2026-10-19T01:40:53.025533+00:00",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
+        },
+        {
+          "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/rahular/phoenix",
+          "evidence_url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/rahular/phoenix",
+          "source": "link-review",
+          "kind": "Software Heritage archive of the original repository (last visit 2016-08-06)"
         }
       ],
       "chessprogramming_wiki": {
@@ -215615,36 +215524,6 @@
       }
     },
     {
-      "name": "PLP",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "PLP",
-          "url": "https://computerchess.org.uk/4040/cgi/compare_engines.cgi?family=PLP&print=Rating+list",
-          "source": "ccrl",
-          "checked_at": "2026-10-18T19:53:20.932911+00:00"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/helgefmi/Poor-little-pinkus",
-          "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=PLP+1661571",
-          "source": "ccrl"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "PLP"
-        ]
-      }
-    },
-    {
       "name": "plumbot",
       "aliases": [],
       "provenance": [
@@ -216892,8 +216771,16 @@
     },
     {
       "name": "PoorLittlePinkus",
-      "aliases": [],
+      "aliases": [
+        "PLP"
+      ],
       "provenance": [
+        {
+          "label": "PLP",
+          "url": "https://computerchess.org.uk/4040/cgi/compare_engines.cgi?family=PLP&print=Rating+list",
+          "source": "ccrl",
+          "checked_at": "2026-10-18T19:53:20.932911+00:00"
+        },
         {
           "label": "Poor Little Pinkus",
           "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
@@ -217026,6 +216913,11 @@
           "url": "https://github.com/helgefmi/Poor-little-pinkus",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
           "source": "computer-chess-org"
+        },
+        {
+          "url": "https://github.com/helgefmi/Poor-little-pinkus",
+          "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=PLP+1661571",
+          "source": "ccrl"
         }
       ],
       "chessprogramming_wiki": {
@@ -219944,7 +219836,11 @@
           "note": "Historical release landing page labeled ProChess102AD.zip | readme.txt; source availability is established by the cached introduction, not a fetched archive.",
           "evidence_url": "https://chessprogramming.org/ProChess_IT",
           "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:41:09.519757+00:00"
+          "checked_at": "2026-10-19T01:41:09.519757+00:00",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "DNS: host not found; no Wayback copy found"
+          }
         }
       ],
       "chessprogramming_wiki": {
@@ -220982,7 +220878,10 @@
     },
     {
       "name": "Prophet",
-      "aliases": [],
+      "aliases": [
+        "Prophet3",
+        "Prophet4"
+      ],
       "provenance": [
         {
           "label": "Prophet, web *16 *18",
@@ -221020,6 +220919,24 @@
           "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/2924.html",
           "checked_at": "2026-10-19T01:00:15.809575+00:00",
           "source": "cegt"
+        },
+        {
+          "label": "Prophet3",
+          "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
+          "section": "2018 Releases",
+          "author": "James Swafford",
+          "version": "2018.11.24",
+          "protocol": "XB",
+          "comment": "C++ source; Linux{JA only}, Win; successor to Galahad",
+          "links": [
+            "https://github.com/jswaff/prophet3/releases",
+            "https://web.archive.org/web/20180821081013/http://www.jamesswafford.com/prophet/",
+            "http://kirr.homeunix.org/chess/engines/Jim%20Ablett/"
+          ],
+          "date_added": "2018/11/24",
+          "project_url": "https://github.com/jswaff/prophet3/releases",
+          "checked_at": "2026-10-19T18:34:57.193219+00:00",
+          "source": "computer-chess-org"
         },
         {
           "label": "Prophet",
@@ -221127,79 +221044,6 @@
           "source": "rwbc"
         },
         {
-          "label": "Prophet 4.3",
-          "url": "https://e4e6.com/ubc_ratings.php",
-          "request_data": {
-            "type": "type3"
-          },
-          "source": "ubc",
-          "checked_at": "2026-10-18T19:49:18.418245+00:00"
-        },
-        {
-          "label": "Prophet",
-          "listed_name": "Prophet",
-          "url": "https://chessprogramming.org/Engines#alphabetical-list",
-          "listing_url": "https://chessprogramming.org/Engines",
-          "project_url": "https://chessprogramming.org/Prophet",
-          "page_title": "Prophet",
-          "page_path": "/Prophet",
-          "section": "P",
-          "checked_at": "2026-10-19T00:59:52.557009+00:00",
-          "source": "wiki-engines"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/jswaff/prophet",
-          "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Prophet+5.2+64-bit",
-          "source": "ccrl"
-        },
-        {
-          "url": "https://github.com/jswaff/prophet",
-          "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
-          "source": "amateurschach"
-        },
-        {
-          "url": "https://github.com/jswaff/prophet3",
-          "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Prophet+5.2+64-bit",
-          "source": "ccrl"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "found",
-        "url": "https://chessprogramming.org/Prophet",
-        "title": "Prophet",
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "reviewed-title-alias",
-        "titles_checked": [
-          "Prophet"
-        ]
-      }
-    },
-    {
-      "name": "Prophet3",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "Prophet3",
-          "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "section": "2018 Releases",
-          "author": "James Swafford",
-          "version": "2018.11.24",
-          "protocol": "XB",
-          "comment": "C++ source; Linux{JA only}, Win; successor to Galahad",
-          "links": [
-            "https://github.com/jswaff/prophet3/releases",
-            "https://web.archive.org/web/20180821081013/http://www.jamesswafford.com/prophet/",
-            "http://kirr.homeunix.org/chess/engines/Jim%20Ablett/"
-          ],
-          "date_added": "2018/11/24",
-          "project_url": "https://github.com/jswaff/prophet3/releases",
-          "checked_at": "2026-10-19T18:34:57.193219+00:00",
-          "source": "computer-chess-org"
-        },
-        {
           "label": "Prophet3",
           "original_name": "Prophet3",
           "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
@@ -221302,36 +221146,7 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/jswaff/prophet3",
-          "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
         },
-        {
-          "url": "https://github.com/jswaff/prophet3",
-          "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
-          "source": "rwbc"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "Prophet3"
-        ]
-      }
-    },
-    {
-      "name": "Prophet4",
-      "aliases": [],
-      "provenance": [
         {
           "label": "Prophet4",
           "original_name": "Prophet4",
@@ -221434,25 +221249,65 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Prophet 4.3",
+          "url": "https://e4e6.com/ubc_ratings.php",
+          "request_data": {
+            "type": "type3"
+          },
+          "source": "ubc",
+          "checked_at": "2026-10-18T19:49:18.418245+00:00"
+        },
+        {
+          "label": "Prophet",
+          "listed_name": "Prophet",
+          "url": "https://chessprogramming.org/Engines#alphabetical-list",
+          "listing_url": "https://chessprogramming.org/Engines",
+          "project_url": "https://chessprogramming.org/Prophet",
+          "page_title": "Prophet",
+          "page_path": "/Prophet",
+          "section": "P",
+          "checked_at": "2026-10-19T00:59:52.557009+00:00",
+          "source": "wiki-engines"
         }
       ],
       "source_code": [
         {
           "url": "https://github.com/jswaff/prophet",
-          "evidence_url": "https://github.com/jswaff/prophet",
-          "source": "source-status-research",
-          "kind": "original repository"
+          "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Prophet+5.2+64-bit",
+          "source": "ccrl"
+        },
+        {
+          "url": "https://github.com/jswaff/prophet",
+          "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
+          "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/jswaff/prophet3",
+          "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
+          "source": "computer-chess-org"
+        },
+        {
+          "url": "https://github.com/jswaff/prophet3",
+          "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Prophet+5.2+64-bit",
+          "source": "ccrl"
+        },
+        {
+          "url": "https://github.com/jswaff/prophet3",
+          "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
+          "source": "rwbc"
         }
       ],
       "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
+        "status": "found",
+        "url": "https://chessprogramming.org/Prophet",
+        "title": "Prophet",
         "checked_at": "2026-10-19T00:44:50.443299+00:00",
         "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
+        "method": "reviewed-title-alias",
         "titles_checked": [
-          "Prophet4"
+          "Prophet"
         ]
       },
       "source_status": {
@@ -224890,8 +224745,10 @@
       }
     },
     {
-      "name": "PyChess",
-      "aliases": [],
+      "name": "PychessEngine",
+      "aliases": [
+        "PyChess"
+      ],
       "provenance": [
         {
           "label": "PyChess",
@@ -225041,15 +224898,10 @@
         }
       ],
       "chessprogramming_wiki": {
-        "status": "found",
-        "url": "https://chessprogramming.org/PyChess",
-        "title": "PyChess",
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "reviewed-title-alias",
-        "titles_checked": [
-          "PyChess"
-        ]
+        "status": "not_checked",
+        "url": null,
+        "title": null,
+        "checked_at": null
       }
     },
     {
@@ -225987,7 +225839,9 @@
     },
     {
       "name": "Quanticade",
-      "aliases": [],
+      "aliases": [
+        "Quanticade Aurora"
+      ],
       "provenance": [
         {
           "label": "Quanticade",
@@ -226258,6 +226112,15 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "Quanticade Aurora 0.8 HCE",
+          "url": "https://e4e6.com/ubc_ratings.php",
+          "request_data": {
+            "type": "type3"
+          },
+          "source": "ubc",
+          "checked_at": "2026-10-18T19:49:18.418245+00:00"
         }
       ],
       "source_code": [
@@ -226285,6 +226148,12 @@
           "url": "https://github.com/Quanticade/Quanticade",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/Quanticade/Quanticade/releases/tag/Aurora",
+          "evidence_url": "https://github.com/Quanticade/Quanticade",
+          "source": "source-status-research",
+          "kind": "original repository release tag (Aurora 0.8)"
         }
       ],
       "chessprogramming_wiki": {
@@ -226296,46 +226165,6 @@
         "method": "main-namespace-title-index",
         "titles_checked": [
           "Quanticade"
-        ]
-      }
-    },
-    {
-      "name": "Quanticade Aurora",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "Quanticade Aurora 0.8 HCE",
-          "url": "https://e4e6.com/ubc_ratings.php",
-          "request_data": {
-            "type": "type3"
-          },
-          "source": "ubc",
-          "checked_at": "2026-10-18T19:49:18.418245+00:00"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/Quanticade/Quanticade/releases/tag/Aurora",
-          "evidence_url": "https://github.com/Quanticade/Quanticade",
-          "source": "source-status-research",
-          "kind": "original repository release tag (Aurora 0.8)"
-        },
-        {
-          "url": "https://github.com/Quanticade/Quanticade",
-          "evidence_url": "https://github.com/Quanticade/Quanticade",
-          "source": "source-status-research",
-          "kind": "original repository"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "Quanticade Aurora"
         ]
       },
       "source_status": {
@@ -232266,6 +232095,15 @@
       "aliases": [],
       "provenance": [
         {
+          "label": "redtail-zero",
+          "url": "https://lichess.org/@/redtail-zero",
+          "membership_url": "https://lichess.org/team/selfmade-bots",
+          "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+          "identity_method": "reviewed-profile",
+          "source": "lichess",
+          "checked_at": "2026-10-18T19:46:08.537117+00:00"
+        },
+        {
           "label": "Redtail",
           "original_name": "Redtail",
           "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
@@ -232375,6 +232213,11 @@
           "url": "https://github.com/georgemunyoro/rusty-redtail",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
           "source": "rwbc"
+        },
+        {
+          "url": "https://github.com/georgemunyoro/rusty-redtail",
+          "evidence_url": "https://lichess.org/@/redtail-zero",
+          "source": "lichess"
         }
       ],
       "chessprogramming_wiki": {
@@ -237966,7 +237809,17 @@
         {
           "url": "https://github.com/op12no2/roller",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "source": "computer-chess-org",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
+        },
+        {
+          "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/op12no2/roller",
+          "evidence_url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/op12no2/roller",
+          "source": "link-review",
+          "kind": "Software Heritage archive of the original repository (last visit 2022-07-25)"
         }
       ],
       "chessprogramming_wiki": {
@@ -241225,39 +241078,6 @@
       }
     },
     {
-      "name": "rusty-redtail",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "redtail-zero",
-          "url": "https://lichess.org/@/redtail-zero",
-          "membership_url": "https://lichess.org/team/selfmade-bots",
-          "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
-          "identity_method": "reviewed-profile",
-          "source": "lichess",
-          "checked_at": "2026-10-18T19:46:08.537117+00:00"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/georgemunyoro/rusty-redtail",
-          "evidence_url": "https://lichess.org/@/redtail-zero",
-          "source": "lichess"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "rusty-redtail"
-        ]
-      }
-    },
-    {
       "name": "Rusty-Rival",
       "aliases": [
         "Rusti-Rival"
@@ -241573,7 +241393,17 @@
         {
           "url": "https://github.com/themreKalkan/RuthIron",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
-          "source": "amateurschach"
+          "source": "amateurschach",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found; no Software Heritage copy"
+          }
+        },
+        {
+          "url": "https://web.archive.org/web/20260301122934/https://github.com/themreKalkan/RuthIron",
+          "evidence_url": "https://web.archive.org/web/20260301122934/https://github.com/themreKalkan/RuthIron",
+          "source": "link-review",
+          "kind": "Wayback snapshot of the original repository page (2026-03-01)"
         }
       ],
       "chessprogramming_wiki": {
@@ -241944,17 +241774,35 @@
         {
           "url": "https://bitbucket.org/alonamaloh/ruydos",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "source": "computer-chess-org",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404 (Bitbucket removed Mercurial repositories in 2020)"
+          }
         },
         {
           "url": "https://bitbucket.org/alonamaloh/ruydos",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
-          "source": "rwbc"
+          "source": "rwbc",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404 (Bitbucket removed Mercurial repositories in 2020)"
+          }
         },
         {
           "url": "https://bitbucket.org/alonamaloh/ruydos",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
-          "source": "amateurschach"
+          "source": "amateurschach",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404 (Bitbucket removed Mercurial repositories in 2020)"
+          }
+        },
+        {
+          "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://bitbucket.org/alonamaloh/ruydos",
+          "evidence_url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://bitbucket.org/alonamaloh/ruydos",
+          "source": "link-review",
+          "kind": "Software Heritage archive of the original repository (last visit 2020-07-16)"
         }
       ],
       "chessprogramming_wiki": {
@@ -244847,7 +244695,17 @@
           "url": "http://www.gherrity.org/sal6.tar.gz",
           "evidence_url": "https://chessprogramming.org/SAL",
           "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:41:53.836226+00:00"
+          "checked_at": "2026-10-19T01:41:53.836226+00:00",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "connection refused"
+          }
+        },
+        {
+          "url": "https://web.archive.org/web/20210420183849/http://www.gherrity.org/sal6.tar.gz",
+          "evidence_url": "https://web.archive.org/web/20210420183849/http://www.gherrity.org/sal6.tar.gz",
+          "source": "link-review",
+          "kind": "Wayback snapshot of the original download (tar.gz) (2021-04-20)"
         }
       ],
       "chessprogramming_wiki": {
@@ -245239,12 +245097,20 @@
         {
           "url": "https://github.com/SamuraiDangyo/Sapeli",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "source": "computer-chess-org",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
         },
         {
           "url": "https://github.com/SamuraiDangyo/Sapeli",
           "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Sapeli+1.02+64-bit",
-          "source": "ccrl"
+          "source": "ccrl",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
         },
         {
           "url": "https://github.com/SamuraiDangyo/sapeli-final",
@@ -251796,13 +251662,23 @@
     },
     {
       "name": "Shadow",
-      "aliases": [],
+      "aliases": [
+        "Throne"
+      ],
       "provenance": [
         {
           "label": "Shadow",
           "url": "https://computerchess.org.uk/4040/cgi/compare_engines.cgi?family=Shadow&print=Rating+list",
           "source": "ccrl",
           "checked_at": "2026-10-18T19:53:20.932911+00:00"
+        },
+        {
+          "label": "Throne 0.2",
+          "url": "https://chessengines.blogspot.com/p/rating-jcer.html",
+          "section": "CEDR rating table 1",
+          "rank": 184,
+          "source": "chess-engines-diary",
+          "checked_at": "2026-10-19T01:16:59.492027+00:00"
         }
       ],
       "source_code": [
@@ -251810,6 +251686,12 @@
           "url": "https://github.com/Txnch/Shadow",
           "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Shadow+0.3+64-bit",
           "source": "ccrl"
+        },
+        {
+          "url": "https://github.com/Txnch/Shadow/tree/0.2",
+          "evidence_url": "https://chessengines.blogspot.com/2026/05/throne-02-new-version-chess-engine.html",
+          "source": "source-status-research",
+          "kind": "original repository (renamed from Throne; tag 0.2)"
         }
       ],
       "chessprogramming_wiki": {
@@ -251822,6 +251704,13 @@
         "titles_checked": [
           "Shadow"
         ]
+      },
+      "source_status": {
+        "tier": "F",
+        "availability": "available",
+        "licensing": "open_source",
+        "confidence": "high",
+        "checked_at": "2026-10-20T02:36:12+00:00"
       }
     },
     {
@@ -252757,162 +252646,9 @@
     },
     {
       "name": "SharpChess",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "SharpChess",
-          "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "section": "Dead Engine List",
-          "author": "Albert Bertilsson",
-          "version": "0.06",
-          "protocol": "XB",
-          "comment": "C# source; Win",
-          "links": [
-            "https://web.archive.org/web/20070607093301/http://www.albert.nu/default.asp?sub=programs/default.asp?sub=sharpchess/main.htm"
-          ],
-          "date_added": "2003/03/01",
-          "checked_at": "2026-10-19T18:34:57.193219+00:00",
-          "source": "computer-chess-org"
-        },
-        {
-          "label": "SharpChess",
-          "original_name": "SharpChess",
-          "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
-          "listing_url": "https://rwbc-chess.de/",
-          "sheet_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
-          "rank": 1015,
-          "authors": "Bertilsson Albert",
-          "alternate_names": "",
-          "previous_names": "",
-          "distribution": "free",
-          "source_flag": "yes",
-          "links": [
-            "https://web.archive.org/web/20070607093301/http://www.albert.nu/default.asp?sub=programs/default.asp?sub=sharpchess/main.htm"
-          ],
-          "row": [
-            "1015",
-            "SharpChess",
-            "Bertilsson Albert",
-            "SWE",
-            "",
-            "",
-            "0.06",
-            "2003-03",
-            "2003-03",
-            "F",
-            "XB",
-            "yes",
-            "C#",
-            "-",
-            "-",
-            "-",
-            "",
-            "",
-            "free",
-            "0.01",
-            "2002-12-16",
-            "23.6",
-            "23.8",
-            "",
-            "",
-            "https://web.archive.org/web/20070607093301/http://www.albert.nu/default.asp?sub=programs/default.asp?sub=sharpchess/main.htm"
-          ],
-          "headers": [
-            "",
-            "Name\n(color description\ns. TOC)",
-            "Author L.N. F.N.",
-            "CC3",
-            "F1",
-            "F2",
-            "LR/LV (dev)",
-            "",
-            "",
-            "RC\n(s. TOC)",
-            "Prot",
-            "Src",
-            "PL",
-            "NN\nNNUE",
-            "MP",
-            "EGT",
-            "N-Alias\n(base/add.)",
-            "N-Pre\nLV",
-            "Dist.",
-            "Vers. FR",
-            "",
-            "",
-            "",
-            "CMD (arg) Config\nExamples",
-            "Peculiarities + Bugs + Info",
-            "Web/Download"
-          ],
-          "sheet_metadata": [
-            "10/18/2026",
-            "",
-            "",
-            "Alpha List (current count :: 1241)",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "declared_count": 1241,
-          "checked_at": "2026-10-19T01:17:00.508078+00:00",
-          "source": "rwbc"
-        },
-        {
-          "label": "SharpChess",
-          "listed_name": "SharpChess",
-          "url": "https://chessprogramming.org/Engines#alphabetical-list",
-          "listing_url": "https://chessprogramming.org/Engines",
-          "project_url": "https://chessprogramming.org/SharpChess",
-          "page_title": "SharpChess",
-          "page_path": "/SharpChess",
-          "section": "S",
-          "checked_at": "2026-10-19T00:59:52.557009+00:00",
-          "source": "wiki-engines"
-        }
+      "aliases": [
+        "SharpChess2"
       ],
-      "source_code": [
-        {
-          "url": "https://github.com/PeterHughes/SharpChess",
-          "evidence_url": "https://chessprogramming.org/SharpChess",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:42:24.590571+00:00"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "found",
-        "url": "https://chessprogramming.org/SharpChess",
-        "title": "SharpChess",
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "reviewed-title-alias",
-        "titles_checked": [
-          "SharpChess"
-        ]
-      }
-    },
-    {
-      "name": "SharpChess2",
-      "aliases": [],
       "provenance": [
         {
           "label": "SharpChess2",
@@ -253036,6 +252772,18 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "SharpChess",
+          "listed_name": "SharpChess",
+          "url": "https://chessprogramming.org/Engines#alphabetical-list",
+          "listing_url": "https://chessprogramming.org/Engines",
+          "project_url": "https://chessprogramming.org/SharpChess",
+          "page_title": "SharpChess",
+          "page_path": "/SharpChess",
+          "section": "S",
+          "checked_at": "2026-10-19T00:59:52.557009+00:00",
+          "source": "wiki-engines"
         }
       ],
       "source_code": [
@@ -253045,20 +252793,26 @@
           "source": "computer-chess-org"
         },
         {
+          "url": "https://github.com/PeterHughes/SharpChess",
+          "evidence_url": "https://chessprogramming.org/SharpChess",
+          "source": "chessprogramming-wiki",
+          "checked_at": "2026-10-19T01:42:24.590571+00:00"
+        },
+        {
           "url": "https://sourceforge.net/projects/sharpchess/",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
           "source": "computer-chess-org"
         }
       ],
       "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
+        "status": "found",
+        "url": "https://chessprogramming.org/SharpChess",
+        "title": "SharpChess",
         "checked_at": "2026-10-19T00:44:50.443299+00:00",
         "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
+        "method": "reviewed-title-alias",
         "titles_checked": [
-          "SharpChess2"
+          "SharpChess"
         ]
       },
       "source_status": {
@@ -257801,7 +257555,11 @@
           "note": "Historical Sinobyl source; later NoraGrace is a separately named program.",
           "evidence_url": "https://chessprogramming.org/Sinobyl",
           "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:42:32.370202+00:00"
+          "checked_at": "2026-10-19T01:42:32.370202+00:00",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 403 (Assembla ended free hosting); no Wayback copy found"
+          }
         }
       ],
       "chessprogramming_wiki": {
@@ -257818,13 +257576,22 @@
     },
     {
       "name": "sireButItsAnEngine",
-      "aliases": [],
+      "aliases": [
+        "Bongcloud"
+      ],
       "provenance": [
         {
           "label": "sireButItsAnEngine",
           "url": "https://computerchess.org.uk/4040/cgi/compare_engines.cgi?family=sireButItsAnEngine&print=Rating+list",
           "source": "ccrl",
           "checked_at": "2026-10-18T19:53:20.932911+00:00"
+        },
+        {
+          "label": "Bongcloud",
+          "url": "https://sscg13.pythonanywhere.com/",
+          "project_url": "https://github.com/sireButItsUnique/sireButItsAnEngine",
+          "source": "openbench-sscg13",
+          "checked_at": "2026-10-19T04:29:21.590677+00:00"
         },
         {
           "label": "sireButItsAnEngine",
@@ -257935,6 +257702,11 @@
           "url": "https://github.com/sireButItsUnique/sireButItsAnEngine",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
           "source": "rwbc"
+        },
+        {
+          "url": "https://github.com/sireButItsUnique/sireButItsAnEngine",
+          "evidence_url": "https://sscg13.pythonanywhere.com/",
+          "source": "openbench-sscg13"
         }
       ],
       "chessprogramming_wiki": {
@@ -262894,7 +262666,17 @@
         {
           "url": "https://codeberg.org/drummyfish/smallchesslib",
           "evidence_url": "https://lichess.org/@/smolchessbot",
-          "source": "lichess"
+          "source": "lichess",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404"
+          }
+        },
+        {
+          "url": "https://gitlab.com/drummyfish/smallchesslib",
+          "evidence_url": "https://gitlab.com/drummyfish/smallchesslib",
+          "source": "link-review",
+          "kind": "author drummyfish's GitLab repository"
         }
       ],
       "chessprogramming_wiki": {
@@ -272381,7 +272163,11 @@
         {
           "url": "https://github.com/Thibor/StoneChess",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
-          "source": "rwbc"
+          "source": "rwbc",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found; no Software Heritage or Wayback copy found"
+          }
         }
       ],
       "chessprogramming_wiki": {
@@ -273841,16 +273627,20 @@
       ],
       "source_code": [
         {
+          "url": "https://git.sesse.net/?p=stupid",
+          "evidence_url": "http://web.archive.org/web/20260415025721/https://git.sesse.net/?p=stupid",
+          "source": "source-status-research",
+          "kind": "original repository (author gitweb)",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "IPv6-only host (no A record); unreachable from IPv4-only networks"
+          }
+        },
+        {
           "url": "http://web.archive.org/web/20191117060127/https://git.sesse.net/?p=stupid;a=tree",
           "evidence_url": "http://web.archive.org/web/20260415025721/https://git.sesse.net/?p=stupid",
           "source": "source-status-research",
           "kind": "Wayback snapshot of repository tree"
-        },
-        {
-          "url": "https://git.sesse.net/?p=stupid",
-          "evidence_url": "http://web.archive.org/web/20260415025721/https://git.sesse.net/?p=stupid",
-          "source": "source-status-research",
-          "kind": "original repository (author gitweb)"
         }
       ],
       "chessprogramming_wiki": {
@@ -274246,14 +274036,22 @@
         {
           "url": "https://github.com/Zerbinati/S_XPrO-NN",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "source": "computer-chess-org",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
         },
         {
           "url": "https://github.com/Zerbinati/S_XPrO-NN",
           "note": "Original SugaR project and same-name third-party host; not standard Stockfish source attribution.",
           "evidence_url": "https://chessprogramming.org/SugaR",
           "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:43:01.000213+00:00"
+          "checked_at": "2026-10-19T01:43:01.000213+00:00",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
         }
       ],
       "chessprogramming_wiki": {
@@ -278704,7 +278502,17 @@
         {
           "url": "https://github.com/gflohr/tate",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "source": "computer-chess-org",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
+        },
+        {
+          "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/gflohr/tate",
+          "evidence_url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/gflohr/tate",
+          "source": "link-review",
+          "kind": "Software Heritage archive of the original repository (last visit 2021-07-13)"
         }
       ],
       "chessprogramming_wiki": {
@@ -279336,7 +279144,9 @@
     },
     {
       "name": "Teki",
-      "aliases": [],
+      "aliases": [
+        "Teki Random Mover"
+      ],
       "provenance": [
         {
           "label": "Teki",
@@ -279483,6 +279293,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Teki Random Mover",
+          "url": "https://e4e6.com/ubc_ratings.php",
+          "request_data": {
+            "type": "type3"
+          },
+          "source": "ubc",
+          "checked_at": "2026-10-18T19:49:18.418245+00:00"
         }
       ],
       "source_code": [
@@ -279510,35 +279329,7 @@
           "url": "https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/teki/src.7z",
           "evidence_url": "https://github.com/lukasmonk/lucaschessR6/tree/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/teki",
           "source": "lucas-chess"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "Teki"
-        ]
-      }
-    },
-    {
-      "name": "Teki Random Mover",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "Teki Random Mover",
-          "url": "https://e4e6.com/ubc_ratings.php",
-          "request_data": {
-            "type": "type3"
-          },
-          "source": "ubc",
-          "checked_at": "2026-10-18T19:49:18.418245+00:00"
-        }
-      ],
-      "source_code": [
+        },
         {
           "url": "https://github.com/Mk-Chan/Teki/tree/v0.1",
           "evidence_url": "https://github.com/Mk-Chan/Teki/releases/tag/v0.1",
@@ -279554,7 +279345,7 @@
         "evidence_url": "https://chessprogramming.org/search-index.json",
         "method": "main-namespace-title-index",
         "titles_checked": [
-          "Teki Random Mover"
+          "Teki"
         ]
       },
       "source_status": {
@@ -281466,40 +281257,6 @@
       }
     },
     {
-      "name": "The Flying Dutchman",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "The Flying Dutchman 0.1.0",
-          "url": "https://e4e6.com/ubc_ratings.php",
-          "request_data": {
-            "type": "type3"
-          },
-          "source": "ubc",
-          "checked_at": "2026-10-18T19:49:18.418245+00:00"
-        }
-      ],
-      "source_code": [],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "The Flying Dutchman"
-        ]
-      },
-      "source_status": {
-        "tier": "F",
-        "availability": "not_located",
-        "licensing": "unknown",
-        "confidence": "low",
-        "checked_at": "2026-10-20T02:36:12+00:00"
-      }
-    },
-    {
       "name": "The Fox",
       "aliases": [],
       "provenance": [
@@ -282730,7 +282487,17 @@
         {
           "url": "https://github.com/DIYSolutions/Thor",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "source": "computer-chess-org",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
+        },
+        {
+          "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/DIYSolutions/Thor",
+          "evidence_url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/DIYSolutions/Thor",
+          "source": "link-review",
+          "kind": "Software Heritage archive of the original repository (last visit 2024-06-24)"
         }
       ],
       "chessprogramming_wiki": {
@@ -282965,46 +282732,6 @@
         "titles_checked": [
           "Thrawn"
         ]
-      }
-    },
-    {
-      "name": "Throne",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "Throne 0.2",
-          "url": "https://chessengines.blogspot.com/p/rating-jcer.html",
-          "section": "CEDR rating table 1",
-          "rank": 184,
-          "source": "chess-engines-diary",
-          "checked_at": "2026-10-19T01:16:59.492027+00:00"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/Txnch/Shadow/tree/0.2",
-          "evidence_url": "https://chessengines.blogspot.com/2026/05/throne-02-new-version-chess-engine.html",
-          "source": "source-status-research",
-          "kind": "original repository (renamed from Throne; tag 0.2)"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "Throne"
-        ]
-      },
-      "source_status": {
-        "tier": "F",
-        "availability": "available",
-        "licensing": "open_source",
-        "confidence": "high",
-        "checked_at": "2026-10-20T02:36:12+00:00"
       }
     },
     {
@@ -285789,62 +285516,6 @@
       }
     },
     {
-      "name": "Toledo",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "Toledo by Óscar Toledo Gutiérrez",
-          "listed_name": "Toledo",
-          "url": "https://chessprogramming.org/Engines#alphabetical-list",
-          "listing_url": "https://chessprogramming.org/Engines",
-          "project_url": "https://chessprogramming.org/Toledo",
-          "page_title": "Toledo",
-          "page_path": "/Toledo",
-          "section": "T",
-          "checked_at": "2026-10-19T00:59:52.557009+00:00",
-          "source": "wiki-engines"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/nanochess/Toledo-Atomchess",
-          "evidence_url": "https://nanochess.org/chess1.html",
-          "source": "source-status-research",
-          "kind": "original repository (Toledo Atomchess, x86 asm)"
-        },
-        {
-          "url": "https://nanochess.org/chess1.html",
-          "evidence_url": "https://nanochess.org/chess1.html",
-          "source": "source-status-research",
-          "kind": "original author page (toledo.c and archived revisions)"
-        },
-        {
-          "url": "https://nanochess.org/chess3.html",
-          "evidence_url": "https://nanochess.org/chess1.html",
-          "source": "source-status-research",
-          "kind": "original author page (Toledo Nanochess / Picochess source)"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "found",
-        "url": "https://chessprogramming.org/Toledo",
-        "title": "Toledo",
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "reviewed-title-alias",
-        "titles_checked": [
-          "Toledo"
-        ]
-      },
-      "source_status": {
-        "tier": "A",
-        "availability": "available",
-        "licensing": "source_available",
-        "confidence": "high",
-        "checked_at": "2026-10-19T14:05:45+00:00"
-      }
-    },
-    {
       "name": "Toledo 2000",
       "aliases": [],
       "provenance": [
@@ -285885,6 +285556,7 @@
     {
       "name": "Toledo NanoChess",
       "aliases": [
+        "Toledo",
         "Toledo Nanochess"
       ],
       "provenance": [
@@ -286011,6 +285683,18 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Toledo by Óscar Toledo Gutiérrez",
+          "listed_name": "Toledo",
+          "url": "https://chessprogramming.org/Engines#alphabetical-list",
+          "listing_url": "https://chessprogramming.org/Engines",
+          "project_url": "https://chessprogramming.org/Toledo",
+          "page_title": "Toledo",
+          "page_path": "/Toledo",
+          "section": "T",
+          "checked_at": "2026-10-19T00:59:52.557009+00:00",
+          "source": "wiki-engines"
         }
       ],
       "source_code": [
@@ -286030,22 +285714,27 @@
           "evidence_url": "https://nanochess.org/chess3.html",
           "source": "source-status-research",
           "kind": "author page with full source listing"
+        },
+        {
+          "url": "https://nanochess.org/chess1.html",
+          "evidence_url": "https://nanochess.org/chess3.html",
+          "source": "source-status-research",
+          "kind": "original author page (toledo.c and archived revisions)"
         }
       ],
       "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
+        "status": "found",
+        "url": "https://chessprogramming.org/Toledo",
+        "title": "Toledo",
         "checked_at": "2026-10-19T00:44:50.443299+00:00",
         "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
+        "method": "reviewed-title-alias",
         "titles_checked": [
-          "Toledo NanoChess",
-          "Toledo Nanochess"
+          "Toledo"
         ]
       },
       "source_status": {
-        "tier": "B",
+        "tier": "A",
         "availability": "available",
         "licensing": "source_available",
         "confidence": "high",
@@ -291585,12 +291274,26 @@
         {
           "url": "https://github.com/nfmccrina/tuxedocat",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "source": "computer-chess-org",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
         },
         {
           "url": "https://github.com/nfmccrina/tuxedocat",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
-          "source": "rwbc"
+          "source": "rwbc",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
+        },
+        {
+          "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/nfmccrina/tuxedocat",
+          "evidence_url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/nfmccrina/tuxedocat",
+          "source": "link-review",
+          "kind": "Software Heritage archive of the original repository (last visit 2020-04-06)"
         }
       ],
       "chessprogramming_wiki": {
@@ -292119,7 +291822,17 @@
           "url": "https://wannabe.guru.org/svn/typhoon/trunk/",
           "evidence_url": "https://chessprogramming.org/Typhoon",
           "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T00:49:49.080488+00:00"
+          "checked_at": "2026-10-19T00:49:49.080488+00:00",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404"
+          }
+        },
+        {
+          "url": "https://web.archive.org/web/20180820171416/http://wannabe.guru.org/svn/typhoon/trunk/",
+          "evidence_url": "https://web.archive.org/web/20180820171416/http://wannabe.guru.org/svn/typhoon/trunk/",
+          "source": "link-review",
+          "kind": "Wayback snapshot of the original Subversion trunk (2018-08-20)"
         }
       ],
       "chessprogramming_wiki": {
@@ -297325,7 +297038,11 @@
           "url": "https://web.archive.org/web/20130120092706/http://romstad.org/viper/",
           "evidence_url": "https://chessprogramming.org/Viper",
           "source": "source-status-research",
-          "kind": "archived author homepage (download contents not verified)"
+          "kind": "archived author homepage (download contents not verified)",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; the Wayback Machine now holds no romstad.org/viper captures"
+          }
         }
       ],
       "chessprogramming_wiki": {
@@ -310770,7 +310487,11 @@
         {
           "url": "https://github.com/smatovic/Zeta",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "source": "computer-chess-org",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
         },
         {
           "url": "https://gitlab.com/smatovic/Zeta",
@@ -312179,8 +311900,28 @@
     },
     {
       "name": "Zoe",
-      "aliases": [],
+      "aliases": [
+        "Zoe Opponent Engine"
+      ],
       "provenance": [
+        {
+          "label": "Zoe Opponent Engine",
+          "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
+          "section": "2012 Releases",
+          "author": "James Stanley",
+          "version": "01 JA",
+          "protocol": "XB",
+          "comment": "C source; Linux, Win",
+          "links": [
+            "https://github.com/jes/zoe",
+            "http://kirr.homeunix.org/chess/engines/Jim%20Ablett/",
+            "http://kirr.homeunix.org/chess/engines/Jim%20Ablett/+++%20LINUX%20ENGINES%20++/"
+          ],
+          "date_added": "2012/11/13",
+          "project_url": "https://github.com/jes/zoe",
+          "checked_at": "2026-10-19T18:34:57.193219+00:00",
+          "source": "computer-chess-org"
+        },
         {
           "label": "Zoe",
           "original_name": "Zoe",
@@ -312291,44 +312032,7 @@
           "url": "http://github.com/jes/zoe",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
           "source": "rwbc"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "Zoe"
-        ]
-      }
-    },
-    {
-      "name": "Zoe Opponent Engine",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "Zoe Opponent Engine",
-          "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "section": "2012 Releases",
-          "author": "James Stanley",
-          "version": "01 JA",
-          "protocol": "XB",
-          "comment": "C source; Linux, Win",
-          "links": [
-            "https://github.com/jes/zoe",
-            "http://kirr.homeunix.org/chess/engines/Jim%20Ablett/",
-            "http://kirr.homeunix.org/chess/engines/Jim%20Ablett/+++%20LINUX%20ENGINES%20++/"
-          ],
-          "date_added": "2012/11/13",
-          "project_url": "https://github.com/jes/zoe",
-          "checked_at": "2026-10-19T18:34:57.193219+00:00",
-          "source": "computer-chess-org"
-        }
-      ],
-      "source_code": [
+        },
         {
           "url": "https://github.com/jes/zoe",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
@@ -312343,7 +312047,7 @@
         "evidence_url": "https://chessprogramming.org/search-index.json",
         "method": "main-namespace-title-index",
         "titles_checked": [
-          "Zoe Opponent Engine"
+          "Zoe"
         ]
       }
     },
@@ -312639,7 +312343,17 @@
         {
           "url": "https://github.com/MatthewSJohnson/UCI_ZotChess",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
+          "source": "computer-chess-org",
+          "unreachable": {
+            "checked_at": "2026-10-21",
+            "status": "HTTP 404; GitHub API: Not Found"
+          }
+        },
+        {
+          "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/MatthewSJohnson/UCI_ZotChess",
+          "evidence_url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/MatthewSJohnson/UCI_ZotChess",
+          "source": "link-review",
+          "kind": "Software Heritage archive of the original repository (last visit 2020-03-04)"
         }
       ],
       "chessprogramming_wiki": {
@@ -313516,13 +313230,13 @@
     "index_url": "https://chessprogramming.org/search-index.json",
     "checked_at": "2026-10-19T00:44:50.443299+00:00",
     "main_namespace_pages": 4269,
-    "found": 1124,
-    "not_found": 1203,
+    "found": 1122,
+    "not_found": 1171,
     "needs_review": 0,
-    "not_checked": 0
+    "not_checked": 1
   },
   "chessprogramming_source_code": {
-    "found": 115,
+    "found": 114,
     "no_source_link_found": 847,
     "needs_review": 0
   }

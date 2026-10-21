@@ -98,7 +98,33 @@ def unused_not_source(engines, rules):
     return [rule for rule in rules if (identity_key(rule["family"]), url_key(rule["url"])) not in used]
 
 
-def publish(catalog, unresolved):
+def mark_unreachable_links(engines, rules):
+    """Flag reviewed unreachable source links and add their verified replacements; return unused rules."""
+    by_family = {}
+    for rule in rules:
+        by_family.setdefault(identity_key(rule["family"]), []).append(rule)
+    used = set()
+    for engine in engines:
+        for index, rule in enumerate(by_family.get(identity_key(engine["name"]), [])):
+            hits = [c for c in engine["source_code"] if url_key(c["url"]) == url_key(rule["url"])]
+            if not hits:
+                continue
+            used.add((identity_key(rule["family"]), index))
+            for code in hits:
+                code["unreachable"] = {"checked_at": rule["checked_at"], "status": rule["status"]}
+            replacement = rule.get("replacement")
+            if replacement and all(url_key(c["url"]) != url_key(replacement["url"]) for c in engine["source_code"]):
+                engine["source_code"].append({
+                    "url": replacement["url"], "evidence_url": replacement.get("evidence_url", replacement["url"]),
+                    "source": "link-review", "kind": replacement["kind"],
+                })
+    return [
+        rule for family, family_rules in by_family.items()
+        for index, rule in enumerate(family_rules) if (family, index) not in used
+    ]
+
+
+def publish(catalog, unresolved, unreachable_links=()):
     directory = ROOT / "data"
     directory.mkdir(exist_ok=True)
     wiki_path = directory / "chessprogramming-wiki.json"
@@ -114,6 +140,8 @@ def publish(catalog, unresolved):
     status = json.loads(status_path.read_text(encoding="utf-8")) if status_path.exists() else {}
     source_status.attach(catalog, status)
     engines = catalog["engines"]
+    for rule in mark_unreachable_links(engines, unreachable_links):
+        print(f"WARNING: unreachable-link rule {rule['url']} matched no {rule['family']} link; review overrides.json", flush=True)
     outputs = {
         "engines.json": json.dumps(catalog, ensure_ascii=False, indent=2) + "\n",
         "engines.csv": catalog_csv(engines),
@@ -262,7 +290,7 @@ def main():
             f"WARNING: not-source URL {rule['url']} matched no {rule['family']} link; review overrides.json",
             flush=True,
         )
-    publish(catalog, unresolved)
+    publish(catalog, unresolved, overrides.get("unreachable_source_urls", []))
     print(
         f"Wrote {len(catalog['engines'])} families; "
         f"{sum(bool(e['source_code']) for e in catalog['engines'])} with linked source code; "

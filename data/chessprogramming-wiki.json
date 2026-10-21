@@ -23470,17 +23470,6 @@
         "Toga Toy"
       ]
     },
-    "Toledo": {
-      "status": "found",
-      "url": "https://chessprogramming.org/Toledo",
-      "title": "Toledo",
-      "checked_at": "2026-10-19T00:44:50.443299+00:00",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "reviewed-title-alias",
-      "titles_checked": [
-        "Toledo"
-      ]
-    },
     "Toledo 2000": {
       "status": "found",
       "url": "https://chessprogramming.org/Toledo_2000",
@@ -23493,15 +23482,14 @@
       ]
     },
     "Toledo NanoChess": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
+      "status": "found",
+      "url": "https://chessprogramming.org/Toledo",
+      "title": "Toledo",
       "checked_at": "2026-10-19T00:44:50.443299+00:00",
       "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
+      "method": "reviewed-title-alias",
       "titles_checked": [
-        "Toledo NanoChess",
-        "Toledo Nanochess"
+        "Toledo"
       ]
     },
     "Tom Thumb": {

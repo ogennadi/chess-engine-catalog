@@ -91,7 +91,7 @@ def preferred_source(engine):
     def rank(url):
         codes = candidates[url]
         parsed = urlsplit(url)
-        reviewed = [c for c in codes if c["source"] == "source-status-research"]
+        reviewed = [c for c in codes if c["source"] in {"source-status-research", "link-review"}]
         caution = any(
             phrase in c.get("kind", "").casefold()
             for c in reviewed
@@ -105,6 +105,7 @@ def preferred_source(engine):
         }
         bundled = all(c["source"] == "lucas-chess" for c in codes)
         return (
+            not any(c.get("unreachable") for c in codes),
             not caution,
             bool(reviewed),
             repository and not bundled,

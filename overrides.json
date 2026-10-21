@@ -3,15 +3,20 @@
     "4k.c": "4kc",
     "Absolute-Zero": "Absolute Zero",
     "Ant (& Gi-Ant)": "Ant",
+    "ApepCE": "Apep",
     "APILChess": "APIL chess",
     "ArabianKnight": "Arabian Knight",
+    "Armageddon II": "Armageddon",
     "BadChessEngine": "Bad Chess Engine",
     "Betsabe": "Betsabe II",
     "BlackMarlin": "Black Marlin",
+    "BlitzKibitz/Amaterasu": "BlitzKibitz",
     "Blitz Monster": "Novag",
+    "Bongcloud": "sireButItsAnEngine",
     "Bringer (Der)": "Der Bringer",
     "BrutusChess": "Brutus NL",
     "BugChess2": "BugChess",
+    "CalculonX": "Calculon",
     "ChadsChess": "Chads Chess",
     "Cheng3": "Cheng",
     "Chess Challenger": "Fidelity",
@@ -23,18 +28,22 @@
     "chess-dot-cpp": "chess.cpp",
     "ChessBin.com": "ChessCore",
     "ChessDotCpp": "chess.cpp",
+    "Chesslib": "CL-U-E",
     "Chessplayer 2150": "Chess Player 2150",
     "Constellation": "Novag",
     "CPW": "CPW-Engine",
     "Critter (Chess)": "Critter",
+    "Cyclone xTreme": "Cyclone",
     "Deep Sjeng c't": "Sjeng",
     "DoubleCheck": "DiscoCheck",
     "Dragon by Komodo": "Dragon",
     "Dragon of MORS": "MORS",
     "Dump": "Dumb",
     "E.T.CHESS": "E.T. Chess",
+    "Electronic Grand Master": "EGM",
     "Elegance": "Fidelity",
     "Elite": "Fidelity",
+    "Emerald Chess": "Emerald",
     "Equisitum": "Equisetum",
     "ETChess": "E.T. Chess",
     "Excel": "Fidelity",
@@ -57,6 +66,7 @@
     "Francesca MAD": "Francesca",
     "Frank-Walter": "FrankWalter",
     "Frenzee (Deep)": "Frenzee",
+    "GFCv2": "GFC",
     "GK 2100": "Saitek/SciSys",
     "Gnuchess": "GNU Chess",
     "Goedel": "Godel",
@@ -73,8 +83,11 @@
     "Infraredv2": "Infrared",
     "JackyChess": "Jacky Chess",
     "Jazz (Orchestra)": "Jazz",
+    "Julien's Chess3": "Chess3",
     "Junior (Deep)": "Junior",
     "Junior Chess": "Saitek/SciSys",
+    "Joker2": "Joker IT",
+    "Kallisto II": "Kallisto",
     "Kasparov GK-2000": "Saitek/SciSys",
     "Kasparov President/GK-2100": "Saitek/SciSys",
     "Kasparov SPARC": "Saitek/SciSys",
@@ -83,9 +96,14 @@
     "Leela": "Leela Chess",
     "Leela-dag-preview": "Leela Chess",
     "LittleGoliath": "Little Goliath",
+    "LittleLelouch": "Little Lelouch",
     "LittleWing": "Little Wing",
+    "LunaChess": "Luna",
     "Maelstorm": "Maelstrom",
     "MagnumChess": "Magnum Chess",
+    "Mango": "MangoPaola",
+    "MangoPaolaAjedrez": "MangoPaola",
+    "Maxima2": "Maxima",
     "melsh_bot": "Melsh",
     "Mephisto (H)": "Mephisto",
     "Mephisto Academy": "Mephisto",
@@ -123,10 +141,13 @@
     "Mephisto Roma II": "Mephisto",
     "Mephisto Super Mondial": "Mephisto",
     "Mephisto Vancouver": "Mephisto",
+    "MicroChess 1976": "MicroChess",
     "Mini Chess": "Saitek/SciSys",
     "MittensCEDR": "Mittens",
     "MrBob": "Mr Bob",
     "Nates Chessbot": "Nate's ChessBot",
+    "NatesBot": "Nate's ChessBot",
+    "Nicarao_Chess": "Nicarao",
     "NoonianChess": "Noonian",
     "Novag Citrine": "Novag",
     "Novag Constellation": "Novag",
@@ -152,14 +173,20 @@
     "Novag Super VIP": "Novag",
     "Novag X": "Novag",
     "Nu'chess": "Nu-chess",
+    "Numpty": "Numpty chess",
     "Par Excellence": "Fidelity",
     "Patzer (Deep)": "Patzer",
     "paulchen332": "paulchen",
     "PeacockSpider": "Peacock Spider",
+    "PLP": "PoorLittlePinkus",
     "Porucnik": "Porucznik",
     "President Chess": "Saitek/SciSys",
     "Private Line": "Fidelity",
+    "Prophet3": "Prophet",
+    "Prophet4": "Prophet",
     "Pupsi2": "Pupsi",
+    "PyChess": "PychessEngine",
+    "Quanticade Aurora": "Quanticade",
     "Rex Chess": "RexChess",
     "RISC 2500": "Saitek/SciSys",
     "Rival Chess": "Rival",
@@ -169,6 +196,7 @@
     "Rodent-V": "Rodent",
     "RomiChess P3L": "RomiChess",
     "Rusti-Rival": "Rusty-Rival",
+    "rusty-redtail": "Redtail",
     "Rybka WinFinder": "Rybka",
     "Saitek Brute Force": "Saitek/SciSys",
     "Saitek Galileo": "Saitek/SciSys",
@@ -209,6 +237,7 @@
     "Shallow-blue": "Shallowblue",
     "Shallow2": "Shallow",
     "ShallowGuess": "Shallow Guess",
+    "SharpChess2": "SharpChess",
     "ShenYu": "Shen Yu",
     "Shredder (Deep)": "Shredder",
     "Sierzant": "Sierżant",
@@ -221,8 +250,12 @@
     "smol": "smol.cs",
     "Super Constellation": "Novag",
     "Superstar": "Saitek/SciSys",
+    "Teki Random Mover": "Teki",
+    "The Flying Dutchman": "Flying-Dutchman",
     "TheCrazyBishop": "The Crazy Bishop",
     "TheKing": "The King",
+    "Throne": "Shadow",
+    "Toledo": "Toledo NanoChess",
     "Tom-Thumb": "Tom Thumb",
     "Turbostar": "Saitek/SciSys",
     "TwistedLogic": "Twisted Logic",
@@ -230,7 +263,8 @@
     "Vajolet2": "Vajolet",
     "Why Not": "Y!",
     "Wita": "Awit",
-    "WukongJS": "Wukong JS"
+    "WukongJS": "Wukong JS",
+    "Zoe Opponent Engine": "Zoe"
   },
   "source_aliases": [
     {
@@ -517,6 +551,16 @@
       "target": "Jupiter (Andersen)",
       "evidence_url": "https://www.chessprogramming.org/Jupiter",
       "note": "RWBC and computer-chess.org list Michael Andersen's WinBoard engine; the wiki's Jupiter is Javier Ros Padilla's 1993 Turbo Pascal program."
+    },
+    {
+      "sources": [
+        "rwbc",
+        "computer-chess-org"
+      ],
+      "family": "SharpChess",
+      "target": "#Chess",
+      "evidence_url": "https://chessprogramming.org/SharpChess",
+      "note": "RWBC and computer-chess.org name Albert Bertilsson (albert.nu, 2003); the wiki's SharpChess is Peter Hughes' engine and lists Bertilsson's program as #Chess."
     }
   ],
   "not_source_urls": [
@@ -537,6 +581,410 @@
       "url": "https://github.com/Dany1962/Isa-NNUE-releases",
       "evidence_url": "https://github.com/Dany1962/Isa-NNUE-releases",
       "note": "Release zips of Windows executables only; isa_3_8.zip and Isa 4_5.zip contain .exe builds, a readme, a licence and an opening book, but no source (checked 2026-10-20)."
+    },
+    {
+      "family": "Kimbo",
+      "url": "https://github.com/JacquesRW/akimbo",
+      "evidence_url": "https://github.com/jw1912/akimbo",
+      "note": "akimbo is the author's later, separately named engine (created 2022-10-22), not Kimbo's source; the Kimbo repository itself is gone (checked 2026-10-21)."
+    }
+  ],
+  "unreachable_source_urls": [
+    {
+      "family": "ChessEngine (Clarity)",
+      "url": "https://github.com/ForestBits/chessengine",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found",
+      "replacement": {
+        "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/ForestBits/chessengine",
+        "kind": "Software Heritage archive of the original repository (last visit 2021-09-04)"
+      }
+    },
+    {
+      "family": "Cwtch",
+      "url": "https://github.com/op12no2/chess-archive",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found"
+    },
+    {
+      "family": "Dorpsgek",
+      "url": "https://github.com/ZirconiumX/Dorpsgek",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found",
+      "replacement": {
+        "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/ZirconiumX/Dorpsgek",
+        "kind": "Software Heritage archive of the original repository (last visit 2020-04-10)"
+      }
+    },
+    {
+      "family": "Embla",
+      "url": "https://github.com/flok99/Embla",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found",
+      "replacement": {
+        "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/flok99/Embla",
+        "kind": "Software Heritage archive of the original repository (last visit 2019-03-09)"
+      }
+    },
+    {
+      "family": "Feeks",
+      "url": "https://github.com/flok99/feeks",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found",
+      "replacement": {
+        "url": "https://github.com/folkertvanheusden/Feeks",
+        "kind": "author Folkert van Heusden's current repository"
+      }
+    },
+    {
+      "family": "Finny",
+      "url": "https://github.com/edlich/Finny",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found",
+      "replacement": {
+        "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/edlich/Finny",
+        "kind": "Software Heritage archive of the original repository (last visit 2024-06-28)"
+      }
+    },
+    {
+      "family": "GNU Chess",
+      "url": "https://github.com/heisencoder/gnuchess",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found"
+    },
+    {
+      "family": "Gideon's Chess Engine",
+      "url": "https://github.com/gideongrinberg/gce",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found; no Software Heritage or Wayback copy found"
+    },
+    {
+      "family": "IntelliChess",
+      "url": "https://github.com/angyjoe/intellichess",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found",
+      "replacement": {
+        "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/angyjoe/intellichess",
+        "kind": "Software Heritage archive of the original repository (last visit 2021-01-01)"
+      }
+    },
+    {
+      "family": "IntelliChess",
+      "url": "https://sourceforge.net/projects/intellichess/",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404"
+    },
+    {
+      "family": "Keele",
+      "url": "https://github.com/mwyngaarden/Keele",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found; no Software Heritage copy",
+      "replacement": {
+        "url": "https://web.archive.org/web/20201202192851/https://github.com/mwyngaarden/Keele",
+        "kind": "Wayback snapshot of the original repository page (2020-12-02)"
+      }
+    },
+    {
+      "family": "Kimbo",
+      "url": "https://github.com/JacquesRW/Kimbo",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found; no Software Heritage or Wayback copy found"
+    },
+    {
+      "family": "MagiC-engine",
+      "url": "https://github.com/zzhangb4/chess-engine-in-C-v1.0",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found; no Software Heritage or Wayback copy found"
+    },
+    {
+      "family": "Omelette",
+      "url": "https://github.com/GuyClicking/Omelette-chess-engine",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found",
+      "replacement": {
+        "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/GuyClicking/Omelette-chess-engine",
+        "kind": "Software Heritage archive of the original repository (last visit 2021-07-22)"
+      }
+    },
+    {
+      "family": "Phoenix (Rahul)",
+      "url": "https://github.com/rahular/phoenix",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found",
+      "replacement": {
+        "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/rahular/phoenix",
+        "kind": "Software Heritage archive of the original repository (last visit 2016-08-06)"
+      }
+    },
+    {
+      "family": "Roller",
+      "url": "https://github.com/op12no2/roller",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found",
+      "replacement": {
+        "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/op12no2/roller",
+        "kind": "Software Heritage archive of the original repository (last visit 2022-07-25)"
+      }
+    },
+    {
+      "family": "RuthIron",
+      "url": "https://github.com/themreKalkan/RuthIron",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found; no Software Heritage copy",
+      "replacement": {
+        "url": "https://web.archive.org/web/20260301122934/https://github.com/themreKalkan/RuthIron",
+        "kind": "Wayback snapshot of the original repository page (2026-03-01)"
+      }
+    },
+    {
+      "family": "Sapeli",
+      "url": "https://github.com/SamuraiDangyo/Sapeli",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found"
+    },
+    {
+      "family": "StoneChess",
+      "url": "https://github.com/Thibor/StoneChess",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found; no Software Heritage or Wayback copy found"
+    },
+    {
+      "family": "SugaR",
+      "url": "https://github.com/Zerbinati/S_XPrO-NN",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found"
+    },
+    {
+      "family": "Tate",
+      "url": "https://github.com/gflohr/tate",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found",
+      "replacement": {
+        "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/gflohr/tate",
+        "kind": "Software Heritage archive of the original repository (last visit 2021-07-13)"
+      }
+    },
+    {
+      "family": "Thor",
+      "url": "https://github.com/DIYSolutions/Thor",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found",
+      "replacement": {
+        "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/DIYSolutions/Thor",
+        "kind": "Software Heritage archive of the original repository (last visit 2024-06-24)"
+      }
+    },
+    {
+      "family": "TuxedoCat",
+      "url": "https://github.com/nfmccrina/tuxedocat",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found",
+      "replacement": {
+        "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/nfmccrina/tuxedocat",
+        "kind": "Software Heritage archive of the original repository (last visit 2020-04-06)"
+      }
+    },
+    {
+      "family": "Zeta",
+      "url": "https://github.com/smatovic/Zeta",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found"
+    },
+    {
+      "family": "ZotChess",
+      "url": "https://github.com/MatthewSJohnson/UCI_ZotChess",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; GitHub API: Not Found",
+      "replacement": {
+        "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/MatthewSJohnson/UCI_ZotChess",
+        "kind": "Software Heritage archive of the original repository (last visit 2020-03-04)"
+      }
+    },
+    {
+      "family": "Viper",
+      "url": "https://web.archive.org/web/20130120092706/http://romstad.org/viper/",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404; the Wayback Machine now holds no romstad.org/viper captures"
+    },
+    {
+      "family": "Brainless",
+      "url": "https://bitbucket.org/waterreaction/brainless",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404 (Bitbucket removed Mercurial repositories in 2020)",
+      "replacement": {
+        "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://bitbucket.org/waterreaction/brainless",
+        "kind": "Software Heritage archive of the original repository (last visit 2020-07-16)"
+      }
+    },
+    {
+      "family": "Felpo",
+      "url": "https://bitbucket.org/Felice_Pollano/felpo-ii",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404 (Bitbucket removed Mercurial repositories in 2020)",
+      "replacement": {
+        "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://bitbucket.org/Felice_Pollano/felpo-ii",
+        "kind": "Software Heritage archive of the original repository (last visit 2020-07-16)"
+      }
+    },
+    {
+      "family": "Felpo",
+      "url": "http://bitbucket.org/Felice_Pollano/felpo-ii",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404 (Bitbucket removed Mercurial repositories in 2020)"
+    },
+    {
+      "family": "Giraffe",
+      "url": "https://bitbucket.org/waterreaction/giraffe",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404 (Bitbucket removed Mercurial repositories in 2020)"
+    },
+    {
+      "family": "Giraffe",
+      "url": "https://bitbucket.org/waterreaction/giraffedownloads",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404"
+    },
+    {
+      "family": "Ifrit",
+      "url": "https://bitbucket.org/abrenkman/ifrit_chess_engine",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404 (Bitbucket removed Mercurial repositories in 2020)"
+    },
+    {
+      "family": "Ifrit",
+      "url": "https://bitbucket.org/abrenkman/ifrit_chess_engine/src/default/",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404"
+    },
+    {
+      "family": "RuyDos",
+      "url": "https://bitbucket.org/alonamaloh/ruydos",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404 (Bitbucket removed Mercurial repositories in 2020)",
+      "replacement": {
+        "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://bitbucket.org/alonamaloh/ruydos",
+        "kind": "Software Heritage archive of the original repository (last visit 2020-07-16)"
+      }
+    },
+    {
+      "family": "smolchess",
+      "url": "https://codeberg.org/drummyfish/smallchesslib",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404",
+      "replacement": {
+        "url": "https://gitlab.com/drummyfish/smallchesslib",
+        "kind": "author drummyfish's GitLab repository"
+      }
+    },
+    {
+      "family": "Alice",
+      "url": "http://kirr.homeunix.org/chess/engines/Jim%20Ablett/ALICE/",
+      "checked_at": "2026-10-21",
+      "status": "DNS: host not found",
+      "replacement": {
+        "url": "https://web.archive.org/web/20201106232442/http://kirr.homeunix.org/chess/engines/Jim%20Ablett/ALICE/",
+        "kind": "Wayback snapshot of the original Jim Ablett download directory (2020-11-06)"
+      }
+    },
+    {
+      "family": "OBender",
+      "url": "http://kirr.homeunix.org/chess/engines/Jim%20Ablett/OBENDER/",
+      "checked_at": "2026-10-21",
+      "status": "DNS: host not found",
+      "replacement": {
+        "url": "https://web.archive.org/web/20201106232507/http://kirr.homeunix.org/chess/engines/Jim%20Ablett/OBENDER/",
+        "kind": "Wayback snapshot of the original Jim Ablett download directory (2020-11-06)"
+      }
+    },
+    {
+      "family": "Awit",
+      "url": "http://webdocs.cs.ualberta.ca/%7Etony/Public/Awit-Wita-ComputerChess/",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404 (also via https and ~tony)",
+      "replacement": {
+        "url": "https://web.archive.org/web/20251201025348/https://webdocs.cs.ualberta.ca/~tony/Public/Awit-Wita-ComputerChess/",
+        "kind": "Wayback snapshot of the original page (2025-12-01)"
+      }
+    },
+    {
+      "family": "Awit",
+      "url": "http://webdocs.cs.ualberta.ca/%7Etony/Public/Awit-Wita-ComputerChess/AlgolwSupport/awit.pdf",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404"
+    },
+    {
+      "family": "BBChess (SI)",
+      "url": "http://labraj.uni-mb.si/en/Chess_program_BBChess",
+      "checked_at": "2026-10-21",
+      "status": "connection timed out",
+      "replacement": {
+        "url": "https://web.archive.org/web/20120125054457/http://labraj.uni-mb.si:80/en/Chess_program_BBChess",
+        "kind": "Wayback snapshot of the original page (2012-01-25)"
+      }
+    },
+    {
+      "family": "Delfi",
+      "url": "http://www.msbsoftware.it/delfi/source.htm",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404 (the site root now serves an IIS error page)",
+      "replacement": {
+        "url": "https://web.archive.org/web/20241007035725/http://www.msbsoftware.it/delfi/source.htm",
+        "kind": "Wayback snapshot of the original source page (2024-10-07)"
+      }
+    },
+    {
+      "family": "Faile",
+      "url": "https://git.code.sf.net/p/faile/code",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404 in a browser (git clone URL, not a web page)"
+    },
+    {
+      "family": "Fairy-Max",
+      "url": "http://hgm.nubati.net/cgi-bin/gitweb.cgi?p=fairymax.git;a=summary",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404 (gitweb removed; site root still up)",
+      "replacement": {
+        "url": "https://salsa.debian.org/games-team/fairymax",
+        "kind": "Debian Games Team packaging repository with the upstream source"
+      }
+    },
+    {
+      "family": "ProChess IT",
+      "url": "https://www.g-sei.org/prochess/prochess102ad/",
+      "checked_at": "2026-10-21",
+      "status": "DNS: host not found; no Wayback copy found"
+    },
+    {
+      "family": "SAL",
+      "url": "http://www.gherrity.org/sal6.tar.gz",
+      "checked_at": "2026-10-21",
+      "status": "connection refused",
+      "replacement": {
+        "url": "https://web.archive.org/web/20210420183849/http://www.gherrity.org/sal6.tar.gz",
+        "kind": "Wayback snapshot of the original download (tar.gz) (2021-04-20)"
+      }
+    },
+    {
+      "family": "Sinobyl",
+      "url": "https://www.assembla.com/code/sinobyl/subversion/nodes/129/trunk/Sinobyl",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 403 (Assembla ended free hosting); no Wayback copy found"
+    },
+    {
+      "family": "Stupid",
+      "url": "https://git.sesse.net/?p=stupid",
+      "checked_at": "2026-10-21",
+      "status": "IPv6-only host (no A record); unreachable from IPv4-only networks"
+    },
+    {
+      "family": "Typhoon",
+      "url": "https://wannabe.guru.org/svn/typhoon/trunk/",
+      "checked_at": "2026-10-21",
+      "status": "HTTP 404",
+      "replacement": {
+        "url": "https://web.archive.org/web/20180820171416/http://wannabe.guru.org/svn/typhoon/trunk/",
+        "kind": "Wayback snapshot of the original Subversion trunk (2018-08-20)"
+      }
     }
   ],
   "related_families": [
@@ -976,7 +1424,7 @@
       "family": "Narc Next"
     },
     "natesbot": {
-      "family": "NatesBot"
+      "family": "Nate's ChessBot"
     },
     "nekomata9": {
       "family": "Nekomata"
@@ -1058,7 +1506,7 @@
       "family": "Ray"
     },
     "redtail-zero": {
-      "family": "rusty-redtail"
+      "family": "Redtail"
     },
     "rookrusty": {
       "family": "RookRusty"

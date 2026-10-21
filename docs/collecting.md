@@ -109,6 +109,41 @@ stripping is heuristic, so unusual release names may still need manual aliases.
 Cross-source aliases also reconcile CCRL family labels with observed version
 names (for example, BugChess2 under BugChess, Vajolet2 under Vajolet, and
 Dragon by Komodo under Dragon). Original names remain in aliases/provenance.
+Zoe Opponent Engine merges into Zoe: both lists identify James Stanley's
+`jes/zoe` repository (RWBC lists his name surname-first).
+Joker2 merges into Joker IT: both identify Manlio Morini's `morinim/joker`
+repository. Joker NL (H.G. Muller) and Joker (Baudot and Weill) remain separate.
+Cyclone xTreme merges into Cyclone, Norman Schmidt's engine; its published source
+is `FireFather/cyclone-xTreme`. The research retains the caveat that correspondence
+to individual CEGT-tested builds is unverified.
+Numpty merges into Numpty chess, Chris Tatham's FreeBASIC engine; both Omega and
+Recharged source archives and their different licensing notes are preserved.
+BlitzKibitz/Amaterasu merges into BlitzKibitz: both list Valentin Stanciu and
+Claudiu Bogdan Mihail and the `svalentin/blitzkibitz` repository.
+MicroChess 1976 merges into MicroChess, Peter Jennings' 1976 KIM-1 program; both
+cite the benlo.com 6502 listing and Andre Adrian's WinBoard port.
+Mango and MangoPaolaAjedrez merge into MangoPaola, José Andrés Morales Linares'
+engine published in the `mango-computer/mango-paola` and `mango-paola-xboard`
+repositories.
+Nicarao_Chess merges into Nicarao, Deybis Melendez's engine; both of his
+repositories (`DeybisMelendez/NicaraoChess` and `DeybisMelendez/nicarao`) are kept.
+Other list spellings of one engine (same author and repository) are aliased:
+ApepCE, Julien's Chess3, Electronic Grand Master, Emerald Chess, LittleLelouch,
+LunaChess, NatesBot, PLP (PoorLittlePinkus), rusty-redtail (Redtail), Chesslib
+(CL-U-E), Bongcloud (sireButItsAnEngine), and The Flying Dutchman (Flying-Dutchman,
+whose crate is version 0.1.0). Version-named entries join their family: Prophet3
+and Prophet4, Maxima2, CalculonX, Armageddon II, Kallisto II, Quanticade Aurora,
+Teki Random Mover (Teki v0.1), Throne (Shadow's former name), and GFCv2 (Guillermo
+Filia's GFC v2, predecessor of Chronos, merged into GFC). The wiki's Toledo
+article (Óscar Toledo Gutiérrez's Toledo Chess 1/2, Nanochess and Picochess)
+merges into Toledo NanoChess, the member the lists rate; his separate x86
+program Atomchess is not counted as its source. Toledo 2000 is another author's
+program. MessChess is
+Mridul Muralidharan's private engine, not Rak Laptudirm's Mess, and stays separate.
+SharpChess is Peter Hughes' engine (the wiki article and SharpChess2); RWBC and
+computer-chess.org's SharpChess rows are Albert Bertilsson's program, the wiki's #Chess.
+PyChess is cataloged as PychessEngine (its RWBC alternate name) because the
+lists rate the built-in XBoard engine (`pychess-engine`), not the PyChess GUI.
 RWBC sorts some names by a trailing qualifier, such as "Shredder (Deep)" and "Critter
 (Chess)"; reviewed aliases merge these into the base family when the author and links
 match. Where the lists group a commercial successor with an open predecessor (Deep Sjeng
@@ -140,6 +175,20 @@ keep such a link out of that family's `source_code`; it is recorded under
 `rejected_source_code` and shown with the evidence on the family page. Examples
 are Cheng's `cheng4_releases` and Bumblebee's `BumblebeeReleases`. Unmatched
 rules are reported as warnings.
+
+Source links that stopped working are reviewed in `unreachable_source_urls`
+(family, URL, check date, observed status, optional replacement). Matching
+`source_code` links stay in the catalog but carry an `unreachable` note, and the
+poster never picks them over a live link. A replacement is a verified working
+copy: the author's new home (Feeks, smallchesslib), a packaging repository
+(Fairy-Max on Debian salsa), a Software Heritage archive of the deleted
+repository, or a dated Wayback snapshot. A family whose only live links are
+Software Heritage or Wayback copies counts as archived only (†). The 2026-10-21
+poster link check, at one request per host, found 46 broken links; 39 now
+resolve. No copy was found for Gideon's Chess Engine, Kimbo, MagiC-engine,
+ProChess IT, Sinobyl, StoneChess and Viper. Kimbo is recorded as
+`released_not_located`: its author's later engine akimbo is not counted as its
+source.
 
 Lucas Chess is collected from the pinned Linux-engine directory revision registered
 in `sources.json`. Its engine configuration is parsed without executing it and checked

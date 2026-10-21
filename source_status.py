@@ -13,10 +13,12 @@ from collections import Counter
 from datetime import datetime, timezone
 from html import unescape
 from pathlib import Path
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parent
 STATUS_PATH = ROOT / "data" / "source-status.json"
 RESEARCH_DIR = ROOT / ".cache" / "research"
+ARCHIVE_HOSTS = {"web.archive.org", "archive.softwareheritage.org"}
 
 LICENSING = {
     "open_source": "OSI/FSF-approved license or rights-holder public-domain dedication",
@@ -232,6 +234,9 @@ def availability_label(engine):
     status = engine.get("source_status")
     if status:
         return status["availability"]
+    live = [code for code in engine["source_code"] if not code.get("unreachable")]
+    if live and all(urlsplit(code["url"]).hostname in ARCHIVE_HOSTS for code in live):
+        return "archived_only"
     return "linked" if engine["source_code"] else "not_checked"
 
 

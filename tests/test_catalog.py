@@ -6,7 +6,7 @@ from pathlib import Path
 from unittest.mock import MagicMock, patch
 from urllib.error import HTTPError
 
-from collect import merge, publish, unused_not_source, unused_source_aliases
+from collect import mark_unreachable_links, merge, publish, unused_not_source, unused_source_aliases
 from collectors.http import Fetcher
 from collectors.lichess import collect, repository_links
 
@@ -32,12 +32,174 @@ class MergeTests(unittest.TestCase):
         names = ["Stockfish", "asmFish", "Chess22k", "Chess", "C++", "C"]
         self.assertEqual(len(merge([self.observation(n, "x") for n in names], {})), 6)
 
+    def test_numpty_merge_preserves_release_specific_research(self):
+        root = Path(__file__).parents[1]
+        overrides = json.loads((root / "overrides.json").read_text(encoding="utf-8"))
+        engines = merge([
+            self.observation("Numpty", "rwbc"),
+            self.observation("Numpty chess", "wiki-engines"),
+        ], overrides["aliases"])
+        self.assertEqual(len(engines), 1)
+        self.assertEqual(engines[0]["name"], "Numpty chess")
+        self.assertIn("Numpty", engines[0]["aliases"])
+        status = json.loads((root / "data" / "source-status.json").read_text(encoding="utf-8"))
+        self.assertNotIn("Numpty", status["families"])
+        record = status["families"]["Numpty chess"]
+        self.assertEqual(len(record["source_urls"]), 3)
+        self.assertEqual({s["license"] for s in record["source_urls"]}, {
+            "none stated",
+            "custom: free to use and distribute; reuse of code in public releases requires permission/credit",
+        })
+
+    def test_blitzkibitz_amaterasu_merges_into_blitzkibitz(self):
+        overrides = json.loads((Path(__file__).parents[1] / "overrides.json").read_text(encoding="utf-8"))
+        engines = merge([self.observation("BlitzKibitz", "rwbc"),
+                         self.observation("BlitzKibitz/Amaterasu", "computer-chess-org")],
+                        overrides["aliases"])
+        self.assertEqual([e["name"] for e in engines], ["BlitzKibitz"])
+        self.assertIn("BlitzKibitz/Amaterasu", engines[0]["aliases"])
+
+    def test_microchess_1976_merges_into_microchess(self):
+        overrides = json.loads((Path(__file__).parents[1] / "overrides.json").read_text(encoding="utf-8"))
+        engines = merge([self.observation("MicroChess", "computer-chess-org"),
+                         self.observation("MicroChess 1976", "rwbc")], overrides["aliases"])
+        self.assertEqual([e["name"] for e in engines], ["MicroChess"])
+        status = json.loads((Path(__file__).parents[1] / "data" / "source-status.json").read_text(encoding="utf-8"))
+        self.assertIn("MicroChess", status["families"])
+        self.assertNotIn("MicroChess 1976", status["families"])
+
+    def test_mango_variants_merge_into_mangopaola(self):
+        overrides = json.loads((Path(__file__).parents[1] / "overrides.json").read_text(encoding="utf-8"))
+        engines = merge([self.observation("Mango", "rwbc"),
+                         self.observation("MangoPaola", "computer-chess-org"),
+                         self.observation("MangoPaolaAjedrez", "ccrl")], overrides["aliases"])
+        self.assertEqual([e["name"] for e in engines], ["MangoPaola"])
+        status = json.loads((Path(__file__).parents[1] / "data" / "source-status.json").read_text(encoding="utf-8"))
+        self.assertNotIn("MangoPaolaAjedrez", status["families"])
+        self.assertEqual({u["url"] for u in status["families"]["MangoPaola"]["source_urls"]}, {
+            "https://github.com/mango-computer/mango-paola-xboard",
+            "https://github.com/mango-computer/mango-paola",
+        })
+
+    def test_nicarao_chess_merges_into_nicarao(self):
+        overrides = json.loads((Path(__file__).parents[1] / "overrides.json").read_text(encoding="utf-8"))
+        engines = merge([self.observation("Nicarao", "rwbc"),
+                         self.observation("Nicarao_Chess", "rwbc")], overrides["aliases"])
+        self.assertEqual([e["name"] for e in engines], ["Nicarao"])
+        self.assertIn("Nicarao_Chess", engines[0]["aliases"])
+
+    def test_reviewed_spellings_and_versions_merge(self):
+        overrides = json.loads((Path(__file__).parents[1] / "overrides.json").read_text(encoding="utf-8"))
+        groups = {
+            "Apep": ["ApepCE"], "Chess3": ["Julien's Chess3"], "EGM": ["Electronic Grand Master"],
+            "Emerald": ["Emerald Chess"], "Little Lelouch": ["LittleLelouch"], "Luna": ["LunaChess"],
+            "Nate's ChessBot": ["NatesBot"], "PoorLittlePinkus": ["PLP"], "Redtail": ["rusty-redtail"],
+            "CL-U-E": ["Chesslib"], "sireButItsAnEngine": ["Bongcloud"],
+            "Flying-Dutchman": ["The Flying Dutchman"], "Prophet": ["Prophet3", "Prophet4"],
+            "Maxima": ["Maxima2"], "Calculon": ["CalculonX"], "Armageddon": ["Armageddon II"],
+            "Kallisto": ["Kallisto II"], "Quanticade": ["Quanticade Aurora"],
+            "Teki": ["Teki Random Mover"], "Shadow": ["Throne"], "GFC": ["GFCv2"],
+        }
+        status = json.loads((Path(__file__).parents[1] / "data" / "source-status.json").read_text(encoding="utf-8"))
+        for family, variants in groups.items():
+            engines = merge([self.observation(n, "rwbc") for n in [family, *variants]], overrides["aliases"])
+            self.assertEqual([e["name"] for e in engines], [family])
+            for variant in variants:
+                self.assertNotIn(variant, status["families"])
+        self.assertEqual(status["families"]["Flying-Dutchman"]["availability"], "available")
+        engines = merge([self.observation("Mess", "ccrl"), self.observation("MessChess", "wiki-engines")],
+                        overrides["aliases"])
+        self.assertEqual(len(engines), 2)
+
+    def test_toledo_family_is_cataloged_as_toledo_nanochess(self):
+        from collectors.wiki import TITLE_ALIASES
+        overrides = json.loads((Path(__file__).parents[1] / "overrides.json").read_text(encoding="utf-8"))
+        engines = merge([self.observation(n, "wiki-engines") for n in ["Toledo", "Toledo NanoChess", "Toledo 2000"]],
+                        overrides["aliases"])
+        self.assertEqual([e["name"] for e in engines], ["Toledo 2000", "Toledo NanoChess"])
+        self.assertEqual(TITLE_ALIASES["Toledo NanoChess"], "Toledo")
+        status = json.loads((Path(__file__).parents[1] / "data" / "source-status.json").read_text(encoding="utf-8"))
+        self.assertNotIn("Toledo", status["families"])
+        urls = [u["url"] for u in status["families"]["Toledo NanoChess"]["source_urls"]]
+        self.assertEqual(urls[0], "https://nanochess.org/toledo_nanochess.c")
+        self.assertFalse(any("Atomchess" in u for u in urls))
+
+    def test_sharpchess_splits_bertilsson_from_hughes(self):
+        overrides = json.loads((Path(__file__).parents[1] / "overrides.json").read_text(encoding="utf-8"))
+        engines = merge([
+            self.observation("SharpChess", "rwbc"),
+            self.observation("SharpChess", "computer-chess-org"),
+            self.observation("SharpChess", "wiki-engines"),
+            self.observation("SharpChess2", "rwbc"),
+            self.observation("#Chess", "wiki-engines"),
+        ], overrides["aliases"], overrides["source_aliases"])
+        sources = {e["name"]: sorted(p["source"] for p in e["provenance"]) for e in engines}
+        self.assertEqual(sources, {
+            "#Chess": ["computer-chess-org", "rwbc", "wiki-engines"],
+            "SharpChess": ["rwbc", "wiki-engines"],
+        })
+
+    def test_pychess_is_cataloged_as_pychessengine(self):
+        overrides = json.loads((Path(__file__).parents[1] / "overrides.json").read_text(encoding="utf-8"))
+        engines = merge([self.observation("PyChess", source)
+                         for source in ("rwbc", "computer-chess-org")], overrides["aliases"])
+        self.assertEqual([e["name"] for e in engines], ["PychessEngine"])
+        self.assertIn("PyChess", engines[0]["aliases"])
+
+    def test_zoe_opponent_engine_merges_into_zoe(self):
+        overrides = json.loads((Path(__file__).parents[1] / "overrides.json").read_text(encoding="utf-8"))
+        observations = [
+            self.observation("Zoe", "rwbc"),
+            self.observation("Zoe Opponent Engine", "computer-chess-org"),
+        ]
+        for row in observations:
+            row["code_urls"] = [{"url": "https://github.com/jes/zoe", "evidence_url": row["url"]}]
+        engines = merge(observations, overrides["aliases"])
+        self.assertEqual(len(engines), 1)
+        self.assertEqual(engines[0]["name"], "Zoe")
+        self.assertEqual(engines[0]["aliases"], ["Zoe Opponent Engine"])
+        self.assertEqual({p["source"] for p in engines[0]["provenance"]},
+                         {"rwbc", "computer-chess-org"})
+        self.assertEqual(len(engines[0]["source_code"]), 2)
+
     def test_code_links_keep_evidence(self):
         row = self.observation("A", "one")
         row["code_urls"] = [{"url": "https://github.com/a/a", "evidence_url": row["url"]}]
         self.assertEqual(merge([row, row], {})[0]["source_code"], [
             {**row["code_urls"][0], "source": "one"}
         ])
+
+    def test_cyclone_xtreme_merges_preserving_research_scope(self):
+        root = Path(__file__).parents[1]
+        overrides = json.loads((root / "overrides.json").read_text(encoding="utf-8"))
+        engines = merge([
+            self.observation("Cyclone", "cegt"),
+            self.observation("Cyclone xTreme", "computer-chess-org"),
+        ], overrides["aliases"])
+        self.assertEqual(len(engines), 1)
+        self.assertEqual(engines[0]["name"], "Cyclone")
+        self.assertIn("Cyclone xTreme", engines[0]["aliases"])
+        self.assertEqual(len(engines[0]["provenance"]), 2)
+        status = json.loads((root / "data" / "source-status.json").read_text(encoding="utf-8"))
+        self.assertNotIn("Cyclone xTreme", status["families"])
+        self.assertIn("not verified", status["families"]["Cyclone"]["release_scope"])
+
+    def test_joker2_merges_into_joker_it_without_merging_homonyms(self):
+        overrides = json.loads((Path(__file__).parents[1] / "overrides.json").read_text(encoding="utf-8"))
+        observations = [
+            self.observation("Joker IT", "wiki-engines"),
+            self.observation("Joker2", "ccrl"),
+            self.observation("Joker2", "computer-chess-org"),
+            self.observation("Joker", "wiki-engines"),
+            self.observation("Joker", "rwbc"),
+        ]
+        engines = {e["name"]: e for e in merge(
+            observations, overrides["aliases"], overrides["source_aliases"],
+        )}
+        self.assertEqual(set(engines), {"Joker IT", "Joker", "Joker NL"})
+        self.assertIn("Joker2", engines["Joker IT"]["aliases"])
+        self.assertEqual({p["source"] for p in engines["Joker IT"]["provenance"]},
+                         {"wiki-engines", "ccrl", "computer-chess-org"})
 
     def test_source_aliases_split_homonyms_before_name_aliases(self):
         rules = [
@@ -81,6 +243,40 @@ class MergeTests(unittest.TestCase):
         # Rules are family-specific, so another family's identical link is kept.
         self.assertEqual(len(engines["Other"]["source_code"]), 1)
         self.assertEqual(unused_not_source(list(engines.values()), rules), rules[1:])
+
+    def test_unreachable_links_are_flagged_and_replaced(self):
+        import source_status
+        dead = "https://github.com/a/Gone"
+        engines = [
+            {"name": "Gone", "source_code": [
+                {"url": dead, "evidence_url": "https://e", "source": "ccrl"},
+                {"url": dead + "/", "evidence_url": "https://e", "source": "rwbc"},
+            ]},
+            {"name": "Other", "source_code": [{"url": dead, "evidence_url": "https://e", "source": "ccrl"}]},
+        ]
+        archive = "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=" + dead
+        rules = [
+            {"family": "Gone", "url": "https://github.com/a/gone", "checked_at": "2026-10-21",
+             "status": "HTTP 404", "replacement": {"url": archive, "kind": "Software Heritage archive"}},
+            {"family": "Missing", "url": dead, "checked_at": "2026-10-21", "status": "HTTP 404"},
+        ]
+        self.assertEqual(mark_unreachable_links(engines, rules), rules[1:])
+        gone, other = engines
+        self.assertEqual([bool(c.get("unreachable")) for c in gone["source_code"]], [True, True, False])
+        self.assertEqual(gone["source_code"][-1], {
+            "url": archive, "evidence_url": archive, "source": "link-review", "kind": "Software Heritage archive",
+        })
+        # Rules are family-specific.
+        self.assertNotIn("unreachable", other["source_code"][0])
+        self.assertEqual(source_status.availability_label(gone), "archived_only")
+        self.assertEqual(source_status.availability_label(other), "linked")
+
+    def test_reviewed_unreachable_links_are_well_formed(self):
+        overrides = json.loads((Path(__file__).parents[1] / "overrides.json").read_text(encoding="utf-8"))
+        for rule in overrides["unreachable_source_urls"]:
+            self.assertTrue(rule["family"] and rule["status"] and rule["checked_at"], rule)
+            if "replacement" in rule:
+                self.assertTrue(rule["replacement"]["url"].startswith("https://") and rule["replacement"]["kind"], rule)
 
     def test_reviewed_source_aliases_are_well_formed(self):
         overrides = json.loads((Path(__file__).parents[1] / "overrides.json").read_text(encoding="utf-8"))

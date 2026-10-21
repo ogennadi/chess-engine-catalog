@@ -1694,7 +1694,7 @@
    "checked_at": "2026-10-20T10:04:31+00:00"
   },
   "Armageddon": {
-   "tier": "E",
+   "tier": "D",
    "licensing": "unknown",
    "availability": "not_located",
    "confidence": "low",
@@ -1715,11 +1715,27 @@
     {
      "search": "GitHub repositories: armageddon chess Sidorowicz",
      "quote": "0 results"
+    },
+    {
+     "url": "http://web.archive.org/web/20121118085505/http://www.armageddon.szach.pl/download.htm",
+     "quote": "engine2_308.zip 350KB 2.308 LATEST VERSION! Just only uzip all included files.(engine only)"
+    },
+    {
+     "url": "http://web.archive.org/web/20121118085505id_/http://www.armageddon.szach.pl/engine2_308.zip",
+     "quote": "zip contains only Armageddon2_308.exe and readme.txt"
+    },
+    {
+     "url": "http://web.archive.org/web/20121118085505id_/http://www.armageddon.szach.pl/engine2_308.zip",
+     "quote": "you are not allowed to distribute copies of Armageddon Chess or anything that's derived from Armageddon Chess without my authorization"
+    },
+    {
+     "search": "GitHub repositories: Armageddon chess Sidorowicz / armageddon chess engine",
+     "quote": "no matching repository (only an unrelated 2026 Python project)"
     }
    ],
-   "rationale": "Author site and archived download page offer only setup executables and engine-only zips; no source or license statement found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T21:12:29+00:00"
+   "rationale": "Author site and archived download page offer only setup executables and engine-only zips; no source or license statement found. Author download page (Wayback) offers only setup executables and engine-only zips; readme is a copyright notice restricting redistribution but says nothing about source. No source found.",
+   "searches": 3,
+   "checked_at": "2026-10-20T10:04:31+00:00"
   },
   "Armageddon (Kasabasic)": {
    "tier": "B",
@@ -1749,34 +1765,6 @@
    "notes": "Fire/Ippolit sources (e.g. FireFather repos) are precursors, not this engine's source.",
    "searches": 1,
    "checked_at": "2026-10-19T19:08:40+00:00"
-  },
-  "Armageddon II": {
-   "tier": "D",
-   "licensing": "unknown",
-   "availability": "not_located",
-   "confidence": "low",
-   "source_urls": [],
-   "evidence": [
-    {
-     "url": "http://web.archive.org/web/20121118085505/http://www.armageddon.szach.pl/download.htm",
-     "quote": "engine2_308.zip 350KB 2.308 LATEST VERSION! Just only uzip all included files.(engine only)"
-    },
-    {
-     "url": "http://web.archive.org/web/20121118085505id_/http://www.armageddon.szach.pl/engine2_308.zip",
-     "quote": "zip contains only Armageddon2_308.exe and readme.txt"
-    },
-    {
-     "url": "http://web.archive.org/web/20121118085505id_/http://www.armageddon.szach.pl/engine2_308.zip",
-     "quote": "you are not allowed to distribute copies of Armageddon Chess or anything that's derived from Armageddon Chess without my authorization"
-    },
-    {
-     "search": "GitHub repositories: Armageddon chess Sidorowicz / armageddon chess engine",
-     "quote": "no matching repository (only an unrelated 2026 Python project)"
-    }
-   ],
-   "rationale": "Author download page (Wayback) offers only setup executables and engine-only zips; readme is a copyright notice restricting redistribution but says nothing about source. No source found.",
-   "searches": 2,
-   "checked_at": "2026-10-20T10:04:31+00:00"
   },
   "Arminius": {
    "licensing": "unknown",
@@ -6064,40 +6052,6 @@
    "searches": 4,
    "checked_at": "2026-10-19T19:08:40+00:00"
   },
-  "Chesslib": {
-   "tier": "F",
-   "licensing": "open_source",
-   "availability": "available",
-   "confidence": "high",
-   "source_urls": [
-    {
-     "url": "https://github.com/fathzer-games/chesslib-uci-engine",
-     "kind": "original repository",
-     "license": "Apache-2.0"
-    }
-   ],
-   "evidence": [
-    {
-     "search": "\"Chesslib 0.0.3\" chess engine UCI",
-     "quote": "Outskirts forum: Chesslib UCI Engine 0.0.3 Dev.1c05597 64 JA"
-    },
-    {
-     "url": "https://api.github.com/repos/fathzer-games/chesslib-uci-engine/commits/1c05597",
-     "quote": "1c05597a9c32... Adds the Rofchade PeSTO evaluator and makes it the default one (2025-01-02)"
-    },
-    {
-     "url": "https://github.com/fathzer-games/chesslib-uci-engine",
-     "quote": "A basic UCI engine based on the bhlangonijr/chesslib move generator"
-    },
-    {
-     "url": "https://api.github.com/repos/fathzer-games/chesslib-uci-engine/license",
-     "quote": "LICENSE Apache-2.0"
-    }
-   ],
-   "rationale": "The UBC label's dev hash 1c05597 matches a commit in fathzer-games/chesslib-uci-engine, which is Apache-2.0 licensed.",
-   "searches": 3,
-   "checked_at": "2026-10-20T00:32:00+00:00"
-  },
   "ChessLin": {
    "tier": "A",
    "licensing": "source_available",
@@ -6865,11 +6819,27 @@
     {
      "url": "https://raw.githubusercontent.com/fathzer-games/chesslib-uci-engine/HEAD/LICENSE",
      "quote": "Apache License Version 2.0, January 2004"
+    },
+    {
+     "search": "\"Chesslib 0.0.3\" chess engine UCI",
+     "quote": "Outskirts forum: Chesslib UCI Engine 0.0.3 Dev.1c05597 64 JA"
+    },
+    {
+     "url": "https://api.github.com/repos/fathzer-games/chesslib-uci-engine/commits/1c05597",
+     "quote": "1c05597a9c32... Adds the Rofchade PeSTO evaluator and makes it the default one (2025-01-02)"
+    },
+    {
+     "url": "https://github.com/fathzer-games/chesslib-uci-engine",
+     "quote": "A basic UCI engine based on the bhlangonijr/chesslib move generator"
+    },
+    {
+     "url": "https://api.github.com/repos/fathzer-games/chesslib-uci-engine/license",
+     "quote": "LICENSE Apache-2.0"
     }
    ],
-   "rationale": "RWBC links the fathzer-games repository; it contains the engine with an Apache-2.0 LICENSE.",
-   "searches": 0,
-   "checked_at": "2026-10-19T16:03:32+00:00"
+   "rationale": "RWBC links the fathzer-games repository; it contains the engine with an Apache-2.0 LICENSE. The UBC label's dev hash 1c05597 matches a commit in fathzer-games/chesslib-uci-engine, which is Apache-2.0 licensed.",
+   "searches": 3,
+   "checked_at": "2026-10-20T00:32:00+00:00"
   },
   "Clarabit": {
    "tier": "D",
@@ -8209,25 +8179,7 @@
     {
      "search": "GitHub API repos/FireFather/cyclone-xTreme/license",
      "quote": "GPL-3.0"
-    }
-   ],
-   "rationale": "The author (Norman Schmidt, GitHub FireFather) hosts the Cyclone xTreme source under GPL-3.0, matching CPW's description.",
-   "searches": 2,
-   "checked_at": "2026-10-19T05:36:46+00:00"
-  },
-  "Cyclone xTreme": {
-   "tier": "B",
-   "licensing": "open_source",
-   "availability": "available",
-   "confidence": "high",
-   "source_urls": [
-    {
-     "url": "https://github.com/FireFather/cyclone-xTreme",
-     "kind": "original author repository (re-published 2023)",
-     "license": "GPL-3.0"
-    }
-   ],
-   "evidence": [
+    },
     {
      "url": "https://github.com/FireFather/cyclone-xTreme",
      "quote": "The original UCI chess engine from 2009 ... based on: Fruit 2.1 ... Toga II ... Grapefruit 1.0 ... & Toga CMLX 145e4"
@@ -8245,8 +8197,8 @@
      "quote": "he announced Cyclone based on Fruit and Toga as open source engine under the GPL v3.0"
     }
    ],
-   "rationale": "Norman Schmidt (GitHub FireFather) publishes Cyclone xTreme source with a GPL-3.0 LICENSE; matches computer-chess.org author and description.",
-   "searches": 2,
+   "rationale": "The author (Norman Schmidt, GitHub FireFather) hosts the Cyclone xTreme source under GPL-3.0, matching CPW and computer-chess.org. Cyclone xTreme is retained as an alias of Cyclone; correspondence to individual CEGT builds remains unverified.",
+   "searches": 4,
    "checked_at": "2026-10-19T19:08:40+00:00"
   },
   "Cyclops": {
@@ -11124,7 +11076,7 @@
    "searches": 2,
    "checked_at": "2026-10-20T11:11:25+00:00"
   },
-  "Emerald Chess": {
+  "Emerald": {
    "tier": "F",
    "licensing": "open_source",
    "availability": "available",
@@ -12754,6 +12706,49 @@
    "notes": "README says it began as a conversion of StockNemo and uses Berserk's NNUE.",
    "checked_at": "2026-10-20T01:10:41+00:00"
   },
+  "Flying-Dutchman": {
+   "tier": "B",
+   "licensing": "open_source",
+   "availability": "available",
+   "confidence": "high",
+   "release_scope": "family; Cargo version 0.1.0 matches UBC's 'The Flying Dutchman 0.1.0'",
+   "source_urls": [
+    {
+     "url": "https://github.com/Sam-Belliveau/flying-dutchman",
+     "kind": "original repository (author Sam Belliveau)",
+     "license": "MIT"
+    }
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/Sam-Belliveau/flying-dutchman/blob/master/src/uci/interpret.rs",
+     "quote": "println!(\"id name Flying-Dutchman\");"
+    },
+    {
+     "url": "https://github.com/Sam-Belliveau/flying-dutchman/blob/master/Cargo.toml",
+     "quote": "name = \"flying-dutchman\" version = \"0.1.0\""
+    },
+    {
+     "url": "https://api.github.com/repos/Sam-Belliveau/flying-dutchman",
+     "quote": "license: MIT License"
+    },
+    {
+     "search": "GitHub repositories: flying dutchman chess; flyingdutchman uci",
+     "quote": "0 results"
+    },
+    {
+     "search": "\"The Flying Dutchman\" UCI chess engine 0.1.0 github",
+     "quote": "No relevant web results found."
+    },
+    {
+     "search": "GitHub code: \"Flying Dutchman\" \"id name\"",
+     "quote": "no chess engine among results"
+    }
+   ],
+   "rationale": "RWBC links Sam Belliveau's MIT-licensed Rust repository; its UCI id and 0.1.0 crate version identify UBC's 'The Flying Dutchman 0.1.0', which earlier searches by that exact name had not located.",
+   "searches": 5,
+   "checked_at": "2026-10-21T04:45:00+00:00"
+  },
   "Fornax": {
    "tier": "review",
    "licensing": "source_available",
@@ -14003,6 +13998,11 @@
      "url": "https://drive.google.com/file/d/163sU-XpB-X86ey1shNV-TBXgdOPrmsSy/view",
      "kind": "author download (zip, GFC v1 src/)",
      "license": "none stated"
+    },
+    {
+     "url": "https://web.archive.org/web/20201009233749id_/https://db5ece14-a-62cb3a1a-s-sites.googlegroups.com/site/chronosce/downloads/GFCv2.zip?attachauth=ANoY7coQpdlj0IM8UnhFA5dKYnpRQn9NVTgXeyvFNQHDo-HGVnGBqHXxVRulnaIyAodM0DjSX0-ILAtrabtzDlr52q1xk8thDiusNSVLVpXOZcSH2os8xzuGoEstzaG8wskqPV51lFdkdUbP-1IB5ZLmMI6_g6eaaqUv6gOV1zpfOe8kOzeZDzpH0d8PnoO0ZemsBmPKa39cB3WqBeIG7JFXK5YXR6v7wA%3D%3D&attredirects=0",
+     "kind": "Wayback snapshot of author download (zip with C++ source + exe)",
+     "license": "none stated (TSCP-derived)"
     }
    ],
    "evidence": [
@@ -14025,25 +14025,7 @@
     {
      "source": "dossier: computer-chess.org comment",
      "quote": "C++ source; Mac, Win"
-    }
-   ],
-   "rationale": "Guillermo Filia's Chronos site hosts GFC v1/v2 zips containing full C++ source; only a copyright line, no license.",
-   "searches": 1,
-   "checked_at": "2026-10-19T20:05:41+00:00"
-  },
-  "GFCv2": {
-   "tier": "B",
-   "licensing": "source_available",
-   "availability": "archived_only",
-   "confidence": "high",
-   "source_urls": [
-    {
-     "url": "https://web.archive.org/web/20201009233749id_/https://db5ece14-a-62cb3a1a-s-sites.googlegroups.com/site/chronosce/downloads/GFCv2.zip?attachauth=ANoY7coQpdlj0IM8UnhFA5dKYnpRQn9NVTgXeyvFNQHDo-HGVnGBqHXxVRulnaIyAodM0DjSX0-ILAtrabtzDlr52q1xk8thDiusNSVLVpXOZcSH2os8xzuGoEstzaG8wskqPV51lFdkdUbP-1IB5ZLmMI6_g6eaaqUv6gOV1zpfOe8kOzeZDzpH0d8PnoO0ZemsBmPKa39cB3WqBeIG7JFXK5YXR6v7wA%3D%3D&attredirects=0",
-     "kind": "Wayback snapshot of author download (zip with C++ source + exe)",
-     "license": "none stated (TSCP-derived)"
-    }
-   ],
-   "evidence": [
+    },
     {
      "url": "https://web.archive.org/web/20090219221722/http://sites.google.com/site/chronosce/downloads",
      "quote": "GFC v2.zip This engine is an improvement from my first prototype ... There are a lot of code from TSCP in this version too."
@@ -14057,9 +14039,9 @@
      "quote": "0 results"
     }
    ],
-   "rationale": "Guillermo Filia (Chronos author) published GFC v2 with C++ source on his Google Sites page, now only via Wayback. No license; heavily TSCP-based.",
-   "searches": 1,
-   "checked_at": "2026-10-19T16:26:46+00:00"
+   "rationale": "Guillermo Filia's Chronos site hosts GFC v1/v2 zips containing full C++ source; only a copyright line, no license. Merged GFCv2 (RWBC \"GFCv2#\"), the same author's later version: Guillermo Filia (Chronos author) published GFC v2 with C++ source on his Google Sites page, now only via Wayback. No license; heavily TSCP-based.",
+   "searches": 2,
+   "checked_at": "2026-10-19T20:05:41+00:00"
   },
   "Ghost": {
    "licensing": "unknown",
@@ -17508,26 +17490,14 @@
     {
      "search": "web: Kallisto chess program Bart Weststrate source code released",
      "quote": "no source release or archive found"
-    }
-   ],
-   "rationale": "Commercial DOS assembly program; author's 2025 forum reply mentions no source release and none was found.",
-   "searches": 1,
-   "checked_at": "2026-10-19T22:09:02+00:00"
-  },
-  "Kallisto II": {
-   "tier": "F",
-   "licensing": "proprietary",
-   "availability": "not_located",
-   "confidence": "medium",
-   "source_urls": [],
-   "evidence": [
+    },
     {
      "url": "https://www.chessprogramming.org/Kallisto",
      "quote": "Kallisto , a former commercial chess program by Bart Weststrate"
     }
    ],
-   "rationale": "Former commercial MS-DOS program written in assembly by Bart Weststrate; no source publication found.",
-   "searches": 1,
+   "rationale": "Commercial DOS assembly program; author's 2025 forum reply mentions no source release and none was found. Former commercial MS-DOS program written in assembly by Bart Weststrate; no source publication found.",
+   "searches": 2,
    "checked_at": "2026-10-20T01:13:32+00:00"
   },
   "Kanguruh": {
@@ -17885,6 +17855,34 @@
    "identity_issue": "Relationship of 'PB' builds to Anton101's Killfish is not confirmed.",
    "searches": 3,
    "checked_at": "2026-10-20T01:13:32+00:00"
+  },
+  "Kimbo": {
+   "tier": "B",
+   "licensing": "unknown",
+   "availability": "released_not_located",
+   "confidence": "medium",
+   "release_scope": "family (0.2.1 to 1.0.0, 2022)",
+   "evidence": [
+    {
+     "url": "https://rwbc-chess.de/",
+     "quote": "Kimbo | Whiting Jamie | 1.0.0 | 2022-11 | UCI | Src: yes | Rust"
+    },
+    {
+     "url": "https://github.com/JacquesRW/Kimbo",
+     "quote": "HTTP 404; GitHub API repos/JacquesRW/Kimbo: Not Found (checked 2026-10-21)"
+    },
+    {
+     "search": "Software Heritage origin https://github.com/JacquesRW/Kimbo; Wayback CDX github.com/JacquesRW/Kimbo (prefix)",
+     "quote": "no archived copy"
+    },
+    {
+     "url": "https://github.com/jw1912/akimbo",
+     "quote": "akimbo: A UCI Chess and Chess960 engine written in Rust (created 2022-10-22); the author's successor engine, not Kimbo"
+    }
+   ],
+   "rationale": "RWBC flags Kimbo as open source and CCRL linked JacquesRW/Kimbo, but that repository is gone and no archive holds a copy. The author's later engine akimbo is a separate family's code, so it is not counted (user-reviewed 2026-10-21).",
+   "searches": 3,
+   "checked_at": "2026-10-21T14:00:00+00:00"
   },
   "King of Kings": {
    "tier": "D",
@@ -19469,12 +19467,12 @@
    "searches": 2,
    "checked_at": "2026-10-20T01:13:32+00:00"
   },
-  "LunaChess": {
+  "Luna": {
    "tier": "review",
    "licensing": "open_source",
    "availability": "available",
    "confidence": "high",
-   "release_scope": "family (0.4.0 at tag luna_0.4; later versions renamed Luna)",
+   "release_scope": "family (0.4.0 at tag luna_0.4 identified as LunaChess; later versions renamed Luna)",
    "source_urls": [
     {
      "url": "https://github.com/Mergener/lunachess",
@@ -19946,12 +19944,17 @@
    "licensing": "open_source",
    "availability": "available",
    "confidence": "high",
-   "release_scope": "2012 engine core, now published as Mango AC (renamed from MangoPaola) with UCI added",
+   "release_scope": "2012 engine core: Mango Paola Ajedrez 2.0 GUI/engine source (2012-2013, uploaded 2019) and the xboard engine, now published as Mango AC (renamed from MangoPaola) with UCI added",
    "source_urls": [
     {
      "url": "https://github.com/mango-computer/mango-paola-xboard",
      "kind": "original repository (author José Andrés Morales Linares)",
      "license": "GPL-3.0"
+    },
+    {
+     "url": "https://github.com/mango-computer/mango-paola",
+     "kind": "original repository (publisher Mango Computer)",
+     "license": "GPL-3.0-or-later (source header)"
     }
    ],
    "evidence": [
@@ -19970,27 +19973,7 @@
     {
      "search": "GitHub repositories: mangopaola",
      "quote": "0 results (repo is named mango-paola-xboard)"
-    }
-   ],
-   "rationale": "Author's blog links his GitHub repo (mango-paola-xboard) holding the 2012 engine, renamed Mango AC; GPLv3 LICENSE file present.",
-   "notes": "Engine renamed to Mango AC Ajedrez; blog says it previously had another name.",
-   "searches": 1,
-   "checked_at": "2026-10-19T19:55:17+00:00"
-  },
-  "MangoPaolaAjedrez": {
-   "tier": "F",
-   "licensing": "open_source",
-   "availability": "available",
-   "confidence": "high",
-   "release_scope": "Mango Paola Ajedrez 2.0 source (2012-2013) uploaded 2019",
-   "source_urls": [
-    {
-     "url": "https://github.com/mango-computer/mango-paola",
-     "kind": "original repository (publisher Mango Computer)",
-     "license": "GPL-3.0-or-later (source header)"
-    }
-   ],
-   "evidence": [
+    },
     {
      "url": "https://github.com/mango-computer/mango-paola",
      "quote": "Motor de ajedrez e interface de usuario, orientado para enseñar y jugar al ajedrez a los niños."
@@ -20000,9 +19983,9 @@
      "quote": "Mango Paola Ajedrez 2.0 Licencia: GPLv3 Copyright (c) 2012-2013 - Mango Computer c.a"
     }
    ],
-   "rationale": "Publisher repository contains C source with GPLv3 header; CCRL lists 'Mango Paola Ajedrez 4.1', so the published source may be an older version than the latest tested.",
-   "notes": "Repository has no LICENSE file; license taken from source header. Version on GitHub is 2.0; CCRL tested 4.1.",
-   "searches": 2,
+   "rationale": "Author's blog links his GitHub repo (mango-paola-xboard) holding the 2012 engine, renamed Mango AC; GPLv3 LICENSE file present. The publisher's mango-paola repository also holds the Mango Paola Ajedrez 2.0 C source with a GPLv3 header; CCRL tested 4.1, so that published source may be older than the latest tested.",
+   "notes": "Engine renamed to Mango AC Ajedrez; blog says it previously had another name. mango-paola has no LICENSE file; its license is taken from the source header (version 2.0 on GitHub, CCRL tested 4.1).",
+   "searches": 3,
    "checked_at": "2026-10-20T01:06:40+00:00"
   },
   "MANIAC I": {
@@ -20971,7 +20954,7 @@
    "searches": 0,
    "checked_at": "2026-10-19T19:55:17+00:00"
   },
-  "MicroChess 1976": {
+  "MicroChess": {
    "tier": "B",
    "licensing": "open_source",
    "availability": "available",
@@ -23777,12 +23760,12 @@
    "searches": 2,
    "checked_at": "2026-10-19T17:47:03+00:00"
   },
-  "Numpty": {
-   "tier": "B",
+  "Numpty chess": {
+   "tier": "A",
    "licensing": "source_available",
    "availability": "archived_only",
    "confidence": "high",
-   "release_scope": "Numpty Recharged (October 2014), FreeBASIC source",
+   "release_scope": "Numpty Omega (N_O_m_e_g_a, 2005-11) and Numpty Recharged (October 2014), FreeBASIC source. Omega has custom permission/credit terms; Recharged states source is freely available without an explicit license.",
    "source_urls": [
     {
      "url": "http://web.archive.org/web/2020id_/https://sites.google.com/site/numptychess/Numpty_Recharged_64.7z?attredirects=0",
@@ -23793,6 +23776,11 @@
      "url": "http://web.archive.org/web/2020id_/https://sites.google.com/site/numptychess/Numpty_Recharged_32.7z?attredirects=0",
      "kind": "Wayback snapshot of author download (32-bit, stated to include source)",
      "license": "none stated"
+    },
+    {
+     "url": "https://web.archive.org/web/20201020102737/https://sites.google.com/site/numptychess/N_O_m_e_g_a.zip?attredirects=0",
+     "kind": "Wayback snapshot of author download (zip with N_O_m_e_g_a.bas)",
+     "license": "custom: free to use and distribute; reuse of code in public releases requires permission/credit"
     }
    ],
    "evidence": [
@@ -23811,26 +23799,7 @@
     {
      "source": "Numpty_Recharged_64.bas header",
      "quote": "a weak chess program by Chris Tatham (c)2005-14"
-    }
-   ],
-   "rationale": "Author's site offered archives with FreeBASIC source; the Wayback copy downloads and contains the .bas source. No license beyond 'freely available', so source_available; original Google Site is gone.",
-   "searches": 1,
-   "checked_at": "2026-10-19T17:47:03+00:00"
-  },
-  "Numpty chess": {
-   "tier": "A",
-   "licensing": "source_available",
-   "availability": "archived_only",
-   "confidence": "high",
-   "release_scope": "Last release Numpty Omega (N_O_m_e_g_a, 2005-11): exe + FreeBASIC source",
-   "source_urls": [
-    {
-     "url": "https://web.archive.org/web/20201020102737/https://sites.google.com/site/numptychess/N_O_m_e_g_a.zip?attredirects=0",
-     "kind": "Wayback snapshot of author download (zip with N_O_m_e_g_a.bas)",
-     "license": "custom: free to use and distribute; reuse of code in public releases requires permission/credit"
-    }
-   ],
-   "evidence": [
+    },
     {
      "url": "https://web.archive.org/web/20120205100033/https://sites.google.com/site/numptychess/home",
      "quote": "written in FreeBASIC (source code is available to hopefully help others!) ... Numpty Omega ( N_O_m_e_g_a ) (includes exe, source code and read-me)"
@@ -23844,9 +23813,9 @@
      "quote": "0 results"
     }
    ],
-   "rationale": "Author's (now dead) Google Site hosted the FreeBASIC source; archived copy verified. Custom terms are not an OSI license, so source_available.",
-   "searches": 2,
-   "checked_at": "2026-10-19T05:43:20+00:00"
+   "rationale": "Chris Tatham's Numpty and Numpty chess are the same family, with Omega and Recharged releases on the same now-dead Google Site. Archived source copies were verified. Omega has custom permission/credit terms; Recharged only says freely available. Neither establishes an OSI license, so source_available.",
+   "searches": 3,
+   "checked_at": "2026-10-19T17:47:03+00:00"
   },
   "O'Chess": {
    "tier": "B",
@@ -25980,7 +25949,7 @@
    "searches": 1,
    "checked_at": "2026-10-19T17:47:03+00:00"
   },
-  "Prophet4": {
+  "Prophet": {
    "tier": "B",
    "licensing": "source_available",
    "availability": "available",
@@ -26413,7 +26382,7 @@
    "searches": 1,
    "checked_at": "2026-10-19T23:20:56+00:00"
   },
-  "Quanticade Aurora": {
+  "Quanticade": {
    "tier": "F",
    "licensing": "open_source",
    "availability": "available",
@@ -29146,7 +29115,7 @@
    "searches": 1,
    "checked_at": "2026-10-19T23:20:00+00:00"
   },
-  "SharpChess2": {
+  "SharpChess": {
    "tier": "B",
    "licensing": "open_source",
    "availability": "available",
@@ -31796,12 +31765,12 @@
    "searches": 1,
    "checked_at": "2026-10-20T00:10:37+00:00"
   },
-  "Teki Random Mover": {
+  "Teki": {
    "tier": "F",
    "licensing": "open_source",
    "availability": "available",
    "confidence": "high",
-   "release_scope": "Teki v0.1 'Teki Random Mover' (October 2017), tag v0.1",
+   "release_scope": "family; v0.1 'Teki Random Mover' (October 2017) is tag v0.1",
    "source_urls": [
     {
      "url": "https://github.com/Mk-Chan/Teki/tree/v0.1",
@@ -32183,29 +32152,6 @@
    "searches": 2,
    "checked_at": "2026-10-19T20:54:10+00:00"
   },
-  "The Flying Dutchman": {
-   "tier": "F",
-   "licensing": "unknown",
-   "availability": "not_located",
-   "confidence": "low",
-   "evidence": [
-    {
-     "search": "GitHub repositories: flying dutchman chess; flyingdutchman uci",
-     "quote": "0 results"
-    },
-    {
-     "search": "\"The Flying Dutchman\" UCI chess engine 0.1.0 github",
-     "quote": "No relevant web results found."
-    },
-    {
-     "search": "GitHub code: \"Flying Dutchman\" \"id name\"",
-     "quote": "no chess engine among results"
-    }
-   ],
-   "rationale": "Only known as 'The Flying Dutchman 0.1.0' on the UBC list; no author, homepage, download or source found.",
-   "searches": 4,
-   "checked_at": "2026-10-20T02:36:12+00:00"
-  },
   "The Fox": {
    "tier": "E",
    "licensing": "unknown",
@@ -32370,7 +32316,7 @@
    "searches": 4,
    "checked_at": "2026-10-19T14:05:45+00:00"
   },
-  "Throne": {
+  "Shadow": {
    "tier": "F",
    "licensing": "open_source",
    "availability": "available",
@@ -32872,51 +32818,6 @@
    "searches": 1,
    "checked_at": "2026-10-19T19:50:07+00:00"
   },
-  "Toledo": {
-   "tier": "A",
-   "licensing": "source_available",
-   "availability": "available",
-   "confidence": "high",
-   "release_scope": "all family members (Toledo Chess 1/2, Picochess, Nanochess, Javascript chess, Atomchess) published as source by the author",
-   "source_urls": [
-    {
-     "url": "https://nanochess.org/chess1.html",
-     "kind": "original author page (toledo.c and archived revisions)",
-     "license": "all rights reserved; free for non-commercial use"
-    },
-    {
-     "url": "https://nanochess.org/chess3.html",
-     "kind": "original author page (Toledo Nanochess / Picochess source)",
-     "license": "all rights reserved; free for non-commercial use"
-    },
-    {
-     "url": "https://github.com/nanochess/Toledo-Atomchess",
-     "kind": "original repository (Toledo Atomchess, x86 asm)",
-     "license": "none stated"
-    }
-   ],
-   "evidence": [
-    {
-     "url": "https://nanochess.org/chess1.html",
-     "quote": "Here is the source code, written in C language ... First, download the source code from here . (toledo.c)"
-    },
-    {
-     "url": "https://nanochess.org/chess3.html",
-     "quote": "Toledo Nanochess (c) Copyright 2009 Oscar Toledo G. All rights reserved"
-    },
-    {
-     "url": "https://nanochess.org/faq.html",
-     "quote": "License terms for your Javascript chess? It is free for non-commercial use, this includes all the forks, even those under the GPL as legally I'm the original author."
-    },
-    {
-     "url": "https://github.com/nanochess/Toledo-Atomchess",
-     "quote": "This Github repository contains the x86 assembler source code for Toledo Atomchess"
-    }
-   ],
-   "rationale": "Óscar Toledo Gutiérrez publishes the full source of every Toledo program on nanochess.org and GitHub, but under 'All rights reserved' / non-commercial terms, so source_available rather than open_source.",
-   "searches": 2,
-   "checked_at": "2026-10-19T14:05:45+00:00"
-  },
   "Toledo 2000": {
    "tier": "E",
    "licensing": "unknown",
@@ -32943,7 +32844,7 @@
    "checked_at": "2026-10-19T23:55:19+00:00"
   },
   "Toledo NanoChess": {
-   "tier": "B",
+   "tier": "A",
    "licensing": "source_available",
    "availability": "available",
    "confidence": "high",
@@ -32957,6 +32858,11 @@
      "url": "https://nanochess.org/chess3.html",
      "kind": "author page with full source listing",
      "license": "All rights reserved"
+    },
+    {
+     "url": "https://nanochess.org/chess1.html",
+     "kind": "original author page (toledo.c and archived revisions)",
+     "license": "all rights reserved; free for non-commercial use"
     }
    ],
    "evidence": [
@@ -32971,11 +32877,28 @@
     {
      "search": "GitHub repositories: toledo chess user:nanochess",
      "quote": "only nanochess/Toledo-Atomchess (different x86 assembly program)"
+    },
+    {
+     "url": "https://nanochess.org/chess1.html",
+     "quote": "Here is the source code, written in C language ... First, download the source code from here . (toledo.c)"
+    },
+    {
+     "url": "https://nanochess.org/faq.html",
+     "quote": "License terms for your Javascript chess? It is free for non-commercial use, this includes all the forks, even those under the GPL as legally I'm the original author."
+    },
+    {
+     "url": "https://github.com/nanochess/Toledo-Atomchess",
+     "quote": "This Github repository contains the x86 assembler source code for Toledo Atomchess"
+    },
+    {
+     "url": "https://github.com/nanochess/Toledo-Atomchess",
+     "quote": "Toledo Atomchess: a separate x86 assembly program by the same author; not counted as this family's source"
     }
    ],
-   "rationale": "Author Oscar Toledo publishes the full C source on his site, but with an explicit 'All rights reserved' notice and no open license.",
-   "searches": 3,
-   "checked_at": "2026-10-19T18:39:06+00:00"
+   "rationale": "Author Oscar Toledo publishes the full C source on his site, but with an explicit 'All rights reserved' notice and no open license. Merged the wiki's Toledo family article (user-reviewed 2026-10-21): Óscar Toledo Gutiérrez publishes the full source of every Toledo program on nanochess.org and GitHub, but under 'All rights reserved' / non-commercial terms, so source_available rather than open_source.",
+   "searches": 5,
+   "checked_at": "2026-10-19T18:39:06+00:00",
+   "release_scope": "Toledo Chess 1/2, Nanochess and its cut-down Picochess, published as source by the author; Atomchess is a separate x86 program"
   },
   "Tom Thumb": {
    "tier": "B",

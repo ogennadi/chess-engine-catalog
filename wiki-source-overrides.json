@@ -5919,17 +5919,17 @@
     "code_urls": [],
     "links_sha256": "e0c656e545f78b46384eac757d78ae3a03519161b5d629a0eb998ed90c36a59e"
   },
-  "Toledo": {
-    "wiki_url": "https://chessprogramming.org/Toledo",
-    "note": "Author profile and books about source are not direct engine-source links.",
-    "code_urls": [],
-    "links_sha256": "21a42c3c530d0047da3551934598c5fe7d82ed3419dbe9c130ba3f547a9788e5"
-  },
   "Toledo 2000": {
     "wiki_url": "https://chessprogramming.org/Toledo_2000",
     "note": "No explicit same-engine source repository, source archive or source landing page identified; generic homepages, binaries, references and unrelated links excluded.",
     "code_urls": [],
     "links_sha256": "2e399eef5a5c9c671f397b967b953c7296afbcb6213443ff2d89075ae68bdfb1"
+  },
+  "Toledo NanoChess": {
+    "wiki_url": "https://chessprogramming.org/Toledo",
+    "note": "Author profile and books about source are not direct engine-source links.",
+    "code_urls": [],
+    "links_sha256": "21a42c3c530d0047da3551934598c5fe7d82ed3419dbe9c130ba3f547a9788e5"
   },
   "Torch": {
     "wiki_url": "https://chessprogramming.org/Torch",

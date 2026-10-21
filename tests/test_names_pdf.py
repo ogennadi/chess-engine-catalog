@@ -80,6 +80,15 @@ class SourceLinkTests(unittest.TestCase):
             {"url": "https://mirror.example/source.zip", "source": "source-status-research"},
         ), first)
 
+    def test_unreachable_links_lose_to_live_ones(self):
+        live = "https://gitlab.com/author/engine"
+        self.assertEqual(self.choose(
+            {"url": "https://github.com/author/engine", "source": "ccrl"},
+            {"url": "https://github.com/author/engine", "source": "rwbc",
+             "unreachable": {"checked_at": "2026-10-21", "status": "HTTP 404"}},
+            {"url": live, "source": "rwbc"},
+        ), live)
+
     def test_unsafe_or_missing_links_fail_explicitly(self):
         with self.assertRaisesRegex(ValueError, "Example"):
             self.choose({"url": "javascript:alert(1)", "source": "rwbc"})
