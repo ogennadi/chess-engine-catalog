@@ -27,8 +27,8 @@ python names_pdf.py --paper poster --orientation landscape --max-pages 1 --out d
 
 Print at **100% / actual size** on 48 x 36 inch paper, not scaled to a smaller sheet.
 The generator chooses the largest font that fits all source-available families on
-one page, retaining the archived-copy dagger markers. The current 1,296-family
-catalog fits at 23 pt (85% horizontal scale). Each column's number field is only as
+one page. Families whose source survives only as an archived copy are left off.
+The current 1,213-family catalog fits at 22.75 pt (85% horizontal scale). Each column's number field is only as
 wide as its largest index, and leftover width is spread across the gaps between
 columns so the left and right margins match. Family names use Atkinson
 Hyperlegible, whose serifed `I` and tailed `l` stay distinct from a distance, and
@@ -40,8 +40,7 @@ check a full-size print sample before printing the whole poster.
 Each name in the PDF links to one recorded source-code URL. Selection favors
 researched links, then corroborated repository links over bundled copies and old
 download pages; research notes indicating missing or incomplete content lower a
-link's priority. Equal-ranked links retain their catalog order. Archived-only
-families keep their archive URLs. This is an offline ranking of collected
+link's priority. Equal-ranked links retain their catalog order. This is an offline ranking of collected
 evidence, not a fresh HTTP check or a guarantee against future 404s.
 PNG copies are for printing and cannot retain clickable links.
 
@@ -194,7 +193,9 @@ poster never picks them over a live link. A replacement is a verified working
 copy: the author's new home (Feeks, smallchesslib), a packaging repository
 (Fairy-Max on Debian salsa), a Software Heritage archive of the deleted
 repository, or a dated Wayback snapshot. A family whose only live links are
-Software Heritage or Wayback copies counts as archived only (†). The 2026-10-21
+Software Heritage or Wayback copies counts as archived only: it is not counted
+as source available or put on the poster, and the website marks it Archived,
+listing the archive links only on its family page. The 2026-10-21
 poster link check, at one request per host, found 46 broken links; 39 now
 resolve. No copy was found for Gideon's Chess Engine, Kimbo, MagiC-engine,
 ProChess IT, Sinobyl, StoneChess and Viper. Kimbo is recorded as

@@ -15,6 +15,16 @@ class PosterTests(unittest.TestCase):
     def test_poster_dimensions(self):
         self.assertEqual(self.page_size, (48 * 72, 36 * 72))
 
+    def test_archived_only_families_are_not_listed(self):
+        archive = "https://web.archive.org/web/2004/http://old.example/src.zip"
+        catalog = {"engines": [
+            {"name": "Live", "source_code": [{"url": "https://github.com/a/live", "source": "ccrl"}]},
+            {"name": "Gone", "source_code": [{"url": archive, "source": "rwbc"}]},
+        ]}
+        rows, count = names_pdf.entries(catalog)
+        self.assertEqual((count, [r[0] for r in rows if not r[1]]), (1, ["Live"]))
+        self.assertEqual(list(names_pdf.source_links(catalog)), ["Live"])
+
     def test_all_families_fit_with_sequential_indices_and_no_clipping(self):
         size, page_count = names_pdf.choose(self.rows, self.page_size, 16, 1)
         self.assertEqual(page_count, 1)

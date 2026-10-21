@@ -2,8 +2,8 @@
 
     python names_pdf.py [--out PATH] [--paper letter|a4|poster] [--orientation portrait|landscape] [--min-size PT]
 
-Reads data/engines.json (run collect.py first). Families whose availability is linked,
-available, or archived_only are numbered and listed alphabetically under letter headings,
+Reads data/engines.json (run collect.py first). Families whose availability is linked or
+available are numbered and listed alphabetically under letter headings,
 in as many columns as fit (portrait pages by default). The default 16 pt minimum is about the
 smallest text that 20/20 vision can read from 9 feet; the largest size up to 4 pt above
 it that still gives the fewest pages is chosen. Uses only the standard library. Names are set in Atkinson Hyperlegible
@@ -23,7 +23,8 @@ from urllib.parse import quote, urlsplit
 import source_status
 
 ROOT = Path(__file__).resolve().parent
-AVAILABLE = {"linked", "available", "archived_only"}
+# Archived-only families (source reachable only through an archive) are not counted as available.
+AVAILABLE = {"linked", "available"}
 PAPER = {"letter": (612, 792), "a4": (595, 842), "poster": (36 * 72, 48 * 72)}
 MARGIN = 18
 GUTTER = 6
@@ -176,8 +177,7 @@ def entries(catalog=None):
     if catalog is None:
         catalog = json.loads((ROOT / "data" / "engines.json").read_text(encoding="utf-8"))
     names = sorted(
-        (e["name"] + (DAGGER if source_status.availability_label(e) == "archived_only" else ""))
-        for e in catalog["engines"] if source_status.availability_label(e) in AVAILABLE
+        e["name"] for e in catalog["engines"] if source_status.availability_label(e) in AVAILABLE
     )
     names.sort(key=source_status.name_sort_key)
     rows, current = [], None
@@ -234,8 +234,7 @@ def preferred_source(engine):
 
 def source_links(catalog):
     return {
-        e["name"] + (DAGGER if source_status.availability_label(e) == "archived_only" else ""):
-        preferred_source(e)
+        e["name"]: preferred_source(e)
         for e in catalog["engines"] if source_status.availability_label(e) in AVAILABLE
     }
 
@@ -336,7 +335,7 @@ def render(rows, count, size, page_size, out, links=None):
             title = f"Chess engines with available source code \u2014 {count:,} families"
             subtitle = (
                 f"Generated {date.today().isoformat()} from data/engines.json. "
-                f"{DAGGER} = archived copy only (e.g. Wayback Machine)."
+                "Engines whose source survives only in an archive are not listed."
             )
             # Shrink the title lines if needed so they fit the page width.
             usable = width - 2 * MARGIN

@@ -9,8 +9,10 @@ refreshes collection or research. `dist/` is gitignored; only the generator
 (`publish.py`), its assets (`site_assets/`), and tests are committed.
 
 * `index.html`: every family, numbered, with its canonical name linking to its page and
-  its source links. Search covers canonical names and aliases; the availability filter's
-  "Source available" includes archived-only copies. Filters are kept in the URL
+  its source links. Families whose source survives only as an archived copy are marked
+  Archived and link to their family page rather than to the archive. Search covers
+  canonical names and aliases; the availability filter's "Source available" excludes
+  archived-only families, which have their own "Archived source only" option. Filters are kept in the URL
   (`?q=...&availability=available|archived|unavailable`) for bookmarking. Without
   JavaScript the full table is shown.
 * `families/*.html`: authors (from the CPW engine list, computer-chess.org, the Lucas Chess

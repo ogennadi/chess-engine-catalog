@@ -67,6 +67,9 @@ from the rights holder. "Source not located" never implies closed source.
 `source-status-pilot.json` is the approved 51-family pilot, now merged into this
 file.
 
+`archived_only` families are not counted as source available (website counts,
+filter, and poster), but their archive links stay on their family pages.
+
 `collect.py` attaches `available` and `archived_only` source URLs to the catalog
 (source `source-status-research`) and adds a CSV `source_availability` column:
 the research result, `linked` for families with list-supplied source links, or

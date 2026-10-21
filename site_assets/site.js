@@ -31,7 +31,7 @@
   }));
   const filters = {
     all: () => true,
-    available: (state) => ["linked", "available", "archived_only"].includes(state),
+    available: (state) => ["linked", "available"].includes(state),
     archived: (state) => state === "archived_only",
     unavailable: (state) => ["not_located", "released_not_located"].includes(state),
   };
