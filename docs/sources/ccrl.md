@@ -1,7 +1,8 @@
-# CCRL 40/15
+# CCRL rating lists
 
 - **Source ID:** `ccrl`
-- **URL:** <https://computerchess.org.uk/4040/index.html>
+- **URL:** <https://computerchess.org.uk/>
+- **Lists:** 40/15, Blitz, Chess960, 40/2 Archive, Chess324, DFRC
 - **Collector:** [`collectors/ccrl.py`](../../collectors/ccrl.py)
 
 ## How it was found

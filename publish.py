@@ -50,7 +50,7 @@ LICENSING = {
 }
 CONFIDENCE = {"high": "High", "medium": "Medium", "low": "Low"}
 DESCRIPTIONS = {
-    "ccrl": "Computer Chess Rating Lists (40/15): engine families and their CCRL detail pages.",
+    "ccrl": "Computer Chess Rating Lists (40/15, Blitz, Chess960, 40/2 Archive, Chess324, DFRC): engine families and their CCRL detail pages.",
     "amateurschach": "Frank Quisinsky's engine table, preserved by the Internet Archive.",
     "ubc": "Ultimate Bullet Classical rating list and its linked engine details.",
     "lucas_chess": "Engines bundled with Lucas Chess; a bundled source copy may not be the original release.",

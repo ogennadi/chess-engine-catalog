@@ -53,7 +53,7 @@ class CCRLTests(unittest.TestCase):
         rows = collect(fetch)
         self.assertEqual([r["family"] for r in rows],
                          ["Stockfish", "Bace", "Stockfish Fork", "4kc"])
-        self.assertEqual(len(calls), 3)
+        self.assertEqual(len([c for c in calls if "/4040/" in c[0]]), 3)
         query = parse_qs(urlsplit(calls[1][0]).query)
         self.assertEqual(query["eng"], ["SF 19", "BACE 4.6"])
         self.assertEqual([x["url"] for x in rows[0]["code_urls"]], [
@@ -95,6 +95,27 @@ class CCRLTests(unittest.TestCase):
             rows = collect(lambda url: html)
         self.assertEqual([r["family"] for r in rows], ["A & B", "Fork 2"])
         self.assertTrue(rows[0]["warnings"])
+
+    def test_other_lists_add_families_and_merge_links(self):
+        blitz = INDEX.replace("<option>4kc</option>", "<option>Blitzer</option>")
+
+        def fetch(url, data=None):
+            if url == INDEX_URL:
+                return INDEX
+            if url == "https://computerchess.org.uk/404/index.html":
+                return blitz
+            if url.endswith("/index.html"):
+                raise OSError("list offline")
+            return DETAILS
+
+        with warnings.catch_warnings(record=True):
+            rows = {r["family"]: r for r in collect(fetch)}
+        self.assertEqual(rows["4kc"]["section"], "CCRL 40/15")
+        self.assertEqual(rows["Bace"]["section"], "CCRL 40/15, CCRL Blitz")
+        self.assertEqual(rows["Blitzer"]["section"], "CCRL Blitz")
+        self.assertIn("/404/cgi/compare_engines.cgi", rows["Blitzer"]["url"])
+        self.assertEqual(len(rows["Bace"]["code_urls"]), 2)
+        self.assertTrue(any("list offline" in w for w in collect.last_warnings))
 
     def test_source_url_recognition(self):
         for url in [

@@ -27,7 +27,7 @@ python names_pdf.py --paper poster --orientation landscape --max-pages 1 --out d
 
 Print at **100% / actual size** on 48 x 36 inch paper, not scaled to a smaller sheet.
 The generator chooses the largest font that fits all source-available families on
-one page, retaining the archived-copy dagger markers. The current 1,279-family
+one page, retaining the archived-copy dagger markers. The current 1,296-family
 catalog fits at 23 pt (85% horizontal scale). Each column's number field is only as
 wide as its largest index, and leftover width is spread across the gaps between
 columns so the left and right margins match. Family names use Atkinson
@@ -200,6 +200,15 @@ resolve. No copy was found for Gideon's Chess Engine, Kimbo, MagiC-engine,
 ProChess IT, Sinobyl, StoneChess and Viper. Kimbo is recorded as
 `released_not_located`: its author's later engine akimbo is not counted as its
 source.
+
+CCRL contributes all six lists linked from its home page: 40/15, Blitz, Chess960,
+the 40/2 Archive, Chess324, and DFRC. Each family appears once, with the lists it
+appears on joined in its provenance section, and source links from every list's
+details pages are merged. Only 40/15 is required; any other list that fails to
+load is reported as a warning and skipped. Spelling variants on the other lists
+map to existing families through reviewed aliases (for example Purple Panda,
+TRex, Rebel Century, Leelenstein under Leela Chess, mACE under iCE), and CCRL's
+Genesis is Omid David's Genesis IL.
 
 Lucas Chess is collected from the pinned Linux-engine directory revision registered
 in `sources.json`. Its engine configuration is parsed without executing it and checked

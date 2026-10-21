@@ -1,5 +1,27 @@
 {
   "aliases": {
+    "Chad's Chess": "Chads Chess",
+    "ChessRikus": "Chess-Rikus",
+    "Doctor": "Doctor?",
+    "NEG": "N.E.G.",
+    "Purple Panda": "PurplePanda",
+    "St Andersen": "StAndersen",
+    "Strategic Deep": "StrategicDeep",
+    "TRex": "T.rex",
+    "Rebel Century": "Rebel",
+    "Tarrasch": "TarraschToyEngine",
+    "Magnum": "Magnum Chess",
+    "FreeChessII": "FreeChess",
+    "Hanzo": "Hanzo The Razor",
+    "Violet": "Violet (Deep)",
+    "Larsen": "LarsenVB",
+    "SebLague Chess-AI": "SebLagueCE",
+    "LittleTought": "LittleThought",
+    "pawnnocchio": "pawnocchio",
+    "mACE": "iCE",
+    "TheLightning": "Lightning (The)",
+    "Leelenstein": "Leela Chess",
+    "Rusty Rival": "Rusty-Rival",
     "4k.c": "4kc",
     "Absolute-Zero": "Absolute Zero",
     "Ant (& Gi-Ant)": "Ant",
@@ -377,7 +399,8 @@
       "sources": [
         "cegt",
         "rwbc",
-        "computer-chess-org"
+        "computer-chess-org",
+        "ccrl"
       ],
       "family": "Genesis",
       "target": "Genesis IL",

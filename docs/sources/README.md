@@ -5,7 +5,7 @@ Collection timestamps and per-source status are in `data/engines.json`, which `c
 
 | Source | URL |
 |---|---|
-| [CCRL 40/15](ccrl.md) | <https://computerchess.org.uk/4040/index.html> |
+| [CCRL rating lists](ccrl.md) | <https://computerchess.org.uk/> |
 | [Frank's Chess Page engine list](amateurschach.md) | <https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm> |
 | [Ultimate Bullet Classical](ubc.md) | <https://e4e6.com/> |
 | [Lucas Chess bundled Linux engines](lucas-chess.md) | <https://github.com/lukasmonk/lucaschessR6/tree/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines> |

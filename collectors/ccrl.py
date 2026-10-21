@@ -1,6 +1,11 @@
-"""CCRL 40/15 engine families and explicitly linked source code.
+"""CCRL engine families and explicitly linked source code.
 
-The complete rating list contains thousands of *versions*.  Instead, use the
+All six CCRL lists are read: 40/15, Blitz, Chess960, 40/2 Archive, Chess324 and
+DFRC.  Each family becomes one row naming the lists it appears on; its evidence
+URL is the first list's family comparison, and code links are merged across
+lists.  The 40/15 list is required; other lists warn on failure.
+
+The complete rating lists contain thousands of *versions*.  Instead, use each
 index's ``select name=family`` (CCRL's own taxonomy), and enrich it from the
 index's best-version details, in small bulk requests.  Detail pages explicitly
 identify their family, including single-version families.  No name/version
@@ -23,9 +28,19 @@ from urllib.parse import parse_qs, urlencode, urljoin, urlsplit
 import warnings
 
 
-INDEX_URL = "https://computerchess.org.uk/4040/index.html"
-DETAILS_URL = "https://computerchess.org.uk/4040/cgi/engine_details.cgi"
-COMPARE_URL = "https://computerchess.org.uk/4040/cgi/compare_engines.cgi"
+ROOT_URL = "https://computerchess.org.uk/"
+# (path, name) in CCRL's own menu names; the first list is required.
+LISTS = (
+    ("4040", "CCRL 40/15"),
+    ("404", "CCRL Blitz"),
+    ("404FRC", "CCRL Chess960"),
+    ("402.archive", "CCRL 40/2 Archive"),
+    ("Chess324", "CCRL Chess324"),
+    ("DFRC", "CCRL DFRC"),
+)
+INDEX_URL = ROOT_URL + "4040/index.html"
+DETAILS_URL = ROOT_URL + "4040/cgi/engine_details.cgi"
+COMPARE_URL = ROOT_URL + "4040/cgi/compare_engines.cgi"
 _BATCH_SIZE = 20
 
 
@@ -196,7 +211,7 @@ def _named_fork(record, evidence):
     return None
 
 
-def _merge_record(record, observations, forks_only=False):
+def _merge_record(record, observations, forks_only=False, details_url=DETAILS_URL):
     family = record["family"]
     if family is None:
         for cell in record["cells"]:
@@ -214,7 +229,7 @@ def _merge_record(record, observations, forks_only=False):
             RuntimeWarning,
         )
         return
-    evidence = DETAILS_URL + "?" + urlencode(
+    evidence = details_url + "?" + urlencode(
         {"print": "Details", "each_game": "0", "eng": record["engine"]}
     )
     fork = _named_fork(record, evidence)
@@ -234,8 +249,8 @@ def _merge_record(record, observations, forks_only=False):
             links.append({"url": code, "evidence_url": evidence})
 
 
-def _collect(fetch) -> list[dict]:
-    """Return one observation per authoritative CCRL 40/15 family.
+def _collect_list(fetch, path, name, required=False, forks=False):
+    """Return one observation per authoritative family on one CCRL list.
 
     ``fetch(url, data=None)`` supplies decoded HTML and owns caching/timeouts.
     At most one best-version details record per listed engine is requested,
@@ -243,16 +258,24 @@ def _collect(fetch) -> list[dict]:
     One extra Stockfish family request recovers CCRL's explicitly linked forks.
     Enrichment errors warn rather than silently presenting missing links.
     """
+    base = ROOT_URL + path + "/"
+    details_url = base + "cgi/engine_details.cgi"
     index = _Index()
-    index.feed(fetch(INDEX_URL))
-    index.close()
-    if not index.families:
-        raise ValueError("CCRL index contains no family selector; layout/access changed")
+    try:
+        index.feed(fetch(base + "index.html"))
+        index.close()
+        if not index.families:
+            raise ValueError("CCRL index contains no family selector; layout/access changed")
+    except Exception as exc:
+        if required:
+            raise
+        warnings.warn("%s index failed: %s" % (name, exc), RuntimeWarning)
+        return []
     observations = {
         family: {
             "family": family,
             "label": family,
-            "url": COMPARE_URL + "?" + urlencode(
+            "url": base + "cgi/compare_engines.cgi?" + urlencode(
                 {"family": family, "print": "Rating list"}
             ),
             "code_urls": [],
@@ -260,12 +283,12 @@ def _collect(fetch) -> list[dict]:
         for family in index.families
     }
     if not index.engines:
-        warnings.warn("CCRL index has no best-version detail links", RuntimeWarning)
+        warnings.warn("%s index has no best-version detail links" % name, RuntimeWarning)
     for start in range(0, len(index.engines), _BATCH_SIZE):
         engines = index.engines[start:start + _BATCH_SIZE]
         query = [("print", "Details"), ("each_game", "0")]
         query.extend(("eng", engine) for engine in engines)
-        url = DETAILS_URL + "?" + urlencode(query)
+        url = details_url + "?" + urlencode(query)
         try:
             details = _Details()
             details.feed(fetch(url))
@@ -274,7 +297,7 @@ def _collect(fetch) -> list[dict]:
                 raise ValueError("no engine details headers found")
         except Exception as exc:
             warnings.warn(
-                "CCRL details batch %d failed: %s" % (start // _BATCH_SIZE + 1, exc),
+                "%s details batch %d failed: %s" % (name, start // _BATCH_SIZE + 1, exc),
                 RuntimeWarning,
             )
             continue
@@ -282,7 +305,7 @@ def _collect(fetch) -> list[dict]:
         missing = set(engines) - returned
         if missing:
             warnings.warn(
-                "CCRL details batch omitted %d requested engines" % len(missing),
+                "%s details batch omitted %d requested engines" % (name, len(missing)),
                 RuntimeWarning,
             )
         for record in details.records:
@@ -290,9 +313,9 @@ def _collect(fetch) -> list[dict]:
             if engine not in engines:
                 warnings.warn("CCRL detail has an unexpected engine", RuntimeWarning)
                 continue
-            _merge_record(record, observations)
-    if "Stockfish" in observations:
-        url = DETAILS_URL + "?" + urlencode(
+            _merge_record(record, observations, details_url=details_url)
+    if forks and "Stockfish" in observations:
+        url = details_url + "?" + urlencode(
             {"print": "Details", "each_game": "0", "family": "Stockfish"}
         )
         try:
@@ -303,10 +326,27 @@ def _collect(fetch) -> list[dict]:
                 raise ValueError("no Stockfish family detail headers found")
             for record in details.records:
                 if record["family"] == "Stockfish" and record["engine"]:
-                    _merge_record(record, observations, forks_only=True)
+                    _merge_record(record, observations, forks_only=True,
+                                  details_url=details_url)
         except Exception as exc:
             warnings.warn("CCRL fork enrichment failed: %s" % exc, RuntimeWarning)
     return list(observations.values())
+
+
+def _collect(fetch) -> list[dict]:
+    """One row per family across all lists; the first list is required."""
+    rows = {}
+    for number, (path, name) in enumerate(LISTS):
+        for row in _collect_list(fetch, path, name, required=number == 0, forks=number == 0):
+            seen = rows.get(row["family"])
+            if seen is None:
+                rows[row["family"]] = dict(row, section=name)
+                continue
+            seen["section"] += ", " + name
+            for link in row["code_urls"]:
+                if not any(item["url"] == link["url"] for item in seen["code_urls"]):
+                    seen["code_urls"].append(link)
+    return list(rows.values())
 
 
 def collect(fetch) -> list[dict]:
