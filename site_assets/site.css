@@ -41,6 +41,8 @@ main, footer, .site-header { max-width: 76rem; margin: auto; padding: 1rem 1.25r
 .site-header { display: flex; align-items: center; justify-content: space-between; gap: .5rem 1rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
 .brand { font-weight: 750; text-decoration: none; font-size: 1.15rem; display: inline-flex; align-items: center; gap: .5rem; }
 .brand img { flex: none; }
+.logo-light, :root[data-theme="light"] .logo-dark { display: none; }
+:root[data-theme="light"] .logo-light { display: inline; }
 .site-header nav, .header-links { display: flex; align-items: center; gap: .5rem 1.25rem; flex-wrap: wrap; }
 .site-header nav a { padding-block: .5rem; }
 h1 { font-size: clamp(1.7rem, 5vw, 2.5rem); line-height: 1.2; overflow-wrap: anywhere; margin-block: .75rem; }

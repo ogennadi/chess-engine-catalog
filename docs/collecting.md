@@ -33,7 +33,9 @@ wide as its largest index, and leftover width is spread across the gaps between
 columns so the left and right margins match. Family names use Atkinson
 Hyperlegible, whose serifed `I` and tailed `l` stay distinct from a distance, and
 index numbers use Atkinson Hyperlegible Mono so they line up; both are embedded
-from `fonts/` (SIL Open Font License 1.1). The title and subtitle use Helvetica. This is an experiment targeting
+from `fonts/` (SIL Open Font License 1.1). The header shows the site logo, drawn as
+vector shapes, beside a Helvetica title and a subtitle with the generation date and
+a link to the repository; pages carry no page numbers. This is an experiment targeting
 9-foot viewing, not a guarantee of comfortable readability at that distance;
 check a full-size print sample before printing the whole poster.
 

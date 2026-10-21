@@ -64,7 +64,7 @@ class Fetcher:
                 self._wait_for_slot()
                 request = Request(
                     url, data=encoded,
-                    headers={"User-Agent": "engine-list/1.0 (public chess engine catalog)"},
+                    headers={"User-Agent": "chess-engine-catalog/1.0 (public chess engine catalog)"},
                 )
                 try:
                     with self.opener.open(request, timeout=90) as response:

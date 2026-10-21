@@ -8,7 +8,7 @@ in as many columns as fit (portrait pages by default). The default 16 pt minimum
 smallest text that 20/20 vision can read from 9 feet; the largest size up to 4 pt above
 it that still gives the fewest pages is chosen. Uses only the standard library. Names are set in Atkinson Hyperlegible
 and index numbers in Atkinson Hyperlegible Mono (embedded from fonts/, SIL OFL 1.1), so l, I and 1 stay distinct, and the
-title in the PDF base-14 Helvetica; text is horizontally condensed. The output is generated, so it is gitignored.
+title in the PDF base-14 Helvetica beside the site logo; text is horizontally condensed. The output is generated, so it is gitignored.
 For a single 48 x 36 inch landscape poster, use --paper poster --orientation landscape --max-pages 1.
 """
 
@@ -23,6 +23,7 @@ from urllib.parse import quote, urlsplit
 import source_status
 
 ROOT = Path(__file__).resolve().parent
+REPOSITORY = "https://github.com/ogennadi/chess-engine-catalog"
 # Archived-only families (source reachable only through an archive) are not counted as available.
 AVAILABLE = {"linked", "available"}
 PAPER = {"letter": (612, 792), "a4": (595, 842), "poster": (36 * 72, 48 * 72)}
@@ -60,8 +61,8 @@ class Base14Font:
     def __init__(self, name, table):
         self.name = name
         self.widths = {chr(32 + i): int(w) for i, w in enumerate(table.split())}
-        # The title's em dash and the subtitle's dagger, from the same AFM files.
-        self.widths.update({"\u2014": 1000, DAGGER: 556})
+        # The subtitle's middle dot and dagger, from the same AFM files.
+        self.widths.update({"\u2014": 1000, "\u00b7": 278, DAGGER: 556})
 
     def pdf_objects(self, first):
         return [b"<< /Type /Font /Subtype /Type1 /BaseFont /%s /Encoding /WinAnsiEncoding >>" % self.name.encode()]
@@ -324,6 +325,48 @@ def pdf_string(text):
     return b"(" + raw.replace(b"\\", b"\\\\").replace(b"(", b"\\(").replace(b")", b"\\)") + b")"
 
 
+# The site logo (site_assets/logo-light.svg; logo.svg is the dark version) in its 64-unit SVG coordinates,
+# drawn as PDF vector paths. Tile, list and rook colours.
+LOGO_TILE, LOGO_LIST, LOGO_ROOK = (234, 242, 247), (159, 177, 191), (7, 89, 133)
+LOGO_LIST_ROWS = ((15, 34), (26, 26), (37, 30), (48, 22))  # (center y, bar width)
+LOGO_ROOK_PATH = ((31, 11), (36, 11), (36, 15), (40, 15), (40, 11), (44, 11), (44, 15), (48, 15), (48, 11),
+                  (53, 11), (53, 20), (50, 23), (50, 36), (53, 41), (53, 44), (55, 44), (55, 50), (29, 50),
+                  (29, 44), (31, 44), (31, 41), (34, 36), (34, 23), (31, 20))
+KAPPA = 0.5523
+
+
+def logo_ops(left, top, size):
+    """PDF operators drawing the logo in a size x size box whose top-left corner is (left, top)."""
+    scale = size / 64
+
+    def point(x, y):
+        return b"%.2f %.2f" % (left + x * scale, top - y * scale)
+
+    def color(rgb, op):
+        return b"%.3f %.3f %.3f %s" % (*(c / 255 for c in rgb), op)
+
+    def rounded(x, y, w, h, r):
+        k = r * (1 - KAPPA)
+        return b" ".join([
+            point(x + r, y) + b" m", point(x + w - r, y) + b" l",
+            point(x + w - k, y) + b" " + point(x + w, y + k) + b" " + point(x + w, y + r) + b" c",
+            point(x + w, y + h - r) + b" l",
+            point(x + w, y + h - k) + b" " + point(x + w - k, y + h) + b" " + point(x + w - r, y + h) + b" c",
+            point(x + r, y + h) + b" l",
+            point(x + k, y + h) + b" " + point(x, y + h - k) + b" " + point(x, y + h - r) + b" c",
+            point(x, y + r) + b" l",
+            point(x, y + k) + b" " + point(x + k, y) + b" " + point(x + r, y) + b" c h",
+        ])
+
+    rook = b" ".join(point(*p) + (b" m" if i == 0 else b" l") for i, p in enumerate(LOGO_ROOK_PATH)) + b" h"
+    parts = [b"q", color(LOGO_TILE, b"rg"), rounded(0, 0, 64, 64, 14), b"f", color(LOGO_LIST, b"rg")]
+    for y, bar in LOGO_LIST_ROWS:
+        parts += [rounded(8, y - 2, 4, 4, 2), rounded(15, y - 2, bar, 4, 2)]
+    parts += [b"f", color(LOGO_TILE, b"rg"), color(LOGO_TILE, b"RG"), b"%.2f w 1 j" % (4 * scale), rook, b"B",
+              color(LOGO_ROOK, b"rg"), rook, b"f", b"Q"]
+    return b"\n".join(parts)
+
+
 def render(rows, count, size, page_size, out, links=None):
     width, height = page_size
     line = size * LEADING
@@ -333,20 +376,31 @@ def render(rows, count, size, page_size, out, links=None):
         parts, page_links = [], []
         top = height - MARGIN
         if number == 1:
-            title = f"Chess engines with available source code \u2014 {count:,} families"
-            subtitle = (
-                f"Generated {date.today().isoformat()} from data/engines.json."
-            )
-            # Shrink the title lines if needed so they fit the page width.
-            usable = width - 2 * MARGIN
+            title = f"Chess engines with available source code: {count:,} families"
+            repository = REPOSITORY.removeprefix("https://")
+            subtitle = f"Generated {date.today().isoformat()} \u00b7 {repository}"
+            # The logo spans the title block; shrink the title lines if needed so they fit beside it.
             big = size * 1.3
+            subtitle_y = top - big * LEADING - size
+            logo = top - (subtitle_y - size * 0.25)
+            text_left = MARGIN + logo + size * 0.5
+            usable = width - MARGIN - text_left
             title_size = min(big, usable / (text_width(title, "F4", 1) * 100 / CONDENSE))
             sub_size = min(size, usable / text_width(subtitle, "F5", 1))
-            parts.append(b"BT 100 Tz /F4 %.2f Tf %.2f %.2f Td " % (title_size, MARGIN, top - big) + pdf_string(title) + b" Tj ET")
+            parts.append(logo_ops(MARGIN, top, logo))
+            parts.append(b"BT 100 Tz /F4 %.2f Tf %.2f %.2f Td " % (title_size, text_left, top - big) + pdf_string(title) + b" Tj ET")
             parts.append(
-                b"BT %d Tz /F5 %.2f Tf %.2f %.2f Td " % (CONDENSE, sub_size, MARGIN, top - big * LEADING - size)
+                b"BT %d Tz /F5 %.2f Tf %.2f %.2f Td " % (CONDENSE, sub_size, text_left, subtitle_y)
                 + pdf_string(subtitle) + b" Tj ET"
             )
+            if links is not None:
+                url_left = text_left + text_width(subtitle.removesuffix(repository), "F5", sub_size)
+                page_links.append(
+                    b"<< /Type /Annot /Subtype /Link /Rect [%.2f %.2f %.2f %.2f] "
+                    % (url_left, subtitle_y - sub_size * 0.22,
+                       url_left + text_width(repository, "F5", sub_size), subtitle_y + sub_size * 0.8)
+                    + b"/Border [0 0 0] /A << /S /URI /URI " + pdf_string(REPOSITORY) + b" >> >>"
+                )
             top -= title_height(size)
         for x, column, numbers in columns:
             parts.append(b"BT %d Tz" % CONDENSE)
@@ -371,11 +425,6 @@ def render(rows, count, size, page_size, out, links=None):
                         + b"/Border [0 0 0] /A << /S /URI /URI " + pdf_string(url) + b" >> >>"
                     )
             parts.append(b"ET")
-        footer = f"{number} / {len(pages)}"
-        parts.append(
-            b"BT %d Tz 0.45 g /F5 6 Tf %.2f %.2f Td " % (CONDENSE, width / 2 - text_width(footer, "F5", 6) / 2, MARGIN / 2 - 2)
-            + pdf_string(footer) + b" Tj ET"
-        )
         streams.append(zlib.compress(b"\n".join(parts)))
         annotations.append(page_links)
 

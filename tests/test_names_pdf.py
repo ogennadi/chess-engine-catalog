@@ -1,6 +1,8 @@
 import tempfile
 import json
+import re
 import unittest
+import zlib
 from pathlib import Path
 
 import names_pdf
@@ -58,7 +60,14 @@ class PosterTests(unittest.TestCase):
         self.assertEqual(pages, 1)
         self.assertIn(b"/MediaBox [0 0 3456 2592]", pdf)
         self.assertIn(b"/Count 1", pdf)
-        self.assertEqual(pdf.count(b"/Subtype /Link"), self.count)
+        self.assertEqual(pdf.count(b"/Subtype /Link"), self.count + 1)
+        self.assertIn(b"/URI (" + names_pdf.REPOSITORY.encode() + b")", pdf)
+        content = b"".join(zlib.decompress(s) for s in re.findall(rb"stream\n(.*?)\nendstream", pdf, re.S)
+                           if s.startswith(b"x"))
+        self.assertIn(b"(Chess engines with available source code: ", content)
+        self.assertIn(b"github.com/ogennadi/chess-engine-catalog)", content)
+        self.assertNotIn(b"data/engines.json", content)
+        self.assertNotIn(b"1 / 1", content)
         self.assertEqual(pdf.count(b"/FontFile2"), 3)
         for font in (b"AtkinsonHyperlegible-Regular", b"AtkinsonHyperlegibleMono-Regular", b"Helvetica-Bold"):
             self.assertIn(b"/BaseFont /" + font, pdf)

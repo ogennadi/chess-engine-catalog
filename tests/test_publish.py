@@ -174,14 +174,15 @@ class PublishTests(unittest.TestCase):
         self.assertIn('alt="" width="32" height="32">Chess Engine Catalog</a>', self.index)
         self.assertIn("<title>Alpha | Chess Engine Catalog</title>", self.family("alpha"))
         self.assertIn('href="../assets/logo.svg" type="image/svg+xml"', self.family("alpha"))
-        for asset in ("logo.svg", "favicon-32.png", "apple-touch-icon.png"):
+        for asset in ("logo.svg", "logo-light.svg", "favicon-32.png", "apple-touch-icon.png"):
             self.assertTrue((self.out / "assets" / asset).is_file(), asset)
 
     def test_download_is_single_page_linked_poster(self):
         pdf = (self.out / "downloads" / "source-available-engines.pdf").read_bytes()
         self.assertIn(b"/MediaBox [0 0 3456 2592]", pdf)
         self.assertIn(b"/Count 1", pdf)
-        self.assertEqual(pdf.count(b"/Subtype /Link"), 2)
+        # Two family links plus the repository link in the header.
+        self.assertEqual(pdf.count(b"/Subtype /Link"), 3)
         self.assertIn(b"/URI (https://github.com/a/alpha)", pdf)
         self.assertNotIn(b"web.archive.org", pdf)
         self.assertIn(b"/URI (https://example.org/evil-source)", pdf)
