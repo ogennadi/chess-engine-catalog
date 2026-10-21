@@ -6395,33 +6395,6 @@
    "searches": 0,
    "checked_at": "2026-10-19T21:32:14+00:00"
   },
-  "Chestnut": {
-   "tier": "F",
-   "licensing": "unknown",
-   "availability": "not_located",
-   "confidence": "low",
-   "evidence": [
-    {
-     "source": "dossier: UBC label",
-     "quote": "Chestnut dev 892e476 avx2 bmi2 GS"
-    },
-    {
-     "search": "GitHub repositories: chestnut chess engine / chestnut chess (API)",
-     "quote": "only chuch3/chestnut (AlphaZero notebook) and Vincent-Carrier/chestnut (Rust CLI chess app); neither contains commit 892e476"
-    },
-    {
-     "search": "\"Chestnut\" chess engine UCI 892e476 OR \"Chestnut dev\" engine github",
-     "quote": "no engine named Chestnut found"
-    },
-    {
-     "search": "GitHub code: \"Chestnut\" \"uciok\"",
-     "quote": "no chess engine hits"
-    }
-   ],
-   "rationale": "The label's dev hash suggests a git-hosted engine, but no repository containing commit 892e476 was found; author unknown.",
-   "searches": 4,
-   "checked_at": "2026-10-20T00:32:00+00:00"
-  },
   "Chexa": {
    "tier": "E",
    "licensing": "unknown",
@@ -33687,12 +33660,12 @@
    "searches": 1,
    "checked_at": "2026-10-19T23:55:19+00:00"
   },
-  "Umko": {
+  "MinkoChess": {
    "tier": "F",
    "licensing": "open_source",
    "availability": "available",
    "confidence": "medium",
-   "release_scope": "SourceForge project 'umko' now hosts MinkoChess 1.3 (renamed Umko, 2012); separate Umko 0.7-1.1 source archives not confirmed",
+   "release_scope": "SourceForge project 'umko' hosts MinkoChess 1.3 (Umko was renamed MinkoChess in 2012); separate Umko 0.7-1.1 source archives not confirmed",
    "source_urls": [
     {
      "url": "https://sourceforge.net/projects/umko/files/",

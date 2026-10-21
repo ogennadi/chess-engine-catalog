@@ -27,8 +27,10 @@ python names_pdf.py --paper poster --orientation landscape --max-pages 1 --out d
 
 Print at **100% / actual size** on 48 x 36 inch paper, not scaled to a smaller sheet.
 The generator chooses the largest font that fits all source-available families on
-one page, retaining the archived-copy dagger markers. The current 1,275-family
-catalog fits at 22 pt (85% horizontal scale). Family names use Atkinson
+one page, retaining the archived-copy dagger markers. The current 1,271-family
+catalog fits at 23 pt (85% horizontal scale). Each column's number field is only as
+wide as its largest index, and leftover width is spread across the gaps between
+columns so the left and right margins match. Family names use Atkinson
 Hyperlegible, whose serifed `I` and tailed `l` stay distinct from a distance, and
 index numbers use Atkinson Hyperlegible Mono so they line up; both are embedded
 from `fonts/` (SIL Open Font License 1.1). The title and subtitle use Helvetica. This is an experiment targeting
@@ -136,8 +138,14 @@ LunaChess, NatesBot, PLP (PoorLittlePinkus), rusty-redtail (Redtail), Chesslib
 (CL-U-E), Bongcloud (sireButItsAnEngine), and The Flying Dutchman (Flying-Dutchman,
 whose crate is version 0.1.0). Version-named entries join their family: Prophet3
 and Prophet4, Maxima2, CalculonX, Armageddon II, Kallisto II, Quanticade Aurora,
-Teki Random Mover (Teki v0.1), Throne (Shadow's former name), and GFCv2 (Guillermo
-Filia's GFC v2, predecessor of Chronos, merged into GFC). The wiki's Toledo
+Teki Random Mover (Teki v0.1), Throne (Shadow's former name), Umko (MinkoChess's
+former name, renamed in 2012), and GFCv2 (Guillermo
+Filia's GFC v2, predecessor of Chronos, merged into GFC). Families whose name
+differs from their linked repository's were also checked: Chestnut (UBC's "dev
+892e476" is a commit in AriaKafie/chestnut, chessnut's repository) merges into
+chessnut; DreamChess into Dreamer, its engine; CrazyAra into ClassicAra, the
+standard-chess build the lists rate; and SimpleLearnerBot, the lichess bot running
+alexsyrom/chess-engine, into ChessEngine. The wiki's Toledo
 article (Óscar Toledo Gutiérrez's Toledo Chess 1/2, Nanochess and Picochess)
 merges into Toledo NanoChess, the member the lists rate; his separate x86
 program Atomchess is not counted as its source. Toledo 2000 is another author's

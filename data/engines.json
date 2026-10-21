@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T14:09:30.276520+00:00",
+  "generated_at": "2026-10-21T18:34:50.677486+00:00",
   "coverage_complete": false,
   "sources": [
     {
@@ -56959,6 +56959,16 @@
           "source": "computer-chess-org"
         },
         {
+          "label": "SimpleLearnerBot",
+          "url": "https://lichess.org/@/SimpleLearnerBot",
+          "membership_url": "https://lichess.org/team/selfmade-bots",
+          "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+          "identity_method": "reviewed-profile",
+          "identity_evidence_url": "https://github.com/alexsyrom/chess-engine",
+          "source": "lichess",
+          "checked_at": "2026-10-18T19:46:08.537117+00:00"
+        },
+        {
           "label": "ChessEngine",
           "original_name": "ChessEngine",
           "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
@@ -57072,6 +57082,11 @@
           "url": "https://github.com/alexsyrom/chess-engine",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
           "source": "rwbc"
+        },
+        {
+          "url": "https://github.com/alexsyrom/chess-engine",
+          "evidence_url": "https://lichess.org/@/SimpleLearnerBot",
+          "source": "lichess"
         }
       ],
       "chessprogramming_wiki": {
@@ -59839,7 +59854,8 @@
     {
       "name": "chessnut",
       "aliases": [
-        "Chessnut"
+        "Chessnut",
+        "Chestnut"
       ],
       "provenance": [
         {
@@ -59945,6 +59961,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Chestnut dev 892e476 avx2 bmi2 GS",
+          "url": "https://e4e6.com/ubc_ratings.php",
+          "request_data": {
+            "type": "type3"
+          },
+          "source": "ubc",
+          "checked_at": "2026-10-18T19:49:18.418245+00:00"
         },
         {
           "label": "Chessnut",
@@ -60906,40 +60931,6 @@
         "licensing": "unknown",
         "confidence": "medium",
         "checked_at": "2026-10-19T21:32:14+00:00"
-      }
-    },
-    {
-      "name": "Chestnut",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "Chestnut dev 892e476 avx2 bmi2 GS",
-          "url": "https://e4e6.com/ubc_ratings.php",
-          "request_data": {
-            "type": "type3"
-          },
-          "source": "ubc",
-          "checked_at": "2026-10-18T19:49:18.418245+00:00"
-        }
-      ],
-      "source_code": [],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "Chestnut"
-        ]
-      },
-      "source_status": {
-        "tier": "F",
-        "availability": "not_located",
-        "licensing": "unknown",
-        "confidence": "low",
-        "checked_at": "2026-10-20T00:32:00+00:00"
       }
     },
     {
@@ -64385,7 +64376,9 @@
     },
     {
       "name": "ClassicAra",
-      "aliases": [],
+      "aliases": [
+        "CrazyAra"
+      ],
       "provenance": [
         {
           "label": "ClassicAra 0.9.3 CUDNN",
@@ -64524,6 +64517,18 @@
         {
           "label": "ClassicAra",
           "listed_name": "ClassicAra",
+          "url": "https://chessprogramming.org/Engines#alphabetical-list",
+          "listing_url": "https://chessprogramming.org/Engines",
+          "project_url": "https://chessprogramming.org/CrazyAra",
+          "page_title": "CrazyAra",
+          "page_path": "/CrazyAra",
+          "section": "C",
+          "checked_at": "2026-10-19T00:59:52.557009+00:00",
+          "source": "wiki-engines"
+        },
+        {
+          "label": "CrazyAra",
+          "listed_name": "CrazyAra",
           "url": "https://chessprogramming.org/Engines#alphabetical-list",
           "listing_url": "https://chessprogramming.org/Engines",
           "project_url": "https://chessprogramming.org/CrazyAra",
@@ -72823,50 +72828,6 @@
         "licensing": "source_available",
         "confidence": "high",
         "checked_at": "2026-10-19T02:46:42+00:00"
-      }
-    },
-    {
-      "name": "CrazyAra",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "CrazyAra",
-          "listed_name": "CrazyAra",
-          "url": "https://chessprogramming.org/Engines#alphabetical-list",
-          "listing_url": "https://chessprogramming.org/Engines",
-          "project_url": "https://chessprogramming.org/CrazyAra",
-          "page_title": "CrazyAra",
-          "page_path": "/CrazyAra",
-          "section": "C",
-          "checked_at": "2026-10-19T00:59:52.557009+00:00",
-          "source": "wiki-engines"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/QueensGambit/CrazyAra",
-          "evidence_url": "https://chessprogramming.org/CrazyAra",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:34:05.385031+00:00"
-        },
-        {
-          "url": "https://github.com/QueensGambit/CrazyAra-Engine",
-          "note": "Explicitly linked C++ CrazyAra engine implementation.",
-          "evidence_url": "https://chessprogramming.org/CrazyAra",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:34:05.385031+00:00"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "found",
-        "url": "https://chessprogramming.org/CrazyAra",
-        "title": "CrazyAra",
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "reviewed-title-alias",
-        "titles_checked": [
-          "CrazyAra"
-        ]
       }
     },
     {
@@ -89541,9 +89502,17 @@
       }
     },
     {
-      "name": "DreamChess",
-      "aliases": [],
+      "name": "Dreamer",
+      "aliases": [
+        "DreamChess"
+      ],
       "provenance": [
+        {
+          "label": "Dreamer",
+          "url": "https://computerchess.org.uk/4040/cgi/compare_engines.cgi?family=Dreamer&print=Rating+list",
+          "source": "ccrl",
+          "checked_at": "2026-10-18T19:53:20.932911+00:00"
+        },
         {
           "label": "DreamChess",
           "url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
@@ -89560,36 +89529,6 @@
           "project_url": "http://dreamchess.org/downloads.html",
           "checked_at": "2026-10-19T18:34:57.193219+00:00",
           "source": "computer-chess-org"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://sourceforge.net/projects/dreamchess/",
-          "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "found",
-        "url": "https://chessprogramming.org/DreamChess",
-        "title": "DreamChess",
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "exact-title-or-catalog-alias",
-        "titles_checked": [
-          "DreamChess"
-        ]
-      }
-    },
-    {
-      "name": "Dreamer",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "Dreamer",
-          "url": "https://computerchess.org.uk/4040/cgi/compare_engines.cgi?family=Dreamer&print=Rating+list",
-          "source": "ccrl",
-          "checked_at": "2026-10-18T19:53:20.932911+00:00"
         },
         {
           "label": "Dreamer",
@@ -89719,6 +89658,11 @@
           "evidence_url": "https://chessprogramming.org/Dreamer",
           "source": "chessprogramming-wiki",
           "checked_at": "2026-10-19T00:46:34.195579+00:00"
+        },
+        {
+          "url": "https://sourceforge.net/projects/dreamchess/",
+          "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
+          "source": "computer-chess-org"
         }
       ],
       "chessprogramming_wiki": {
@@ -181802,7 +181746,9 @@
     },
     {
       "name": "MinkoChess",
-      "aliases": [],
+      "aliases": [
+        "Umko"
+      ],
       "provenance": [
         {
           "label": "MinkoChess",
@@ -181827,6 +181773,156 @@
           "rank": 1793,
           "section": "CEGT 4/40",
           "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/1793.html",
+          "checked_at": "2026-10-19T01:00:15.809575+00:00",
+          "source": "cegt"
+        },
+        {
+          "label": "Umko 0.7 w32 1CPU",
+          "url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
+          "listing_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
+          "rank": 2446,
+          "section": "CEGT 4/40",
+          "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/2446.html",
+          "checked_at": "2026-10-19T01:00:15.809575+00:00",
+          "source": "cegt"
+        },
+        {
+          "label": "Umko 0.7 x64",
+          "url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
+          "listing_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
+          "rank": 1921,
+          "section": "CEGT 40/20",
+          "detail_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/1944.html",
+          "checked_at": "2026-10-19T01:00:16.890523+00:00",
+          "source": "cegt"
+        },
+        {
+          "label": "Umko 0.7 x64 1CPU",
+          "url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
+          "listing_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
+          "rank": 2225,
+          "section": "CEGT 4/40",
+          "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/2225.html",
+          "checked_at": "2026-10-19T01:00:15.809575+00:00",
+          "source": "cegt"
+        },
+        {
+          "label": "Umko 1.0 x64 1CPU",
+          "url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
+          "listing_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
+          "rank": 1763,
+          "section": "CEGT 40/20",
+          "detail_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/1778.html",
+          "checked_at": "2026-10-19T01:00:16.890523+00:00",
+          "source": "cegt"
+        },
+        {
+          "label": "Umko 1.0 x64 1CPU",
+          "url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
+          "listing_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
+          "rank": 2095,
+          "section": "CEGT 4/40",
+          "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/2095.html",
+          "checked_at": "2026-10-19T01:00:15.809575+00:00",
+          "source": "cegt"
+        },
+        {
+          "label": "Umko 1.0 x64 2CPU",
+          "url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
+          "listing_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
+          "rank": 1712,
+          "section": "CEGT 40/20",
+          "detail_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/1724.html",
+          "checked_at": "2026-10-19T01:00:16.890523+00:00",
+          "source": "cegt"
+        },
+        {
+          "label": "Umko 1.0 x64 4CPU",
+          "url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
+          "listing_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
+          "rank": 1671,
+          "section": "CEGT 40/20",
+          "detail_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/1683.html",
+          "checked_at": "2026-10-19T01:00:16.890523+00:00",
+          "source": "cegt"
+        },
+        {
+          "label": "Umko 1.1 w32 1CPU",
+          "url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
+          "listing_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
+          "rank": 2299,
+          "section": "CEGT 4/40",
+          "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/2299.html",
+          "checked_at": "2026-10-19T01:00:15.809575+00:00",
+          "source": "cegt"
+        },
+        {
+          "label": "Umko 1.1 w32 2CPU",
+          "url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
+          "listing_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
+          "rank": 2207,
+          "section": "CEGT 4/40",
+          "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/2207.html",
+          "checked_at": "2026-10-19T01:00:15.809575+00:00",
+          "source": "cegt"
+        },
+        {
+          "label": "Umko 1.1 x64 1CPU",
+          "url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
+          "listing_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
+          "rank": 1784,
+          "section": "CEGT 40/20",
+          "detail_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/1801.html",
+          "checked_at": "2026-10-19T01:00:16.890523+00:00",
+          "source": "cegt"
+        },
+        {
+          "label": "Umko 1.1 x64 1CPU",
+          "url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
+          "listing_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
+          "rank": 2097,
+          "section": "CEGT 4/40",
+          "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/2097.html",
+          "checked_at": "2026-10-19T01:00:15.809575+00:00",
+          "source": "cegt"
+        },
+        {
+          "label": "Umko 1.1 x64 2CPU",
+          "url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
+          "listing_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
+          "rank": 1778,
+          "section": "CEGT 40/20",
+          "detail_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/1795.html",
+          "checked_at": "2026-10-19T01:00:16.890523+00:00",
+          "source": "cegt"
+        },
+        {
+          "label": "Umko 1.2 w32 1CPU",
+          "url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
+          "listing_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
+          "rank": 2115,
+          "section": "CEGT 4/40",
+          "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/2115.html",
+          "checked_at": "2026-10-19T01:00:15.809575+00:00",
+          "source": "cegt"
+        },
+        {
+          "label": "Umko 1.2 x64 1CPU",
+          "url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
+          "listing_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
+          "rank": 1654,
+          "section": "CEGT 40/20",
+          "detail_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/1666.html",
+          "checked_at": "2026-10-19T01:00:16.890523+00:00",
+          "source": "cegt"
+        },
+        {
+          "label": "Umko 1.2 x64 1CPU",
+          "url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
+          "listing_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
+          "rank": 1899,
+          "section": "CEGT 4/40",
+          "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/1899.html",
           "checked_at": "2026-10-19T01:00:15.809575+00:00",
           "source": "cegt"
         },
@@ -181965,6 +182061,15 @@
           "checked_at": "2026-10-18T19:49:18.418245+00:00"
         },
         {
+          "label": "Umko 1.2 SEE4",
+          "url": "https://e4e6.com/ubc_ratings.php",
+          "request_data": {
+            "type": "type3"
+          },
+          "source": "ubc",
+          "checked_at": "2026-10-18T19:49:18.418245+00:00"
+        },
+        {
           "label": "MinkoChess",
           "listed_name": "MinkoChess",
           "url": "https://chessprogramming.org/Engines#alphabetical-list",
@@ -181982,6 +182087,18 @@
           "url": "https://sourceforge.net/projects/umko/",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
           "source": "rwbc"
+        },
+        {
+          "url": "https://sourceforge.net/projects/umko/files/",
+          "evidence_url": "https://www.chessprogramming.org/MinkoChess",
+          "source": "source-status-research",
+          "kind": "original SourceForge project (renamed MinkoChess; MinkoChess1_3.zip)"
+        },
+        {
+          "url": "http://web.archive.org/web/20260428120556/https://sourceforge.net/projects/umko/files/",
+          "evidence_url": "https://www.chessprogramming.org/MinkoChess",
+          "source": "source-status-research",
+          "kind": "Wayback snapshot of SourceForge files page"
         }
       ],
       "chessprogramming_wiki": {
@@ -181994,6 +182111,13 @@
         "titles_checked": [
           "MinkoChess"
         ]
+      },
+      "source_status": {
+        "tier": "F",
+        "availability": "available",
+        "licensing": "open_source",
+        "confidence": "medium",
+        "checked_at": "2026-10-20T02:09:39+00:00"
       }
     },
     {
@@ -256947,39 +257071,6 @@
       }
     },
     {
-      "name": "SimpleLearnerBot",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "SimpleLearnerBot",
-          "url": "https://lichess.org/@/SimpleLearnerBot",
-          "membership_url": "https://lichess.org/team/selfmade-bots",
-          "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
-          "identity_method": "reviewed-profile",
-          "source": "lichess",
-          "checked_at": "2026-10-18T19:46:08.537117+00:00"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/alexsyrom/chess-engine",
-          "evidence_url": "https://lichess.org/@/SimpleLearnerBot",
-          "source": "lichess"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "SimpleLearnerBot"
-        ]
-      }
-    },
-    {
       "name": "Simpler",
       "aliases": [],
       "provenance": [
@@ -292578,203 +292669,6 @@
       }
     },
     {
-      "name": "Umko",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "Umko 0.7 w32 1CPU",
-          "url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
-          "listing_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
-          "rank": 2446,
-          "section": "CEGT 4/40",
-          "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/2446.html",
-          "checked_at": "2026-10-19T01:00:15.809575+00:00",
-          "source": "cegt"
-        },
-        {
-          "label": "Umko 0.7 x64",
-          "url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
-          "listing_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
-          "rank": 1921,
-          "section": "CEGT 40/20",
-          "detail_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/1944.html",
-          "checked_at": "2026-10-19T01:00:16.890523+00:00",
-          "source": "cegt"
-        },
-        {
-          "label": "Umko 0.7 x64 1CPU",
-          "url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
-          "listing_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
-          "rank": 2225,
-          "section": "CEGT 4/40",
-          "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/2225.html",
-          "checked_at": "2026-10-19T01:00:15.809575+00:00",
-          "source": "cegt"
-        },
-        {
-          "label": "Umko 1.0 x64 1CPU",
-          "url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
-          "listing_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
-          "rank": 1763,
-          "section": "CEGT 40/20",
-          "detail_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/1778.html",
-          "checked_at": "2026-10-19T01:00:16.890523+00:00",
-          "source": "cegt"
-        },
-        {
-          "label": "Umko 1.0 x64 1CPU",
-          "url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
-          "listing_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
-          "rank": 2095,
-          "section": "CEGT 4/40",
-          "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/2095.html",
-          "checked_at": "2026-10-19T01:00:15.809575+00:00",
-          "source": "cegt"
-        },
-        {
-          "label": "Umko 1.0 x64 2CPU",
-          "url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
-          "listing_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
-          "rank": 1712,
-          "section": "CEGT 40/20",
-          "detail_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/1724.html",
-          "checked_at": "2026-10-19T01:00:16.890523+00:00",
-          "source": "cegt"
-        },
-        {
-          "label": "Umko 1.0 x64 4CPU",
-          "url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
-          "listing_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
-          "rank": 1671,
-          "section": "CEGT 40/20",
-          "detail_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/1683.html",
-          "checked_at": "2026-10-19T01:00:16.890523+00:00",
-          "source": "cegt"
-        },
-        {
-          "label": "Umko 1.1 w32 1CPU",
-          "url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
-          "listing_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
-          "rank": 2299,
-          "section": "CEGT 4/40",
-          "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/2299.html",
-          "checked_at": "2026-10-19T01:00:15.809575+00:00",
-          "source": "cegt"
-        },
-        {
-          "label": "Umko 1.1 w32 2CPU",
-          "url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
-          "listing_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
-          "rank": 2207,
-          "section": "CEGT 4/40",
-          "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/2207.html",
-          "checked_at": "2026-10-19T01:00:15.809575+00:00",
-          "source": "cegt"
-        },
-        {
-          "label": "Umko 1.1 x64 1CPU",
-          "url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
-          "listing_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
-          "rank": 1784,
-          "section": "CEGT 40/20",
-          "detail_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/1801.html",
-          "checked_at": "2026-10-19T01:00:16.890523+00:00",
-          "source": "cegt"
-        },
-        {
-          "label": "Umko 1.1 x64 1CPU",
-          "url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
-          "listing_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
-          "rank": 2097,
-          "section": "CEGT 4/40",
-          "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/2097.html",
-          "checked_at": "2026-10-19T01:00:15.809575+00:00",
-          "source": "cegt"
-        },
-        {
-          "label": "Umko 1.1 x64 2CPU",
-          "url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
-          "listing_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
-          "rank": 1778,
-          "section": "CEGT 40/20",
-          "detail_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/1795.html",
-          "checked_at": "2026-10-19T01:00:16.890523+00:00",
-          "source": "cegt"
-        },
-        {
-          "label": "Umko 1.2 w32 1CPU",
-          "url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
-          "listing_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
-          "rank": 2115,
-          "section": "CEGT 4/40",
-          "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/2115.html",
-          "checked_at": "2026-10-19T01:00:15.809575+00:00",
-          "source": "cegt"
-        },
-        {
-          "label": "Umko 1.2 x64 1CPU",
-          "url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
-          "listing_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/rangliste.html",
-          "rank": 1654,
-          "section": "CEGT 40/20",
-          "detail_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/1666.html",
-          "checked_at": "2026-10-19T01:00:16.890523+00:00",
-          "source": "cegt"
-        },
-        {
-          "label": "Umko 1.2 x64 1CPU",
-          "url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
-          "listing_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/rangliste.html",
-          "rank": 1899,
-          "section": "CEGT 4/40",
-          "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/1899.html",
-          "checked_at": "2026-10-19T01:00:15.809575+00:00",
-          "source": "cegt"
-        },
-        {
-          "label": "Umko 1.2 SEE4",
-          "url": "https://e4e6.com/ubc_ratings.php",
-          "request_data": {
-            "type": "type3"
-          },
-          "source": "ubc",
-          "checked_at": "2026-10-18T19:49:18.418245+00:00"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://sourceforge.net/projects/umko/files/",
-          "evidence_url": "https://www.chessprogramming.org/MinkoChess",
-          "source": "source-status-research",
-          "kind": "original SourceForge project (renamed MinkoChess; MinkoChess1_3.zip)"
-        },
-        {
-          "url": "http://web.archive.org/web/20260428120556/https://sourceforge.net/projects/umko/files/",
-          "evidence_url": "https://www.chessprogramming.org/MinkoChess",
-          "source": "source-status-research",
-          "kind": "Wayback snapshot of SourceForge files page"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "Umko"
-        ]
-      },
-      "source_status": {
-        "tier": "F",
-        "availability": "available",
-        "licensing": "open_source",
-        "confidence": "medium",
-        "checked_at": "2026-10-20T02:09:39+00:00"
-      }
-    },
-    {
       "name": "Unidexter",
       "aliases": [],
       "provenance": [
@@ -313230,13 +313124,13 @@
     "index_url": "https://chessprogramming.org/search-index.json",
     "checked_at": "2026-10-19T00:44:50.443299+00:00",
     "main_namespace_pages": 4269,
-    "found": 1122,
-    "not_found": 1171,
+    "found": 1120,
+    "not_found": 1168,
     "needs_review": 0,
     "not_checked": 1
   },
   "chessprogramming_source_code": {
-    "found": 114,
+    "found": 113,
     "no_source_link_found": 847,
     "needs_review": 0
   }

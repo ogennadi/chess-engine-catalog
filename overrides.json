@@ -30,14 +30,17 @@
     "ChessDotCpp": "chess.cpp",
     "Chesslib": "CL-U-E",
     "Chessplayer 2150": "Chess Player 2150",
+    "Chestnut": "chessnut",
     "Constellation": "Novag",
     "CPW": "CPW-Engine",
+    "CrazyAra": "ClassicAra",
     "Critter (Chess)": "Critter",
     "Cyclone xTreme": "Cyclone",
     "Deep Sjeng c't": "Sjeng",
     "DoubleCheck": "DiscoCheck",
     "Dragon by Komodo": "Dragon",
     "Dragon of MORS": "MORS",
+    "DreamChess": "Dreamer",
     "Dump": "Dumb",
     "E.T.CHESS": "E.T. Chess",
     "Electronic Grand Master": "EGM",
@@ -242,6 +245,7 @@
     "Shredder (Deep)": "Shredder",
     "Sierzant": "Sierżant",
     "SilkeChess": "Silke Chess",
+    "SimpleLearnerBot": "ChessEngine",
     "Sjaak II": "Sjaak (Glebbeek)",
     "Sjeng (Deep)": "Sjeng",
     "SmallC": "Small-C",
@@ -259,6 +263,7 @@
     "Tom-Thumb": "Tom Thumb",
     "Turbostar": "Saitek/SciSys",
     "TwistedLogic": "Twisted Logic",
+    "Umko": "MinkoChess",
     "UsurpatorII": "Usurpator",
     "Vajolet2": "Vajolet",
     "Why Not": "Y!",
@@ -1568,7 +1573,8 @@
       "identity_evidence_url": "https://github.com/dhruvang1/chess-bot"
     },
     "simplelearnerbot": {
-      "family": "SimpleLearnerBot"
+      "family": "ChessEngine",
+      "identity_evidence_url": "https://github.com/alexsyrom/chess-engine"
     },
     "slothcomputer": {
       "family": "Sloth"

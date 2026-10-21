@@ -22,18 +22,19 @@ class PosterTests(unittest.TestCase):
         pages = names_pdf.layout(self.rows, size, self.page_size, 2)
         self.assertEqual(len(pages), 1)
         indices = []
-        numbers = names_pdf.number_width(self.rows, size)
         right = 0
-        for x, column in pages[0]:
+        for x, column, numbers in pages[0]:
             self.assertGreaterEqual(x, right)
             right = x + max(names_pdf.row_width(row, size, numbers) for row in column)
-            self.assertLessEqual(right, self.page_size[0] - 2 * names_pdf.MARGIN)
+            self.assertLessEqual(right, self.page_size[0] - 2 * names_pdf.MARGIN + 1e-6)
             bottom = (self.page_size[1] - names_pdf.MARGIN - names_pdf.title_height(size)
                       - size - (len(column) - 1) * size * names_pdf.LEADING)
             self.assertGreaterEqual(bottom, names_pdf.MARGIN)
             self.assertFalse(column[-1][1], "A heading must not be stranded at a column end")
             indices.extend(index for _, heading, index in column if not heading)
         self.assertEqual(indices, list(range(1, self.count + 1)))
+        # Leftover width goes into the gutters, so the right margin matches the left.
+        self.assertAlmostEqual(right, self.page_size[0] - 2 * names_pdf.MARGIN, delta=1)
         self.assertGreater(len(names_pdf.layout(self.rows, size + 0.25, self.page_size, 2)), 1)
 
     def test_render_single_poster_page(self):

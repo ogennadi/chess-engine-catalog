@@ -99,6 +99,8 @@ class MergeTests(unittest.TestCase):
             "Maxima": ["Maxima2"], "Calculon": ["CalculonX"], "Armageddon": ["Armageddon II"],
             "Kallisto": ["Kallisto II"], "Quanticade": ["Quanticade Aurora"],
             "Teki": ["Teki Random Mover"], "Shadow": ["Throne"], "GFC": ["GFCv2"],
+            "MinkoChess": ["Umko"], "chessnut": ["Chestnut"], "Dreamer": ["DreamChess"],
+            "ClassicAra": ["CrazyAra"], "ChessEngine": ["SimpleLearnerBot"],
         }
         status = json.loads((Path(__file__).parents[1] / "data" / "source-status.json").read_text(encoding="utf-8"))
         for family, variants in groups.items():

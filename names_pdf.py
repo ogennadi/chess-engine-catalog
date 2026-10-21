@@ -250,13 +250,16 @@ def row_width(row, size, numbers):
 
 
 def layout(rows, size, page_size, title_lines):
-    """Fill columns top to bottom, each as wide as its widest entry. Return pages of columns."""
+    """Fill columns top to bottom, each as wide as its widest entry.
+
+    Return pages of (x, column, number_width) columns. Each column's number field fits its own
+    largest index, and leftover width is spread across the gutters so both side margins match.
+    """
     width, height = page_size
     line = size * LEADING
     usable_width = width - 2 * MARGIN
     pages, columns, column, x = [], [], [], 0.0
     first_page = True
-    numbers = number_width(rows, size)
 
     def capacity():
         top = height - MARGIN - (title_height(size) if first_page else 0)
@@ -264,13 +267,21 @@ def layout(rows, size, page_size, title_lines):
 
     def close_column():
         nonlocal column, columns, x, first_page
+        numbers = number_width(column, size)
         col_width = max(row_width(row, size, numbers) for row in column)
         if columns and x + col_width > usable_width:
-            pages.append(columns)
+            pages.append(justify(columns, x - GUTTER))
             columns, x, first_page = [], 0.0, False
-        columns.append((x, column))
+        columns.append((x, column, numbers))
         x += col_width + GUTTER
         column = []
+
+    def justify(page_columns, right):
+        # Cap the extra space so a sparse last page is not stretched across the sheet.
+        if len(page_columns) < 2:
+            return page_columns
+        extra = min((usable_width - right) / (len(page_columns) - 1), 2 * size)
+        return [(x + i * extra, col, numbers) for i, (x, col, numbers) in enumerate(page_columns)]
 
     for row in rows:
         limit = capacity()
@@ -281,7 +292,7 @@ def layout(rows, size, page_size, title_lines):
     if column:
         close_column()
     if columns:
-        pages.append(columns)
+        pages.append(justify(columns, x - GUTTER))
     return pages
 
 
@@ -317,7 +328,6 @@ def render(rows, count, size, page_size, out, links=None):
     width, height = page_size
     line = size * LEADING
     pages = layout(rows, size, page_size, 2)
-    numbers = number_width(rows, size)
     streams, annotations = [], []
     for number, columns in enumerate(pages, 1):
         parts, page_links = [], []
@@ -339,7 +349,7 @@ def render(rows, count, size, page_size, out, links=None):
                 + pdf_string(subtitle) + b" Tj ET"
             )
             top -= title_height(size)
-        for x, column in columns:
+        for x, column, numbers in columns:
             parts.append(b"BT %d Tz" % CONDENSE)
             for i, (text, heading, index) in enumerate(column):
                 y = top - size - i * line
