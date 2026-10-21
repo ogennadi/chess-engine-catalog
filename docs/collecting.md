@@ -27,8 +27,11 @@ python names_pdf.py --paper poster --orientation landscape --max-pages 1 --out d
 
 Print at **100% / actual size** on 48 x 36 inch paper, not scaled to a smaller sheet.
 The generator chooses the largest font that fits all source-available families on
-one page, retaining the archived-copy dagger markers. The current 1,306-family
-catalog fits at 21.75 pt (85% horizontal scale). This is an experiment targeting
+one page, retaining the archived-copy dagger markers. The current 1,275-family
+catalog fits at 22 pt (85% horizontal scale). Family names use Atkinson
+Hyperlegible, whose serifed `I` and tailed `l` stay distinct from a distance, and
+index numbers use Atkinson Hyperlegible Mono so they line up; both are embedded
+from `fonts/` (SIL Open Font License 1.1). The title and subtitle use Helvetica. This is an experiment targeting
 9-foot viewing, not a guarantee of comfortable readability at that distance;
 check a full-size print sample before printing the whole poster.
 

@@ -6,13 +6,15 @@ Reads data/engines.json (run collect.py first). Families whose availability is l
 available, or archived_only are numbered and listed alphabetically under letter headings,
 in as many columns as fit (portrait pages by default). The default 16 pt minimum is about the
 smallest text that 20/20 vision can read from 9 feet; the largest size up to 4 pt above
-it that still gives the fewest pages is chosen. Uses only the standard library and the PDF base-14 Helvetica fonts,
-horizontally condensed. The output is generated, so it is gitignored.
+it that still gives the fewest pages is chosen. Uses only the standard library. Names are set in Atkinson Hyperlegible
+and index numbers in Atkinson Hyperlegible Mono (embedded from fonts/, SIL OFL 1.1), so l, I and 1 stay distinct, and the
+title in the PDF base-14 Helvetica; text is horizontally condensed. The output is generated, so it is gitignored.
 For a single 48 x 36 inch landscape poster, use --paper poster --orientation landscape --max-pages 1.
 """
 
 import argparse
 import json
+import struct
 import zlib
 from datetime import date
 from pathlib import Path
@@ -32,28 +34,141 @@ SIZE_RANGE = 4.0
 MAX_SIZE = 48.0
 DAGGER = "\u2020"
 
+FONT_DIR = ROOT / "fonts"
+FIRST_CHAR, LAST_CHAR = 32, 255
+
+
 # Helvetica and Helvetica-Bold advance widths (1/1000 em) for ASCII 32-126, from the Adobe AFM files.
-_REGULAR = (
+_HELVETICA = (
     "278 278 355 556 556 889 667 191 333 333 389 584 278 333 278 278 556 556 556 556 556 556 556 556 "
     "556 556 278 278 584 584 584 556 1015 667 667 722 722 667 611 778 722 278 500 667 556 833 722 778 "
     "667 778 722 667 611 722 667 944 667 667 611 278 278 278 469 556 333 556 556 500 556 556 278 556 "
     "556 222 222 500 222 833 556 556 556 556 333 500 278 556 500 722 500 500 500 334 260 334 584"
 )
-_BOLD = (
+_HELVETICA_BOLD = (
     "278 333 474 556 556 889 722 238 333 333 389 584 278 333 278 278 556 556 556 556 556 556 556 556 "
     "556 556 333 333 584 584 584 611 975 722 722 722 722 667 611 778 722 278 556 722 611 833 722 778 "
     "667 778 722 667 611 722 667 944 667 667 611 333 278 333 584 556 333 556 611 556 611 556 333 611 "
     "611 278 278 556 278 889 611 611 611 611 389 556 333 611 556 778 556 556 500 389 280 389 584"
 )
-WIDTHS = {
-    font: {chr(32 + i): int(w) for i, w in enumerate(table.split())}
-    for font, table in (("F1", _REGULAR), ("F2", _BOLD))
+
+
+class Base14Font:
+    """A standard PDF font that readers supply, so nothing is embedded."""
+
+    def __init__(self, name, table):
+        self.name = name
+        self.widths = {chr(32 + i): int(w) for i, w in enumerate(table.split())}
+        # The title's em dash and the subtitle's dagger, from the same AFM files.
+        self.widths.update({"\u2014": 1000, DAGGER: 556})
+
+    def pdf_objects(self, first):
+        return [b"<< /Type /Font /Subtype /Type1 /BaseFont /%s /Encoding /WinAnsiEncoding >>" % self.name.encode()]
+
+
+class TrueTypeFont:
+    """Just enough of a TrueType file to embed it as a WinAnsi-encoded simple PDF font."""
+
+    def __init__(self, path):
+        self.data = data = path.read_bytes()
+        tables = {
+            data[12 + 16 * i:16 + 16 * i].decode("latin-1"): struct.unpack(">II", data[20 + 16 * i:28 + 16 * i])
+            for i in range(struct.unpack(">H", data[4:6])[0])
+        }
+
+        def table(tag):
+            offset, length = tables[tag]
+            return data[offset:offset + length]
+
+        head, hhea, os2 = table("head"), table("hhea"), table("OS/2")
+        self.units = struct.unpack(">H", head[18:20])[0]
+        self.bbox = [self.scale(v) for v in struct.unpack(">hhhh", head[36:44])]
+        self.ascent, self.descent = (self.scale(v) for v in struct.unpack(">hh", hhea[4:8]))
+        self.cap_height = self.scale(struct.unpack(">h", os2[88:90])[0])
+        self.italic_angle = struct.unpack(">i", table("post")[4:8])[0] / 65536
+        name = table("name")
+        count, strings = struct.unpack(">HH", name[2:6])
+        self.name = next(
+            name[strings + offset:strings + offset + length].decode("utf-16-be")
+            for platform, _, _, name_id, length, offset in
+            (struct.unpack(">HHHHHH", name[6 + 12 * i:18 + 12 * i]) for i in range(count))
+            if platform == 3 and name_id == 6
+        )
+        metrics = struct.unpack(">H", hhea[34:36])[0]
+        hmtx = table("hmtx")
+        advances = [struct.unpack(">H", hmtx[4 * i:4 * i + 2])[0] for i in range(metrics)]
+        glyphs = self.cmap(table("cmap"))
+        self.widths = {}
+        for code in range(FIRST_CHAR, LAST_CHAR + 1):
+            char = bytes([code]).decode("cp1252", "replace")
+            glyph = glyphs.get(ord(char), 0)
+            self.widths[char] = self.scale(advances[min(glyph, metrics - 1)])
+
+    def scale(self, value):
+        return round(value * 1000 / self.units)
+
+    @staticmethod
+    def cmap(data):
+        """Map code points to glyph ids from the Windows Unicode BMP (format 4) subtable."""
+        for i in range(struct.unpack(">H", data[2:4])[0]):
+            platform, encoding, offset = struct.unpack(">HHI", data[4 + 8 * i:12 + 8 * i])
+            if (platform, encoding) == (3, 1) and struct.unpack(">H", data[offset:offset + 2])[0] == 4:
+                break
+        else:
+            raise ValueError("TrueType font has no Windows Unicode cmap")
+        segments = struct.unpack(">H", data[offset + 6:offset + 8])[0] // 2
+        arrays = offset + 14
+        ends = struct.unpack(">%dH" % segments, data[arrays:arrays + 2 * segments])
+        starts_at = arrays + 2 * segments + 2
+        starts = struct.unpack(">%dH" % segments, data[starts_at:starts_at + 2 * segments])
+        deltas = struct.unpack(">%dh" % segments, data[starts_at + 2 * segments:starts_at + 4 * segments])
+        ranges_at = starts_at + 4 * segments
+        ranges = struct.unpack(">%dH" % segments, data[ranges_at:ranges_at + 2 * segments])
+        glyphs = {}
+        for i, (start, end, delta, range_offset) in enumerate(zip(starts, ends, deltas, ranges)):
+            for code in range(start, min(end, 0xFFFE) + 1):
+                if range_offset:
+                    at = ranges_at + 2 * i + range_offset + 2 * (code - start)
+                    glyph = struct.unpack(">H", data[at:at + 2])[0]
+                    glyph = (glyph + delta) % 65536 if glyph else 0
+                else:
+                    glyph = (code + delta) % 65536
+                glyphs[code] = glyph
+        return glyphs
+
+    def pdf_objects(self, first):
+        """Font, descriptor and font-file objects, numbered from `first`."""
+        packed = zlib.compress(self.data)
+        widths = b" ".join(b"%d" % self.widths[bytes([c]).decode("cp1252", "replace")]
+                           for c in range(FIRST_CHAR, LAST_CHAR + 1))
+        name = self.name.encode("ascii")
+        return [
+            b"<< /Type /Font /Subtype /TrueType /BaseFont /%s /FirstChar %d /LastChar %d /Widths [%s] "
+            b"/Encoding /WinAnsiEncoding /FontDescriptor %d 0 R >>"
+            % (name, FIRST_CHAR, LAST_CHAR, widths, first + 1),
+            b"<< /Type /FontDescriptor /FontName /%s /Flags 32 /FontBBox [%d %d %d %d] /ItalicAngle %g "
+            b"/Ascent %d /Descent %d /CapHeight %d /StemV 80 /FontFile2 %d 0 R >>"
+            % (name, *self.bbox, self.italic_angle, self.ascent, self.descent, self.cap_height, first + 2),
+            b"<< /Length %d /Length1 %d /Filter /FlateDecode >>\nstream\n" % (len(packed), len(self.data))
+            + packed + b"\nendstream",
+        ]
+
+
+# Atkinson Hyperlegible (SIL OFL 1.1) keeps l, I and 1 distinct for reading at a distance: F1 names,
+# F2 letter headings, F3 index numbers (monospaced so they line up). Helvetica sets the title (F4) and
+# subtitle and footer (F5).
+FONTS = {
+    "F1": TrueTypeFont(FONT_DIR / "AtkinsonHyperlegible-Regular.ttf"),
+    "F2": TrueTypeFont(FONT_DIR / "AtkinsonHyperlegible-Bold.ttf"),
+    "F3": TrueTypeFont(FONT_DIR / "AtkinsonHyperlegibleMono-Regular.ttf"),
+    "F4": Base14Font("Helvetica-Bold", _HELVETICA_BOLD),
+    "F5": Base14Font("Helvetica", _HELVETICA),
 }
 
 
 def text_width(text, font, size):
-    widths = WIDTHS[font]
-    return sum(widths.get(c, 556) for c in text) * size / 1000 * CONDENSE / 100
+    widths = FONTS[font].widths
+    return sum(widths.get(c, widths["?"]) for c in text) * size / 1000 * CONDENSE / 100
 
 
 def entries(catalog=None):
@@ -126,7 +241,7 @@ def source_links(catalog):
 
 
 def number_width(rows, size):
-    return text_width(str(max(r[2] or 0 for r in rows)), "F1", size) + size * 0.4
+    return text_width(str(max(r[2] or 0 for r in rows)), "F3", size) + size * 0.4
 
 
 def row_width(row, size, numbers):
@@ -203,7 +318,6 @@ def render(rows, count, size, page_size, out, links=None):
     line = size * LEADING
     pages = layout(rows, size, page_size, 2)
     numbers = number_width(rows, size)
-    digits = text_width("0", "F1", size)
     streams, annotations = [], []
     for number, columns in enumerate(pages, 1):
         parts, page_links = [], []
@@ -217,11 +331,11 @@ def render(rows, count, size, page_size, out, links=None):
             # Shrink the title lines if needed so they fit the page width.
             usable = width - 2 * MARGIN
             big = size * 1.3
-            title_size = min(big, usable / (text_width(title, "F2", 1) * 100 / CONDENSE))
-            sub_size = min(size, usable / text_width(subtitle, "F1", 1))
-            parts.append(b"BT 100 Tz /F2 %.2f Tf %.2f %.2f Td " % (title_size, MARGIN, top - big) + pdf_string(title) + b" Tj ET")
+            title_size = min(big, usable / (text_width(title, "F4", 1) * 100 / CONDENSE))
+            sub_size = min(size, usable / text_width(subtitle, "F5", 1))
+            parts.append(b"BT 100 Tz /F4 %.2f Tf %.2f %.2f Td " % (title_size, MARGIN, top - big) + pdf_string(title) + b" Tj ET")
             parts.append(
-                b"BT %d Tz /F1 %.2f Tf %.2f %.2f Td " % (CONDENSE, sub_size, MARGIN, top - big * LEADING - size)
+                b"BT %d Tz /F5 %.2f Tf %.2f %.2f Td " % (CONDENSE, sub_size, MARGIN, top - big * LEADING - size)
                 + pdf_string(subtitle) + b" Tj ET"
             )
             top -= title_height(size)
@@ -232,11 +346,12 @@ def render(rows, count, size, page_size, out, links=None):
                 if heading:
                     parts.append(b"0 g /F2 %.2f Tf 1 0 0 1 %.2f %.2f Tm " % (size, MARGIN + x, y) + pdf_string(text) + b" Tj")
                     continue
-                # Right-align the index (all digits share one width) in a gray number field.
+                # Right-align the monospaced index in a gray number field.
                 label = str(index)
-                left = MARGIN + x + numbers - size * 0.4 - digits * len(label)
-                parts.append(b"0.45 g /F1 %.2f Tf 1 0 0 1 %.2f %.2f Tm " % (size, left, y) + pdf_string(label) + b" Tj")
-                parts.append(b"0 g 1 0 0 1 %.2f %.2f Tm " % (MARGIN + x + numbers, y) + pdf_string(text) + b" Tj")
+                left = MARGIN + x + numbers - size * 0.4 - text_width(label, "F3", size)
+                parts.append(b"0.45 g /F3 %.2f Tf 1 0 0 1 %.2f %.2f Tm " % (size, left, y) + pdf_string(label) + b" Tj")
+                parts.append(b"0 g /F1 %.2f Tf 1 0 0 1 %.2f %.2f Tm " % (size, MARGIN + x + numbers, y)
+                             + pdf_string(text) + b" Tj")
                 if links is not None:
                     url = quote(links[text], safe=":/?#[]@!$&'()*+,;=%")
                     name_left = MARGIN + x + numbers
@@ -249,18 +364,17 @@ def render(rows, count, size, page_size, out, links=None):
             parts.append(b"ET")
         footer = f"{number} / {len(pages)}"
         parts.append(
-            b"BT %d Tz 0.45 g /F1 6 Tf %.2f %.2f Td " % (CONDENSE, width / 2 - text_width(footer, "F1", 6) / 2, MARGIN / 2 - 2)
+            b"BT %d Tz 0.45 g /F5 6 Tf %.2f %.2f Td " % (CONDENSE, width / 2 - text_width(footer, "F5", 6) / 2, MARGIN / 2 - 2)
             + pdf_string(footer) + b" Tj ET"
         )
         streams.append(zlib.compress(b"\n".join(parts)))
         annotations.append(page_links)
 
-    objects = [
-        b"<< /Type /Catalog /Pages 2 0 R >>",
-        None,
-        b"<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>",
-        b"<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>",
-    ]
+    objects = [b"<< /Type /Catalog /Pages 2 0 R >>", None]
+    font_refs = []
+    for key, font in FONTS.items():
+        font_refs.append(b"/%s %d 0 R" % (key.encode(), len(objects) + 1))
+        objects += font.pdf_objects(len(objects) + 1)
     kids = []
     for stream, page_links in zip(streams, annotations):
         content = len(objects) + 1
@@ -272,7 +386,7 @@ def render(rows, count, size, page_size, out, links=None):
         kids.append(len(objects) + 1)
         objects.append(
             b"<< /Type /Page /Parent 2 0 R /MediaBox [0 0 %d %d] " % page_size
-            + b"/Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents %d 0 R " % content
+            + b"/Resources << /Font << " + b" ".join(font_refs) + b" >> >> /Contents %d 0 R " % content
             + b"/Annots [" + b" ".join(b"%d 0 R" % ref for ref in refs) + b"] >>"
         )
     objects[1] = b"<< /Type /Pages /Kids [%s] /Count %d >>" % (

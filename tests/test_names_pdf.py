@@ -48,7 +48,18 @@ class PosterTests(unittest.TestCase):
         self.assertIn(b"/MediaBox [0 0 3456 2592]", pdf)
         self.assertIn(b"/Count 1", pdf)
         self.assertEqual(pdf.count(b"/Subtype /Link"), self.count)
+        self.assertEqual(pdf.count(b"/FontFile2"), 3)
+        for font in (b"AtkinsonHyperlegible-Regular", b"AtkinsonHyperlegibleMono-Regular", b"Helvetica-Bold"):
+            self.assertIn(b"/BaseFont /" + font, pdf)
         self.assertTrue(pdf.endswith(b"%%EOF\n"))
+
+    def test_embedded_font_metrics(self):
+        regular = names_pdf.FONTS["F1"]
+        self.assertEqual(regular.name, "AtkinsonHyperlegible-Regular")
+        self.assertNotEqual(regular.widths["l"], regular.widths["I"])
+        self.assertGreater(regular.widths["\u2020"], 0)
+        self.assertGreater(regular.widths["\u2014"], regular.widths["-"])
+        self.assertEqual(len({names_pdf.FONTS["F3"].widths[d] for d in "0123456789"}), 1)
 
 
 class SourceLinkTests(unittest.TestCase):
