@@ -155,6 +155,7 @@ class PublishTests(unittest.TestCase):
         self.assertIn("<a ", publish.source_url_html("https://github.com/a/alpha"))
         for html in (publish.link(url), publish.link(url, "Evidence"), publish.anchor(url, "x")):
             self.assertNotIn("<a ", html)
+        self.assertEqual(publish.link(url, "web.archive.org"), '<code class="dead-link">http://old.example/src.zip</code>')
         for page in self.out.rglob("*.html"):
             self.assertNotIn('href="https://web.archive.org', page.read_text(encoding="utf-8"), page)
 
@@ -165,6 +166,16 @@ class PublishTests(unittest.TestCase):
         self.assertIn(f'href="{publish.REPOSITORY}"', self.index)
         for slug in ("alpha", "beta", "gamma", "delta"):
             self.assertNotIn(".pdf", self.family(slug))
+
+    def test_site_name_and_icons_match(self):
+        self.assertIn("<title>Chess Engine Catalog</title>", self.index)
+        self.assertIn("Catalog collected 2026-10-20T00:00:00Z.", self.index)
+        self.assertIn('<h1 class="sr-only">Chess Engine Catalog</h1>', self.index)
+        self.assertIn('alt="" width="32" height="32">Chess Engine Catalog</a>', self.index)
+        self.assertIn("<title>Alpha | Chess Engine Catalog</title>", self.family("alpha"))
+        self.assertIn('href="../assets/logo.svg" type="image/svg+xml"', self.family("alpha"))
+        for asset in ("logo.svg", "favicon-32.png", "apple-touch-icon.png"):
+            self.assertTrue((self.out / "assets" / asset).is_file(), asset)
 
     def test_download_is_single_page_linked_poster(self):
         pdf = (self.out / "downloads" / "source-available-engines.pdf").read_bytes()

@@ -4,12 +4,13 @@ import hashlib
 import json
 import threading
 import time
-from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import HTTPRedirectHandler, Request, build_opener
+
+from timestamps import utc_stamp
 
 
 class ThrottledRedirects(HTTPRedirectHandler):
@@ -51,7 +52,7 @@ class Fetcher:
         cache_path = self.cache_dir / (key + ".json")
         if cache_path.exists() and not self.refresh:
             cached = json.loads(cache_path.read_text(encoding="utf-8"))
-            self.checked_at[url] = cached["fetched_at"]
+            self.checked_at[url] = utc_stamp(cached["fetched_at"])
             if "http_error" in cached:
                 raise HTTPError(url, cached["http_error"], cached["reason"], {}, None)
             return cached["body"]
@@ -72,7 +73,7 @@ class Fetcher:
                     break
                 except HTTPError as error:
                     if error.code in (404, 410):
-                        fetched_at = datetime.now(timezone.utc).isoformat()
+                        fetched_at = utc_stamp()
                         cache_path.write_text(json.dumps({
                             "url": url, "http_error": error.code, "reason": error.reason,
                             "fetched_at": fetched_at,
@@ -95,7 +96,7 @@ class Fetcher:
                     if attempt == 3:
                         raise
                     time.sleep(5 * (attempt + 1))
-            fetched_at = datetime.now(timezone.utc).isoformat()
+            fetched_at = utc_stamp()
             cache_path.write_text(
                 json.dumps({"url": url, "fetched_at": fetched_at, "body": body}),
                 encoding="utf-8",

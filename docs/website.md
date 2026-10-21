@@ -12,8 +12,9 @@ refreshes collection or research. `dist/` is gitignored; only the generator
   its source links. Families whose source survives only as an archived copy are marked
   Archived, with no source link; their names still link to their family pages.
   To avoid sending crawlers of this site to archive.org, no page links to
-  archive.org: Wayback URLs are shown as their original (broken) URL in plain text
-  with a note that a copy is on the Wayback Machine, and Internet Archive items as
+  archive.org: Wayback URLs are shown as their original (broken) URL, crossed out,
+  in plain text (family source sections add a note that a copy is on the Wayback
+  Machine), and Internet Archive items as
   unlinked text. Search covers
   canonical names and aliases; the availability filter's "Source available" excludes
   archived-only families, which have their own "Archived source only" option. Filters are kept in the URL

@@ -59,7 +59,7 @@
    ],
    "rationale": "Author released 0.921 source; no clear license located (thread discusses Stockfish-derived snippets), so not classified as open-source licensed.",
    "searches": 3,
-   "checked_at": "2026-10-19T02:23:20+00:00"
+   "checked_at": "2026-10-19T02:23:20Z"
   },
   "Ares US": {
    "group": "ambiguous",
@@ -76,7 +76,7 @@
    ],
    "rationale": "Offline: RWBC '-' (3% disagreement with other lists). No web search.",
    "searches": 0,
-   "checked_at": "2026-10-19T02:49:49+00:00",
+   "checked_at": "2026-10-19T02:49:49Z",
    "identity_note": "Sampled as 'Ares'; homonym split moved the researched engine to Ares US."
   },
   "Arminius": {
@@ -98,7 +98,7 @@
    ],
    "rationale": "Educated-guess hint: author distributes his other engine as binary-only freeware. No Arminius-specific license statement found, so licensing remains unknown.",
    "searches": 2,
-   "checked_at": "2026-10-19T02:39:01+00:00"
+   "checked_at": "2026-10-19T02:39:01Z"
   },
   "Bebe": {
    "group": "historical",
@@ -115,7 +115,7 @@
    ],
    "rationale": "Historical hardware-assisted program; no web search (historical engines yielded source in 3 of 5 searched cases, so this needs a search in the full pass).",
    "searches": 0,
-   "checked_at": "2026-10-19T02:49:49+00:00"
+   "checked_at": "2026-10-19T02:49:49Z"
   },
   "Belka": {
    "group": "modern",
@@ -133,7 +133,7 @@
    ],
    "rationale": "No source or license statement located; Russian-forum distribution not searched further in pilot (3-search cap).",
    "searches": 1,
-   "checked_at": "2026-10-19T02:42:22+00:00"
+   "checked_at": "2026-10-19T02:42:22Z"
   },
   "Belle": {
    "group": "historical",
@@ -151,7 +151,7 @@
    ],
    "rationale": "Precursor source located, but Belle's hardware-assisted program source not located.",
    "searches": 1,
-   "checked_at": "2026-10-19T02:46:42+00:00"
+   "checked_at": "2026-10-19T02:46:42Z"
   },
   "BikJump": {
    "group": "modern",
@@ -172,7 +172,7 @@
    ],
    "rationale": "Author's binary license is non-commercial freeware; 'About the sources' describes authorship only. No source distribution located. AI search summary wrongly implied modifiable source.",
    "searches": 2,
-   "checked_at": "2026-10-19T02:39:01+00:00"
+   "checked_at": "2026-10-19T02:39:01Z"
   },
   "Blunderer": {
    "group": "random",
@@ -197,7 +197,7 @@
    ],
    "rationale": "No author or homepage known; absence of evidence only.",
    "searches": 3,
-   "checked_at": "2026-10-19T02:54:18+00:00"
+   "checked_at": "2026-10-19T02:54:18Z"
   },
   "Brainlearn": {
    "group": "modern",
@@ -220,7 +220,7 @@
    ],
    "rationale": "Author's own repository with GPL license file.",
    "searches": 3,
-   "checked_at": "2026-10-19T02:39:01+00:00"
+   "checked_at": "2026-10-19T02:39:01Z"
   },
   "Brutus": {
    "group": "random",
@@ -243,7 +243,7 @@
    "searches": 1,
    "identity_note": "Homonym split: CCRL/CEGT Brutus moved to Brutus NL (already source-linked); Brutus is now only Donninger's FPGA program.",
    "needs_review": true,
-   "checked_at": "2026-10-19T02:54:18+00:00"
+   "checked_at": "2026-10-19T02:54:18Z"
   },
   "Capivara": {
    "group": "modern",
@@ -264,7 +264,7 @@
    ],
    "rationale": "Same-name GitHub repositories (udhos, sineco, bbenatti) are unrelated engines. No author source release found; TSCP-derived licensing restricts redistribution.",
    "searches": 1,
-   "checked_at": "2026-10-19T02:39:01+00:00"
+   "checked_at": "2026-10-19T02:39:01Z"
   },
   "Chess Tiger": {
    "group": "commercial",
@@ -285,7 +285,7 @@
    ],
    "rationale": "Offline rule: commercial in both wiki and RWBC. No web search performed.",
    "searches": 0,
-   "checked_at": "2026-10-19T02:46:42+00:00"
+   "checked_at": "2026-10-19T02:46:42Z"
   },
   "Chessmaster": {
    "group": "commercial",
@@ -307,7 +307,7 @@
    ],
    "rationale": "Commercial product; community wrappers are not source releases.",
    "searches": 1,
-   "checked_at": "2026-10-19T02:46:42+00:00"
+   "checked_at": "2026-10-19T02:46:42Z"
   },
   "Chessmate": {
    "group": "random",
@@ -329,7 +329,7 @@
    "rationale": "Interpreted BASIC ships as source inside tape images, but no copy was inspected and licensing is unknown.",
    "searches": 1,
    "needs_review": true,
-   "checked_at": "2026-10-19T02:54:18+00:00"
+   "checked_at": "2026-10-19T02:54:18Z"
   },
   "Comet": {
    "group": "ambiguous",
@@ -350,7 +350,7 @@
    ],
    "rationale": "Weak: SSDF rating implies a sold product; no explicit license statement found. No web search.",
    "searches": 0,
-   "checked_at": "2026-10-19T02:49:49+00:00"
+   "checked_at": "2026-10-19T02:49:49Z"
   },
   "CorChess": {
    "group": "modern",
@@ -377,7 +377,7 @@
    ],
    "rationale": "Stockfish derivative under GPL; only a third-party mirror located, version currency unknown.",
    "searches": 2,
-   "checked_at": "2026-10-19T02:39:01+00:00"
+   "checked_at": "2026-10-19T02:39:01Z"
   },
   "Cray Blitz": {
    "group": "historical",
@@ -404,7 +404,7 @@
    ],
    "rationale": "Published by co-author Hyatt without a located license; historical Fortran/CAL source.",
    "searches": 2,
-   "checked_at": "2026-10-19T02:46:42+00:00"
+   "checked_at": "2026-10-19T02:46:42Z"
   },
   "CuckooChess": {
    "group": "modern",
@@ -431,7 +431,7 @@
    ],
    "rationale": "Author's own repository hosts the engine module; DroidFish GUI shares the repository but the engine is a separate directory.",
    "searches": 2,
-   "checked_at": "2026-10-19T02:23:20+00:00"
+   "checked_at": "2026-10-19T02:23:20Z"
   },
   "Deep Blue": {
    "group": "historical",
@@ -448,7 +448,7 @@
    ],
    "rationale": "Corporate research system; no release found offline. No web search (pilot offline-rule test).",
    "searches": 0,
-   "checked_at": "2026-10-19T02:49:49+00:00"
+   "checked_at": "2026-10-19T02:49:49Z"
   },
   "Dragon": {
    "group": "commercial",
@@ -465,7 +465,7 @@
    ],
    "rationale": "Commercial Komodo product. Classification applies only to Komodo's Dragon, not Bruno Lucas's engine.",
    "searches": 0,
-   "checked_at": "2026-10-19T02:46:42+00:00",
+   "checked_at": "2026-10-19T02:46:42Z",
    "identity_note": "Homonym split: Bruno Lucas's Dragon moved to Dragon FR; this record is Komodo's Dragon."
   },
   "Duchess": {
@@ -489,7 +489,7 @@
    ],
    "rationale": "Distribution tape supplied by co-author Eric Jensen is archived; contents not inspected in pilot.",
    "searches": 2,
-   "checked_at": "2026-10-19T02:49:49+00:00"
+   "checked_at": "2026-10-19T02:49:49Z"
   },
   "Excalibur Ivan II The Conqueror": {
    "group": "random",
@@ -506,7 +506,7 @@
    ],
    "rationale": "Commercial dedicated chess-computer firmware; offline classification.",
    "searches": 0,
-   "checked_at": "2026-10-19T02:54:18+00:00"
+   "checked_at": "2026-10-19T02:54:18Z"
   },
   "Fischer-Chess": {
    "group": "random",
@@ -532,7 +532,7 @@
    "rationale": "Source reportedly released, but no copy or license located.",
    "searches": 1,
    "needs_review": true,
-   "checked_at": "2026-10-19T02:54:18+00:00"
+   "checked_at": "2026-10-19T02:54:18Z"
   },
   "Fritz": {
    "group": "commercial",
@@ -549,7 +549,7 @@
    ],
    "rationale": "Commercial ChessBase product; GPL Fat Fritz 2 source belongs to the separate Fat Fritz family and is not attributed to Fritz.",
    "searches": 1,
-   "checked_at": "2026-10-19T02:42:22+00:00"
+   "checked_at": "2026-10-19T02:42:22Z"
   },
   "Ghost": {
    "group": "ambiguous",
@@ -566,7 +566,7 @@
    ],
    "rationale": "Offline: RWBC '-'. No web search.",
    "searches": 0,
-   "checked_at": "2026-10-19T02:49:49+00:00"
+   "checked_at": "2026-10-19T02:49:49Z"
   },
   "Halcyon": {
    "group": "modern",
@@ -589,7 +589,7 @@
    ],
    "rationale": "License copyright holder matches RWBC author Nicholas Hamilton; repository describes a UCI chess engine.",
    "searches": 4,
-   "checked_at": "2026-10-19T02:23:20+00:00"
+   "checked_at": "2026-10-19T02:23:20Z"
   },
   "Hiarcs": {
    "group": "commercial",
@@ -606,7 +606,7 @@
    ],
    "rationale": "Offline rule: wiki Commercial category. No web search performed.",
    "searches": 0,
-   "checked_at": "2026-10-19T02:46:42+00:00"
+   "checked_at": "2026-10-19T02:46:42Z"
   },
   "Hydra": {
    "group": "historical",
@@ -623,7 +623,7 @@
    ],
    "rationale": "Privately funded FPGA system; no web search.",
    "searches": 0,
-   "checked_at": "2026-10-19T02:49:49+00:00"
+   "checked_at": "2026-10-19T02:49:49Z"
   },
   "Joker NL": {
    "group": "ambiguous",
@@ -644,7 +644,7 @@
    ],
    "rationale": "No source located; GitHub 'joker' results are Manlio Morini's unrelated engine.",
    "searches": 1,
-   "checked_at": "2026-10-19T02:49:49+00:00",
+   "checked_at": "2026-10-19T02:49:49Z",
    "identity_note": "Sampled as 'Joker'; homonym split moved the researched engine to Joker NL."
   },
   "Junior": {
@@ -662,7 +662,7 @@
    ],
    "rationale": "Offline rule: wiki Commercial category. No web search performed.",
    "searches": 0,
-   "checked_at": "2026-10-19T02:46:42+00:00"
+   "checked_at": "2026-10-19T02:46:42Z"
   },
   "Kaissa": {
    "group": "historical",
@@ -689,7 +689,7 @@
    ],
    "rationale": "Source accessible via preservation/port, but no license or rights-holder release located.",
    "searches": 2,
-   "checked_at": "2026-10-19T02:46:42+00:00"
+   "checked_at": "2026-10-19T02:46:42Z"
   },
   "Lifish": {
    "group": "random",
@@ -715,7 +715,7 @@
    ],
    "rationale": "Unique name and Stockfish derivative with a GPL license file; identity with UBC 'Lifish Beta' is matched by name only.",
    "searches": 3,
-   "checked_at": "2026-10-19T02:54:18+00:00"
+   "checked_at": "2026-10-19T02:54:18Z"
   },
   "MChess": {
    "group": "historical",
@@ -732,7 +732,7 @@
    ],
    "rationale": "Offline rule: commercial. No web search.",
    "searches": 0,
-   "checked_at": "2026-10-19T02:49:49+00:00"
+   "checked_at": "2026-10-19T02:49:49Z"
   },
   "Nuchess": {
    "group": "historical",
@@ -749,7 +749,7 @@
    ],
    "rationale": "Predecessor Chess 4.6 source is archived at the Computer History Museum; Nuchess source not located.",
    "searches": 1,
-   "checked_at": "2026-10-19T02:46:42+00:00"
+   "checked_at": "2026-10-19T02:46:42Z"
   },
   "Philou": {
    "group": "random",
@@ -770,7 +770,7 @@
    ],
    "rationale": "Freeware binary only; without an explicit closed-source statement it is not classified proprietary.",
    "searches": 1,
-   "checked_at": "2026-10-19T02:54:18+00:00"
+   "checked_at": "2026-10-19T02:54:18Z"
   },
   "Phoenix": {
    "group": "ambiguous",
@@ -787,7 +787,7 @@
    ],
    "rationale": "Wiki-only historical entry; no web search.",
    "searches": 0,
-   "checked_at": "2026-10-19T02:49:49+00:00"
+   "checked_at": "2026-10-19T02:49:49Z"
   },
   "Queen": {
    "group": "ambiguous",
@@ -804,7 +804,7 @@
    ],
    "rationale": "Offline: RWBC '-'. Author's archived software directory not inspected.",
    "searches": 0,
-   "checked_at": "2026-10-19T02:49:49+00:00"
+   "checked_at": "2026-10-19T02:49:49Z"
   },
   "Revenge": {
    "group": "commercial",
@@ -825,7 +825,7 @@
    ],
    "rationale": "Commercial product (wiki category Commercial); predecessor Pedone is a separate family.",
    "searches": 0,
-   "checked_at": "2026-10-19T02:42:22+00:00"
+   "checked_at": "2026-10-19T02:42:22Z"
   },
   "rofChade": {
    "group": "commercial",
@@ -846,7 +846,7 @@
    ],
    "rationale": "Binary-only freeware with author statement that sources are not planned soon; confidence medium until the statement is verified directly.",
    "searches": 2,
-   "checked_at": "2026-10-19T02:42:22+00:00"
+   "checked_at": "2026-10-19T02:42:22Z"
   },
   "Ruthorin": {
    "group": "random",
@@ -863,7 +863,7 @@
    ],
    "rationale": "Explicit closed-source statement in the author's repository; older RuthIron predecessor code is not attributed.",
    "searches": 2,
-   "checked_at": "2026-10-19T02:54:18+00:00"
+   "checked_at": "2026-10-19T02:54:18Z"
   },
   "Rybka": {
    "group": "commercial",
@@ -885,7 +885,7 @@
    ],
    "rationale": "Offline rule: commercial; older free versions were binary-only. No web search performed.",
    "searches": 0,
-   "checked_at": "2026-10-19T02:46:42+00:00"
+   "checked_at": "2026-10-19T02:46:42Z"
   },
   "Shredder": {
    "group": "commercial",
@@ -902,7 +902,7 @@
    ],
    "rationale": "Offline rule: wiki Commercial category with no contrary evidence. No web search performed (pilot accuracy test).",
    "searches": 0,
-   "checked_at": "2026-10-19T02:46:42+00:00"
+   "checked_at": "2026-10-19T02:46:42Z"
   },
   "Simple": {
    "group": "ambiguous",
@@ -919,7 +919,7 @@
    ],
    "rationale": "Offline: RWBC '-'. No web search.",
    "searches": 0,
-   "checked_at": "2026-10-19T02:49:49+00:00",
+   "checked_at": "2026-10-19T02:49:49Z",
    "identity_note": "Homonym split: the simple-bot Lichess account moved to Simple Bot; this record is Remi Coulom's Simple."
   },
   "Sinapse": {
@@ -941,7 +941,7 @@
    ],
    "rationale": "RWBC no-source flag plus negative forge search.",
    "searches": 1,
-   "checked_at": "2026-10-19T02:54:18+00:00"
+   "checked_at": "2026-10-19T02:54:18Z"
   },
   "Spark": {
    "group": "ambiguous",
@@ -962,7 +962,7 @@
    ],
    "rationale": "Offline: RWBC '-'. No web search.",
    "searches": 0,
-   "checked_at": "2026-10-19T02:49:49+00:00"
+   "checked_at": "2026-10-19T02:49:49Z"
   },
   "Storm US": {
    "group": "ambiguous",
@@ -979,7 +979,7 @@
    ],
    "rationale": "Offline: RWBC '-'. No web search.",
    "searches": 0,
-   "checked_at": "2026-10-19T02:49:49+00:00",
+   "checked_at": "2026-10-19T02:49:49Z",
    "identity_note": "Sampled as 'Storm'; homonym split moved the researched engine to Storm US."
   },
   "Torch": {
@@ -1004,7 +1004,7 @@
    ],
    "rationale": "Control case. Proprietary Chess.com development; unofficial GitHub builds (e.g. Felixk45/Torch-4-UCI-chess-engine) are not source releases.",
    "searches": 1,
-   "checked_at": "2026-10-19T02:42:22+00:00"
+   "checked_at": "2026-10-19T02:42:22Z"
   },
   "TSCP": {
    "group": "modern",
@@ -1030,7 +1030,7 @@
    ],
    "rationale": "Source is published by the author but permission is required for copies/derivatives, so not an open-source license; wiki category 'GPL' contradicts its own text.",
    "searches": 1,
-   "checked_at": "2026-10-19T02:23:20+00:00"
+   "checked_at": "2026-10-19T02:23:20Z"
   },
   "Viper": {
    "group": "ambiguous",
@@ -1053,7 +1053,7 @@
    ],
    "rationale": "GPL per wiki; author's site only archived. viper-cluster is a separate derivative and is not attributed.",
    "searches": 2,
-   "checked_at": "2026-10-19T02:49:49+00:00"
+   "checked_at": "2026-10-19T02:49:49Z"
   },
   "Virtual Kasparov": {
    "group": "random",
@@ -1070,7 +1070,7 @@
    ],
    "rationale": "Commercial console title; offline classification.",
    "searches": 0,
-   "checked_at": "2026-10-19T02:54:18+00:00"
+   "checked_at": "2026-10-19T02:54:18Z"
   },
   "Zarkov": {
    "group": "historical",
@@ -1091,7 +1091,7 @@
    ],
    "rationale": "Offline rule: commercial + RWBC '-'. No web search.",
    "searches": 0,
-   "checked_at": "2026-10-19T02:49:49+00:00"
+   "checked_at": "2026-10-19T02:49:49Z"
   }
  }
 }

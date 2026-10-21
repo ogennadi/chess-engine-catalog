@@ -297,7 +297,9 @@ observations, marked by the source's unavailable status and original check
 timestamps.
 
 The JSON preserves observed labels, provenance URLs, collection timestamps,
-and evidence URLs for source-code links. UBC observations also preserve POST
+and evidence URLs for source-code links. Timestamps, in the data and on the website,
+are RFC 3339 UTC without fractional seconds (`YYYY-MM-DDTHH:MM:SSZ`); see
+`timestamps.py`. UBC observations also preserve POST
 parameters needed to reproduce the listing. Generated files are UTF-8.
 
 RWBC uses the spreadsheet's complete **Chronology - Alpha List**, not the

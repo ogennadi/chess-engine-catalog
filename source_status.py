@@ -10,10 +10,11 @@ import json
 import re
 import sys
 from collections import Counter
-from datetime import datetime, timezone
 from html import unescape
 from pathlib import Path
 from urllib.parse import urlsplit
+
+from timestamps import utc_stamp
 
 ROOT = Path(__file__).resolve().parent
 STATUS_PATH = ROOT / "data" / "source-status.json"
@@ -301,7 +302,7 @@ def render_family_pages(engines, status, directory):
             if record.get("tier"):
                 lines += [f"- **Research tier:** {record['tier']}"]
             if record.get("checked_at"):
-                lines += [f"- **Researched:** {record['checked_at']}"]
+                lines += [f"- **Researched:** {utc_stamp(record['checked_at'])}"]
         lines += ["", "## Source code", ""]
         if engine["source_code"]:
             for code in sorted(engine["source_code"], key=lambda c: c["url"]):
@@ -364,7 +365,7 @@ def check(paths):
 def record(paths):
     status = load_status()
     names = {e["name"] for e in json.loads((ROOT / "data" / "engines.json").read_text(encoding="utf-8"))["engines"]}
-    now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    now = utc_stamp()
     batch, problems = {}, []
     for path in paths:
         for name, item in json.loads(Path(path).read_text(encoding="utf-8")).items():

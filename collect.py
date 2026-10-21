@@ -6,10 +6,11 @@ import importlib
 import io
 import json
 import re
-from datetime import datetime, timezone
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlsplit
+
+from timestamps import utc_stamp
 
 from collectors.http import Fetcher
 from collectors import lichess
@@ -269,7 +270,7 @@ def main():
         statuses.append(status)
 
     catalog = {
-        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "generated_at": utc_stamp(),
         "coverage_complete": not unresolved and all(
             source["status"] == "collected" and not source.get("warnings")
             for source in statuses
