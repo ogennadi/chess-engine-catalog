@@ -221,6 +221,7 @@ def preferred_source(engine):
         bundled = all(c["source"] == "lucas-chess" for c in codes)
         return (
             not any(c.get("unreachable") for c in codes),
+            parsed.hostname not in source_status.ARCHIVE_HOSTS,
             not caution,
             bool(reviewed),
             repository and not bundled,
@@ -334,8 +335,7 @@ def render(rows, count, size, page_size, out, links=None):
         if number == 1:
             title = f"Chess engines with available source code \u2014 {count:,} families"
             subtitle = (
-                f"Generated {date.today().isoformat()} from data/engines.json. "
-                "Engines whose source survives only in an archive are not listed."
+                f"Generated {date.today().isoformat()} from data/engines.json."
             )
             # Shrink the title lines if needed so they fit the page width.
             usable = width - 2 * MARGIN

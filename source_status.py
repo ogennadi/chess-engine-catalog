@@ -18,7 +18,7 @@ from urllib.parse import urlsplit
 ROOT = Path(__file__).resolve().parent
 STATUS_PATH = ROOT / "data" / "source-status.json"
 RESEARCH_DIR = ROOT / ".cache" / "research"
-ARCHIVE_HOSTS = {"web.archive.org", "archive.softwareheritage.org"}
+ARCHIVE_HOSTS = {"web.archive.org", "wayback.archive.org", "archive.org", "archive.softwareheritage.org"}
 
 LICENSING = {
     "open_source": "OSI/FSF-approved license or rights-holder public-domain dedication",
@@ -232,10 +232,11 @@ def attach(catalog, status):
 
 def availability_label(engine):
     status = engine.get("source_status")
-    if status:
-        return status["availability"]
     live = [code for code in engine["source_code"] if not code.get("unreachable")]
-    if live and all(urlsplit(code["url"]).hostname in ARCHIVE_HOSTS for code in live):
+    archived = bool(live) and all(urlsplit(code["url"]).hostname in ARCHIVE_HOSTS for code in live)
+    if status:
+        return "archived_only" if archived and status["availability"] == "available" else status["availability"]
+    if archived:
         return "archived_only"
     return "linked" if engine["source_code"] else "not_checked"
 

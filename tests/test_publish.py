@@ -134,15 +134,29 @@ class PublishTests(unittest.TestCase):
         self.assertIn('href="https://github.com/a/alpha"', rows["Alpha"][2])
         self.assertEqual(rows["Beta"][1], "archived_only")
         self.assertIn('<span class="tag">Archived</span>', rows["Beta"][2])
-        self.assertIn('href="families/beta.html#source-code"', rows["Beta"][2])
-        self.assertNotIn("web.archive.org", rows["Beta"][2])
+        self.assertNotIn("<a ", rows["Beta"][2].split("</th>", 1)[1])
+        self.assertIn('href="families/beta.html"', rows["Beta"][2])
         beta = self.family("beta")
-        self.assertIn('href="https://web.archive.org/beta.zip"', beta)
+        self.assertNotIn('href="https://web.archive.org', beta)
+        self.assertIn('<code class="dead-link">https://web.archive.org/beta.zip</code>', beta)
+        self.assertIn("can be found on the Wayback Machine", beta)
         self.assertIn("not counted as source available", beta)
         self.assertIn("2 with source available\nand 1 more whose source survives only as an archived copy", self.index)
         self.assertEqual(rows["Gamma"][1], "not_located")
         self.assertIn("Source not located", rows["Gamma"][2])
         self.assertNotIn("closed", rows["Gamma"][2].casefold())
+
+    def test_wayback_urls_are_never_linked(self):
+        url = "https://web.archive.org/web/20040101120000/http://old.example/src.zip"
+        html = publish.source_url_html(url)
+        self.assertNotIn("<a ", html)
+        self.assertIn('<code class="dead-link">http://old.example/src.zip</code>', html)
+        self.assertIn("snapshot 2004-01-01", html)
+        self.assertIn("<a ", publish.source_url_html("https://github.com/a/alpha"))
+        for html in (publish.link(url), publish.link(url, "Evidence"), publish.anchor(url, "x")):
+            self.assertNotIn("<a ", html)
+        for page in self.out.rglob("*.html"):
+            self.assertNotIn('href="https://web.archive.org', page.read_text(encoding="utf-8"), page)
 
     def test_header_links_and_no_per_family_pdfs(self):
         self.assertEqual(self.index.count('href="downloads/source-available-engines.pdf"'), 1)

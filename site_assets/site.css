@@ -118,6 +118,7 @@ details { border: 1px solid var(--border); border-radius: .35rem; margin-block: 
 summary { cursor: pointer; min-height: 2rem; overflow-wrap: anywhere; }
 .notice { border-left: .3rem solid var(--open); padding: .75rem; background: var(--panel); }
 code { font-size: .95em; overflow-wrap: anywhere; }
+.dead-link { text-decoration: line-through; opacity: .8; }
 .toc { columns: 16rem; }
 footer { color: var(--muted); border-top: 1px solid var(--border); margin-top: 2rem; font-size: .9rem; }
 .skip-link { position: absolute; left: 1rem; top: -10rem; padding: .75rem; background: var(--panel); z-index: 1; }

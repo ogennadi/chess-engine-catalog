@@ -96,14 +96,54 @@ def is_web_url(url):
     return parsed.scheme in ("http", "https") and bool(parsed.netloc)
 
 
+WAYBACK_HOSTS = {"web.archive.org", "wayback.archive.org", "archive.org"}
+WAYBACK_URL = re.compile(
+    r"^https?://(?:web\.|wayback\.)?archive\.org/web/(?:(\d{4})(\d\d)?(\d\d)?\d*|\*)[a-z_]*/(.+)$", re.I)
+
+
+def wayback(url):
+    """Return (original URL, snapshot date, archive name) for an archive.org URL, else None."""
+    if urlsplit(str(url)).hostname not in WAYBACK_HOSTS:
+        return None
+    match = WAYBACK_URL.match(str(url))
+    if not match:
+        where = "Internet Archive" if urlsplit(str(url)).hostname == "archive.org" else "Wayback Machine"
+        return str(url), "", where
+    return match.group(4), "-".join(part for part in match.group(1, 2, 3) if part), "Wayback Machine"
+
+
 def anchor(url, inner_html):
-    """Only external HTTP(S) URLs and site-relative paths become links; collected data is never trusted as HTML."""
+    """Only external HTTP(S) URLs and site-relative paths become links; collected data is never trusted as HTML.
+
+    Wayback Machine URLs are never linked, so crawlers of this site add no load to archive.org.
+    """
+    if wayback(url):
+        return inner_html
     return f'<a href="{text(url)}">{inner_html}</a>'
 
 
 def link(url, label=None):
+    archived = wayback(url)
+    if archived:
+        original = f'<code class="dead-link">{text(archived[0])}</code>'
+        if label is None or label == url:
+            return f'{original} <span class="muted">(on the {archived[2]})</span>'
+        return f'{text(label)} <span class="muted">(on the {archived[2]}: {original})</span>'
     label = text(url if label is None else label)
     return anchor(url, label) if is_web_url(url) else label
+
+
+def source_url_html(url):
+    """Link a source URL, but show Wayback copies as their broken original URL in plain text."""
+    archived = wayback(url)
+    if not archived:
+        return link(url)
+    original, date, where = archived
+    if where != "Wayback Machine":
+        return f'<code>{text(original)}</code> <span class="muted">Hosted on the Internet Archive; not linked.</span>'
+    when = f" (snapshot {date})" if date else ""
+    return (f'<code class="dead-link">{text(original)}</code> '
+            f'<span class="muted">Broken link; an archived copy{when} can be found on the Wayback Machine.</span>')
 
 
 def host(url):
@@ -421,8 +461,7 @@ def research_licences(record):
 def source_cell(engine, family_href=None):
     state = availability(engine)
     if state == "archived_only":
-        note = f'<a href="{text(family_href)}#source-code">links on family page</a>' if family_href else "links on family page"
-        return f'<span class="tag">Archived</span> <span class="status">{note}</span>'
+        return '<span class="tag">Archived</span>'
     if state not in AVAILABLE:
         return f'<span class="status">{text(AVAILABILITY[state])}</span>'
     urls = list(dict.fromkeys(item["url"] for item in engine["source_code"]))
@@ -508,7 +547,7 @@ def reviewed_decisions(engine, record, overrides, slugs, wiki_review):
             )
     for code in engine.get("rejected_source_code", []):
         decisions.append(
-            f"Not counted as source code: {link(code['url'])} (listed by {text(code['source'])}). "
+            f"Not counted as source code: {source_url_html(code['url'])} (listed by {text(code['source'])}). "
             f"{text(code['reason'])} {link(code['review_evidence_url'], 'Evidence')}"
         )
     wiki = engine.get("chessprogramming_wiki", {})
@@ -516,7 +555,7 @@ def reviewed_decisions(engine, record, overrides, slugs, wiki_review):
         decisions.append(f"Chess Programming Wiki page “{text(wiki.get('title', ''))}” matched by a reviewed mapping.")
     if wiki_review:
         urls = "".join(
-            f"<li>{link(code['url'])}{(' — ' + text(code['note'])) if code.get('note') else ''}</li>"
+            f"<li>{source_url_html(code['url'])}{(' — ' + text(code['note'])) if code.get('note') else ''}</li>"
             for code in wiki_review.get("code_urls", [])
         )
         decisions.append(
@@ -624,7 +663,7 @@ def family_page(engine, record, registry, overrides, slugs, wiki_review, generat
                 ("Recorded by", text(registry.get(code.get("source"), {}).get("name", code.get("source", "")))),
                 ("Checked", text(code["checked_at"]) if code.get("checked_at") else None),
             ]
-            items.append(f"<li>{link(code['url'])}{definition_list(pairs, 'metadata')}</li>")
+            items.append(f"<li>{source_url_html(code['url'])}{definition_list(pairs, 'metadata')}</li>")
         caveat = ""
         if state == "archived_only":
             caveat = ('<p class="notice">Archived: the source survives only as an archived copy, so this family '
@@ -703,7 +742,7 @@ def index_page(catalog, overrides, slugs):
             f'<tr data-names="{text(names)}" data-availability="{availability(engine)}">'
             f'<td class="index-number">{number:,}</td>'
             f'<th scope="row"><a href="families/{slugs[name]}.html">{text(name)}</a></th>'
-            f"<td>{source_cell(engine, f'families/{slugs[name]}.html')}</td></tr>"
+            f"<td>{source_cell(engine)}</td></tr>"
         )
     header = f"""<p class="lede">{len(engines):,} chess engine families, {available:,} with source available
 and {states['archived_only']:,} more whose source survives only as an archived copy.</p>

@@ -86,12 +86,12 @@ class SourceLinkTests(unittest.TestCase):
             {"url": official, "source": "rwbc"},
         ), official)
 
-    def test_researched_archive_beats_stale_download(self):
+    def test_poster_avoids_archive_links(self):
         archive = "https://web.archive.org/web/20040101/http://old.example/src.zip"
         self.assertEqual(self.choose(
-            {"url": "http://old.example/src.zip", "source": "rwbc"},
             {"url": archive, "source": "source-status-research"},
-        ), archive)
+            {"url": "http://old.example/src.zip", "source": "rwbc"},
+        ), "http://old.example/src.zip")
 
     def test_caution_lowers_priority_and_ties_preserve_order(self):
         first = "https://example.org/source.zip"
