@@ -28,6 +28,7 @@ Collection timestamps and per-source status are in `data/engines.json`, which `c
 | [OpenBench: sscg13](openbench-sscg13.md) | <https://sscg13.pythonanywhere.com/> |
 | [OpenBench: Leela Chess Zero](openbench-lczero.md) | <https://bench.lczero.org/> |
 | [Computer-Chess Wiki chess engine list](computer-chess-org.md) | <http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list> |
+| [TCEC wiki engine lists](tcec-wiki.md) | <https://wiki.chessdom.org/Engines_and_authors> |
 | [Lichess Selfmade bots](lichess.md) | <https://lichess.org/team/selfmade-bots> |
 
 ## OpenBench candidates not registered

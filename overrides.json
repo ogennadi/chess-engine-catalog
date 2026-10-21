@@ -8,6 +8,7 @@
     "ArabianKnight": "Arabian Knight",
     "Armageddon II": "Armageddon",
     "BadChessEngine": "Bad Chess Engine",
+    "Bagatur.cpp": "BagaturCPP",
     "Betsabe": "Betsabe II",
     "BlackMarlin": "Black Marlin",
     "BlitzKibitz/Amaterasu": "BlitzKibitz",
@@ -29,6 +30,8 @@
     "ChessBin.com": "ChessCore",
     "ChessDotCpp": "chess.cpp",
     "Chesslib": "CL-U-E",
+    "ChessFighter": "Chess Fighter",
+    "ChessFighterNN": "Chess Fighter",
     "Chessplayer 2150": "Chess Player 2150",
     "Chestnut": "chessnut",
     "Constellation": "Novag",
@@ -37,6 +40,8 @@
     "Critter (Chess)": "Critter",
     "Cyclone xTreme": "Cyclone",
     "Deep Sjeng c't": "Sjeng",
+    "DeepSjeng": "Deep Sjeng",
+    "DeusX": "Deus X",
     "DoubleCheck": "DiscoCheck",
     "Dragon by Komodo": "Dragon",
     "Dragon of MORS": "MORS",
@@ -66,11 +71,14 @@
     "Fidelity Phantom": "Fidelity",
     "Fidelity Prestige": "Fidelity",
     "Fidelity Travel Master": "Fidelity",
+    "FireNN": "Fire",
     "Francesca MAD": "Francesca",
     "Frank-Walter": "FrankWalter",
     "Frenzee (Deep)": "Frenzee",
+    "Fritz 18": "Fritz",
     "GFCv2": "GFC",
     "GK 2100": "Saitek/SciSys",
+    "GNU Chess 5": "Gnuchess5",
     "Gnuchess": "GNU Chess",
     "Goedel": "Godel",
     "Googleplex Starthinker": "Googleplex",
@@ -95,8 +103,12 @@
     "Kasparov President/GK-2100": "Saitek/SciSys",
     "Kasparov SPARC": "Saitek/SciSys",
     "Knight Dreamer": "KnightDreamer",
+    "Komodo Dragon": "Dragon",
+    "KomodoDragon": "Dragon",
     "Lc0": "Leela Chess",
+    "LCZero": "Leela Chess",
     "Leela": "Leela Chess",
+    "Leela Chess Zero": "Leela Chess",
     "Leela-dag-preview": "Leela Chess",
     "LittleGoliath": "Little Goliath",
     "LittleLelouch": "Little Lelouch",
@@ -148,6 +160,7 @@
     "Mini Chess": "Saitek/SciSys",
     "MittensCEDR": "Mittens",
     "MrBob": "Mr Bob",
+    "Mr_Bob": "Mr Bob",
     "Nates Chessbot": "Nate's ChessBot",
     "NatesBot": "Nate's ChessBot",
     "Nicarao_Chess": "Nicarao",
@@ -234,6 +247,7 @@
     "SciSys Superstar": "Saitek/SciSys",
     "SciSys Turbostar": "Saitek/SciSys",
     "SciSys X": "Saitek/SciSys",
+    "ScorpioNN": "Scorpio",
     "SCP/GNUchess": "GNU Chess",
     "Sensor Chess": "Saitek/SciSys",
     "Sensory 9": "Fidelity",
@@ -248,6 +262,7 @@
     "SimpleLearnerBot": "ChessEngine",
     "Sjaak II": "Sjaak (Glebbeek)",
     "Sjeng (Deep)": "Sjeng",
+    "SlowChess": "Slow Chess",
     "SmallC": "Small-C",
     "SmallPotato": "Small Potato",
     "Smash (Deep)": "Smash",
@@ -259,12 +274,14 @@
     "TheCrazyBishop": "The Crazy Bishop",
     "TheKing": "The King",
     "Throne": "Shadow",
+    "Toga II": "Toga",
     "Toledo": "Toledo NanoChess",
     "Tom-Thumb": "Tom Thumb",
     "Turbostar": "Saitek/SciSys",
     "TwistedLogic": "Twisted Logic",
     "Umko": "MinkoChess",
     "UsurpatorII": "Usurpator",
+    "Vajolet 2": "Vajolet",
     "Vajolet2": "Vajolet",
     "Why Not": "Y!",
     "Wita": "Awit",
@@ -426,12 +443,13 @@
     },
     {
       "sources": [
-        "cegt"
+        "cegt",
+        "tcec-wiki"
       ],
       "family": "Raptor",
       "target": "Raptor LU",
       "evidence_url": "https://chessprogramming.org/Raptor_LU",
-      "note": "CEGT's Raptor builds (CCT16, 2015) match Steve Webber's tournament engine; the wiki's Raptor is Fr?d?ric Louguet's 2003 program."
+      "note": "CEGT's Raptor builds (CCT16, 2015) match Steve Webber's tournament engine, which the TCEC wiki also credits to Steve Webber; the wiki's Raptor is Fr?d?ric Louguet's 2003 program."
     },
     {
       "sources": [
@@ -566,6 +584,33 @@
       "target": "#Chess",
       "evidence_url": "https://chessprogramming.org/SharpChess",
       "note": "RWBC and computer-chess.org name Albert Bertilsson (albert.nu, 2003); the wiki's SharpChess is Peter Hughes' engine and lists Bertilsson's program as #Chess."
+    },
+    {
+      "sources": [
+        "tcec-wiki"
+      ],
+      "family": "Nightmare",
+      "target": "Nightmare NL",
+      "evidence_url": "https://www.chessprogramming.org/Nightmare_NL",
+      "note": "The TCEC wiki credits Joost Buijs and links this wiki page; Nightmare GER is a different program."
+    },
+    {
+      "sources": [
+        "tcec-wiki"
+      ],
+      "family": "Nirvana",
+      "target": "NirvanaChess",
+      "evidence_url": "https://www.chessprogramming.org/Nirvanachess",
+      "note": "The TCEC wiki credits Thomas Kolarik and links this wiki page."
+    },
+    {
+      "sources": [
+        "tcec-wiki"
+      ],
+      "family": "Stein",
+      "target": "Allie",
+      "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+      "note": "The TCEC wiki lists Mark Jordan's Stein network as the second half of AllieStein (\"Allie... (engine)\" / \"...Stein (network)\")."
     }
   ],
   "not_source_urls": [

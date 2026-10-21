@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T18:34:50.677486+00:00",
+  "generated_at": "2026-10-21T19:15:34.321055+00:00",
   "coverage_complete": false,
   "sources": [
     {
@@ -192,6 +192,14 @@
       "status": "collected",
       "checked_at": "2026-10-19T18:34:57.193219+00:00",
       "observations": 994
+    },
+    {
+      "id": "tcec-wiki",
+      "name": "TCEC wiki engine lists",
+      "url": "https://wiki.chessdom.org/Engines_and_authors",
+      "status": "collected",
+      "checked_at": "2026-10-21T19:11:01.266122+00:00",
+      "observations": 285
     },
     {
       "id": "lichess",
@@ -676,6 +684,31 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "4k.c",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C23",
+          "author": "Gediminas Masaitis",
+          "project_url": "https://github.com/GediminasMasaitis/4k-dot-c",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "4k.c 9.15.1",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S31_4K_ELF_III",
+          "section": "S31 4K ELF III",
+          "comment": "(S30 4K ELF III 1st) Updated for S30 4K ELF",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
+          "label": "4k.c 9.15.1",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S31_4K_VIII",
+          "section": "S31 4K VIII",
+          "comment": "(S30 4K VII 4th) Updated for S30 4K ELF",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -688,6 +721,11 @@
           "url": "https://github.com/GediminasMasaitis/4k-dot-c",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/GediminasMasaitis/4k-dot-c",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -900,6 +938,22 @@
           "source": "rwbc"
         },
         {
+          "label": "4ku 5.1",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S31_4K_VIII",
+          "section": "S31 4K VIII",
+          "comment": "(S30 4K VII 3rd) Config changed for S28 4K",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
+          "label": "4ku**",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++; 4k event engine (fits in 4096 bytes)",
+          "project_url": "https://github.com/kz04px/4ku",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "4ku 5.1 bmi2 JA",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -939,6 +993,11 @@
           "url": "https://github.com/kz04px/4ku",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/kz04px/4ku",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -1009,6 +1068,15 @@
           "project_url": "https://github.com/dkappe/a0lite",
           "checked_at": "2026-10-19T18:34:57.193219+00:00",
           "source": "computer-chess-org"
+        },
+        {
+          "label": "A0lite",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NN on GPU; Python",
+          "author": "Dietrich Kappe",
+          "project_url": "https://www.chessprogramming.org/A0lite",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "A0lite",
@@ -4826,6 +4894,15 @@
           "source": "rwbc"
         },
         {
+          "label": "akimbo",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; Rust",
+          "author": "Jamie Whiting",
+          "project_url": "https://github.com/jw1912/akimbo",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Akimbo 0.5.0 v3",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -4870,6 +4947,11 @@
           "url": "https://github.com/jw1912/akimbo",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/jw1912/akimbo",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -7653,6 +7735,15 @@
         },
         {
           "label": "Alfil",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Enrique Sánchez Acosta",
+          "project_url": "https://www.chessprogramming.org/Alfil",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Alfil",
           "listed_name": "Alfil",
           "url": "https://chessprogramming.org/Engines#alphabetical-list",
           "listing_url": "https://chessprogramming.org/Engines",
@@ -8390,7 +8481,9 @@
     },
     {
       "name": "Allie",
-      "aliases": [],
+      "aliases": [
+        "Stein"
+      ],
       "provenance": [
         {
           "label": "Allie 0.8-dev",
@@ -8519,6 +8612,24 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "...Stein (network)",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NN on GPU",
+          "author": "Mark Jordan",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00",
+          "identity_evidence_url": "https://wiki.chessdom.org/Engines_and_authors"
+        },
+        {
+          "label": "Allie... (engine)",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NN on GPU; C++",
+          "author": "Adam Treat",
+          "project_url": "https://www.chessprogramming.org/Allie",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Allie",
@@ -9286,6 +9397,23 @@
           "source": "rwbc"
         },
         {
+          "label": "Altair",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++",
+          "author": "Alexander Tian",
+          "project_url": "https://github.com/Alex2262/AltairChessEngine",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Altair 7.2.1-be6dc151",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_invite_if_author_contacts",
+          "section": "Not playing, invite if author contacts",
+          "comment": "(S28 EL 9th) Updated for S28 Game Length Update Testing 2 before FRD4 (automatic updates) (update needed, game length update eventually needed)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Altair 5.0.0 v3",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -9330,6 +9458,11 @@
           "url": "https://github.com/Alex2262/AltairChessEngine",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/Alex2262/AltairChessEngine",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -10462,6 +10595,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Amoeba",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; D",
+          "author": "Richard Delorme",
+          "project_url": "https://www.chessprogramming.org/Amoeba",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Amoeba 3.4",
@@ -12552,6 +12694,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Andscacs",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Daniel José Queralto",
+          "project_url": "https://www.chessprogramming.org/Andscacs",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Andscacs 0.95123",
@@ -17301,6 +17452,23 @@
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
         },
         {
+          "label": "Arasan",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical hybrid with NNUE on CPU; C++",
+          "author": "Jon Dart",
+          "project_url": "https://www.chessprogramming.org/Arasan",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Arasan 357e72b",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_1_Playoff",
+          "section": "S30 Category 1 Playoff",
+          "comment": "(S30 Category 1 2nd) Updated for S30 Swiss (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Arasan 22.3 bmi2",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -20356,6 +20524,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Asymptote",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; Rust",
+          "author": "Maximilian Lupke",
+          "project_url": "https://www.chessprogramming.org/Asymptote",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Asymptote 0.8 msvc broadwell",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -22034,6 +22211,23 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Avalanche",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; Zig",
+          "author": "Yinuo Huang",
+          "project_url": "https://github.com/SnowballSH/Avalanche",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Avalanche 4.0.0",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_2_Playoff",
+          "section": "S30 Category 2 Playoff",
+          "comment": "(S30 Category 2 6th) Updated for S30 Long testing (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -22061,6 +22255,11 @@
           "url": "https://github.com/SnowballSH/Avalanche",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/SnowballSH/Avalanche",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -24475,6 +24674,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Bagatur",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; Java",
+          "author": "Krasimir Topchiyski",
+          "project_url": "https://www.chessprogramming.org/Bagatur",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Bagatur 5.1c HCE",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -24537,7 +24745,9 @@
     },
     {
       "name": "BagaturCPP",
-      "aliases": [],
+      "aliases": [
+        "Bagatur.cpp"
+      ],
       "provenance": [
         {
           "label": "Bagatur.cpp 1.0",
@@ -24649,6 +24859,14 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Bagatur.cpp 1.1",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_2_Playoff",
+          "section": "S30 Category 2 Playoff",
+          "comment": "(S30 Category 2 10th) Updated for S30 Category 2 Playoff",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -28297,6 +28515,23 @@
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
         },
         {
+          "label": "Berserk",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C11",
+          "author": "Jay Honnold",
+          "project_url": "https://www.chessprogramming.org/Berserk",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Berserk 20260906",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_League_1",
+          "section": "S30 League 1",
+          "comment": "(S29 DivP 8th) Updated for S30 Swiss (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Berserk 5 avx2 pext",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -30527,6 +30762,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Bit-Genie",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++",
+          "author": "Aryan Parekh",
+          "project_url": "https://www.chessprogramming.org/Bit-Genie",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Bit-Genie 8 bmi2",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -31417,6 +31661,23 @@
           "source": "rwbc"
         },
         {
+          "label": "BlackMarlin",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; Rust 1.57 and later",
+          "author": "Doruk Şekercioğlu",
+          "project_url": "https://www.chessprogramming.org/Black_Marlin",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "BlackMarlin 9.0-dev-b7901043",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_invite_if_author_contacts",
+          "section": "Not playing, invite if author contacts",
+          "comment": "(S29 EL 13th) Updated for S28 Swiss 8 (automatic updates) (update needed)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Black Marlin",
           "listed_name": "Black Marlin",
           "url": "https://chessprogramming.org/Engines#alphabetical-list",
@@ -32027,6 +32288,15 @@
           "source": "rwbc"
         },
         {
+          "label": "BlackCore",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++",
+          "author": "Balázs Szilágyi",
+          "project_url": "https://github.com/SzilBalazs/BlackCore",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "BlackCore 1.0 bmi2",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -32056,6 +32326,11 @@
           "url": "https://github.com/SzilBalazs/BlackCore",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/SzilBalazs/BlackCore",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -34423,6 +34698,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Bobcat",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Gunnar Harms",
+          "project_url": "https://www.chessprogramming.org/Bobcat",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Bobcat 8.0 core2",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -35484,6 +35768,23 @@
           "source": "ssdf"
         },
         {
+          "label": "Booot",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; Delphi 6",
+          "author": "Alex Morozov",
+          "project_url": "https://www.chessprogramming.org/Booot",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Booot 7.4",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_TCEC_will_invite_in_S31",
+          "section": "Not playing, TCEC will invite in S31",
+          "comment": "(S29 L2 10th) Updated for S28 Swiss 8 (Stuck in L2, update needed)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Booot 6.5",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -35631,6 +35932,15 @@
           "project_url": "https://sites.google.com/site/chessbouquet/",
           "checked_at": "2026-10-19T18:34:57.193219+00:00",
           "source": "computer-chess-org"
+        },
+        {
+          "label": "Bouquet",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Jose Mº Velasco",
+          "project_url": "https://www.chessprogramming.org/Bouquet",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Bouquet 1.8 WINE",
@@ -36707,6 +37017,14 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Bread 4.0.0-dev-67ec79c8",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_2_Playoff",
+          "section": "S30 Category 2 Playoff",
+          "comment": "(New engine in S30, S30 Category 2 5th) Updated for S30 Category 2 Playoff (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -38933,6 +39251,15 @@
           "source": "rwbc"
         },
         {
+          "label": "BugChess2",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "François Karr",
+          "project_url": "https://www.chessprogramming.org/BugChess_FR#BugChess2",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "BugChess2 1.9 POPCOUNT",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -40269,6 +40596,23 @@
           "detail_url": "http://www.cegt.net/40_40%20Rating%20List/40_40%20All%20Versions/712.html",
           "checked_at": "2026-10-19T01:00:16.890523+00:00",
           "source": "cegt"
+        },
+        {
+          "label": "c4ke",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Nguyễn Thanh",
+          "project_url": "https://github.com/citrus610/c4ke",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "c4ke 3.0",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S31_4K_VIII",
+          "section": "S31 4K VIII",
+          "comment": "(S30 4K VII MiniFinal 1st) Updated for S30 4K",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -40276,6 +40620,11 @@
           "url": "https://github.com/citrus610/c4ke",
           "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=c4ke+3.0+64-bit",
           "source": "ccrl"
+        },
+        {
+          "url": "https://github.com/citrus610/c4ke",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -41802,6 +42151,23 @@
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
         },
         {
+          "label": "Caissa",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++",
+          "author": "Michał Witanowski",
+          "project_url": "https://github.com/Witek902/Caissa",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Caissa 2.0.5",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_League_2",
+          "section": "S30 League 2",
+          "comment": "(S29 L1 9th) Updated for S30 Swiss (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Caissa 1.12 avx2 bmi2 HCE",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -41841,6 +42207,11 @@
           "url": "https://github.com/Witek902/Caissa",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/Witek902/Caissa",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -44845,6 +45216,33 @@
       }
     },
     {
+      "name": "CatGPT",
+      "aliases": [],
+      "provenance": [
+        {
+          "label": "CatGPT b2a1b3db",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_4_Playoff",
+          "section": "S30 Category 4 Playoff",
+          "comment": "(New engine in S30, S30 Category 3+4 2nd) Updated for S30 Long testing",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        }
+      ],
+      "source_code": [
+        {
+          "url": "https://github.com/butter76/CatGPT",
+          "evidence_url": "https://wiki.chessdom.org/CatGPT_questionnaire_20260525",
+          "source": "tcec-wiki"
+        }
+      ],
+      "chessprogramming_wiki": {
+        "status": "not_checked",
+        "url": null,
+        "title": null,
+        "checked_at": null
+      }
+    },
+    {
       "name": "Catto",
       "aliases": [],
       "provenance": [
@@ -47356,6 +47754,22 @@
         },
         {
           "label": "Ceres",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NN on GPU; C#",
+          "project_url": "https://github.com/dje-dev/Ceres",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Ceres 2.60_C1-640-34-LEPNED",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_League_1",
+          "section": "S30 League 1",
+          "comment": "(S29 L1 3rd) Updated for S30 Long testing (category 1)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
+          "label": "Ceres",
           "listed_name": "Ceres",
           "url": "https://chessprogramming.org/Engines#alphabetical-list",
           "listing_url": "https://chessprogramming.org/Engines",
@@ -47372,6 +47786,11 @@
           "url": "https://github.com/dje-dev/Ceres",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
           "source": "rwbc"
+        },
+        {
+          "url": "https://github.com/dje-dev/Ceres",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -49800,6 +50219,23 @@
           "source": "rwbc"
         },
         {
+          "label": "Cheese",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++17",
+          "author": "Patrice Duhamel",
+          "project_url": "https://www.chessprogramming.org/Cheese",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Cheese 3.3.2",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_TCEC_will_invite_in_S31",
+          "section": "Not playing, TCEC will invite in S31",
+          "comment": "(S29 Category 1 12th) Updated for S29 Long testing",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Cheese 3.2.1 pext",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -50724,6 +51160,23 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Cheng",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++",
+          "author": "Martin Sedlak",
+          "project_url": "https://www.chessprogramming.org/Cheng",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Cheng 4.48",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_invite_if_author_contacts",
+          "section": "Not playing, invite if author contacts",
+          "comment": "(Since S28, S27 Category 2 6th) Updated for S27 Playoff (update needed)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         },
         {
           "label": "Cheng 4.48 avx2 HCE",
@@ -52601,7 +53054,10 @@
     },
     {
       "name": "Chess Fighter",
-      "aliases": [],
+      "aliases": [
+        "ChessFighter",
+        "ChessFighterNN"
+      ],
       "provenance": [
         {
           "label": "Chess Fighter",
@@ -52617,6 +53073,126 @@
           "date_added": "2019/07/12",
           "checked_at": "2026-10-19T18:34:57.193219+00:00",
           "source": "computer-chess-org"
+        },
+        {
+          "label": "ChessFighter",
+          "original_name": "ChessFighter",
+          "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
+          "listing_url": "https://rwbc-chess.de/",
+          "sheet_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
+          "rank": 246,
+          "authors": "Lim Alexander",
+          "alternate_names": "",
+          "previous_names": "",
+          "distribution": "free",
+          "source_flag": "-",
+          "links": [
+            "https://drive.google.com/drive/folders/0B5Ao6h_yMCl6ay04RjVtUDVTUG8"
+          ],
+          "row": [
+            "246",
+            "ChessFighter",
+            "Lim Alexander",
+            "GBR",
+            "",
+            "",
+            "2.0",
+            "2019-07",
+            "2019-07",
+            "A3*",
+            "UCI",
+            "-",
+            "C++",
+            "yes",
+            "-",
+            "-",
+            "",
+            "",
+            "free",
+            "1.0",
+            "2019-04-11",
+            "7.3",
+            "7.5",
+            "",
+            "GPU only",
+            "https://drive.google.com/drive/folders/0B5Ao6h_yMCl6ay04RjVtUDVTUG8"
+          ],
+          "headers": [
+            "",
+            "Name\n(color description\ns. TOC)",
+            "Author L.N. F.N.",
+            "CC3",
+            "F1",
+            "F2",
+            "LR/LV (dev)",
+            "",
+            "",
+            "RC\n(s. TOC)",
+            "Prot",
+            "Src",
+            "PL",
+            "NN\nNNUE",
+            "MP",
+            "EGT",
+            "N-Alias\n(base/add.)",
+            "N-Pre\nLV",
+            "Dist.",
+            "Vers. FR",
+            "",
+            "",
+            "",
+            "CMD (arg) Config\nExamples",
+            "Peculiarities + Bugs + Info",
+            "Web/Download"
+          ],
+          "sheet_metadata": [
+            "10/18/2026",
+            "",
+            "",
+            "Alpha List (current count :: 1241)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "declared_count": 1241,
+          "checked_at": "2026-10-19T01:17:00.508078+00:00",
+          "source": "rwbc"
+        },
+        {
+          "label": "ChessFighter 4.1",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_1_Playoff",
+          "section": "S30 Category 1 Playoff",
+          "comment": "(S30 Category 1 12st) Updated for S30 Long testing",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
+          "label": "ChessFighterNN",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NN on GPU; C++",
+          "author": "Alexander Lim",
+          "project_url": "https://www.chessprogramming.org/Chess_Fighter",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Chess Fighter",
@@ -55320,6 +55896,15 @@
           "source": "rwbc"
         },
         {
+          "label": "chess22k",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; Java",
+          "author": "Sander Maassen vd Brink",
+          "project_url": "https://www.chessprogramming.org/Chess22k",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "chess22k 1.10",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -56774,6 +57359,15 @@
           "source": "computer-chess-org"
         },
         {
+          "label": "ChessBrainVB",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU (needs Win VM); Visual Basic 6.0",
+          "author": "Roger Zuehlsdorf",
+          "project_url": "https://www.chessprogramming.org/ChessBrainVB",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "ChessBrainVB 4.03a",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -57384,134 +57978,6 @@
         "titles_checked": [
           "Chesser"
         ]
-      }
-    },
-    {
-      "name": "ChessFighter",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "ChessFighter",
-          "original_name": "ChessFighter",
-          "url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
-          "listing_url": "https://rwbc-chess.de/",
-          "sheet_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/",
-          "rank": 246,
-          "authors": "Lim Alexander",
-          "alternate_names": "",
-          "previous_names": "",
-          "distribution": "free",
-          "source_flag": "-",
-          "links": [
-            "https://drive.google.com/drive/folders/0B5Ao6h_yMCl6ay04RjVtUDVTUG8"
-          ],
-          "row": [
-            "246",
-            "ChessFighter",
-            "Lim Alexander",
-            "GBR",
-            "",
-            "",
-            "2.0",
-            "2019-07",
-            "2019-07",
-            "A3*",
-            "UCI",
-            "-",
-            "C++",
-            "yes",
-            "-",
-            "-",
-            "",
-            "",
-            "free",
-            "1.0",
-            "2019-04-11",
-            "7.3",
-            "7.5",
-            "",
-            "GPU only",
-            "https://drive.google.com/drive/folders/0B5Ao6h_yMCl6ay04RjVtUDVTUG8"
-          ],
-          "headers": [
-            "",
-            "Name\n(color description\ns. TOC)",
-            "Author L.N. F.N.",
-            "CC3",
-            "F1",
-            "F2",
-            "LR/LV (dev)",
-            "",
-            "",
-            "RC\n(s. TOC)",
-            "Prot",
-            "Src",
-            "PL",
-            "NN\nNNUE",
-            "MP",
-            "EGT",
-            "N-Alias\n(base/add.)",
-            "N-Pre\nLV",
-            "Dist.",
-            "Vers. FR",
-            "",
-            "",
-            "",
-            "CMD (arg) Config\nExamples",
-            "Peculiarities + Bugs + Info",
-            "Web/Download"
-          ],
-          "sheet_metadata": [
-            "10/18/2026",
-            "",
-            "",
-            "Alpha List (current count :: 1241)",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "declared_count": 1241,
-          "checked_at": "2026-10-19T01:17:00.508078+00:00",
-          "source": "rwbc"
-        }
-      ],
-      "source_code": [],
-      "chessprogramming_wiki": {
-        "status": "found",
-        "url": "https://chessprogramming.org/ChessFighter",
-        "title": "ChessFighter",
-        "checked_at": "2026-10-19T00:44:50.443299+00:00",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "exact-title-or-catalog-alias",
-        "titles_checked": [
-          "ChessFighter"
-        ]
-      },
-      "source_status": {
-        "tier": "D",
-        "availability": "not_located",
-        "licensing": "proprietary",
-        "confidence": "medium",
-        "checked_at": "2026-10-20T10:22:23+00:00"
       }
     },
     {
@@ -61963,6 +62429,15 @@
           "source": "ssdf"
         },
         {
+          "label": "Chiron",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU (needs Win VM)",
+          "author": "Ubaldo Andrea Farina",
+          "project_url": "https://www.chessprogramming.org/Chiron",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Chiron 4",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -62423,6 +62898,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Chronos",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Guillermo Filia",
+          "project_url": "https://www.chessprogramming.org/Chronos",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Chronos 1.9.9 beta",
@@ -63274,6 +63758,23 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "Cinder",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; Rust",
+          "author": "Bruno Dutra",
+          "project_url": "https://github.com/brunocodutra/cinder",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Cinder 0.6.1-2ee89e79",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_3_Playoff",
+          "section": "S30 Category 3 Playoff",
+          "comment": "(S30 Category 3+4 1st) Updated for S30 Swiss (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -63291,6 +63792,11 @@
           "url": "https://github.com/brunocodutra/cinder",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/brunocodutra/cinder",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -64296,6 +64802,23 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "Clarity",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++20",
+          "author": "Joseph Pasfield",
+          "project_url": "https://github.com/Vast342/Clarity",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Clarity 8.1.0",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_2_Playoff",
+          "section": "S30 Category 2 Playoff",
+          "comment": "(S30 Category 2 8th) Updated for S30 Long testing",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -64323,6 +64846,11 @@
           "url": "https://github.com/Vast342/Clarity",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/Vast342/Clarity",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -64513,6 +65041,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "ClassicAra",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NN on GPU; C++, Python",
+          "author": "Johannes Czech, Moritz Willig, Alena Beyer",
+          "project_url": "https://www.chessprogramming.org/CrazyAra#ClassicAra",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "ClassicAra",
@@ -65309,6 +65846,14 @@
           "source": "rwbc"
         },
         {
+          "label": "Clockwork 20260927-8ee523a",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_1_Playoff",
+          "section": "S30 Category 1 Playoff",
+          "comment": "(New engine in S30, S30 Category 1 4th) Updated for S30 Swiss (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Clockwork dev-20251226-bfeadec8 v3",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -66047,6 +66592,23 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "Clover",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++17",
+          "author": "Luca Metehau",
+          "project_url": "https://www.chessprogramming.org/Clover",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Clover 9.1",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_League_2",
+          "section": "S30 League 2",
+          "comment": "(S29 L1 11th) Updated for S28 FRD4 (automatic updates) (category 2)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         },
         {
           "label": "Clover 2.4 avx2",
@@ -68886,6 +69448,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Combusken",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; Go",
+          "author": "Marcin Bartkowiak",
+          "project_url": "https://www.chessprogramming.org/Combusken",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Combusken 2.0.0 JA",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -70835,6 +71406,23 @@
           "source": "rwbc"
         },
         {
+          "label": "Counter",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; Go",
+          "author": "Vadim Chizhov",
+          "project_url": "https://www.chessprogramming.org/Counter",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Counter 5.5",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_invite_if_author_contacts",
+          "section": "Not playing, invite if author contacts",
+          "comment": "(Since S26, Before S26 EL) development on pause and withdraws from competition for the moment (update needed)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Counter 4.1",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -72533,6 +73121,15 @@
           "source": "ssdf"
         },
         {
+          "label": "Crafty",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "author": "Robert Hyatt",
+          "project_url": "https://www.chessprogramming.org/Crafty",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Crafty 25.3 JA",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -73744,6 +74341,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Critter",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C/C++",
+          "author": "Richard Vida",
+          "project_url": "https://www.chessprogramming.org/Critter",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Critter 1.6a",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -74683,6 +75289,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "CuckooChess",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; Java",
+          "author": "Peter Österlund",
+          "project_url": "https://www.chessprogramming.org/CuckooChess",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "CuckooChess 1.12 dev_49cd170 JA",
@@ -77110,6 +77725,15 @@
           "source": "rwbc"
         },
         {
+          "label": "DanaSah",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "author": "Pedro Castro",
+          "project_url": "https://www.chessprogramming.org/DanaSah",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Danasah 8.8 avx2 HCE",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -78632,6 +79256,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Daydreamer",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "author": "Aaron Becker",
+          "project_url": "https://www.chessprogramming.org/Daydreamer",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Daydreamer 2.0.0-pre2 msvc",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -79288,8 +79921,27 @@
     },
     {
       "name": "Deep Sjeng",
-      "aliases": [],
+      "aliases": [
+        "DeepSjeng"
+      ],
       "provenance": [
+        {
+          "label": "Deep Sjeng",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++17",
+          "author": "Gian-Carlo Pascutto",
+          "project_url": "https://www.chessprogramming.org/Deep_Sjeng",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "DeepSjeng 3.6 a41",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_TCEC_will_invite_in_S31",
+          "section": "Not playing, TCEC will invite in S31",
+          "comment": "(S29 EL 14th) Updated for S28 Swiss 8 (game length update eventually needed, update available)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
         {
           "label": "Deep Sjeng",
           "listed_name": "Deep Sjeng",
@@ -80428,6 +81080,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Defenchess",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Can Cetin",
+          "project_url": "https://www.chessprogramming.org/Defenchess",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Defenchess 2.3 JA",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -81429,6 +82090,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Delphil",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; Delphi 7",
+          "author": "Philippe Fabiani",
+          "project_url": "https://www.chessprogramming.org/Delphil",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Delphil 3.2",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -82074,6 +82744,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Demolito",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "author": "Lucas Braesch",
+          "project_url": "https://www.chessprogramming.org/Demolito",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Demolito 2025-04-08 pext",
@@ -82726,8 +83405,19 @@
     },
     {
       "name": "Deus X",
-      "aliases": [],
+      "aliases": [
+        "DeusX"
+      ],
       "provenance": [
+        {
+          "label": "DeusX (network)",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NN",
+          "author": "Albert Silver",
+          "project_url": "https://www.chessprogramming.org/Deus_X",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
         {
           "label": "Deus X",
           "listed_name": "Deus X",
@@ -83102,6 +83792,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Deuterium",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU",
+          "author": "Ferdinand Mosca",
+          "project_url": "https://www.chessprogramming.org/Deuterium",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Deuterium 2019.2.37.73 pop",
@@ -83608,6 +84307,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Devre",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++17",
+          "author": "Ömer Faruk Tutkun",
+          "project_url": "https://github.com/OmerFarukTutkun/Devre",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         }
       ],
       "source_code": [
@@ -83625,6 +84333,11 @@
           "url": "https://github.com/OmerFarukTutkun/Devre",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/OmerFarukTutkun/Devre",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -84867,6 +85580,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Dirty",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU",
+          "author": "Pradu Kannan, Andres Valverde, Fonzy Bluemers",
+          "project_url": "https://www.chessprogramming.org/Dirty",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Dirty Catpaw",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -85280,6 +86002,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "DisasterArea",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU",
+          "author": "Jochen Peussner",
+          "project_url": "https://www.chessprogramming.org/DisasterArea",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "DisasterArea 1.65w64pc",
@@ -88104,7 +88835,9 @@
     {
       "name": "Dragon",
       "aliases": [
-        "Dragon by Komodo"
+        "Dragon by Komodo",
+        "Komodo Dragon",
+        "KomodoDragon"
       ],
       "provenance": [
         {
@@ -88746,6 +89479,23 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "Komodo Dragon",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical hybrid with NNUE on CPU; C++11",
+          "author": "Mark Lefler, Larry Kaufman",
+          "project_url": "https://www.chessprogramming.org/Komodo",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "KomodoDragon 3.3",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_League_1",
+          "section": "S30 League 1",
+          "comment": "(S29 L1 6th) Updated for S25 FRD 1, Settings updated for S28 Swiss 8",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         },
         {
           "label": "Dragon by Komodo avx2 HCE",
@@ -89956,6 +90706,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Drofa",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++11",
+          "author": "Alexander Litov",
+          "project_url": "https://www.chessprogramming.org/Drofa",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Drofa 4.1.1 avx2 JA",
@@ -97440,6 +98199,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Equinox",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU",
+          "author": "Giancarlo Delli Colli",
+          "project_url": "https://www.chessprogramming.org/Equinox",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Equinox 3.30",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -97669,6 +98437,23 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Equisetum",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++11",
+          "author": "Alexander Litov",
+          "project_url": "https://github.com/justNo4b/Equisetum",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Equisetum 1.15.telmateia",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_TCEC_will_invite_in_S31",
+          "section": "Not playing, TCEC will invite in S31",
+          "comment": "(Since S28, S27 EL 7th) Updated for S27 EL (update needed)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -97701,6 +98486,11 @@
           "url": "https://github.com/justNo4b/Equisetum",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/justNo4b/Equisetum",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -98985,6 +99775,23 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "Ethereal",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical hybrid with NNUE on CPU; C",
+          "author": "Andrew Grant",
+          "project_url": "https://www.chessprogramming.org/Ethereal",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Ethereal 14.40",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_League_2",
+          "section": "S30 League 2",
+          "comment": "(S29 L1 12th) Updated for S27 Swiss 7 (and FRC version for S26 FRD 2), Settings updated for S28 Swiss 8",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         },
         {
           "label": "Ethereal 14.31 JA HCE",
@@ -101530,6 +102337,15 @@
           "source": "rwbc"
         },
         {
+          "label": "EXchess",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Daniel Homan",
+          "project_url": "https://www.chessprogramming.org/EXchess",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "EXchess 7.97b",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -101937,6 +102753,22 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Expositor",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; Rust 1.64 nightly",
+          "project_url": "https://github.com/expo-dev/expositor",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Expositor 5WN03",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_invite_if_author_contacts",
+          "section": "Not playing, invite if author contacts",
+          "comment": "(S28 Category 2 13th) Updated for S28 Cat2 Playoff (automatic updates) (update needed)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -101951,6 +102783,11 @@
           "evidence_url": "https://e4e6.com/download/Expositor%204WR02.rar",
           "source": "source-status-research",
           "kind": "Wayback snapshot of original repository (partial)"
+        },
+        {
+          "url": "https://github.com/expo-dev/expositor",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -102212,6 +103049,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "FabChess",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; Rust",
+          "author": "Fabian von der Warth",
+          "project_url": "https://www.chessprogramming.org/FabChess",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "FabChess 1.16 bmi2",
@@ -104835,7 +105681,9 @@
     },
     {
       "name": "Fire",
-      "aliases": [],
+      "aliases": [
+        "FireNN"
+      ],
       "provenance": [
         {
           "label": "Fire, Firefather projects, web",
@@ -105222,6 +106070,22 @@
           "source": "computer-chess-org"
         },
         {
+          "label": "Fire*",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "DQ'd for covertly containing copied code",
+          "author": "Norman Schmidt",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "FireNN",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NN on GPU",
+          "author": "Norman Schmidt",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Fire 8.3 bmi2",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -105423,6 +106287,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "FireFly",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "author": "Andrew Fan",
+          "project_url": "https://www.chessprogramming.org/FireFly",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "FireFly 2.7.2",
@@ -106531,6 +107404,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Fizbo",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical hybrid with internal NN on CPU; C++",
+          "author": "Youri Matiounine",
+          "project_url": "https://www.chessprogramming.org/Fizbo",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Fizbo 2 bmi2 JA",
@@ -108898,6 +109780,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Francesca",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "author": "Tom King",
+          "project_url": "https://www.chessprogramming.org/Francesca",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Francesca MAD 0.32",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -110950,6 +111841,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Fridolin",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Christian Sommerfeld",
+          "project_url": "https://www.chessprogramming.org/Fridolin",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Fridolin 3.10",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -111151,7 +112051,9 @@
     },
     {
       "name": "Fritz",
-      "aliases": [],
+      "aliases": [
+        "Fritz 18"
+      ],
       "provenance": [
         {
           "label": "Fritz",
@@ -112240,6 +113142,15 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "Fritz 18",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++",
+          "author": "Frank Schneider",
+          "project_url": "https://www.chessprogramming.org/Fritz",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Fritz 16",
@@ -113508,6 +114419,15 @@
           "date_added": "2017/12/14",
           "checked_at": "2026-10-19T18:34:57.193219+00:00",
           "source": "computer-chess-org"
+        },
+        {
+          "label": "Fruit Reloaded",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical hybrid with internal NN; C++",
+          "author": "Daniel Mehrmann",
+          "project_url": "https://www.chessprogramming.org/Fruit_Reloaded",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Fruit Reloaded 15th anniversary",
@@ -115845,6 +116765,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Gaviota",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "author": "Miguel A. Ballicora",
+          "project_url": "https://www.chessprogramming.org/Gaviota",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Gaviota 1.0 avx",
@@ -118793,6 +119722,23 @@
         },
         {
           "label": "Ginkgo",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++",
+          "author": "Frank Schneider",
+          "project_url": "https://www.chessprogramming.org/Ginkgo",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Ginkgo 5.71",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_League_2",
+          "section": "S30 League 2",
+          "comment": "(S29 L2 6th) Updated for S30 Long testing",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
+          "label": "Ginkgo",
           "listed_name": "Ginkgo",
           "url": "https://chessprogramming.org/Engines#alphabetical-list",
           "listing_url": "https://chessprogramming.org/Engines",
@@ -119769,6 +120715,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Glass",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU",
+          "author": "Pawel Koziol, Edmund Moshamme",
+          "project_url": "https://www.chessprogramming.org/Glass",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Glass 1.9 popcnt",
@@ -121009,7 +121964,9 @@
     },
     {
       "name": "Gnuchess5",
-      "aliases": [],
+      "aliases": [
+        "GNU Chess 5"
+      ],
       "provenance": [
         {
           "label": "Gnuchess5",
@@ -121113,6 +122070,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "GNU Chess 5",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU",
+          "author": "Chua Kong Sian",
+          "project_url": "https://www.chessprogramming.org/GNU_Chess",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         }
       ],
       "source_code": [
@@ -121867,6 +122833,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Gogobello",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "author": "Salvatore Giannotti",
+          "project_url": "https://www.chessprogramming.org/Gogobello",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Gogobello 2.2 bmi2",
@@ -124918,6 +125893,15 @@
           "source": "rwbc"
         },
         {
+          "label": "GreKo",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Vladimir Medvedev",
+          "project_url": "https://www.chessprogramming.org/GreKo",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "GreKo 2021.06",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -126344,6 +127328,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Gull",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Vadim Demichev",
+          "project_url": "https://www.chessprogramming.org/Gull",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Gull 3.1 JV",
@@ -127815,6 +128808,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Hakkapeliitta",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Mikko Aarnos",
+          "project_url": "https://www.chessprogramming.org/Hakkapeliitta",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Hakkapeliitta TCEC v2",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -128477,6 +129479,23 @@
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
         },
         {
+          "label": "Halogen",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical hybrid with NNUE on CPU; C++17",
+          "author": "Kieren Pearson",
+          "project_url": "https://www.chessprogramming.org/Halogen",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Halogen 16.8.0",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_League_1",
+          "section": "S30 League 1",
+          "comment": "(S29 L1 5th) Updated for S30 Long testing (automatic updates) (category 2)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Halogen 2.7.3",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -128837,6 +129856,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Hamsters",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU",
+          "author": "Alessandro Scotti",
+          "project_url": "https://www.chessprogramming.org/Hamsters",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Hamsters 0.7.1",
@@ -129321,6 +130349,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Hannibal",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU",
+          "author": "Sam Hamilton, Edsel Apostol",
+          "project_url": "https://www.chessprogramming.org/Hannibal",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Hannibal 1.7",
@@ -130806,6 +131843,23 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Heimdall",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; Nim",
+          "author": "Mattia Giambirtone",
+          "project_url": "https://git.nocturn9x.space/nocturn9x/heimdall",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Heimdall 1.6.0-beta-51b07a",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Entrance_League",
+          "section": "S30 Entrance League",
+          "comment": "(S29 EL 9th) Updated for S30 Swiss (automatic updates) (category 2)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -132898,6 +133952,15 @@
           "source": "ssdf"
         },
         {
+          "label": "HIARCS",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "author": "Mark Uniacke",
+          "project_url": "https://www.chessprogramming.org/HIARCS",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Hiarcs 14 WCSC",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -133346,6 +134409,13 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "Hobbes",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_invite_if_author_contacts",
+          "section": "Not playing, invite if author contacts",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -135399,6 +136469,23 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "Horsie",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++",
+          "author": "Liam McGuire",
+          "project_url": "https://github.com/liamt19/Horsie",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Horsie 1.1.3",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Entrance_League",
+          "section": "S30 Entrance League",
+          "comment": "(S29 EL 7th) Updated for S29 Long testing (automatic updates) (category 2)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -135421,6 +136508,11 @@
           "url": "https://github.com/liamt19/Horsie",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/liamt19/Horsie",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -136299,6 +137391,14 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Houdini*",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "DQ'd for covertly containing copied code",
+          "author": "Robert Houdart",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Houdini 4 Pro A",
@@ -137276,6 +138376,13 @@
           "project_url": "https://github.com/Sp00ph/icarus",
           "source": "openbench-mattbench",
           "checked_at": "2026-10-19T04:08:47.802480+00:00"
+        },
+        {
+          "label": "Icarus",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_invite_if_author_contacts",
+          "section": "Not playing, invite if author contacts",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -137596,6 +138703,15 @@
           "source": "rwbc"
         },
         {
+          "label": "iCE",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Thomas Petzke",
+          "project_url": "https://www.chessprogramming.org/iCE",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "iCE 4.0.853 modern",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -137842,6 +138958,23 @@
           "source": "rwbc"
         },
         {
+          "label": "ice4 6.1.1",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S31_4K_VIII",
+          "section": "S31 4K VIII",
+          "comment": "(S30 4K VII MiniFinal 2nd) Updated for S30 4K",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
+          "label": "ice4**",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++ (gnu++17); 4k event engine (fits in 4096 bytes)",
+          "author": "Mark Carlson",
+          "project_url": "https://github.com/MinusKelvin/ice4",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "ice4 6",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -137866,6 +138999,11 @@
           "url": "https://github.com/MinusKelvin/ice4",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/MinusKelvin/ice4",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -138856,6 +139994,23 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "Igel",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical hybrid with NNUE on CPU; C++",
+          "author": "Volodymyr Shcherbyna",
+          "project_url": "https://www.chessprogramming.org/Igel",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Igel 3.7.10",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Entrance_League",
+          "section": "S30 Entrance League",
+          "comment": "(S29 EL 11th) Updated for S30 Swiss (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         },
         {
           "label": "Igel 2.6.0 bmi2",
@@ -140781,6 +141936,23 @@
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
         },
         {
+          "label": "Integral",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++20",
+          "author": "Aron Petkovski",
+          "project_url": "https://github.com/aronpetko/integral",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Integral 8-deff6ead",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Premier_Division",
+          "section": "S30 Premier Division",
+          "comment": "(S29 DivP 6th) Updated for S30 Swiss (automatic updates) (category 1)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Integral v4 bmi2",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -140810,6 +141982,11 @@
           "url": "https://github.com/aronpetko/integral",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/aronpetko/integral",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -141330,6 +142507,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Invictus",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++17",
+          "author": "Edsel Apostol",
+          "project_url": "https://www.chessprogramming.org/Invictus",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Invictus r382 pext",
@@ -142521,6 +143707,14 @@
           "source": "computer-chess-org"
         },
         {
+          "label": "IvanHoe",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU",
+          "project_url": "https://www.chessprogramming.org/IvanHoe",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "IvanHoe 9.46h GamePlay KLO",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -143260,6 +144454,14 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "Jackal 2.0.0-6fbb1e2d",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_1_Playoff",
+          "section": "S30 Category 1 Playoff",
+          "comment": "(New engine in S30, S30 Category 1 13th) Updated for S30 Category 1 Playoff (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -144816,6 +146018,15 @@
         },
         {
           "label": "Jazz",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "author": "Evert Glebbeek",
+          "project_url": "https://www.chessprogramming.org/Jazz",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Jazz",
           "listed_name": "Jazz",
           "url": "https://chessprogramming.org/Engines#alphabetical-list",
           "listing_url": "https://chessprogramming.org/Engines",
@@ -145318,6 +146529,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Jellyfish",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "author": "Mike Dokken",
+          "project_url": "https://www.chessprogramming.org/Jellyfish",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Jellyfish 1.1",
@@ -147537,6 +148757,15 @@
           "source": "ssdf"
         },
         {
+          "label": "Jonny",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU",
+          "author": "Johannes Zwanzger",
+          "project_url": "https://www.chessprogramming.org/Jonny",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Jonny 4.00",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -148089,6 +149318,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Jumbo",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; Winboard",
+          "author": "Sven Schüle",
+          "project_url": "https://www.chessprogramming.org/Jumbo",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Jumbo 0.7.0 bb",
@@ -149092,6 +150330,15 @@
           "section": "SSDF rating list",
           "checked_at": "2026-10-19T01:00:17.865883+00:00",
           "source": "ssdf"
+        },
+        {
+          "label": "Junior",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Amir Ban, Shay Bushinsky",
+          "project_url": "https://www.chessprogramming.org/Junior",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Junior",
@@ -156206,6 +157453,15 @@
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
         },
         {
+          "label": "Koivisto",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical hybrid with NNUE on CPU; C++17",
+          "author": "Kim Kåhre, Finn Eggers",
+          "project_url": "https://www.chessprogramming.org/Koivisto",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Koivisto 4.83 popcnt avx",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -160907,6 +162163,13 @@
           "project_url": "https://github.com/ksw0518/Laminar",
           "source": "openbench-mattbench",
           "checked_at": "2026-10-19T04:08:47.802480+00:00"
+        },
+        {
+          "label": "Laminar",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_invite_if_author_contacts",
+          "section": "Not playing, invite if author contacts",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -161762,6 +163025,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Laser",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++11",
+          "author": "Jeffrey An, Michael An",
+          "project_url": "https://www.chessprogramming.org/Laser",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Laser 1.7 bmi2",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -162585,7 +163857,9 @@
       "aliases": [
         "Lc0",
         "LC0",
+        "LCZero",
         "Leela",
+        "Leela Chess Zero",
         "Leela-dag-preview"
       ],
       "provenance": [
@@ -163485,6 +164759,23 @@
           "detail_url": "https://ssdf.bosjo.net/nr001.htm",
           "checked_at": "2026-10-19T01:00:17.865883+00:00",
           "source": "ssdf"
+        },
+        {
+          "label": "LCZero 0.33-dev-b027d7f9-BT4-tf13tune-int8",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Premier_Division",
+          "section": "S30 Premier Division",
+          "comment": "(S29 DivP 3rd) Updated for S30 Swiss",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
+          "label": "Leela Chess Zero",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NN on GPU; C++14",
+          "author": "Gary Linscott, Alexander Lyashuk, ..., ...",
+          "project_url": "https://www.chessprogramming.org/Leela_Chess_Zero",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Leela Chess Zero",
@@ -166976,6 +168267,15 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "Lizard",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C#",
+          "author": "Liam McGuire",
+          "project_url": "https://github.com/liamt19/Lizard",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         }
       ],
       "source_code": [
@@ -166993,6 +168293,11 @@
           "url": "https://github.com/liamt19/Lizard",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/liamt19/Lizard",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -170309,6 +171614,23 @@
           "source": "rwbc"
         },
         {
+          "label": "Lynx",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C#",
+          "author": "Eduardo Cáceres",
+          "project_url": "https://github.com/lynx-chess/Lynx",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Lynx 1.11.0-dev-a18e99fc",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_1_Playoff",
+          "section": "S30 Category 1 Playoff",
+          "comment": "(S30 Category 1 9nth) Updated for S30 Swiss (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Lynx 1.11.0",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -170343,6 +171665,11 @@
           "url": "https://github.com/lynx-chess/Lynx",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/lynx-chess/Lynx",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -170529,6 +171856,42 @@
         "licensing": "open_source",
         "confidence": "high",
         "checked_at": "2026-10-19T16:50:00+00:00"
+      }
+    },
+    {
+      "name": "M4sseur",
+      "aliases": [],
+      "provenance": [
+        {
+          "label": "M4sseur 1.0",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_invite_if_author_contacts",
+          "section": "Not playing, invite if author contacts",
+          "comment": "(S28 4K V 5th) Updated for S26 4K III (update needed)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
+          "label": "M4sseur**",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++20; 4k event engine (fits in 4096 bytes)",
+          "author": "Maik Guntermann",
+          "project_url": "https://github.com/Diazepawn/M4sseur",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        }
+      ],
+      "source_code": [
+        {
+          "url": "https://github.com/Diazepawn/M4sseur",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
+        }
+      ],
+      "chessprogramming_wiki": {
+        "status": "not_checked",
+        "url": null,
+        "title": null,
+        "checked_at": null
       }
     },
     {
@@ -172932,6 +174295,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Mantissa",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; Rust 1.56.1",
+          "author": "Jeremy T. Wright",
+          "project_url": "https://www.chessprogramming.org/Mantissa",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Mantissa 2.1.1",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -174099,6 +175471,23 @@
           "section": "SSDF rating list",
           "checked_at": "2026-10-19T01:00:17.865883+00:00",
           "source": "ssdf"
+        },
+        {
+          "label": "Marvin",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C",
+          "author": "Martin Danielsson",
+          "project_url": "https://www.chessprogramming.org/Marvin",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Marvin 6.3.0",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_invite_if_author_contacts",
+          "section": "Not playing, invite if author contacts",
+          "comment": "(Since S27, S27 EL 16th) Updated for S26 FRD 2, last played in S27 EL (update needed)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         },
         {
           "label": "Marvin 6.3.0 avx2 HCE",
@@ -180833,6 +182222,23 @@
           "source": "rwbc"
         },
         {
+          "label": "Minic",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++17",
+          "author": "Vivien Clauzon",
+          "project_url": "https://www.chessprogramming.org/Minic",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Minic 3.45",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_1_Playoff",
+          "section": "S30 Category 1 Playoff",
+          "comment": "(S30 Category 1 3rd) Settings updated for S29 FRD",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Minic 2.46 skylake",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -182050,6 +183456,24 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "MinkoChess",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Borko Bošković",
+          "project_url": "https://www.chessprogramming.org/MinkoChess",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Umko",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Borko Bošković",
+          "project_url": "https://www.chessprogramming.org/MinkoChess",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "MinkoChess 1.3 popcnt JA",
@@ -183347,6 +184771,33 @@
       }
     },
     {
+      "name": "molly",
+      "aliases": [],
+      "provenance": [
+        {
+          "label": "molly e317a0c7b8",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S31_4K_VIII",
+          "section": "S31 4K VIII",
+          "comment": "(S30 4K VII 6th) Updated for S27 4K",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        }
+      ],
+      "source_code": [
+        {
+          "url": "https://codeberg.org/latuernich/molly",
+          "evidence_url": "https://wiki.chessdom.org/Molly_questionnaire_20251015",
+          "source": "tcec-wiki"
+        }
+      ],
+      "chessprogramming_wiki": {
+        "status": "not_checked",
+        "url": null,
+        "title": null,
+        "checked_at": null
+      }
+    },
+    {
       "name": "Molybdenum",
       "aliases": [],
       "provenance": [
@@ -184440,6 +185891,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Monolith",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Jonas Mayr",
+          "project_url": "https://www.chessprogramming.org/Monolith",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Monolith 2 pext",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -184756,6 +186216,23 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Monty",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "MCTS on CPU; Rust",
+          "author": "Jamie Whiting, Viren",
+          "project_url": "https://github.com/official-monty/Monty",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Monty dev-20261001-0950aff1",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_1_Playoff",
+          "section": "S30 Category 1 Playoff",
+          "comment": "(New engine in S29, S30 Category 1 5th) Updated for S30 Swiss (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -184788,6 +186265,11 @@
           "url": "https://github.com/official-monty/Monty",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/official-monty/Monty",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -184944,6 +186426,33 @@
         "licensing": "unknown",
         "confidence": "low",
         "checked_at": "2026-10-20T12:04:11+00:00"
+      }
+    },
+    {
+      "name": "moonfish",
+      "aliases": [],
+      "provenance": [
+        {
+          "label": "moonfish",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "project_url": "https://moonfish.neocities.org",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        }
+      ],
+      "source_code": [
+        {
+          "url": "https://git.sr.ht/~zamfofex/moonfish",
+          "evidence_url": "https://moonfish.neocities.org",
+          "source": "tcec-wiki"
+        }
+      ],
+      "chessprogramming_wiki": {
+        "status": "not_checked",
+        "url": null,
+        "title": null,
+        "checked_at": null
       }
     },
     {
@@ -186774,6 +188283,7 @@
     {
       "name": "Mr Bob",
       "aliases": [
+        "Mr_Bob",
         "MrBob"
       ],
       "provenance": [
@@ -187001,6 +188511,23 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Mr Bob",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++11",
+          "author": "Vincent Yu",
+          "project_url": "https://www.chessprogramming.org/Mr_Bob",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Mr_Bob 81deaf4c",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_2_Playoff",
+          "section": "S30 Category 2 Playoff",
+          "comment": "(S30 Category 2 11th) Updated for S30 Long testing",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         },
         {
           "label": "Mr Bob 1.1.0 popcnt",
@@ -188989,6 +190516,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Myrddin",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU",
+          "author": "John Merlino",
+          "project_url": "https://www.chessprogramming.org/Myrddin",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Myrddin 0.90 sse4 JA",
@@ -191068,6 +192604,15 @@
           "source": "computer-chess-org"
         },
         {
+          "label": "Naraku",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "author": "Marco Meloni",
+          "project_url": "https://www.chessprogramming.org/Naraku",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Naraku 1.4",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -192634,6 +194179,15 @@
           "source": "ssdf"
         },
         {
+          "label": "Naum",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Alexander Naumov",
+          "project_url": "https://www.chessprogramming.org/Naum",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Naum 4.6",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -193252,6 +194806,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Nebula",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU",
+          "author": "Dragan Zdravkovic",
+          "project_url": "https://www.chessprogramming.org/Nebula",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Nebula 2.0 PopCnt",
@@ -194220,6 +195783,15 @@
         },
         {
           "label": "Nemo",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "author": "Michael Hoffmann",
+          "project_url": "https://www.chessprogramming.org/Nemo",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Nemo",
           "listed_name": "Nemo",
           "url": "https://chessprogramming.org/Engines#alphabetical-list",
           "listing_url": "https://chessprogramming.org/Engines",
@@ -194647,6 +196219,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Nemorino",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++",
+          "author": "Christian Günther",
+          "project_url": "https://www.chessprogramming.org/Nemorino",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Nemorino 6.11 avx2 JA HCE",
@@ -197036,8 +198617,20 @@
     },
     {
       "name": "Nightmare NL",
-      "aliases": [],
+      "aliases": [
+        "Nightmare"
+      ],
       "provenance": [
+        {
+          "label": "Nightmare",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU",
+          "author": "Joost Buijs",
+          "project_url": "https://www.chessprogramming.org/Nightmare_NL",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00",
+          "identity_evidence_url": "https://www.chessprogramming.org/Nightmare_NL"
+        },
         {
           "label": "Nightmare by Joost Buijs",
           "listed_name": "Nightmare",
@@ -197705,6 +199298,7 @@
     {
       "name": "NirvanaChess",
       "aliases": [
+        "Nirvana",
         "Nirvanachess"
       ],
       "provenance": [
@@ -198273,6 +199867,16 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Nirvana",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Thomas Kolarik",
+          "project_url": "https://www.chessprogramming.org/Nirvanachess",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00",
+          "identity_evidence_url": "https://www.chessprogramming.org/Nirvanachess"
         },
         {
           "label": "Nirvanachess 2.5 popcount",
@@ -201699,6 +203303,23 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "Obsidian",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++",
+          "author": "Gabriele Lombardo",
+          "project_url": "https://github.com/gab8192/Obsidian",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Obsidian dev-16.15",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_League_1",
+          "section": "S30 League 1",
+          "comment": "(S29 DivP 7th) Updated for S29 Long testing (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -201726,6 +203347,11 @@
           "url": "https://github.com/gab8192/Obsidian",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/gab8192/Obsidian",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -202102,6 +203728,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Octochess",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Tim Kosse",
+          "project_url": "https://www.chessprogramming.org/Octochess",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Octochess revision 5190 sse4",
@@ -203455,6 +205090,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Onno",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Onno Garms",
+          "project_url": "https://www.chessprogramming.org/Onno",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Deep Onno 1-2-70",
@@ -206784,6 +208428,23 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "Patricia",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++",
+          "author": "Adam Kulju",
+          "project_url": "https://github.com/Adam-Kulju/Patricia",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Patricia 5.1-dev-67d83d70",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_1_Playoff",
+          "section": "S30 Category 1 Playoff",
+          "comment": "(S30 Category 1 10th) Updated for S30 Category 1 Playoff (automatic updates) (category 1)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -206816,6 +208477,11 @@
           "url": "https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/patricia/src.7z",
           "evidence_url": "https://github.com/lukasmonk/lucaschessR6/tree/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/patricia",
           "source": "lucas-chess"
+        },
+        {
+          "url": "https://github.com/Adam-Kulju/Patricia",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -207879,6 +209545,22 @@
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
         },
         {
+          "label": "Pawnocchio",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; Zig",
+          "project_url": "https://github.com/JonathanHallstrom/pawnocchio",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Pawnocchio dev-3c9d7cd4",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_League_1",
+          "section": "S30 League 1",
+          "comment": "(L1 4th) Updated for S30 Swiss (automatic updates) (category 2)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Pawnocchio 1.9 HCE znver3",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -207913,6 +209595,11 @@
           "url": "https://github.com/JonathanHallstrom/pawnocchio",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/JonathanHallstrom/pawnocchio",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -208252,6 +209939,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Pawny",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "author": "Mincho Georgiev",
+          "project_url": "https://www.chessprogramming.org/Pawny",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Pawny 0.2.1",
@@ -210087,6 +211783,15 @@
           "source": "ssdf"
         },
         {
+          "label": "Pedone",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical hybrid with NNUE on CPU; C",
+          "author": "Fabio Gobbato",
+          "project_url": "https://www.chessprogramming.org/Pedone",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Pedone 2.1 bmi2",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -211054,6 +212759,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "PeSTO",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Ronald Friederich",
+          "project_url": "https://www.chessprogramming.org/PeSTO",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "PeSTO 2.210 bmi2",
@@ -212707,6 +214421,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Philou",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; Delphi",
+          "author": "Philippe Gailhac",
+          "project_url": "https://www.chessprogramming.org/Philou",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Philou",
@@ -214381,6 +216104,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Pirarucu",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; Kotlin",
+          "author": "Raoni Campos",
+          "project_url": "https://www.chessprogramming.org/Pirarucu",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Pirarucu 3.3.5 AB",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -215302,6 +217034,23 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "PlentyChess",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++17",
+          "author": "Patrick Leonhardt",
+          "project_url": "https://github.com/Yoshie2000/PlentyChess",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "PlentyChess 8.0.5",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Premier_Division",
+          "section": "S30 Premier Division",
+          "comment": "(S29 DivP 4th) Updated for S30 Swiss (automatic updates) (category 1)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -215324,6 +217073,11 @@
           "url": "https://github.com/Yoshie2000/PlentyChess",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/Yoshie2000/PlentyChess",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -218219,6 +219973,14 @@
           "source": "rwbc"
         },
         {
+          "label": "Potential 8bda32a2",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_1_Playoff",
+          "section": "S30 Category 1 Playoff",
+          "comment": "(New engine in S30, S30 Category 1 1st) Updated for S30 Swiss (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Potential 3.0.0 haswell",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -219049,6 +220811,23 @@
           "project_url": "https://github.com/Quinniboi10/Prelude",
           "source": "openbench-mattbench",
           "checked_at": "2026-10-19T04:08:47.802480+00:00"
+        },
+        {
+          "label": "Prelude",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++",
+          "author": "Quinniboi10",
+          "project_url": "https://github.com/Quinniboi10/Prelude",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Prelude 31d8f5b7",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_invite_if_author_contacts",
+          "section": "Not playing, invite if author contacts",
+          "comment": "(S28 new -> Category 2 11th) New in S28 Cat2 Playoff (automatic updates) (update needed)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -219061,6 +220840,11 @@
           "url": "https://github.com/Quinniboi10/Prelude",
           "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Prelude+2.1+64-bit",
           "source": "ccrl"
+        },
+        {
+          "url": "https://github.com/Quinniboi10/Prelude",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -219699,6 +221483,23 @@
           "source": "rwbc"
         },
         {
+          "label": "Princhess",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "MCTS on CPU; Rust",
+          "author": "Lana Samson",
+          "project_url": "https://github.com/princesslana/princhess",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Princhess 0.22.0-16-gcf9e2b1",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_1_Playoff",
+          "section": "S30 Category 1 Playoff",
+          "comment": "(S30 Category 1 8th) Updated for S30 Swiss (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Princhess 0.4.0",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -219740,6 +221541,11 @@
           "url": "https://github.com/princesslana/princhess",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/princesslana/princhess",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -220464,6 +222270,15 @@
           "section": "SSDF rating list",
           "checked_at": "2026-10-19T01:00:17.865883+00:00",
           "source": "ssdf"
+        },
+        {
+          "label": "ProDeo",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU",
+          "author": "Ed Schröder",
+          "project_url": "https://www.chessprogramming.org/ProDeo",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "ProDeo 1.8.1",
@@ -222009,6 +223824,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Protector",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "author": "Raimund Heid",
+          "project_url": "https://www.chessprogramming.org/Protector",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Protector 1.9.0 bmi2 JA",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -222486,6 +224310,14 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Prune 2d90503",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_2_Playoff",
+          "section": "S30 Category 2 Playoff",
+          "comment": "(New engine in S30, S30 Category 2 3rd) Updated for S30 Swiss (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -225062,6 +226894,41 @@
       }
     },
     {
+      "name": "pygone",
+      "aliases": [],
+      "provenance": [
+        {
+          "label": "pygone 2-11b142",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S31_4K_VIII",
+          "section": "S31 4K VIII",
+          "comment": "(S30 4K VII 7th) Updated for S30 4K",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
+          "label": "pygone**",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; Python; 4k event engine (fits in 4096 bytes)",
+          "project_url": "https://github.com/scs-ben/pygone",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        }
+      ],
+      "source_code": [
+        {
+          "url": "https://github.com/scs-ben/pygone",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
+        }
+      ],
+      "chessprogramming_wiki": {
+        "status": "not_checked",
+        "url": null,
+        "title": null,
+        "checked_at": null
+      }
+    },
+    {
       "name": "Pyotr",
       "aliases": [],
       "provenance": [
@@ -225661,6 +227528,14 @@
           "source": "rwbc"
         },
         {
+          "label": "PZChessBot 20260928-b61e562-dev",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_2_Playoff",
+          "section": "S30 Category 2 Playoff",
+          "comment": "(New engine in S30, S30 Category 2 4th) Updated for S30 Category 2 Playoff (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "PZChessBot 20250311T07 bmi2 JA",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -226238,6 +228113,23 @@
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
         },
         {
+          "label": "Quanticade",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C",
+          "author": "Martin Botka",
+          "project_url": "https://github.com/Quanticade/Quanticade",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Quanticade Phoenix-4.0-Dev-bc10d13",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_League_2",
+          "section": "S30 League 2",
+          "comment": "(S29 L2 5th) Updated for S30 Swiss (automatic updates) (category 3)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Quanticade Aurora 0.8 HCE",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -226278,6 +228170,11 @@
           "evidence_url": "https://github.com/Quanticade/Quanticade",
           "source": "source-status-research",
           "kind": "original repository release tag (Aurora 0.8)"
+        },
+        {
+          "url": "https://github.com/Quanticade/Quanticade",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -226674,6 +228571,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Quazar",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++11",
+          "author": "Dmitry Morozov",
+          "project_url": "https://www.chessprogramming.org/Quazar",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Quazar 0.4",
@@ -229092,6 +230998,14 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "Raphael 4.3.0-dev-acd050b",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_2_Playoff",
+          "section": "S30 Category 2 Playoff",
+          "comment": "(New engine in S30, S30 Category 2 1st) Updated for S30 Swiss (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -229268,6 +231182,16 @@
           "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/2441.html",
           "checked_at": "2026-10-19T01:00:15.809575+00:00",
           "source": "cegt",
+          "identity_evidence_url": "https://chessprogramming.org/Raptor_LU"
+        },
+        {
+          "label": "Raptor",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU",
+          "author": "Steve Webber",
+          "project_url": "https://www.chessprogramming.org/Raptor_LU",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00",
           "identity_evidence_url": "https://chessprogramming.org/Raptor_LU"
         },
         {
@@ -231774,6 +233698,23 @@
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
         },
         {
+          "label": "Reckless",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; Rust",
+          "author": "Arseniy Surkov, Shahin M. Shahin",
+          "project_url": "https://github.com/codedeliveryservice/Reckless",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Reckless 0.10.0-dev-31d9cd6f",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Premier_Division",
+          "section": "S30 Premier Division",
+          "comment": "(S29 Sufi 2nd) Updated for S30 Swiss (automatic updates) (category 1)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Reckless 0.4.0",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -231798,6 +233739,11 @@
           "url": "https://github.com/codedeliveryservice/Reckless",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/codedeliveryservice/Reckless",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -232150,6 +234096,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "RedQueen",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Ben-Hur Carlos Vieira Langoni Junior",
+          "project_url": "https://www.chessprogramming.org/RedQueen",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "RedQueen 1.1.4",
@@ -232936,6 +234891,23 @@
           "source": "rwbc"
         },
         {
+          "label": "Renegade",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++20",
+          "author": "Krisztián Peőcz",
+          "project_url": "https://github.com/pkrisz99/Renegade",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Renegade 1.3.1",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Entrance_League",
+          "section": "S30 Entrance League",
+          "comment": "(S29 EL 10th) Updated for S30 Long testing (automatic updates) (category 2)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Renegade 1.2.0 bmi2 HCE",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -232965,6 +234937,11 @@
           "url": "https://github.com/pkrisz99/Renegade",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/pkrisz99/Renegade",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -233891,6 +235868,23 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "Revenge",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C",
+          "author": "Fabio Gobbato",
+          "project_url": "https://www.chessprogramming.org/Revenge",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Revenge 20241013",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_invite_if_author_contacts",
+          "section": "Not playing, invite if author contacts",
+          "comment": "(S28 L1 11th) Updated for S27 L1 before EL, Settings updated for S28 Swiss 8 (update needed)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         },
         {
           "label": "Revenge",
@@ -235817,6 +237811,15 @@
           "checked_at": "2026-10-18T20:11:36.605669+00:00"
         },
         {
+          "label": "Roc",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Tom Hyer",
+          "project_url": "https://www.chessprogramming.org/Roc",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Roc 2.0.5",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -237063,6 +239066,15 @@
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
         },
         {
+          "label": "Rodent",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; CPW",
+          "author": "Pawel Koziol",
+          "project_url": "https://www.chessprogramming.org/Rodent",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Rodent IV 0.30 bmi2",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -237864,6 +239876,23 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "rofChade",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++",
+          "author": "Ronald Friederich",
+          "project_url": "https://www.chessprogramming.org/RofChade",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "rofChade 3.211D_Chess",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Entrance_League",
+          "section": "S30 Entrance League",
+          "comment": "(S29 L2 9th) Updated for S30 Long testing",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         },
         {
           "label": "rofChade 2.3 bmi2",
@@ -239068,6 +241097,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Rotor",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Jan Brouwer",
+          "project_url": "https://www.chessprogramming.org/Rotor",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Rotor 0.7a",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -239952,6 +241990,23 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "RubiChess",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++",
+          "author": "Andreas Matthies",
+          "project_url": "https://www.chessprogramming.org/RubiChess",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "RubiChess 20260926",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_League_1",
+          "section": "S30 League 1",
+          "comment": "(S29 L1 7th) Updated for S30 Swiss (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         },
         {
           "label": "RubiChess 20240817 bmi2 HCE",
@@ -243100,6 +245155,15 @@
           "source": "ssdf"
         },
         {
+          "label": "Rybka",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "author": "Vasik Rajlich",
+          "project_url": "https://www.chessprogramming.org/Rybka",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Deep Rybka 4.1 SSE42 x64",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -245395,6 +247459,23 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Sapling",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C#",
+          "author": "Tim Jones",
+          "project_url": "https://github.com/Timmoth/Sapling",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Sapling 1.2.7",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_invite_if_author_contacts",
+          "section": "Not playing, invite if author contacts",
+          "comment": "(S28 new -> Category 2 12th) New in S28 Cat2 Playoff (update needed, game length update not tested)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -245412,6 +247493,11 @@
           "url": "https://github.com/Timmoth/Sapling",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/Timmoth/Sapling",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -247226,6 +249312,13 @@
           "project_url": "https://github.com/Jochengehtab/Schoenemann",
           "source": "openbench-furybench",
           "checked_at": "2026-10-19T04:08:11.937178+00:00"
+        },
+        {
+          "label": "Schoenemann",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_invite_if_author_contacts",
+          "section": "Not playing, invite if author contacts",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -247720,6 +249813,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Schooner",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "author": "Dennis Sceviour",
+          "project_url": "https://www.chessprogramming.org/Schooner",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Schooner 2.2 sse",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -248087,7 +250189,9 @@
     },
     {
       "name": "Scorpio",
-      "aliases": [],
+      "aliases": [
+        "ScorpioNN"
+      ],
       "provenance": [
         {
           "label": "Scorpio *8",
@@ -248783,6 +250887,23 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "ScorpioNN",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NN on GPU with NNUE helper on CPU; C++ / Tensorflow",
+          "author": "Daniel Shawul",
+          "project_url": "https://www.chessprogramming.org/Scorpio#ScorpioNN",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "ScorpioNN 3.0.15.13-s",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_invite_if_author_contacts",
+          "section": "Not playing, invite if author contacts",
+          "comment": "(S28 EL 12th) Updated for S28 Swiss 8 (update needed)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         },
         {
           "label": "Scorpio 2.8.5",
@@ -250667,6 +252788,23 @@
         },
         {
           "label": "Seer",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++17",
+          "author": "Connor McMonigle",
+          "project_url": "https://www.chessprogramming.org/Seer",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Seer cf18bf0a",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Entrance_League",
+          "section": "S30 Entrance League",
+          "comment": "(S29 L2 11th) Updated for S30 Long testing (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
+          "label": "Seer",
           "listed_name": "Seer",
           "url": "https://chessprogramming.org/Engines#alphabetical-list",
           "listing_url": "https://chessprogramming.org/Engines",
@@ -251134,6 +253272,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Senpai",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++11",
+          "author": "Fabien Letouzey",
+          "project_url": "https://www.chessprogramming.org/Senpai",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Senpai 3.0 bmi2 JA",
@@ -251673,6 +253820,22 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Serendipity",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; Java",
+          "author": "Shawn Xu",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Serendipity 072cb43e",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_3_Playoff",
+          "section": "S30 Category 3 Playoff",
+          "comment": "(S30 Category 3+4 3rd) Updated for S30 Long testing (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -255270,6 +257433,15 @@
           "source": "ssdf"
         },
         {
+          "label": "Shredder",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "author": "Stefan Meyer-Kahlen",
+          "project_url": "https://www.chessprogramming.org/Shredder",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Deep Shredder 12",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -257888,6 +260060,23 @@
           "checked_at": "2026-10-19T04:08:14.450203+00:00"
         },
         {
+          "label": "Sirius",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "mcthouacbb",
+          "project_url": "https://github.com/mcthouacbb/Sirius",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Sirius b8761654",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_1_Playoff",
+          "section": "S30 Category 1 Playoff",
+          "comment": "(S30 Category 1 6th) Updated for S30 Long testing (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Sirius 9.0 v3",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -257912,6 +260101,11 @@
           "url": "https://github.com/mcthouacbb/Sirius",
           "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Sirius+9.0+64-bit+4CPU",
           "source": "ccrl"
+        },
+        {
+          "url": "https://github.com/mcthouacbb/Sirius",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -259130,6 +261324,15 @@
           "source": "ssdf"
         },
         {
+          "label": "Sjeng",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "author": "Gian-Carlo Pascutto",
+          "project_url": "https://www.chessprogramming.org/Sjeng",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Deep Sjeng c't 2010",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -260126,7 +262329,9 @@
     },
     {
       "name": "Slow Chess",
-      "aliases": [],
+      "aliases": [
+        "SlowChess"
+      ],
       "provenance": [
         {
           "label": "Slow Chess Blitz",
@@ -260689,6 +262894,15 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "SlowChess",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C/C++",
+          "author": "Jonathan Kreuzer",
+          "project_url": "https://www.chessprogramming.org/Slow_Chess",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Slow Chess Classic 2.4 HCE",
@@ -261561,6 +263775,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Smallbrain",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++17",
+          "author": "Max Allendorf",
+          "project_url": "https://github.com/Disservin/Smallbrain",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         }
       ],
       "source_code": [
@@ -261588,6 +263811,11 @@
           "url": "https://github.com/Disservin/Smallbrain/",
           "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Smallbrain+7.0+64-bit+4CPU",
           "source": "ccrl"
+        },
+        {
+          "url": "https://github.com/Disservin/Smallbrain",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -265073,6 +267301,32 @@
       }
     },
     {
+      "name": "Soul",
+      "aliases": [],
+      "provenance": [
+        {
+          "label": "Soul",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_invite_if_author_contacts",
+          "section": "Not playing, invite if author contacts",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        }
+      ],
+      "source_code": [
+        {
+          "url": "https://github.com/Aethdv/Soul",
+          "evidence_url": "https://wiki.chessdom.org/Soul_questionnaire_20260620",
+          "source": "tcec-wiki"
+        }
+      ],
+      "chessprogramming_wiki": {
+        "status": "not_checked",
+        "url": null,
+        "title": null,
+        "checked_at": null
+      }
+    },
+    {
       "name": "Space",
       "aliases": [],
       "provenance": [
@@ -265447,6 +267701,23 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Spaghet",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++20",
+          "author": "Li Ying",
+          "project_url": "https://github.com/yl25946/spaghet",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Spaghet BologNNese_1.1.3-0c3b1a88",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_invite_if_author_contacts",
+          "section": "Not playing, invite if author contacts",
+          "comment": "(S28 Category 3 3rd) Updated for S28 Cat3 Playoff (automatic updates) (update needed)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -265469,6 +267740,11 @@
           "url": "https://github.com/yl25946/spaghet",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/yl25946/spaghet",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -265861,6 +268137,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Spark",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Allard Siemelink",
+          "project_url": "https://www.chessprogramming.org/Spark",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Spark 1.0 mp-corei",
@@ -266829,6 +269114,15 @@
           "source": "ssdf"
         },
         {
+          "label": "Spike",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++ / Java",
+          "author": "Ralf Schäfer, Volker Böhm",
+          "project_url": "https://www.chessprogramming.org/Spike",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Spike 1.4 Leiden",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -267210,6 +269504,33 @@
         "licensing": "unknown",
         "confidence": "low",
         "checked_at": "2026-10-20T13:34:47+00:00"
+      }
+    },
+    {
+      "name": "SSSimpler",
+      "aliases": [],
+      "provenance": [
+        {
+          "label": "SSSimpler dev-fe85b326",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_2_Playoff",
+          "section": "S30 Category 2 Playoff",
+          "comment": "(New engine in S30, S30 Category 2 7th) Updated for S30 Long testing (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        }
+      ],
+      "source_code": [
+        {
+          "url": "https://github.com/Kirill020708/SSSimpler",
+          "evidence_url": "https://wiki.chessdom.org/SSSimpler_questionnaire_20260617",
+          "source": "tcec-wiki"
+        }
+      ],
+      "chessprogramming_wiki": {
+        "status": "not_checked",
+        "url": null,
+        "title": null,
+        "checked_at": null
       }
     },
     {
@@ -267924,6 +270245,23 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "Starzix",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++",
+          "author": "zzzzz151",
+          "project_url": "https://github.com/zzzzz151/Starzix",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Starzix 2a1577fb",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_invite_if_author_contacts",
+          "section": "Not playing, invite if author contacts",
+          "comment": "(S28 L2 9th) Updated for S28 EL (update needed)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -267946,6 +270284,11 @@
           "url": "https://github.com/zzzzz151/z5",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/zzzzz151/Starzix",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -268361,6 +270704,23 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Stash",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "author": "Morgan Houppin",
+          "project_url": "https://www.chessprogramming.org/Stash",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Stash 37.24",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_1_Playoff",
+          "section": "S30 Category 1 Playoff",
+          "comment": "(S30 Category 1 7th) Updated for S30 HCE (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         },
         {
           "label": "Stash 37.0 bmi2",
@@ -269050,6 +271410,23 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "StockDory",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE (CPU based); C++",
+          "author": "Shaheryar Sohail",
+          "project_url": "https://github.com/TheBlackPlague/StockDory",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "StockDory Starfish-0.1",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_invite_if_author_contacts",
+          "section": "Not playing, invite if author contacts",
+          "comment": "(Since S27, S26 Swiss 6 43rd) Last updated for S26 Swiss 6, update needed, no update (update needed)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -269067,6 +271444,11 @@
           "url": "https://github.com/TheBlackPlague/StockDory",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/TheBlackPlague/StockDory",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -271811,6 +274193,23 @@
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
         },
         {
+          "label": "Stockfish",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++17",
+          "author": "Gary Linscott, Stephane Nicolet, Joost VandeVondele",
+          "project_url": "https://www.chessprogramming.org/Stockfish",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Stockfish dev-20260930-m-49ea5ded",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Premier_Division",
+          "section": "S30 Premier Division",
+          "comment": "(S29 Sufi 1st) Updated for S30 Swiss (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Stockfish 16 avx2 HCE",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -272115,6 +274514,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "StockNemo",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE (CPU based); C#",
+          "author": "Shaheryar Sohail",
+          "project_url": "https://github.com/TheBlackPlague/StockNemo",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         }
       ],
       "source_code": [
@@ -272127,6 +274535,11 @@
           "url": "https://github.com/TheBlackPlague/StockNemo",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
           "source": "rwbc"
+        },
+        {
+          "url": "https://github.com/TheBlackPlague/StockNemo",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -272499,6 +274912,23 @@
           "detail_url": "http://www.cegt.net/40_4_Ratinglist/40_4_AllVersion/136.html",
           "checked_at": "2026-10-19T01:00:15.809575+00:00",
           "source": "cegt"
+        },
+        {
+          "label": "Stoofvlees",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NN on GPU; C++14",
+          "author": "Gian-Carlo Pascutto",
+          "project_url": "https://www.chessprogramming.org/Stoofvlees",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Stoofvlees II d10",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Entrance_League",
+          "section": "S30 Entrance League",
+          "comment": "(S29 L2 12th) Updated for S28 Cup 15",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         },
         {
           "label": "Stoofvlees",
@@ -273098,6 +275528,23 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "Stormphrax",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++",
+          "author": "Conor Anstey",
+          "project_url": "https://github.com/Ciekce/Stormphrax",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Stormphrax 8.0.3_d1468d9",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_League_2",
+          "section": "S30 League 2",
+          "comment": "(S29 L1 10th) Updated for S30 Swiss (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -273130,6 +275577,11 @@
           "url": "https://github.com/Ciekce/Stormphrax",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/Ciekce/Stormphrax",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -273510,6 +275962,30 @@
           "source": "cegt"
         },
         {
+          "label": "STRO4K 6.0",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S31_4K_ELF_III",
+          "section": "S31 4K ELF III",
+          "comment": "(S30 4K ELF II 2nd) Updated for S30 4K ELF",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
+          "label": "STRO4K 6.0",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S31_4K_VIII",
+          "section": "S31 4K VIII",
+          "comment": "(S30 4K VII 5th) Updated for S30 4K ELF",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
+          "label": "STRO4K**",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; Assembler; 4k event engine (fits in 4096 bytes)",
+          "project_url": "https://github.com/ONE-RANDOM-HUMAN/STRO4K",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "STRO4K 4.0",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -273525,6 +276001,11 @@
           "evidence_url": "https://github.com/ONE-RANDOM-HUMAN/STRO4K",
           "source": "source-status-research",
           "kind": "original repository"
+        },
+        {
+          "url": "https://github.com/ONE-RANDOM-HUMAN/STRO4K",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -274435,6 +276916,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Sunfish**",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; Python; 4k event engine (fits in 4096 bytes)",
+          "author": "Thomas Dybdahl Ahle",
+          "project_url": "https://www.chessprogramming.org/Sunfish",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Sunfish",
@@ -275473,6 +277963,23 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Superultra",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++",
+          "author": "Alexander Liang",
+          "project_url": "https://github.com/A1exL1ang/Superultra",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Superultra 2.1",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_invite_if_author_contacts",
+          "section": "Not playing, invite if author contacts",
+          "comment": "(S28 new -> Category 3 6th) Updated for S28 Cat3 Playoff (update needed)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -275490,6 +277997,11 @@
           "url": "https://github.com/A1exL1ang/Superultra",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/A1exL1ang/Superultra",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -278298,6 +280810,23 @@
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
         },
         {
+          "label": "Tarnished",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++",
+          "author": "Anik P",
+          "project_url": "https://github.com/Bobingstern/Tarnished",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Tarnished 6.0",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_League_2",
+          "section": "S30 League 2",
+          "comment": "(L2 7th) Updated for S30 Long testing (category 2)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Tarnished 1.0 - Renown",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -278327,6 +280856,11 @@
           "url": "https://github.com/Bobingstern/Tarnished",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/Bobingstern/Tarnished",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -278815,6 +281349,14 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Tcheran 14.0-dev-22db5bc5",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_2_Playoff",
+          "section": "S30 Category 2 Playoff",
+          "comment": "(New engine in S30, S30 Category 2 2nd) Updated for S30 Swiss Playoff (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         },
         {
           "label": "Tcheran 5.1 v3",
@@ -280580,6 +283122,23 @@
           "source": "rwbc"
         },
         {
+          "label": "Texel",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++11",
+          "author": "Peter Österlund",
+          "project_url": "https://www.chessprogramming.org/Texel",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Texel 1.13a7",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_invite_if_author_contacts",
+          "section": "Not playing, invite if author contacts",
+          "comment": "(S28 Swiss 8 33th) Updated for S30 Long testing (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Texel 1.08 bmi",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -281062,6 +283621,15 @@
           "section": "SSDF rating list",
           "checked_at": "2026-10-19T01:00:17.865883+00:00",
           "source": "ssdf"
+        },
+        {
+          "label": "The Baron",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; Winboard",
+          "author": "Richard Pijl",
+          "project_url": "https://www.chessprogramming.org/The_Baron",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "The Baron 3.45.1 avx2",
@@ -284882,7 +287450,9 @@
     },
     {
       "name": "Toga",
-      "aliases": [],
+      "aliases": [
+        "Toga II"
+      ],
       "provenance": [
         {
           "label": "Toga, WIKI *24",
@@ -285346,6 +287916,15 @@
           "author": "WHMoweryJr,Thomas Gaksch,Fabien Letouzey",
           "checked_at": "2026-10-18T20:00:56.434824+00:00",
           "source": "lucas-chess"
+        },
+        {
+          "label": "Toga II",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++",
+          "author": "Fabien Letouzey, Thomas Gaksch",
+          "project_url": "https://www.chessprogramming.org/Toga",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Toga II 4.0 bmi2 JA",
@@ -286246,6 +288825,15 @@
           "source": "rwbc"
         },
         {
+          "label": "tomitankChess",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical hybrid with internal NN on CPU; JavaScript",
+          "author": "Tamás Kuzmics",
+          "project_url": "https://www.chessprogramming.org/TomitankChess",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "tomitankChess 5.1 HCE AB",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -286904,6 +289492,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Topple",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++17",
+          "author": "Vincent Yn Tang",
+          "project_url": "https://www.chessprogramming.org/Topple",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Topple 0.8.1 bmi2 JA",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -287160,6 +289757,23 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "Torch",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++",
+          "author": "Andrew Grant, Finn Eggers & Kim Kåhre, Jay Honnold, Michael Whiteley & Dietrich Kappe",
+          "project_url": "https://www.chessprogramming.org/Torch",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Torch 20261001-43345787",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Premier_Division",
+          "section": "S30 Premier Division",
+          "comment": "(S29 DivP 5th) Updated for S30 Swiss (category 1)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [],
@@ -287912,6 +290526,15 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Tornado",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU",
+          "author": "Engin Üstün",
+          "project_url": "https://www.chessprogramming.org/Tornado",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Tornado 8.0",
@@ -289934,6 +292557,23 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Tucano",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C",
+          "author": "Alcides Schulz",
+          "project_url": "https://www.chessprogramming.org/Tucano",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Tucano 12.17",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#Not_playing.2C_invite_if_author_contacts",
+          "section": "Not playing, invite if author contacts",
+          "comment": "(S29 Category 2 9th) Updated for S28 EL (automatic updates) (update needed)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         },
         {
           "label": "Tucano 9.13 GS",
@@ -293320,6 +295960,23 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "Uralochka",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++",
+          "author": "Ivan Maklyakov",
+          "project_url": "https://chessengines.blogspot.com/2022/07/chess-engine-uralochka-337c-nnue.html",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Uralochka 3.42a",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_League_2",
+          "section": "S30 League 2",
+          "comment": "(S29 L2 8th) Updated for S29 Long testing (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         }
       ],
       "source_code": [
@@ -293954,6 +296611,7 @@
     {
       "name": "Vajolet",
       "aliases": [
+        "Vajolet 2",
         "Vajolet2"
       ],
       "provenance": [
@@ -294508,6 +297166,15 @@
           "section": "SSDF rating list",
           "checked_at": "2026-10-19T01:00:17.865883+00:00",
           "source": "ssdf"
+        },
+        {
+          "label": "Vajolet 2",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C++11",
+          "author": "Marco Belli",
+          "project_url": "https://www.chessprogramming.org/Vajolet",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Vajolet2 2.8 bmi",
@@ -295759,6 +298426,23 @@
           "list_updated": "2026-10-04",
           "source": "stefan-pohl",
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
+        },
+        {
+          "label": "Velvet",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; Rust",
+          "author": "Martin Honert",
+          "project_url": "https://www.chessprogramming.org/Velvet",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Velvet 9.0.0-dev7",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Entrance_League",
+          "section": "S30 Entrance League",
+          "comment": "(S29 EL 8th) Updated for S28 L2 (automatic updates, temporarily disabled)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         },
         {
           "label": "Velvet 1.2.0 modern",
@@ -297591,6 +300275,23 @@
           "checked_at": "2026-10-19T00:27:33.637459+00:00"
         },
         {
+          "label": "Viridithas",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; Rust",
+          "author": "Cosmo Bobak, Archishmaan Peyyety, Ciekce",
+          "project_url": "https://github.com/cosmobobak/viridithas",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Viridithas 21.0.0-87b8a37a-87b8a37a",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_League_1",
+          "section": "S30 League 1",
+          "comment": "(S29 L1 8th) Updated for S30 Swiss (automatic updates)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Viridithas 11.0.0 v3 HCE",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -297640,6 +300341,11 @@
           "url": "https://github.com/cosmobobak/virtue",
           "evidence_url": "https://computerchess.org.uk/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Viridithas+20.0.0+64-bit+4CPU",
           "source": "ccrl"
+        },
+        {
+          "url": "https://github.com/cosmobobak/viridithas",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -297937,6 +300643,15 @@
           "project_url": "http://www.vitruviuschess.com/",
           "checked_at": "2026-10-19T18:34:57.193219+00:00",
           "source": "computer-chess-org"
+        },
+        {
+          "label": "Vitruvius",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU",
+          "author": "Roberto Munter",
+          "project_url": "https://www.chessprogramming.org/Vitruvius",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Vitruvius 1.14a HEM",
@@ -299953,6 +302668,23 @@
           "source": "ssdf"
         },
         {
+          "label": "Wasp",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU",
+          "author": "John Stanback",
+          "project_url": "https://www.chessprogramming.org/Wasp",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Wasp 7.16",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Category_2_Playoff",
+          "section": "S30 Category 2 Playoff",
+          "comment": "(S30 Category 2 9th) Updated for S30 Long testing",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Wasp 4.50 modern",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -300560,6 +303292,33 @@
         "licensing": "proprietary",
         "confidence": "medium",
         "checked_at": "2026-10-20T14:14:52+00:00"
+      }
+    },
+    {
+      "name": "we4k",
+      "aliases": [],
+      "provenance": [
+        {
+          "label": "we4k**",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; Assembler & Zig; 4k event engine (fits in 4096 bytes)",
+          "project_url": "https://github.com/ONE-RANDOM-HUMAN/we4k",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        }
+      ],
+      "source_code": [
+        {
+          "url": "https://github.com/ONE-RANDOM-HUMAN/we4k",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
+        }
+      ],
+      "chessprogramming_wiki": {
+        "status": "not_checked",
+        "url": null,
+        "title": null,
+        "checked_at": null
       }
     },
     {
@@ -301712,6 +304471,23 @@
           "source": "rwbc"
         },
         {
+          "label": "Weiss",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "author": "Terje Kirstihagen",
+          "project_url": "https://www.chessprogramming.org/Weiss",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Weiss 2.1-dev-95b0951",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S31_HCE_2_only",
+          "section": "S31 HCE 2 only",
+          "comment": "(S28 Swiss 8 39th, HCE 1 2nd) Updated for S28 Swiss 8 (automatic updates) (update needed for S31 Cat 1 Playoff)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
+        },
+        {
           "label": "Weiss 2.1 dev r746",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -302692,6 +305468,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Willow",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; C++",
+          "author": "Adam Kulju",
+          "project_url": "https://github.com/Adam-Kulju/Willow",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Willow 2.9",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -302731,6 +305516,11 @@
           "url": "https://github.com/Adam-Kulju/Willow",
           "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
           "source": "amateurschach"
+        },
+        {
+          "url": "https://github.com/Adam-Kulju/Willow",
+          "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
+          "source": "tcec-wiki"
         }
       ],
       "chessprogramming_wiki": {
@@ -303542,6 +306332,23 @@
           "declared_count": 1241,
           "checked_at": "2026-10-19T01:17:00.508078+00:00",
           "source": "rwbc"
+        },
+        {
+          "label": "Winter",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical hybrid with internal NN on CPU; C++",
+          "author": "Jonathan Rosenthal",
+          "project_url": "https://www.chessprogramming.org/Winter",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
+          "label": "Winter 5.07a",
+          "url": "https://wiki.chessdom.org/Current_Engine_Status#S30_Entrance_League",
+          "section": "S30 Entrance League",
+          "comment": "(S29 EL 12th) Updated for S30 Swiss (automatic updates) (category 1)",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T19:11:01.266122+00:00"
         },
         {
           "label": "Winter 0.9 New",
@@ -305810,6 +308617,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Xiphos",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU; C",
+          "author": "Milos Tatarevic",
+          "project_url": "https://www.chessprogramming.org/Xiphos",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Xiphos 0.6.1 bmi2",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -308006,6 +310822,15 @@
           "source": "rwbc"
         },
         {
+          "label": "Zahak",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "NNUE on CPU; Go 1.14+/1.17",
+          "author": "Amanj Sherwany",
+          "project_url": "https://www.chessprogramming.org/Zahak",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
+        },
+        {
           "label": "Zahak 6.2",
           "url": "https://e4e6.com/ubc_ratings.php",
           "request_data": {
@@ -308911,6 +311736,15 @@
           "section": "SSDF rating list",
           "checked_at": "2026-10-19T01:00:17.865883+00:00",
           "source": "ssdf"
+        },
+        {
+          "label": "Zappa",
+          "url": "https://wiki.chessdom.org/Engines_and_authors",
+          "comment": "Classical on CPU",
+          "author": "Anthony Cozzie",
+          "project_url": "https://www.chessprogramming.org/Zappa",
+          "source": "tcec-wiki",
+          "checked_at": "2026-10-21T18:48:40.402872+00:00"
         },
         {
           "label": "Zappa Mexico II",

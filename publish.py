@@ -63,6 +63,7 @@ DESCRIPTIONS = {
     "wiki_engines": "Alphabetical engine index on the Chess Programming Wiki.",
     "openbench": "Public OpenBench testing instance: its engine directory and linked repositories.",
     "computer_chess_org": "Computer-Chess Wiki's engine list, including dead and source-only engines.",
+    "tcec_wiki": "TCEC wiki's Engines and authors table and Current Engine Status list, including engines not currently playing.",
     "lichess": "Lichess Selfmade bots team accounts whose engine identities could be established.",
 }
 PROVENANCE_FIELDS = (

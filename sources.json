@@ -138,6 +138,12 @@
     "collector": "computer_chess_org"
   },
   {
+    "id": "tcec-wiki",
+    "name": "TCEC wiki engine lists",
+    "url": "https://wiki.chessdom.org/Engines_and_authors",
+    "collector": "tcec_wiki"
+  },
+  {
     "id": "lichess",
     "name": "Lichess Selfmade bots",
     "url": "https://lichess.org/team/selfmade-bots",

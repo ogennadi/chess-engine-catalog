@@ -27,7 +27,7 @@ python names_pdf.py --paper poster --orientation landscape --max-pages 1 --out d
 
 Print at **100% / actual size** on 48 x 36 inch paper, not scaled to a smaller sheet.
 The generator chooses the largest font that fits all source-available families on
-one page, retaining the archived-copy dagger markers. The current 1,271-family
+one page, retaining the archived-copy dagger markers. The current 1,279-family
 catalog fits at 23 pt (85% horizontal scale). Each column's number field is only as
 wide as its largest index, and leftover width is spread across the gaps between
 columns so the left and right margins match. Family names use Atkinson
@@ -236,6 +236,27 @@ provenance. Direct repository links count as source links; generic homepages
 and download folders do not. This source is pinned to the revision in
 `collectors/engine_programming.py` for reproducible observations; updating that
 constant selects a newer snapshot.
+
+The TCEC wiki's **Engines and authors** page contributes only its Engine
+Information table, not the per-season TCEC appearance table or UCI-option notes.
+Its `**` marker (4k-event engines that fit in 4096 bytes), basic type, language,
+and author are kept in provenance. The page styles AllieStein as "Allie...
+(engine)" and "...Stein (network)"; both map to Allie. Release and network
+suffixes (Fritz 18, Toga II, ScorpioNN, FireNN, Leela Chess Zero, Komodo
+Dragon, ...) map to existing families. Raptor (Steve Webber) is Raptor LU,
+Nightmare (Joost Buijs) is Nightmare NL, and Nirvana is NirvanaChess. Direct
+repository links count as source links; the moonfish homepage links its
+SourceHut repository, which is recorded with the homepage as evidence.
+
+The same `tcec-wiki` source also reads **Current Engine Status**, which lists
+engines by upcoming TCEC event plus two "Not playing" sections (engines TCEC
+will invite, and engines invited only if the author makes contact). Each bolded
+engine becomes a row whose section is kept in provenance; placeholders without a
+bolded name and the "Suggested engines" and "See also" sections are skipped. The
+family is the first word of the bolded name, so "Stoofvlees II d10" is
+Stoofvlees; LCZero, KomodoDragon, DeepSjeng, Bagatur.cpp, and Mr_Bob are aliases.
+The page has no repository links, so reviewed repositories for CatGPT, molly,
+Soul, and SSSimpler come from their TCEC questionnaires, which are the evidence.
 
 Lichess team membership is not proof of a distinct engine family. Non-BOT
 accounts are excluded. BOT accounts are linked by reviewed profile evidence or
