@@ -1,6 +1,6 @@
 """Write a compact, printable PDF listing every family whose source code is available.
 
-    python names_pdf.py [--out PATH] [--paper letter|a4] [--orientation portrait|landscape] [--min-size PT]
+    python names_pdf.py [--out PATH] [--paper letter|a4|poster] [--orientation portrait|landscape] [--min-size PT]
 
 Reads data/engines.json (run collect.py first). Families whose availability is linked,
 available, or archived_only are numbered and listed alphabetically under letter headings,
@@ -8,6 +8,7 @@ in as many columns as fit (portrait pages by default). The default 16 pt minimum
 smallest text that 20/20 vision can read from 9 feet; the largest size up to 4 pt above
 it that still gives the fewest pages is chosen. Uses only the standard library and the PDF base-14 Helvetica fonts,
 horizontally condensed. The output is generated, so it is gitignored.
+For a single 48 x 36 inch landscape poster, use --paper poster --orientation landscape --max-pages 1.
 """
 
 import argparse
@@ -15,12 +16,13 @@ import json
 import zlib
 from datetime import date
 from pathlib import Path
+from urllib.parse import quote, urlsplit
 
 import source_status
 
 ROOT = Path(__file__).resolve().parent
 AVAILABLE = {"linked", "available", "archived_only"}
-PAPER = {"letter": (612, 792), "a4": (595, 842)}
+PAPER = {"letter": (612, 792), "a4": (595, 842), "poster": (36 * 72, 48 * 72)}
 MARGIN = 18
 GUTTER = 6
 LEADING = 1.13
@@ -72,6 +74,54 @@ def entries(catalog=None):
             current = letter
         rows.append((name, False, index))
     return rows, len(names)
+
+
+def preferred_source(engine):
+    """Choose an evidenced URL, favoring research and stable, corroborated repositories."""
+    candidates = {}
+    for code in engine["source_code"]:
+        url = code["url"]
+        parsed = urlsplit(url)
+        if parsed.scheme not in {"http", "https"} or not parsed.hostname:
+            continue
+        candidates.setdefault(url, []).append(code)
+    if not candidates:
+        raise ValueError(f"No HTTP(S) source URL for {engine['name']}")
+
+    def rank(url):
+        codes = candidates[url]
+        parsed = urlsplit(url)
+        reviewed = [c for c in codes if c["source"] == "source-status-research"]
+        caution = any(
+            phrase in c.get("kind", "").casefold()
+            for c in reviewed
+            for phrase in ("site offline", "liveness not checked", "http 521",
+                           "unverified", "not captured", "not all archived", "partial",
+                           "not a full listing", "incomplete")
+        )
+        repository = parsed.hostname in {
+            "github.com", "gitlab.com", "codeberg.org", "bitbucket.org",
+            "git.sr.ht", "sourceforge.net",
+        }
+        bundled = all(c["source"] == "lucas-chess" for c in codes)
+        return (
+            not caution,
+            bool(reviewed),
+            repository and not bundled,
+            len({c["source"] for c in codes}),
+            parsed.scheme == "https",
+        )
+
+    # max preserves the evidence order when equally ranked.
+    return max(candidates, key=rank)
+
+
+def source_links(catalog):
+    return {
+        e["name"] + (DAGGER if source_status.availability_label(e) == "archived_only" else ""):
+        preferred_source(e)
+        for e in catalog["engines"] if source_status.availability_label(e) in AVAILABLE
+    }
 
 
 def number_width(rows, size):
@@ -147,15 +197,15 @@ def pdf_string(text):
     return b"(" + raw.replace(b"\\", b"\\\\").replace(b"(", b"\\(").replace(b")", b"\\)") + b")"
 
 
-def render(rows, count, size, page_size, out):
+def render(rows, count, size, page_size, out, links=None):
     width, height = page_size
     line = size * LEADING
     pages = layout(rows, size, page_size, 2)
     numbers = number_width(rows, size)
     digits = text_width("0", "F1", size)
-    streams = []
+    streams, annotations = [], []
     for number, columns in enumerate(pages, 1):
-        parts = []
+        parts, page_links = [], []
         top = height - MARGIN
         if number == 1:
             title = f"Chess engines with available source code \u2014 {count:,} families"
@@ -186,6 +236,15 @@ def render(rows, count, size, page_size, out):
                 left = MARGIN + x + numbers - size * 0.4 - digits * len(label)
                 parts.append(b"0.45 g /F1 %.2f Tf 1 0 0 1 %.2f %.2f Tm " % (size, left, y) + pdf_string(label) + b" Tj")
                 parts.append(b"0 g 1 0 0 1 %.2f %.2f Tm " % (MARGIN + x + numbers, y) + pdf_string(text) + b" Tj")
+                if links is not None:
+                    url = quote(links[text], safe=":/?#[]@!$&'()*+,;=%")
+                    name_left = MARGIN + x + numbers
+                    page_links.append(
+                        b"<< /Type /Annot /Subtype /Link /Rect [%.2f %.2f %.2f %.2f] "
+                        % (name_left, y - size * 0.22,
+                           name_left + text_width(text, "F1", size), y + size * 0.8)
+                        + b"/Border [0 0 0] /A << /S /URI /URI " + pdf_string(url) + b" >> >>"
+                    )
             parts.append(b"ET")
         footer = f"{number} / {len(pages)}"
         parts.append(
@@ -193,6 +252,7 @@ def render(rows, count, size, page_size, out):
             + pdf_string(footer) + b" Tj ET"
         )
         streams.append(zlib.compress(b"\n".join(parts)))
+        annotations.append(page_links)
 
     objects = [
         b"<< /Type /Catalog /Pages 2 0 R >>",
@@ -201,13 +261,18 @@ def render(rows, count, size, page_size, out):
         b"<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>",
     ]
     kids = []
-    for stream in streams:
+    for stream, page_links in zip(streams, annotations):
         content = len(objects) + 1
         objects.append(b"<< /Length %d /Filter /FlateDecode >>\nstream\n" % len(stream) + stream + b"\nendstream")
+        refs = []
+        for annotation in page_links:
+            refs.append(len(objects) + 1)
+            objects.append(annotation)
         kids.append(len(objects) + 1)
         objects.append(
             b"<< /Type /Page /Parent 2 0 R /MediaBox [0 0 %d %d] " % page_size
-            + b"/Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents %d 0 R >>" % content
+            + b"/Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents %d 0 R " % content
+            + b"/Annots [" + b" ".join(b"%d 0 R" % ref for ref in refs) + b"] >>"
         )
     objects[1] = b"<< /Type /Pages /Kids [%s] /Count %d >>" % (
         b" ".join(b"%d 0 R" % k for k in kids), len(kids)
@@ -236,11 +301,12 @@ def main():
         help="Use the largest font that fits in this many pages (default 15; 0 = fewest pages instead)",
     )
     args = parser.parse_args()
-    rows, count = entries()
+    catalog = json.loads((ROOT / "data" / "engines.json").read_text(encoding="utf-8"))
+    rows, count = entries(catalog)
     portrait = PAPER[args.paper]
     page_size = portrait if args.orientation == "portrait" else (portrait[1], portrait[0])
     size, _ = choose(rows, page_size, args.min_size, args.max_pages)
-    pages = render(rows, count, size, page_size, args.out)
+    pages = render(rows, count, size, page_size, args.out, source_links(catalog))
     print(f"Wrote {args.out} ({count} families, {pages} pages, {size:g} pt)")
 
 

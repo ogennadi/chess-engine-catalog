@@ -18,6 +18,28 @@ run `collect.py` to create them locally (see [Updating](#updating)):
 a numbered, multi-column list (portrait by default, `--orientation landscape` for landscape) of every family with available source code,
 in the largest type (at least 16 pt) that fits on 15 single-sided pages (`--max-pages N`; `0` = fewest pages) (also not committed).
 
+For an experimental single-sheet, 48 x 36 inch landscape poster with the same
+alphabetical index numbers:
+
+```powershell
+python names_pdf.py --paper poster --orientation landscape --max-pages 1 --out data\source-available-engines-poster.pdf
+```
+
+Print at **100% / actual size** on 48 x 36 inch paper, not scaled to a smaller sheet.
+The generator chooses the largest font that fits all source-available families on
+one page, retaining the archived-copy dagger markers. The current 1,306-family
+catalog fits at 21.75 pt (85% horizontal scale). This is an experiment targeting
+9-foot viewing, not a guarantee of comfortable readability at that distance;
+check a full-size print sample before printing the whole poster.
+
+Each name in the PDF links to one recorded source-code URL. Selection favors
+researched links, then corroborated repository links over bundled copies and old
+download pages; research notes indicating missing or incomplete content lower a
+link's priority. Equal-ranked links retain their catalog order. Archived-only
+families keep their archive URLs. This is an offline ranking of collected
+evidence, not a fresh HTTP check or a guarantee against future 404s.
+PNG copies are for printing and cannot retain clickable links.
+
 Committed inputs:
 
 * [Chess Programming Wiki checks for every family](../data/chessprogramming-wiki.json)

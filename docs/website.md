@@ -25,7 +25,12 @@ refreshes collection or research. `dist/` is gitignored; only the generator
   (e.g. Atlas and Atlas (1967)) explicitly as not reviewed.
 * `sources.html`: all provenance lists with descriptions, collection status, and
   discovery notes from `docs/sources`, plus the methodology and research definitions.
-* `downloads/`: the printable PDF (as `names_pdf.py` makes it) and `engines.csv`. The
+* `downloads/`: a single-page **48 x 36 inch landscape poster PDF** of all
+  source-available families, alphabetically indexed, with each name linking to its
+  preferred recorded source-code URL, and `engines.csv`. The poster uses the largest
+  font that fits on one sheet (at least 16 pt); print at actual size. Link selection
+  uses the offline evidence ranking described in [collecting.md](collecting.md),
+  not fresh HTTP checks. The
   JSON catalog and research records are not copied into the site, to keep it small; the
   index links to them in the repository instead.
 

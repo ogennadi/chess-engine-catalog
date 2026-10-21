@@ -700,7 +700,7 @@ def index_page(catalog, overrides, slugs):
     header = f"""<p class="lede">{len(engines):,} chess engine families, {available:,} with source available
 ({states['archived_only']:,} of them only as archived copies).</p>
 <div class="header-links">
-<a class="button" href="downloads/source-available-engines.pdf">Printable PDF of source-available families</a>
+<a class="button" href="downloads/source-available-engines.pdf">48 x 36 inch source-available poster PDF</a>
 <a href="sources.html">Sources and methodology</a>
 <a href="{REPOSITORY}">Research repository</a>
 </div>
@@ -861,11 +861,16 @@ def build(catalog, status, registry, overrides, wiki_reviews, docs, out):
     rows, count = names_pdf.entries(catalog)
     if not count:
         raise ValueError("no source-available families for the printable PDF")
+    portrait = names_pdf.PAPER["poster"]
+    page_size = (portrait[1], portrait[0])
     try:
-        size, _ = names_pdf.choose(rows, names_pdf.PAPER["letter"], 16, 15)
+        size, _ = names_pdf.choose(rows, page_size, 16, 1)
     except SystemExit as error:
         raise ValueError(f"printable PDF: {error}") from None
-    pages = names_pdf.render(rows, count, size, names_pdf.PAPER["letter"], downloads / "source-available-engines.pdf")
+    pages = names_pdf.render(
+        rows, count, size, page_size, downloads / "source-available-engines.pdf",
+        names_pdf.source_links(catalog),
+    )
     return len(catalog["engines"]), pages, size
 
 

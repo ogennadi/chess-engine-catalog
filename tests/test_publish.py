@@ -34,7 +34,10 @@ CATALOG = {
             "url": "https://github.com/d/delta-releases", "evidence_url": "https://example.org/list",
             "source": "ccrl", "reason": "Binaries only.", "review_evidence_url": "https://example.org/delta-bin",
         }]},
-        engine("Evil", code=[{"url": "javascript:alert(1)", "evidence_url": "javascript:alert(2)", "source": "ccrl"}]),
+        engine("Evil", code=[
+            {"url": "javascript:alert(1)", "evidence_url": "javascript:alert(2)", "source": "ccrl"},
+            {"url": "https://example.org/evil-source", "evidence_url": "https://example.org/list", "source": "ccrl"},
+        ]),
     ],
 }
 STATUS = {"families": {
@@ -138,10 +141,21 @@ class PublishTests(unittest.TestCase):
 
     def test_header_links_and_no_per_family_pdfs(self):
         self.assertEqual(self.index.count('href="downloads/source-available-engines.pdf"'), 1)
+        self.assertIn("48 x 36 inch", self.index)
         self.assertIn('href="sources.html"', self.index)
         self.assertIn(f'href="{publish.REPOSITORY}"', self.index)
         for slug in ("alpha", "beta", "gamma", "delta"):
             self.assertNotIn(".pdf", self.family(slug))
+
+    def test_download_is_single_page_linked_poster(self):
+        pdf = (self.out / "downloads" / "source-available-engines.pdf").read_bytes()
+        self.assertIn(b"/MediaBox [0 0 3456 2592]", pdf)
+        self.assertIn(b"/Count 1", pdf)
+        self.assertEqual(pdf.count(b"/Subtype /Link"), 3)
+        self.assertIn(b"/URI (https://github.com/a/alpha)", pdf)
+        self.assertIn(b"/URI (https://web.archive.org/beta.zip)", pdf)
+        self.assertIn(b"/URI (https://example.org/evil-source)", pdf)
+        self.assertNotIn(b"javascript:", pdf)
 
     def test_filters_hidden_without_javascript_and_dark_default(self):
         self.assertIn('<form id="filters" role="search" hidden>', self.index)
