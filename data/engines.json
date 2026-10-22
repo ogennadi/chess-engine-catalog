@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T19:54:53Z",
+  "generated_at": "2026-10-21T23:18:35Z",
   "coverage_complete": false,
   "sources": [
     {
@@ -111,7 +111,7 @@
       "url": "https://chess.swehosting.se/",
       "status": "collected",
       "checked_at": "2026-10-19T04:06:13Z",
-      "observations": 18
+      "observations": 17
     },
     {
       "id": "openbench-clockwork",
@@ -8210,16 +8210,7 @@
           "source": "wiki-engines"
         }
       ],
-      "source_code": [
-        {
-          "url": "https://www.stmintz.com/ccc/index.php?id=103729",
-          "note": "Source-release landing post cited for Corbit's authorized modified version; not asserted to be the unmodified original.",
-          "source_release": "modified AliBaba test bed, 2000",
-          "evidence_url": "https://chessprogramming.org/AliBaba",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:30:58Z"
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "found",
         "url": "https://chessprogramming.org/AliBaba",
@@ -8230,6 +8221,13 @@
         "titles_checked": [
           "AliBaba"
         ]
+      },
+      "source_status": {
+        "tier": "review",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-21T23:31:04Z"
       }
     },
     {
@@ -21718,14 +21716,7 @@
           "source": "wiki-engines"
         }
       ],
-      "source_code": [
-        {
-          "url": "http://www.chilton-computing.org.uk/acl/literature/books/gamesplaying/p003.htm",
-          "evidence_url": "http://www.chilton-computing.org.uk/acl/literature/books/gamesplaying/p003.htm",
-          "source": "source-status-research",
-          "kind": "author's published listing (book appendix, reproduced online by Chilton Computing/UKRI STFC)"
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "found",
         "url": "https://chessprogramming.org/Atlas",
@@ -21739,10 +21730,10 @@
       },
       "source_status": {
         "tier": "E",
-        "availability": "available",
-        "licensing": "source_available",
+        "availability": "not_located",
+        "licensing": "unknown",
         "confidence": "medium",
-        "checked_at": "2026-10-19T21:31:00Z"
+        "checked_at": "2026-10-22T00:06:43Z"
       }
     },
     {
@@ -274839,37 +274830,6 @@
       }
     },
     {
-      "name": "Stoat",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "Stoat",
-          "url": "https://chess.swehosting.se/",
-          "project_url": "https://github.com/Ciekce/Stoat",
-          "source": "openbench-swehosting",
-          "checked_at": "2026-10-19T04:06:13Z"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/Ciekce/Stoat",
-          "evidence_url": "https://chess.swehosting.se/",
-          "source": "openbench-swehosting"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50Z",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "Stoat"
-        ]
-      }
-    },
-    {
       "name": "Stobor",
       "aliases": [],
       "provenance": [
@@ -320215,8 +320175,8 @@
     "not_checked": 1
   },
   "chessprogramming_source_code": {
-    "found": 113,
-    "no_source_link_found": 847,
+    "found": 112,
+    "no_source_link_found": 848,
     "needs_review": 0
   }
 }

@@ -28,7 +28,7 @@ python names_pdf.py --paper poster --orientation landscape --max-pages 1 --out d
 Print at **100% / actual size** on 48 x 36 inch paper, not scaled to a smaller sheet.
 The generator chooses the largest font that fits all source-available families on
 one page. Families whose source survives only as an archived copy are left off.
-The current 1,211-family catalog fits at 22.75 pt (85% horizontal scale). Each column's number field is only as
+The current 1,208-family catalog fits at 23 pt (85% horizontal scale). Each column's number field is only as
 wide as its largest index, and leftover width is spread across the gaps between
 columns so the left and right margins match. Family names use Atkinson
 Hyperlegible, whose serifed `I` and tailed `l` stay distinct from a distance, and
@@ -43,7 +43,10 @@ Each name in the PDF links to one recorded source-code URL. Selection favors
 researched links, then corroborated repository links over bundled copies and old
 download pages; research notes indicating missing or incomplete content lower a
 link's priority, and archive.org or Software Heritage copies are never chosen
-over another link. Equal-ranked links retain their catalog order. This is an offline ranking of collected
+over another link. Equal-ranked links retain their catalog order. `poster_source_urls` in
+`overrides.json` maps a family to a reviewed choice that replaces the ranking; it must be one
+of that family's source links (BabyChess uses the author's GitHub repository rather than
+the Savannah project page). This is an offline ranking of collected
 evidence, not a fresh HTTP check or a guarantee against future 404s.
 PNG copies are for printing and cannot retain clickable links.
 
@@ -359,7 +362,7 @@ registered (offline, mirrors, or variant-only), is in
 Reviewed exceptions in `collectors/openbench.py` credit testing forks such as
 AndyGrant/Stockfish to the repository GitHub reports as their parent. They map
 renamed repositories to their current location, drop private links, and skip
-variant-only (e.g. shatranj) engines. MattBench's Torch entry points to a
+variant-only (e.g. shatranj) and non-chess (the shogi engine Stoat) engines. MattBench's Torch entry points to a
 non-public Chess.com repository.
 
 ## Deferred properties

@@ -234,11 +234,26 @@ def preferred_source(engine):
     return max(candidates, key=rank)
 
 
-def source_links(catalog):
-    return {
-        e["name"]: preferred_source(e)
-        for e in catalog["engines"] if source_status.availability_label(e) in AVAILABLE
-    }
+def poster_source_urls():
+    """Reviewed per-family choices of poster link, from overrides.json."""
+    overrides = json.loads((ROOT / "overrides.json").read_text(encoding="utf-8"))
+    return overrides.get("poster_source_urls", {})
+
+
+def source_links(catalog, preferred=None):
+    """Poster link per source-available family; a preferred URL must be one of the family's source links."""
+    preferred = dict(preferred or {})
+    links = {}
+    for engine in catalog["engines"]:
+        if source_status.availability_label(engine) not in AVAILABLE:
+            continue
+        choice = preferred.pop(engine["name"], None)
+        if choice and all(code["url"] != choice for code in engine["source_code"]):
+            raise ValueError(f"poster_source_urls: {choice} is not a source link of {engine['name']}")
+        links[engine["name"]] = choice or preferred_source(engine)
+    if preferred:
+        raise ValueError(f"poster_source_urls names unknown or unavailable families: {', '.join(preferred)}")
+    return links
 
 
 def number_width(rows, size):
@@ -479,7 +494,7 @@ def main():
     portrait = PAPER[args.paper]
     page_size = portrait if args.orientation == "portrait" else (portrait[1], portrait[0])
     size, _ = choose(rows, page_size, args.min_size, args.max_pages)
-    pages = render(rows, count, size, page_size, args.out, source_links(catalog))
+    pages = render(rows, count, size, page_size, args.out, source_links(catalog, poster_source_urls()))
     print(f"Wrote {args.out} ({count} families, {pages} pages, {size:g} pt)")
 
 

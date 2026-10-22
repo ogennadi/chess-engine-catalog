@@ -40,13 +40,14 @@ MOVED = {
         "https://github.com/jeffreyan11/laser-chess-engine",
     "https://github.com/kachhy/axiom": "https://github.com/kachhy/Onslaught",
 }
-# Reviewed variant-only engines (shatranj, atomic, crazyhouse, ...); the
+# Reviewed variant-only and non-chess engines (shatranj, shogi, ...); the
 # catalog covers chess engines, so these sidebar entries are skipped.
 VARIANT_ONLY = {
     "https://github.com/sscg13/prolix": "Shatranj engine",
     "https://github.com/thetilted096/tilted-shatranj-engine": "Shatranj engine",
     "https://github.com/sscg13/oranj": "Shatranj engine",
     "https://github.com/sscg13/pzchessbot": "Shatranj fork of PZChessBot",
+    "https://github.com/ciekce/stoat": "USI shogi engine (per its README)",
 }
 
 

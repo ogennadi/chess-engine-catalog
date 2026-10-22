@@ -923,7 +923,7 @@ def build(catalog, status, registry, overrides, wiki_reviews, docs, out):
         raise ValueError(f"printable PDF: {error}") from None
     pages = names_pdf.render(
         rows, count, size, page_size, downloads / "source-available-engines.pdf",
-        names_pdf.source_links(catalog),
+        names_pdf.source_links(catalog, overrides.get("poster_source_urls")),
     )
     return len(catalog["engines"]), pages, size
 

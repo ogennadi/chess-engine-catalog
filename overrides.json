@@ -1778,5 +1778,8 @@
       "family": "ZobristHaescher",
       "code_urls": []
     }
+  },
+  "poster_source_urls": {
+    "BabyChess": "https://github.com/kunegis/babychess"
   }
 }

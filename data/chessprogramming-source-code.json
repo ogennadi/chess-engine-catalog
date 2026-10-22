@@ -2215,17 +2215,8 @@
     "Alibaba": {
       "wiki_url": "https://chessprogramming.org/AliBaba",
       "checked_at": "2026-10-19T01:30:58Z",
-      "status": "found",
-      "code_urls": [
-        {
-          "url": "https://www.stmintz.com/ccc/index.php?id=103729",
-          "note": "Source-release landing post cited for Corbit's authorized modified version; not asserted to be the unmodified original.",
-          "source_release": "modified AliBaba test bed, 2000",
-          "evidence_url": "https://chessprogramming.org/AliBaba",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:30:58Z"
-        }
-      ],
+      "status": "no_source_link_found",
+      "code_urls": [],
       "external_links": [
         {
           "url": "https://en.wikipedia.org/wiki/Maxfield_Parrish",
@@ -2300,7 +2291,7 @@
           "label": "CC BY-SA 3.0"
         }
       ],
-      "note": "The page explicitly says Dann Corbit made a modified open-source AliBaba available with Dennis Breuker's permission and cites the linked Alibaba test-bed release. The separate Ablett directory is described as compiles, not independently established as source."
+      "note": "The page says Dann Corbit made a modified open-source AliBaba available, but its only cited source link (stmintz.com/ccc/index.php?id=103729) now redirects to a LinkedIn profile. The separate Ablett directory is described as compiles, not independently established as source."
     },
     "Alice": {
       "wiki_url": "https://chessprogramming.org/Alice",

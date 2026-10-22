@@ -962,6 +962,30 @@
    "searches": 2,
    "checked_at": "2026-10-19T21:12:29Z"
   },
+  "Alibaba": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "url": "https://chessprogramming.org/AliBaba",
+     "quote": "Dann Corbit made a modified open-source AliBaba available (cited link only)"
+    },
+    {
+     "url": "https://www.stmintz.com/ccc/index.php?id=103729",
+     "quote": "HTTP 301 to https://www.linkedin.com/in/seantmintz"
+    },
+    {
+     "user_input": "alibaba links to Linkedin. Mark it as source: none"
+    }
+   ],
+   "rationale": "The wiki's only cited source-release link now redirects to a LinkedIn profile; no copy of the source was located.",
+   "searches": 0,
+   "checked_at": "2026-10-21T23:31:04Z",
+   "tier": "review"
+  },
   "AliChess": {
    "tier": "D",
    "licensing": "unknown",
@@ -2014,17 +2038,11 @@
   },
   "Atlas (1967)": {
    "tier": "E",
-   "licensing": "source_available",
-   "availability": "available",
+   "licensing": "unknown",
+   "availability": "not_located",
    "confidence": "medium",
-   "release_scope": "Algol move generator and two-move mate solver (Appendix 1 of Bell's 1972 book), the base the playing program was extended from; the full playing version is not listed",
-   "source_urls": [
-    {
-     "url": "http://www.chilton-computing.org.uk/acl/literature/books/gamesplaying/p003.htm",
-     "kind": "author's published listing (book appendix, reproduced online by Chilton Computing/UKRI STFC)",
-     "license": "none stated"
-    }
-   ],
+   "release_scope": "family",
+   "source_urls": [],
    "evidence": [
     {
      "url": "http://www.chilton-computing.org.uk/acl/literature/books/gamesplaying/p003.htm",
@@ -2037,11 +2055,14 @@
     {
      "source": "dossier: CPW wiki snippet",
      "quote": "A description of Atlas' move generation techniques along with a mate-in-two solver is given with Algol source code listing in Games Playing with Computers, 3.1 Chess"
+    },
+    {
+     "user_input": "atlas (1967) doesn't have source code. mark as such"
     }
    ],
-   "rationale": "Alex Bell published the Algol move-generation/mate-solver code underlying Atlas in his book, now hosted online by Chilton Computing; no license stated, and the playing extension itself is not listed, so partial source_available.",
+   "rationale": "Bell's book lists only the Algol move generator and two-move mate solver the playing program was extended from; that precursor is not the engine's source, and no listing of the playing program was located.",
    "searches": 1,
-   "checked_at": "2026-10-19T21:31:00Z"
+   "checked_at": "2026-10-22T00:06:43Z"
   },
   "AtlasToo": {
    "tier": "D",

@@ -27,6 +27,20 @@ class PosterTests(unittest.TestCase):
         self.assertEqual((count, [r[0] for r in rows if not r[1]]), (1, ["Live"]))
         self.assertEqual(list(names_pdf.source_links(catalog)), ["Live"])
 
+    def test_poster_source_override(self):
+        catalog = {"engines": [{"name": "Live", "source_code": [
+            {"url": "https://old.example/live", "source": "source-status-research"},
+            {"url": "https://github.com/a/live", "source": "ccrl"},
+        ]}]}
+        self.assertEqual(names_pdf.source_links(catalog)["Live"], "https://old.example/live")
+        chosen = names_pdf.source_links(catalog, {"Live": "https://github.com/a/live"})
+        self.assertEqual(chosen["Live"], "https://github.com/a/live")
+        with self.assertRaises(ValueError):
+            names_pdf.source_links(catalog, {"Live": "https://elsewhere.example/"})
+        with self.assertRaises(ValueError):
+            names_pdf.source_links(catalog, {"Missing": "https://github.com/a/live"})
+        self.assertEqual(names_pdf.poster_source_urls()["BabyChess"], "https://github.com/kunegis/babychess")
+
     def test_all_families_fit_with_sequential_indices_and_no_clipping(self):
         size, page_count = names_pdf.choose(self.rows, self.page_size, 16, 1)
         self.assertEqual(page_count, 1)
