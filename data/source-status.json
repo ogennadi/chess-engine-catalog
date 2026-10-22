@@ -2476,6 +2476,24 @@
    "searches": 4,
    "checked_at": "2026-10-19T21:31:00Z"
   },
+  "Beaches": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "source": "engine options review",
+     "quote": "Tried via curl: Google Sites page (classic site gone, only sign-in page); CCRL/computer-chess.org/CPW/spreadsheet pages are lists only (CPW links Jim Ablett's BEACHES folder); kirr.homeunix.org unreachable and its successor calc.biokirr.com is behind an Anubis JS proof-of-work check; Google Docs leaf links return sign-in pages; mega.nz folder needs JavaScript; rwbc-chess.de has no Beaches entry.",
+     "user_input": "If you can't access the inaccessible sources after trying all non-wayback links, then mark them as source-unavailable"
+    }
+   ],
+   "rationale": "Options review (2026-10) could not obtain the source from any non-archive catalog link: Tried via curl: Google Sites page (classic site gone, only sign-in page); CCRL/computer-chess.org/CPW/spreadsheet pages are lists only (CPW links Jim Ablett's BEACHES folder); kirr.homeunix.org unreachable and its successor calc.biokirr.com is behind an Anubis JS proof-of-work check; Google Docs leaf links return sign-in pages; mega.nz folder needs JavaScript; rwbc-chess.de has no Beaches entry.",
+   "searches": 0,
+   "checked_at": "2026-10-22T15:10:11Z",
+   "tier": "review"
+  },
   "Beal": {
    "tier": "E",
    "licensing": "unknown",
@@ -2819,17 +2837,11 @@
   },
   "Betsabe II": {
    "tier": "A",
-   "licensing": "open_source",
-   "availability": "available",
+   "licensing": "unknown",
+   "availability": "not_located",
    "confidence": "medium",
-   "release_scope": "source zips for 1.0-1.28 in Jim Ablett archive; later versions (1.47-2023 etc.) not checked",
-   "source_urls": [
-    {
-     "url": "https://calc.biokirr.com/chess/engines/Jim%20Ablett/BETSABE%20II/ARCHIVE/",
-     "kind": "third-party mirror (Jim Ablett 'fixed src' zips; listing verified via Wayback 2017, live site behind anti-bot check)",
-     "license": "GPL (per CPW, not inspected)"
-    }
-   ],
+   "release_scope": "family",
+   "source_urls": [],
    "evidence": [
     {
      "url": "https://chessprogramming.org/Betsabe",
@@ -2850,11 +2862,16 @@
     {
      "search": "web: \"Betsabe II\" chess engine Juan Benitez source code GPL download",
      "quote": "no author repository found; talkchess/open-aurec announcement threads unreachable"
+    },
+    {
+     "source": "engine options review",
+     "quote": "Tried via curl: calc.biokirr.com Jim Ablett archive (Anubis JS proof-of-work bot check); kirr.homeunix.org mirrors unreachable; kirill-kryukov.com forum attachment 404; CCRL, CEGT, computer-chess.org, CPW, spreadsheet, e4e6, julien.marcel.free.fr pages are rating/engine lists without source; rwbc-chess.de download page lists only an 'original' binary (Google Drive/Proton links need JavaScript); mega.nz folder needs JavaScript.",
+     "user_input": "If you can't access the inaccessible sources after trying all non-wayback links, then mark them as source-unavailable"
     }
    ],
-   "rationale": "CPW (GPL category) and RWBC (src yes) agree the engine is open source; the CPW page quotes data.h and readme.txt. Source zips exist in Jim Ablett's directory (Wayback-verified listing; the zips themselves weren't archived and the live host blocks automated fetching). License file not personally inspected, hence medium.",
+   "rationale": "Options review (2026-10) could not obtain the source from any non-archive catalog link: Tried via curl: calc.biokirr.com Jim Ablett archive (Anubis JS proof-of-work bot check); kirr.homeunix.org mirrors unreachable; kirill-kryukov.com forum attachment 404; CCRL, CEGT, computer-chess.org, CPW, spreadsheet, e4e6, julien.marcel.free.fr pages are rating/engine lists without source; rwbc-chess.de download page lists only an 'original' binary (Google Drive/Proton links need JavaScript); mega.nz folder needs JavaScript.",
    "searches": 4,
-   "checked_at": "2026-10-19T05:36:46Z"
+   "checked_at": "2026-10-22T15:10:11Z"
   },
   "BibiChess": {
    "tier": "B",
@@ -3554,6 +3571,24 @@
    "notes": "Engine is also called Aeolus Engine; repo SquarishRectangle/AeolusEngine deleted.",
    "searches": 2,
    "checked_at": "2026-10-20T00:28:52Z"
+  },
+  "BremboCE": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "source": "engine options review",
+     "quote": "Closed-source freeware ('All rights reserved'). sjce chess_engines_nb-src (url) has no source: all_java_xboard_ce_22-09-17.zip contains only bremboce-062-ja with docs, logos and Original jar/Bremboce.jar holding obfuscated class files (a.class..f.class, Main.class); all_java_uci_ce zip has no BremboCE. Bundled info.txt says WinBoard protocol 2, simple internal book. CPW BremboCE page lists only forum posts and archive.org links; kirr.homeunix.org (Jim Ablett) does not resolve (DNS); bremboce.cisana.com/download_en.php returns 404; remaining alt_urls are rating lists/spreadsheets with no source links.",
+     "user_input": "If you can't access the inaccessible sources after trying all non-wayback links, then mark them as source-unavailable"
+    }
+   ],
+   "rationale": "Options review (2026-10) could not obtain the source from any non-archive catalog link: Closed-source freeware ('All rights reserved'). sjce chess_engines_nb-src (url) has no source: all_java_xboard_ce_22-09-17.zip contains only bremboce-062-ja with docs, logos and Original jar/Bremboce.jar holding obfuscated class files (a.class..f.class, Main.class); all_java_uci_ce zip has no BremboCE. Bundled info.txt says WinBoard protocol 2, simple internal book. CPW BremboCE page lists only forum posts and archive.org links; kirr.homeunix.org (Jim Ablett) does not resolve (DNS); bremboce.cisana.com/download_en.php returns 404; remaining alt_urls are rating lists/spreadsheets with no source links.",
+   "searches": 0,
+   "checked_at": "2026-10-22T15:10:11Z",
+   "tier": "review"
   },
   "Bricabrac": {
    "tier": "B",
@@ -5161,6 +5196,24 @@
    "searches": 2,
    "checked_at": "2026-10-19T20:04:09Z"
   },
+  "Chess (John Krause)": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "source": "engine options review",
+     "quote": "The listing is a BASIC DATA-byte loader of machine code, not readable source code (user review: \"contains no code\"). Earlier review: COMPUTE! type-in program (Dec 1984, C64/VIC-20/Atari/Apple; IBM PC version Sep 1985 at https://www.atarimagazines.com/compute/issue64/chess.php). BASIC front end with joystick/keyboard board display; search is machine code given only as DATA bytes, so eval described from the article text, not verified in code. In-program skill levels 1-5 (search depth), no engine protocol.",
+     "user_input": "If you can't access the inaccessible sources after trying all non-wayback links, then mark them as source-unavailable"
+    }
+   ],
+   "rationale": "Options review (2026-10) could not obtain the source from any non-archive catalog link: The listing is a BASIC DATA-byte loader of machine code, not readable source code (user review: \"contains no code\"). Earlier review: COMPUTE! type-in program (Dec 1984, C64/VIC-20/Atari/Apple; IBM PC version Sep 1985 at https://www.atarimagazines.com/compute/issue64/chess.php). BASIC front end with joystick/keyboard board display; search is machine code given only as DATA bytes, so eval described from the article text, not verified in code. In-program skill levels 1-5 (search depth), no engine protocol.",
+   "searches": 0,
+   "checked_at": "2026-10-22T16:39:39Z",
+   "tier": "review"
+  },
   "Chess (Lattanzi)": {
    "tier": "F",
    "licensing": "unknown",
@@ -5636,6 +5689,24 @@
    "searches": 1,
    "checked_at": "2026-10-19T20:21:48Z"
   },
+  "Chess System Tal": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "source": "engine options review",
+     "quote": "Repo ChrisWhittington/Chess-System-Tal-NNUE-2 @789b018 contains only README.md plus binary release zips; README states 'Public executable, private source code'. No other catalog source link.",
+     "user_input": "If you can't access the inaccessible sources after trying all non-wayback links, then mark them as source-unavailable"
+    }
+   ],
+   "rationale": "Options review (2026-10) could not obtain the source from any non-archive catalog link: Repo ChrisWhittington/Chess-System-Tal-NNUE-2 @789b018 contains only README.md plus binary release zips; README states 'Public executable, private source code'. No other catalog source link.",
+   "searches": 0,
+   "checked_at": "2026-10-22T15:10:11Z",
+   "tier": "review"
+  },
   "Chess Tiger": {
    "licensing": "proprietary",
    "availability": "not_located",
@@ -5888,6 +5959,29 @@
    "searches": 2,
    "checked_at": "2026-10-20T10:22:23Z"
   },
+  "ChessbotX": {
+   "licensing": "source_available",
+   "availability": "available",
+   "confidence": "high",
+   "release_scope": "family",
+   "source_urls": [
+    {
+     "url": "https://github.com/alexandersoto/chess-bot",
+     "kind": "author's own GitHub repo (Java engine; SJCE's ChessBotX is a NetBeans port of it)",
+     "license": "none stated"
+    }
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/alexandersoto/chess-bot",
+     "quote": "Chess game and engine written in Java. (no license file)"
+    }
+   ],
+   "rationale": "Editorial choice: links to the author's own repository rather than the SJCE bundle, whose ChessBotX is a NetBeans port of it. SJCE (Strong Java Chess Engines, sourceforge.net/projects/sjce) is a third-party multi-engine bundle of NetBeans source projects; RWBC and computer-chess.org cite it as this engine's source link.",
+   "searches": 1,
+   "checked_at": "2026-10-22T18:32:12Z",
+   "tier": "B"
+  },
   "Chessbox gnu4j": {
    "tier": "B",
    "licensing": "open_source",
@@ -5919,9 +6013,9 @@
      "quote": "HTTP/1.1 200 OK, Content-Length: 287234 (same as SJCE copy, which contains COPYING and src/)"
     }
    ],
-   "rationale": "Xan Gregg's own site still serves the 1.02 source zip; source headers carry GPL v2+ (derivative of GNU Chess 5.0.7).",
+   "rationale": "Xan Gregg's own site still serves the 1.02 source zip; source headers carry GPL v2+ (derivative of GNU Chess 5.0.7). Editorial choice: the poster links the author's own download (forthgo.com) rather than the SJCE bundle. SJCE (Strong Java Chess Engines, sourceforge.net/projects/sjce) is a third-party multi-engine bundle of NetBeans source projects; RWBC and computer-chess.org cite it as this engine's source link.",
    "searches": 0,
-   "checked_at": "2026-10-19T19:08:40Z"
+   "checked_at": "2026-10-22T18:32:12Z"
   },
   "ChessBrain": {
    "tier": "E",
@@ -6234,17 +6328,11 @@
   },
   "ChessOne": {
    "tier": "B",
-   "licensing": "open_source",
-   "availability": "available",
+   "licensing": "unknown",
+   "availability": "not_located",
    "confidence": "medium",
-   "release_scope": "older engine versions only (e.g. Chess engine for WinBoard ver 2.10 'chess10'); current chess1 is binary-only",
-   "source_urls": [
-    {
-     "url": "http://serg-nifont.narod.ru/chess-4.x.2.x.8-linux-win.zip",
-     "kind": "author/co-author download (zip; old_engines/.../chess10-gui-win32/src)",
-     "license": "GPL-3.0 (stated in readme)"
-    }
-   ],
+   "release_scope": "family",
+   "source_urls": [],
    "evidence": [
     {
      "url": "http://serg-nifont.narod.ru/chess_4_x.html",
@@ -6261,11 +6349,16 @@
     {
      "source": "dossier: computer-chess.org comment",
      "quote": "donationware; C source (older versions only) ... Unrelated to the original 'Chess' program; program renamed for clarity"
+    },
+    {
+     "source": "engine options review",
+     "quote": "Only a binary of chess1 is available (user review: \"ChessOne only has binary\"). Earlier review, based on the separate chess10 source: Archive ships chess1 (ChessOne) and fantom only as binaries (readme says 'gcc *.c' but no chess1 sources included; author page chess_4_x.html links only this zip). Row is based on the included source of the predecessor chess10 v2.10 (Korniloff, 2006-2025); obender and Russian checkers sources also included. chess10 prints a plain stderr greeting '#Chess engine(WinBoard) ver. 1.1x ...' and features setboard/done/sigint/sigterm unconditionally at startup; native console commands (pos, teach, uselib, useteach, save/load, st).",
+     "user_input": "If you can't access the inaccessible sources after trying all non-wayback links, then mark them as source-unavailable"
     }
    ],
-   "rationale": "The co-author's download zip includes C source of an older Korniloff 'Chess' WinBoard engine version with a GPL v3 statement in its readme, consistent with computer-chess.org's 'C source (older versions only)'. The newest engine is distributed as binary only. GPL is stated in a readme only (no per-file headers), and mapping chess10 to the renamed ChessOne line is inferred, so medium confidence.",
+   "rationale": "Options review (2026-10) could not obtain the source from any non-archive catalog link: Only a binary of chess1 is available (user review: \"ChessOne only has binary\"). Earlier review, based on the separate chess10 source: Archive ships chess1 (ChessOne) and fantom only as binaries (readme says 'gcc *.c' but no chess1 sources included; author page chess_4_x.html links only this zip). Row is based on the included source of the predecessor chess10 v2.10 (Korniloff, 2006-2025); obender and Russian checkers sources also included. chess10 prints a plain stderr greeting '#Chess engine(WinBoard) ver. 1.1x ...' and features setboard/done/sigint/sigterm unconditionally at startup; native console commands (pos, teach, uselib, useteach, save/load, st).",
    "searches": 0,
-   "checked_at": "2026-10-19T19:08:40Z"
+   "checked_at": "2026-10-22T16:46:06Z"
   },
   "Chesstar": {
    "tier": "E",
@@ -7929,6 +8022,29 @@
    "rationale": "Author's history page describes Cumulus (C + assembly) but offers no source download; no copy found.",
    "searches": 1,
    "checked_at": "2026-10-19T21:47:17Z"
+  },
+  "Cupcake": {
+   "licensing": "unknown",
+   "availability": "available",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [
+    {
+     "url": "https://sourceforge.net/projects/sjce/files/chess_engines_nb-src/all_java_xboard_ce_22-09-17.zip/download",
+     "kind": "third-party SJCE bundle (xboard/cupcake_v11/cupcake_nb-src_v11c.zip)",
+     "license": "none stated"
+    }
+   ],
+   "evidence": [
+    {
+     "source": "all_java_xboard_ce_22-09-17.zip",
+     "quote": "xboard/cupcake_v11/cupcake_nb-src_v11c.zip, Cupcake_11a.rar, cupcake.jar; no license file"
+    }
+   ],
+   "rationale": "Editorial choice: no standalone project of the author was found, so this links directly to the SJCE xboard zip containing Cupcake (xboard/cupcake_v11) instead of the SJCE project page. SJCE (Strong Java Chess Engines, sourceforge.net/projects/sjce) is a third-party multi-engine bundle of NetBeans source projects; RWBC and computer-chess.org cite it as this engine's source link.",
+   "searches": 1,
+   "checked_at": "2026-10-22T18:32:12Z",
+   "tier": "B"
   },
   "CXG Computachess I": {
    "tier": "C",
@@ -14117,6 +14233,24 @@
    "searches": 3,
    "checked_at": "2026-10-19T20:20:30Z"
   },
+  "Gideon's Chess Engine": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "source": "engine options review",
+     "quote": "https://github.com/gideongrinberg/gce returns 'Repository not found'; the user's public repository list (GitHub API) contains no chess engine. alt_urls are only rating lists, rwbc-chess.de and a chessprogramming search index, none linking to source.",
+     "user_input": "If you can't access the inaccessible sources after trying all non-wayback links, then mark them as source-unavailable"
+    }
+   ],
+   "rationale": "Options review (2026-10) could not obtain the source from any non-archive catalog link: https://github.com/gideongrinberg/gce returns 'Repository not found'; the user's public repository list (GitHub API) contains no chess engine. alt_urls are only rating lists, rwbc-chess.de and a chessprogramming search index, none linking to source.",
+   "searches": 0,
+   "checked_at": "2026-10-22T18:40:28Z",
+   "tier": "review"
+  },
   "Ginkgo": {
    "tier": "D",
    "licensing": "proprietary",
@@ -16509,32 +16643,11 @@
   },
   "ITEP Chess Program": {
    "tier": "E",
-   "licensing": "source_available",
-   "availability": "available",
+   "licensing": "unknown",
+   "availability": "not_located",
    "confidence": "medium",
-   "release_scope": "surviving 1966 M-20 handwritten coding sheets (possibly a different revision than the 1966-67 match version)",
-   "source_urls": [
-    {
-     "url": "https://greko.su/m20-itef.pdf",
-     "kind": "scan of original handwritten M-20 code listing (121 pages)",
-     "license": "none stated"
-    },
-    {
-     "url": "https://github.com/besm6/m20/blob/master/kaissa/kaissa.m20",
-     "kind": "third-party digitization of the listing (besm6/m20 emulator project)",
-     "license": "none stated for listing (repo COPYING is GPL-2.0)"
-    },
-    {
-     "url": "https://github.com/petmax03/itep-chess-m20",
-     "kind": "third-party runnable reconstruction including the digitized listing",
-     "license": "GPL-3.0-or-later for reconstruction code; listing rights reserved to original authors"
-    },
-    {
-     "url": "https://github.com/rcgoff/itep-chess",
-     "kind": "third-party partial reconstruction in assembler",
-     "license": "none stated"
-    }
-   ],
+   "release_scope": "family",
+   "source_urls": [],
    "evidence": [
     {
      "url": "https://github.com/petmax03/itep-chess-m20",
@@ -16559,12 +16672,17 @@
     {
      "search": "GitHub repositories: ITEP chess",
      "quote": "rcgoff/itep-chess: ITEP chess program (1967) resurrection from sources; petmax03/itep-chess-m20"
+    },
+    {
+     "source": "engine options review",
+     "quote": "Only source is kaissa/kaissa.m20 in besm6/m20: a 4097-line octal machine-code listing for the M-20 computer (address + opcode/operand words) with only Russian section-title comments (e.g. '?????? ????' = print move); no readable program source. 1960s program that predates UCI/xboard anyway.",
+     "user_input": "If you can't access the inaccessible sources after trying all non-wayback links, then mark them as source-unavailable"
     }
    ],
-   "rationale": "A scan of the original 1966 M-20 code listing is published and has been digitized and made runnable; no license covers the listing itself, so source_available.",
+   "rationale": "Options review (2026-10) could not obtain the source from any non-archive catalog link: Only source is kaissa/kaissa.m20 in besm6/m20: a 4097-line octal machine-code listing for the M-20 computer (address + opcode/operand words) with only Russian section-title comments (e.g. '?????? ????' = print move); no readable program source. 1960s program that predates UCI/xboard anyway.",
    "notes": "The besm6 file is named kaissa.m20 but is the 1966 ITEP program (Kaissa's predecessor). Provenance of the scan (who authorized publication) not verified.",
    "searches": 1,
-   "checked_at": "2026-10-19T22:09:02Z"
+   "checked_at": "2026-10-22T18:40:28Z"
   },
   "Ivan II The Conqueror": {
    "tier": "C",
@@ -17355,22 +17473,11 @@
   },
   "KACE": {
    "tier": "B",
-   "licensing": "source_available",
-   "availability": "available",
+   "licensing": "unknown",
+   "availability": "not_located",
    "confidence": "high",
-   "release_scope": "v0.8.0 (March 2003) and v0.8.1 (October 2003) source zips from author; 0.8.2 source in RWBC/JA collection",
-   "source_urls": [
-    {
-     "url": "https://web.archive.org/web/2004id_/http://aaronbaird.net/kace/kace.0.8.1.zip",
-     "kind": "Wayback snapshot of author download (zip)",
-     "license": "none stated"
-    },
-    {
-     "url": "https://mega.nz/folder/P10URKzI#5hiV02lv1VgBTg3LxUBiew/file/vg9xRIqA",
-     "kind": "third-party mirror (RWBC Mega, JA Collection: 'kace 082 src + linux binaries.zip')",
-     "license": "none stated"
-    }
-   ],
+   "release_scope": "family",
+   "source_urls": [],
    "evidence": [
     {
      "url": "https://web.archive.org/web/20040616015622/http://aaronbaird.net/kace/",
@@ -17387,11 +17494,16 @@
     {
      "search": "GitHub repositories: kace chess",
      "quote": "0 results"
+    },
+    {
+     "source": "engine options review",
+     "quote": "Tried via curl: mega.nz folder/file links need JavaScript (encrypted client-side); CCRL compare page and computer-chess.org/spreadsheet/chessprogramming.org are lists only; kirr.homeunix.org Jim Ablett folders unreachable; rwbc-chess.de front page has no KACE entry; no GitHub repo found.",
+     "user_input": "If you can't access the inaccessible sources after trying all non-wayback links, then mark them as source-unavailable"
     }
    ],
-   "rationale": "Aaron Baird's own (archived) KACE page links source-code zips; downloaded 0.8.1 zip contains C sources with no license statement. Author site is dead (Wayback copy); RWBC's Mega folder also has 0.8.2 sources.",
+   "rationale": "Options review (2026-10) could not obtain the source from any non-archive catalog link: Tried via curl: mega.nz folder/file links need JavaScript (encrypted client-side); CCRL compare page and computer-chess.org/spreadsheet/chessprogramming.org are lists only; kirr.homeunix.org Jim Ablett folders unreachable; rwbc-chess.de front page has no KACE entry; no GitHub repo found.",
    "searches": 2,
-   "checked_at": "2026-10-19T16:50:00Z"
+   "checked_at": "2026-10-22T19:33:39Z"
   },
   "KafieChess": {
    "tier": "F",
@@ -17663,6 +17775,24 @@
    "searches": 4,
    "checked_at": "2026-10-19T05:36:46Z",
    "notes": "Reviewed with the user on 2026-10-20. Serebryany's KCChess (RWBC, computer-chess.org) is split into its own family."
+  },
+  "KCChess (Serebryany)": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "source": "engine options review",
+     "quote": "Tried via curl: SourceForge project ('yet another xboard-compatible chess engine') has no released files (files RSS empty) and its only repo is legacy CVS (no SVN/git; pserver port 2401 refused, no CVS client/viewer available); computer-chess.org/spreadsheet/CPW pages are lists only; kirr.homeunix.org unreachable; mega.nz needs JavaScript; rwbc-chess.de no entry.",
+     "user_input": "If you can't access the inaccessible sources after trying all non-wayback links, then mark them as source-unavailable"
+    }
+   ],
+   "rationale": "Options review (2026-10) could not obtain the source from any non-archive catalog link: Tried via curl: SourceForge project ('yet another xboard-compatible chess engine') has no released files (files RSS empty) and its only repo is legacy CVS (no SVN/git; pserver port 2401 refused, no CVS client/viewer available); computer-chess.org/spreadsheet/CPW pages are lists only; kirr.homeunix.org unreachable; mega.nz needs JavaScript; rwbc-chess.de no entry.",
+   "searches": 0,
+   "checked_at": "2026-10-22T20:36:01Z",
+   "tier": "review"
   },
   "Kches6": {
    "tier": "E",
@@ -21375,6 +21505,24 @@
    "rationale": "Author's release on hpcalc.org contains the full source with GPLv2 (hpcalc metadata 'Source code: Not included' is contradicted by the archive listing).",
    "searches": 2,
    "checked_at": "2026-10-19T05:36:46Z"
+  },
+  "MOBMAT": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "source": "engine options review",
+     "quote": "Tried SourceForge project mobmat (REST API: only files tool, no code repo; file list: MOBMAT.bmp, books/MOBMAT.bin, MOBMAT.txt, bin/Windows/Mobmat903d.exe - binary only). MOBMAT.txt states 'no source code is currently being made available'. alt_urls are rating lists/engine lists/spreadsheets (computerchess.org.uk, computer-chess.org wiki, Google sheet, rwbc-chess.de, chessprogramming search index) with no source.",
+     "user_input": "If you can't access the inaccessible sources after trying all non-wayback links, then mark them as source-unavailable"
+    }
+   ],
+   "rationale": "Options review (2026-10) could not obtain the source from any non-archive catalog link: Tried SourceForge project mobmat (REST API: only files tool, no code repo; file list: MOBMAT.bmp, books/MOBMAT.bin, MOBMAT.txt, bin/Windows/Mobmat903d.exe - binary only). MOBMAT.txt states 'no source code is currently being made available'. alt_urls are rating lists/engine lists/spreadsheets (computerchess.org.uk, computer-chess.org wiki, Google sheet, rwbc-chess.de, chessprogramming search index) with no source.",
+   "searches": 0,
+   "checked_at": "2026-10-22T22:15:43Z",
+   "tier": "review"
   },
   "Moby": {
    "tier": "E",
@@ -25825,6 +25973,29 @@
    "rationale": "Author blog distributes multi-platform binaries only (Pascal engine built with FreePascal); no source or license found.",
    "searches": 1,
    "checked_at": "2026-10-20T13:07:11Z"
+  },
+  "Presbyter": {
+   "licensing": "unknown",
+   "availability": "available",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [
+    {
+     "url": "https://sourceforge.net/projects/sjce/files/chess_engines_nb-src/all_java_uci_ce_07-08-18.zip/download",
+     "kind": "third-party SJCE bundle (uci/presbyter)",
+     "license": "not checked"
+    }
+   ],
+   "evidence": [
+    {
+     "source": "all_java_uci_ce_07-08-18.zip central directory",
+     "quote": "contains uci/presbyter/ among 21 UCI engine folders"
+    }
+   ],
+   "rationale": "Editorial choice: no standalone project of the author was found, so this links directly to the SJCE UCI zip containing Presbyter (uci/presbyter) instead of the SJCE project page. SJCE (Strong Java Chess Engines, sourceforge.net/projects/sjce) is a third-party multi-engine bundle of NetBeans source projects; RWBC and computer-chess.org cite it as this engine's source link.",
+   "searches": 1,
+   "checked_at": "2026-10-22T18:32:12Z",
+   "tier": "B"
   },
   "Prochess": {
    "tier": "E",
@@ -31545,6 +31716,33 @@
    "searches": 1,
    "checked_at": "2026-10-20T13:34:47Z"
   },
+  "Talvmenni": {
+   "licensing": "open_source",
+   "availability": "available",
+   "confidence": "high",
+   "release_scope": "family",
+   "source_urls": [
+    {
+     "url": "https://sourceforge.net/projects/talvmenni/",
+     "kind": "author's own SourceForge project (git repo + talvmenni_0.1.zip)",
+     "license": "Apache-2.0"
+    }
+   ],
+   "evidence": [
+    {
+     "url": "https://sourceforge.net/projects/talvmenni/",
+     "quote": "TALVMENNI - Java based chess-engine ... License: Apache License V2.0"
+    },
+    {
+     "url": "https://git.code.sf.net/p/talvmenni/talvmenni.git",
+     "quote": "git repo reachable (HEAD 075b886, tag LAST_LGPL_VERSION)"
+    }
+   ],
+   "rationale": "Editorial choice: links to the engine's own SourceForge project rather than the SJCE bundle. SJCE (Strong Java Chess Engines, sourceforge.net/projects/sjce) is a third-party multi-engine bundle of NetBeans source projects; RWBC and computer-chess.org cite it as this engine's source link.",
+   "searches": 1,
+   "checked_at": "2026-10-22T18:32:12Z",
+   "tier": "B"
+  },
   "Tamerlane": {
    "tier": "D",
    "licensing": "unknown",
@@ -32661,6 +32859,24 @@
    "searches": 1,
    "checked_at": "2026-10-20T13:34:47Z"
   },
+  "Toga CMLX": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "source": "engine options review",
+     "quote": "No source code (user review: \"toga cmlx has no src\"); the catalog link is a Rybka Forum attachment of the TogaCMLX 1.4.5e3 release.",
+     "user_input": "If you can't access the inaccessible sources after trying all non-wayback links, then mark them as source-unavailable"
+    }
+   ],
+   "rationale": "Options review (2026-10) could not obtain the source from any non-archive catalog link: No source code (user review: \"toga cmlx has no src\"); the catalog link is a Rybka Forum attachment of the TogaCMLX 1.4.5e3 release.",
+   "searches": 0,
+   "checked_at": "2026-10-22T18:11:45Z",
+   "tier": "review"
+  },
   "Toga Log": {
    "tier": "review",
    "licensing": "open_source",
@@ -33228,9 +33444,9 @@
      "quote": "C++/C#/Java source (Tri-language)"
     }
    ],
-   "rationale": "The team's original download page is still online and serves Java, C# and C++ source zips; no license is stated, so source_available.",
+   "rationale": "The team's original download page is still online and serves Java, C# and C++ source zips; no license is stated, so source_available. Editorial choice: the poster links the team's own download page (dubmun.com) rather than the SJCE bundle. SJCE (Strong Java Chess Engines, sourceforge.net/projects/sjce) is a third-party multi-engine bundle of NetBeans source projects; RWBC and computer-chess.org cite it as this engine's source link.",
    "searches": 0,
-   "checked_at": "2026-10-19T19:50:07Z"
+   "checked_at": "2026-10-22T18:32:12Z"
   },
   "Tristram": {
    "tier": "D",

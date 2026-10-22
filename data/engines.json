@@ -26649,16 +26649,7 @@
           "source": "wiki-engines"
         }
       ],
-      "source_code": [
-        {
-          "url": "https://sites.google.com/site/beacheschess/",
-          "note": "The wiki explicitly states that this page supplies source for Beaches 2.32.",
-          "source_release": "2.32",
-          "evidence_url": "https://chessprogramming.org/Beaches",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:31:26Z"
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "found",
         "url": "https://chessprogramming.org/Beaches",
@@ -26669,6 +26660,13 @@
         "titles_checked": [
           "Beaches"
         ]
+      },
+      "source_status": {
+        "tier": "review",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-22T15:10:11Z"
       }
     },
     {
@@ -29311,14 +29309,7 @@
           "source": "wiki-engines"
         }
       ],
-      "source_code": [
-        {
-          "url": "https://calc.biokirr.com/chess/engines/Jim%20Ablett/BETSABE%20II/ARCHIVE/",
-          "evidence_url": "https://chessprogramming.org/Betsabe",
-          "source": "source-status-research",
-          "kind": "third-party mirror (Jim Ablett 'fixed src' zips; listing verified via Wayback 2017, live site behind anti-bot check)"
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "found",
         "url": "https://chessprogramming.org/Betsabe",
@@ -29332,10 +29323,10 @@
       },
       "source_status": {
         "tier": "A",
-        "availability": "available",
-        "licensing": "open_source",
+        "availability": "not_located",
+        "licensing": "unknown",
         "confidence": "medium",
-        "checked_at": "2026-10-19T05:36:46Z"
+        "checked_at": "2026-10-22T15:10:11Z"
       }
     },
     {
@@ -37762,16 +37753,7 @@
           "source": "wiki-engines"
         }
       ],
-      "source_code": [
-        {
-          "url": "https://sourceforge.net/projects/sjce/files/chess_engines_nb-src/",
-          "note": "Third-party engine-source collection explicitly linked under BremboCE; not the SJCE GUI root or an upstream engine repository.",
-          "source_release": "Java BremboCE; exact version unspecified",
-          "evidence_url": "https://chessprogramming.org/BremboCE",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:32:15Z"
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "found",
         "url": "https://chessprogramming.org/BremboCE",
@@ -37782,6 +37764,13 @@
         "titles_checked": [
           "BremboCE"
         ]
+      },
+      "source_status": {
+        "tier": "review",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-22T15:10:11Z"
       }
     },
     {
@@ -53193,24 +53182,7 @@
           "source": "wiki-engines"
         }
       ],
-      "source_code": [
-        {
-          "url": "https://www.atarimagazines.com/compute/issue55/chess.php",
-          "note": "Original type-in program-listing publication.",
-          "source_release": "1984 Compute! 6502 versions",
-          "evidence_url": "https://chessprogramming.org/Chess_(John_Krause)",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:32:48Z"
-        },
-        {
-          "url": "https://www.atarimagazines.com/compute/issue64/chess.php",
-          "note": "Later version of Krause's program, not the original 6502 release.",
-          "source_release": "1985 Compute! IBM PC/PCjr version",
-          "evidence_url": "https://chessprogramming.org/Chess_(John_Krause)",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:32:48Z"
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "found",
         "url": "https://chessprogramming.org/Chess_(John_Krause)",
@@ -53221,6 +53193,13 @@
         "titles_checked": [
           "Chess (John Krause)"
         ]
+      },
+      "source_status": {
+        "tier": "review",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-22T16:39:39Z"
       }
     },
     {
@@ -54437,13 +54416,7 @@
           "source": "wiki-engines"
         }
       ],
-      "source_code": [
-        {
-          "url": "https://github.com/ChrisWhittington/Chess-System-Tal-NNUE-2",
-          "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
-          "source": "amateurschach"
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "found",
         "url": "https://chessprogramming.org/Chess_System_Tal",
@@ -54454,6 +54427,13 @@
         "titles_checked": [
           "Chess System Tal"
         ]
+      },
+      "source_status": {
+        "tier": "review",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-22T15:10:11Z"
       }
     },
     {
@@ -57743,6 +57723,12 @@
       ],
       "source_code": [
         {
+          "url": "https://github.com/alexandersoto/chess-bot",
+          "evidence_url": "https://github.com/alexandersoto/chess-bot",
+          "source": "source-status-research",
+          "kind": "author's own GitHub repo (Java engine; SJCE's ChessBotX is a NetBeans port of it)"
+        },
+        {
           "url": "https://sourceforge.net/projects/sjce/",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
           "source": "rwbc"
@@ -57759,6 +57745,13 @@
           "ChessbotX",
           "ChessBotX"
         ]
+      },
+      "source_status": {
+        "tier": "B",
+        "availability": "available",
+        "licensing": "source_available",
+        "confidence": "high",
+        "checked_at": "2026-10-22T18:32:12Z"
       }
     },
     {
@@ -57815,7 +57808,7 @@
         "availability": "available",
         "licensing": "open_source",
         "confidence": "high",
-        "checked_at": "2026-10-19T19:08:40Z"
+        "checked_at": "2026-10-22T18:32:12Z"
       }
     },
     {
@@ -61270,14 +61263,7 @@
           "source": "computer-chess-org"
         }
       ],
-      "source_code": [
-        {
-          "url": "http://serg-nifont.narod.ru/chess-4.x.2.x.8-linux-win.zip",
-          "evidence_url": "http://serg-nifont.narod.ru/chess_4_x.html",
-          "source": "source-status-research",
-          "kind": "author/co-author download (zip; old_engines/.../chess10-gui-win32/src)"
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "not_found",
         "url": null,
@@ -61291,10 +61277,10 @@
       },
       "source_status": {
         "tier": "B",
-        "availability": "available",
-        "licensing": "open_source",
+        "availability": "not_located",
+        "licensing": "unknown",
         "confidence": "medium",
-        "checked_at": "2026-10-19T19:08:40Z"
+        "checked_at": "2026-10-22T16:46:06Z"
       }
     },
     {
@@ -76506,6 +76492,12 @@
       ],
       "source_code": [
         {
+          "url": "https://sourceforge.net/projects/sjce/files/chess_engines_nb-src/all_java_xboard_ce_22-09-17.zip/download",
+          "evidence_url": "https://sourceforge.net/projects/sjce/files/chess_engines_nb-src/all_java_xboard_ce_22-09-17.zip/download",
+          "source": "source-status-research",
+          "kind": "third-party SJCE bundle (xboard/cupcake_v11/cupcake_nb-src_v11c.zip)"
+        },
+        {
           "url": "https://sourceforge.net/projects/sjce/",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
           "source": "rwbc"
@@ -76521,6 +76513,13 @@
         "titles_checked": [
           "Cupcake"
         ]
+      },
+      "source_status": {
+        "tier": "B",
+        "availability": "available",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-22T18:32:12Z"
       }
     },
     {
@@ -120547,17 +120546,7 @@
           "source": "rwbc"
         }
       ],
-      "source_code": [
-        {
-          "url": "https://github.com/gideongrinberg/gce",
-          "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
-          "source": "rwbc",
-          "unreachable": {
-            "checked_at": "2026-10-21",
-            "status": "HTTP 404; GitHub API: Not Found; no Software Heritage or Wayback copy found"
-          }
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "not_found",
         "url": null,
@@ -120568,6 +120557,13 @@
         "titles_checked": [
           "Gideon's Chess Engine"
         ]
+      },
+      "source_status": {
+        "tier": "review",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-22T18:40:28Z"
       }
     },
     {
@@ -145499,32 +145495,7 @@
           "source": "wiki-engines"
         }
       ],
-      "source_code": [
-        {
-          "url": "https://github.com/besm6/m20/blob/master/kaissa/kaissa.m20",
-          "evidence_url": "https://github.com/petmax03/itep-chess-m20",
-          "source": "source-status-research",
-          "kind": "third-party digitization of the listing (besm6/m20 emulator project)"
-        },
-        {
-          "url": "https://github.com/petmax03/itep-chess-m20",
-          "evidence_url": "https://github.com/petmax03/itep-chess-m20",
-          "source": "source-status-research",
-          "kind": "third-party runnable reconstruction including the digitized listing"
-        },
-        {
-          "url": "https://github.com/rcgoff/itep-chess",
-          "evidence_url": "https://github.com/petmax03/itep-chess-m20",
-          "source": "source-status-research",
-          "kind": "third-party partial reconstruction in assembler"
-        },
-        {
-          "url": "https://greko.su/m20-itef.pdf",
-          "evidence_url": "https://github.com/petmax03/itep-chess-m20",
-          "source": "source-status-research",
-          "kind": "scan of original handwritten M-20 code listing (121 pages)"
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "found",
         "url": "https://chessprogramming.org/ITEP_Chess_Program",
@@ -145538,10 +145509,10 @@
       },
       "source_status": {
         "tier": "E",
-        "availability": "available",
-        "licensing": "source_available",
+        "availability": "not_located",
+        "licensing": "unknown",
         "confidence": "medium",
-        "checked_at": "2026-10-19T22:09:02Z"
+        "checked_at": "2026-10-22T18:40:28Z"
       }
     },
     {
@@ -153202,20 +153173,7 @@
           "source": "rwbc"
         }
       ],
-      "source_code": [
-        {
-          "url": "https://web.archive.org/web/2004id_/http://aaronbaird.net/kace/kace.0.8.1.zip",
-          "evidence_url": "https://web.archive.org/web/20040616015622/http://aaronbaird.net/kace/",
-          "source": "source-status-research",
-          "kind": "Wayback snapshot of author download (zip)"
-        },
-        {
-          "url": "https://mega.nz/folder/P10URKzI#5hiV02lv1VgBTg3LxUBiew/file/vg9xRIqA",
-          "evidence_url": "https://web.archive.org/web/20040616015622/http://aaronbaird.net/kace/",
-          "source": "source-status-research",
-          "kind": "third-party mirror (RWBC Mega, JA Collection: 'kace 082 src + linux binaries.zip')"
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "not_found",
         "url": null,
@@ -153230,10 +153188,10 @@
       },
       "source_status": {
         "tier": "B",
-        "availability": "available",
-        "licensing": "source_available",
+        "availability": "not_located",
+        "licensing": "unknown",
         "confidence": "high",
-        "checked_at": "2026-10-19T16:50:00Z"
+        "checked_at": "2026-10-22T19:33:39Z"
       }
     },
     {
@@ -154532,13 +154490,7 @@
           "identity_evidence_url": "https://sourceforge.net/projects/kcchess/"
         }
       ],
-      "source_code": [
-        {
-          "url": "https://sourceforge.net/projects/kcchess/",
-          "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "not_found",
         "url": null,
@@ -154550,6 +154502,13 @@
           "KCChess (Serebryany)",
           "KCChess"
         ]
+      },
+      "source_status": {
+        "tier": "review",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-22T20:36:01Z"
       }
     },
     {
@@ -187019,13 +186978,7 @@
           "source": "rwbc"
         }
       ],
-      "source_code": [
-        {
-          "url": "https://sourceforge.net/projects/mobmat/",
-          "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "not_found",
         "url": null,
@@ -187037,6 +186990,13 @@
           "MOBMAT",
           "MobMat"
         ]
+      },
+      "source_status": {
+        "tier": "review",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-22T22:15:43Z"
       }
     },
     {
@@ -223991,6 +223951,12 @@
       ],
       "source_code": [
         {
+          "url": "https://sourceforge.net/projects/sjce/files/chess_engines_nb-src/all_java_uci_ce_07-08-18.zip/download",
+          "evidence_url": "https://sourceforge.net/projects/sjce/files/chess_engines_nb-src/all_java_uci_ce_07-08-18.zip/download",
+          "source": "source-status-research",
+          "kind": "third-party SJCE bundle (uci/presbyter)"
+        },
+        {
           "url": "https://sourceforge.net/projects/sjce/",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
           "source": "rwbc"
@@ -224006,6 +223972,13 @@
         "titles_checked": [
           "Presbyter"
         ]
+      },
+      "source_status": {
+        "tier": "B",
+        "availability": "available",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-22T18:32:12Z"
       }
     },
     {
@@ -283848,6 +283821,12 @@
       ],
       "source_code": [
         {
+          "url": "https://sourceforge.net/projects/talvmenni/",
+          "evidence_url": "https://sourceforge.net/projects/talvmenni/",
+          "source": "source-status-research",
+          "kind": "author's own SourceForge project (git repo + talvmenni_0.1.zip)"
+        },
+        {
           "url": "https://sourceforge.net/projects/sjce/",
           "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
           "source": "rwbc"
@@ -283863,6 +283842,13 @@
         "titles_checked": [
           "Talvmenni"
         ]
+      },
+      "source_status": {
+        "tier": "B",
+        "availability": "available",
+        "licensing": "open_source",
+        "confidence": "high",
+        "checked_at": "2026-10-22T18:32:12Z"
       }
     },
     {
@@ -291762,13 +291748,7 @@
           "source": "computer-chess-org"
         }
       ],
-      "source_code": [
-        {
-          "url": "http://rybkaforum.net/mwf/rybkaattach/91/169191/TogaCMLX145e3.zip",
-          "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "not_found",
         "url": null,
@@ -291779,6 +291759,13 @@
         "titles_checked": [
           "Toga CMLX"
         ]
+      },
+      "source_status": {
+        "tier": "review",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-22T18:11:45Z"
       }
     },
     {
@@ -295037,7 +295024,7 @@
         "availability": "available",
         "licensing": "source_available",
         "confidence": "high",
-        "checked_at": "2026-10-19T19:50:07Z"
+        "checked_at": "2026-10-22T18:32:12Z"
       }
     },
     {

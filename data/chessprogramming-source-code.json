@@ -9512,17 +9512,8 @@
     "Beaches": {
       "wiki_url": "https://chessprogramming.org/Beaches",
       "checked_at": "2026-10-19T01:31:26Z",
-      "status": "found",
-      "code_urls": [
-        {
-          "url": "https://sites.google.com/site/beacheschess/",
-          "note": "The wiki explicitly states that this page supplies source for Beaches 2.32.",
-          "source_release": "2.32",
-          "evidence_url": "https://chessprogramming.org/Beaches",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:31:26Z"
-        }
-      ],
+      "status": "no_source_link_found",
+      "code_urls": [],
       "external_links": [
         {
           "url": "https://en.wikipedia.org/wiki/Santa_Monica,_California",
@@ -9633,7 +9624,7 @@
           "label": "CC BY-SA 3.0"
         }
       ],
-      "note": "The reference to BeachesChess explicitly states that source for Beaches 2.32 is supplied there; this establishes the engine-specific page as a source landing page."
+      "note": "The reference to BeachesChess explicitly states that source for Beaches 2.32 is supplied there; this establishes the engine-specific page as a source landing page. The cited source link could not be retrieved in the 2026-10 options review."
     },
     "Beal": {
       "wiki_url": "https://chessprogramming.org/Beal",
@@ -14630,17 +14621,8 @@
     "BremboCE": {
       "wiki_url": "https://chessprogramming.org/BremboCE",
       "checked_at": "2026-10-19T01:32:15Z",
-      "status": "found",
-      "code_urls": [
-        {
-          "url": "https://sourceforge.net/projects/sjce/files/chess_engines_nb-src/",
-          "note": "Third-party engine-source collection explicitly linked under BremboCE; not the SJCE GUI root or an upstream engine repository.",
-          "source_release": "Java BremboCE; exact version unspecified",
-          "evidence_url": "https://chessprogramming.org/BremboCE",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:32:15Z"
-        }
-      ],
+      "status": "no_source_link_found",
+      "code_urls": [],
       "external_links": [
         {
           "url": "https://en.wikipedia.org/wiki/Brembo_%28river%29",
@@ -14747,7 +14729,7 @@
           "label": "CC BY-SA 3.0"
         }
       ],
-      "note": "Under BremboCE's engine links, the page explicitly links SJCE's chess_engines_nb-src directory, an engine-source collection rather than the SJCE GUI project root. Accepted only as the listed third-party Java-engine source location, not an upstream BremboCE repository."
+      "note": "Under BremboCE's engine links, the page explicitly links SJCE's chess_engines_nb-src directory, an engine-source collection rather than the SJCE GUI project root. Accepted only as the listed third-party Java-engine source location, not an upstream BremboCE repository. The cited source link could not be retrieved in the 2026-10 options review."
     },
     "Bright": {
       "wiki_url": "https://chessprogramming.org/Bright",
@@ -19632,25 +19614,8 @@
     "Chess (John Krause)": {
       "wiki_url": "https://chessprogramming.org/Chess_(John_Krause)",
       "checked_at": "2026-10-19T01:32:48Z",
-      "status": "found",
-      "code_urls": [
-        {
-          "url": "https://www.atarimagazines.com/compute/issue55/chess.php",
-          "note": "Original type-in program-listing publication.",
-          "source_release": "1984 Compute! 6502 versions",
-          "evidence_url": "https://chessprogramming.org/Chess_(John_Krause)",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:32:48Z"
-        },
-        {
-          "url": "https://www.atarimagazines.com/compute/issue64/chess.php",
-          "note": "Later version of Krause's program, not the original 6502 release.",
-          "source_release": "1985 Compute! IBM PC/PCjr version",
-          "evidence_url": "https://chessprogramming.org/Chess_(John_Krause)",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:32:48Z"
-        }
-      ],
+      "status": "no_source_link_found",
+      "code_urls": [],
       "external_links": [
         {
           "url": "https://www.atarimagazines.com/compute/issue55/chess.php",
@@ -19713,7 +19678,7 @@
           "label": "CC BY-SA 3.0"
         }
       ],
-      "note": "The page describes Krause's program as a published type-in listing and directly links the original Compute! CHESS article and the later IBM PC/PCjr version. These are historical program-listing locations, not sources for unrelated programs named Chess."
+      "note": "The page describes Krause's program as a published type-in listing and directly links the original Compute! CHESS article and the later IBM PC/PCjr version. These are historical program-listing locations, not sources for unrelated programs named Chess. The cited source link could not be retrieved in the 2026-10 options review."
     },
     "Chess (Program)": {
       "wiki_url": "https://chessprogramming.org/Chess_(Program)",

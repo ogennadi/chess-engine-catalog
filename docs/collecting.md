@@ -28,7 +28,7 @@ python names_pdf.py --paper poster --orientation landscape --max-pages 1 --out d
 Print at **100% / actual size** on 48 x 36 inch paper, not scaled to a smaller sheet.
 The generator chooses the largest font that fits all source-available families on
 one page. Families whose source survives only as an archived copy are left off.
-The current 1,208-family catalog fits at 23 pt (85% horizontal scale). Each column's number field is only as
+The current 1,196-family catalog fits at 23 pt (85% horizontal scale). Each column's number field is only as
 wide as its largest index, and leftover width is spread across the gaps between
 columns so the left and right margins match. Family names use Atkinson
 Hyperlegible, whose serifed `I` and tailed `l` stay distinct from a distance, and

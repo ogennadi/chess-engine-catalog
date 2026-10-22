@@ -1780,6 +1780,8 @@
     }
   },
   "poster_source_urls": {
-    "BabyChess": "https://github.com/kunegis/babychess"
+    "BabyChess": "https://github.com/kunegis/babychess",
+    "Chessbox gnu4j": "http://www.forthgo.com/chessbox/download/chessbox_gnu4j_1.02.zip",
+    "Tri-OS": "http://chess.dubmun.com/download.html"
   }
 }
