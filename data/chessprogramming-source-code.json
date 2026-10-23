@@ -86144,16 +86144,8 @@
     "Petir": {
       "wiki_url": "https://chessprogramming.org/Petir",
       "checked_at": "2026-10-19T00:48:47Z",
-      "status": "found",
-      "code_urls": [
-        {
-          "url": "https://codepeter.wordpress.com/2013/11/13/petir_source_code/",
-          "note": "Blog post; source availability inferred from title.",
-          "evidence_url": "https://chessprogramming.org/Petir",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T00:48:47Z"
-        }
-      ],
+      "status": "no_source_link_found",
+      "code_urls": [],
       "external_links": [
         {
           "url": "https://en.wikipedia.org/wiki/Piracicaba",
@@ -86232,7 +86224,7 @@
           "label": "CC BY-SA 3.0"
         }
       ],
-      "note": "Link labeled Petir source code on author blog."
+      "note": "Link labeled Petir source code on author blog. The cited source link could not be retrieved in the 2026-10 options review."
     },
     "Petunia": {
       "wiki_url": "https://chessprogramming.org/Petunia",
@@ -88479,17 +88471,8 @@
     "ProChess IT": {
       "wiki_url": "https://chessprogramming.org/ProChess_IT",
       "checked_at": "2026-10-19T01:41:09Z",
-      "status": "found",
-      "code_urls": [
-        {
-          "url": "https://www.g-sei.org/prochess/prochess102ad/",
-          "source_release": "ProChess 102 A doctor (October 2012)",
-          "note": "Historical release landing page labeled ProChess102AD.zip | readme.txt; source availability is established by the cached introduction, not a fetched archive.",
-          "evidence_url": "https://chessprogramming.org/ProChess_IT",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:41:09Z"
-        }
-      ],
+      "status": "no_source_link_found",
+      "code_urls": [],
       "external_links": [
         {
           "url": "http://www.talkchess.com/forum/viewtopic.php?t=44422",
@@ -88536,7 +88519,7 @@
           "label": "CC BY-SA 3.0"
         }
       ],
-      "note": "The introduction explicitly dates the source release to October 2012, and the linked ProChess102AD download/readme landing page identifies that release."
+      "note": "The introduction explicitly dates the source release to October 2012, and the linked ProChess102AD download/readme landing page identifies that release. The cited source link could not be retrieved in the 2026-10 options review."
     },
     "ProDeo": {
       "wiki_url": "https://chessprogramming.org/ProDeo",
@@ -97307,16 +97290,8 @@
     "Schooner": {
       "wiki_url": "https://chessprogramming.org/Schooner",
       "checked_at": "2026-10-19T00:49:16Z",
-      "status": "found",
-      "code_urls": [
-        {
-          "url": "https://github.com/schooner64-chess/Schooner-Chess",
-          "note": "Repository described as engines and books; includes Schooner version 1.4.1 per footnote.",
-          "evidence_url": "https://chessprogramming.org/Schooner",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T00:49:16Z"
-        }
-      ],
+      "status": "no_source_link_found",
+      "code_urls": [],
       "external_links": [
         {
           "url": "https://commons.wikimedia.org/wiki/File:Eendracht_II.JPG",
@@ -97479,7 +97454,7 @@
           "label": "CC BY-SA 3.0"
         }
       ],
-      "note": "GitHub schooner64-chess/Schooner-Chess (engines and books) linked."
+      "note": "GitHub schooner64-chess/Schooner-Chess (engines and books) linked. The cited source link could not be retrieved in the 2026-10 options review."
     },
     "Schweinehund": {
       "wiki_url": "https://chessprogramming.org/Schweinehund",
@@ -99951,16 +99926,8 @@
     "Sinobyl": {
       "wiki_url": "https://chessprogramming.org/Sinobyl",
       "checked_at": "2026-10-19T01:42:32Z",
-      "status": "found",
-      "code_urls": [
-        {
-          "url": "https://www.assembla.com/code/sinobyl/subversion/nodes/129/trunk/Sinobyl",
-          "note": "Historical Sinobyl source; later NoraGrace is a separately named program.",
-          "evidence_url": "https://chessprogramming.org/Sinobyl",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:42:32Z"
-        }
-      ],
+      "status": "no_source_link_found",
+      "code_urls": [],
       "external_links": [
         {
           "url": "https://www.stmintz.com/ccc/index.php?id=405590",
@@ -100051,7 +100018,7 @@
           "label": "CC BY-SA 3.0"
         }
       ],
-      "note": "Historical Sinobyl source; later NoraGrace is a separately named program."
+      "note": "Historical Sinobyl source; later NoraGrace is a separately named program. The cited source link could not be retrieved in the 2026-10 options review."
     },
     "Sjaak": {
       "wiki_url": "https://chessprogramming.org/Sjaak",

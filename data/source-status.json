@@ -25114,6 +25114,24 @@
    "searches": 1,
    "checked_at": "2026-10-19T20:31:21Z"
   },
+  "Petir": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "source": "engine options review",
+     "quote": "Author's blog post (v4.39 source) links only http://www.4shared.com/rar/5q0lFhI6/439_SRC__1_.html, which now returns 404. chessprogramming.org/Petir has no other source link; kirr.homeunix.org Norbert's collection unreachable; calc.biokirr.com mirror is behind an Anubis anti-bot challenge; computer-chess.org unreachable; rwbc-chess.de, e4e6, CEGT/CCRL pages and Google sheets are rating/catalog lists without source.",
+     "user_input": "If you can't access the inaccessible sources after trying all non-wayback links, then mark them as source-unavailable"
+    }
+   ],
+   "rationale": "Options review (2026-10) could not obtain the source from any non-archive catalog link: Author's blog post (v4.39 source) links only http://www.4shared.com/rar/5q0lFhI6/439_SRC__1_.html, which now returns 404. chessprogramming.org/Petir has no other source link; kirr.homeunix.org Norbert's collection unreachable; calc.biokirr.com mirror is behind an Anubis anti-bot challenge; computer-chess.org unreachable; rwbc-chess.de, e4e6, CEGT/CCRL pages and Google sheets are rating/catalog lists without source.",
+   "searches": 0,
+   "checked_at": "2026-10-22T23:43:48Z",
+   "tier": "review"
+  },
   "Petunia": {
    "tier": "E",
    "licensing": "unknown",
@@ -25976,25 +25994,24 @@
   },
   "Presbyter": {
    "licensing": "unknown",
-   "availability": "available",
+   "availability": "not_located",
    "confidence": "medium",
    "release_scope": "family",
-   "source_urls": [
-    {
-     "url": "https://sourceforge.net/projects/sjce/files/chess_engines_nb-src/all_java_uci_ce_07-08-18.zip/download",
-     "kind": "third-party SJCE bundle (uci/presbyter)",
-     "license": "not checked"
-    }
-   ],
+   "source_urls": [],
    "evidence": [
     {
      "source": "all_java_uci_ce_07-08-18.zip central directory",
      "quote": "contains uci/presbyter/ among 21 UCI engine folders"
+    },
+    {
+     "source": "engine options review",
+     "quote": "SJCE all_java_uci_ce_07-08-18.zip contains only uci/presbyter/presbyter-1.3.0.jar (compiled .class files, no .java sources); SJCE xboard zip has no Presbyter. CPW page /Presbyter returns 404; GitHub repository search 'presbyter chess' finds nothing; computer-chess.org list timed out; other alt links are rating lists/spreadsheets without source.",
+     "user_input": "If you can't access the inaccessible sources after trying all non-wayback links, then mark them as source-unavailable"
     }
    ],
-   "rationale": "Editorial choice: no standalone project of the author was found, so this links directly to the SJCE UCI zip containing Presbyter (uci/presbyter) instead of the SJCE project page. SJCE (Strong Java Chess Engines, sourceforge.net/projects/sjce) is a third-party multi-engine bundle of NetBeans source projects; RWBC and computer-chess.org cite it as this engine's source link.",
+   "rationale": "Options review (2026-10) could not obtain the source from any non-archive catalog link: SJCE all_java_uci_ce_07-08-18.zip contains only uci/presbyter/presbyter-1.3.0.jar (compiled .class files, no .java sources); SJCE xboard zip has no Presbyter. CPW page /Presbyter returns 404; GitHub repository search 'presbyter chess' finds nothing; computer-chess.org list timed out; other alt links are rating lists/spreadsheets without source.",
    "searches": 1,
-   "checked_at": "2026-10-22T18:32:12Z",
+   "checked_at": "2026-10-22T23:43:48Z",
    "tier": "B"
   },
   "Prochess": {
@@ -26020,6 +26037,24 @@
    "rationale": "Early-1990s C tournament program (DOCCC, WCCC 1992); no public source or license found.",
    "searches": 2,
    "checked_at": "2026-10-19T23:20:56Z"
+  },
+  "ProChess IT": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "source": "engine options review",
+     "quote": "Visual Basic engine (CPW: source released Oct 2012 on g-sei.org). www.g-sei.org page and http://www.g-sei.org/wp-content/uploads/2012/03/ProChess102AD.zip fail (host does not resolve); scacchisticatorinese.it page returns HTTP 500; computerchess.org.uk/CEGT/RWBC/spreadsheets/CPW pages have no source download; GitHub repository search finds no ProChess by Edoardo Manino.",
+     "user_input": "If you can't access the inaccessible sources after trying all non-wayback links, then mark them as source-unavailable"
+    }
+   ],
+   "rationale": "Options review (2026-10) could not obtain the source from any non-archive catalog link: Visual Basic engine (CPW: source released Oct 2012 on g-sei.org). www.g-sei.org page and http://www.g-sei.org/wp-content/uploads/2012/03/ProChess102AD.zip fail (host does not resolve); scacchisticatorinese.it page returns HTTP 500; computerchess.org.uk/CEGT/RWBC/spreadsheets/CPW pages have no source download; GitHub repository search finds no ProChess by Edoardo Manino.",
+   "searches": 0,
+   "checked_at": "2026-10-22T23:43:48Z",
+   "tier": "review"
   },
   "ProDeo": {
    "tier": "D",
@@ -27822,17 +27857,11 @@
   },
   "Rookie": {
    "tier": "E",
-   "licensing": "source_available",
-   "availability": "available",
+   "licensing": "unknown",
+   "availability": "not_located",
    "confidence": "medium",
-   "release_scope": "Only the Rookie v3 move generator (extracted module) is published; full engine source (v1/v2/v3) not located",
-   "source_urls": [
-    {
-     "url": "https://github.com/kervinck/rookiegen",
-     "kind": "original repository (Rookie v3 move generator only)",
-     "license": "none stated (All rights reserved)"
-    }
-   ],
+   "release_scope": "family",
+   "source_urls": [],
    "evidence": [
     {
      "url": "https://github.com/kervinck/rookiegen",
@@ -27849,12 +27878,17 @@
     {
      "search": "Wayback availability: marcelk.net/rookie/nostalgia/v1/search.s",
      "quote": "archived_snapshots: {} (file not archived)"
+    },
+    {
+     "source": "engine options review",
+     "quote": "User: \"Mark Rookie as unavailable\". The only located repo (kervinck/rookiegen) holds just the Rookie v3 move generator and perft tools, not the engine (no search/eval/UCI/xboard).",
+     "user_input": "If you can't access the inaccessible sources after trying all non-wayback links, then mark them as source-unavailable"
     }
    ],
-   "rationale": "Author published the Rookie v3 move generator on GitHub with an all-rights-reserved header (source_available, partial). A Rookie 1 68000 assembly file (search.s) was once listed on marcelk.net but is not archived; complete engine source not found.",
+   "rationale": "Options review (2026-10) could not obtain the source from any non-archive catalog link: User: \"Mark Rookie as unavailable\". The only located repo (kervinck/rookiegen) holds just the Rookie v3 move generator and perft tools, not the engine (no search/eval/UCI/xboard).",
    "notes": "Author's other open-source projects (MSCP, Floyd, chessmoves) are different programs and not counted.",
    "searches": 4,
-   "checked_at": "2026-10-19T23:20:00Z"
+   "checked_at": "2026-10-23T01:13:12Z"
   },
   "RookieMonster": {
    "tier": "F",
@@ -28881,6 +28915,24 @@
    "searches": 1,
    "checked_at": "2026-10-19T18:08:53Z"
   },
+  "Schooner": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "source": "engine options review",
+     "quote": "GitHub repo is binary-only (Schooner1.4_64.exe, Schooner1.4.1_64.exe, book.bin, sc.ini, README); no source code. README describes a WinBoard engine by D. Sceviour with resident personality book, polyglot book.bin, no pondering.",
+     "user_input": "If you can't access the inaccessible sources after trying all non-wayback links, then mark them as source-unavailable"
+    }
+   ],
+   "rationale": "Options review (2026-10) could not obtain the source from any non-archive catalog link: GitHub repo is binary-only (Schooner1.4_64.exe, Schooner1.4.1_64.exe, book.bin, sc.ini, README); no source code. README describes a WinBoard engine by D. Sceviour with resident personality book, polyglot book.bin, no pondering.",
+   "searches": 0,
+   "checked_at": "2026-10-23T01:34:29Z",
+   "tier": "review"
+  },
   "Schweinehund": {
    "tier": "E",
    "licensing": "proprietary",
@@ -29788,6 +29840,24 @@
    "checked_at": "2026-10-19T02:54:18Z",
    "pilot_group": "random",
    "tier": "pilot"
+  },
+  "Sinobyl": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "source": "engine options review",
+     "quote": "Assembla page returns 403 Cloudflare challenge; subversion.assembla.com/svn/sinobyl requires login (401); kirr.homeunix.org Norbert's collection unreachable; calc.biokirr.com behind Anubis bot challenge; kirill-kryukov forum file id=19443 404; other alt URLs are rating lists/spreadsheets/CPW (no source); no GitHub mirror found.",
+     "user_input": "If you can't access the inaccessible sources after trying all non-wayback links, then mark them as source-unavailable"
+    }
+   ],
+   "rationale": "Options review (2026-10) could not obtain the source from any non-archive catalog link: Assembla page returns 403 Cloudflare challenge; subversion.assembla.com/svn/sinobyl requires login (401); kirr.homeunix.org Norbert's collection unreachable; calc.biokirr.com behind Anubis bot challenge; kirill-kryukov forum file id=19443 404; other alt URLs are rating lists/spreadsheets/CPW (no source); no GitHub mirror found.",
+   "searches": 0,
+   "checked_at": "2026-10-23T01:34:29Z",
+   "tier": "review"
   },
   "Sissa": {
    "tier": "L",
@@ -30801,6 +30871,24 @@
    "searches": 1,
    "checked_at": "2026-10-20T13:34:47Z"
   },
+  "Spike": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "source": "engine options review",
+     "quote": "Repo (single branch main) contains only README.md and LICENSE; releases are binaries only (Spike 1.4.1/1.4.2 for win/linux/macos). No alt URLs in dossier; no public source found.",
+     "user_input": "If you can't access the inaccessible sources after trying all non-wayback links, then mark them as source-unavailable"
+    }
+   ],
+   "rationale": "Options review (2026-10) could not obtain the source from any non-archive catalog link: Repo (single branch main) contains only README.md and LICENSE; releases are binaries only (Spike 1.4.1/1.4.2 for win/linux/macos). No alt URLs in dossier; no public source found.",
+   "searches": 0,
+   "checked_at": "2026-10-23T03:58:30Z",
+   "tier": "review"
+  },
   "SPOC": {
    "tier": "C",
    "licensing": "proprietary",
@@ -31103,6 +31191,24 @@
    "notes": "Review: checked jjoshua2/Stockfish branches; found the unlabelled net1 branch with custom 384x2 NNUE changes from August 2020, a plausible but unconfirmed StockfiNN code base. Status unchanged (unknown/not_located/low); still needs a human decision on whether to accept that branch. Upstream code: https://github.com/nodchip/Stockfish (GPL-3.0). Decision: the unlabelled net1 branch is not accepted as StockfiNN source; left not_located.",
    "searches": 4,
    "checked_at": "2026-10-20T04:05:15Z"
+  },
+  "StoneChess": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "source": "engine options review",
+     "quote": "Tried github.com/Thibor/StoneChess and /tree/master/x64/Release (both 404, repository deleted); Thibor's GitHub repo list has no StoneChess; chessprogramming.org, rwbc-chess.de and the Google Sheet are lists without source links.",
+     "user_input": "If you can't access the inaccessible sources after trying all non-wayback links, then mark them as source-unavailable"
+    }
+   ],
+   "rationale": "Options review (2026-10) could not obtain the source from any non-archive catalog link: Tried github.com/Thibor/StoneChess and /tree/master/x64/Release (both 404, repository deleted); Thibor's GitHub repo list has no StoneChess; chessprogramming.org, rwbc-chess.de and the Google Sheet are lists without source links.",
+   "searches": 0,
+   "checked_at": "2026-10-23T01:34:29Z",
+   "tier": "review"
   },
   "Stoofvlees": {
    "tier": "E",
@@ -31874,17 +31980,11 @@
   },
   "Tech 3": {
    "tier": "E",
-   "licensing": "source_available",
-   "availability": "available",
+   "licensing": "unknown",
+   "availability": "not_located",
    "confidence": "medium",
-   "release_scope": "1984 Fortran/IBM 370 assembly listing printed in Appendix 1 of Szabo's M.Sc. thesis (scanned PDF)",
-   "source_urls": [
-    {
-     "url": "https://open.library.ubc.ca/collections/ubctheses/831/items/1.0051870",
-     "kind": "author's thesis with source code listing in Appendix 1 (UBC Open Collections)",
-     "license": "none stated"
-    }
-   ],
+   "release_scope": "family",
+   "source_urls": [],
    "evidence": [
     {
      "url": "https://www.chessprogramming.org/Tech",
@@ -31901,12 +32001,17 @@
     {
      "url": "https://archive.org/wayback/available?url=open.library.ubc.ca/collections/ubctheses/831/items/1.0051870",
      "quote": "available: true, timestamp 20261012211047"
+    },
+    {
+     "source": "engine options review",
+     "quote": "Tech 3 = Alexander Szabo's 1984 UBC M.Sc. thesis program. Tried open.library.ubc.ca item page and /media/download/pdf/831/1.0051870/1 and circle.ubc.ca/handle/2429/24780: all return a 'request was blocked' HTML page, no PDF. Alt URLs are chessprogramming.org list/Tech pages (description only, no source link for Tech 3).",
+     "user_input": "If you can't access the inaccessible sources after trying all non-wayback links, then mark them as source-unavailable"
     }
    ],
-   "rationale": "The author's own thesis contains the program's source listing (per CPW) and is published in UBC Open Collections; no license, so source_available. UBC's bot protection blocked direct verification of the appendix.",
+   "rationale": "Options review (2026-10) could not obtain the source from any non-archive catalog link: Tech 3 = Alexander Szabo's 1984 UBC M.Sc. thesis program. Tried open.library.ubc.ca item page and /media/download/pdf/831/1.0051870/1 and circle.ubc.ca/handle/2429/24780: all return a 'request was blocked' HTML page, no PDF. Alt URLs are chessprogramming.org list/Tech pages (description only, no source link for Tech 3).",
    "notes": "Wiki circle.ubc.ca/handle/2429/24780 link redirects to open.library.ubc.ca; pages returned a captcha to curl, so the appendix itself was not inspected.",
    "searches": 2,
-   "checked_at": "2026-10-20T00:10:37Z"
+   "checked_at": "2026-10-23T03:58:30Z"
   },
   "TechMate": {
    "tier": "C",
@@ -35689,6 +35794,24 @@
    "rationale": "Early-1980s Dutch championship entrant on a Sharp MZ-80; no published listing or source found.",
    "searches": 1,
    "checked_at": "2026-10-19T23:57:16Z"
+  },
+  "Ynode": {
+   "licensing": "unknown",
+   "availability": "not_located",
+   "confidence": "medium",
+   "release_scope": "family",
+   "source_urls": [],
+   "evidence": [
+    {
+     "source": "engine options review",
+     "quote": "GitHub repo oozturk777/ynode (ffc595e, also all release tags point to it) contains only a placeholder file 'test' (\"xxxx\"); engine is distributed as release binaries only, no source.",
+     "user_input": "If you can't access the inaccessible sources after trying all non-wayback links, then mark them as source-unavailable"
+    }
+   ],
+   "rationale": "Options review (2026-10) could not obtain the source from any non-archive catalog link: GitHub repo oozturk777/ynode (ffc595e, also all release tags point to it) contains only a placeholder file 'test' (\"xxxx\"); engine is distributed as release binaries only, no source.",
+   "searches": 0,
+   "checked_at": "2026-10-23T05:40:13Z",
+   "tier": "review"
   },
   "Yoda": {
    "tier": "D",

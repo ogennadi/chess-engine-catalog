@@ -215997,15 +215997,7 @@
           "source": "wiki-engines"
         }
       ],
-      "source_code": [
-        {
-          "url": "https://codepeter.wordpress.com/2013/11/13/petir_source_code/",
-          "note": "Blog post; source availability inferred from title.",
-          "evidence_url": "https://chessprogramming.org/Petir",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T00:48:47Z"
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "found",
         "url": "https://chessprogramming.org/Petir",
@@ -216016,6 +216008,13 @@
         "titles_checked": [
           "Petir"
         ]
+      },
+      "source_status": {
+        "tier": "review",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-22T23:43:48Z"
       }
     },
     {
@@ -223949,19 +223948,7 @@
           "source": "rwbc"
         }
       ],
-      "source_code": [
-        {
-          "url": "https://sourceforge.net/projects/sjce/files/chess_engines_nb-src/all_java_uci_ce_07-08-18.zip/download",
-          "evidence_url": "https://sourceforge.net/projects/sjce/files/chess_engines_nb-src/all_java_uci_ce_07-08-18.zip/download",
-          "source": "source-status-research",
-          "kind": "third-party SJCE bundle (uci/presbyter)"
-        },
-        {
-          "url": "https://sourceforge.net/projects/sjce/",
-          "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
-          "source": "rwbc"
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "not_found",
         "url": null,
@@ -223975,10 +223962,10 @@
       },
       "source_status": {
         "tier": "B",
-        "availability": "available",
+        "availability": "not_located",
         "licensing": "unknown",
         "confidence": "medium",
-        "checked_at": "2026-10-22T18:32:12Z"
+        "checked_at": "2026-10-22T23:43:48Z"
       }
     },
     {
@@ -224736,20 +224723,7 @@
           "source": "wiki-engines"
         }
       ],
-      "source_code": [
-        {
-          "url": "https://www.g-sei.org/prochess/prochess102ad/",
-          "source_release": "ProChess 102 A doctor (October 2012)",
-          "note": "Historical release landing page labeled ProChess102AD.zip | readme.txt; source availability is established by the cached introduction, not a fetched archive.",
-          "evidence_url": "https://chessprogramming.org/ProChess_IT",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:41:09Z",
-          "unreachable": {
-            "checked_at": "2026-10-21",
-            "status": "DNS: host not found; no Wayback copy found"
-          }
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "found",
         "url": "https://chessprogramming.org/ProChess_IT",
@@ -224760,6 +224734,13 @@
         "titles_checked": [
           "ProChess IT"
         ]
+      },
+      "source_status": {
+        "tier": "review",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-22T23:43:48Z"
       }
     },
     {
@@ -243730,14 +243711,7 @@
           "source": "wiki-engines"
         }
       ],
-      "source_code": [
-        {
-          "url": "https://github.com/kervinck/rookiegen",
-          "evidence_url": "https://github.com/kervinck/rookiegen",
-          "source": "source-status-research",
-          "kind": "original repository (Rookie v3 move generator only)"
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "found",
         "url": "https://chessprogramming.org/Rookie",
@@ -243751,10 +243725,10 @@
       },
       "source_status": {
         "tier": "E",
-        "availability": "available",
-        "licensing": "source_available",
+        "availability": "not_located",
+        "licensing": "unknown",
         "confidence": "medium",
-        "checked_at": "2026-10-19T23:20:00Z"
+        "checked_at": "2026-10-23T01:13:12Z"
       }
     },
     {
@@ -253225,20 +253199,7 @@
           "source": "wiki-engines"
         }
       ],
-      "source_code": [
-        {
-          "url": "https://github.com/schooner64-chess/Schooner-Chess",
-          "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
-          "source": "computer-chess-org"
-        },
-        {
-          "url": "https://github.com/schooner64-chess/Schooner-Chess",
-          "note": "Repository described as engines and books; includes Schooner version 1.4.1 per footnote.",
-          "evidence_url": "https://chessprogramming.org/Schooner",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T00:49:16Z"
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "found",
         "url": "https://chessprogramming.org/Schooner",
@@ -253249,6 +253210,13 @@
         "titles_checked": [
           "Schooner"
         ]
+      },
+      "source_status": {
+        "tier": "review",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-23T01:34:29Z"
       }
     },
     {
@@ -263300,19 +263268,7 @@
           "source": "wiki-engines"
         }
       ],
-      "source_code": [
-        {
-          "url": "https://www.assembla.com/code/sinobyl/subversion/nodes/129/trunk/Sinobyl",
-          "note": "Historical Sinobyl source; later NoraGrace is a separately named program.",
-          "evidence_url": "https://chessprogramming.org/Sinobyl",
-          "source": "chessprogramming-wiki",
-          "checked_at": "2026-10-19T01:42:32Z",
-          "unreachable": {
-            "checked_at": "2026-10-21",
-            "status": "HTTP 403 (Assembla ended free hosting); no Wayback copy found"
-          }
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "found",
         "url": "https://chessprogramming.org/Sinobyl",
@@ -263323,6 +263279,13 @@
         "titles_checked": [
           "Sinobyl"
         ]
+      },
+      "source_status": {
+        "tier": "review",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-23T01:34:29Z"
       }
     },
     {
@@ -272708,13 +272671,7 @@
           "source": "wiki-engines"
         }
       ],
-      "source_code": [
-        {
-          "url": "https://github.com/Mangar2/Spike",
-          "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
-          "source": "amateurschach"
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "found",
         "url": "https://chessprogramming.org/Spike",
@@ -272725,6 +272682,13 @@
         "titles_checked": [
           "Spike"
         ]
+      },
+      "source_status": {
+        "tier": "review",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-23T03:58:30Z"
       }
     },
     {
@@ -278231,17 +278195,7 @@
           "source": "rwbc"
         }
       ],
-      "source_code": [
-        {
-          "url": "https://github.com/Thibor/StoneChess",
-          "evidence_url": "https://docs.google.com/spreadsheets/d/1Qm_YC4Do6Edj-bTCO5IGc6e4SeDSqRijJjSkHiiSQO0/gviz/tq?tqx=out:csv&sheet=Chronology%20-%20Alpha%20List",
-          "source": "rwbc",
-          "unreachable": {
-            "checked_at": "2026-10-21",
-            "status": "HTTP 404; GitHub API: Not Found; no Software Heritage or Wayback copy found"
-          }
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "not_found",
         "url": null,
@@ -278252,6 +278206,13 @@
         "titles_checked": [
           "StoneChess"
         ]
+      },
+      "source_status": {
+        "tier": "review",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-23T01:34:29Z"
       }
     },
     {
@@ -285371,14 +285332,7 @@
           "source": "wiki-engines"
         }
       ],
-      "source_code": [
-        {
-          "url": "https://open.library.ubc.ca/collections/ubctheses/831/items/1.0051870",
-          "evidence_url": "https://www.chessprogramming.org/Tech",
-          "source": "source-status-research",
-          "kind": "author's thesis with source code listing in Appendix 1 (UBC Open Collections)"
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "found",
         "url": "https://chessprogramming.org/Tech",
@@ -285392,10 +285346,10 @@
       },
       "source_status": {
         "tier": "E",
-        "availability": "available",
-        "licensing": "source_available",
+        "availability": "not_located",
+        "licensing": "unknown",
         "confidence": "medium",
-        "checked_at": "2026-10-20T00:10:37Z"
+        "checked_at": "2026-10-23T03:58:30Z"
       }
     },
     {
@@ -313741,18 +313695,7 @@
           "checked_at": "2026-10-19T01:16:59Z"
         }
       ],
-      "source_code": [
-        {
-          "url": "https://github.com/oozturk777/ynode",
-          "evidence_url": "https://web.archive.org/web/20260212005235/https://www.amateurschach.de/main/_engines.htm",
-          "source": "amateurschach"
-        },
-        {
-          "url": "https://github.com/oozturk777/ynode",
-          "evidence_url": "https://computerchess.org.uk/404/cgi/engine_details.cgi?print=Details&each_game=0&eng=Ynode+0234+64-bit",
-          "source": "ccrl"
-        }
-      ],
+      "source_code": [],
       "chessprogramming_wiki": {
         "status": "not_found",
         "url": null,
@@ -313763,6 +313706,13 @@
         "titles_checked": [
           "Ynode"
         ]
+      },
+      "source_status": {
+        "tier": "review",
+        "availability": "not_located",
+        "licensing": "unknown",
+        "confidence": "medium",
+        "checked_at": "2026-10-23T05:40:13Z"
       }
     },
     {

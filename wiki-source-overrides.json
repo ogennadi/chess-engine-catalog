@@ -4614,13 +4614,8 @@
   },
   "Petir": {
     "wiki_url": "https://chessprogramming.org/Petir",
-    "note": "Link labeled Petir source code on author blog.",
-    "code_urls": [
-      {
-        "url": "https://codepeter.wordpress.com/2013/11/13/petir_source_code/",
-        "note": "Blog post; source availability inferred from title."
-      }
-    ],
+    "note": "Link labeled Petir source code on author blog. The cited source link could not be retrieved in the 2026-10 options review.",
+    "code_urls": [],
     "links_sha256": "5f891ef72d62dea3e3755397f15ef74266d934b999b83bfb3c4c543585c867a7"
   },
   "Petunia": {
@@ -4776,14 +4771,8 @@
   },
   "ProChess IT": {
     "wiki_url": "https://chessprogramming.org/ProChess_IT",
-    "note": "The introduction explicitly dates the source release to October 2012, and the linked ProChess102AD download/readme landing page identifies that release.",
-    "code_urls": [
-      {
-        "url": "https://www.g-sei.org/prochess/prochess102ad/",
-        "source_release": "ProChess 102 A doctor (October 2012)",
-        "note": "Historical release landing page labeled ProChess102AD.zip | readme.txt; source availability is established by the cached introduction, not a fetched archive."
-      }
-    ],
+    "note": "The introduction explicitly dates the source release to October 2012, and the linked ProChess102AD download/readme landing page identifies that release. The cited source link could not be retrieved in the 2026-10 options review.",
+    "code_urls": [],
     "links_sha256": "0331f77cb6c9489156ca1e8520fc4b44b57a461975751aef95a3de1ea2a3e323"
   },
   "ProDeo": {
@@ -5218,13 +5207,8 @@
   },
   "Schooner": {
     "wiki_url": "https://chessprogramming.org/Schooner",
-    "note": "GitHub schooner64-chess/Schooner-Chess (engines and books) linked.",
-    "code_urls": [
-      {
-        "url": "https://github.com/schooner64-chess/Schooner-Chess",
-        "note": "Repository described as engines and books; includes Schooner version 1.4.1 per footnote."
-      }
-    ],
+    "note": "GitHub schooner64-chess/Schooner-Chess (engines and books) linked. The cited source link could not be retrieved in the 2026-10 options review.",
+    "code_urls": [],
     "links_sha256": "7cbb323be75c001c24e31500328eb866a76712cdcbd2b4e0bd7f075485d4c67d"
   },
   "Schweinehund": {
@@ -5353,13 +5337,8 @@
   },
   "Sinobyl": {
     "wiki_url": "https://chessprogramming.org/Sinobyl",
-    "note": "Historical Sinobyl source; later NoraGrace is a separately named program.",
-    "code_urls": [
-      {
-        "url": "https://www.assembla.com/code/sinobyl/subversion/nodes/129/trunk/Sinobyl",
-        "note": "Historical Sinobyl source; later NoraGrace is a separately named program."
-      }
-    ],
+    "note": "Historical Sinobyl source; later NoraGrace is a separately named program. The cited source link could not be retrieved in the 2026-10 options review.",
+    "code_urls": [],
     "links_sha256": "41b933b0b093da34fb8859e34d21a0ee1fe6f0443fb7752044ba3f48126e1b08"
   },
   "Sjaak": {
