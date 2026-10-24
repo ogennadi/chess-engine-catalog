@@ -37565,7 +37565,7 @@
         "availability": "not_located",
         "licensing": "unknown",
         "confidence": "medium",
-        "checked_at": "2026-10-20T00:28:52Z"
+        "checked_at": "2026-10-24T18:30:00Z"
       }
     },
     {
@@ -154248,6 +154248,12 @@
           "url": "https://github.com/eliucs/kasparov",
           "evidence_url": "http://computer-chess.org/doku.php?id=computer_chess:wiki:lists:chess_engine_list",
           "source": "computer-chess-org"
+        },
+        {
+          "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/ericyhliu/kasparov-chess-ai",
+          "evidence_url": "https://web.archive.org/web/20180617163313/https://github.com/eliucs/kasparov-chess-ai",
+          "source": "source-status-research",
+          "kind": "repository"
         }
       ],
       "chessprogramming_wiki": {
@@ -154263,10 +154269,10 @@
       },
       "source_status": {
         "tier": "review",
-        "availability": "released_not_located",
+        "availability": "archived_only",
         "licensing": "open_source",
-        "confidence": "medium",
-        "checked_at": "2026-10-20T04:05:15Z"
+        "confidence": "high",
+        "checked_at": "2026-10-24T18:30:00Z"
       }
     },
     {
@@ -175241,7 +175247,14 @@
           "source": "rwbc"
         }
       ],
-      "source_code": [],
+      "source_code": [
+        {
+          "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/petergar/madlenka",
+          "evidence_url": "https://web.archive.org/web/20160319130648/http://www.chess4linux.net/",
+          "source": "source-status-research",
+          "kind": "repository"
+        }
+      ],
       "chessprogramming_wiki": {
         "status": "not_found",
         "url": null,
@@ -175255,10 +175268,10 @@
       },
       "source_status": {
         "tier": "B",
-        "availability": "released_not_located",
+        "availability": "archived_only",
         "licensing": "open_source",
-        "confidence": "medium",
-        "checked_at": "2026-10-19T16:50:00Z"
+        "confidence": "high",
+        "checked_at": "2026-10-24T18:30:00Z"
       }
     },
     {
@@ -254537,7 +254550,14 @@
           "checked_at": "2026-10-18T19:49:18Z"
         }
       ],
-      "source_code": [],
+      "source_code": [
+        {
+          "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/nitrocan/sctr",
+          "evidence_url": "https://chessengines.blogspot.com/2017/11/chess-engine-sctr-11d.html",
+          "source": "source-status-research",
+          "kind": "repository"
+        }
+      ],
       "chessprogramming_wiki": {
         "status": "not_found",
         "url": null,
@@ -254551,10 +254571,10 @@
       },
       "source_status": {
         "tier": "F",
-        "availability": "released_not_located",
-        "licensing": "source_available",
-        "confidence": "medium",
-        "checked_at": "2026-10-20T01:45:59Z"
+        "availability": "archived_only",
+        "licensing": "open_source",
+        "confidence": "high",
+        "checked_at": "2026-10-24T18:30:00Z"
       }
     },
     {

@@ -3565,12 +3565,16 @@
     {
      "url": "http://web.archive.org/web/20200928220107/https://github.com/SquarishRectangle/AeolusEngine",
      "quote": "files listed: Aeolus Engine 1.2.2.exe, README.md"
+    },
+    {
+     "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/SquarishRectangle/AeolusEngine/visit/latest/",
+     "quote": "Software Heritage visit 2022-07-01, snapshot 82f21bbe: master, tags 1.2.2 and 2020 contain only 'Aeolus Engine 1.2.2.exe' and README.md; no source"
     }
    ],
    "rationale": "The bot's linked GitHub repo (now 404) contained only an executable and README per the 2020 Wayback snapshot; no source found.",
    "notes": "Engine is also called Aeolus Engine; repo SquarishRectangle/AeolusEngine deleted.",
-   "searches": 2,
-   "checked_at": "2026-10-20T00:28:52Z"
+   "searches": 3,
+   "checked_at": "2026-10-24T18:30:00Z"
   },
   "BremboCE": {
    "licensing": "unknown",
@@ -17665,10 +17669,16 @@
   "KasparovChess": {
    "tier": "review",
    "licensing": "open_source",
-   "availability": "released_not_located",
-   "confidence": "medium",
+   "availability": "archived_only",
+   "confidence": "high",
    "release_scope": "Eric Liu's Java UCI engine, GitHub repo eliucs/kasparov(-chess-ai), 71 commits by June 2018; repository since removed",
-   "source_urls": [],
+   "source_urls": [
+    {
+     "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/ericyhliu/kasparov-chess-ai",
+     "kind": "repository",
+     "license": "MIT"
+    }
+   ],
    "evidence": [
     {
      "source": "dossier: computer-chess.org comment",
@@ -17701,12 +17711,16 @@
     {
      "search": "GitHub repositories: kasparov chess engine java; kasparov in:name language:Java; kasparov-chess-ai",
      "quote": "no copy or fork of eliucs/kasparov-chess-ai"
+    },
+    {
+     "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/ericyhliu/kasparov-chess-ai/visit/latest/",
+     "quote": "Software Heritage visit 2024-07-10, snapshot c44dd7dc; master at d2f55839 'Fix typo in move generator' (2017-11-11) with LICENSE ('Copyright 2017 Eric Liu', MIT), pom.xml, src/main"
     }
    ],
-   "rationale": "Identity resolved: computer-chess.org ties Eric Liu's 'Kasparov' to github.com/eliucs/kasparov, which redirects to the renamed account's kasparov-chess-ai, an MIT-licensed Java UCI engine (2018). The repository is now gone, and the Wayback Machine holds only its landing page, not the source files, so the source was released but no copy was located.",
-   "notes": "Review: Followed the computer-chess.org GitHub link through Wayback to the renamed repo ericyhliu/kasparov-chess-ai (MIT, Java UCI engine), which resolves identity; the 2024 LazySMP-derived KasparovChess and the Android app are different programs. Changed licensing unknown -> open_source (license shown on the archived repo page; LICENSE text not seen), availability not_located -> released_not_located, confidence low -> medium; needs_review cleared. Software Heritage may hold a copy but its anti-bot check blocked the lookup.",
-   "searches": 7,
-   "checked_at": "2026-10-20T04:05:15Z"
+   "rationale": "computer-chess.org ties Eric Liu's 'Kasparov' to github.com/eliucs/kasparov, which redirects to ericyhliu/kasparov-chess-ai, a Java UCI engine. The repository is now gone, but Software Heritage archived it with its MIT LICENSE, so the source survives only in an archive.",
+   "notes": "Review: Followed the computer-chess.org GitHub link through Wayback to the renamed repo ericyhliu/kasparov-chess-ai (MIT, Java UCI engine), which resolves identity; the 2024 LazySMP-derived KasparovChess and the Android app are different programs. Changed licensing unknown -> open_source (license shown on the archived repo page; LICENSE text not seen), availability not_located -> released_not_located, confidence low -> medium; needs_review cleared. 2026-10-24: Software Heritage API confirmed the archived repository and MIT LICENSE; availability released_not_located -> archived_only, confidence medium -> high.",
+   "searches": 8,
+   "checked_at": "2026-10-24T18:30:00Z"
   },
   "KasparovX": {
    "tier": "F",
@@ -19557,40 +19571,6 @@
    "searches": 2,
    "checked_at": "2026-10-20T01:13:32Z"
   },
-  "Luna CE": {
-   "tier": "F",
-   "licensing": "open_source",
-   "availability": "available",
-   "confidence": "high",
-   "source_urls": [
-    {
-     "url": "https://github.com/Spunc595/Luna-Chess-Engine",
-     "kind": "original repository",
-     "license": "GPL-3.0"
-    }
-   ],
-   "evidence": [
-    {
-     "url": "https://github.com/Spunc595/Luna-Chess-Engine",
-     "quote": "Motore scacchistico in Rust. Chess engine in Rust"
-    },
-    {
-     "url": "https://raw.githubusercontent.com/Spunc595/Luna-Chess-Engine/main/README.md",
-     "quote": "Luna is licensed under the GNU General Public License v3.0 or later"
-    },
-    {
-     "url": "https://api.github.com/repos/Spunc595/Luna-Chess-Engine/releases",
-     "quote": "release tags include v2.1.0 ... v4.1.0"
-    },
-    {
-     "url": "https://github.com/Spunc595/Luna-CE-History-Archive",
-     "quote": "Raw historical source files documenting Luna Chess Engine's development"
-    }
-   ],
-   "rationale": "Spunc595's Luna Chess Engine (companion repos named Luna-CE-*) has a v2.1.0 release matching 'Luna CE 2.1.0 JA'; GPL-3.0.",
-   "searches": 2,
-   "checked_at": "2026-10-20T01:13:32Z"
-  },
   "Luna": {
    "tier": "review",
    "licensing": "open_source",
@@ -19634,6 +19614,40 @@
    "notes": "Review: identity confirmed through the UCI id string and version at the luna_0.4 tag, so confidence rose from medium to high; status otherwise unchanged. UBC lists 'Luna 2.0.0 avx2' as a separate 'Luna' family, which is the later version of this same repository.",
    "searches": 3,
    "checked_at": "2026-10-20T04:05:15Z"
+  },
+  "Luna CE": {
+   "tier": "F",
+   "licensing": "open_source",
+   "availability": "available",
+   "confidence": "high",
+   "source_urls": [
+    {
+     "url": "https://github.com/Spunc595/Luna-Chess-Engine",
+     "kind": "original repository",
+     "license": "GPL-3.0"
+    }
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/Spunc595/Luna-Chess-Engine",
+     "quote": "Motore scacchistico in Rust. Chess engine in Rust"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Spunc595/Luna-Chess-Engine/main/README.md",
+     "quote": "Luna is licensed under the GNU General Public License v3.0 or later"
+    },
+    {
+     "url": "https://api.github.com/repos/Spunc595/Luna-Chess-Engine/releases",
+     "quote": "release tags include v2.1.0 ... v4.1.0"
+    },
+    {
+     "url": "https://github.com/Spunc595/Luna-CE-History-Archive",
+     "quote": "Raw historical source files documenting Luna Chess Engine's development"
+    }
+   ],
+   "rationale": "Spunc595's Luna Chess Engine (companion repos named Luna-CE-*) has a v2.1.0 release matching 'Luna CE 2.1.0 JA'; GPL-3.0.",
+   "searches": 2,
+   "checked_at": "2026-10-20T01:13:32Z"
   },
   "Luzhin": {
    "tier": "B",
@@ -19845,9 +19859,14 @@
   "Madlenka": {
    "tier": "B",
    "licensing": "open_source",
-   "availability": "released_not_located",
-   "confidence": "medium",
-   "source_urls": [],
+   "availability": "archived_only",
+   "confidence": "high",
+   "source_urls": [
+    {
+     "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/petergar/madlenka",
+     "kind": "repository"
+    }
+   ],
    "evidence": [
     {
      "url": "https://web.archive.org/web/20160319130648/http://www.chess4linux.net/",
@@ -19868,12 +19887,16 @@
     {
      "search": "web: Madlenka chess engine Peter Garscha source code github mirror",
      "quote": "no mirror found"
+    },
+    {
+     "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/petergar/madlenka/visit/latest/",
+     "quote": "Software Heritage visit 2016-09-08, snapshot 93b3cb6c; master at 535611c9 (2015-12-23): src/ (COPYING, Position*.cpp, MCTSNode.cpp, PositionUCTSearch.cpp ...), oldversions/, tools/"
     }
    ],
-   "rationale": "Author's site states GPL-3 open source on GitHub, but the repository was deleted (404 since 2018) and Wayback only kept the repo landing page. RWBC's Google Drive folder requires sign-in and could not be checked.",
+   "rationale": "Author's site states GPL-3 open source on GitHub (petergar/madlenka). The repository was deleted (404 since 2018), but Software Heritage archived it in 2016 with the full src/ tree and COPYING, so the source survives only in an archive.",
    "notes": "RWBC Google Drive folder https://drive.google.com/drive/folders/0B5Ao6h_yMCl6ay04RjVtUDVTUG8 may contain a copy (not accessible).",
-   "searches": 4,
-   "checked_at": "2026-10-19T16:50:00Z"
+   "searches": 5,
+   "checked_at": "2026-10-24T18:30:00Z"
   },
   "Maestro": {
    "tier": "review",
@@ -21370,6 +21393,46 @@
    "rationale": "The original didactic source was published with the book and is redistributed in McBurney's archive (Wayback only); no license statement found. The WinBoard (PowerBASIC) port's own source was not located.",
    "searches": 2,
    "checked_at": "2026-10-19T05:36:46Z"
+  },
+  "MinkoChess": {
+   "tier": "F",
+   "licensing": "open_source",
+   "availability": "available",
+   "confidence": "medium",
+   "release_scope": "SourceForge project 'umko' hosts MinkoChess 1.3 (Umko was renamed MinkoChess in 2012); separate Umko 0.7-1.1 source archives not confirmed",
+   "source_urls": [
+    {
+     "url": "https://sourceforge.net/projects/umko/files/",
+     "kind": "original SourceForge project (renamed MinkoChess; MinkoChess1_3.zip)",
+     "license": "GPL (per CPW, not inspected)"
+    },
+    {
+     "url": "http://web.archive.org/web/20260428120556/https://sourceforge.net/projects/umko/files/",
+     "kind": "Wayback snapshot of SourceForge files page"
+    }
+   ],
+   "evidence": [
+    {
+     "url": "https://www.chessprogramming.org/MinkoChess",
+     "quote": "MinkoChess, (formerly called Umko) an open source chess engine licensed under the GNU General Public License, written in C++ by Borko Bošković"
+    },
+    {
+     "url": "https://www.chessprogramming.org/MinkoChess",
+     "quote": "\"Umko has been renamed to MinkoChess due to copyright issues\" by Graham Banks, Rybka Forum, May 09, 2012"
+    },
+    {
+     "url": "http://web.archive.org/web/20260428120556/https://sourceforge.net/projects/umko/files/",
+     "quote": "/MinkoChess1.3/MinkoChess1_3.zip:  released on 2012-05-09"
+    },
+    {
+     "search": "GitHub repositories: umko chess; minkochess",
+     "quote": "no repositories found"
+    }
+   ],
+   "rationale": "Umko was renamed MinkoChess by the same author; CPW categorizes it GPL/Open Source and the umko SourceForge project hosts the 1.3 zip. SourceForge returned 403 to direct fetches, so the license was not inspected (medium).",
+   "notes": "SourceForge blocked curl (403) even after a 60s retry; file listing seen via Wayback.",
+   "searches": 3,
+   "checked_at": "2026-10-20T02:09:39Z"
   },
   "Mint": {
    "tier": "D",
@@ -28979,11 +29042,17 @@
   },
   "SCTR": {
    "tier": "F",
-   "licensing": "source_available",
-   "availability": "released_not_located",
-   "confidence": "medium",
+   "licensing": "open_source",
+   "availability": "archived_only",
+   "confidence": "high",
    "release_scope": "1.0-1.1f (2017) via github.com/nitrocan/sctr, now deleted",
-   "source_urls": [],
+   "source_urls": [
+    {
+     "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/nitrocan/sctr",
+     "kind": "repository",
+     "license": "GPL-3.0"
+    }
+   ],
    "evidence": [
     {
      "url": "https://chessengines.blogspot.com/2017/11/chess-engine-sctr-11d.html",
@@ -29008,11 +29077,15 @@
     {
      "search": "GitHub repositories: SCTR chess / sctr in:name uci",
      "quote": "0 results; no fork or mirror found"
+    },
+    {
+     "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/nitrocan/sctr/visit/latest/",
+     "quote": "Software Heritage visit 2017-10-31, snapshot a11936ed; master at 0a4d1ffe 'timecontrol fix' (2017-10-13) with LICENSE (GNU GPL v3), Makefile, src/ (search.cpp, eval.cpp, uci.cpp ...), 14 branches, PRs 1-10 and tag 1.0"
     }
    ],
-   "rationale": "Authors described SCTR as open source and hosted it on GitHub (nitrocan/sctr, with PRs), but the repo is deleted and no archive/mirror was found; license never seen, so source_available.",
-   "searches": 4,
-   "checked_at": "2026-10-20T01:45:59Z"
+   "rationale": "The authors hosted SCTR on GitHub (nitrocan/sctr). The repository is deleted, but Software Heritage archived it in October 2017, including the 1.1f time-control fix, with a GPL-3 LICENSE in the authors' own repository, so it is open source and survives only in an archive.",
+   "searches": 5,
+   "checked_at": "2026-10-24T18:30:00Z"
   },
   "SD Chess": {
    "tier": "E",
@@ -29228,6 +29301,41 @@
    "rationale": "Commercially marketed William Fink program (Sfinks 1.81-4.0, Sfinks PC); only binaries and brochures are online; no source located.",
    "searches": 2,
    "checked_at": "2026-10-19T20:40:46Z"
+  },
+  "Shadow": {
+   "tier": "F",
+   "licensing": "open_source",
+   "availability": "available",
+   "confidence": "high",
+   "identity_issue": "Project renamed from Throne to Shadow on 2026-06-01; the 0.2 tag (2026-05-09) predates the rename.",
+   "source_urls": [
+    {
+     "url": "https://github.com/Txnch/Shadow/tree/0.2",
+     "kind": "original repository (renamed from Throne; tag 0.2)",
+     "license": "GPL-3.0"
+    }
+   ],
+   "evidence": [
+    {
+     "url": "https://chessengines.blogspot.com/2026/05/throne-02-new-version-chess-engine.html",
+     "quote": "Author: Txnch Throne - chess engine experiment ( C++). GNU General Public License"
+    },
+    {
+     "url": "https://api.github.com/repos/Txnch/Shadow/commits?per_page=100",
+     "quote": "2026-06-01 Rename project from 'Throne' to 'Shadow'"
+    },
+    {
+     "url": "https://api.github.com/users/Txnch/repos?per_page=100",
+     "quote": "Shadow | A Strong UCI Chess Engine | C++ | GPL-3.0"
+    },
+    {
+     "url": "https://api.github.com/repos/Txnch/Shadow/releases",
+     "quote": "0.2 Shadow 0.2 2026-05-09"
+    }
+   ],
+   "rationale": "Author Txnch's GitHub repo was renamed from Throne to Shadow; GPL-3.0 license matches the Chess Engines Diary note, and the 0.2 release tag predates the rename.",
+   "searches": 2,
+   "checked_at": "2026-10-20T02:36:12Z"
   },
   "ShakeyBot": {
    "tier": "F",
@@ -32613,41 +32721,6 @@
    "searches": 4,
    "checked_at": "2026-10-19T14:05:45Z"
   },
-  "Shadow": {
-   "tier": "F",
-   "licensing": "open_source",
-   "availability": "available",
-   "confidence": "high",
-   "identity_issue": "Project renamed from Throne to Shadow on 2026-06-01; the 0.2 tag (2026-05-09) predates the rename.",
-   "source_urls": [
-    {
-     "url": "https://github.com/Txnch/Shadow/tree/0.2",
-     "kind": "original repository (renamed from Throne; tag 0.2)",
-     "license": "GPL-3.0"
-    }
-   ],
-   "evidence": [
-    {
-     "url": "https://chessengines.blogspot.com/2026/05/throne-02-new-version-chess-engine.html",
-     "quote": "Author: Txnch Throne - chess engine experiment ( C++). GNU General Public License"
-    },
-    {
-     "url": "https://api.github.com/repos/Txnch/Shadow/commits?per_page=100",
-     "quote": "2026-06-01 Rename project from 'Throne' to 'Shadow'"
-    },
-    {
-     "url": "https://api.github.com/users/Txnch/repos?per_page=100",
-     "quote": "Shadow | A Strong UCI Chess Engine | C++ | GPL-3.0"
-    },
-    {
-     "url": "https://api.github.com/repos/Txnch/Shadow/releases",
-     "quote": "0.2 Shadow 0.2 2026-05-09"
-    }
-   ],
-   "rationale": "Author Txnch's GitHub repo was renamed from Throne to Shadow; GPL-3.0 license matches the Chess Engines Diary note, and the 0.2 release tag predates the rename.",
-   "searches": 2,
-   "checked_at": "2026-10-20T02:36:12Z"
-  },
   "Tiffanys": {
    "tier": "B",
    "licensing": "source_available",
@@ -34001,46 +34074,6 @@
    "rationale": "1990s Paderborn University research program (WCCC 1992, WMCCC 1993); no release or source located.",
    "searches": 1,
    "checked_at": "2026-10-19T23:55:19Z"
-  },
-  "MinkoChess": {
-   "tier": "F",
-   "licensing": "open_source",
-   "availability": "available",
-   "confidence": "medium",
-   "release_scope": "SourceForge project 'umko' hosts MinkoChess 1.3 (Umko was renamed MinkoChess in 2012); separate Umko 0.7-1.1 source archives not confirmed",
-   "source_urls": [
-    {
-     "url": "https://sourceforge.net/projects/umko/files/",
-     "kind": "original SourceForge project (renamed MinkoChess; MinkoChess1_3.zip)",
-     "license": "GPL (per CPW, not inspected)"
-    },
-    {
-     "url": "http://web.archive.org/web/20260428120556/https://sourceforge.net/projects/umko/files/",
-     "kind": "Wayback snapshot of SourceForge files page"
-    }
-   ],
-   "evidence": [
-    {
-     "url": "https://www.chessprogramming.org/MinkoChess",
-     "quote": "MinkoChess, (formerly called Umko) an open source chess engine licensed under the GNU General Public License, written in C++ by Borko Bošković"
-    },
-    {
-     "url": "https://www.chessprogramming.org/MinkoChess",
-     "quote": "\"Umko has been renamed to MinkoChess due to copyright issues\" by Graham Banks, Rybka Forum, May 09, 2012"
-    },
-    {
-     "url": "http://web.archive.org/web/20260428120556/https://sourceforge.net/projects/umko/files/",
-     "quote": "/MinkoChess1.3/MinkoChess1_3.zip:  released on 2012-05-09"
-    },
-    {
-     "search": "GitHub repositories: umko chess; minkochess",
-     "quote": "no repositories found"
-    }
-   ],
-   "rationale": "Umko was renamed MinkoChess by the same author; CPW categorizes it GPL/Open Source and the umko SourceForge project hosts the 1.3 zip. SourceForge returned 403 to direct fetches, so the license was not inspected (medium).",
-   "notes": "SourceForge blocked curl (403) even after a 60s retry; file listing seen via Wayback.",
-   "searches": 3,
-   "checked_at": "2026-10-20T02:09:39Z"
   },
   "Uragano": {
    "tier": "D",
