@@ -19,8 +19,7 @@
   const form = document.querySelector("#filters");
   if (!form) return;
   const search = form.querySelector("#search");
-  const availability = form.querySelector("#availability");
-  const strength = form.querySelector("#strength");
+  const select = form.querySelector("#filter");
   const clear = form.querySelector("#clear-search");
   const count = document.querySelector("#match-count");
   const empty = document.querySelector("#no-results");
@@ -33,20 +32,21 @@
   }));
   const filters = {
     all: () => true,
-    available: (state) => ["linked", "available"].includes(state),
-    archived: (state) => state === "archived_only",
-    unavailable: (state) => ["not_located", "released_not_located"].includes(state),
+    available: (row) => ["linked", "available"].includes(row.state),
+    archived: (row) => row.state === "archived_only",
+    unavailable: (row) => ["not_located", "released_not_located"].includes(row.state),
+    limited: (row) => row.limited,
   };
+  const has = (key) => Object.prototype.hasOwnProperty.call(filters, key);
   const format = (n) => n.toLocaleString("en-US");
 
   const apply = (save) => {
     const query = normalize(search.value.trim());
     if (clear) clear.hidden = search.value === "";
-    const filter = filters[availability.value] || filters.all;
-    const limitedOnly = strength.value === "limited";
+    const filter = filters[select.value] || filters.all;
     let matches = 0;
     for (const row of rows) {
-      const show = filter(row.state) && (!limitedOnly || row.limited)
+      const show = filter(row)
         && (!query || row.names.some((name) => name.includes(query)));
       row.element.hidden = !show;
       if (show) matches++;
@@ -60,10 +60,10 @@
     const q = search.value.trim();
     if (q) url.searchParams.set("q", q);
     else url.searchParams.delete("q");
-    if (availability.value !== "all") url.searchParams.set("availability", availability.value);
-    else url.searchParams.delete("availability");
-    if (limitedOnly) url.searchParams.set("strength", "limited");
-    else url.searchParams.delete("strength");
+    url.searchParams.delete("availability");
+    url.searchParams.delete("strength");
+    if (select.value === "limited") url.searchParams.set("strength", "limited");
+    else if (select.value !== "all") url.searchParams.set("availability", select.value);
     try {
       window.history.replaceState(null, "", url);
     } catch (error) {
@@ -75,8 +75,8 @@
     const params = new URLSearchParams(window.location.search);
     search.value = params.get("q") || "";
     const state = params.get("availability");
-    availability.value = Object.prototype.hasOwnProperty.call(filters, state) ? state : "all";
-    strength.value = params.get("strength") === "limited" ? "limited" : "all";
+    if (params.get("strength") === "limited") select.value = "limited";
+    else select.value = state !== "limited" && has(state) ? state : "all";
     apply(false);
   };
 
@@ -92,13 +92,11 @@
       search.focus();
     });
   }
-  availability.addEventListener("change", () => apply(true));
-  strength.addEventListener("change", () => apply(true));
+  select.addEventListener("change", () => apply(true));
   form.addEventListener("reset", (event) => {
     event.preventDefault();
     search.value = "";
-    availability.value = "all";
-    strength.value = "all";
+    select.value = "all";
     apply(true);
     search.focus();
   });

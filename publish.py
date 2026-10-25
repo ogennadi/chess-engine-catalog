@@ -793,17 +793,17 @@ Source availability is not a licence assessment, and “Source not located” do
 <div class="field"><label for="search">Search names and aliases</label>
 <div class="search-box"><input id="search" name="q" type="search" autocomplete="off" spellcheck="false">
 <button type="button" id="clear-search" aria-label="Clear search" hidden>&times;</button></div></div>
-<div class="field"><label for="availability">Source availability</label>
-<select id="availability" name="availability">
+<div class="field"><label for="filter">Show</label>
+<select id="filter" name="filter">
 <option value="all">All families</option>
+<optgroup label="Source availability">
 <option value="available">Source available</option>
 <option value="archived">Archived source only</option>
 <option value="unavailable">Source not located</option>
-</select></div>
-<div class="field"><label for="strength">Strength limit</label>
-<select id="strength" name="strength">
-<option value="all">All families</option>
+</optgroup>
+<optgroup label="Strength limit">
 <option value="limited">Strength-limited engines ({len(strength_limited):,})</option>
+</optgroup>
 </select></div>
 <button type="reset">Clear filters</button>
 </form>

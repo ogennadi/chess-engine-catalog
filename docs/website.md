@@ -17,11 +17,12 @@ refreshes collection or research. `dist/` is gitignored; only the generator
   in plain text (family source sections add a note that a copy is on the Wayback
   Machine), and Internet Archive items as
   unlinked text. Search covers
-  canonical names and aliases; the availability filter's "Source available" excludes
-  archived-only families, which have their own "Archived source only" option. The
-  strength-limit filter shows only the families listed in
+  canonical names and aliases. A single "Show" filter combines source availability and
+  strength limiting: "Source available" excludes archived-only families, which have
+  their own "Archived source only" option, and "Strength-limited engines" shows only the
+  families listed in
   `strength-limited/strength-limited-engines.csv` (engines with a built-in way to play
-  weaker, confirmed in their source); unknown names there produce a warning. Filters are kept in the URL
+  weaker, confirmed in their source); unknown names there produce a warning. The filter is kept in the URL
   (`?q=...&availability=available|archived|unavailable&strength=limited`) for bookmarking. Without
   JavaScript the full table is shown.
 * `families/*.html`: authors (from the CPW engine list, computer-chess.org, the Lucas Chess
