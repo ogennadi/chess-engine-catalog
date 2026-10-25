@@ -1,0 +1,4387 @@
+# Chess engine families with source links, read by fetch_sources.py.
+# Family name at column 0; indented lines are '= alias' or a source URL. Comments start with '# '.
+# Regenerate in the catalog repository with: python fetch_sources.py --export
+
+#Chess
+  = SharpChess
+  http://www.open-aurec.com/wbforum/viewtopic.php?f=18&t=41498
+  https://web.archive.org/web/20070607093301/http://www.albert.nu/default.asp?sub=programs/default.asp?sub=sharpchess/main.htm
+
+100 Elo
+  https://codeberg.org/computablee/100-Elo-Chess-Engine
+
+1K ZX Chess
+  http://users.ox.ac.uk/~uzdm0006/scans/1kchess/assem.html
+
+4kc
+  = 4k.c
+  https://github.com/GediminasMasaitis/4k-dot-c
+
+4ku
+  https://github.com/kz04px/4ku
+
+A0lite
+  https://github.com/dkappe/a0lite
+  https://github.com/joergoster/a0lite
+
+AbhinEngine
+  https://github.com/abhineetabhaykulkarnikulkarni-cloud/AbhinEngine
+
+Absolute Zero
+  = Absolute-Zero
+  https://github.com/zongzhengli/Absolute-Zero
+  https://github.com/zongzhengli/absolute-zero
+
+Abulafia
+  https://github.com/nionita/Abulafia
+
+ACE
+  = Ace
+  https://code.google.com/archive/p/ace-chess/
+  https://storage.googleapis.com/google-code-archive-source/v2/code.google.com/ace-chess/source-archive.zip
+
+ACE2
+  https://github.com/sneivandt/chess
+
+Achillees
+  https://github.com/Tempate/Achillees
+
+Aconcagua
+  https://github.com/gabtar/aconcagua
+
+AdaChess
+  https://github.com/adachess/AdaChess
+
+Admete
+  https://github.com/Orbita2d/admete
+  https://github.com/orbita2d/admete
+
+Aestra
+  https://github.com/Iudwgerte1/aestra
+
+AffinityChess
+  https://github.com/eligolf/Affinity-Chess
+
+Akerbeltz
+  https://github.com/neluj/Akerbeltz
+
+akimbo
+  = Akimbo
+  https://github.com/JacquesRW/Kimbo
+  https://github.com/JacquesRW/akimbo
+  https://github.com/jw1912/akimbo
+
+Aku
+  https://github.com/hoavu-cs/aku-chess-engine
+
+Albatros
+  https://github.com/PiIsRational/Albatros
+
+Alcibiades
+  https://github.com/epandurski/alcibiades
+
+Alexander
+  https://github.com/amchess/Alexander
+
+Alexandria
+  https://github.com/PGG106/Alexandria
+
+Alfil
+  https://github.com/Alfilchess/Engine
+
+Algae
+  https://github.com/PaulJeFi/algae
+
+Alice
+  https://web.archive.org/web/20201106232442/http://kirr.homeunix.org/chess/engines/Jim%20Ablett/ALICE/
+
+Allie
+  = Stein
+  https://github.com/manyoso/allie
+
+AllRustBot
+  https://github.com/Allstreamer/chess_bot
+
+Alouette
+  https://codeberg.org/rchastain/alouette
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/alouette/source.tar.gz
+  https://github.com/rchastain/alouette
+  https://gitlab.com/rchastain/alouette
+
+Alpaca
+  https://github.com/bbogdan95/alpaca
+
+Altair
+  https://github.com/Alex2262/AltairChessEngine
+
+Altar
+  https://github.com/altarchess/Altar
+
+Amelia
+  https://github.com/joey-bednar/amelia
+
+Amira
+  https://github.com/FauziAkram/amira
+
+Amoeba
+  = amoeba
+  https://github.com/abulmo/amoeba
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/amoeba/src.7z
+
+Amundsen
+  https://github.com/johnbergbom/Amundsen
+
+Amy
+  https://github.com/thgreiner/amy
+
+AmySharp
+  https://sourceforge.net/projects/amysharp/
+
+Andoma
+  https://github.com/healeycodes/andoma
+
+Andscacs
+  http://www.andscacs.com/downloads/andscacs921src.zip
+  https://github.com/MichaelB7/Andscacs
+
+Anduril
+  https://github.com/Krtoonbrat/Anduril_Engine
+
+AnimatsChess
+  https://sourceforge.net/projects/animatschess/
+  https://sourceforge.net/p/animatschess/code/
+  https://github.com/En-En-Code/AnimatsChess
+
+Anka
+  https://github.com/erenyesilyurt/anka
+
+Anna
+  https://github.com/Lironktf/anna-chess
+
+Annie
+  https://github.com/tsoj/Annie
+
+Anodos
+  https://github.com/tomcant/chess-rs
+
+Anshul
+  https://github.com/sharmaharish/anshul
+
+Antares
+  https://github.com/Alex2262/Antares
+
+Antonius
+  https://github.com/evanderh/Antonius
+
+Anubis
+  https://github.com/Lacovipo/Anubis-chess-engine
+
+Anura
+  https://github.com/Vast342/Anura
+
+APE
+  https://github.com/pea-pousset/APE
+
+Apep
+  = ApepCE
+  https://github.com/tildedave/apep-chess-engine
+
+APIL chess
+  = APILChess
+  = ApilChess
+  https://web.archive.org/web/20040109112045/http://www.uni-paderborn.de:80/fachbereich/AG/monien/PERSONAL/FLULO/APIL/APILchess.tar
+
+Apollo
+  https://github.com/stnevans/Apollo
+
+Apollo (Gillespie)
+  https://github.com/swgillespie/apollo
+
+Apotheosis
+  https://github.com/spamdrew128/Apotheosis
+
+Aquarii
+  https://github.com/Mcthouacbb/Aquarii
+
+Aramis
+  https://github.com/FedericoSaitta/Chess-Engine-in-cpp
+
+Arasan
+  https://github.com/jdart1/arasan-chess
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/arasan/src.7z
+
+Arcanum
+  https://github.com/LarsAur/Arcanum
+
+Arche
+  https://github.com/aywrite/arche
+
+ArduChess
+  https://github.com/tiberiusbrown/arduchess
+
+Arhanpassant
+  https://github.com/arhancanli/arhanpassant
+
+Ariadne
+  https://github.com/liamg/ariadne
+
+Artisan
+  https://github.com/nyoshe/Artisan
+
+Arvyy
+  https://github.com/arvyy/arvyy-chess-engine
+
+Askaig
+  https://github.com/sophiathedev/askaig
+
+asmFish
+  https://github.com/lantonov/asmFish
+
+Aspen
+  https://github.com/ATheofanis/aspen-chess
+
+AspireBot
+  https://github.com/AspiringPenguin/ChessEngine
+
+Astarion
+  https://github.com/Cameron-James-Mah/Astarion
+
+Astra
+  https://github.com/h1me01/Astra
+
+Asymptote
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/asymptote/src.7z
+  https://github.com/malu/asymptote
+
+Athena
+  https://github.com/NicolasSegl/Athena
+
+Aurora
+  https://github.com/kjljixx/Aurora-Chess-Engine
+
+Austerlitz
+  https://github.com/taperihn0/Austerlitz-Engine
+
+Avalanche
+  https://github.com/SnowballSH/Avalanche
+
+AwesomeOpossum
+  https://github.com/liamt19/AwesomeOpossum
+
+Awit
+  https://web.archive.org/web/20251201025348/https://webdocs.cs.ualberta.ca/~tony/Public/Awit-Wita-ComputerChess/
+
+Axiom
+  https://github.com/InternetHamburger/Axiom
+
+Axolotl
+  https://github.com/louism33/Axolotl
+
+AXWChessBot
+  https://github.com/ArcticXWolf/AXWChessbot
+
+BabyChess
+  https://github.com/kunegis/babychess
+  https://savannah.nongnu.org/projects/baby
+
+Bace
+  = BACE
+  https://github.com/cwbowron/BCE
+
+BaChess
+  http://www.schlagmueller.de/studium/projekte/files/bachess-source.zip
+
+Bad Chess Engine
+  = BadChessEngine
+  https://github.com/Notoh/badchessengine
+
+Bagatur
+  https://github.com/bagaturchess/Bagatur
+  https://github.com/bagaturchess/Bagatur-Chess-Engine-And-Tools
+  https://sourceforge.net/projects/bagaturchess/
+
+BagaturCPP
+  = Bagatur.cpp
+  https://github.com/bagaturchess/Bagatur.cpp
+
+Baislicka
+  https://github.com/kz04px/Baislicka
+
+Barbarossa
+  https://github.com/nionita/Barbarossa
+
+Baryonyx
+  https://github.com/IbaiBuR/Baryonyx
+
+Basic-Chess
+  https://billjordanchess.blogspot.com/2019/05/i-am-making-available-source-code-for.html
+  https://github.com/billjordanchess/Basic-Chess
+
+BasicChessEngine
+  https://github.com/Checkmate6659/basic-chess-engine
+
+BBC
+  https://github.com/maksimKorzh/bbc
+
+BBChess (Ponomarev)
+  https://gitlab.com/morengo75/bbchess
+
+BBChess (SI)
+  = BBChess
+  https://web.archive.org/web/20120125054457/http://labraj.uni-mb.si:80/en/Chess_program_BBChess
+
+BDIChess
+  https://sourceforge.net/projects/bdi-chess/
+
+Beatrijs
+  https://github.com/dewaeq/beatrijs
+
+Beef
+  https://github.com/jtseng20/Beef
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/beef/src.7z
+
+Belette
+  https://github.com/vincentbab/Belette
+
+BeLL
+  https://github.com/Dany1962/BeLL
+
+Belofte
+  https://sourceforge.net/projects/belofte/
+
+Beowulf
+  = BeoWulf
+  http://www.frayn.net/beowulf/BeoUnix.tgz
+  http://www.frayn.net/beowulf/Beowulf.zip
+
+Berserk
+  https://github.com/jhonnold/berserk
+
+Betsy
+  https://github.com/landon/Chess
+
+BetterThanCris
+  https://github.com/gustavoknudsen/BetterThanCris
+
+BibiChess
+  http://web.archive.org/web/20231201065148id_/http://computer-chess.org/lib/exe/fetch.php?media=computer_chess:wiki:download:bibichess-0.5.rar
+
+Bienchen
+  https://github.com/fitzcarrald/Bienchen
+
+Bills Bare Bones Chess
+  http://web.archive.org/web/20161111132747/http://www.chess-tuition.com/bbb//bbbc.html
+  https://billjordanchess.blogspot.com/2019/05/i-am-making-available-source-code-for.html
+
+BinaryTurk
+  https://github.com/theemathas/binary_turk
+
+BishBosh
+  https://github.com/functionalley/BishBosh
+
+Bismark
+  https://bitbucket.org/jackalsh/bismark
+
+Bison
+  https://sourceforge.net/projects/bison/
+
+Bit-Genie
+  https://github.com/Aryan1508/Bit-Genie
+
+bitbit
+  = Bitbit
+  https://github.com/Spinojara/bitbit
+  https://github.com/spinojara/bitbit
+
+Bitboard-Chess
+  https://github.com/billjordanchess/Bitboard-Chess
+
+Bitfoot
+  https://github.com/zd3nik/Bitfoot
+
+Bitfox
+  https://github.com/Azeel1/bitfox-engine
+
+Black Marlin
+  = BlackMarlin
+  https://github.com/dsekercioglu/blackmarlin
+  https://github.com/jnlt3/blackmarlin
+
+Black-Cat
+  https://github.com/Checkmate6659/black-cat-chess
+
+BlackAndRight
+  https://github.com/andavintila/BlackAndRight
+
+BlackCore
+  https://github.com/SzilBalazs/BlackCore
+
+BLANK
+  https://github.com/RyanLauQF/BLANK-Chess
+  https://github.com/RyanLauQF/BLANK-Chess/
+
+Blaze
+  https://github.com/antaz/blaze
+
+Blini
+  https://github.com/ethan-dally/blini
+
+Blitz
+  http://www.talkchess.com/forum3/viewtopic.php?f=7&t=72255
+
+BlitzKibitz
+  = BlitzKibitz/Amaterasu
+  https://github.com/svalentin/blitzkibitz
+
+Blitzkrieg
+  https://github.com/rianneogi/Blitzkrieg
+
+Blocky
+  https://github.com/knguy22/Blocky-Chess-Engine
+
+blue_bot_one
+  https://github.com/azureblue/lichess-blue-bot
+
+Blueberry
+  https://github.com/Lucky0wls/blueberry
+
+Bluebetafish
+  https://github.com/BlueBetaFish/chess-engine
+
+Blunder
+  https://github.com/algerbrex/blunder/
+  https://github.com/deanmchris/blunder
+
+Blunders
+  https://github.com/paulolemus/blunders
+
+BMCP
+  https://github.com/maksimKorzh/bmcp
+
+BMCP(JS)
+  https://github.com/maksimKorzh/bmcp_js
+
+Bobcat
+  https://github.com/Bobcat/bobcat
+
+Booot
+  https://github.com/booot76/Booot-chess-engine
+
+BootChess
+  http://olivier.poudade.free.fr/src/BootChess.asm
+
+Boychesser
+  https://github.com/analog-hors/Boychesser
+
+Braincrack
+  https://sourceforge.net/projects/braincrack/
+
+Brainfish
+  https://www.zipproth.de/Brainfish/BrainFish_200724_source.zip
+
+Brainlearn
+  https://github.com/amchess/BrainLearn
+
+Brainless
+  https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://bitbucket.org/waterreaction/brainless
+  https://bitbucket.org/waterreaction/brainless/src/default/
+
+Brainless (Forth)
+  http://www.complang.tuwien.ac.at/forth/appbench.zip
+  https://sourceforge.net/projects/forth-brainless/
+  https://sourceforge.net/projects/forth-brainless/files/brainless
+
+Bread
+  https://github.com/Nonlinear2/Bread-Engine
+
+Breeze Chess
+  https://github.com/furrysalamander/BreezeChess
+
+Brogle
+  https://github.com/dannyhammer/brogle
+
+Brutus NL
+  = Brutus
+  = BrutusChess
+  http://vermeire.home.xs4all.nl/brutus.html
+  http://web.archive.org/web/20140515164911id_/http://home.xmsnet.nl/vermeire/Brutus8_05.zip
+
+Buchess
+  https://github.com/andreig110/buchess
+
+BugChess NL
+  https://github.com/hof/queenmaxima
+
+Bullitchess
+  = BullitChess
+  https://bitbucket.org/CornFLX/bullitchess
+
+Butter
+  https://github.com/akhilles/butter-chess
+
+Buzz
+  http://pradu.us/old/Nov27_2008/Buzz/releases/BuzzOS.zip
+  https://web.archive.org/web/20160514095340/http://www.pradu.us/old/Nov27_2008/Buzz/releases/BuzzOS.zip
+
+Byak
+  https://github.com/ilhooq/byak
+
+byte-knight
+  = Byte-Knight
+  = Byte-knight
+  https://github.com/DeveloperPaul123/byte-knight
+  https://github.com/ptsouchlos/byte-knight
+
+c3
+  https://github.com/eddmann/c3
+
+c4ke
+  https://github.com/citrus610/c4ke
+
+CacophinChess
+  https://github.com/mpvoss/CacophinChess
+
+Cadabra
+  https://github.com/JENebel/Cadabra
+
+Cadie
+  https://github.com/mwyngaarden/Cadie
+
+CaffeinatedPawn
+  https://github.com/folkertvanheusden/CaffeinatedPawn
+
+Caipora
+  https://github.com/ComputecOrg/caipora
+
+Cairn
+  https://github.com/InternetHamburger/Cairn
+
+Caissa
+  https://github.com/Witek902/Caissa
+
+Calculon
+  = CalculonX
+  https://github.com/BarrySW19/CalculonX
+
+Calvin
+  https://github.com/kelseyde/calvin-chess-engine
+
+Camel
+  https://github.com/bdmendes/camel
+
+Capizero
+  https://github.com/fatorius/capizero
+
+CAPS (Motors)
+  https://github.com/toanth/motors
+
+Captain
+  https://github.com/n4h/Captain-chess
+
+Carballo
+  https://github.com/albertoruibal/carballo
+  https://github.com/albertoruibal/karballo
+
+Carlito
+  https://github.com/lovis-hagemeyer/carlito-chess-engine
+
+Carnivor
+  https://www.mediafire.com/?4npbipdezyjqhxm
+
+Carp
+  https://github.com/dede1751/carp
+
+Casanchess
+  = CasanChess
+  https://github.com/casanche/casanchess
+
+Casper
+  https://github.com/shikharsrivastava/Casper-Chess-Engine
+
+Cassandre
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/cassandre/src.7z
+  https://sourceforge.net/projects/cassandre/
+
+Catalyst
+  https://github.com/AnanyTanwar/Catalyst
+
+Cataphract
+  https://github.com/masceron/Cataphract
+
+CatGPT
+  https://github.com/butter76/CatGPT
+
+Catto
+  https://github.com/nguyenphuminh/Catto
+
+CaveChess
+  https://sourceforge.net/projects/cavechess/
+
+CederChess
+  https://cederberg.dk/cederchess/cederchess2.cpp
+  https://cederberg.dk/cederchess/cederchess1.c
+
+CeeChess
+  https://github.com/bctboi23/CeeChess
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/ceechess/src.7z
+
+Celeris
+  https://github.com/0mn1verze/Celeris
+  https://github.com/Hin-Yu-Evan-Fung/Celeris
+
+Celestial
+  https://github.com/FaydSpeare/Celestial
+
+Cepimetheus
+  https://github.com/mrgwbland/Cepimetheus
+
+Ceres
+  https://github.com/dje-dev/Ceres
+
+CeruleanJS
+  https://bitbucket.org/joeyrobert/ceruleanjs
+  https://github.com/joeyrobert/ceruleanjs
+
+CeylonDemon
+  https://github.com/Madushan996/CeylonDemon
+
+CFish
+  https://github.com/okuhara/Cfish
+  https://github.com/syzygy1/Cfish
+
+Chai
+  https://github.com/jakhac/chai
+
+Chal
+  https://github.com/namanthanki/chal
+
+Challenger
+  https://github.com/SimjanovskiNikola/FRI_Challenger
+
+ChandraChess
+  https://github.com/AdityaChandra316/ChandraChess
+  https://github.com/crupeng-1/ChandraChess
+
+Chaos (Quinniboi10)
+  = Chaos
+  https://github.com/Quinniboi10/Chaos
+
+Chareth
+  https://github.com/mcfarljm/chareth
+
+Cheers
+  https://github.com/Algorhythm-sxv/Cheers
+
+Cheese
+  https://gitlab.com/cheesechess/cheese
+
+CHEKMO-II
+  http://www.pdp8.net/pdp8cgi/os8_html/CHEKMO.PA?act=file;fn=images/misc_dectapes/chekmo_misc.tu56;blk=121,252,0;to=auto
+  https://github.com/okalachev/chekmo
+
+Chenard
+  https://github.com/cosinekitty/chenard
+
+Cheng
+  = Cheng3
+  https://github.com/kmar/cheng4
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/cheng/src.7z
+  https://www.vlasak.biz/cheng/cheng3_uci_v1.07.zip
+  https://www.vlasak.biz/cheng/cheng3_uci_v1.06.zip
+
+Chengine
+  https://github.com/hsperr/Chengine
+
+Chenglite
+  https://github.com/maksimKorzh/Chenglite
+
+Cheops
+  https://github.com/logological/cheops
+
+Cheoss
+  https://github.com/miguelembuena/cheoss
+
+Cherry
+  https://github.com/teccii/cherry
+
+Chers
+  https://github.com/giusgad/chers
+
+Chesley
+  https://github.com/matthewgingell/chesley
+  https://sourceforge.net/projects/chesley/
+
+Chess
+  https://github.com/stockfishdeveloper/C---Bitboard-Chess-Engine
+
+Chess (Program)
+  http://archive.computerhistory.org/projects/chess/related_materials/software/3-3.Chess_4.6_Sourcecode.102645430/chess_4-6.sourcecode.102645430.pdf
+  http://www.computerhistory.org/chess/full_record.php?iid=sft-431614f455002
+
+Chess (Waugh)
+  https://github.com/fjswaugh/chess_uci
+
+Chess 0.5
+  http://www.andreadrian.de/schach/Chess05GNU.pas
+  http://www.moorecad.com/standardpascal/Chess05.pas
+
+Chess VI
+  https://www.retro11.de/ouxr/211bsd/usr/src/games/pdp/chess/
+  https://github.com/jasper-sinclair/PDP-11-Chess-VI-Belle
+
+Chess Zero
+  https://github.com/Zeta36/chess-alpha-zero
+
+Chess-3
+  = chess-3
+  https://github.com/paulsonkoly/chess-3
+  https://github.com/phaul/chess
+
+chess-app
+  = Chess-app
+  https://github.com/adidvar/chess-app
+
+Chess-At-Nite
+  = chess-at-nite
+  = Chess-at-nite
+  https://github.com/fdomig/chess-at-nite
+
+Chess-Engine
+  https://github.com/SorinBucur/Chess-Engine
+
+chess-go
+  https://github.com/TidyMaze/chess-go
+
+Chess-Rikus
+  = ChessRikus
+  http://www.rikus.com/Chess/chessrikus.c
+  https://web.archive.org/web/20190607192202id_/http://www.rikus.com/Chess/chessrikus.c
+
+chess.cpp
+  = Chess.cpp
+  = Chess.Cpp
+  = ChessDotCpp
+  https://github.com/GediminasMasaitis/chess-dot-cpp
+
+Chess0
+  https://github.com/mkd/chess0
+
+Chess176
+  http://web.archive.org/web/20131101185952id_/http://www.reocities.com/SiliconValley/Lab/3716/Chess176.zip
+  https://geocities.restorativland.org/SiliconValley/Lab/3716/Chess176.zip
+
+chess22k
+  = Chess22k
+  https://github.com/sandermvdb/chess22k
+  https://github.com/sandermvdb/chess22k/blob/master/src/main/java/nl/s22k/chess/ChessBoard.java
+
+Chess3
+  = Julien's Chess3
+  https://github.com/jrialland/python-chess
+
+Chess3 (Karpenko)
+  https://github.com/KarpenkoNikolai/Chess3
+
+Chess4j
+  = chess4j
+  https://github.com/jswaff/chess4j
+
+Chessatron
+  https://github.com/dallinson/Chessatron
+
+Chessboard Engine
+  https://github.com/HDANILO/Chessboard-Engine
+
+Chessboi
+  https://github.com/schenegghugo/HomeboiChessbot
+
+Chessbot
+  = ChessBot
+  https://github.com/johnniegf/chessbot
+
+ChessBotUCI
+  https://github.com/lexho/ChessBot
+
+ChessbotX
+  = ChessBotX
+  https://github.com/alexandersoto/chess-bot
+  https://sourceforge.net/projects/sjce/
+
+Chessbox gnu4j
+  http://www.forthgo.com/chessbox/download/chessbox_gnu4j_1.02.zip
+  https://sourceforge.net/projects/sjce/files/chess_engines_nb-src/all_java_xboard_ce_22-09-17.zip/download
+
+ChessBrainVB
+  = ChessbrainVB
+  https://github.com/RZulu54/ChessBrainVB
+
+ChessCore
+  https://github.com/3583Bytes/ChessCore
+
+ChessEngine
+  https://github.com/alexsyrom/chess-engine
+
+ChessEngine (Clarity)
+  https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/ForestBits/chessengine
+
+ChessEngine (Lou)
+  https://github.com/alainlou/ChessEngine
+
+ChessEngine (Socha)
+  https://github.com/psocha/ChessEngine
+
+Chesser
+  https://github.com/sinandredemption/chesser
+  https://sourceforge.net/projects/chesser/
+
+ChessGM
+  https://github.com/CoreJust/ChessGM
+  https://github.com/CoreJust/ChessMaster2023
+
+Chessier
+  https://github.com/achien/chessier
+
+Chessika
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/chessika/src.7z
+  https://gitlab.com/MrPingouin/chessika
+
+ChessLin
+  https://phrack.org/issues/69/linenoise.html
+
+ChessMatrix
+  https://github.com/KristianEkman/ChessMatrix
+
+Chessnix
+  = chessnix
+  https://github.com/ericlangedijk/chessnix
+  https://github.com/ericlangedijk/chessnix/
+
+ChessNovice
+  https://sourceforge.net/projects/chessnovice/
+
+chessnut
+  = Chessnut
+  = Chestnut
+  https://github.com/AriaKafie/chestnut
+
+chessplusplus
+  = ChessPlusPlus
+  https://github.com/adajed/chessplusplus
+
+ChessProj
+  https://github.com/yat011/chess_ai_engine
+
+ChessPuter
+  https://github.com/rchastain/chessputer
+  https://github.com/smilesbright/ChessPuter
+  https://github.com/smilesbright/ChessPuter/
+
+Chesster
+  https://sourceforge.net/projects/chesster/
+
+Chessterfield
+  https://web.archive.org/web/20051014105006/http://home.datacomm.ch:80/m.luescher/chessterfield_src_010901.zip
+
+ChessterfieldCL
+  http://web.archive.org/web/20070115191425id_/http://home.datacomm.ch/m.luescher/chessterfield_src_010901.zip
+
+ChessV
+  http://chessv.org/downloads/ChessV2.2-Source.zip
+
+Chest-XB
+  https://github.com/jimablett/Chest-XB
+
+Chimp
+  https://github.com/fsoonaye/chimp
+
+Chrysaora
+  https://github.com/dylanagreen/chrysaora
+
+Cicada
+  https://github.com/mkyl/cicada
+
+Cinag
+  https://sourceforge.net/projects/cinag/files/cinag%20source/
+  https://sourceforge.net/p/cinag/code/
+
+Cinder
+  https://github.com/brunocodutra/cinder
+
+Cinnamon
+  https://github.com/gekomad/Cinnamon
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/cinnamon/src.7z
+
+CiorapBot
+  https://github.com/vladciocoiu/ciorap-bot
+
+CL-U-E
+  = Chesslib
+  https://github.com/fathzer-games/chesslib-uci-engine
+
+Clarity
+  https://github.com/Vast342/Clarity
+
+ClassicAra
+  = CrazyAra
+  https://github.com/QueensGambit/CrazyAra
+
+Claudia
+  https://github.com/antoniogarro/Claudia
+
+Clemens
+  https://github.com/shaardie/clemens
+
+Clever Girl
+  https://github.com/SethKasmann/clever-girl
+
+Clockwork
+  https://github.com/official-clockwork/Clockwork
+  https://github.com/official-clockwork/clockwork
+
+Clover
+  https://github.com/lucametehau/CloverEngine
+
+Clovis
+  https://github.com/jonathanmcdermid/Clovis
+
+clrsrc
+  https://github.com/clrsrc/clrsrc
+
+Clubfoot
+  https://github.com/zd3nik/Clubfoot
+
+Clunk
+  https://github.com/zd3nik/Clunk
+
+CMU Chess Program
+  http://www.silogic.com/Athena/G-21/1968%20CMU%20Chess%20Program%20-%20Algol,%20Joe%20Rubenfeld%20and%20Bob%20Walker.pdf
+
+Coco
+  https://github.com/NotKaede-11/Coco-Engine
+
+Coda
+  https://github.com/adamtwiss/coda
+
+CodeWatchersChessEngine
+  https://github.com/catalinstanciu/ChessEngine-Xboard-cpp
+
+Codfish
+  https://github.com/jsilll/codfish
+
+Coding-Adventure
+  https://github.com/SebLague/Chess-Coding-Adventure
+
+Coiled
+  https://github.com/Oscar-Gavira/Coiled
+
+Colchess
+  = ColChess
+  https://web.archive.org/web/20000818050453id_/http://www.ast.cam.ac.uk/~cmf/chess/colchess.zip
+  https://web.archive.org/web/20011122035627/http://www.ast.cam.ac.uk/~cmf/chess/
+
+Colossus
+  https://github.com/MartinPBryant/ColossusChess
+
+Combusken
+  https://github.com/mhib/combusken
+
+Combustion
+  https://github.com/spaceships/combustion
+
+Conjuror
+  https://github.com/vibranium21/Bot-chocolate
+
+Conqueror
+  https://github.com/pandeaditya/Conqueror
+  https://sourceforge.net/projects/conqueror-chess-engine/
+
+ConvChess
+  https://github.com/BarakOshri/ConvChess
+
+CookieCat
+  https://github.com/En-En-Code/cookiecat
+
+CorChess
+  https://github.com/pi4chess/Corchess
+
+Cosette
+  https://github.com/Tearth/Cosette
+
+Counter
+  https://github.com/ChizhovVadim/CounterGo
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/counter/src.7z
+
+CPW-Engine
+  = CPW
+  https://github.com/nescitus/cpw-engine
+
+Crab
+  https://github.com/Beanie496/Crab
+  https://github.com/trebblebiscuit/crab-chess
+
+Crabby
+  https://github.com/Johnson-A/Crabby
+
+Crafty
+  https://github.com/MichaelB7/Crafty
+
+crap-bot
+  https://github.com/Spoonvin/crap-bot-2.0
+
+Crappy
+  https://github.com/arielandrade/Crappy
+
+Cray Blitz
+  http://www.craftychess.com/downloads/crayblitz/
+  https://github.com/swenson/cray-blitz
+
+Critter
+  = Critter (Chess)
+  https://github.com/rchastain/open-critter
+  https://sourceforge.net/projects/critterchess/
+
+Crocrodile
+  https://github.com/Virinas-code/Crocrodile
+
+Crucible
+  https://github.com/rithikbanerjee314/crucible
+
+Crust
+  https://github.com/mkandalf/crust
+
+Crustik
+  https://github.com/Dejon51/Crustik
+
+Crystal
+  https://github.com/jhellis3/Stockfish
+
+CT800
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/ct800/source.7z
+  https://www.ct800.net/downloads/ct800-v1.46.zip
+
+CubixChess
+  https://github.com/Cubix1729/CubixChess
+
+CuckooChess
+  = Cuckoochess
+  https://github.com/peterosterlund2/droidfish/tree/master/CuckooChessEngine
+
+Cupcake
+  https://sourceforge.net/projects/sjce/files/chess_engines_nb-src/all_java_xboard_ce_22-09-17.zip/download
+  https://sourceforge.net/projects/sjce/
+
+CvpChessEngine
+  https://github.com/cvpoienaru/ChessEngine
+
+Cwtch
+  https://github.com/op12no2/cwtch
+
+Cyclone
+  = Cyclone xTreme
+  https://github.com/FireFather/cyclone-xTreme
+
+Cyrano
+  https://web.archive.org/web/20160430040751id_/http://sites.estvideo.net/tipunch/cyrano/cyrano0.6b17.zip
+  https://github.com/xaizek/lucaschessR/tree/master/bin/OS/win32/Engines/cyrano/engine
+
+Dabbaba
+  http://web.archive.org/web/20220627165129id_/http://www.jens-musik.dk/DABBABA.C
+
+DanaSah
+  = Danasah
+  https://github.com/pmcastro/danasah-500
+  https://github.com/pmcastro/danasah730
+  https://github.com/pmcastro/danasah790
+
+DarkElectronBot
+  https://github.com/UnrealCryptoCore/chessengine
+
+DarkTemplar
+  https://github.com/bineshandrews/darktemplar-chess
+
+Darky
+  https://www.mediafire.com/file/b4exi6z0m7s4s5l/Darky_05d.rar
+  http://web.archive.org/web/20231205062833id_/http://computer-chess.org/lib/exe/fetch.php?media=computer_chess:engines:darky:darky_05e.zip
+
+Dartfish
+  https://github.com/harirakul/Dartfish
+
+Daydreamer
+  = DayDreamer
+  https://github.com/AaronBecker/daydreamer
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/daydreamer/src.7z
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/daydreamer/src.zip
+
+dbce
+  https://github.com/kecskemeti/dbce
+
+DCP
+  https://codes-sources.commentcamarche.net/source/39744-jeu-d-echec-en-c
+
+DebZero
+  https://github.com/pauldebise/DebZero40
+
+Deep BASIC
+  https://archive.org/download/DeepBasic/DeepBasic.zip
+
+Deep Pink
+  https://github.com/erikbern/deep-pink
+
+Deep Saros
+  http://web.archive.org/web/2025id_/https://digilander.libero.it/taioscacchi/archivio/saros-windows.zip
+
+Deep Thought
+  https://www.tim-mann.org/DT_eval_tune.tar.gz
+
+DeepBecky
+  https://github.com/diogolov-chess/DeepBecky
+
+DeepBlunder
+  https://github.com/boettcherb/DeepBlunder-Chess-Engine
+
+DeepBrutePos
+  https://vanheusden.com/chess/DeepBrutePos/sources.zip
+
+DeepDuke
+  https://sourceforge.net/projects/deepduke/
+
+Deepov
+  https://github.com/RomainGoussault/Deepov
+
+Defenchess
+  = DefenChess
+  https://github.com/cetincan0/Defenchess
+
+Defeo
+  http://bughousechess.wz.cz/BughouseEngines/DefeoB007Alfa007.EvalOutgoingMaterial&Check_Exe&Src.zip
+
+Delfi
+  https://web.archive.org/web/20241007035725/http://www.msbsoftware.it/delfi/source.htm
+
+Delimiter
+  https://github.com/shinkarom/delimiterchess
+
+Delocto
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/delocto/src.7z
+  https://github.com/moterink/Delocto
+
+Demolito
+  https://github.com/lucasart/Demolito
+  https://github.com/lucasart/Demolito/tree/master/src
+
+Demon
+  http://web.archive.org/web/20151209105659id_/http://users.telenet.be/chesslogik/downloads/demon_1.0.rar
+
+Detroid
+  https://github.com/ViktorC/DETROID
+
+Devre
+  https://github.com/OmerFarukTutkun/Devre
+
+Dexter
+  https://github.com/regalmoix/dexter
+
+DGT Pi
+  https://github.com/jromang/dgtpi
+  https://github.com/jromang/picochess
+
+Diablo
+  http://www.geocities.ws/prewarski/diablo04_src.tgz
+  http://www.geocities.ws/prewarski/diablo_051_src.tgz
+  https://github.com/mprewarski/DiabloChessEngine
+
+Dinora
+  https://github.com/Saegl/dinora
+
+DirtyBit
+  https://github.com/andrewbackes/dirty-bit
+
+DiscoCheck
+  = Discocheck
+  = DoubleCheck
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/discocheck/src.7z
+  https://github.com/phenri/chess
+
+dnipro_myko_mafia
+  https://github.com/omivan/ChessEngine
+
+DoctorB
+  https://github.com/hiblom/DoctorB
+
+Dodecahedron
+  https://github.com/alex65536/dodecahedron
+
+Dog
+  https://github.com/folkertvanheusden/Dog
+
+DokChess
+  https://github.com/DokChess/dokchess
+  https://sourceforge.net/projects/dokchess/
+
+Dolphin
+  https://sourceforge.net/projects/dolphinchess/
+  https://github.com/aiagentvn/dolphin
+
+DON
+  https://github.com/ehsanrashid/DON
+  https://github.com/erashid/DON
+
+Donna
+  https://github.com/michaeldv/donna
+
+Dorky
+  https://github.com/matt-dot-net/dorky-release
+
+Dorpsgek
+  https://web.archive.org/web/20180821032641/https://github.com/ZirconiumX/Dorpsgek
+  https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/ZirconiumX/Dorpsgek
+
+Doughboy
+  https://github.com/kyleaforrester/doughboy
+
+Doumi
+  https://github.com/seungjaeryanlee/Doumi-Chess
+
+Drago
+  https://web.archive.org/web/20140126001431/http://www.linformatica.com/software/dragosrc.zip
+
+Dragonrose
+  https://github.com/TampliteSK/dragonrose
+  https://github.com/TampliteSK/dragonrose_cpp
+
+Dragontooth
+  https://github.com/dylhunn/dragontooth
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/dragontooth/src.7z
+
+Dreamer
+  = DreamChess
+  https://github.com/dreamchess/dreamchess
+  https://github.com/dreamchess/dreamchess/tree/master/dreamer
+  https://sourceforge.net/projects/dreamchess/
+
+Drofa
+  https://github.com/justNo4b/Drofa
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/drofa/src.tar.gz
+
+Drosophila
+  https://github.com/gustafullberg/drosophila
+
+Dual
+  https://github.com/DSTGU/Dual
+  https://github.com/DSTGU/dual
+
+DuchChess
+  https://github.com/starvy/duchchess
+
+Duchess
+  https://www.prycroft6.com.au/vs2sw/download/duchess6.zip
+
+Dumb
+  = Dump
+  https://github.com/abulmo/Dumb
+
+dummy_chess
+  https://codeberg.org/theoden8/dummy_chess
+
+Dummyette
+  https://github.com/div72/dummyette
+
+Durandal
+  https://github.com/rchastain/durandal
+
+Dysprosium
+  https://github.com/funnsam/Dysprosium
+
+Eccat
+  https://github.com/skycloudd/eccat
+
+Ecce
+  https://bitbucket.org/indesege/ecce
+  https://github.com/codingjerk/ecce
+
+Echekinator
+  https://github.com/Tym972/Echekinator
+
+Echo
+  https://github.com/AM-ML/Echo
+
+Eclipse
+  https://github.com/SimbaE1/eclipse-chess-engine
+
+Eden
+  https://github.com/nczempin/eden-chess-engine
+
+Eggnog
+  https://github.com/LeviGibson/eggnog-chess-engine
+
+EGM
+  = Electronic Grand Master
+  https://github.com/eventhorizon02/Chess-engine
+
+Eguzki
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/eguzki/src.7z
+
+Eguzkilore
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/eguzkilore/src.7z
+
+Eia
+  https://sourceforge.net/projects/eia02/
+  https://sourceforge.net/projects/eia03/
+  https://github.com/neurocore/Eia-v0.5
+
+Eidolon
+  https://github.com/Daniel729/Eidolon
+
+Eleanor
+  https://github.com/rektdie/Eleanor
+
+ElephantGambit
+  https://github.com/looak/elephant
+
+Elixir
+  https://github.com/ArjunBasandrai/elixir-chess-engine
+  https://github.com/guitsaru/exner
+
+Ember
+  https://github.com/ExxDreamerCode/Ember
+
+Embla
+  https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/flok99/Embla
+
+Emerald
+  = Emerald Chess
+  https://github.com/UndefinedCpp/EmeraldChessEngine
+
+EmptedKiller
+  https://github.com/Antash/EmptedKiller
+
+Endamat
+  https://github.com/eligolf/Endamat-Chess
+  https://github.com/eligolfer91/endamat_chess
+  https://github.com/eligolf/endamat_chess
+
+Endspiel
+  https://github.com/thilo11/endspiel
+
+EnkoChess
+  https://drive.google.com/file/d/1o6S9R1LasNUr2cZriTRxKBme10u9AxGL/view?usp=sharing
+
+Enxadrista
+  https://github.com/alcides-schulz/Xadrez
+
+Eques
+  https://github.com/deanmchris/eques
+
+Equisetum
+  = Equisitum
+  https://github.com/justNo4b/Equisetum
+
+Erebus
+  https://github.com/jshriver/Erebus
+
+Erinn
+  https://github.com/NichtElias/Erinn
+
+Ethereal
+  https://github.com/AndyGrant/Ethereal
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/ethereal/src.7z
+
+Eubos
+  https://github.com/cjbolt/EubosChess
+
+Eunoia
+  https://github.com/masterstruct/Eunoia
+
+Euwe
+  https://github.com/JoostHouben/Euwe-chess-engine
+
+Evil2Root
+  https://github.com/bastienjavx/Evil2Root-Chess-Bot
+
+EvolutionChess
+  https://github.com/aole/evolchess
+  https://code.google.com/archive/p/evolchess/
+
+Exacto
+  https://github.com/d-sparks/exacto
+
+ExCE
+  http://web.archive.org/web/20140429232918id_/http://www.sdchess.ru/engines/ExCE_r167.zip
+
+EXchess
+  = ExChess
+  https://drive.google.com/folderview?id=12JnhMOsyT5ZL0Z7cZV-WGrHLpIXkO2X4
+
+Exocet
+  https://github.com/Sazgr/exocet
+
+Expositor
+  https://e4e6.com/download/Expositor%204WR02.rar
+  http://web.archive.org/web/20240309131253/https://github.com/expo-dev/expositor
+  https://github.com/expo-dev/expositor
+
+FabChess
+  = Fabchess
+  https://github.com/fabianvdW/FabChess
+
+Facon
+  https://github.com/CMCanavessi/facon
+
+Faile
+  https://sourceforge.net/projects/faile/
+  http://prdownloads.sourceforge.net/faile/faile_1_4_4.tar.gz
+
+Fairy-Max
+  https://salsa.debian.org/games-team/fairymax
+
+Fairy-Stockfish
+  https://github.com/fairy-stockfish/Fairy-Stockfish
+
+FastChess
+  https://github.com/thomasahle/fastchess
+
+Fat Fritz
+  https://github.com/DanielUranga/Stockfish/tree/ff2
+  https://github.com/DanielUranga/lc0/tree/uci-wdl-reporting
+
+Fat Panda
+  https://github.com/Rahulbiradar9/FatPanda
+
+Fat Titz
+  https://github.com/Sopel97/FatTitz
+
+Fatalii
+  https://github.com/FitzOReilly/fatalii
+
+FCP
+  http://www.complang.tuwien.ac.at/forth/appbench.zip
+
+Feeks
+  https://github.com/folkertvanheusden/Feeks
+
+felabot
+  https://github.com/achille-correge/alphabeta
+
+Felpo
+  https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://bitbucket.org/Felice_Pollano/felpo-ii
+
+Feuerstein
+  https://codeberg.org/rchastain/feuerstein
+
+Fianchetto
+  https://web.archive.org/web/2025id_/http://www.computer-chess.org/lib/exe/fetch.php?media=computer_chess:engines:fianchetto:fianchetto.7z
+
+Fiddler
+  https://github.com/claytonwramsey/fiddler
+
+Fiesty
+  https://github.com/jaespo/Fiesty
+
+Fimbulwinter
+  https://web.archive.org/web/20120125184825id_/http://www.shedletsky.com/chess/source/fimb_5_00.zip
+
+Finny
+  https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/edlich/Finny
+
+Fire
+  = FireNN
+  https://github.com/FireFather/fire
+
+Firenzina
+  http://firenzina.wikispaces.com/file/view/Firenzina_2-4-3_sources.zip/533596960/Firenzina_2-4-3_sources.zip
+  http://www.firenzina.org/Firenzina_2-4-3_sources.zip
+  https://github.com/Censor/Firenzina
+
+FirstChess
+  http://devwebcl.atarionline.pl/cc65/firstchess.c
+  https://github.com/nguyenpham/FirstChess
+
+Fischer-Chess
+  https://storage.googleapis.com/google-code-archive-source/v2/code.google.com/fischer-chess/source-archive.zip
+
+Fixafan
+  https://mcgill.scholaris.ca/server/api/core/bitstreams/dffdebb6-efe9-4b8b-b362-90dce9f26e98/content
+
+Fizbo
+  https://github.com/MoonstoneLight/Fizbo-Chess
+
+FKTB
+  https://github.com/lunbun/fktb
+
+Flip4IT
+  https://github.com/cosminstefanxp/XBoard-Chess-Engine
+
+Flounder
+  https://github.com/Phil-Brooks/Flounder
+
+Floyd
+  https://github.com/kervinck/floyd
+
+Flux
+  https://github.com/fluxroot/flux
+
+Fly By Knight
+  https://github.com/E1219/flyByKnight
+  https://github.com/ewsandor/fly-by-knight
+
+Flying-Dutchman
+  = The Flying Dutchman
+  https://github.com/Sam-Belliveau/flying-dutchman
+
+Fornax
+  https://web.archive.org/web/20221208052938/https://desert-flashgun.com/sourcecode/fornax-v4-0
+  https://desert-flashgun.com/api/public/file/chess/fornax-v4-0.zip
+
+Fortuna
+  https://github.com/visanalexandru/fortuna
+
+FoxChess
+  https://github.com/nfaltermeier/fox-chess
+
+FoxSEE
+  https://github.com/redsalmon91/FoxSEE
+  https://github.com/redsalmon91/FoxSEE/
+
+FracTal
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/fractal/src.7z
+  https://github.com/visanalexandru/FracTal-ChessEngine
+
+FrankWalter
+  = Frank-Walter
+  https://github.com/ljgw/frankwalter
+
+Franky
+  https://github.com/frankkopp/FrankyUCIChessEngine
+
+FrankyCPP
+  https://github.com/frankkopp/FrankyCPP
+
+FrankyGo
+  https://github.com/frankkopp/FrankyGo
+
+Freda
+  https://github.com/shaunihowe/freda
+
+FreeChess
+  = FreeChessII
+  http://web.archive.org/web/2015id_/http://urshak2006.narod.ru/files/src212g.zip
+
+Freyr
+  https://web.archive.org/web/20180713142619/http://www.planet-source-code.com/vb/scripts/ShowCode.asp?txtCodeId=3333&lngWId=3
+
+Fridolin
+  https://drive.google.com/file/d/1snJ7sb7_y9AVlLOugB2R7JEqeNAwi3Vp/view?usp=sharing
+
+Frittle
+  https://sourceforge.net/projects/frittle/
+
+Frolic
+  https://github.com/sscg13/Frolic
+  https://github.com/sscg13/sscg13-chess-engine
+
+Frozenight
+  https://github.com/MinusKelvin/frozenight
+
+Fructosita
+  https://github.com/josantesbo/Fructosita-Chess-Engine
+
+Fruit
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/fruit/src.7z
+  http://arctrix.com/nas/chess/fruit/fruit_21.zip
+  http://arctrix.com/nas/chess/fruit/fruit_21_linux.zip
+
+Fruit Reloaded
+  = Fruit reloaded
+  https://github.com/Akusari/Fruit-reloaded-official/
+  https://github.com/Akusari/Fruit-reloaded-public
+
+Fry
+  https://github.com/ergor/fry
+
+FSharpChess
+  http://web.archive.org/web/20161107122327/http://fsharpchess.codeplex.com/SourceControl/latest
+  http://web.archive.org/web/20210701012830/https://codeplexarchive.blob.core.windows.net/archive/projects/FSharpChess/FSharpChess.zip
+
+FunComp
+  https://github.com/Moxnar/FunComp
+
+Gaia
+  https://github.com/jromang/gaiachess
+
+Galjoen
+  https://www.goudengaljoen.be/files/galjoen_v0.41.2.tgz
+
+Galumph
+  https://github.com/spamdrew128/Galumph
+
+Gambit
+  https://github.com/daystram/gambit
+
+Gambit (Gupta)
+  https://svn.code.sourceforge.net/p/gambitchess/code/
+
+Gambit Fruit
+  https://github.com/lazydroid/gambit-fruit
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/gambitfruit/src.7z
+  https://github.com/Randl/GambitFruit
+
+GarboChess
+  = Garbochess
+  https://github.com/glinscott/Garbochess-3
+  https://github.com/glinscott/Garbochess-JS
+
+Garbochess-JS
+  https://github.com/glinscott/Garbochess-JS
+
+GC-Engine
+  https://github.com/DhaniAAA/GC-Chess_Engine
+
+GearHeart
+  = Gearheart
+  https://bitbucket.org/odomobo/gearheart
+  https://bitbucket.org/odomobo/gearheart/src/master/
+
+Gecko
+  https://github.com/sgtqwq/Gecko
+
+Geko
+  https://web.archive.org/web/20091027143438id_/https://sites.google.com/site/gekochess/homepage/geko_0.5.3_alpha.zip?attredirects=0&d=1
+
+Genetic Chess
+  https://github.com/MarkZH/Genetic_Chess
+
+Gerbil
+  https://github.com/maksimKorzh/chess_programming/tree/master/didactic_engines/GERBIL00
+  https://web.archive.org/web/20020102124646/http://www.seanet.com:80/~brucemo/gerbil/GERBIL02.ZIP
+
+GFC
+  = GFCv2
+  https://drive.google.com/file/d/1Cv9MtcTZmfLqp-p7jwgg4Hrx2mYjnFoI/view
+  https://drive.google.com/file/d/163sU-XpB-X86ey1shNV-TBXgdOPrmsSy/view
+  https://web.archive.org/web/20201009233749id_/https://db5ece14-a-62cb3a1a-s-sites.googlegroups.com/site/chronosce/downloads/GFCv2.zip?attachauth=ANoY7coQpdlj0IM8UnhFA5dKYnpRQn9NVTgXeyvFNQHDo-HGVnGBqHXxVRulnaIyAodM0DjSX0-ILAtrabtzDlr52q1xk8thDiusNSVLVpXOZcSH2os8xzuGoEstzaG8wskqPV51lFdkdUbP-1IB5ZLmMI6_g6eaaqUv6gOV1zpfOe8kOzeZDzpH0d8PnoO0ZemsBmPKa39cB3WqBeIG7JFXK5YXR6v7wA%3D%3D&attredirects=0
+
+Gibbon
+  https://web.archive.org/web/2024/http://perso.numericable.com/monique.marathee/gibbon_home_page_fichiers/Gibbon-2.69a.zip
+
+GiffiBot
+  https://github.com/miklaskarjalainen/GiffiBot
+
+Gilipol
+  https://github.com/Lacovipo/Gilipol
+
+Giraffe
+  https://github.com/ianfab/Giraffe
+  https://web.archive.org/web/20170713091347/https://bitbucket.org/waterreaction/giraffe
+
+GiuChess
+  https://github.com/giuliano-ippoliti/GiuChess
+  https://github.com/rchastain/GiuChess
+  https://sourceforge.net/projects/giuchess/
+
+Gladiator
+  https://github.com/dagaren/gladiator-chess
+
+Glaurung
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/glaurung/src.7z
+  https://github.com/phenri/glaurung
+  https://web.archive.org/web/20100217040537/http://www.glaurungchess.com/
+
+GNU Chess
+  = GNUChess
+  = Gnuchess
+  = SCP/GNUchess
+  http://ftp.gnu.org/pub/gnu/chess/
+
+GnuCheese
+  https://web.archive.org/web/2017id_/http://hardy.uhasselt.be/Toga/gnuchess-release/gnuchess5-5.60.tar.gz
+
+Gnuchess5
+  = GNU Chess 5
+  https://ftp.gnu.org/gnu/chess/gnuchess-5.07.tar.gz
+  https://ftp.gnu.org/gnu/chess/
+
+GoBit
+  https://github.com/carokanns/GoBit
+
+Gochess
+  https://github.com/fdomig/gochess
+
+Godot
+  https://github.com/ucarion/godot
+
+Goldfinger
+  https://github.com/danielwzyang/goldfinger
+
+Goldfish
+  https://github.com/bsamseth/Goldfish
+  https://github.com/bsamseth/goldfish
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/goldfish/src.7z
+
+GOOB
+  https://github.com/Gabrielkaos/ChessEngineGoobC
+
+Googleplex
+  = Googleplex Starthinker
+  https://gitlab.com/tsoj/Googleplex_Starthinker
+
+GopherCheck
+  https://github.com/stephenjlovell/gopher_check
+
+gpt-chess
+  https://github.com/UlisseMini/gpt-chess
+
+Grail
+  https://github.com/jorgenhanssen/grail
+
+Grapefruit
+  https://sourceforge.net/projects/grapefruitchess/
+
+GrayMatter
+  https://storage.googleapis.com/google-code-archive-source/v2/code.google.com/gray-matter/source-archive.zip
+  https://code.google.com/archive/p/gray-matter/
+  https://github.com/Ghotrix/gray-matter
+
+GreKo
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/greko/src.7z
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/greko98/src.7z
+  https://sourceforge.net/projects/greko/
+
+Groupycat
+  https://github.com/frapator/groupycat
+
+Guitarfish
+  https://github.com/memeviber/guitarfish-chess-engine
+
+Gull
+  = GullChess
+  https://github.com/Velmarin/Chess-Gull-Syzygy
+  https://github.com/basil00/Gull
+  https://sourceforge.net/projects/gullchess/
+
+Gullydeckel
+  = GullyDeckel
+  https://github.com/borriss/gully
+
+Gumble
+  https://gitlab.com/artefact2/gumble
+
+Gunborg
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/gunborg/src.7z
+  https://github.com/torgnil/gunborg
+
+Gupta
+  https://sourceforge.net/projects/gambitchess/
+
+Gyatso
+  = GyatsoChess
+  https://github.com/GyatsoYT/GyatsoChess
+
+Hactar
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/hactar/src.7z
+  https://github.com/tsoj/hactar
+
+Haddock
+  https://github.com/hiblom/haddock
+
+Hakkapeliitta
+  https://github.com/mAarnos/Hakkapeliitta
+
+Hakkapeliitta NNUE
+  https://github.com/FireFather/hakkapeliitta-nnue
+
+Halcyon
+  https://github.com/nhamil/halcyon
+
+Halogen
+  https://github.com/KierenP/Halogen
+  https://github.com/KierenP/Halogen2
+
+Hannibal
+  https://github.com/ed-apostol/HannibalChess
+
+Hanzo The Razor
+  = Hanzo
+  = Hanzo the Razor
+  https://sourceforge.net/projects/hanzo/
+
+Hardfiskur
+  https://github.com/t-veor/hardfiskur
+
+Haskak
+  https://github.com/KarolS/HaskellChess
+
+Hayabusa
+  https://github.com/gpiez/hayabusa
+
+HeavyChess
+  http://www.oocities.org/ar/fedecorigliano/ajedrez/heavychess/HeavyChess013.zip
+  https://web.archive.org/web/20080921164216/http://ar.geocities.com/fedecorigliano/ajedrez/heavychess/
+
+Hedwig
+  https://github.com/DoubleEspresso/chess
+  https://github.com/mjglatzmaier/haVoc/tree/7f71caa2cfd74b39401455cb69d2362b0dbf92d7
+
+Heimdall
+  https://github.com/nocturn9x/heimdall
+
+Heretic
+  http://www.mediafire.com/download/ohxab35ckj84dsy/heretic0.3.zip
+
+Hexenzsene
+  https://github.com/sunspcts/hexenzsene-chess
+
+Hippocampe
+  https://github.com/rchastain/hippocampe
+
+Hobbes
+  https://github.com/kelseyde/hobbes-chess-engine
+
+HoiChess
+  https://sources.debian.org/src/hoichess/0.22.0-3/
+  https://web.archive.org/web/20060620032532/http://www.hoicher.de:80/hoichess/download/hoichess-0.4.3.tar.gz
+
+Homura
+  https://github.com/RedBedHed/Homura
+
+HonkuWeak
+  https://github.com/Sstephen2011/HonkuWeak
+
+Honzovy Sachy
+  https://github.com/Safrad/honzovy-sachy
+
+Hopeless
+  https://gitlab.com/rchastain/hopeless
+
+Hoplite
+  http://www.fransekman.com/other-files-for-download/hoplite-2.1.1.tar.gz
+  http://www.fransekman.com/other-files-for-download/hoplite-2.1.1.zip
+
+Hopper
+  https://github.com/jonathanmcdermid/Hopper-Chess-Engine
+
+Horowitz
+  https://github.com/lukazsdev/horowitz
+  https://github.com/OliveriQ/Horowitz
+
+Horsie
+  https://github.com/liamt19/Horsie
+
+Horus
+  https://github.com/pranav-deshpande/horus-chess
+  https://github.com/universecoder/Horus-Chess-Engine
+
+Hunyadi
+  https://github.com/ThatHungarian/Hunyadi
+
+HydraY
+  https://github.com/ThomasGhione/chess_engine
+
+Hynobius
+  https://github.com/Hynobius-Chess/Hynobius
+
+Hyperia
+  https://github.com/Hawk-dev1/Hyperia-Chess-Engine
+
+Hyperopic
+  https://github.com/th0masb/hyperopic
+
+Hypersion
+  https://github.com/RenCopp/Hypersion
+
+Iathena
+  https://github.com/tschmoderer/iathena
+
+iBlunder
+  https://github.com/Timmoth/iBlunder
+
+Icarus
+  = icarus
+  https://github.com/Sp00ph/icarus
+
+ice4
+  https://github.com/MinusKelvin/ice4
+
+Ifrit
+  https://github.com/LongWayA/Ifrit_chess_engine
+
+Igel
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/igel/src.7z
+  https://github.com/vshcherbyna/igel
+
+Igorrit
+  https://github.com/FireFather/igorrit
+
+iiChess
+  = Iichess
+  https://storage.googleapis.com/google-code-archive-source/v2/code.google.com/iichess/source-archive.zip
+  https://code.google.com/archive/p/iichess/source/default/source
+
+Illumina
+  https://github.com/Mergener/illumina
+  https://github.com/mergener/illumina
+
+Inanis
+  https://github.com/Tearth/Inanis
+
+Infrared
+  = Infraredv2
+  https://github.com/SFBdragon/Infrared
+  https://github.com/SFBdragon/Infrared2
+
+Inkayaku
+  https://github.com/marvk/inkayaku
+
+Instinct
+  https://github.com/Cx4n413/Instinct_v4
+
+Integral
+  https://github.com/aronpetko/Integral
+  https://github.com/aronpetko/integral
+
+IntelliChess
+  https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/angyjoe/intellichess
+
+Invictus
+  https://github.com/ed-apostol/InvictusChess
+
+iota
+  = Iota
+  https://github.com/DanielWhite94/iota
+
+Ippolit
+  = IPPOLIT
+  https://github.com/FireFather/ippolit
+
+Irina
+  https://github.com/lukasmonk/irina
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/irina/src.7z
+
+Iris
+  https://github.com/citrus610/iris
+
+Ironfang
+  https://github.com/cmd-anurag/Ironfang
+
+Isa
+  https://github.com/Dany1962/Isa
+  https://github.com/Dany1962/Isa-
+
+IvanHoe
+  https://github.com/Censor/Ivanhoe
+
+IZII
+  https://github.com/ElliotVilhelm/IZII
+
+Izumi-chan
+  https://github.com/TomaszJaworski777/Izumi-chan
+  https://github.com/eduherminio/Izumi-chan
+
+Jabba
+  https://web.archive.org/web/20170212105720/http://rja-software.com/Downloads/Jabba1.0.zip
+
+Jackal
+  https://github.com/TomaszJaworski777/Jackal
+  https://github.com/TomaszJaworski777/Jackal_old
+
+Jacksprat
+  https://github.com/differentprogramming/jacksprat
+
+Jacky Chess
+  = JackyChess
+  https://github.com/matthiaslang/jackychess
+
+Jaglavak
+  https://github.com/StuartRiffle/Jaglavak
+
+Jangine
+  https://github.com/xjcl/jangine
+
+Javalin
+  https://code.google.com/p/javalin-chess/
+  https://github.com/ambrooks1/andychess3
+
+JavaRival
+  https://github.com/chris-moreton/rival-chess-android-engine
+
+JavaScript-Chess
+  https://github.com/billjordanchess/JavaScript-Chess
+
+Javelin
+  https://github.com/TomaszJaworski777/Javelin
+
+Jazz
+  = Jazz (Orchestra)
+  http://www.eglebbk.dds.nl/program/chess-download.html
+  http://www.eglebbk.dds.nl/program/download/jazz-840-src.tar.gz
+
+jChecs
+  https://sourceforge.net/projects/jchecs/
+
+Jchess
+  = JChess
+  https://web.archive.org/web/20150109033346/http://www.tytanchess.republika.pl/JChessSrc.zip
+  https://web.archive.org/web/20121118110554id_/http://www.tytanchess.republika.pl/JChessSrc.zip
+
+JENCE
+  https://github.com/JENebel/JENChessEngine
+
+Jester US
+  = Jester
+  https://web.archive.org/web/20060620212839/http://www.eiganic.com:80/jestersrc.zip
+
+Jet
+  https://github.com/rafid-dev/jet
+
+jFresh
+  = JFresh
+  https://github.com/christiandaley/JFresh
+
+Joana
+  https://web.archive.org/web/2008id_/http://linuxuanl.org/~jpablo/stuff/joana.tar.gz
+
+Joanna
+  https://web.archive.org/web/20130308003113/http://www.apsys.waw.pl/joanna2002/joanna2002sources.zip
+
+Joker IT
+  = Joker2
+  https://github.com/morinim/joker
+
+JS Schach
+  https://github.com/rchastain/moustique/blob/master/original/schach.txt
+
+JustBot
+  https://github.com/HasanFakih21/JustBot
+
+K2
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/k2/src.7z
+  https://github.com/serg-meus/k2
+
+Kaissa
+  https://archive.org/details/KAISSA
+  https://github.com/jimablett/Kaissa
+
+Karballo
+  https://github.com/albertoruibal/carballo
+  https://github.com/albertoruibal/karballo
+  https://sourceforge.net/projects/carballo/
+
+Karl's Sun
+  https://github.com/Izy266/Karls-Sun
+
+karly-sixtyfour
+  https://github.com/kirchoffpt/karly-sixtyfour
+
+Karotten
+  https://github.com/Highhand/Karotten
+
+KasparovChess
+  https://github.com/eliucs/kasparov
+  https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/ericyhliu/kasparov-chess-ai
+
+KC Chess
+  https://github.com/JulStrat/kcchess
+  https://web.archive.org/web/20120411173812/http://www.csbruce.com/~csbruce/chess/
+
+Keele
+  https://web.archive.org/web/20201202192851/https://github.com/mwyngaarden/Keele
+
+Kelp
+  https://github.com/gautam8404/kelp
+
+Kengine
+  https://github.com/bhlangonijr/kengine
+
+Kenny
+  https://github.com/artfuldev/Kenny
+  https://github.com/kenshinthebattosai/kenny
+  https://sourceforge.net/projects/kenny/
+
+Kenny ClassIQ
+  https://github.com/artfuldev/KennyClassIQ
+  https://github.com/kenshinthebattosai/KennyClassIQ
+  https://sourceforge.net/projects/kennyclassiq/
+
+Khanh_Faru
+  https://github.com/OhNoMyKing-Code/Khanh_Faru
+
+KhepriChess
+  https://github.com/kurt1288/KhepriChess
+
+Kholin
+  https://github.com/emilfo/master
+
+King's Out
+  https://mega.nz/folder/P10URKzI#5hiV02lv1VgBTg3LxUBiew/file/2tkGiaJK
+
+Kingfisher
+  https://github.com/Plan-B6/kingfisher
+  https://github.com/eric-ycw/kingfisher
+
+KingSlayer
+  http://hgm.nubati.net/git/simple.git
+  https://web.archive.org/web/20201106232359/http://hgm.nubati.net/cgi-bin/gitweb.cgi?p=simple.git;a=summary
+
+Kishi
+  http://synthcode.com/scheme/kishi.scm
+
+Kissengine
+  https://github.com/simokhin/Kissengine
+
+Kitteneitor
+  https://github.com/emdio/kitteneitor
+  https://github.com/pocopito/kitteneitor
+
+Kiwi
+  https://walkofmind.com/programming/chess/chess.htm
+  https://walkofmind.com/programming/chess/zip/Kiwi06d_src.zip
+
+KMTChess
+  https://sourceforge.net/projects/kmtchess/
+
+Knifefish
+  https://github.com/roryn959/knifefish
+
+Knight To C Sharp
+  https://github.com/eple12/Knight-To-C-Sharp-UCI
+
+KnightCap
+  https://github.com/tridge/KnightCap
+
+Knur
+  https://github.com/Rentib/Knur
+
+Kobra
+  https://github.com/jasper-sinclair/kobra
+
+Kociolek
+  https://github.com/Koci0l/NNUE-Chess-engine
+
+Koedem
+  https://github.com/koedem/Koedem
+
+Koivisto
+  https://github.com/Luecx/Koivisto
+
+Kojiro
+  https://github.com/Babak-SSH/Kojiro
+
+Kopyto
+  https://github.com/pawel-szajna/kopyto
+
+Kotok-McCarthy-Program
+  http://web.archive.org/web/20230409040339/http://www.kotok.org/AK-Thesis-1962.pdf
+  https://d1yx3ys82bpsa0.cloudfront.net/chess/a-chess-playing-program-for-the-ibm-7090-computer.kotok-alan.mit.june-1962.062303009.pdf
+
+Kreveta
+  https://github.com/ZlomenyMesic/Kreveta
+
+Krudo
+  https://github.com/francescobianco/Krudo
+  https://sourceforge.net/projects/krudo/
+
+Kuma
+  https://github.com/kato-daichi/kuma
+
+Kurt
+  https://web.archive.org/web/20111105154012/http://home.arcor.de/steve-o13/kurt/kurt_0_9_2_beta.zip
+
+kZero
+  https://github.com/KarelPeeters/kZero
+
+LabZero
+  https://github.com/carlok/labzero
+
+Lacrima
+  https://github.com/iron627/lacrima
+  https://github.com/Iron627/lacrima
+
+Ladybug
+  https://github.com/cs-patzer/Ladybug
+
+Lambergar
+  https://github.com/jabolcni/Lambergar
+
+Laminar
+  https://github.com/ksw0518/Laminar
+
+LaMoSca
+  https://github.com/pieva/lamosca
+  https://www.valocchi.it/lamosca/LaMoSca.zip
+
+LarsenVB
+  = Larsen
+  https://web.archive.org/web/20121116151101/http://xoomer.virgilio.it/ludormio/download/lvbsource.zip
+
+Laser
+  https://github.com/jeffreyan11/laser-chess-engine
+  https://github.com/jeffreyan11/uci-chess-engine
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/laser/src.7z
+
+Lazarus
+  https://github.com/Quinniboi10/Lazarus
+
+Leaf
+  https://github.com/taperihn0/Leaf-Engine
+
+Leandor
+  https://github.com/OliverLeenders/BitLeandor
+  https://github.com/FeudMe/ChessEngineVS
+
+LeDjo
+  https://github.com/stressGC/Java-Chess-Engine
+
+Leela Chess
+  = Lc0
+  = LC0
+  = LCZero
+  = Leela
+  = Leela Chess Zero
+  = Leela-dag-preview
+  = Leelenstein
+  https://github.com/LeelaChessZero/lc0
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/lc0/LeelaChessZero-lc0-v0.30.0-0-gee68669.tar.gz
+
+Leokom
+  https://github.com/lrozenblyum/chess
+
+Leonidas
+  http://www.eglebbk.dds.nl/program/download/Leonidas-83-src.tar.gz
+  http://www.eglebbk.dds.nl/program/download/Leonidas-73-src.tar.gz
+
+Leorik
+  https://github.com/lithander/Leorik
+
+LibchessEngine
+  https://github.com/Mk-Chan/LibchessEngine
+
+LibraChess
+  https://github.com/eugenioenko/libra-chess
+
+Lichen
+  https://github.com/RomeaoJennings/Lichen
+
+Lifish
+  https://github.com/fredatgithub/Lifish
+
+LightKnight
+  https://github.com/Lazar-Ionut-Radu/LightKnight
+
+LimboBot
+  https://github.com/mlomb/cs-master-thesis
+
+Lime
+  https://web.archive.org/web/20121120221544/http://www.geocities.com/taciturn_lemon/Lime_v66.zip
+
+Lishex
+  https://github.com/MKJM2/lishex
+
+Little Lelouch
+  = LittleLelouch
+  https://github.com/AbdelrhmanIbrahim/Little_Lelouch_01
+
+Little Rook Chess
+  https://github.com/olikraus/u8glib/blob/master/csrc/chessengine.c
+
+Little Wing
+  = LittleWing
+  https://github.com/vinc/littlewing
+
+Lizard
+  https://github.com/liamt19/Lizard
+
+LizardBrain
+  https://github.com/nescitus/LizardBrain
+
+lobsterbot
+  https://github.com/bien/chess
+
+Loki
+  https://github.com/BimmerBass/Loki
+
+Lolbot
+  https://github.com/loldot/lolbot
+
+Lopez
+  https://github.com/flatline/lopez
+
+Lovelace
+  https://github.com/james-elliot/lovelace
+  https://mega.nz/folder/P10URKzI#5hiV02lv1VgBTg3LxUBiew/file/zpkUFK4Y
+
+Lozza
+  https://github.com/op12no2/lozza
+
+LTChess
+  https://ltchess.weebly.com/uploads/2/4/5/7/24572523/ltchess.zip
+
+Luciole
+  https://github.com/rchastain/luciole
+
+Lumac0
+  https://github.com/dbenson42/Lumac0
+
+Lumina
+  https://github.com/DimitrisPantzopoulos/Lumina
+
+Luminex
+  https://github.com/changcheng967/Luminex
+
+Luna
+  = LunaChess
+  https://github.com/Mergener/lunachess
+  https://github.com/Mergener/lunachess/
+  https://github.com/mergener/lunachess
+
+Luna CE
+  https://github.com/Spunc595/Luna-Chess-Engine
+
+Lunar
+  https://github.com/Synthetica9/lunar
+
+Lunarr
+  https://github.com/Eliagiac/lunarr-chess-engine
+
+Lux
+  https://github.com/Sidhant-Roymoulik/Lux
+
+Luzhin
+  https://code.google.com/archive/p/luzhin
+  https://storage.googleapis.com/google-code-archive-source/v2/code.google.com/luzhin/source-archive.zip
+
+Lxna
+  https://github.com/Lxdovic/Lxna
+
+Lynx
+  = lynx
+  https://github.com/lynx-chess/Lynx
+
+m24gc
+  https://github.com/m24gstevens/Chess/tree/main/engines/m24gc
+
+M4sseur
+  https://github.com/Diazepawn/M4sseur
+
+Mac Hack
+  https://github.com/PDP-10/its/tree/master/src/chprog
+
+MACE-Kraken
+  https://github.com/TMagnusN/MagnusChessX
+
+MadChess
+  = Madchess
+  https://github.com/ekmadsen/MadChess
+
+Madlenka
+  https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/petergar/madlenka
+
+Maello
+  https://github.com/MatthewBertello/maello
+
+Maelstrom
+  = Maelstorm
+  https://github.com/saisree27/Maelstrom
+
+Maestro
+  https://github.com/Hin-Yu-Evan-Fung/Maestro-Chess-Engine
+
+MagicTree
+  https://magictree.netlify.app/downloads/MagicTree-3.5.zip
+  https://magictree.netlify.app/download
+
+Magnum Chess
+  = Magnum
+  = MagnumChess
+  https://github.com/EricStock78/magnumchess
+  https://code.google.com/archive/p/magnumchess
+
+Magog
+  https://github.com/macsmol/magog
+
+Maia
+  https://github.com/CSSLab/maia-chess
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/maia/src.7z
+
+Mainsworthy
+  https://github.com/gameleaper/mainsworthy-old-new
+
+MangoPaola
+  = Mango
+  = MangoPaolaAjedrez
+  https://github.com/mango-computer/mango-paola
+  https://github.com/mango-computer/mango-paola-xboard
+
+Mantissa
+  https://github.com/jtheardw/mantissa
+
+Markovian
+  https://github.com/naftaliharris/markovian
+  https://sourceforge.net/projects/markovian/
+
+Martuni
+  https://github.com/Etschmia/enginemartuni
+
+Marvin
+  https://github.com/bmdanielsson/marvin-chess
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/marvin/src.7z
+
+MateCheckCapture
+  https://github.com/greg-finley/lichess-bot-min-opponent-moves
+
+Matilde
+  https://web.archive.org/web/20110615022148id_/http://www.cds.pc.it/matilde/File/MatildeVB255Source.zip
+
+Maverick
+  https://cozmixdownloads.s3.amazonaws.com/maverick/Maverick%20Source%20%282015-10-28%29.zip
+
+Maxima
+  = Maxima2
+  https://github.com/hof/qm2
+
+Maxwell
+  https://github.com/eboatwright/Maxwell
+
+Mayhem
+  https://github.com/SamuraiDangyo/mayhem
+
+mchess2
+  https://github.com/MJoergen/mchess2
+
+Mediocre
+  https://sourceforge.net/p/mediocrechess/wiki/Home/
+  https://sourceforge.net/projects/mediocrechess/
+
+Megalodon
+  https://github.com/megalodon-chess/megalodon
+
+MeikeChess
+  https://github.com/h2-bdev/H2-Classical
+
+Melsh
+  = melsh_bot
+  https://github.com/mse63/melsh_bot
+
+Meltdown
+  https://github.com/hansbinderup/meltdown-chess-engine
+
+Mess
+  https://github.com/raklaptudirm/mess
+
+MFChess
+  http://wayback.archive.org/web/*/http://home.texoma.net/~garnax/files/mfchcode.zip
+  https://web.archive.org/web/20070206000139/http://home.texoma.net:80/~garnax/files/mfchcode.zip
+  https://mega.nz/folder/P10URKzI#5hiV02lv1VgBTg3LxUBiew/file/G50nGAib
+
+Micah
+  https://github.com/folkertvanheusden/Micah
+
+Micro-Max
+  = micro-Max
+  http://home.hccnet.nl/h.g.muller/max-src2.html
+
+MicroChess
+  = MicroChess 1976
+  http://archive.computerhistory.org/projects/chess/related_materials/software/4-1.MicroChess_%20Source.1976.JENNINGS/4-1.MicroChess_%20Source.1976.JENNINGS.pdf
+  http://benlo.com/files/Microchess6502.txt
+  http://www.computerhistory.org/chess/full_record.php?iid=sft-431e19dae0914
+  http://www.andreadrian.de/schach/microchessw.c
+  http://www.benlo.com/files/Microchess6502.txt
+
+Mida
+  https://github.com/GiacomoPorpiglia/Mida
+
+Midnight
+  https://github.com/archishou/MidnightChessEngine
+
+MihanSolo
+  https://github.com/montypylons/mihansolo_bot
+
+Milan
+  https://github.com/OndrejLankoc/Chess-Engine-Milan
+
+Milky
+  https://github.com/wllfaria/milky
+
+Minace
+  https://github.com/zekyll/Minace
+
+Minic
+  https://github.com/tryingsomestuff/Minic
+  https://github.com/tryingsomestuff/Minic-Dist
+
+minikalle
+  https://github.com/Eelishz/minikalle
+
+MinimalChess
+  https://github.com/lithander/MinimalChessEngine
+
+MiniMardi
+  = Minimardi
+  = miniMardi
+  https://sourceforge.net/projects/minimardi/
+
+MiniMax
+  = Minimax
+  = MiniMAX
+  https://web.archive.org/web/20060717212137/http://home.pacific.net.au:80/~tommyinoz/minimax.zip
+
+Minke
+  https://github.com/enfmarinho/Minke
+
+MinkoChess
+  = Umko
+  https://sourceforge.net/projects/umko/
+  https://sourceforge.net/projects/umko/files/
+  http://web.archive.org/web/20260428120556/https://sourceforge.net/projects/umko/files/
+
+Minnow
+  https://github.com/tm512/minnow
+
+MinOpponentMoves
+  https://github.com/greg-finley/lichess-bot-min-opponent-moves
+
+MissingPawn
+  https://github.com/MissingHacker20/MissingPawn
+
+MisterQueen
+  https://github.com/fogleman/MisterQueen
+
+Mittens
+  = MittensCEDR
+  https://github.com/MotoresAjedrez/mittens
+
+Mizar
+  https://github.com/qut-inb304/Mizar-Chess
+
+MLChess
+  https://www.hpcalc.org/hp49/games/board/mlchess114.zip
+
+MochaChess
+  https://github.com/alanjg/Chess
+
+MOCHI
+  = Mochi
+  https://codeberg.org/chris-mair/mochi
+
+Modjo
+  https://github.com/joergoster/Stockfish
+
+molly
+  https://codeberg.org/latuernich/molly
+
+Molybdenum
+  https://github.com/rn5f107s2/Molybdenum
+
+Monchester
+  https://github.com/unserializable/monchester
+
+Monik
+  https://github.com/slacombe/monik
+
+Monochrome
+  https://github.com/CPirc/Monochrome
+  https://github.com/cpirc/Monochrome
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/monochrome/src.7z
+
+Monolith
+  https://github.com/cimarronOST/Monolith
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/monolith/Src.7z
+
+Montecraplo
+  https://github.com/kevlu8/Montecraplo
+
+monty
+  = Monty
+  https://github.com/jw1912/monty
+  https://github.com/jw1912/monty/
+  https://github.com/official-monty/Monty
+
+moonfish
+  https://git.sr.ht/~zamfofex/moonfish
+
+Moonforge
+  https://github.com/3583Bytes/Moonforge-Chess
+
+Mora
+  = MORA
+  https://github.com/gonzaloarro/MORA-CHESS-ENGINE
+
+Morlock
+  https://github.com/herohde/morlock
+
+Morphy (danem)
+  https://github.com/danem/Morphy
+
+MorphyChess
+  https://github.com/dmarce1/MorphyChess
+
+MORS
+  = Dragon of MORS
+  https://github.com/TMagnusN/mors
+
+Motor
+  https://github.com/martinnovaak/motor
+
+Motsog
+  https://github.com/jmdha/motsog
+
+Moustique
+  https://github.com/rchastain/moustique
+  https://gitlab.com/rchastain/moustique
+
+Mr Bob
+  = Mr_Bob
+  = MrBob
+  https://github.com/bobsquared/Mr_Bob_Chess
+
+MSCP
+  = Mscp
+  https://github.com/kervinck/gigatron-rom/blob/master/Contrib/kervinck/mscp.c
+  https://web.archive.org/web/20110723202636/http://marcelk.net/mscp/download/mscp-1.4.tar.gz
+
+Mufasa
+  https://github.com/kanin9/mufasa
+  https://github.com/kanin9/mufasa/
+
+Munchess
+  https://github.com/IsuraManchanayake/munchess
+
+Murka
+  https://web.archive.org/web/20120225065614/http://www.sdchess.ru/engines/Murka_2.rar
+  https://web.archive.org/web/20140221194004/http://www.sdchess.ru/engines/Murka_3.rar
+
+MyGoEngine
+  https://github.com/AdamGriffiths31/ChessEngine
+
+Myrddin
+  https://github.com/JVMerlino/Myrddin
+
+Mystic Bot
+  https://github.com/shashankp28/mystic-bot
+
+MyTeacheR
+  https://github.com/micktaiwan/MyTeacheR
+
+Mythos
+  https://github.com/dhg14n9/mythos
+
+N.E.G.
+  = NEG
+  https://home.hccnet.nl/h.g.muller/NEG.c
+
+Nakshatra
+  https://github.com/goutham/nakshatra
+
+Nalwald
+  https://github.com/tsoj/Nalwald
+  https://gitlab.com/tsoj/Nalwald
+
+Napoleon
+  https://github.com/crybot/Napoleon
+
+Narc Next
+  = NARC Next
+  https://github.com/Madushan996/NARC-NEXT
+
+Nate's ChessBot
+  = Nates Chessbot
+  https://github.com/Nateml/ChessBot
+
+Natto
+  https://github.com/rglenister/natto
+
+Natwarlal
+  https://web.archive.org/web/20051219114047/http://www.ironcode.com:80/data/Natwarlal012-src.zip
+  https://web.archive.org/web/20070318043256/http://www.ironcode.com:80/data/Natwarlal014-src.zip
+
+Nawito
+  https://github.com/etorresf/Nawito1906
+  https://github.com/etorresf/Nawito64Bit
+
+Nectar
+  https://github.com/Dragjon/Nectar
+
+Needle
+  http://web.archive.org/web/20110525130816/http://math.tkk.fi/~mnummeli/tite/needle-0.53.1-src.tar.gz
+
+Nekomata
+  https://github.com/ast-ral/nekomata
+
+Nemeton
+  https://www.mediafire.com/file/mluc2n47udx6j03/Nemeton.rar
+
+Nemorino
+  https://bitbucket.org/christian_g_nther/nemorino
+
+Neocortex
+  https://github.com/codeandkey/neocortex
+
+Neophyte
+  https://sourceforge.net/projects/neophyte/
+  https://sourceforge.net/projects/neophyte/files/neophyte/neophyte-0.1/neophyte-0.1.tar.gz/download
+
+Neptune (Leszczynski)
+  https://github.com/philleski/neptune
+
+Nero
+  https://web.archive.org/web/20011226154700/http://www.mit.jyu.fi:80/~huikari/N5SOURCE.ZIP
+  https://web.archive.org/web/20060129175654/http://www.mit.jyu.fi/~huikari/Nero53_Delphi.zip
+
+neuroGrape
+  https://github.com/m00natic/neuroGrape
+
+Neuromancer
+  https://github.com/mateoxh/neuromancer
+  https://github.com/mateog03/neuromancer
+
+neuroStock
+  https://github.com/m00natic/neuroStock
+
+NeuroticBishop
+  https://github.com/AhmadIssa0/ChessNN
+
+newHC
+  https://github.com/zbkruturaj/haskell-chess-engine
+
+NewRival
+  https://github.com/chris-moreton/rivalchess-windows
+
+Nextfish
+  https://github.com/AustraliaSilver/nextfish
+
+NG-Play
+  = NG-play
+  https://github.com/ggeorgochess/pages
+
+Nibble
+  https://github.com/IbaiBuR/Nibble
+
+Nibble-Chess
+  https://github.com/maksimKorzh/nibble-chess
+
+Nicarao
+  = Nicarao_Chess
+  https://github.com/DeybisMelendez/NicaraoChess
+  https://github.com/DeybisMelendez/nicarao
+
+nilesrogoff_chessbot
+  https://github.com/nilesr/chess
+
+NimTuroChamp
+  = nimTUROCHAMP
+  https://github.com/mdoege/nimTUROCHAMP
+
+Nimzo
+  http://web.archive.org/web/20060830053833/http://www.yacdb.com:80/nimzo/nimzo_index.html
+  http://web.archive.org/web/20161112181527/http://home.arcor.de:80/roger.thormann/yacdb.com/nimzo/nimzo_index.html
+
+Nino
+  https://github.com/allfre2/nino
+
+NoaChess
+  https://github.com/jcjimenezvadillo/NoaChess
+
+NoC
+  https://github.com/usr25/NoC
+
+Noggin
+  https://github.com/jeremyylimmm/noggin
+
+NoraGrace
+  https://github.com/ericoldre/NoraGrace-Chess
+
+Nostradamus
+  https://github.com/david-carteau/nostradamus
+
+NuclearChess
+  https://github.com/michabay05/NuclearChess
+
+Nullstar
+  https://github.com/jasper-sinclair/nullstar
+
+Numbat
+  https://codeberg.org/staceycampbell/numbat
+
+Numbit
+  https://drive.google.com/file/d/0B5Ao6h_yMCl6YjMzZHJ0WF81UUU/view
+
+Numpty chess
+  = Numpty
+  http://web.archive.org/web/2020id_/https://sites.google.com/site/numptychess/Numpty_Recharged_64.7z?attredirects=0
+  http://web.archive.org/web/2020id_/https://sites.google.com/site/numptychess/Numpty_Recharged_32.7z?attredirects=0
+  https://web.archive.org/web/20201020102737/https://sites.google.com/site/numptychess/N_O_m_e_g_a.zip?attredirects=0
+
+O'Chess
+  http://web.archive.org/web/20110614185912/http://olegtrott.com/chess/ochess.ml
+
+OBender
+  = Obender
+  https://web.archive.org/web/20201106232507/http://kirr.homeunix.org/chess/engines/Jim%20Ablett/OBENDER/
+
+Obi-Pawn-Kenobot
+  https://github.com/NoahBorch/Obi-Pawn-Kenobot
+
+Obsidian
+  https://github.com/gab8192/Obsidian
+
+Octochess
+  = OctoChess
+  http://svn.filezilla-project.org/svn/chess
+  https://svn.filezilla-project.org/svn/chess
+
+Odonata
+  https://github.com/akanalytics/odonata
+
+OliThink
+  = Olithink
+  https://github.com/olithink/OliThink
+
+OliveChess
+  https://sourceforge.net/projects/olivechess/
+
+Omelette
+  https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/GuyClicking/Omelette-chess-engine
+
+onionbot
+  https://github.com/nathanWolo/Chess-Challenge
+
+OnionChess
+  https://github.com/theosanch/OnionChess
+
+Onslaught
+  = Axiom
+  https://github.com/kachhy/Onslaught
+
+Onyx
+  https://github.com/dylan2554/onyx
+
+Opa-Chess
+  https://github.com/alyanwarr/OPA-Chess-Engine
+
+OptiChess
+  https://github.com/poirouxmartin/opti_chess
+
+Orca
+  https://github.com/BlueCannonBall/Orca
+
+Overhead
+  https://github.com/bjohnsonfl/Overhead-Chess-Engine-
+
+Oxidation
+  https://github.com/Mathmagician8191/Liberty-Chess
+
+Oxide
+  https://github.com/Miguevrgo/Oxide
+
+Oxide-Eg
+  https://github.com/cannoli-fruit/Oxide-Eg
+
+Oxide9
+  https://github.com/mathmoi/oxide9
+
+P4wn
+  = p4wn
+  https://github.com/douglasbagnall/p4wn
+  https://sourceforge.net/projects/jsuci/
+
+Pa-project
+  https://storage.googleapis.com/google-code-archive-source/v2/code.google.com/pa-project/source-archive.zip
+
+Paladin
+  https://github.com/ankan-ban/chess_cpu
+
+Panda
+  https://github.com/all-c-a-p-s/Panda
+
+Paradox
+  https://github.com/AdrianGHUB15/Paradox
+
+Parrot
+  https://web.archive.org/web/20121122051702/http://www.nd.edu/~johanes/parrot.tar.bz2
+
+PasKnight
+  https://github.com/han-k59/PasKnight
+  https://sourceforge.net/projects/pasknight/
+
+Pasteque
+  https://github.com/vshcherbyna/pasteque
+
+Patricia
+  https://github.com/Adam-Kulju/Patricia
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/patricia/src.7z
+
+paulchen
+  = paulchen332
+  https://github.com/philipplenk/paulchen332
+
+Pawn (Coelho)
+  = pawn
+  = Pawn
+  https://github.com/ruicoelhopedro/pawn
+
+Pawnder
+  https://github.com/TrumanCollins/Pawnder
+
+pawnocchio
+  = pawnnocchio
+  = Pawnocchio
+  https://github.com/JonathanHallstrom/pawnocchio
+
+Pawny
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/pawny/src.7z
+  https://web.archive.org/web/20160320211052/http://pawny.netii.net/pawny_1.1.zip
+
+PayFleens
+  https://github.com/robertomil81mil/PayFleens
+
+pChess
+  http://wayback.archive.org/web/20150919065614/http://files.chesscomfiles.com/download_files/2302/pChess-20.zip
+  https://drive.google.com/file/d/130IEha3XT-_7jfl5pYp88_c6XQgsygA_/view
+
+Pea
+  https://github.com/WGCodings/Pea
+
+Peacekeeper
+  https://github.com/Sazgr/peacekeeper
+
+Peacock Spider
+  = PeacockSpider
+  https://github.com/luckboy/PeacockSpider
+
+Pedantic
+  https://github.com/JoAnnP38/Pedantic
+  https://github.com/JoAnnP38/PedanticRF
+
+Pegasus
+  https://github.com/jose01carrillo30/Pegasus
+
+Pepito
+  http://www.quarkchess.de/pepito/download/pepisrc.tar.gz
+
+Peras
+  https://github.com/FirePlank/Peras
+
+Peripheral
+  https://github.com/Loev06/Peripheral
+
+Perseus
+  https://github.com/TheRealGioviok/Perseus-Engine
+
+Petrel
+  https://github.com/AleksPeshkov/petrel
+
+Petty-Chess
+  https://github.com/Icerath/petty-chess
+
+Phalanx
+  https://sourceforge.net/projects/phalanx/
+
+Phalp
+  https://github.com/SwastikMajumder/chessengine2
+
+PhEngin
+  https://github.com/phil-or-4/PhEngine
+
+Philemon
+  http://web.archive.org/web/20150210180728/http://philemon.cycovery.com/src.zip
+
+Phoenix (Rahul)
+  https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/rahular/phoenix
+
+pica2
+  https://git.sr.ht/~e-topy/pica2
+
+PicoLisp Chess
+  https://github.com/rob-w/picolisp
+
+Pierre
+  http://web.archive.org/web/2018/http://alexboby.com/pierre/pierre_source_1.7.tar.gz
+  http://web.archive.org/web/2018/http://alexboby.com/pierre/pierre_source_1.4.zip
+
+Pigeon
+  https://github.com/StuartRiffle/pigeon
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/pigeon/src.7z
+
+Piglet
+  https://github.com/paulrwebster/Piglet
+
+Pingu
+  https://github.com/WillChing01/Chess_3
+  https://github.com/WillChing01/Pingu
+
+Pioneer
+  https://github.com/WillGarrison1/Pioneer
+
+Pirarucu
+  = pirarucu
+  https://github.com/ratosh/pirarucu
+
+Pixie
+  https://github.com/codemaniac/pixie
+
+Pleco
+  https://github.com/pleco-rs/Pleco
+  https://github.com/sfleischman105/Pleco
+
+PlentyChess
+  https://github.com/Yoshie2000/PlentyChess
+
+Plisco
+  https://github.com/gflohr/Chess-Plisco
+
+plumbot
+  https://github.com/willdaplum/plumbot
+
+Pluto
+  https://github.com/Lxdovic/pluto
+
+PolarChess
+  https://github.com/OGMalin/Polarchess
+
+PolarEngine
+  https://github.com/OGMalin/PolarEngine
+
+Polaris
+  https://github.com/Ciekce/Polaris
+  https://github.com/Ciekce/Polaris/
+
+Polonium
+  https://github.com/Dragjon/Polonium
+
+PoorLittlePinkus
+  = PLP
+  http://github.com/helgefmi/Poor-little-pinkus
+  https://github.com/helgefmi/Poor-little-pinkus
+
+Portfish
+  https://github.com/bpfliegel/Portfish
+
+Porucznik
+  = Porucnik
+  http://strony.toya.net.pl/~sierzant29/Porucznik9.zip
+
+postbot
+  https://github.com/postnerd/postbot
+
+Potatix
+  https://github.com/Balx13/Potatix_Engine
+
+potato-chess
+  https://github.com/glolichen/potato-chess-uci
+
+Potential
+  https://github.com/ProgramciDusunur/Potential
+
+Pounce
+  = pounce
+  https://github.com/0xflick/pounce
+
+Powder
+  http://web.archive.org/web/20140429221128/http://www.sdchess.ru/engines/Powder_1_5_1.zip
+
+Prawn
+  https://github.com/gonmf/prawn
+
+Prechess
+  = PreChess
+  http://web.archive.org/web/2024/http://joselauro.tripod.com/prechess0.7.8.tar.gz
+
+Prelude
+  https://github.com/Quinniboi10/Prelude
+
+Priessnitz
+  https://github.com/kfeske/Priessnitz
+
+Princhess
+  https://github.com/princesslana/princhess
+
+Project Invincible
+  https://svn.code.sf.net/p/project-invincible/code/trunk/
+
+Projekt Schachengine 2013
+  https://github.com/SMESH-MC/paltry-chess
+
+Prokopakop
+  https://github.com/xiaoxiae/Prokopakop
+
+Prometheus
+  https://github.com/AlexGisi/prometheus-chess
+
+Prophet
+  = Prophet3
+  = Prophet4
+  https://github.com/jswaff/prophet
+  https://github.com/jswaff/prophet3
+
+Protector
+  https://sourceforge.net/p/protector/code/HEAD/tree/
+  https://sourceforge.net/projects/protector/
+
+Protej
+  https://protej.info/files/protej011.pas
+
+Prune
+  https://github.com/tgirolami09/Prune
+
+PsycoChess
+  https://sourceforge.net/projects/psycochess/
+
+Publius
+  https://github.com/nescitus/publius
+
+Puca
+  https://github.com/shaunihowe/pucachess
+
+Puffin
+  https://github.com/kurt1288/Puffin
+
+PulChess
+  = Pulchess
+  https://github.com/morenocarullo/pulchess
+
+Pulse
+  https://github.com/fluxroot/pulse
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/pulse/src.7z
+
+PumpKing
+  https://github.com/Koma1867/PumpKing
+
+Purple
+  https://github.com/JLErvin/purple
+
+Purple Haze
+  https://github.com/vinc/purplehaze
+  https://github.com/vinc/purplehaze/
+
+PurplePanda
+  = Purple Panda
+  https://github.com/Jakob256/PurplePanda
+
+PychessEngine
+  = PyChess
+  https://github.com/pychess/pychess
+
+PyGo
+  https://github.com/Dragjon/PyGo
+
+pygone
+  https://github.com/scs-ben/pygone
+
+Pyotr
+  https://bitbucket.org/marjohn/pyotrce
+
+Pytteliten
+  https://github.com/1337crisis/Pytteliten
+
+PyTuroChamp
+  https://github.com/mdoege/PyTuroChamp
+
+PZChessBot
+  = PZChessbot
+  https://github.com/kevlu8/PZChessBot
+
+Qapla
+  https://github.com/Mangar2/Qapla
+  https://github.com/Mangar2/Quabla
+
+QBBEngine
+  https://github.com/maksimKorzh/chess_programming/blob/master/didactic_engines/one_file_source/QBBEngine.c
+
+Quanticade
+  = Quanticade Aurora
+  https://github.com/Quanticade/Quanticade
+  https://github.com/Quanticade/Quanticade/releases/tag/Aurora
+
+QueensGamBOT
+  https://github.com/marvk/chess
+
+Quirky
+  https://github.com/Wind-Eagle/Quirky
+
+Quokka
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/quokka/src.7z
+  https://github.com/mattbruv/Quokka
+
+QuTeChess
+  https://sourceforge.net/projects/qutechess/
+
+Radiance
+  https://github.com/ppipelin/radiance
+
+RapChess
+  https://github.com/Thibor/RapChessCs
+  https://github.com/Thibor/Rapchess
+
+Raphael
+  https://github.com/Orbital-Web/Raphael
+
+Rasch
+  https://github.com/Ingo60/rasch
+
+Rasher
+  https://github.com/MortenLohne/rasher
+
+Ratsu
+  https://github.com/ranzuh/ratsu
+
+RattateChess
+  https://repo.or.cz/w/rattatechess.git
+
+Ravager
+  https://github.com/erensh27/Ravager
+
+Raven
+  https://github.com/sgriffin53/raven
+
+Ray
+  https://github.com/JoeChrisman/Ray
+
+Razer
+  https://github.com/FireFather/razer
+
+RDchess
+  = RDChess
+  https://web.archive.org/web/20051226123113/http://members.aon.at:80/rposch/RDChessSrcV323.zip
+
+Rebel
+  = Rebel Century
+  https://github.com/egh-s/Rebel-14.1.02-Chess-System-TAL-1
+
+Reckless
+  https://github.com/codedeliveryservice/Reckless
+
+RedQueen
+  = Redqueen
+  https://github.com/bhlangonijr/redqueenchess
+  https://sourceforge.net/projects/redqueenchess/
+
+Redtail
+  https://github.com/georgemunyoro/rusty-redtail
+
+Reggz
+  https://github.com/tailow/reggz
+
+Reglisse
+  https://github.com/PaulJeFi/reglisse-chess
+
+Renegade
+  https://github.com/pkrisz99/Renegade
+
+Rengar
+  https://github.com/teswayze/rengar
+
+Resp
+  https://github.com/prosdl/resp
+
+Revolution
+  https://github.com/jordiqui/revolution
+
+Revolver
+  https://github.com/GoldenRare/Revolver
+
+Rexigon
+  https://github.com/silentshark-uk/rexigon
+
+Reyna
+  https://github.com/renztarga/Reyna
+
+Rice
+  https://github.com/rafid-dev/rice
+
+Rival
+  = Rival Chess
+  = RivalChess
+  https://github.com/Netsensia/rival-chess-uci
+  https://github.com/Netsensia/rival-chess-windows
+  https://github.com/chris-moreton/rival-chess-uci
+  https://github.com/chris-moreton/rivalchess-uci
+
+RobboLito
+  https://github.com/FireFather/robbolito
+  https://github.com/Frosty54/Ippolit-Collection
+
+Robocide
+  https://github.com/DanielWhite94/robocide
+
+Roc
+  = Roc2
+  https://github.com/TomHyer/Roc
+  https://github.com/TomHyer/Roc2
+
+Rocinante
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/rocinante/src.7z
+  https://web.archive.org/web/20221112085014/https://sites.google.com/site/barajandotrebejos/download/Rocinante2.zip?attredirects=0&d=1
+
+Rodent
+  = Rodent-V
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/rodentii/src.7z
+  https://github.com/nescitus/Rodent-V
+  https://github.com/nescitus/Rodent_II
+  https://github.com/nescitus/Rodent_III
+  https://github.com/nescitus/rodent-iv
+  https://sourceforge.net/projects/rodentchess/
+
+Roller
+  https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/op12no2/roller
+
+Ronja
+  https://github.com/dykstrom/ronja
+
+RookRusty
+  https://github.com/menezesd/ChessEngine
+
+rootchess
+  https://github.com/nkoppel/rootchess
+
+Rose
+  https://github.com/87flowers/Rose
+
+Roxie
+  https://github.com/sham-404/roxie
+
+RubiChess
+  https://github.com/Matthies/RubiChess
+
+RubyKnight
+  http://github.com/cdmoyer/RubyKnight
+  https://github.com/cdmoyer/RubyKnight
+
+Ruci
+  https://github.com/justinaustin/ruci
+
+Rudim
+  https://github.com/znxftw/rudim
+
+Ruka
+  https://github.com/Joel-VO/Ruka-Chess
+
+RukChess
+  https://github.com/Ilya-Ruk/RukChess
+
+RumbleMinze
+  https://www.madchess.net/wp-content/uploads/softwarereleases/RumbleMinze-Source-1-0-29.zip
+  https://www.madchess.net/wp-content/uploads/softwarereleases/RumbleMinze-Source-1-0-33.zip
+
+Rustfish
+  https://github.com/syzygy1/Rustfish
+
+Rustic
+  https://codeberg.org/mvanthoor/rustic
+  https://github.com/mvanthoor/rustic
+
+RustKnight
+  https://github.com/Nishu219/RustyKnight
+
+Rusty-Rival
+  = Rusti-Rival
+  = Rusty Rival
+  https://github.com/chris-moreton/rusty-rival
+
+RustyPigeon
+  https://github.com/TrinTragula/rusty-pigeon
+
+RustyRook
+  https://github.com/chooklii/RustyRook
+
+RuthIron
+  https://web.archive.org/web/20260301122934/https://github.com/themreKalkan/RuthIron
+
+RuyDos
+  https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://bitbucket.org/alonamaloh/ruydos
+
+Sabertooth
+  https://github.com/dylhunn/sabertooth-source
+
+Sable
+  = sable
+  https://github.com/Silverrzz/sable
+
+Sachy
+  https://github.com/rchastain/sachy
+  https://gitlab.com/rchastain/sachy
+
+Saherator
+  https://github.com/43zao/saherator-1.0
+
+Sahistii Mascati Chess
+  https://github.com/shred2042/Sahistii_Mascati_Chess_Project
+
+SAL
+  https://web.archive.org/web/20210420183849/http://www.gherrity.org/sal6.tar.gz
+
+SamChess
+  https://www.3dkingdoms.com/chess/sam/SamChessSrc.zip
+
+sandybot
+  https://github.com/andtsa/chesseng
+
+Sapeli
+  https://github.com/SamuraiDangyo/sapeli-final
+
+Sapling
+  https://github.com/Timmoth/Sapling
+
+Sarah
+  https://github.com/lostnthought/sarah
+
+Sargon
+  = Sargon 1978
+  https://github.com/billforsternz/retro-sargon
+
+Saruman
+  https://github.com/ConorGriffin37/chess
+
+Sashimi
+  https://github.com/zxqfl/sashimi
+
+Saturn
+  https://github.com/egormoroz/saturn
+
+Savant (He)
+  https://github.com/daltonhe/SAVANT
+
+Sayuri
+  https://github.com/MetalPhaeton/sayuri
+
+Scam
+  https://github.com/fabianvdW/Scam
+
+Scarlet
+  https://github.com/EIG520/scarlet
+
+Schneckbert
+  https://github.com/CommanderKugel/Schneckbert
+
+schnecken_bot
+  https://github.com/nobriot/schnecken_bot
+
+Schneizel
+  https://github.com/mubashirtanveerayon/Schneizel-Chess-Engine
+
+Schoenemann
+  = Schönemann
+  https://github.com/Jochengehtab/Schoenemann
+
+Schola
+  https://web.archive.org/web/2012id_/http://mysite.verizon.net/the_platts/Schola%201.1%20Source.zip
+
+Scidlet
+  https://sourceforge.net/projects/scid/
+
+Scoria
+  https://github.com/iannathan-k/scoria
+
+Scorpio
+  = ScorpioNN
+  https://github.com/dshawul/Scorpio
+
+SCP
+  https://groups.google.com/d/msg/comp.sources.games/zs_1mrpdseE/YL2yGrzoXrEJ
+
+SCTR
+  https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/nitrocan/sctr
+
+Scuff
+  https://github.com/kevlu8/Scuff
+
+Seahorse
+  https://github.com/swcordes/chess-engine
+  https://github.com/cordescodes/Seahorse
+
+SeaWall
+  = Seawall
+  https://github.com/petur/seawall
+
+SebLagueCE
+  = SebLague Chess-AI
+  https://github.com/SebLague/Chess-AI
+  https://github.com/lithander/SebLagueChessEngine
+
+SecondChess
+  https://github.com/emdio/secondchess
+
+Seer
+  https://github.com/connormcmonigle/seer-nnue
+
+Seggz
+  https://github.com/tailow/chess-engine
+
+Sem1Rose
+  https://github.com/Sem1Rose/My-Bot
+
+Senpai
+  https://github.com/B4dT0bi/senpai
+
+Sentinel
+  https://github.com/DanSamek/Sentinel
+
+Seredina
+  https://github.com/Checkmate6659/seredina-chess
+
+Serendipity
+  https://github.com/xu-shawn/Serendipity
+
+Shadow
+  = Throne
+  https://github.com/Txnch/Shadow
+  https://github.com/Txnch/Shadow/tree/0.2
+
+Shadowfax
+  https://github.com/Greeshmanth1909/shadowfax
+
+ShakeyBot
+  https://github.com/djcollins/ShakeyBot
+
+Shallow
+  = Shallow2
+  https://github.com/dimock/chess
+  https://github.com/dimock/shallow
+
+Shallow Guess
+  = ShallowGuess
+  https://github.com/buildingwheels/ShallowGuess
+
+Shallow Red
+  https://github.com/15jgme/shallow_red_engine
+
+Shallowblue
+  = Shallow-blue
+  = ShallowBlue
+  https://github.com/GunshipPenguin/shallow-blue
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/shallow-blue/src.7z
+
+Sharp Rustic
+  https://github.com/Chaaronn/sharp-rustic
+
+SharpChess
+  = SharpChess2
+  https://github.com/PeterHughes/SharpChess
+  https://sourceforge.net/projects/sharpchess/
+
+ShashChess
+  https://github.com/amchess/ShashChess
+
+Shatranj
+  https://github.com/stannous/shatranj
+
+Shellac
+  https://github.com/amberg12/shellac
+
+Shen Yu
+  = ShenYu
+  https://github.com/AAce3/ShenYu
+
+Shikamaru
+  https://github.com/hackboxlive/Shikamaru-Chess-Engine
+
+Short
+  https://github.com/sscg13/Short
+
+ShouldntExist
+  https://www.mediafire.com/?8adp1pduzkr8vyb
+
+Shuffle
+  https://github.com/ArjunBasandrai/shuffle-chess-engine
+
+Shutranj
+  https://github.com/bytefire/Shutranj
+
+SilChess
+  https://github.com/ackalker/eaglemode
+
+SillyChess
+  https://github.com/Djuffin/SillyChess
+
+Simbelmyne
+  https://github.com/sroelants/simbelmyne
+
+Simon
+  https://github.com/solistachess/simon
+
+Simontacchi
+  https://sourceforge.net/projects/simontacchi/
+
+Simple Bot
+  https://github.com/dhruvang1/chess-bot
+
+SimpleChess
+  https://github.com/LinkLikesLattes/SimpleChess
+  https://github.com/LinkLikesLattes/SimpleChess-HCE
+
+Simpler
+  https://github.com/Kirill020708/SSSimpler
+
+Simplex
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/simplex/Src.7z
+  https://web.archive.org/web/20221112085014/https://sites.google.com/site/barajandotrebejos/download/Simplex098src.zip?attredirects=0&d=1
+
+Simplex (Cubix1729)
+  https://github.com/Cubix1729/Simplex
+
+sireButItsAnEngine
+  = Bongcloud
+  https://github.com/sireButItsUnique/sireButItsAnEngine
+
+Sirius
+  https://github.com/Mcthouacbb/Sirius
+  https://github.com/mcthouacbb/Sirius
+
+Sissa
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/sissa/src.7z
+
+Sjaak (Glebbeek)
+  = Sjaak
+  = Sjaak II
+  http://www.eglebbk.dds.nl/program/chess-download.html
+  http://www.eglebbk.dds.nl/program/download/sjaakii-1.4.1-src.tar.gz
+  https://github.com/RMKirkpatrick/SjaakII
+
+Sjeng
+  = Deep Sjeng c't
+  = Sjeng (Deep)
+  https://github.com/gcp/sjeng
+
+Skaki
+  https://mega.nz/folder/P10URKzI#5hiV02lv1VgBTg3LxUBiew/file/rokCyCoI
+
+Skotz
+  https://github.com/skotz/skotz-chess-engine
+
+Slibo
+  https://sourceforge.net/projects/slibo/files/slibo/0.4.4/slibo-0.4.4.tar.bz2/download
+
+Sloppy
+  https://github.com/cutechess/sloppy
+
+Sloth
+  https://github.com/Williamguttn/Sloth
+
+Slow Chess
+  = SlowChess
+  https://www.3dkingdoms.com/chess/Slow296src.zip
+
+SM-FIDE
+  https://sourceforge.net/projects/smmax/
+
+Small Potato
+  = SmallPotato
+  https://github.com/alito/smallpotato
+  https://sourceforge.net/projects/smallpotato/
+
+Smallbrain
+  https://github.com/Disservin/Smallbrain
+  https://github.com/Disservin/Smallbrain/
+
+Smash
+  = Smash (Deep)
+  http://web.archive.org/web/20031031001018/http://www.cli.di.unipi.it:80/~sambati/prog/smash.tar.bz2
+  https://web.archive.org/web/2009id_/http://www.cli.di.unipi.it/~sambati/prog/smash.tar.bz2
+
+smol.cs
+  = smol
+  https://github.com/GediminasMasaitis/Chess-Challenge-Submission
+
+smolchess
+  https://gitlab.com/drummyfish/smallchesslib
+
+Snail-Chess
+  https://github.com/pedro15/Snail-Chess
+
+Snaky
+  https://github.com/Carleslc/Snaky
+
+Snowy
+  https://github.com/JasonCreighton/snowy
+
+SoFCheck
+  https://github.com/alex65536/sofcheck
+  https://github.com/alex65536/sofcheck/
+
+SohamChessBot
+  https://github.com/sohamkorade/chess_engine
+
+Soldat
+  http://web.archive.org/web/20131027224346/http://www.g-sei.org/wp-content/uploads/2012/03/Soldat3_172.zip
+  http://web.archive.org/web/20131028060458/http://www.g-sei.org/wp-content/uploads/2012/03/Soldat3_168.zip
+
+Solo
+  https://github.com/yunusemreyldz07/Solo
+
+SomePythonBot
+  https://github.com/Cubix1729/chess-engine
+
+Soomi
+  https://github.com/Koma1867/Soomi-V1-Chess-engine-in-golang
+
+Sophix
+  https://github.com/FireFather/sophix
+
+Sophy
+  https://github.com/syanidar/Sophy
+
+Soul
+  https://github.com/Aethdv/Soul
+
+Space
+  https://github.com/rustam-cpp/Space-Engine
+
+SpaceDog
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/spacedog/src.7z
+  https://github.com/thorsilver/SpaceDog
+
+Spaghet
+  https://github.com/yl25946/spaghet
+
+Spartan
+  https://github.com/christiandaley/Spartan
+
+Spector
+  https://chessprogramming.org/assets/Spector.zip
+
+Squared-chess
+  = Squared-Chess
+  = squared-chess
+  https://gitlab.com/tsoj/squared-chess
+
+SSSimpler
+  https://github.com/Kirill020708/SSSimpler
+
+Starlynn
+  https://github.com/zzzzz151/Starlynn
+
+Starzix
+  https://github.com/zzzzz151/Starzix
+  https://github.com/zzzzz151/z5
+
+STaSe
+  https://github.com/sethbae/stase
+
+Stash
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/stash/src.7z
+  https://github.com/mhouppin/stash-bot
+  https://gitlab.com/mhouppin/stash-bot
+
+Stellar
+  https://github.com/DimitrijeDobrota/stellar
+
+Stepbot
+  https://github.com/Player52/Stepbot_chess
+
+Stickshark
+  https://github.com/jaydenshi99/Stickshark
+
+StockDory
+  https://github.com/TheBlackPlague/StockDory
+
+Stockfish
+  https://github.com/MichaelB7/Stockfish
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/stockfish/src.7z
+  https://github.com/mcostalba/Stockfish
+  https://github.com/nodchip/Stockfish
+  https://github.com/official-stockfish/Stockfish
+  https://github.com/official-stockfish/Stockfish/blob/master/AUTHORS
+
+Stockfish BAE
+  https://github.com/tsoj/Stockfish-BAE
+
+Stockfish-js
+  https://github.com/exoticorn/stockfish-js
+
+StockNemo
+  https://github.com/TheBlackPlague/StockNemo
+
+Stonefish
+  https://github.com/TimJentzsch/stonefish_engine
+
+Stormphrax
+  https://github.com/Ciekce/Stormphrax
+
+Strato III
+  https://pixeldrain.com/u/qNAfCZ8U
+  https://mega.nz/file/vM9V3ALA#lp3BQPGvacCF2fvePH6VHF4VK7mHHXjEWzf4joPCDv0
+
+Strelka
+  http://web.archive.org/web/20101127202919/http://sdchess.ru/engines/Strelka_2_0.rar
+
+STRO4K
+  = Stro4K
+  https://github.com/ONE-RANDOM-HUMAN/STRO4K
+
+Stupid
+  http://web.archive.org/web/20191117060127/https://git.sesse.net/?p=stupid;a=tree
+
+Sturddle
+  https://github.com/cristivlas/sturddle-2
+  https://github.com/cristivlas/sturddle-chess-engine
+
+Suff
+  https://web.archive.org/web/2020id_/http://computer-chess.org/lib/exe/fetch.php?media=computer_chess:wiki:download:suff-0.3a.rar
+
+SugaR
+  https://github.com/OhJayGee/SugaR
+
+Sunbird
+  https://github.com/jmdha/Sunbird
+
+Sunfish
+  https://github.com/thomasahle/sunfish
+
+sunfish_c
+  https://github.com/guiste10/sunfish_c
+
+sunfish_rs
+  https://github.com/Recursing/sunfish_rs
+
+Sungorus
+  https://github.com/rwbc/Sungorus-1.4
+
+Sunsetter
+  https://github.com/georgvonzimmermann/Sunsetter
+  https://sourceforge.net/projects/sunsetter/
+  https://sourceforge.net/projects/sunsetter/files/
+
+Supernova
+  https://github.com/MichaeltheCoder7/Supernova
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/supernova/src.7z
+
+Superpawn
+  https://github.com/johnwbyrd/superpawn
+
+Superultra
+  https://github.com/A1exL1ang/Superultra
+
+Supra
+  https://a3f4b328-8784-495e-8295-ba14e09215f0.usrfiles.com/archives/a3f4b3_c8ffddfb186440a3a98ceecda6e9fe44.zip
+
+Surveyor
+  https://github.com/amberg12/surveyor
+
+Svart
+  https://github.com/1337crisis/svart
+  https://github.com/crippa1337/svart
+  https://github.com/feliskio/svart
+
+Swordfight
+  https://github.com/evalapply/Swordfight
+  https://github.com/replomancer/Swordfight
+
+Swordfish
+  https://github.com/phuang1024/swordfish
+
+SxRandom
+  https://sx.rosada.cz/projects/sxrandom/src
+
+Sykora
+  https://github.com/sb2bg/sykora
+
+Tactician
+  https://github.com/philleski/tactician
+
+Talbotbot
+  https://github.com/HarrisonDevane/talbot
+
+Talento
+  https://github.com/tiago-daniel/Talento
+
+TalsHand
+  https://github.com/mike235711/TalsHand
+
+Taltos
+  https://github.com/GBuella/Taltos
+
+Talvmenni
+  https://sourceforge.net/projects/talvmenni/
+  https://sourceforge.net/projects/sjce/
+
+Tantabus
+  https://github.com/analog-hors/tantabus
+
+Tarnished
+  https://github.com/Bobingstern/Tarnished
+
+TarraschToyEngine
+  = Tarrasch
+  https://github.com/billforsternz/tarrasch-toy-engine
+
+Tate
+  https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/gflohr/tate
+
+Tcheran
+  https://github.com/jgilchrist/chess-engine
+  https://github.com/jgilchrist/tcheran
+  https://github.com/tcheran-chess/tcheran
+
+TDChess
+  = tdchess
+  https://github.com/Troppydash/tdchess
+
+TDFA
+  https://github.com/TiltedDFA/TDFA
+
+Tech 2
+  https://github.com/PDP-10/its/tree/master/src/rg
+
+Teki
+  = Teki Random Mover
+  https://github.com/Mk-Chan/Teki
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/teki/src.7z
+  https://github.com/Mk-Chan/Teki/tree/v0.1
+
+TestEngine
+  https://github.com/claassen/chessengine
+
+Texel
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/texel/src.7z
+  https://github.com/peterosterlund2/texel
+
+The Turk (TR)
+  = The Turk
+  https://github.com/YakupIpek/TheTurk
+
+TheMadPrune
+  http://web.archive.org/web/20171213221646/http://kirr.homeunix.org/chess/engines/Jim%20Ablett/THE%20MAD%20PRUNE/TMB_1651_ja.zip
+
+ThePlayer Engine
+  https://github.com/vv111y/3P71Project
+
+Thera
+  https://github.com/Robotino04/Thera-Engine
+
+Thom
+  https://github.com/Shienar/Thom-Chess-Engine
+
+Thor
+  https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/DIYSolutions/Thor
+
+Thrawn
+  https://github.com/feftywacky/Thrawn
+  https://github.com/feftywacky/thrawn
+
+Throttle
+  https://github.com/Dragjon/Throttle
+
+TideEval
+  https://github.com/chrinspire/TideEval
+
+Tiffanys
+  https://github.com/bvongunten/tiffanys
+
+Tinapa
+  https://www.open-chess.org/download/file.php?id=46
+
+Tinman
+  https://github.com/mikeleany/tinman
+
+Titan
+  https://github.com/jeff-pow/Titan
+
+Toad
+  https://github.com/dannyhammer/toad
+
+Tofiks
+  https://github.com/likeawizard/tofiks
+
+Toga
+  = Toga II
+  https://github.com/dkappe/TogaIII
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/toga/src.7z
+
+Toga Returns
+  http://web.archive.org/web/20171214012505/http://kirr.homeunix.org/chess/engines/Jim%20Ablett/TOGA%202/toga-returns-11b-ja.zip
+
+Toga Toy
+  http://web.archive.org/web/20171214011651/http://kirr.homeunix.org/chess/engines/Jim%20Ablett/TOGA%202/TogaToy_1.0%20+%20linux64%20binary.zip
+
+Toledo NanoChess
+  = Toledo
+  = Toledo Nanochess
+  https://github.com/ecrucru/toledo-uci
+  https://nanochess.org/toledo_nanochess.c
+  https://nanochess.org/chess3.html
+  https://nanochess.org/chess1.html
+
+tombot1234
+  https://github.com/tcberkley/ChessBot
+
+tomitankChess
+  = TomitankChess
+  https://github.com/tomitank/tomitankChess
+
+Topas
+  https://github.com/samcn8/topas
+
+Topple
+  https://github.com/konsolas/ToppleChess
+  https://github.com/konsolas/ToppleChess/
+
+Tordenskiold
+  https://github.com/AoschkA/Tordenskiold
+
+Tortoise
+  https://github.com/ElectricTortoise/Tortoise
+
+Torus
+  https://github.com/AlleksB/Torus
+
+Trappist
+  https://github.com/antaraz/Trappist-c
+
+TrappyBeowulf
+  https://github.com/vollmerm/TrappyBeowulf
+
+Tri-OS
+  http://chess.dubmun.com/download.html
+  https://sourceforge.net/projects/sjce/files/chess_engines_nb-src/all_java_xboard_ce_22-09-17.zip/download
+
+Trinket
+  https://github.com/DkeRee/Trinket
+
+Triumviratus
+  https://github.com/Tors3/Triumviratus
+
+Trout
+  https://github.com/gardnerbp/Trout
+  https://github.com/osrepnay/trout
+
+Truncator
+  https://github.com/CommanderKugel/Truncator
+
+TSCP
+  = Tscp
+  https://www.tckerrigan.com/Chess/TSCP/
+
+Tucano
+  https://github.com/alcides-schulz/Tucano
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/tucano/src.7z
+
+Tuna
+  https://github.com/billchow98/chess
+
+Tunguska
+  https://github.com/fernandotenorio/Tunguska
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/tunguska/src.7z
+
+Turbo Chess
+  https://archive.org/details/bitsavers_borlandturrks1985_6963015
+  https://winworldpc.com/product/turbo-pascal-toolbox/1x
+
+Turbulence
+  https://github.com/ksw0518/Turbulence_v4
+
+Turgenev
+  https://github.com/erincodepirate/turgenev
+
+Turncoat
+  https://github.com/albertprz/turncoat
+
+Turochamp (Baroja)
+  https://github.com/JLBaroja/Turochamp
+
+TurquoiseBOT
+  https://github.com/ranir2026/Lichess
+
+Tursas
+  https://github.com/zmyrgel/tursas
+
+TuxedoCat
+  https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/nfmccrina/tuxedocat
+
+Twisted Logic
+  = TwistedLogic
+  https://github.com/ed-apostol/TwistedLogic
+
+Typhoon
+  https://web.archive.org/web/20180820171416/http://wannabe.guru.org/svn/typhoon/trunk/
+
+UltraBrick
+  https://github.com/ridepo/UltraBrick
+
+Unidexter
+  https://github.com/micaherne/unidexter
+
+Uralochka
+  https://gitlab.com/freemanzlat/uralochka3
+  https://gitlab.com/freemanzlat/uralochka3/
+
+Ursus
+  https://github.com/zchown/Ursus
+
+Usurpator
+  = UsurpatorII
+  http://retro.hansotten.nl/uploads/files/Computerschaak-6800-6502_NL.pdf
+  http://retro.hansotten.nl/uploads/files/usurpatorII.zip
+
+UTopAI
+  https://github.com/DonUber/UtopAI
+
+Uzenatch
+  https://git.sr.ht/~prokop/uzenatch
+
+Vajolet
+  = Vajolet 2
+  = Vajolet2
+  https://code.google.com/p/vajolet2/
+  https://github.com/elcabesa/vajolet
+
+Valiant
+  https://www.dropbox.com/sh/tfiwhx900g4ni42/AABEm29llAn1MaG8D6yW8ZO7a?dl=0
+  https://www.dropbox.com/scl/fo/qqcc7tbo4nlrt55lwi2re/ALWkYY9Bpv0R7IlIUt9pJhE/Valiant%20Mk7.zip?rlkey=ao2zky3uwe21y18ga0o44cge0&dl=0
+
+VanillaChess
+  http://web.archive.org/web/20180713133548/http://kirr.homeunix.org/chess/engines/Norbert%27s%20collection/Vanilla%20Chess%20%28Compilation%29/v2.6g%20JA/vanillachess%2026g/modified%20src%20code/
+  https://codeberg.org/rchastain/vanilla-chess
+
+Vapor
+  https://github.com/mikeleany/vapor
+
+Vault
+  https://github.com/mhouppin/vault
+
+Velvet
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/velvet/src.7z
+  https://github.com/mhonert/velvet-chess
+
+Vengeance
+  https://bitbucket.org/amarthapa/vengeance
+  https://bitbucket.org/amarthapa/vengeance/src/main/
+
+Vice
+  https://github.com/bluefeversoft/vice
+
+Victoire
+  https://github.com/MattEstHaut/Victoire
+
+Vine
+  https://github.com/vine-chess/vine
+
+Violet (Deep)
+  = Violet
+  https://github.com/JayLindgren/Violet
+
+Viridithas
+  https://codeberg.org/asterism/viridithas
+  https://github.com/cosmobobak/viridithas
+  https://github.com/cosmobobak/virtue
+
+Vividmind
+  https://codeberg.org/mauritz/vividmind
+  https://github.com/Mauritz8/Vividmind
+
+Vixen
+  https://github.com/pallasz88/Vixen
+
+Wahoo
+  https://github.com/spamdrew128/Wahoo
+  https://github.com/spamdrew128/Wahoo/
+
+WakWak
+  https://github.com/Silverrzz/wakwak
+
+Waldi
+  https://github.com/Luecx/Chess
+
+Walleye
+  https://github.com/MitchelPaulin/Walleye
+
+Wasabi
+  https://github.com/mhonert/chess
+
+we4k
+  https://github.com/ONE-RANDOM-HUMAN/we4k
+
+Weak
+  https://github.com/Dragjon/weak-chess-engine
+
+Weasel
+  https://github.com/WeaselFOSS/Chess
+
+Weiawaga
+  https://github.com/Heiaha/Weiawaga
+
+WeiawagaJ
+  https://github.com/Heiaha/WeiawagaJ
+
+Weini
+  https://github.com/tryingsomestuff/Weini
+
+Weiss
+  https://github.com/TerjeKir/weiss
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/weiss/src.7z
+
+White Widow
+  https://github.com/Eliagiac/white-widow
+
+WhiteCore
+  https://github.com/SzilBalazs/WhiteCore
+
+Whitespine
+  https://github.com/maelic13/whitespine
+
+Willow
+  https://github.com/Adam-Kulju/Willow
+
+Wilted
+  https://github.com/THETILTED1/Wilted-Chess-Engine
+
+Wing
+  https://web.archive.org/web/20171213225018/http://kirr.homeunix.org/chess/engines/Jim%20Ablett/WING/wing%201.3%20fixed%20gcc%20src%20+%20linux%20binaries.zip
+
+Winglet
+  http://web.archive.org/web/20110726085851/http://www.sluijten.com:80/winglet/source/index.htm
+  http://web.archive.org/web/20120621100214/http://www.sluijten.com/winglet/
+
+Winter
+  https://github.com/rosenthj/Winter
+
+Witz
+  https://sourceforge.net/projects/witz/
+
+Wolfchess
+  https://github.com/ArcticXWolf/Wolfchess
+
+Woodpecker
+  https://web.archive.org/web/20121119131130/http://mypage.sbor.net/e_k/woodpecker_01_alpha.zip
+
+Wowl
+  https://github.com/Plan-B6/wowl
+  https://github.com/Plan-B6/wowl/
+  https://github.com/eric-ycw/wowl
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/wowl/src.7z
+
+Wreckless
+  https://github.com/KotlinDevLihan/Wreckless
+
+WSpeirs Chess
+  https://github.com/wspeirs/chess
+
+Wukong
+  https://github.com/maksimKorzh/wukong
+
+Wukong JS
+  = WukongJS
+  https://github.com/maksimKorzh/wukongJS
+
+Wuttang
+  https://github.com/lokesh58/Wuttang
+
+WyldChess
+  https://github.com/Mk-Chan/WyldChess
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/wyldchess/src.7z
+
+Xadreco
+  https://github.com/drbeco/xadreco
+
+Xiphos
+  https://github.com/milostatarevic/xiphos
+
+Xpdnt
+  http://web.archive.org/web/20170308035310/http://www.opraus.com/ai/Xpdnt_091007.zip
+  http://web.archive.org/web/20191230070041/http://www.opraus.com/ai/
+
+Yaka
+  https://github.com/sinandredemption/Yaka
+
+Yakka
+  https://github.com/CJDalrymple/Yakka
+
+yea_fen
+  https://github.com/mendelsshop/yea_fen
+
+Yukari
+  https://github.com/yukarichess/yukari
+
+Yukoo
+  https://github.com/Virinas-code/Yukoo
+
+yvl-chess
+  https://github.com/yvlaere/yvl-chess
+
+Zagreus
+  https://github.com/Dannyj1/Zagreus
+  https://github.com/Dannyj1/ZagreusEngine
+  https://github.com/Dannyj1/Zagreus/
+
+Zahak
+  https://github.com/amanjpro/zahak
+
+Zangdar
+  https://github.com/Carbecq/Zangdar
+
+ZChess (Fiedler)
+  https://git.sr.ht/~bfiedler/zchess
+
+Zchess2
+  = ZChess2
+  https://web.archive.org/web/20060814022351/http://www.eamonnramsay.plus.com/QChessSource.zip
+
+ZCT
+  https://github.com/zwegner/zct
+  https://sourceforge.net/projects/zct/
+
+ZE_ROOK
+  https://github.com/mathis-r/ze_rook
+
+Zeno
+  https://github.com/Toudonou/zeno
+
+Zeppelin
+  https://codeberg.org/jszczerbinsky/zeppelin
+  https://github.com/jszczerbinsky/zeppelin
+
+ZeroG
+  https://github.com/KristianEkman/ZeroG
+
+Zeta
+  https://gitlab.com/smatovic/Zeta
+
+Zeta Dva
+  https://github.com/smatovic/ZetaDva
+  https://gitlab.com/smatovic/ZetaDva
+
+Zevra
+  https://github.com/sovaz1997/Zevra
+  https://github.com/sovaz1997/Zevra2
+  https://gitlab.com/sovaz1997/zevra2
+
+Ziggy
+  https://github.com/krummi/ChessEngine
+
+Ziggy IS
+  = Ziggy
+  https://github.com/krummi/ChessEngine
+
+ZigQueen
+  = Zigqueen
+  https://github.com/stierms/zigqueen
+
+ZigZagZ
+  https://github.com/LukeGrahamLandry/ChessBot
+
+Zochova
+  https://sourceforge.net/projects/zochova/
+
+Zoe
+  = Zoe Opponent Engine
+  http://github.com/jes/zoe
+  https://github.com/jes/zoe
+
+Zoomies
+  https://github.com/CodeAdopter/Zoomies
+
+ZotChess
+  https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/MatthewSJohnson/UCI_ZotChess
+
+Zugblitz
+  https://github.com/P1X3R/zugblitz
+
+Zugzwang (Despa)
+  https://github.com/cbuse/Chess-Engine
+
+Zurichess
+  https://bitbucket.org/zurichess/zurichess
+  https://github.com/lukasmonk/lucaschessR6/blob/4bd66bb9cb1d55bd66156f8de8e128e52f66ba79/bin/OS/linux/Engines/zurichess/src.7z
+
+Zzzzzz
+  = ZZZZZZ
+  https://codeberg.org/rchastain/zzzzzz
+  https://codeberg.org/rchastain/zzzzzz-cecp
+  https://web.archive.org/web/20060303033959id_/http://home.wxs.nl/~gijsbert.wiesenekker/zzzzzz5distrib.zip
