@@ -20,6 +20,7 @@
   if (!form) return;
   const search = form.querySelector("#search");
   const availability = form.querySelector("#availability");
+  const strength = form.querySelector("#strength");
   const clear = form.querySelector("#clear-search");
   const count = document.querySelector("#match-count");
   const empty = document.querySelector("#no-results");
@@ -28,6 +29,7 @@
     element: row,
     names: JSON.parse(row.dataset.names).map(normalize),
     state: row.dataset.availability,
+    limited: "strengthLimited" in row.dataset,
   }));
   const filters = {
     all: () => true,
@@ -41,9 +43,11 @@
     const query = normalize(search.value.trim());
     if (clear) clear.hidden = search.value === "";
     const filter = filters[availability.value] || filters.all;
+    const limitedOnly = strength.value === "limited";
     let matches = 0;
     for (const row of rows) {
-      const show = filter(row.state) && (!query || row.names.some((name) => name.includes(query)));
+      const show = filter(row.state) && (!limitedOnly || row.limited)
+        && (!query || row.names.some((name) => name.includes(query)));
       row.element.hidden = !show;
       if (show) matches++;
     }
@@ -58,6 +62,8 @@
     else url.searchParams.delete("q");
     if (availability.value !== "all") url.searchParams.set("availability", availability.value);
     else url.searchParams.delete("availability");
+    if (limitedOnly) url.searchParams.set("strength", "limited");
+    else url.searchParams.delete("strength");
     try {
       window.history.replaceState(null, "", url);
     } catch (error) {
@@ -70,6 +76,7 @@
     search.value = params.get("q") || "";
     const state = params.get("availability");
     availability.value = Object.prototype.hasOwnProperty.call(filters, state) ? state : "all";
+    strength.value = params.get("strength") === "limited" ? "limited" : "all";
     apply(false);
   };
 
@@ -86,10 +93,12 @@
     });
   }
   availability.addEventListener("change", () => apply(true));
+  strength.addEventListener("change", () => apply(true));
   form.addEventListener("reset", (event) => {
     event.preventDefault();
     search.value = "";
     availability.value = "all";
+    strength.value = "all";
     apply(true);
     search.focus();
   });

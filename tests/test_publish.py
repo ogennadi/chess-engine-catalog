@@ -77,6 +77,15 @@ DOCS = {
 }
 
 
+STRENGTH = {
+    "Alpha": {"options": "UCI_LimitStrength + UCI_Elo <1000-2500>", "console_only": False,
+              "source": "https://github.com/a/alpha/blob/abc/uci.c#L10"},
+    "Gamma": {"options": "none (skill command only)", "console_only": True,
+              "source": "https://example.org/gamma.tgz [gamma/parser.c:353]"},
+    "Nonexistent": {"options": "x", "console_only": False, "source": ""},
+}
+
+
 def no_network(*args, **kwargs):
     raise AssertionError("publish.py must not access the network")
 
@@ -88,7 +97,7 @@ class PublishTests(unittest.TestCase):
         cls.out = Path(cls.temp.name) / "dist"
         with mock.patch.object(socket.socket, "connect", no_network), \
                 mock.patch.object(socket, "create_connection", no_network):
-            cls.result = publish.build(CATALOG, STATUS, REGISTRY, OVERRIDES, {}, DOCS, cls.out)
+            cls.result = publish.build(CATALOG, STATUS, REGISTRY, OVERRIDES, {}, DOCS, cls.out, STRENGTH)
         cls.index = (cls.out / "index.html").read_text(encoding="utf-8")
         cls.sources = (cls.out / "sources.html").read_text(encoding="utf-8")
 
@@ -100,7 +109,8 @@ class PublishTests(unittest.TestCase):
         return (self.out / "families" / f"{slug}.html").read_text(encoding="utf-8")
 
     def rows(self):
-        return re.findall(r'<tr data-names="([^"]*)" data-availability="([^"]*)">(.*?)</tr>', self.index, re.S)
+        return re.findall(r'<tr data-names="([^"]*)" data-availability="([^"]*)"(?: data-strength-limited)?>(.*?)</tr>',
+                          self.index, re.S)
 
     def test_writes_complete_site_with_downloads(self):
         for path in ("index.html", "sources.html", "assets/site.css", "assets/site.js", "assets/theme.js",
@@ -194,6 +204,33 @@ class PublishTests(unittest.TestCase):
         self.assertIn('<option value="available">Source available</option>', self.index)
         self.assertIn('<html lang="en" data-theme="dark">', self.index)
         self.assertNotIn(" hidden>", "".join(r[2] for r in self.rows()))
+
+    def test_strength_limited_rows_are_marked_for_filter(self):
+        marked = re.findall(r'<tr data-names="([^"]*)"[^>]* data-strength-limited>', self.index)
+        self.assertEqual([json.loads(m.replace("&quot;", '"'))[0] for m in marked], ["Alpha", "Gamma"])
+        self.assertIn('<option value="limited">Strength-limited engines (2)</option>', self.index)
+        self.assertNotIn("strength-limiting-methods", self.index)
+
+    def test_family_page_strength_limiting_section(self):
+        alpha, gamma = self.family("alpha"), self.family("gamma")
+        self.assertIn('id="strength-limiting"', alpha)
+        self.assertLess(alpha.index('id="source-code"'), alpha.index('id="strength-limiting"'))
+        self.assertIn("UCI_LimitStrength + UCI_Elo &lt;1000-2500&gt;", alpha)
+        self.assertIn("UCI/xboard option", alpha)
+        self.assertIn('href="https://github.com/a/alpha/blob/abc/uci.c#L10"', alpha)
+        self.assertIn("Console command or startup switch", gamma)
+        self.assertIn('href="https://example.org/gamma.tgz"', gamma)
+        self.assertIn("<code>gamma/parser.c:353</code>", gamma)
+        for slug in ("beta", "delta", "evil"):
+            self.assertNotIn("strength-limiting", self.family(slug))
+
+    def test_reads_strength_limited_csv(self):
+        details = publish.read_strength_limited(publish.STRENGTH_CSV)
+        self.assertNotIn("Engine", details)
+        self.assertIn("UCI_Elo", details["Stockfish"]["options"])
+        self.assertTrue(details["Stockfish"]["source"].startswith("https://github.com/official-stockfish/"))
+        self.assertFalse(details["Stockfish"]["console_only"])
+        self.assertTrue(details["Crafty"]["console_only"])
 
     def test_links_are_relative_or_external(self):
         pages = [self.index, self.sources, *(self.family(s) for s in ("alpha", "beta", "gamma", "delta", "evil"))]

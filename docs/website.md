@@ -4,7 +4,8 @@
 for another location); a fresh clone can run it directly because `data/engines.json` is
 committed. It reads only local files—`data/engines.json`,
 `data/source-status.json`, `sources.json`, `overrides.json`,
-`wiki-source-overrides.json`, and `docs/sources/`—and never accesses the network or
+`wiki-source-overrides.json`, `docs/sources/` and
+`strength-limited/strength-limited-engines.csv`—and never accesses the network or
 refreshes collection or research. `dist/` is gitignored; only the generator
 (`publish.py`), its assets (`site_assets/`), and tests are committed.
 
@@ -17,8 +18,11 @@ refreshes collection or research. `dist/` is gitignored; only the generator
   Machine), and Internet Archive items as
   unlinked text. Search covers
   canonical names and aliases; the availability filter's "Source available" excludes
-  archived-only families, which have their own "Archived source only" option. Filters are kept in the URL
-  (`?q=...&availability=available|archived|unavailable`) for bookmarking. Without
+  archived-only families, which have their own "Archived source only" option. The
+  strength-limit filter shows only the families listed in
+  `strength-limited/strength-limited-engines.csv` (engines with a built-in way to play
+  weaker, confirmed in their source); unknown names there produce a warning. Filters are kept in the URL
+  (`?q=...&availability=available|archived|unavailable&strength=limited`) for bookmarking. Without
   JavaScript the full table is shown.
 * `families/*.html`: authors (from the CPW engine list, computer-chess.org, the Lucas Chess
   engine configuration and RWBC, falling back to Frank's Chess Page when none of these
@@ -26,6 +30,10 @@ refreshes collection or research. `dist/` is gitignored; only the generator
   word-order duplicates merged), aliases, related families, source links (with licence and
   release scope where researched), provenance lists, Chess Programming Wiki link, research
   findings and evidence quotations, and open questions listed apart from reviewed decisions.
+  Families in the strength-limited table also get a "Strength limiting" section: the
+  reviewed options, whether they are a UCI/xboard option or a console command or startup
+  switch, and a pinned permalink to where the source defines them (the CSV's `Options`
+  and `Options source` columns, written by `strength-limited/table_pdf.py csv`).
   "Related families" shows reviewed `related_families` entries from `overrides.json`
   (`derived_from`, `successor_of`, `same_name` or `distinct_from`, with a note and evidence URL; shown on both
   pages) and `source_aliases` splits, then lists families sharing the same base name
