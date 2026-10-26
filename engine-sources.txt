@@ -1891,9 +1891,6 @@ Hypersion
 Iathena
   https://github.com/tschmoderer/iathena
 
-iBlunder
-  https://github.com/Timmoth/iBlunder
-
 Icarus
   = icarus
   https://github.com/Sp00ph/icarus
@@ -3419,6 +3416,7 @@ Sapeli
 
 Sapling
   https://github.com/Timmoth/Sapling
+  https://github.com/Timmoth/iBlunder
 
 Sarah
   https://github.com/lostnthought/sarah

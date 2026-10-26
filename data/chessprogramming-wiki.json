@@ -11378,17 +11378,6 @@
         "Iathena"
       ]
     },
-    "iBlunder": {
-      "status": "not_found",
-      "url": null,
-      "title": null,
-      "checked_at": "2026-10-19T00:44:50Z",
-      "evidence_url": "https://chessprogramming.org/search-index.json",
-      "method": "main-namespace-title-index",
-      "titles_checked": [
-        "iBlunder"
-      ]
-    },
     "Icarus": {
       "status": "not_found",
       "url": null,

@@ -140188,39 +140188,6 @@
       }
     },
     {
-      "name": "iBlunder",
-      "aliases": [],
-      "provenance": [
-        {
-          "label": "iblunder-bot",
-          "url": "https://lichess.org/@/iblunder-bot",
-          "membership_url": "https://lichess.org/team/selfmade-bots",
-          "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
-          "identity_method": "reviewed-profile",
-          "source": "lichess",
-          "checked_at": "2026-10-18T19:46:08Z"
-        }
-      ],
-      "source_code": [
-        {
-          "url": "https://github.com/Timmoth/iBlunder",
-          "evidence_url": "https://lichess.org/@/iblunder-bot",
-          "source": "lichess"
-        }
-      ],
-      "chessprogramming_wiki": {
-        "status": "not_found",
-        "url": null,
-        "title": null,
-        "checked_at": "2026-10-19T00:44:50Z",
-        "evidence_url": "https://chessprogramming.org/search-index.json",
-        "method": "main-namespace-title-index",
-        "titles_checked": [
-          "iBlunder"
-        ]
-      }
-    },
-    {
       "name": "Icarus",
       "aliases": [
         "icarus"
@@ -250806,6 +250773,15 @@
           "comment": "(S28 new -> Category 2 12th) New in S28 Cat2 Playoff (update needed, game length update not tested)",
           "source": "tcec-wiki",
           "checked_at": "2026-10-21T19:11:01Z"
+        },
+        {
+          "label": "iblunder-bot",
+          "url": "https://lichess.org/@/iblunder-bot",
+          "membership_url": "https://lichess.org/team/selfmade-bots",
+          "membership_api_url": "https://lichess.org/api/team/selfmade-bots/users",
+          "identity_method": "reviewed-profile",
+          "source": "lichess",
+          "checked_at": "2026-10-18T19:46:08Z"
         }
       ],
       "source_code": [
@@ -250828,6 +250804,11 @@
           "url": "https://github.com/Timmoth/Sapling",
           "evidence_url": "https://wiki.chessdom.org/Engines_and_authors",
           "source": "tcec-wiki"
+        },
+        {
+          "url": "https://github.com/Timmoth/iBlunder",
+          "evidence_url": "https://lichess.org/@/iblunder-bot",
+          "source": "lichess"
         }
       ],
       "chessprogramming_wiki": {
