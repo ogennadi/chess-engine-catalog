@@ -1,15 +1,14 @@
-"""Write a compact, printable PDF listing every family whose source code is available.
+"""Write a single-sheet 48 x 36 inch landscape poster listing every family whose source code is available.
 
-    python names_pdf.py [--out PATH] [--paper letter|a4|poster] [--orientation portrait|landscape] [--min-size PT]
+    python names_pdf.py [--out PATH] [--paper letter|a4|poster] [--orientation portrait|landscape] [--min-size PT] [--max-pages N]
 
 Reads data/engines.json (run collect.py first). Families whose availability is linked or
 available are numbered and listed alphabetically under letter headings,
-in as many columns as fit (portrait pages by default). The default 16 pt minimum is about the
+in as many columns as fit (one landscape poster page by default). The default 16 pt minimum is about the
 smallest text that 20/20 vision can read from 9 feet; the largest size up to 4 pt above
 it that still gives the fewest pages is chosen. Uses only the standard library. Names are set in Atkinson Hyperlegible
 and index numbers in Atkinson Hyperlegible Mono (embedded from fonts/, SIL OFL 1.1), so l, I and 1 stay distinct, and the
 title in the PDF base-14 Helvetica beside the site logo; text is horizontally condensed. The output is generated, so it is gitignored.
-For a single 48 x 36 inch landscape poster, use --paper poster --orientation landscape --max-pages 1.
 """
 
 import argparse
@@ -480,13 +479,13 @@ def render(rows, count, size, page_size, out, links=None):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--out", type=Path, default=ROOT / "data" / "source-available-engines.pdf")
-    parser.add_argument("--paper", choices=sorted(PAPER), default="letter")
-    parser.add_argument("--orientation", choices=["landscape", "portrait"], default="portrait")
+    parser.add_argument("--out", type=Path, default=ROOT / "data" / "source-available-engines-poster.pdf")
+    parser.add_argument("--paper", choices=sorted(PAPER), default="poster")
+    parser.add_argument("--orientation", choices=["landscape", "portrait"], default="landscape")
     parser.add_argument("--min-size", type=float, default=16.0, help="Smallest font size in points (default 16)")
     parser.add_argument(
-        "--max-pages", type=int, default=15,
-        help="Use the largest font that fits in this many pages (default 15; 0 = fewest pages instead)",
+        "--max-pages", type=int, default=1,
+        help="Use the largest font that fits in this many pages (default 1; 0 = fewest pages instead)",
     )
     args = parser.parse_args()
     catalog = json.loads((ROOT / "data" / "engines.json").read_text(encoding="utf-8"))

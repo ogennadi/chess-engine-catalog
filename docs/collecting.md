@@ -14,16 +14,9 @@ run `collect.py` to create them locally (see [Updating](#updating)):
 * `data/unresolved-lichess.json`: Lichess accounts awaiting engine-identity review
 * `docs/families/`: per-family pages
 
-`python names_pdf.py` (after `collect.py`) writes `data/source-available-engines.pdf`,
-a numbered, multi-column list (portrait by default, `--orientation landscape` for landscape) of every family with available source code,
-in the largest type (at least 16 pt) that fits on 15 single-sided pages (`--max-pages N`; `0` = fewest pages) (also not committed).
-
-For an experimental single-sheet, 48 x 36 inch landscape poster with the same
-alphabetical index numbers:
-
-```powershell
-python names_pdf.py --paper poster --orientation landscape --max-pages 1 --out data\source-available-engines-poster.pdf
-```
+`python names_pdf.py` (after `collect.py`) writes `data/source-available-engines-poster.pdf`
+(not committed): a single-sheet, 48 x 36 inch landscape poster with a numbered,
+alphabetical, multi-column list of every family with available source code.
 
 Print at **100% / actual size** on 48 x 36 inch paper, not scaled to a smaller sheet.
 The generator chooses the largest font that fits all source-available families on
