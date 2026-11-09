@@ -82,3 +82,48 @@ python source_status.py check out.json
 python source_status.py record out.json
 python source_status.py summary
 ```
+
+## Browser-playable engines
+
+One-off survey (2026-11-07) of engines that can be played in a web browser
+with the engine running on the visitor's machine (JavaScript or WebAssembly).
+Server-hosted sites (e.g. CCRL Challenger) and Lichess bots are excluded.
+Candidates were URLs from `data/engines.json` and from READMEs, `index.html`
+and `package.json` files under `.cache/src`; each page was fetched with curl
+and checked for a board plus in-browser engine code (`.wasm`, Web Worker or a
+JS engine script). Pages were not play-tested, and engines whose play page
+is not linked from either source were not found. Names are catalog family
+names; Glowfish is not in the catalog.
+
+Own pages:
+
+* Arhanpassant: <https://arhanpassant.com/play> (repo has a WASM crate)
+* ArduChess: Arduboy emulator,
+  <https://tiberiusbrown.github.io/arduboy_sim/player.html?file=https://raw.githubusercontent.com/tiberiusbrown/arduchess/master/arduchess/arduchess.hex>
+* BMCP(JS): <https://maksimkorzh.github.io/bmcp_js/>
+* Cinnamon: <https://gekomad.github.io/Cinnamon/>
+* Fairy-Stockfish: <https://play.fairy-stockfish.org/>
+* Glowfish (WASM-4 cart by Analog Hors, source
+  <https://github.com/analog-hors/glowfish>):
+  <https://wasm4.org/play/glowfish-chess>
+* JavaScript-Chess: <https://billjordanchess.github.io/JavaScript-Chess/>
+* KhepriChess: <https://kurt1288.github.io/KhepriChess/examples/khepri.html>
+* LibraChess: <https://eugenioenko.github.io/libra-chess-ui>
+* NimTuroChamp: <https://mdoege.github.io/nimTUROCHAMP/>
+* P4wn: <http://p4wn.sourceforge.net/>
+* Quokka: <https://mattbruv.github.io/Quokka/>
+* Redtail: <https://webtail.vercel.app/play>
+* RustyPigeon: <http://rusty-pigeon.netlify.app/>
+* Sapling: <https://timmoth.com/sapling/play/>
+* Stockfish-js: <http://exoticorn.github.io/stockfish-js>
+* Toledo NanoChess: <http://nanochess.org/chess4.html>
+* Wasabi: <https://mhonert.github.io/chess>
+* Wukong JS: <https://maksimkorzh.github.io/wukongJS/wukong.html>
+
+Hosted together on Chessy (<https://chessy.uk/engines>, WebAssembly builds
+except Lozza): Berserk, Koivisto, Leela Chess (Lc0), Lozza, Reckless,
+Rodent (Rodent IV), Stockfish (10, 11, 17.1, 18, 19) and Texel.
+
+Rejected or dead: Hynobius (analysis page only, no play); GaiaChess itch.io
+page shows no browser build; Lozza's own `examples/play.html` and the
+CeruleanJS site (now redirects to the author's blog) no longer work.
