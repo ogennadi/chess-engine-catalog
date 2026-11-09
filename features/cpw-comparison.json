@@ -1,0 +1,1057 @@
+{
+ "method": "First links of list items in the body of 21 CPW hub pages (Search, Selectivity, Pruning, Reductions, Extensions, Move Ordering, Board Representation, Move Generation, Evaluation, Hash/Transposition Table, NNUE, Time Management, Parallel Search, Opening Book, Endgame Tablebases, Protocols, Playing Strength, Repetitions...), minus engine pages and topics already linked by taxonomy.json before this pass.",
+ "topics": [
+  {
+   "cpw_topic": "Score",
+   "linked_from": [
+    "Evaluation",
+    "Search",
+    "Transposition Table"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "AEL-Pruning",
+   "linked_from": [
+    "Pruning",
+    "Selectivity"
+   ],
+   "taxonomy_feature": "aelprune",
+   "status": "added"
+  },
+  {
+   "cpw_topic": "Depth",
+   "linked_from": [
+    "Search",
+    "Transposition Table"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Enhanced Forward Pruning",
+   "linked_from": [
+    "Pruning",
+    "Selectivity"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Enhanced Transposition Cutoff",
+   "linked_from": [
+    "Move Ordering",
+    "Transposition Table"
+   ],
+   "taxonomy_feature": "etc",
+   "status": "added"
+  },
+  {
+   "cpw_topic": "Fail-High Reductions",
+   "linked_from": [
+    "Reductions",
+    "Selectivity"
+   ],
+   "taxonomy_feature": "fhr",
+   "status": "added"
+  },
+  {
+   "cpw_topic": "Material Hash Table",
+   "linked_from": [
+    "Hash Table",
+    "Transposition Table"
+   ],
+   "taxonomy_feature": "materialhash",
+   "status": "added"
+  },
+  {
+   "cpw_topic": "Null Move Reductions",
+   "linked_from": [
+    "Reductions",
+    "Selectivity"
+   ],
+   "taxonomy_feature": "nmr",
+   "status": "added"
+  },
+  {
+   "cpw_topic": "Parity Pruning",
+   "linked_from": [
+    "Pruning",
+    "Selectivity"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "RankCut",
+   "linked_from": [
+    "Reductions",
+    "Selectivity"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Uncertainty Cut-Offs",
+   "linked_from": [
+    "Pruning",
+    "Selectivity"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "ABK",
+   "linked_from": [
+    "Opening Book"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "ACM 1974",
+   "linked_from": [
+    "Time Management"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "APHID",
+   "linked_from": [
+    "Parallel Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Analog Evaluation",
+   "linked_from": [
+    "Evaluation"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Asymmetric Evaluation",
+   "linked_from": [
+    "Evaluation"
+   ],
+   "taxonomy_feature": "asymeval",
+   "status": "added"
+  },
+  {
+   "cpw_topic": "Auto232",
+   "linked_from": [
+    "Protocols"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Automated Tuning",
+   "linked_from": [
+    "Evaluation"
+   ],
+   "taxonomy_feature": "tuning",
+   "status": "covered"
+  },
+  {
+   "cpw_topic": "B%2A",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "BCH Hashing",
+   "linked_from": [
+    "Transposition Table"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Banksia GUI",
+   "linked_from": [
+    "Opening Book"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Best Move",
+   "linked_from": [
+    "Transposition Table"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Best-First Minimax Search",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "BitScan",
+   "linked_from": [
+    "Hash Table"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Bitboard Serialization",
+   "linked_from": [
+    "Hash Table"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Bookup",
+   "linked_from": [
+    "Opening Book"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Boris Baczynskyj",
+   "linked_from": [
+    "Opening Book"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Botvinnik-Markoff Extension",
+   "linked_from": [
+    "Selectivity"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Butterfly Heuristic",
+   "linked_from": [
+    "Move Ordering"
+   ],
+   "taxonomy_feature": "relhist",
+   "status": "covered"
+  },
+  {
+   "cpw_topic": "CTG",
+   "linked_from": [
+    "Opening Book"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Capture Extensions",
+   "linked_from": [
+    "Selectivity"
+   ],
+   "taxonomy_feature": "otherext",
+   "status": "covered"
+  },
+  {
+   "cpw_topic": "Center Control",
+   "linked_from": [
+    "Evaluation"
+   ],
+   "taxonomy_feature": "center",
+   "status": "added"
+  },
+  {
+   "cpw_topic": "Chessmaps Heuristic",
+   "linked_from": [
+    "Move Ordering"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Congruent Modulo Bitboards",
+   "linked_from": [
+    "Hash Table"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Connectivity",
+   "linked_from": [
+    "Evaluation"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Conspiracy Number Search",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Conspiracy Numbers",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "ECO",
+   "linked_from": [
+    "Opening Book"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "EPD",
+   "linked_from": [
+    "Opening Book"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Engines",
+   "linked_from": [
+    "Opening Book"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Evaluation Discontinuity",
+   "linked_from": [
+    "Evaluation"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Evaluation Function",
+   "linked_from": [
+    "Evaluation"
+   ],
+   "taxonomy_feature": "(area)",
+   "status": "covered"
+  },
+  {
+   "cpw_topic": "Evaluation Function Draft",
+   "linked_from": [
+    "Evaluation"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Evaluation Overlap",
+   "linked_from": [
+    "Evaluation"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Evaluation Patterns",
+   "linked_from": [
+    "Evaluation"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Evaluation Philosophy",
+   "linked_from": [
+    "Evaluation"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Evaluation of Pieces",
+   "linked_from": [
+    "Evaluation"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Felicity Tablebases",
+   "linked_from": [
+    "Endgame Tablebases"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "FinalGen",
+   "linked_from": [
+    "Endgame Tablebases"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Freezer",
+   "linked_from": [
+    "Endgame Tablebases"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "GAFS",
+   "linked_from": [
+    "Endgame Tablebases"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Game Phases",
+   "linked_from": [
+    "Evaluation"
+   ],
+   "taxonomy_feature": "tapered",
+   "status": "covered"
+  },
+  {
+   "cpw_topic": "Gaviota Tablebases",
+   "linked_from": [
+    "Endgame Tablebases"
+   ],
+   "taxonomy_feature": "gaviota",
+   "status": "added"
+  },
+  {
+   "cpw_topic": "General Setwise Operations",
+   "linked_from": [
+    "Board Representation"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Graph History Interaction",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Guard Heuristic",
+   "linked_from": [
+    "Move Ordering"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Hashing Dictionaries",
+   "linked_from": [
+    "Hash Table"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Horizon Effect",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Improving",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": "improving",
+   "status": "added"
+  },
+  {
+   "cpw_topic": "Iterative Search",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "James R. Slagle",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Jean-Marc Alliot",
+   "linked_from": [
+    "Playing Strength"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Killer Move",
+   "linked_from": [
+    "Move Ordering"
+   ],
+   "taxonomy_feature": "killers",
+   "status": "covered"
+  },
+  {
+   "cpw_topic": "Last Best Reply",
+   "linked_from": [
+    "Move Ordering"
+   ],
+   "taxonomy_feature": "lastbestreply",
+   "status": "added"
+  },
+  {
+   "cpw_topic": "Lazy Evaluation",
+   "linked_from": [
+    "Evaluation"
+   ],
+   "taxonomy_feature": "lazyeval",
+   "status": "added"
+  },
+  {
+   "cpw_topic": "Lomonosov Tablebases",
+   "linked_from": [
+    "Endgame Tablebases"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "MCαβ",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Mailbox",
+   "linked_from": [
+    "Board Representation"
+   ],
+   "taxonomy_feature": "arr8x8",
+   "status": "covered"
+  },
+  {
+   "cpw_topic": "Make Move",
+   "linked_from": [
+    "Board Representation"
+   ],
+   "taxonomy_feature": "makeunmake",
+   "status": "covered"
+  },
+  {
+   "cpw_topic": "Massy 2002",
+   "linked_from": [
+    "Time Management"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Mate Killers",
+   "linked_from": [
+    "Move Ordering"
+   ],
+   "taxonomy_feature": "matekillers",
+   "status": "added"
+  },
+  {
+   "cpw_topic": "Mate Search",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": "matesearch",
+   "status": "added"
+  },
+  {
+   "cpw_topic": "Mate Threat Extensions",
+   "linked_from": [
+    "Selectivity"
+   ],
+   "taxonomy_feature": "matethreatext",
+   "status": "added"
+  },
+  {
+   "cpw_topic": "Matej Guid",
+   "linked_from": [
+    "Playing Strength"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Material Tables",
+   "linked_from": [
+    "Hash Table"
+   ],
+   "taxonomy_feature": "materialhash",
+   "status": "covered"
+  },
+  {
+   "cpw_topic": "Monte-Carlo Tree Search",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": "mcts",
+   "status": "added"
+  },
+  {
+   "cpw_topic": "Move List",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Move Ordering",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": "(area)",
+   "status": "covered"
+  },
+  {
+   "cpw_topic": "NIC-Key",
+   "linked_from": [
+    "Opening Book"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "NUMA",
+   "linked_from": [
+    "Parallel Search"
+   ],
+   "taxonomy_feature": "numa",
+   "status": "added"
+  },
+  {
+   "cpw_topic": "Nalimov Tablebases",
+   "linked_from": [
+    "Endgame Tablebases"
+   ],
+   "taxonomy_feature": "nalimov",
+   "status": "added"
+  },
+  {
+   "cpw_topic": "NegaC%2A",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "NegaScout",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": "pvs",
+   "status": "covered"
+  },
+  {
+   "cpw_topic": "Neural MoveMap Heuristic",
+   "linked_from": [
+    "Move Ordering"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Node",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Node Types",
+   "linked_from": [
+    "Transposition Table"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "One Reply Extensions",
+   "linked_from": [
+    "Selectivity"
+   ],
+   "taxonomy_feature": "onereply",
+   "status": "added"
+  },
+  {
+   "cpw_topic": "Opponent Model Search",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "PGN",
+   "linked_from": [
+    "Opening Book"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "PV Extensions",
+   "linked_from": [
+    "Selectivity"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "PV-Move",
+   "linked_from": [
+    "Move Ordering"
+   ],
+   "taxonomy_feature": "pvtrack",
+   "status": "covered"
+  },
+  {
+   "cpw_topic": "Passed Pawn Extensions",
+   "linked_from": [
+    "Selectivity"
+   ],
+   "taxonomy_feature": "otherext",
+   "status": "covered"
+  },
+  {
+   "cpw_topic": "Path-Dependency",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Pawn Advantage, Win Percentage, and Elo",
+   "linked_from": [
+    "Evaluation"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Persistent Hash Table",
+   "linked_from": [
+    "Hash Table"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Piece-Sets",
+   "linked_from": [
+    "Board Representation"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Proof-Number Search",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": "matesearch",
+   "status": "covered"
+  },
+  {
+   "cpw_topic": "Quantifying Evaluation Features",
+   "linked_from": [
+    "Evaluation"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Recapture Extensions",
+   "linked_from": [
+    "Selectivity"
+   ],
+   "taxonomy_feature": "otherext",
+   "status": "covered"
+  },
+  {
+   "cpw_topic": "Refutation Table",
+   "linked_from": [
+    "Move Ordering"
+   ],
+   "taxonomy_feature": "refutation",
+   "status": "added"
+  },
+  {
+   "cpw_topic": "Relative History Heuristic",
+   "linked_from": [
+    "Move Ordering"
+   ],
+   "taxonomy_feature": "relhist",
+   "status": "added"
+  },
+  {
+   "cpw_topic": "Root",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "SEX Algorithm",
+   "linked_from": [
+    "Selectivity"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "SMP",
+   "linked_from": [
+    "Parallel Search"
+   ],
+   "taxonomy_feature": "lazysmp",
+   "status": "covered"
+  },
+  {
+   "cpw_topic": "SSS%2A and Dual%2A",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Scorpio Bitbases",
+   "linked_from": [
+    "Endgame Tablebases"
+   ],
+   "taxonomy_feature": "bitbases",
+   "status": "covered"
+  },
+  {
+   "cpw_topic": "Scout",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": "pvs",
+   "status": "covered"
+  },
+  {
+   "cpw_topic": "Search Explosion",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Search Instability",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Search Pathology",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Search Space",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Search Statistics",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Search Tree",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Search with Random Leaf Values",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": "strength",
+   "status": "covered"
+  },
+  {
+   "cpw_topic": "Selectivity",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": "(area)",
+   "status": "covered"
+  },
+  {
+   "cpw_topic": "Shared Hash Table",
+   "linked_from": [
+    "Hash Table"
+   ],
+   "taxonomy_feature": "lazysmp",
+   "status": "covered"
+  },
+  {
+   "cpw_topic": "Shu Yokoyama",
+   "linked_from": [
+    "Parallel Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Sibling Prediction Pruning",
+   "linked_from": [
+    "Pruning"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Simplified Evaluation Function",
+   "linked_from": [
+    "Evaluation"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Syzygy Bases",
+   "linked_from": [
+    "Endgame Tablebases"
+   ],
+   "taxonomy_feature": "syzygy",
+   "status": "added"
+  },
+  {
+   "cpw_topic": "TLCS-TLCV",
+   "linked_from": [
+    "Protocols"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Threat Move",
+   "linked_from": [
+    "Move Ordering"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Transposition",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Trapped Pieces",
+   "linked_from": [
+    "Evaluation"
+   ],
+   "taxonomy_feature": "trapped",
+   "status": "added"
+  },
+  {
+   "cpw_topic": "Type A Strategy",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Type B Strategy",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "UCT",
+   "linked_from": [
+    "Search"
+   ],
+   "taxonomy_feature": "mcts",
+   "status": "covered"
+  },
+  {
+   "cpw_topic": "USI",
+   "linked_from": [
+    "Protocols"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "Vector Attacks",
+   "linked_from": [
+    "Board Representation"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  },
+  {
+   "cpw_topic": "WCCC 1980",
+   "linked_from": [
+    "Opening Book"
+   ],
+   "taxonomy_feature": null,
+   "status": "not a selectable feature (concept, history, format, person or GUI)"
+  }
+ ]
+}

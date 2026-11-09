@@ -1,0 +1,5160 @@
+{
+ "engines_scanned": 1082,
+ "strength_limited_scanned": 55,
+ "missing_strength_limited": [],
+ "features": {
+  "arr8x8": {
+   "label": "8×8 array / mailbox",
+   "area": "board",
+   "cpw": "https://www.chessprogramming.org/8x8_Board",
+   "ref": null,
+   "engines": 45,
+   "engines_pct": 4.2,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 2,
+   "examples": [
+    {
+     "engine": "Reglisse",
+     "strength_limited": true,
+     "url": "https://github.com/PaulJeFi/reglisse-chess",
+     "source": "readme",
+     "evidence": "Réglisse uses [mailbox] and the idea behind it was simplicity and not playing strenght. I hope the code will be clear and well commented for those who want to u"
+    },
+    {
+     "engine": "ChessCore",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/ChessCore",
+     "source": "readme",
+     "evidence": "- The mailbox `Board` (64-square `Square[]` with castling / en-passant / clock /"
+    },
+    {
+     "engine": "P4wn",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/P4wn",
+     "source": "readme",
+     "evidence": "array, which is conceptually a 10x12 board, with the 8x8 board placed"
+    },
+    {
+     "engine": "Coiled",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Coiled",
+     "source": "readme",
+     "evidence": "| Representación del tablero | Mailbox. 8x8 unidimensional.                                                                       |"
+    }
+   ]
+  },
+  "mb10x12": {
+   "label": "10×12 mailbox",
+   "area": "board",
+   "cpw": "https://www.chessprogramming.org/10x12_Board",
+   "ref": null,
+   "engines": 12,
+   "engines_pct": 1.1,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "Phalanx",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Phalanx",
+     "source": "readme",
+     "evidence": "Phalanx uses (traditional) 10x12 board implementation.  There are three"
+    },
+    {
+     "engine": "P4wn",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/P4wn",
+     "source": "readme",
+     "evidence": "array, which is conceptually a 10x12 board, with the 8x8 board placed"
+    },
+    {
+     "engine": "Altair",
+     "strength_limited": false,
+     "url": "https://github.com/Alex2262/AltairChessEngine",
+     "source": "readme",
+     "evidence": "Versions 4.0.0 and prior used a mailbox (12x10), array board representation"
+    },
+    {
+     "engine": "Jangine",
+     "strength_limited": false,
+     "url": "https://github.com/xjcl/jangine",
+     "source": "readme",
+     "evidence": "- **Board representation** is done with [10x12 boards]."
+    }
+   ]
+  },
+  "x88": {
+   "label": "0x88",
+   "area": "board",
+   "cpw": "https://www.chessprogramming.org/0x88",
+   "ref": null,
+   "engines": 21,
+   "engines_pct": 1.9,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "Myrddin",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Myrddin",
+     "source": "readme",
+     "evidence": "-- Finished conversion to bitboards from 0x88\\"
+    },
+    {
+     "engine": "Daydreamer",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Daydreamer",
+     "source": "readme",
+     "evidence": "differences are a move from 0x88 board representation to bitboards and the"
+    },
+    {
+     "engine": "Diablo",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Diablo",
+     "source": "readme",
+     "evidence": "- The basic chess board data structure is a combination mailbox and 0x88."
+    },
+    {
+     "engine": "Clubfoot",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Clubfoot",
+     "source": "readme",
+     "evidence": "* 0x88 board representation (uses ~0x77 instead of 0x88 for legality testing)."
+    }
+   ]
+  },
+  "bitboards": {
+   "label": "Bitboards",
+   "area": "board",
+   "cpw": "https://www.chessprogramming.org/Bitboards",
+   "ref": null,
+   "engines": 374,
+   "engines_pct": 34.6,
+   "strength_limited": 15,
+   "strength_limited_pct": 27.3,
+   "negated_or_planned": 9,
+   "examples": [
+    {
+     "engine": "Beowulf",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Beowulf",
+     "source": "readme",
+     "evidence": "Ernst Heinz - His page on bitboard programming helped me to understand the concept."
+    },
+    {
+     "engine": "Cheese",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheese",
+     "source": "readme",
+     "evidence": "Use hardware PEXT instruction for magic bitboards (for x86_64)"
+    },
+    {
+     "engine": "Cheng",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheng",
+     "source": "readme",
+     "evidence": "PVS, magic bitboards, null move pruning, LMR, futility pruning, razoring, quiescence search, (dumb) evaluation function,"
+    },
+    {
+     "engine": "Crafty",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Crafty",
+     "source": "readme",
+     "evidence": "Crafty is the \"son\" (direct descendent) of the chess program Cray Blitz.  it is designed totally around the bit-board data structure for reasons of speed of exe"
+    }
+   ]
+  },
+  "rotated": {
+   "label": "Rotated BB",
+   "area": "board",
+   "cpw": "https://www.chessprogramming.org/Rotated_Bitboards",
+   "ref": null,
+   "engines": 5,
+   "engines_pct": 0.5,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Bitfoot",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Bitfoot",
+     "source": "readme",
+     "evidence": "I've experimented with several board representations and move generation techniques over the years.  For `bitboard` engines I've tried rotated bitboards and I'v"
+    },
+    {
+     "engine": "Simon",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Simon",
+     "source": "readme",
+     "evidence": "fully functional engine using a bitboard infrastructure including rotated bitboard"
+    },
+    {
+     "engine": "Cinnamon",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Cinnamon",
+     "source": "readme",
+     "evidence": "- Rotated bitboards"
+    },
+    {
+     "engine": "Brainless",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Brainless",
+     "source": "readme",
+     "evidence": "* Rotated bitboards move generation (pioneered by Dr. Robert Hyatt, author of Crafty, and Heinz, of DarkThought)"
+    }
+   ]
+  },
+  "magic": {
+   "label": "Magic BB",
+   "area": "board",
+   "cpw": "https://www.chessprogramming.org/Magic_Bitboards",
+   "ref": null,
+   "engines": 194,
+   "engines_pct": 17.9,
+   "strength_limited": 6,
+   "strength_limited_pct": 10.9,
+   "negated_or_planned": 4,
+   "examples": [
+    {
+     "engine": "Cheese",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheese",
+     "source": "readme",
+     "evidence": "Use hardware PEXT instruction for magic bitboards (for x86_64)"
+    },
+    {
+     "engine": "Cheng",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheng",
+     "source": "readme",
+     "evidence": "PVS, magic bitboards, null move pruning, LMR, futility pruning, razoring, quiescence search, (dumb) evaluation function,"
+    },
+    {
+     "engine": "Karballo",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Carballo",
+     "source": "readme",
+     "evidence": "* Based on bitboards with a magic bitboard move generator, it also includes code for magic number generation"
+    },
+    {
+     "engine": "Peras",
+     "strength_limited": true,
+     "url": "https://github.com/FirePlank/Peras",
+     "source": "readme",
+     "evidence": "- **Board**: magic bitboards, incremental Zobrist keys, static exchange evaluation, and full Chess960 support."
+    }
+   ]
+  },
+  "pext": {
+   "label": "PEXT BB",
+   "area": "board",
+   "cpw": "https://www.chessprogramming.org/BMI2",
+   "ref": null,
+   "engines": 57,
+   "engines_pct": 5.3,
+   "strength_limited": 6,
+   "strength_limited_pct": 10.9,
+   "negated_or_planned": 6,
+   "examples": [
+    {
+     "engine": "Demolito",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Demolito",
+     "source": "readme",
+     "evidence": "- Intel: use `pext` if it works, otherwise `popcnt` (old machine), and if that still fails then"
+    },
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- **Movegen**: per-piece PEXT (BMI2) / AVX2 BLSMSK / magic on x86, Hyperbola Quintessence (`rbit`) on ARM64; setwise AVX-512 Kogge-Stone / scalar — runtime-elec"
+    },
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "make build ARCH=x86-64-bmi2     # adds PEXT (Zen 3+, Ice Lake+)"
+    },
+    {
+     "engine": "Igel",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Igel",
+     "source": "readme",
+     "evidence": "| `-D_BTYPE=1` | Use `pext` for sliding piece lookups. This is faster on Intel Haswell and later and on AMD Zen 3 and later, but **slower on Zen 1 and Zen 2**, "
+    }
+   ]
+  },
+  "kindergarten": {
+   "label": "Kindergarten BB",
+   "area": "board",
+   "cpw": "https://www.chessprogramming.org/Kindergarten_Bitboards",
+   "ref": null,
+   "engines": 11,
+   "engines_pct": 1.0,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "FrankWalter",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/FrankWalter",
+     "source": "readme",
+     "evidence": "* Bitboard legal move generator using magic bitboards and kindergarten bitboards"
+    },
+    {
+     "engine": "Googleplex",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Googleplex_Starthinker",
+     "source": "readme",
+     "evidence": "- [x] kindergarten bitboards"
+    },
+    {
+     "engine": "OliThink",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/OliThink",
+     "source": "readme",
+     "evidence": "An independent invetion of Kindergarten Bitboards (2007) being used for move generation and mobility evaluation."
+    },
+    {
+     "engine": "Sungorus",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Sungorus",
+     "source": "readme",
+     "evidence": "- Kindergarten bitboards for move generation (thanks to Gerd Isenberg)"
+    }
+   ]
+  },
+  "piecelists": {
+   "label": "Piece lists",
+   "area": "board",
+   "cpw": "https://www.chessprogramming.org/Piece-Lists",
+   "ref": null,
+   "engines": 10,
+   "engines_pct": 0.9,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "asmFish",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/AsmFish",
+     "source": "readme",
+     "evidence": "causes minor inconsequential differences due to the piece lists."
+    },
+    {
+     "engine": "Diablo",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Diablo",
+     "source": "readme",
+     "evidence": "piece lists come from his engine Gluarung.  I implemented and"
+    },
+    {
+     "engine": "Nibble-Chess",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Nibble-Chess",
+     "source": "readme",
+     "evidence": "- pretty fast move generator/perft tester with piece lists"
+    },
+    {
+     "engine": "Purple Haze",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Purple_Haze",
+     "source": "readme",
+     "evidence": "* Piece-Lists"
+    }
+   ]
+  },
+  "pseudolegal": {
+   "label": "Pseudo-legal + check",
+   "area": "movegen",
+   "cpw": "https://www.chessprogramming.org/Pseudo-Legal_Move",
+   "ref": null,
+   "engines": 59,
+   "engines_pct": 5.5,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 3,
+   "examples": [
+    {
+     "engine": "Sapling",
+     "strength_limited": true,
+     "url": "https://github.com/Timmoth/Sapling",
+     "source": "readme",
+     "evidence": "- Pseudo-legal movegen"
+    },
+    {
+     "engine": "ChessCore",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/ChessCore",
+     "source": "readme",
+     "evidence": "- Pseudo-legal generation + `IsSquareAttacked`; perft-verified incl. en passant,"
+    },
+    {
+     "engine": "P4wn",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/P4wn",
+     "source": "readme",
+     "evidence": "Finally, a *pseudo-legal move* is a move that is allowed by the"
+    },
+    {
+     "engine": "Leorik",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Leorik",
+     "source": "readme",
+     "evidence": "* Pseudo-legal move generator, bitboards and copy/make."
+    }
+   ]
+  },
+  "legalgen": {
+   "label": "Fully legal gen",
+   "area": "movegen",
+   "cpw": "https://www.chessprogramming.org/Legal_Move",
+   "ref": null,
+   "engines": 55,
+   "engines_pct": 5.1,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Snaky",
+     "strength_limited": true,
+     "url": "https://github.com/Carleslc/Snaky",
+     "source": "readme",
+     "evidence": "- **Board**: bitboards with magic bitboards for the sliding pieces, Zobrist keys, legal move generation checked with perft."
+    },
+    {
+     "engine": "FrankWalter",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/FrankWalter",
+     "source": "readme",
+     "evidence": "* Bitboard legal move generator using magic bitboards and kindergarten bitboards"
+    },
+    {
+     "engine": "AdaChess",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/AdaChess",
+     "source": "readme",
+     "evidence": "- Legal move generator with check-investigation"
+    },
+    {
+     "engine": "Conqueror",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Conqueror",
+     "source": "readme",
+     "evidence": "A chess engine written in C++. It currently implements hybrid board representation, alphabeta pruning, quiescence search, static evaluation, legal move generato"
+    }
+   ]
+  },
+  "makeunmake": {
+   "label": "Make/unmake",
+   "area": "movegen",
+   "cpw": "https://www.chessprogramming.org/Unmake_Move",
+   "ref": null,
+   "engines": 43,
+   "engines_pct": 4.0,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Rodent",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Rodent",
+     "source": "readme",
+     "evidence": "- Board update is make/unmake, NNUE update is copy-make"
+    },
+    {
+     "engine": "Amundsen",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Amundsen",
+     "source": "readme",
+     "evidence": "function that always copies the old board, with a makemove/unmakemove scheme."
+    },
+    {
+     "engine": "ChessCore",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/ChessCore",
+     "source": "readme",
+     "evidence": "occupancy) with make/unmake and an incrementally-updated Zobrist hash. Move"
+    },
+    {
+     "engine": "Myrddin",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Myrddin",
+     "source": "readme",
+     "evidence": "-- Now doing incremental updates to the NN accumulator during make/unmake move\\"
+    }
+   ]
+  },
+  "copymake": {
+   "label": "Copy-make",
+   "area": "movegen",
+   "cpw": "https://www.chessprogramming.org/Copy-Make",
+   "ref": null,
+   "engines": 9,
+   "engines_pct": 0.8,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 2,
+   "examples": [
+    {
+     "engine": "Rodent",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Rodent",
+     "source": "readme",
+     "evidence": "- Board update is make/unmake, NNUE update is copy-make"
+    },
+    {
+     "engine": "Weini",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Weini",
+     "source": "readme",
+     "evidence": "*Weini* is quite slow, move validation and attack detection are still more bullet proof than optimized ... *Weini* is using a mailbox structure as well as some "
+    },
+    {
+     "engine": "OptiChess",
+     "strength_limited": false,
+     "url": "https://github.com/poirouxmartin/opti_chess",
+     "source": "readme",
+     "evidence": "| Perft, copy-make: 7 positions, 597 236 237 nodes, all equal to the [reference counts] | 65.3 M nodes/s | `opti_chess_cli perft-suite full` |"
+    },
+    {
+     "engine": "Claudy",
+     "strength_limited": false,
+     "url": null,
+     "source": "readme",
+     "evidence": "move generation (pin / check masks), copy-make positions, incremental Zobrist keys."
+    }
+   ]
+  },
+  "staged": {
+   "label": "Staged generation",
+   "area": "movegen",
+   "cpw": "https://www.chessprogramming.org/Move_Generation",
+   "ref": null,
+   "engines": 44,
+   "engines_pct": 4.1,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 4,
+   "examples": [
+    {
+     "engine": "Peras",
+     "strength_limited": true,
+     "url": "https://github.com/FirePlank/Peras",
+     "source": "readme",
+     "evidence": "- **Move ordering**: staged move picking driven by butterfly, capture, continuation, pawn, low-ply and countermove histories, with correction history on the sta"
+    },
+    {
+     "engine": "Leorik",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Leorik",
+     "source": "readme",
+     "evidence": "[__Version 3.0__] introduces NNUE based evaluation that completely replaces the handcrafted one. The network architecture uses 768 inputs and one hidden layer o"
+    },
+    {
+     "engine": "Little Wing",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Little_Wing",
+     "source": "readme",
+     "evidence": "- Staged move generation"
+    },
+    {
+     "engine": "MinimalChess",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/MinimalChess",
+     "source": "readme",
+     "evidence": "* Staged move generation: TT moves first, followed by MVV-LVA sorted captures, followed by killers and finally history-sorted quiet moves."
+    }
+   ]
+  },
+  "checkevasion": {
+   "label": "Check evasion generator",
+   "area": "movegen",
+   "cpw": "https://www.chessprogramming.org/Move_Generation#Special_Generators",
+   "ref": null,
+   "engines": 19,
+   "engines_pct": 1.8,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 3,
+   "examples": [
+    {
+     "engine": "Rodent",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Rodent",
+     "source": "readme",
+     "evidence": "- Quiescence search with Static Exchange Evaluation (SEE) and check evasions"
+    },
+    {
+     "engine": "tomitankChess",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/TomitankChess",
+     "source": "readme",
+     "evidence": "+ added check evasions code"
+    },
+    {
+     "engine": "Mora",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Mora",
+     "source": "readme",
+     "evidence": "- Check Evasion (without special generator)"
+    },
+    {
+     "engine": "Donna",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Donna",
+     "source": "readme",
+     "evidence": "- Checks and check evasions"
+    }
+   ]
+  },
+  "perft": {
+   "label": "Perft",
+   "area": "movegen",
+   "cpw": "https://www.chessprogramming.org/Perft",
+   "ref": null,
+   "engines": 229,
+   "engines_pct": 21.2,
+   "strength_limited": 13,
+   "strength_limited_pct": 23.6,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Cheese",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheese",
+     "source": "readme",
+     "evidence": "* #### cheese -perft DEPTH [-fen \"FEN_STRING\"]"
+    },
+    {
+     "engine": "Cheng",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheng",
+     "source": "readme",
+     "evidence": "to Robert Hyatt for Hyatt razoring and inventing perft"
+    },
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "- **Portable tests and tooling**: improve UCI lifecycle, perft, release,"
+    },
+    {
+     "engine": "Karballo",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Carballo",
+     "source": "readme",
+     "evidence": "* JUnit used for testing, multiple test suites provided (Perft, BS2830, BT2630, LCTII, WinAtChess, etc.)"
+    }
+   ]
+  },
+  "c960": {
+   "label": "Chess960 castling",
+   "area": "movegen",
+   "cpw": "https://www.chessprogramming.org/Chess960",
+   "ref": null,
+   "engines": 131,
+   "engines_pct": 12.1,
+   "strength_limited": 15,
+   "strength_limited_pct": 27.3,
+   "negated_or_planned": 4,
+   "examples": [
+    {
+     "engine": "Avalanche",
+     "strength_limited": true,
+     "url": "https://github.com/SnowballSH/Avalanche",
+     "source": "readme",
+     "evidence": "Supported features include Chess960 and Double Fischer Random Chess, pondering, MultiPV, `searchmoves`, `go mate`, Syzygy tablebases, `EvalFile`, a persistent N"
+    },
+    {
+     "engine": "Demolito",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Demolito",
+     "source": "readme",
+     "evidence": "- **UCI_Chess960**: enable/disable Chess960 castling rules. Demolito accepts either Shredder-FEN"
+    },
+    {
+     "engine": "Fairy-Stockfish",
+     "strength_limited": true,
+     "url": "https://github.com/fairy-stockfish/Fairy-Stockfish",
+     "source": "readme",
+     "evidence": "- [Chess960], [Placement/Pre-Chess]"
+    },
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "🤖 **Play against Hypersion on Lichess**: [lichess.org/@/Hypersion] — click the \"Challenge\" button. The bot accepts standard, rated/casual, Chess960, bullet/blit"
+    }
+   ]
+  },
+  "zobrist": {
+   "label": "Zobrist keys",
+   "area": "hash",
+   "cpw": "https://www.chessprogramming.org/Zobrist_Hashing",
+   "ref": null,
+   "engines": 169,
+   "engines_pct": 15.6,
+   "strength_limited": 5,
+   "strength_limited_pct": 9.1,
+   "negated_or_planned": 2,
+   "examples": [
+    {
+     "engine": "Cheng",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheng",
+     "source": "readme",
+     "evidence": "replaced old ugly precomputed zobrist table (~400kB of source code saved, ~200kB binary),"
+    },
+    {
+     "engine": "Karballo",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Carballo",
+     "source": "readme",
+     "evidence": "* Transposition Table (TT) with zobrist keys (it uses two zobrist keys per board to avoid collisions) and multiprobe"
+    },
+    {
+     "engine": "Peras",
+     "strength_limited": true,
+     "url": "https://github.com/FirePlank/Peras",
+     "source": "readme",
+     "evidence": "- **Board**: magic bitboards, incremental Zobrist keys, static exchange evaluation, and full Chess960 support."
+    },
+    {
+     "engine": "Reglisse",
+     "strength_limited": true,
+     "url": "https://github.com/PaulJeFi/reglisse-chess",
+     "source": "readme",
+     "evidence": "- [Zobrist Hashing]"
+    }
+   ]
+  },
+  "poshist": {
+   "label": "Position history",
+   "area": "hash",
+   "cpw": "https://www.chessprogramming.org/Repetitions",
+   "ref": null,
+   "engines": 1,
+   "engines_pct": 0.1,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "Qapla",
+     "strength_limited": false,
+     "url": "https://github.com/Mangar2/Qapla",
+     "source": "readme",
+     "evidence": "- Late move reduction with piece/position history"
+    }
+   ]
+  },
+  "repetition": {
+   "label": "Repetition detection",
+   "area": "hash",
+   "cpw": "https://www.chessprogramming.org/Repetitions",
+   "ref": null,
+   "engines": 122,
+   "engines_pct": 11.3,
+   "strength_limited": 6,
+   "strength_limited_pct": 10.9,
+   "negated_or_planned": 17,
+   "examples": [
+    {
+     "engine": "CuckooChess",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/CuckooChess",
+     "source": "readme",
+     "evidence": "3-fold repetition rule is triggered. According to FIDE (International Chess"
+    },
+    {
+     "engine": "Demolito",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Demolito",
+     "source": "readme",
+     "evidence": "repetition, 50 move rule, stalemate, and insufficient material. A positive value will avoid draws"
+    },
+    {
+     "engine": "Minic",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Minic",
+     "source": "readme",
+     "evidence": "2.45%  1/2-1/2 {Draw by 3-fold repetition}"
+    },
+    {
+     "engine": "Sapling",
+     "strength_limited": true,
+     "url": "https://github.com/Timmoth/Sapling",
+     "source": "readme",
+     "evidence": "- Cuckoo filter repetition detection"
+    }
+   ]
+  },
+  "cuckoo": {
+   "label": "Upcoming repetition (cuckoo tables)",
+   "area": "hash",
+   "cpw": null,
+   "ref": "http://marcelk.net/2013-04-06/paper/upcoming-rep-v2.pdf",
+   "engines": 8,
+   "engines_pct": 0.7,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "Detroid",
+     "strength_limited": false,
+     "url": "https://github.com/ViktorC/DETROID",
+     "source": "readme",
+     "evidence": "The DETROID framework is a chess engine framework that implements the UCI protocol, provides a dynamic GUI, supports machine learning based parameter optimizati"
+    },
+    {
+     "engine": "FunComp",
+     "strength_limited": false,
+     "url": "https://github.com/Moxnar/FunComp",
+     "source": "readme",
+     "evidence": "flag, upcoming-repetition detection) are ideas I learned from it and"
+    },
+    {
+     "engine": "Raphael",
+     "strength_limited": false,
+     "url": "https://github.com/Orbital-Web/Raphael",
+     "source": "readme",
+     "evidence": "- [x] Upcoming cycle detection            (`v4.2+`)"
+    },
+    {
+     "engine": "Caissa",
+     "strength_limited": false,
+     "url": "https://github.com/Witek902/Caissa",
+     "source": "readme",
+     "evidence": "- ✅ **Cuckoo Hashing** for fast repetition detection"
+    }
+   ]
+  },
+  "tt": {
+   "label": "Transposition table",
+   "area": "hash",
+   "cpw": "https://www.chessprogramming.org/Transposition_Table",
+   "ref": null,
+   "engines": 499,
+   "engines_pct": 46.1,
+   "strength_limited": 24,
+   "strength_limited_pct": 43.6,
+   "negated_or_planned": 12,
+   "examples": [
+    {
+     "engine": "Arasan",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Arasan",
+     "source": "readme",
+     "evidence": "- -H: specifies the hash table size in bytes ('K', 'M', or 'G' can be used to indicate"
+    },
+    {
+     "engine": "Beowulf",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Beowulf",
+     "source": "readme",
+     "evidence": "all other settings, and are useful for setting the hash table size for use"
+    },
+    {
+     "engine": "Cheese",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheese",
+     "source": "readme",
+     "evidence": "* #### HASH_SIZE = hash table size (in Mb)"
+    },
+    {
+     "engine": "Cheng",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheng",
+     "source": "readme",
+     "evidence": "v1.06\t\tminor eval tweaking, removed too aggressive futility pruning, reenabled lazy eval, killer and history update on TT beta cutoff,"
+    }
+   ]
+  },
+  "ttreplace": {
+   "label": "TT replacement / buckets",
+   "area": "hash",
+   "cpw": "https://www.chessprogramming.org/Transposition_Table#Replacement_Strategies",
+   "ref": null,
+   "engines": 60,
+   "engines_pct": 5.5,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 2,
+   "examples": [
+    {
+     "engine": "Rodent",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Rodent",
+     "source": "readme",
+     "evidence": "- 4-bucket transposition table with aging"
+    },
+    {
+     "engine": "Sargon",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Sargon",
+     "source": "readme",
+     "evidence": "(ply) being the maximum setting. On my (cheap, aging) commodity laptop,"
+    },
+    {
+     "engine": "ChessCore",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/ChessCore",
+     "source": "readme",
+     "evidence": "- Transposition table (~1M entries, ~24 MB), depth-preferred replacement, exact/lower/upper bound flags"
+    },
+    {
+     "engine": "Myrddin",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Myrddin",
+     "source": "readme",
+     "evidence": "-- Some changes to the transposition table replacement strategy\\"
+    }
+   ]
+  },
+  "etc": {
+   "label": "Enhanced transposition cutoff",
+   "area": "hash",
+   "cpw": "https://www.chessprogramming.org/Enhanced_Transposition_Cutoff",
+   "ref": null,
+   "engines": 2,
+   "engines_pct": 0.2,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "Amoeba",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Amoeba",
+     "source": "readme",
+     "evidence": "- enhanced transposition cutoff (ETC);"
+    },
+    {
+     "engine": "Yakka",
+     "strength_limited": false,
+     "url": "https://github.com/CJDalrymple/Yakka",
+     "source": "readme",
+     "evidence": "* Enhanced Transposition Cut-off (ETC)"
+    }
+   ]
+  },
+  "pawnhash": {
+   "label": "Pawn hash table",
+   "area": "hash",
+   "cpw": "https://www.chessprogramming.org/Pawn_Hash_Table",
+   "ref": null,
+   "engines": 44,
+   "engines_pct": 4.1,
+   "strength_limited": 2,
+   "strength_limited_pct": 3.6,
+   "negated_or_planned": 3,
+   "examples": [
+    {
+     "engine": "Rodent",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Rodent",
+     "source": "readme",
+     "evidence": "| `evalhash.go`\t| —       | eval and pawn hashes for HCE eval\t\t\t\t|"
+    },
+    {
+     "engine": "Texel",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Texel",
+     "source": "readme",
+     "evidence": "program, such as a pawn hash table. These secondary tables are quite small and"
+    },
+    {
+     "engine": "Amundsen",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Amundsen",
+     "source": "readme",
+     "evidence": "Pawn hashtable added. Trades pieces if ahead, and trades pawns if materially"
+    },
+    {
+     "engine": "Myrddin",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Myrddin",
+     "source": "readme",
+     "evidence": "-- Myrddin's \"very lazy SMP\" implementation uses multiple secondary processes to fill the transposition, eval and pawn hash tables so the primary process can se"
+    }
+   ]
+  },
+  "materialhash": {
+   "label": "Material hash / tables",
+   "area": "hash",
+   "cpw": "https://www.chessprogramming.org/Material_Hash_Table",
+   "ref": null,
+   "engines": 6,
+   "engines_pct": 0.6,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "Minic",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Minic",
+     "source": "readme",
+     "evidence": "Initially, the code size of Minic was supposed not to go above 2000 SLOC. It started as a weekend project in October 2018 ( But as soon as more features (especi"
+    },
+    {
+     "engine": "Glaurung",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Glaurung",
+     "source": "readme",
+     "evidence": "always allocates a separate pawn hash table and material hash"
+    },
+    {
+     "engine": "Donna",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Donna",
+     "source": "readme",
+     "evidence": "- Material imbalance table"
+    },
+    {
+     "engine": "Fridolin",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Fridolin",
+     "source": "readme",
+     "evidence": "(new) material hash (endgames recognition)"
+    }
+   ]
+  },
+  "evalcache": {
+   "label": "Eval cache",
+   "area": "hash",
+   "cpw": "https://www.chessprogramming.org/Evaluation_Hash_Table",
+   "ref": null,
+   "engines": 15,
+   "engines_pct": 1.4,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "Phalanx",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Phalanx",
+     "source": "readme",
+     "evidence": "transposition/killer table, static-eval cache, history killers, SEE (static"
+    },
+    {
+     "engine": "Myrddin",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Myrddin",
+     "source": "readme",
+     "evidence": "-- Added forced 16-byte alignment of transposition and eval hash structures (thanks to Jim Ablett!)\\"
+    },
+    {
+     "engine": "tomitankChess",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/TomitankChess",
+     "source": "readme",
+     "evidence": "+ Added a custom symmetry-safe evaluation cache (~5% NPS gain even with the main TT enabled)"
+    },
+    {
+     "engine": "Loki",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Loki",
+     "source": "readme",
+     "evidence": "A tapered eval is used to interpolate between game phases. Additionally, each thread's evaluation function object has its own evaluation hash table (128KB)."
+    }
+   ]
+  },
+  "egtb": {
+   "label": "Endgame tablebases",
+   "area": "hash",
+   "cpw": "https://www.chessprogramming.org/Endgame_Tablebases",
+   "ref": null,
+   "engines": 177,
+   "engines_pct": 16.4,
+   "strength_limited": 18,
+   "strength_limited_pct": 32.7,
+   "negated_or_planned": 20,
+   "examples": [
+    {
+     "engine": "Alfil",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Alfil",
+     "source": "readme",
+     "evidence": "EngineDLL - Core of the engine (possible defines: TABLEBASES, BOOK, CHESSARIA) - Default: TABLEBASE;BOOK"
+    },
+    {
+     "engine": "Arasan",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Arasan",
+     "source": "readme",
+     "evidence": "- Use tablebases - true to use tablebases, false to disable"
+    },
+    {
+     "engine": "Avalanche",
+     "strength_limited": true,
+     "url": "https://github.com/SnowballSH/Avalanche",
+     "source": "readme",
+     "evidence": "[`LICENSE`]. The Syzygy probing code in `src/syzygy`, a port of Pyrrhic, is under the MIT licence of"
+    },
+    {
+     "engine": "Beowulf",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Beowulf",
+     "source": "readme",
+     "evidence": "including the Nalimov tablebase access code.  You should also find a"
+    }
+   ]
+  },
+  "syzygy": {
+   "label": "Syzygy",
+   "area": "hash",
+   "cpw": "https://www.chessprogramming.org/Syzygy_Bases",
+   "ref": null,
+   "engines": 149,
+   "engines_pct": 13.8,
+   "strength_limited": 14,
+   "strength_limited_pct": 25.5,
+   "negated_or_planned": 10,
+   "examples": [
+    {
+     "engine": "Arasan",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Arasan",
+     "source": "readme",
+     "evidence": "- SyzygyUses50MoveRule - true to observe the 50 move draw rule when probing"
+    },
+    {
+     "engine": "Avalanche",
+     "strength_limited": true,
+     "url": "https://github.com/SnowballSH/Avalanche",
+     "source": "readme",
+     "evidence": "[`LICENSE`]. The Syzygy probing code in `src/syzygy`, a port of Pyrrhic, is under the MIT licence of"
+    },
+    {
+     "engine": "Cheese",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheese",
+     "source": "readme",
+     "evidence": "* #### SyzygyPath"
+    },
+    {
+     "engine": "Crafty",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Crafty",
+     "source": "readme",
+     "evidence": "No particular members responsible for any specific aspect of Crafty, although Robert Hyatt wrote 99%+ of the existing code, excepting the Magic move stuff by Pr"
+    }
+   ]
+  },
+  "gaviota": {
+   "label": "Gaviota",
+   "area": "hash",
+   "cpw": "https://www.chessprogramming.org/Gaviota_Tablebases",
+   "ref": null,
+   "engines": 10,
+   "engines_pct": 0.9,
+   "strength_limited": 3,
+   "strength_limited_pct": 5.5,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "Cheng",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheng",
+     "source": "readme",
+     "evidence": "v1.04\t\tminor tuning, multipv support, gaviota tablebases support, search bugfix (assume ~+30 elo over previous version)"
+    },
+    {
+     "engine": "CuckooChess",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/CuckooChess",
+     "source": "readme",
+     "evidence": "* A Gaviota tablebase probe produces a distance to mate score."
+    },
+    {
+     "engine": "Texel",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Texel",
+     "source": "readme",
+     "evidence": "GaviotaTbPath"
+    },
+    {
+     "engine": "Myrddin",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Myrddin",
+     "source": "readme",
+     "evidence": "\"tb\", which toggles Gaviota endgame tablebase support\\"
+    }
+   ]
+  },
+  "nalimov": {
+   "label": "Nalimov",
+   "area": "hash",
+   "cpw": "https://www.chessprogramming.org/Nalimov_Tablebases",
+   "ref": null,
+   "engines": 18,
+   "engines_pct": 1.7,
+   "strength_limited": 3,
+   "strength_limited_pct": 5.5,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Beowulf",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Beowulf",
+     "source": "readme",
+     "evidence": "including the Nalimov tablebase access code.  You should also find a"
+    },
+    {
+     "engine": "EXchess",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/EXchess",
+     "source": "readme",
+     "evidence": "endgame tablebases by Dr. Eugene Nalimov.  Two functions in the file"
+    },
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- **Nalimov** DTM probing (`NalimovPath`) — tablebases available on [Hugging Face]"
+    },
+    {
+     "engine": "ShashChess",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/ShashChess",
+     "source": "readme",
+     "evidence": "be used to with Nalimov tablebases. There are technical reasons for this"
+    }
+   ]
+  },
+  "bitbases": {
+   "label": "Bitbases",
+   "area": "hash",
+   "cpw": "https://www.chessprogramming.org/Endgame_Bitbases",
+   "ref": null,
+   "engines": 14,
+   "engines_pct": 1.3,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "> scaling, KPK bitbase, plus 9 other feature blocks). Best WAC depth-8"
+    },
+    {
+     "engine": "Fruit",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Fruit",
+     "source": "readme",
+     "evidence": "As for Fruit I plan on using selected \"bitbases\" in the (very far)"
+    },
+    {
+     "engine": "Fruit Reloaded",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Fruit_Reloaded",
+     "source": "readme",
+     "evidence": "Enables the usage of Daniel Shawul endgame bitbases in the search"
+    },
+    {
+     "engine": "Daydreamer",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Daydreamer",
+     "source": "readme",
+     "evidence": "bitbase construction."
+    }
+   ]
+  },
+  "minimax": {
+   "label": "Minimax",
+   "area": "search",
+   "cpw": "https://www.chessprogramming.org/Minimax",
+   "ref": null,
+   "engines": 44,
+   "engines_pct": 4.1,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Sargon",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Sargon",
+     "source": "readme",
+     "evidence": "- A window into the minimax and alpha-beta algorithms, [here] demonstrating how they work with runtime ascii art \"animation\" (sort of)."
+    },
+    {
+     "engine": "ClassicAra",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/CrazyAra",
+     "source": "readme",
+     "evidence": "* T. Truong: **Monte Carlo Tree Search-Minimax Hybrid in AlphaZero**, [pdf]"
+    },
+    {
+     "engine": "Shatranj",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Shatranj_(Toolkit)",
+     "source": "readme",
+     "evidence": "Shatranj is an bitboard-based, Open-Source, interactive chess programming module which allows manipulation of chess positions and experimentation with search al"
+    },
+    {
+     "engine": "Allie",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Allie",
+     "source": "readme",
+     "evidence": "Well, I was inspired during the original CCC to see if you could pair traditional Minimax/AlphaBeta search with an NN. This is still her main purpose and the fo"
+    }
+   ]
+  },
+  "negamax": {
+   "label": "Negamax",
+   "area": "search",
+   "cpw": "https://www.chessprogramming.org/Negamax",
+   "ref": null,
+   "engines": 186,
+   "engines_pct": 17.2,
+   "strength_limited": 3,
+   "strength_limited_pct": 5.5,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Puca",
+     "strength_limited": true,
+     "url": "https://github.com/shaunihowe/pucachess",
+     "source": "readme",
+     "evidence": "* Uses negamax search with alpha-beta pruning, quiescence search and static evaluation."
+    },
+    {
+     "engine": "Sapling",
+     "strength_limited": true,
+     "url": "https://github.com/Timmoth/Sapling",
+     "source": "readme",
+     "evidence": "- Negamax"
+    },
+    {
+     "engine": "Snaky",
+     "strength_limited": true,
+     "url": "https://github.com/Carleslc/Snaky",
+     "source": "readme",
+     "evidence": "- **Search**: alpha-beta (negamax) with iterative deepening, principal variation search and aspiration windows,"
+    },
+    {
+     "engine": "Amundsen",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Amundsen",
+     "source": "readme",
+     "evidence": "into a negamax search. Slightly better move ordering at the root node."
+    }
+   ]
+  },
+  "mcts": {
+   "label": "Monte-Carlo tree search (UCT/PUCT)",
+   "area": "search",
+   "cpw": "https://www.chessprogramming.org/Monte-Carlo_Tree_Search",
+   "ref": null,
+   "engines": 35,
+   "engines_pct": 3.2,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 3,
+   "examples": [
+    {
+     "engine": "ShashChess",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/ShashChess",
+     "source": "readme",
+     "evidence": "The number of settled threads to use for MCTS search except the first (main) one always for alpha-beta search."
+    },
+    {
+     "engine": "ClassicAra",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/CrazyAra",
+     "source": "readme",
+     "evidence": "* [Installation guide for python MCTS]"
+    },
+    {
+     "engine": "Ceres",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Ceres",
+     "source": "readme",
+     "evidence": "Ceres is a strong UCI chess engine that uses the Monte Carlo Tree Search (MCTS) algorithm"
+    },
+    {
+     "engine": "Princhess",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Princhess",
+     "source": "readme",
+     "evidence": "Princhess is a chess engine written in Rust. It implements a Monte Carlo Tree Search (MCTS) algorithm designed to run on the CPU."
+    }
+   ]
+  },
+  "alphabeta": {
+   "label": "Alpha-beta",
+   "area": "search",
+   "cpw": "https://www.chessprogramming.org/Alpha-Beta",
+   "ref": null,
+   "engines": 380,
+   "engines_pct": 35.1,
+   "strength_limited": 6,
+   "strength_limited_pct": 10.9,
+   "negated_or_planned": 4,
+   "examples": [
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "small network 128-d FT) on top of an alpha-beta search with PVS,"
+    },
+    {
+     "engine": "KnightCap",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/KnightCap",
+     "source": "readme",
+     "evidence": "intensive varient of alpha-beta so it will be much more affected by"
+    },
+    {
+     "engine": "Puca",
+     "strength_limited": true,
+     "url": "https://github.com/shaunihowe/pucachess",
+     "source": "readme",
+     "evidence": "* Uses negamax search with alpha-beta pruning, quiescence search and static evaluation."
+    },
+    {
+     "engine": "Sapling",
+     "strength_limited": true,
+     "url": "https://github.com/Timmoth/Sapling",
+     "source": "readme",
+     "evidence": "- Alpha-Beta pruning"
+    }
+   ]
+  },
+  "failsoft": {
+   "label": "Fail-soft",
+   "area": "search",
+   "cpw": "https://www.chessprogramming.org/Fail-Soft",
+   "ref": null,
+   "engines": 21,
+   "engines_pct": 1.9,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Black Marlin",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Black_Marlin",
+     "source": "readme",
+     "evidence": "If a move isn't singular and the singular move is above beta, we know that there is more than one move that beats beta. We can thus fail soft and return the sin"
+    },
+    {
+     "engine": "Laser",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Laser",
+     "source": "readme",
+     "evidence": "- Fail-soft principal variation search"
+    },
+    {
+     "engine": "Throttle",
+     "strength_limited": false,
+     "url": "https://github.com/Dragjon/Throttle",
+     "source": "readme",
+     "evidence": "- <a href=\" Fail-Soft Negamax Search </a>"
+    },
+    {
+     "engine": "Zangdar",
+     "strength_limited": false,
+     "url": "https://github.com/Carbecq/Zangdar",
+     "source": "readme",
+     "evidence": "- Alpha-Beta (Fail Soft) + Quiescence Search"
+    }
+   ]
+  },
+  "pvs": {
+   "label": "PVS / NegaScout",
+   "area": "search",
+   "cpw": "https://www.chessprogramming.org/Principal_Variation_Search",
+   "ref": null,
+   "engines": 293,
+   "engines_pct": 27.1,
+   "strength_limited": 13,
+   "strength_limited_pct": 23.6,
+   "negated_or_planned": 2,
+   "examples": [
+    {
+     "engine": "Cheng",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheng",
+     "source": "readme",
+     "evidence": "PVS, magic bitboards, null move pruning, LMR, futility pruning, razoring, quiescence search, (dumb) evaluation function,"
+    },
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- Principal Variation Search (PVS) with aspiration windows"
+    },
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "small network 128-d FT) on top of an alpha-beta search with PVS,"
+    },
+    {
+     "engine": "Karballo",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Carballo",
+     "source": "readme",
+     "evidence": "* PVS searcher"
+    }
+   ]
+  },
+  "mtdf": {
+   "label": "MTD(f)",
+   "area": "search",
+   "cpw": "https://www.chessprogramming.org/MTD(f)",
+   "ref": null,
+   "engines": 9,
+   "engines_pct": 0.8,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 2,
+   "examples": [
+    {
+     "engine": "Bagatur",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Bagatur",
+     "source": "readme",
+     "evidence": "18. The [MTD(f)]) algorithm — Bagatur's parallel search is based on this idea."
+    },
+    {
+     "engine": "Small Potato",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Small_Potato",
+     "source": "readme",
+     "evidence": "- MTD(f) - A Minimax Algorithm faster than NegaScout, by Aske Plaat"
+    },
+    {
+     "engine": "Joker IT",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Joker_IT",
+     "source": "readme",
+     "evidence": "During its lifetime, around Version 0.6.7 in 1999, Joker used MTD(f) along with ETC, but finally stuck with PVS and aspiration. It initially used the 0x88 board"
+    },
+    {
+     "engine": "BagaturCPP",
+     "strength_limited": false,
+     "url": "https://github.com/bagaturchess/Bagatur.cpp",
+     "source": "readme",
+     "evidence": "an [MTD(f) root search] in place of"
+    }
+   ]
+  },
+  "iterdeep": {
+   "label": "Iterative deepening",
+   "area": "search",
+   "cpw": "https://www.chessprogramming.org/Iterative_Deepening",
+   "ref": null,
+   "engines": 313,
+   "engines_pct": 28.9,
+   "strength_limited": 7,
+   "strength_limited_pct": 12.7,
+   "negated_or_planned": 3,
+   "examples": [
+    {
+     "engine": "Karballo",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Carballo",
+     "source": "readme",
+     "evidence": "* Internal Iterative Deepening to improve sorting"
+    },
+    {
+     "engine": "Peras",
+     "strength_limited": true,
+     "url": "https://github.com/FirePlank/Peras",
+     "source": "readme",
+     "evidence": "- **Search**: iterative deepening PVS with aspiration windows and MultiPV, a shared lock-free transposition table, and the full modern pruning set (razoring, re"
+    },
+    {
+     "engine": "Reglisse",
+     "strength_limited": true,
+     "url": "https://github.com/PaulJeFi/reglisse-chess",
+     "source": "readme",
+     "evidence": "- [iterative deepening]"
+    },
+    {
+     "engine": "Rodent",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Rodent",
+     "source": "readme",
+     "evidence": "- Search uses iterative deepening with Principal Variation Search (PVS)"
+    }
+   ]
+  },
+  "aspiration": {
+   "label": "Aspiration windows",
+   "area": "search",
+   "cpw": "https://www.chessprogramming.org/Aspiration_Windows",
+   "ref": null,
+   "engines": 247,
+   "engines_pct": 22.8,
+   "strength_limited": 6,
+   "strength_limited_pct": 10.9,
+   "negated_or_planned": 8,
+   "examples": [
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- Principal Variation Search (PVS) with aspiration windows"
+    },
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "transposition table, aspiration windows, late-move reductions, singular"
+    },
+    {
+     "engine": "Karballo",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Carballo",
+     "source": "readme",
+     "evidence": "* Aspiration window, moves only one border of the window if it falls out"
+    },
+    {
+     "engine": "Peras",
+     "strength_limited": true,
+     "url": "https://github.com/FirePlank/Peras",
+     "source": "readme",
+     "evidence": "- **Search**: iterative deepening PVS with aspiration windows and MultiPV, a shared lock-free transposition table, and the full modern pruning set (razoring, re"
+    }
+   ]
+  },
+  "pvtrack": {
+   "label": "PV tracking",
+   "area": "search",
+   "cpw": "https://www.chessprogramming.org/Triangular_PV-Table",
+   "ref": null,
+   "engines": 9,
+   "engines_pct": 0.8,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "Reglisse",
+     "strength_limited": true,
+     "url": "https://github.com/PaulJeFi/reglisse-chess",
+     "source": "readme",
+     "evidence": "- [triangular PV-table]"
+    },
+    {
+     "engine": "Wukong",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Wukong",
+     "source": "readme",
+     "evidence": "- PV table"
+    },
+    {
+     "engine": "Lynx",
+     "strength_limited": false,
+     "url": "https://github.com/lynx-chess/Lynx",
+     "source": "readme",
+     "evidence": "- Triangular PV-Table [[1]]"
+    },
+    {
+     "engine": "Erebus",
+     "strength_limited": false,
+     "url": "https://github.com/jshriver/Erebus",
+     "source": "readme",
+     "evidence": "| **Framework** | Iterative deepening, principal variation search, aspiration windows, triangular PV table |"
+    }
+   ]
+  },
+  "multipv": {
+   "label": "MultiPV",
+   "area": "search",
+   "cpw": "https://www.chessprogramming.org/Principal_Variation",
+   "ref": null,
+   "engines": 74,
+   "engines_pct": 6.8,
+   "strength_limited": 12,
+   "strength_limited_pct": 21.8,
+   "negated_or_planned": 4,
+   "examples": [
+    {
+     "engine": "Arasan",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Arasan",
+     "source": "readme",
+     "evidence": "- MultiPV - followed by a number. Number of distinct best lines to display."
+    },
+    {
+     "engine": "Avalanche",
+     "strength_limited": true,
+     "url": "https://github.com/SnowballSH/Avalanche",
+     "source": "readme",
+     "evidence": "Supported features include Chess960 and Double Fischer Random Chess, pondering, MultiPV, `searchmoves`, `go mate`, Syzygy tablebases, `EvalFile`, a persistent N"
+    },
+    {
+     "engine": "Cheese",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheese",
+     "source": "readme",
+     "evidence": "* #### cheese -analyze -fen \"FEN_STRING\" [-hash HASH_SIZE] [-threads NB_THREADS] [-depth DEPTH] [-time TIME] [-nodes NODES] [-multipv MULTIPV] [-exclude MOVELIS"
+    },
+    {
+     "engine": "Cheng",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheng",
+     "source": "readme",
+     "evidence": "v1.04\t\tminor tuning, multipv support, gaviota tablebases support, search bugfix (assume ~+30 elo over previous version)"
+    }
+   ]
+  },
+  "qsearch": {
+   "label": "Quiescence search",
+   "area": "search",
+   "cpw": "https://www.chessprogramming.org/Quiescence_Search",
+   "ref": null,
+   "engines": 375,
+   "engines_pct": 34.7,
+   "strength_limited": 12,
+   "strength_limited_pct": 21.8,
+   "negated_or_planned": 5,
+   "examples": [
+    {
+     "engine": "Cheng",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheng",
+     "source": "readme",
+     "evidence": "PVS, magic bitboards, null move pruning, LMR, futility pruning, razoring, quiescence search, (dumb) evaluation function,"
+    },
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "moves at all. That last one, applied in the quiescence as well as in the search, is what"
+    },
+    {
+     "engine": "Karballo",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Carballo",
+     "source": "readme",
+     "evidence": "* Quiescent Search (QS) with only good or equal captures (according to SEE) and limited check generation"
+    },
+    {
+     "engine": "Kreveta",
+     "strength_limited": true,
+     "url": "https://github.com/ZlomenyMesic/Kreveta",
+     "source": "readme",
+     "evidence": "- Quiescence search for leaf nodes"
+    }
+   ]
+  },
+  "standpat": {
+   "label": "Stand-pat",
+   "area": "search",
+   "cpw": "https://www.chessprogramming.org/Quiescence_Search#StandPat",
+   "ref": null,
+   "engines": 17,
+   "engines_pct": 1.6,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "ChessCore",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/ChessCore",
+     "source": "readme",
+     "evidence": "- Quiescence search with stand-pat and SEE pruning — captures with a negative static-exchange value are skipped (cheaper qsearch ⇒ more depth); searches capture"
+    },
+    {
+     "engine": "NoaChess",
+     "strength_limited": false,
+     "url": "https://github.com/jcjimenezvadillo/NoaChess",
+     "source": "readme",
+     "evidence": "**v5.8.3 - the search is deterministic.** The quiescence repair found in the v5.8.1 audit (the stack written by quiescence, the continuation-keyed stand-pat cor"
+    },
+    {
+     "engine": "Moonforge",
+     "strength_limited": false,
+     "url": "https://github.com/3583Bytes/Moonforge-Chess",
+     "source": "readme",
+     "evidence": "- Quiescence search with stand-pat and SEE pruning — captures with a negative static-exchange value are skipped (cheaper qsearch ⇒ more depth); searches capture"
+    },
+    {
+     "engine": "LibraChess",
+     "strength_limited": false,
+     "url": "https://github.com/eugenioenko/libra-chess",
+     "source": "readme",
+     "evidence": "- **Quiescence Search:** At leaf nodes, extends the search for all captures and promotions until the position is quiet, using stand-pat evaluation and MVV-LVA o"
+    }
+   ]
+  },
+  "delta": {
+   "label": "Delta pruning",
+   "area": "search",
+   "cpw": "https://www.chessprogramming.org/Delta_Pruning",
+   "ref": null,
+   "engines": 86,
+   "engines_pct": 7.9,
+   "strength_limited": 2,
+   "strength_limited_pct": 3.6,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "Reglisse",
+     "strength_limited": true,
+     "url": "https://github.com/PaulJeFi/reglisse-chess",
+     "source": "readme",
+     "evidence": "- [delta pruning]"
+    },
+    {
+     "engine": "Zahak",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Zahak",
+     "source": "readme",
+     "evidence": "- Delta Pruning"
+    },
+    {
+     "engine": "Fruit",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Fruit",
+     "source": "readme",
+     "evidence": "- \"Delta Pruning\" (true/false, default: false)"
+    },
+    {
+     "engine": "Fruit Reloaded",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Fruit_Reloaded",
+     "source": "readme",
+     "evidence": "- added futility and delta pruning (not tested in conjunction with"
+    }
+   ]
+  },
+  "qsee": {
+   "label": "SEE pruning in QS",
+   "area": "search",
+   "cpw": "https://www.chessprogramming.org/Static_Exchange_Evaluation",
+   "ref": null,
+   "engines": 36,
+   "engines_pct": 3.3,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- SEE Pruning (main search + quiescence)"
+    },
+    {
+     "engine": "Floyd",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Floyd",
+     "source": "readme",
+     "evidence": "|     +--- search.c                   PVS, scout, quiescence search, SEE"
+    },
+    {
+     "engine": "Mantissa",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Mantissa",
+     "source": "readme",
+     "evidence": "- SEE Pruning in Quiescence search"
+    },
+    {
+     "engine": "Fridolin",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Fridolin",
+     "source": "readme",
+     "evidence": "(new) quiescence search with SEE pruning"
+    }
+   ]
+  },
+  "drawdetect": {
+   "label": "Draw rules (50-move, insufficient material)",
+   "area": "search",
+   "cpw": "https://www.chessprogramming.org/Draw",
+   "ref": null,
+   "engines": 113,
+   "engines_pct": 10.4,
+   "strength_limited": 7,
+   "strength_limited_pct": 12.7,
+   "negated_or_planned": 15,
+   "examples": [
+    {
+     "engine": "Arasan",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Arasan",
+     "source": "readme",
+     "evidence": "- SyzygyUses50MoveRule - true to observe the 50 move draw rule when probing"
+    },
+    {
+     "engine": "Cheese",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheese",
+     "source": "readme",
+     "evidence": "Use 50 move rule for tablebases (0 or 1)"
+    },
+    {
+     "engine": "CuckooChess",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/CuckooChess",
+     "source": "readme",
+     "evidence": "* A zeroing move is a move that resets the 50-move draw counter, that is a"
+    },
+    {
+     "engine": "Demolito",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Demolito",
+     "source": "readme",
+     "evidence": "repetition, 50 move rule, stalemate, and insufficient material. A positive value will avoid draws"
+    }
+   ]
+  },
+  "matesearch": {
+   "label": "Mate search / proof-number",
+   "area": "search",
+   "cpw": "https://www.chessprogramming.org/Mate_Search",
+   "ref": null,
+   "engines": 6,
+   "engines_pct": 0.6,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 2,
+   "examples": [
+    {
+     "engine": "Minic",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Minic",
+     "source": "readme",
+     "evidence": "* -mateFinder \\[0 or 1\\] (default is 0): activate mate finder mode, which essentially means no forward pruning"
+    },
+    {
+     "engine": "Sjeng",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Sjeng",
+     "source": "readme",
+     "evidence": "In it's suicide and losers mode, Sjeng use proof-number"
+    },
+    {
+     "engine": "Jackal",
+     "strength_limited": false,
+     "url": "https://github.com/TomaszJaworski777/Jackal",
+     "source": "readme",
+     "evidence": "Proof number search tracks, for each node, how many leaf nodes need to be explored to prove a win. Jackal uses a one-sided version where only proof numbers are "
+    },
+    {
+     "engine": "Defeo",
+     "strength_limited": false,
+     "url": "http://bughousechess.wz.cz/BughouseEngines/DefeoB007Alfa007.EvalOutgoingMaterial&Check_Exe&Src.zip",
+     "source": "readme",
+     "evidence": "In it's suicide mode, DefeoB use proof-number searches"
+    }
+   ]
+  },
+  "nmp": {
+   "label": "Null-move pruning",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/Null_Move_Pruning",
+   "ref": null,
+   "engines": 335,
+   "engines_pct": 31.0,
+   "strength_limited": 15,
+   "strength_limited_pct": 27.3,
+   "negated_or_planned": 8,
+   "examples": [
+    {
+     "engine": "Alfil",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Alfil",
+     "source": "readme",
+     "evidence": ". Null move in FEN"
+    },
+    {
+     "engine": "Cheese",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheese",
+     "source": "readme",
+     "evidence": "* #### UseNullMovePruning"
+    },
+    {
+     "engine": "Cheng",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheng",
+     "source": "readme",
+     "evidence": "PVS, magic bitboards, null move pruning, LMR, futility pruning, razoring, quiescence search, (dumb) evaluation function,"
+    },
+    {
+     "engine": "CuckooChess",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/CuckooChess",
+     "source": "readme",
+     "evidence": "* *Add Null Move*: Adds a null move to the game tree. A null move does not move"
+    }
+   ]
+  },
+  "verifiednmp": {
+   "label": "Verified null move",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/Null_Move_Pruning#Verification",
+   "ref": null,
+   "engines": 17,
+   "engines_pct": 1.6,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "GopherCheck",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/GopherCheck",
+     "source": "readme",
+     "evidence": "- Null-move pruning with verification search"
+    },
+    {
+     "engine": "Weini",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Weini",
+     "source": "readme",
+     "evidence": "* Null move prunning (adaptative) : under condition verified null move prunning / reduction"
+    },
+    {
+     "engine": "MORS",
+     "strength_limited": false,
+     "url": "https://github.com/TMagnusN/mors",
+     "source": "readme",
+     "evidence": "- Reverse and forward futility pruning, null-move pruning with verification, late-move pruning and reductions, internal iterative reduction, and singular extens"
+    },
+    {
+     "engine": "Inphish",
+     "strength_limited": false,
+     "url": null,
+     "source": "readme",
+     "evidence": "- **Search:** since 6.0.0, a port of Stockfish 19's search (GPL-3.0) onto inphish's own board and move generator: principal variation search with iterative deep"
+    }
+   ]
+  },
+  "rfp": {
+   "label": "Reverse futility",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/Reverse_Futility_Pruning",
+   "ref": null,
+   "engines": 173,
+   "engines_pct": 16.0,
+   "strength_limited": 7,
+   "strength_limited_pct": 12.7,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- Reverse Futility Pruning, Futility Pruning, Late Move Pruning"
+    },
+    {
+     "engine": "Karballo",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Carballo",
+     "source": "readme",
+     "evidence": "* Pruning: Null move pruning, static null move pruning, futility pruning and history pruning"
+    },
+    {
+     "engine": "Peras",
+     "strength_limited": true,
+     "url": "https://github.com/FirePlank/Peras",
+     "source": "readme",
+     "evidence": "- **Search**: iterative deepening PVS with aspiration windows and MultiPV, a shared lock-free transposition table, and the full modern pruning set (razoring, re"
+    },
+    {
+     "engine": "Rodent",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Rodent",
+     "source": "readme",
+     "evidence": "- Node-level pruning: reverse futility pruning, razoring, null move"
+    }
+   ]
+  },
+  "futility": {
+   "label": "Futility pruning",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/Futility_Pruning",
+   "ref": null,
+   "engines": 208,
+   "engines_pct": 19.2,
+   "strength_limited": 9,
+   "strength_limited_pct": 16.4,
+   "negated_or_planned": 3,
+   "examples": [
+    {
+     "engine": "Cheng",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheng",
+     "source": "readme",
+     "evidence": "v1.07\t\tsome more minor tweaking, more aggressive futility pruning, added support for personalities,"
+    },
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- Reverse Futility Pruning, Futility Pruning, Late Move Pruning"
+    },
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "extensions, ProbCut, futility/razoring/SEE pruning, and lazy-SMP"
+    },
+    {
+     "engine": "Karballo",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Carballo",
+     "source": "readme",
+     "evidence": "* Pruning: Null move pruning, static null move pruning, futility pruning and history pruning"
+    }
+   ]
+  },
+  "razoring": {
+   "label": "Razoring",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/Razoring",
+   "ref": null,
+   "engines": 140,
+   "engines_pct": 12.9,
+   "strength_limited": 8,
+   "strength_limited_pct": 14.5,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Cheng",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheng",
+     "source": "readme",
+     "evidence": "PVS, magic bitboards, null move pruning, LMR, futility pruning, razoring, quiescence search, (dumb) evaluation function,"
+    },
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "extensions, ProbCut, futility/razoring/SEE pruning, and lazy-SMP"
+    },
+    {
+     "engine": "Peras",
+     "strength_limited": true,
+     "url": "https://github.com/FirePlank/Peras",
+     "source": "readme",
+     "evidence": "- **Search**: iterative deepening PVS with aspiration windows and MultiPV, a shared lock-free transposition table, and the full modern pruning set (razoring, re"
+    },
+    {
+     "engine": "Reglisse",
+     "strength_limited": true,
+     "url": "https://github.com/PaulJeFi/reglisse-chess",
+     "source": "readme",
+     "evidence": "- [Razoring]"
+    }
+   ]
+  },
+  "lmp": {
+   "label": "Late move pruning",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/Futility_Pruning#MoveCountBasedPruning",
+   "ref": null,
+   "engines": 140,
+   "engines_pct": 12.9,
+   "strength_limited": 7,
+   "strength_limited_pct": 12.7,
+   "negated_or_planned": 4,
+   "examples": [
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- Reverse Futility Pruning, Futility Pruning, Late Move Pruning"
+    },
+    {
+     "engine": "Peras",
+     "strength_limited": true,
+     "url": "https://github.com/FirePlank/Peras",
+     "source": "readme",
+     "evidence": "- **Search**: iterative deepening PVS with aspiration windows and MultiPV, a shared lock-free transposition table, and the full modern pruning set (razoring, re"
+    },
+    {
+     "engine": "Rodent",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Rodent",
+     "source": "readme",
+     "evidence": "- Move-level selectivity: late move reduction, late move pruning, futility pruning"
+    },
+    {
+     "engine": "Sapling",
+     "strength_limited": true,
+     "url": "https://github.com/Timmoth/Sapling",
+     "source": "readme",
+     "evidence": "- Late Move Pruning"
+    }
+   ]
+  },
+  "histprune": {
+   "label": "History pruning",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/History_Leaf_Pruning",
+   "ref": null,
+   "engines": 44,
+   "engines_pct": 4.1,
+   "strength_limited": 3,
+   "strength_limited_pct": 5.5,
+   "negated_or_planned": 5,
+   "examples": [
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- History Pruning, ProbCut"
+    },
+    {
+     "engine": "Karballo",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Carballo",
+     "source": "readme",
+     "evidence": "* Pruning: Null move pruning, static null move pruning, futility pruning and history pruning"
+    },
+    {
+     "engine": "Peras",
+     "strength_limited": true,
+     "url": "https://github.com/FirePlank/Peras",
+     "source": "readme",
+     "evidence": "- **Search**: iterative deepening PVS with aspiration windows and MultiPV, a shared lock-free transposition table, and the full modern pruning set (razoring, re"
+    },
+    {
+     "engine": "Fruit",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Fruit",
+     "source": "readme",
+     "evidence": "valid for Fruit 2.1 (except for the addition of history pruning)."
+    }
+   ]
+  },
+  "seeprune": {
+   "label": "SEE pruning",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/Static_Exchange_Evaluation",
+   "ref": null,
+   "engines": 83,
+   "engines_pct": 7.7,
+   "strength_limited": 4,
+   "strength_limited_pct": 7.3,
+   "negated_or_planned": 3,
+   "examples": [
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- SEE Pruning (main search + quiescence)"
+    },
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "extensions, ProbCut, futility/razoring/SEE pruning, and lazy-SMP"
+    },
+    {
+     "engine": "Snail-Chess",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/SnailChess",
+     "source": "readme",
+     "evidence": "- SEE Pruning"
+    },
+    {
+     "engine": "Zahak",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Zahak",
+     "source": "readme",
+     "evidence": "- SEE pruning both in QS and normal search"
+    }
+   ]
+  },
+  "probcut": {
+   "label": "ProbCut",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/ProbCut",
+   "ref": null,
+   "engines": 58,
+   "engines_pct": 5.4,
+   "strength_limited": 4,
+   "strength_limited_pct": 7.3,
+   "negated_or_planned": 5,
+   "examples": [
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- History Pruning, ProbCut"
+    },
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "extensions, ProbCut, futility/razoring/SEE pruning, and lazy-SMP"
+    },
+    {
+     "engine": "Peras",
+     "strength_limited": true,
+     "url": "https://github.com/FirePlank/Peras",
+     "source": "readme",
+     "evidence": "- **Search**: iterative deepening PVS with aspiration windows and MultiPV, a shared lock-free transposition table, and the full modern pruning set (razoring, re"
+    },
+    {
+     "engine": "Snaky",
+     "strength_limited": true,
+     "url": "https://github.com/Carleslc/Snaky",
+     "source": "readme",
+     "evidence": "moves that hang the moved piece and of losing captures, ProbCut, check extension for checks that do not lose material,"
+    }
+   ]
+  },
+  "nmr": {
+   "label": "Null-move reductions",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/Null_Move_Reductions",
+   "ref": null,
+   "engines": 10,
+   "engines_pct": 0.9,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 2,
+   "examples": [
+    {
+     "engine": "Myrddin",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Myrddin",
+     "source": "readme",
+     "evidence": "-- Added Null Move reductions\\"
+    },
+    {
+     "engine": "Fruit Reloaded",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Fruit_Reloaded",
+     "source": "readme",
+     "evidence": "- added Null-Move reduction"
+    },
+    {
+     "engine": "Pirarucu",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Pirarucu",
+     "source": "readme",
+     "evidence": "- Null move reduction"
+    },
+    {
+     "engine": "Rengar",
+     "strength_limited": false,
+     "url": "https://github.com/teswayze/rengar",
+     "source": "readme",
+     "evidence": "- Null move reductions"
+    }
+   ]
+  },
+  "fhr": {
+   "label": "Fail-high reductions",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/Fail-High_Reductions",
+   "ref": null,
+   "engines": 1,
+   "engines_pct": 0.1,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Weak",
+     "strength_limited": false,
+     "url": "https://github.com/Dragjon/weak-chess-engine",
+     "source": "readme",
+     "evidence": "* Fail-high reductions"
+    }
+   ]
+  },
+  "aelprune": {
+   "label": "AEL pruning",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/AEL-Pruning",
+   "ref": null,
+   "engines": 1,
+   "engines_pct": 0.1,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Amundsen",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Amundsen",
+     "source": "readme",
+     "evidence": "razoring. This means Amundsen now implements full AEL pruning."
+    }
+   ]
+  },
+  "multicut": {
+   "label": "Multi-cut",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/Multi-Cut",
+   "ref": null,
+   "engines": 44,
+   "engines_pct": 4.1,
+   "strength_limited": 3,
+   "strength_limited_pct": 5.5,
+   "negated_or_planned": 4,
+   "examples": [
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- Singular Extensions with multi-cut"
+    },
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "multi-cut + ProbCut + razoring + futility + SEE move pruning +"
+    },
+    {
+     "engine": "Zahak",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Zahak",
+     "source": "readme",
+     "evidence": "- Multi-Cut"
+    },
+    {
+     "engine": "Endspiel",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Endspiel",
+     "source": "readme",
+     "evidence": "(with double extensions and multi-cut) and passed-pawn extensions, 1- and 2-ply continuation"
+    }
+   ]
+  },
+  "mdp": {
+   "label": "Mate distance pruning",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/Mate_Distance_Pruning",
+   "ref": null,
+   "engines": 54,
+   "engines_pct": 5.0,
+   "strength_limited": 2,
+   "strength_limited_pct": 3.6,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Reglisse",
+     "strength_limited": true,
+     "url": "https://github.com/PaulJeFi/reglisse-chess",
+     "source": "readme",
+     "evidence": "- [mate distance pruning]"
+    },
+    {
+     "engine": "Snaky",
+     "strength_limited": true,
+     "url": "https://github.com/Carleslc/Snaky",
+     "source": "readme",
+     "evidence": "move ordering (hash move, MVV-LVA, killers, countermove, history), mate distance pruning, and Lazy SMP for several threads."
+    },
+    {
+     "engine": "Leorik",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Leorik",
+     "source": "readme",
+     "evidence": "- Mate distance pruning"
+    },
+    {
+     "engine": "GopherCheck",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/GopherCheck",
+     "source": "readme",
+     "evidence": "- Mate-distance pruning"
+    }
+   ]
+  },
+  "improving": {
+   "label": "Improving heuristic",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/Improving",
+   "ref": null,
+   "engines": 22,
+   "engines_pct": 2.0,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 2,
+   "examples": [
+    {
+     "engine": "Myrddin",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Myrddin",
+     "source": "readme",
+     "evidence": "-- Added Improving heuristic\\"
+    },
+    {
+     "engine": "BetterThanCris",
+     "strength_limited": false,
+     "url": "https://github.com/gustavoknudsen/BetterThanCris",
+     "source": "readme",
+     "evidence": "- Improving Heuristic (Gates LMP / RFP / LMR by `eval[ply] > eval[ply-2]`)"
+    },
+    {
+     "engine": "FunComp",
+     "strength_limited": false,
+     "url": "https://github.com/Moxnar/FunComp",
+     "source": "readme",
+     "evidence": "static eval, alpha, beta, improving flag, node type (PV, cut or all),"
+    },
+    {
+     "engine": "Raphael",
+     "strength_limited": false,
+     "url": "https://github.com/Orbital-Web/Raphael",
+     "source": "readme",
+     "evidence": "- [x] Improving heuristics              (`v3.2+`)"
+    }
+   ]
+  },
+  "lmr": {
+   "label": "Late move reductions",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/Late_Move_Reductions",
+   "ref": null,
+   "engines": 310,
+   "engines_pct": 28.7,
+   "strength_limited": 11,
+   "strength_limited_pct": 20.0,
+   "negated_or_planned": 10,
+   "examples": [
+    {
+     "engine": "Cheese",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheese",
+     "source": "readme",
+     "evidence": "Use Late Move Reduction algorithm (0 or 1)"
+    },
+    {
+     "engine": "Cheng",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheng",
+     "source": "readme",
+     "evidence": "v1.05\t\tminor changes and bugfixes, more aggressive LMR, MVV/LVA sorting bugfix, added small opening book,"
+    },
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- Late Move Reductions (LMR) with history, improving, correction history adjustments"
+    },
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "transposition table, aspiration windows, late-move reductions, singular"
+    }
+   ]
+  },
+  "iir": {
+   "label": "Internal iter. reductions",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/Internal_Iterative_Reductions",
+   "ref": null,
+   "engines": 80,
+   "engines_pct": 7.4,
+   "strength_limited": 3,
+   "strength_limited_pct": 5.5,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- Internal Iterative Reductions (IIR)"
+    },
+    {
+     "engine": "Sapling",
+     "strength_limited": true,
+     "url": "https://github.com/Timmoth/Sapling",
+     "source": "readme",
+     "evidence": "- Internal Iterative Reduction"
+    },
+    {
+     "engine": "Snail-Chess",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/SnailChess",
+     "source": "readme",
+     "evidence": "- Internal Iterative Reductions"
+    },
+    {
+     "engine": "Myrddin",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Myrddin",
+     "source": "readme",
+     "evidence": "-- Now using IIR on pv nodes\\"
+    }
+   ]
+  },
+  "checkext": {
+   "label": "Check extensions",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/Check_Extensions",
+   "ref": null,
+   "engines": 133,
+   "engines_pct": 12.3,
+   "strength_limited": 6,
+   "strength_limited_pct": 10.9,
+   "negated_or_planned": 2,
+   "examples": [
+    {
+     "engine": "Peras",
+     "strength_limited": true,
+     "url": "https://github.com/FirePlank/Peras",
+     "source": "readme",
+     "evidence": "- **Search**: iterative deepening PVS with aspiration windows and MultiPV, a shared lock-free transposition table, and the full modern pruning set (razoring, re"
+    },
+    {
+     "engine": "Reglisse",
+     "strength_limited": true,
+     "url": "https://github.com/PaulJeFi/reglisse-chess",
+     "source": "readme",
+     "evidence": "- [check extensions] (check-evaders for the moment)"
+    },
+    {
+     "engine": "Rodent",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Rodent",
+     "source": "readme",
+     "evidence": "- Extensions: singular extension and check extension, stacked"
+    },
+    {
+     "engine": "Snail-Chess",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/SnailChess",
+     "source": "readme",
+     "evidence": "- Check extension"
+    }
+   ]
+  },
+  "singular": {
+   "label": "Singular extensions",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/Singular_Extensions",
+   "ref": null,
+   "engines": 100,
+   "engines_pct": 9.2,
+   "strength_limited": 5,
+   "strength_limited_pct": 9.1,
+   "negated_or_planned": 7,
+   "examples": [
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- Singular Extensions with multi-cut"
+    },
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "- **Search**: PVS + aspiration windows + LMR + singular extensions +"
+    },
+    {
+     "engine": "Karballo",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Carballo",
+     "source": "readme",
+     "evidence": "* Extensions: Check (only with positive SEE), pawn push, mate threat and singular move"
+    },
+    {
+     "engine": "Rodent",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Rodent",
+     "source": "readme",
+     "evidence": "- Extensions: singular extension and check extension, stacked"
+    }
+   ]
+  },
+  "multiext": {
+   "label": "Double / negative extensions",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/Singular_Extensions",
+   "ref": null,
+   "engines": 22,
+   "engines_pct": 2.0,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "Sapling",
+     "strength_limited": true,
+     "url": "https://github.com/Timmoth/Sapling",
+     "source": "readme",
+     "evidence": "- Check, singular, double and negative extensions"
+    },
+    {
+     "engine": "Endspiel",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Endspiel",
+     "source": "readme",
+     "evidence": "(with double extensions and multi-cut) and passed-pawn extensions, 1- and 2-ply continuation"
+    },
+    {
+     "engine": "iBlunder",
+     "strength_limited": false,
+     "url": null,
+     "source": "readme",
+     "evidence": "- Check, singular, double and negative extensions"
+    },
+    {
+     "engine": "Raphael",
+     "strength_limited": false,
+     "url": "https://github.com/Orbital-Web/Raphael",
+     "source": "readme",
+     "evidence": "- [x] Double extensions                 (`v3.0+`)"
+    }
+   ]
+  },
+  "otherext": {
+   "label": "Recapture / passer ext.",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/Extensions",
+   "ref": null,
+   "engines": 13,
+   "engines_pct": 1.2,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 3,
+   "examples": [
+    {
+     "engine": "Endspiel",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Endspiel",
+     "source": "readme",
+     "evidence": "(with double extensions and multi-cut) and passed-pawn extensions, 1- and 2-ply continuation"
+    },
+    {
+     "engine": "Eloi",
+     "strength_limited": false,
+     "url": null,
+     "source": "readme",
+     "evidence": "Eloi 2.8.0 corrected root recapture extension handling."
+    },
+    {
+     "engine": "ZeroG",
+     "strength_limited": false,
+     "url": "https://github.com/KristianEkman/ZeroG",
+     "source": "readme",
+     "evidence": "- *One-Reply Extensions*: Extends search depth by 1 ply at internal nodes (`ply > 0` and `depth > 0`) when a position has exactly 1 legal move, resolving forced"
+    },
+    {
+     "engine": "Raphael",
+     "strength_limited": false,
+     "url": "https://github.com/Orbital-Web/Raphael",
+     "source": "readme",
+     "evidence": "- ~~One reply extensions~~              (`v1.7+`)"
+    }
+   ]
+  },
+  "onereply": {
+   "label": "One-reply extension",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/One_Reply_Extensions",
+   "ref": null,
+   "engines": 6,
+   "engines_pct": 0.6,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Fruit",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Fruit",
+     "source": "readme",
+     "evidence": "- enabled the single-reply extension (to partly compensate for the lack"
+    },
+    {
+     "engine": "Fruit Reloaded",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Fruit_Reloaded",
+     "source": "readme",
+     "evidence": "- enabled the single-reply extension (to partly compensate for the lack"
+    },
+    {
+     "engine": "ZeroG",
+     "strength_limited": false,
+     "url": "https://github.com/KristianEkman/ZeroG",
+     "source": "readme",
+     "evidence": "- *One-Reply Extensions*: Extends search depth by 1 ply at internal nodes (`ply > 0` and `depth > 0`) when a position has exactly 1 legal move, resolving forced"
+    },
+    {
+     "engine": "Raphael",
+     "strength_limited": false,
+     "url": "https://github.com/Orbital-Web/Raphael",
+     "source": "readme",
+     "evidence": "- ~~One reply extensions~~              (`v1.7+`)"
+    }
+   ]
+  },
+  "matethreatext": {
+   "label": "Mate-threat extension",
+   "area": "select",
+   "cpw": "https://www.chessprogramming.org/Mate_Threat_Extensions",
+   "ref": null,
+   "engines": 4,
+   "engines_pct": 0.4,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "FrankyGo",
+     "strength_limited": false,
+     "url": "https://github.com/frankkopp/FrankyGo",
+     "source": "readme",
+     "evidence": "* Mate threat extension (deactivated - needs further tuning/testing - currently weakens play)"
+    },
+    {
+     "engine": "GC-Engine",
+     "strength_limited": false,
+     "url": "https://github.com/DhaniAAA/GC-Chess_Engine",
+     "source": "readme",
+     "evidence": "- **Mate Threat Extension**"
+    },
+    {
+     "engine": "Karl's Sun",
+     "strength_limited": false,
+     "url": "https://github.com/Izy266/Karls-Sun",
+     "source": "readme",
+     "evidence": "* **Mate Threat Extension**: If a potential checkmate threat is detected when the null move is made, the search is deepened to explore lines that address and po"
+    },
+    {
+     "engine": "FoxSEE",
+     "strength_limited": false,
+     "url": "https://github.com/redsalmon91/FoxSEE",
+     "source": "readme",
+     "evidence": "- Mate-Threat Extensions"
+    }
+   ]
+  },
+  "ttmove": {
+   "label": "TT / hash move",
+   "area": "order",
+   "cpw": "https://www.chessprogramming.org/Hash_Move",
+   "ref": null,
+   "engines": 118,
+   "engines_pct": 10.9,
+   "strength_limited": 2,
+   "strength_limited_pct": 3.6,
+   "negated_or_planned": 3,
+   "examples": [
+    {
+     "engine": "Snaky",
+     "strength_limited": true,
+     "url": "https://github.com/Carleslc/Snaky",
+     "source": "readme",
+     "evidence": "move ordering (hash move, MVV-LVA, killers, countermove, history), mate distance pruning, and Lazy SMP for several threads."
+    },
+    {
+     "engine": "Zahak",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Zahak",
+     "source": "readme",
+     "evidence": "- Hash move"
+    },
+    {
+     "engine": "Amundsen",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Amundsen",
+     "source": "readme",
+     "evidence": "Transposition tables added. Improved move ordering, hash move, and static"
+    },
+    {
+     "engine": "ChessCore",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/ChessCore",
+     "source": "readme",
+     "evidence": "- Move ordering: TT move first, then captures (MVV-LVA), then killer moves (two slots per ply), then quiet moves seeded by a per-(color, from, to) history heuri"
+    }
+   ]
+  },
+  "mvvlva": {
+   "label": "MVV-LVA",
+   "area": "order",
+   "cpw": "https://www.chessprogramming.org/MVV-LVA",
+   "ref": null,
+   "engines": 189,
+   "engines_pct": 17.5,
+   "strength_limited": 4,
+   "strength_limited_pct": 7.3,
+   "negated_or_planned": 2,
+   "examples": [
+    {
+     "engine": "Cheng",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheng",
+     "source": "readme",
+     "evidence": "v1.05\t\tminor changes and bugfixes, more aggressive LMR, MVV/LVA sorting bugfix, added small opening book,"
+    },
+    {
+     "engine": "Karballo",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Carballo",
+     "source": "readme",
+     "evidence": "* Move iterator sorting moves with four killer move slots, Static Exchange Evaluation (SEE), Most Valuable Victim/Least Valuable Aggressor (MVV/LVA) and history"
+    },
+    {
+     "engine": "Reglisse",
+     "strength_limited": true,
+     "url": "https://github.com/PaulJeFi/reglisse-chess",
+     "source": "readme",
+     "evidence": "- [MVV LVA]"
+    },
+    {
+     "engine": "Snaky",
+     "strength_limited": true,
+     "url": "https://github.com/Carleslc/Snaky",
+     "source": "readme",
+     "evidence": "move ordering (hash move, MVV-LVA, killers, countermove, history), mate distance pruning, and Lazy SMP for several threads."
+    }
+   ]
+  },
+  "see": {
+   "label": "Static exchange eval",
+   "area": "order",
+   "cpw": "https://www.chessprogramming.org/Static_Exchange_Evaluation",
+   "ref": null,
+   "engines": 228,
+   "engines_pct": 21.1,
+   "strength_limited": 10,
+   "strength_limited_pct": 18.2,
+   "negated_or_planned": 12,
+   "examples": [
+    {
+     "engine": "Cheng",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheng",
+     "source": "readme",
+     "evidence": "SEE, transposition tables, adjustable skill level, insane time management, pondering, probably still many bugs,"
+    },
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- SEE Pruning (main search + quiescence)"
+    },
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "extensions, ProbCut, futility/razoring/SEE pruning, and lazy-SMP"
+    },
+    {
+     "engine": "Karballo",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Carballo",
+     "source": "readme",
+     "evidence": "* Move iterator sorting moves with four killer move slots, Static Exchange Evaluation (SEE), Most Valuable Victim/Least Valuable Aggressor (MVV/LVA) and history"
+    }
+   ]
+  },
+  "killers": {
+   "label": "Killer moves",
+   "area": "order",
+   "cpw": "https://www.chessprogramming.org/Killer_Heuristic",
+   "ref": null,
+   "engines": 300,
+   "engines_pct": 27.7,
+   "strength_limited": 12,
+   "strength_limited_pct": 21.8,
+   "negated_or_planned": 2,
+   "examples": [
+    {
+     "engine": "Cheng",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheng",
+     "source": "readme",
+     "evidence": "v1.06\t\tminor eval tweaking, removed too aggressive futility pruning, reenabled lazy eval, killer and history update on TT beta cutoff,"
+    },
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- Killer Moves, Countermove Heuristic, Butterfly/Capture/Continuation/Pawn History"
+    },
+    {
+     "engine": "Karballo",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Carballo",
+     "source": "readme",
+     "evidence": "* Move iterator sorting moves with four killer move slots, Static Exchange Evaluation (SEE), Most Valuable Victim/Least Valuable Aggressor (MVV/LVA) and history"
+    },
+    {
+     "engine": "Kreveta",
+     "strength_limited": true,
+     "url": "https://github.com/ZlomenyMesic/Kreveta",
+     "source": "readme",
+     "evidence": "- Killers, capture killers and countermoves"
+    }
+   ]
+  },
+  "matekillers": {
+   "label": "Mate killers",
+   "area": "order",
+   "cpw": "https://www.chessprogramming.org/Mate_Killers",
+   "ref": null,
+   "engines": 0,
+   "engines_pct": 0.0,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 0,
+   "examples": []
+  },
+  "history": {
+   "label": "History heuristic",
+   "area": "order",
+   "cpw": "https://www.chessprogramming.org/History_Heuristic",
+   "ref": null,
+   "engines": 218,
+   "engines_pct": 20.1,
+   "strength_limited": 7,
+   "strength_limited_pct": 12.7,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Karballo",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Carballo",
+     "source": "readme",
+     "evidence": "* Move iterator sorting moves with four killer move slots, Static Exchange Evaluation (SEE), Most Valuable Victim/Least Valuable Aggressor (MVV/LVA) and history"
+    },
+    {
+     "engine": "Minic",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Minic",
+     "source": "readme",
+     "evidence": "- aggregate history score for move sorter and history heuristic (cmh + history[piece and color][tosquare] + history[color][square][square])"
+    },
+    {
+     "engine": "Reglisse",
+     "strength_limited": true,
+     "url": "https://github.com/PaulJeFi/reglisse-chess",
+     "source": "readme",
+     "evidence": "- [History Heuristic]"
+    },
+    {
+     "engine": "Sapling",
+     "strength_limited": true,
+     "url": "https://github.com/Timmoth/Sapling",
+     "source": "readme",
+     "evidence": "- History heuristic with malus"
+    }
+   ]
+  },
+  "relhist": {
+   "label": "Butterfly / relative history",
+   "area": "order",
+   "cpw": "https://www.chessprogramming.org/Relative_History_Heuristic",
+   "ref": null,
+   "engines": 28,
+   "engines_pct": 2.6,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 3,
+   "examples": [
+    {
+     "engine": "Pirarucu",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Pirarucu",
+     "source": "readme",
+     "evidence": "- Butterfly history"
+    },
+    {
+     "engine": "Seer",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Seer",
+     "source": "readme",
+     "evidence": "- Move Ordering (SEE for captures + Killer Move, Combined Butterfly History, Counter Move History and Follow Up History for quiets)"
+    },
+    {
+     "engine": "Detroid",
+     "strength_limited": false,
+     "url": "https://github.com/ViktorC/DETROID",
+     "source": "readme",
+     "evidence": "The DETROID engine is a chess engine built onto the DETROID framework. It uses a magic bitboard-based position representation and [Zobrist] hashing. Furthermore"
+    },
+    {
+     "engine": "Raphael",
+     "strength_limited": false,
+     "url": "https://github.com/Orbital-Web/Raphael",
+     "source": "readme",
+     "evidence": "- [x] Butterfly history                 (`v1.5+`)"
+    }
+   ]
+  },
+  "conthist": {
+   "label": "Continuation history",
+   "area": "order",
+   "cpw": "https://www.chessprogramming.org/History_Heuristic",
+   "ref": null,
+   "engines": 64,
+   "engines_pct": 5.9,
+   "strength_limited": 5,
+   "strength_limited_pct": 9.1,
+   "negated_or_planned": 4,
+   "examples": [
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "correction history + counter-moves + 2-ply continuation history."
+    },
+    {
+     "engine": "Kreveta",
+     "strength_limited": true,
+     "url": "https://github.com/ZlomenyMesic/Kreveta",
+     "source": "readme",
+     "evidence": "- Quiet, capture, piece-to, static eval and 2-ply continuation histories"
+    },
+    {
+     "engine": "Rodent",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Rodent",
+     "source": "readme",
+     "evidence": "- Quiet move ordering: killer heuristic, history, including 2-level continuation history"
+    },
+    {
+     "engine": "Sapling",
+     "strength_limited": true,
+     "url": "https://github.com/Timmoth/Sapling",
+     "source": "readme",
+     "evidence": "- Threat history and compact continuation history"
+    }
+   ]
+  },
+  "caphist": {
+   "label": "Capture history",
+   "area": "order",
+   "cpw": "https://www.chessprogramming.org/History_Heuristic",
+   "ref": null,
+   "engines": 47,
+   "engines_pct": 4.3,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 5,
+   "examples": [
+    {
+     "engine": "Endspiel",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Endspiel",
+     "source": "readme",
+     "evidence": "history, capture history, and multi-facet correction history (pawn, non-pawn, minor/major, and"
+    },
+    {
+     "engine": "Black Marlin",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Black_Marlin",
+     "source": "readme",
+     "evidence": "We can evaluate each move by using SEE and put winning captures first in move ordering. Although moves aren't ordered by SEE but rather by their capture history"
+    },
+    {
+     "engine": "Pioneer",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Pioneer",
+     "source": "readme",
+     "evidence": "* Capture History"
+    },
+    {
+     "engine": "Lynx",
+     "strength_limited": false,
+     "url": "https://github.com/lynx-chess/Lynx",
+     "source": "readme",
+     "evidence": "- History heuristic: quiet history with threats, capture history, continuation history, history malus [[1]]"
+    }
+   ]
+  },
+  "countermove": {
+   "label": "Countermove",
+   "area": "order",
+   "cpw": "https://www.chessprogramming.org/Countermove_Heuristic",
+   "ref": null,
+   "engines": 79,
+   "engines_pct": 7.3,
+   "strength_limited": 7,
+   "strength_limited_pct": 12.7,
+   "negated_or_planned": 3,
+   "examples": [
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- Killer Moves, Countermove Heuristic, Butterfly/Capture/Continuation/Pawn History"
+    },
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "correction history + counter-moves + 2-ply continuation history."
+    },
+    {
+     "engine": "Kreveta",
+     "strength_limited": true,
+     "url": "https://github.com/ZlomenyMesic/Kreveta",
+     "source": "readme",
+     "evidence": "- Killers, capture killers and countermoves"
+    },
+    {
+     "engine": "Peras",
+     "strength_limited": true,
+     "url": "https://github.com/FirePlank/Peras",
+     "source": "readme",
+     "evidence": "- **Move ordering**: staged move picking driven by butterfly, capture, continuation, pawn, low-ply and countermove histories, with correction history on the sta"
+    }
+   ]
+  },
+  "lastbestreply": {
+   "label": "Last best reply",
+   "area": "order",
+   "cpw": "https://www.chessprogramming.org/Last_Best_Reply",
+   "ref": null,
+   "engines": 0,
+   "engines_pct": 0.0,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 0,
+   "examples": []
+  },
+  "refutation": {
+   "label": "Refutation table",
+   "area": "order",
+   "cpw": "https://www.chessprogramming.org/Refutation_Table",
+   "ref": null,
+   "engines": 2,
+   "engines_pct": 0.2,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "Amundsen",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Amundsen",
+     "source": "readme",
+     "evidence": "Hashtables are now divided into a smaller refutation table and a"
+    },
+    {
+     "engine": "BetterThanCris",
+     "strength_limited": false,
+     "url": "https://github.com/gustavoknudsen/BetterThanCris",
+     "source": "readme",
+     "evidence": "- Counter-Move: `[prevPiece][prevTo]` Refutation Table, Ordered Between Killers and History"
+    }
+   ]
+  },
+  "iid": {
+   "label": "Internal iter. deepening",
+   "area": "order",
+   "cpw": "https://www.chessprogramming.org/Internal_Iterative_Deepening",
+   "ref": null,
+   "engines": 50,
+   "engines_pct": 4.6,
+   "strength_limited": 3,
+   "strength_limited_pct": 5.5,
+   "negated_or_planned": 3,
+   "examples": [
+    {
+     "engine": "Karballo",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Carballo",
+     "source": "readme",
+     "evidence": "* Internal Iterative Deepening to improve sorting"
+    },
+    {
+     "engine": "Minic",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Minic",
+     "source": "readme",
+     "evidence": "- emergency (from IID loop instabilities) based pruning and reductions in search"
+    },
+    {
+     "engine": "Zahak",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Zahak",
+     "source": "readme",
+     "evidence": "- Internal Iterative Deepening"
+    },
+    {
+     "engine": "Myrddin",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Myrddin",
+     "source": "readme",
+     "evidence": "-- IID is now more aggressive in its depth reduction and can be applied in PV nodes\\"
+    }
+   ]
+  },
+  "hce": {
+   "label": "Handcrafted (HCE)",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/Evaluation",
+   "ref": null,
+   "engines": 131,
+   "engines_pct": 12.1,
+   "strength_limited": 10,
+   "strength_limited_pct": 18.2,
+   "negated_or_planned": 6,
+   "examples": [
+    {
+     "engine": "Annie",
+     "strength_limited": true,
+     "url": "https://github.com/tsoj/Annie",
+     "source": "readme",
+     "evidence": "Annie's handcrafted, large-table powered evaluation was trained on no fewer than six million, four hundred and thirty-four positions from games played on Liches"
+    },
+    {
+     "engine": "Avalanche",
+     "strength_limited": true,
+     "url": "https://github.com/SnowballSH/Avalanche",
+     "source": "readme",
+     "evidence": "- The Hand-Crafted Evaluation is based on  with adaptation to endgames. The HCE is only activated at late endgames when finding checkmate against a lone king is"
+    },
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "> **Classical-eval expansion session (2026-05-14)**: classical eval"
+    },
+    {
+     "engine": "Igel",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Igel",
+     "source": "readme",
+     "evidence": "In January 2023 the last of the hand-crafted evaluation was removed from the default build, and from Igel 3.4.0 the evaluation is entirely NNUE. A pure HCE buil"
+    }
+   ]
+  },
+  "pesto": {
+   "label": "PeSTO tables",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/PeSTO's_Evaluation_Function",
+   "ref": null,
+   "engines": 53,
+   "engines_pct": 4.9,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "Rodent",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Rodent",
+     "source": "readme",
+     "evidence": "| `pesto.go`\t| —       | PeSTo eval, if you want to make Rodent dumb\t\t\t\t|"
+    },
+    {
+     "engine": "MinimalChess",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/MinimalChess",
+     "source": "readme",
+     "evidence": "[__Version 0.4__] now uses tapered Piece-Square tables to evaluate positions. It took two weeks of tuning and testing until I found values that could rival [PeS"
+    },
+    {
+     "engine": "BBC",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/BBC",
+     "source": "readme",
+     "evidence": "- Ronald Friederich for providing PeSTO evaluation tables and sharing his ideas"
+    },
+    {
+     "engine": "NoaChess",
+     "strength_limited": false,
+     "url": "https://github.com/jcjimenezvadillo/NoaChess",
+     "source": "readme",
+     "evidence": "- **Evaluation**: tapered (middlegame/endgame) evaluation blended by game phase - PeSTO piece values, two-phase piece-square tables, reference-style attack bitb"
+    }
+   ]
+  },
+  "nnue": {
+   "label": "NNUE",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/NNUE",
+   "ref": null,
+   "engines": 267,
+   "engines_pct": 24.7,
+   "strength_limited": 16,
+   "strength_limited_pct": 29.1,
+   "negated_or_planned": 12,
+   "examples": [
+    {
+     "engine": "Arasan",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Arasan",
+     "source": "readme",
+     "evidence": "- NNUE File - the name of the neural network file to load. Currently assumed to be"
+    },
+    {
+     "engine": "Avalanche",
+     "strength_limited": true,
+     "url": "https://github.com/SnowballSH/Avalanche",
+     "source": "readme",
+     "evidence": "Avalanche was one of the earliest adopters of the **NNUE** (Efficiently Updatable Neural Network) technology for its evaluation."
+    },
+    {
+     "engine": "Fairy-Stockfish",
+     "strength_limited": true,
+     "url": "https://github.com/fairy-stockfish/Fairy-Stockfish",
+     "source": "readme",
+     "evidence": "Optional NNUE evaluation parameter files to improve playing strength for many variants are in the [list of NNUE networks]."
+    },
+    {
+     "engine": "GOOB",
+     "strength_limited": true,
+     "url": "https://github.com/Gabrielkaos/ChessEngineGoobC",
+     "source": "readme",
+     "evidence": "Finally NNUE is implemented and trained using open source lichess data positions. NNUE architecture is from Schoenemann(see below). The architecture was very ea"
+    }
+   ]
+  },
+  "othernn": {
+   "label": "Other neural net",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/Neural_Networks",
+   "ref": null,
+   "engines": 53,
+   "engines_pct": 4.9,
+   "strength_limited": 3,
+   "strength_limited_pct": 5.5,
+   "negated_or_planned": 8,
+   "examples": [
+    {
+     "engine": "Patricia",
+     "strength_limited": true,
+     "url": "https://github.com/Adam-Kulju/Patricia",
+     "source": "readme",
+     "evidence": "- Neural network using a custom training/retraining script over multiple filtered data sources that was developed over the course of a few months - this is the "
+    },
+    {
+     "engine": "Texel",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Texel",
+     "source": "readme",
+     "evidence": "Use SSSE3 instructions to speed up neural network evaluation."
+    },
+    {
+     "engine": "Velvet",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Velvet",
+     "source": "readme",
+     "evidence": "Velvet offers two distinct embedded neural networks, each designed to reflect a different playing style."
+    },
+    {
+     "engine": "ClassicAra",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/CrazyAra",
+     "source": "readme",
+     "evidence": "[_CrazyAra_] is an open-source neural network chess variant engine, initially developed in pure python by [Johannes Czech], [Moritz Willig] and Alena Beyer in 2"
+    }
+   ]
+  },
+  "material": {
+   "label": "Material",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/Material",
+   "ref": null,
+   "engines": 245,
+   "engines_pct": 22.6,
+   "strength_limited": 12,
+   "strength_limited_pct": 21.8,
+   "negated_or_planned": 6,
+   "examples": [
+    {
+     "engine": "Cheops",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheops_(Miller)",
+     "source": "readme",
+     "evidence": "material, mobility, and motif features."
+    },
+    {
+     "engine": "Demolito",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Demolito",
+     "source": "readme",
+     "evidence": "repetition, 50 move rule, stalemate, and insufficient material. A positive value will avoid draws"
+    },
+    {
+     "engine": "GOOB",
+     "strength_limited": true,
+     "url": "https://github.com/Gabrielkaos/ChessEngineGoobC",
+     "source": "readme",
+     "evidence": "* **Architecture:** Perspective-aware dual-accumulator topology `(768x4 -> 1024)x2 -> 1x8` with Squared Clipped ReLU (SCReLU) activation and 8 material buckets."
+    },
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "(material alone at the bottom of the ladder, then piece squares, then the network),"
+    }
+   ]
+  },
+  "pst": {
+   "label": "Piece-square tables",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/Piece-Square_Tables",
+   "ref": null,
+   "engines": 238,
+   "engines_pct": 22.0,
+   "strength_limited": 10,
+   "strength_limited_pct": 18.2,
+   "negated_or_planned": 5,
+   "examples": [
+    {
+     "engine": "GOOB",
+     "strength_limited": true,
+     "url": "https://github.com/Gabrielkaos/ChessEngineGoobC",
+     "source": "readme",
+     "evidence": "* **Horizontal King Mirroring & 4 King Buckets:** When a perspective's own king stands on files `e..h`, all piece squares for that perspective are horizontally "
+    },
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "(material alone at the bottom of the ladder, then piece squares, then the network),"
+    },
+    {
+     "engine": "Igel",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Igel",
+     "source": "readme",
+     "evidence": "- 8 PSQT Buckets"
+    },
+    {
+     "engine": "Kreveta",
+     "strength_limited": true,
+     "url": "https://github.com/ZlomenyMesic/Kreveta",
+     "source": "readme",
+     "evidence": "- PSTs with tapering evaluation"
+    }
+   ]
+  },
+  "tapered": {
+   "label": "Tapered eval",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/Tapered_Eval",
+   "ref": null,
+   "engines": 111,
+   "engines_pct": 10.3,
+   "strength_limited": 3,
+   "strength_limited_pct": 5.5,
+   "negated_or_planned": 3,
+   "examples": [
+    {
+     "engine": "Reglisse",
+     "strength_limited": true,
+     "url": "https://github.com/PaulJeFi/reglisse-chess",
+     "source": "readme",
+     "evidence": "- [tapered eval]"
+    },
+    {
+     "engine": "Snail-Chess",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/SnailChess",
+     "source": "readme",
+     "evidence": "- Tapered evaluation"
+    },
+    {
+     "engine": "Snaky",
+     "strength_limited": true,
+     "url": "https://github.com/Carleslc/Snaky",
+     "source": "readme",
+     "evidence": "- **Evaluation**: tapered (middlegame and endgame), with material, piece-square tables, safe mobility, trapped and worst"
+    },
+    {
+     "engine": "Myrddin",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Myrddin",
+     "source": "readme",
+     "evidence": "-- Added tapered eval\\"
+    }
+   ]
+  },
+  "nnue_kingbuckets": {
+   "label": "NNUE king/input buckets",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/NNUE",
+   "ref": null,
+   "engines": 66,
+   "engines_pct": 6.1,
+   "strength_limited": 6,
+   "strength_limited_pct": 10.9,
+   "negated_or_planned": 3,
+   "examples": [
+    {
+     "engine": "Avalanche",
+     "strength_limited": true,
+     "url": "https://github.com/SnowballSH/Avalanche",
+     "source": "readme",
+     "evidence": "- Dual-perspective, mirrored input buckets basedon king position"
+    },
+    {
+     "engine": "GOOB",
+     "strength_limited": true,
+     "url": "https://github.com/Gabrielkaos/ChessEngineGoobC",
+     "source": "readme",
+     "evidence": "GOOB uses a modern NNUE (Efficiently Updatable Neural Network) evaluation function based on the **Schoenemann-0.5.0** architecture with **perspective horizontal"
+    },
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- **NNUE**: GaiaNet-T2b (12 king buckets × 768 PST inputs, plus 4,560 pawn pairs and 59,808 filtered piece-interaction threat features → 1024 → paired SCReLU → "
+    },
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "architecture: HalfKAv2_hm features + FullThreats, big network 1024-d FT,"
+    }
+   ]
+  },
+  "nnue_outbuckets": {
+   "label": "NNUE output buckets",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/NNUE",
+   "ref": null,
+   "engines": 42,
+   "engines_pct": 3.9,
+   "strength_limited": 5,
+   "strength_limited_pct": 9.1,
+   "negated_or_planned": 3,
+   "examples": [
+    {
+     "engine": "Avalanche",
+     "strength_limited": true,
+     "url": "https://github.com/SnowballSH/Avalanche",
+     "source": "readme",
+     "evidence": "- First net with output buckets"
+    },
+    {
+     "engine": "GOOB",
+     "strength_limited": true,
+     "url": "https://github.com/Gabrielkaos/ChessEngineGoobC",
+     "source": "readme",
+     "evidence": "* **Architecture:** Perspective-aware dual-accumulator topology `(768x4 -> 1024)x2 -> 1x8` with Squared Clipped ReLU (SCReLU) activation and 8 material buckets."
+    },
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- **NNUE**: GaiaNet-T2b (12 king buckets × 768 PST inputs, plus 4,560 pawn pairs and 59,808 filtered piece-interaction threat features → 1024 → paired SCReLU → "
+    },
+    {
+     "engine": "Igel",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Igel",
+     "source": "readme",
+     "evidence": "- 8 Output Buckets"
+    }
+   ]
+  },
+  "nnue_threats": {
+   "label": "NNUE threat inputs",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/NNUE",
+   "ref": null,
+   "engines": 15,
+   "engines_pct": 1.4,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- **NNUE**: GaiaNet-T2b (12 king buckets × 768 PST inputs, plus 4,560 pawn pairs and 59,808 filtered piece-interaction threat features → 1024 → paired SCReLU → "
+    },
+    {
+     "engine": "NoaChess",
+     "strength_limited": false,
+     "url": "https://github.com/jcjimenezvadillo/NoaChess",
+     "source": "readme",
+     "evidence": "**Versioning from 6.0.0:** 6.0.x for fixes and node-identical changes, 6.x.0 for a new net or a gauntlet-measured gain, 7.0.0 for a change of architecture (the "
+    },
+    {
+     "engine": "Raphael",
+     "strength_limited": false,
+     "url": "https://github.com/Orbital-Web/Raphael",
+     "source": "readme",
+     "evidence": "- [x] Threat inputs                     (`v4.2+`)"
+    },
+    {
+     "engine": "Jackal",
+     "strength_limited": false,
+     "url": "https://github.com/TomaszJaworski777/Jackal",
+     "source": "readme",
+     "evidence": "* Architecture: `82160 (Threat Inputs) -> 4096 -> 16 -> 128 -> 3`"
+    }
+   ]
+  },
+  "nnue_mirror": {
+   "label": "NNUE horizontal mirroring",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/NNUE",
+   "ref": null,
+   "engines": 32,
+   "engines_pct": 3.0,
+   "strength_limited": 4,
+   "strength_limited_pct": 7.3,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "GOOB",
+     "strength_limited": true,
+     "url": "https://github.com/Gabrielkaos/ChessEngineGoobC",
+     "source": "readme",
+     "evidence": "* **Horizontal King Mirroring & 4 King Buckets:** When a perspective's own king stands on files `e..h`, all piece squares for that perspective are horizontally "
+    },
+    {
+     "engine": "Igel",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Igel",
+     "source": "readme",
+     "evidence": "- Horizontally Mirrored 32 King Buckets"
+    },
+    {
+     "engine": "Rodent",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Rodent",
+     "source": "readme",
+     "evidence": "- Default NNUE is bullet-trained 768->(512*2)->1 with horizontal mirroring"
+    },
+    {
+     "engine": "Sapling",
+     "strength_limited": true,
+     "url": "https://github.com/Timmoth/Sapling",
+     "source": "readme",
+     "evidence": "- Horizontal mirroring"
+    }
+   ]
+  },
+  "simd": {
+   "label": "SIMD inference (AVX2/NEON)",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/SIMD_and_SWAR_Techniques",
+   "ref": null,
+   "engines": 73,
+   "engines_pct": 6.7,
+   "strength_limited": 6,
+   "strength_limited_pct": 10.9,
+   "negated_or_planned": 5,
+   "examples": [
+    {
+     "engine": "Avalanche",
+     "strength_limited": true,
+     "url": "https://github.com/SnowballSH/Avalanche",
+     "source": "readme",
+     "evidence": "`-Dtarget=aarch64-linux-musl -Dcpu=generic+v8_2a+dotprod`. `./zig-out/bin/Avalanche nnue-speed` prints the SIMD paths"
+    },
+    {
+     "engine": "GOOB",
+     "strength_limited": true,
+     "url": "https://github.com/Gabrielkaos/ChessEngineGoobC",
+     "source": "readme",
+     "evidence": "* **Inference Code:** SIMD-accelerated inference (AVX-512, AVX2, scalar) adapted from [Schoenemann] by Jochen Gehtab (licensed under GNU AGPL-3.0), extended wit"
+    },
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- **SIMD**: runtime dispatch AVX-512+VNNI / AVX-512 / AVX2 / scalar — one binary, resolved from CPUID at startup (NEON on ARM)"
+    },
+    {
+     "engine": "Minic",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Minic",
+     "source": "readme",
+     "evidence": "Well ... for NNUE, using AVX2 is very important. This can explain some strange results during some testing process and in rating list where I sometimes see my n"
+    }
+   ]
+  },
+  "increval": {
+   "label": "Incremental eval",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/Incremental_Updates",
+   "ref": null,
+   "engines": 80,
+   "engines_pct": 7.4,
+   "strength_limited": 3,
+   "strength_limited_pct": 5.5,
+   "negated_or_planned": 5,
+   "examples": [
+    {
+     "engine": "Avalanche",
+     "strength_limited": true,
+     "url": "https://github.com/SnowballSH/Avalanche",
+     "source": "readme",
+     "evidence": "Avalanche was one of the earliest adopters of the **NNUE** (Efficiently Updatable Neural Network) technology for its evaluation."
+    },
+    {
+     "engine": "GOOB",
+     "strength_limited": true,
+     "url": "https://github.com/Gabrielkaos/ChessEngineGoobC",
+     "source": "readme",
+     "evidence": "GOOB uses a modern NNUE (Efficiently Updatable Neural Network) evaluation function based on the **Schoenemann-0.5.0** architecture with **perspective horizontal"
+    },
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "- **Evaluation**: SF18-style NNUE inference with incremental accumulator"
+    },
+    {
+     "engine": "Myrddin",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Myrddin",
+     "source": "readme",
+     "evidence": "-- Now doing incremental updates to the NN accumulator during make/unmake move\\"
+    }
+   ]
+  },
+  "lazyeval": {
+   "label": "Lazy evaluation",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/Lazy_Evaluation",
+   "ref": null,
+   "engines": 14,
+   "engines_pct": 1.3,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "Cheng",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheng",
+     "source": "readme",
+     "evidence": "v1.06\t\tminor eval tweaking, removed too aggressive futility pruning, reenabled lazy eval, killer and history update on TT beta cutoff,"
+    },
+    {
+     "engine": "Amundsen",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Amundsen",
+     "source": "readme",
+     "evidence": "lazy evaluation added. Somewhat faster evaluation code. Better move"
+    },
+    {
+     "engine": "Myrddin",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Myrddin",
+     "source": "readme",
+     "evidence": "-- Removed lazy eval"
+    },
+    {
+     "engine": "GopherCheck",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/GopherCheck",
+     "source": "readme",
+     "evidence": "- Lazy evaluation - if the material balance is well outside the search window, evaluation is cut short and returns the material balance. This prevents the engin"
+    }
+   ]
+  },
+  "contempt": {
+   "label": "Contempt",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/Contempt_Factor",
+   "ref": null,
+   "engines": 37,
+   "engines_pct": 3.4,
+   "strength_limited": 7,
+   "strength_limited_pct": 12.7,
+   "negated_or_planned": 3,
+   "examples": [
+    {
+     "engine": "Arasan",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Arasan",
+     "source": "readme",
+     "evidence": "- Contempt - followed by a number from -200 to 200. This is the inverse of"
+    },
+    {
+     "engine": "Demolito",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Demolito",
+     "source": "readme",
+     "evidence": "- **Contempt**: This is used to score draws by chess rules in the search. These rules are: 3-move"
+    },
+    {
+     "engine": "DiscoCheck",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/DiscoCheck",
+     "source": "readme",
+     "evidence": "* Contempt (cp): Make DiscoCheck avoid draws (by chess rules) by scoring them -Contempt for the engine and"
+    },
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "| `Contempt` | 0 | −200 to 200 | draw aversion |"
+    }
+   ]
+  },
+  "asymeval": {
+   "label": "Asymmetric evaluation",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/Asymmetric_Evaluation",
+   "ref": null,
+   "engines": 0,
+   "engines_pct": 0.0,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 0,
+   "examples": []
+  },
+  "corrhist": {
+   "label": "Correction history",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/Static_Evaluation_Correction_History",
+   "ref": null,
+   "engines": 56,
+   "engines_pct": 5.2,
+   "strength_limited": 4,
+   "strength_limited_pct": 7.3,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- Late Move Reductions (LMR) with history, improving, correction history adjustments"
+    },
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "correction history + counter-moves + 2-ply continuation history."
+    },
+    {
+     "engine": "Peras",
+     "strength_limited": true,
+     "url": "https://github.com/FirePlank/Peras",
+     "source": "readme",
+     "evidence": "- **Move ordering**: staged move picking driven by butterfly, capture, continuation, pawn, low-ply and countermove histories, with correction history on the sta"
+    },
+    {
+     "engine": "Rodent",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Rodent",
+     "source": "readme",
+     "evidence": "- Correction history"
+    }
+   ]
+  },
+  "tuning": {
+   "label": "Texel / SPSA tuning",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/Texel's_Tuning_Method",
+   "ref": null,
+   "engines": 115,
+   "engines_pct": 10.6,
+   "strength_limited": 6,
+   "strength_limited_pct": 10.9,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Cheese",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheese",
+     "source": "readme",
+     "evidence": "Compile the tuner application used to optimize evaluation with Texel's tuning method"
+    },
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "> current SF18 NNUE network — 9 SPSA campaigns and dozens of tombstoned"
+    },
+    {
+     "engine": "Minic",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Minic",
+     "source": "readme",
+     "evidence": "* -tuning <file> : run an evaluation tuning session (a.k.a. Texel tunings)"
+    },
+    {
+     "engine": "Snaky",
+     "strength_limited": true,
+     "url": "https://github.com/Carleslc/Snaky",
+     "source": "readme",
+     "evidence": "tune <file>            Tune the weights of the Space style (or Full) with the positions of a training file (Texel's method)"
+    }
+   ]
+  },
+  "mobility": {
+   "label": "Mobility",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/Mobility",
+   "ref": null,
+   "engines": 163,
+   "engines_pct": 15.1,
+   "strength_limited": 6,
+   "strength_limited_pct": 10.9,
+   "negated_or_planned": 7,
+   "examples": [
+    {
+     "engine": "Cheops",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheops_(Miller)",
+     "source": "readme",
+     "evidence": "material, mobility, and motif features."
+    },
+    {
+     "engine": "Minic",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Minic",
+     "source": "readme",
+     "evidence": "- use mobility data in search"
+    },
+    {
+     "engine": "PyTuroChamp",
+     "strength_limited": true,
+     "url": "https://github.com/mdoege/PyTuroChamp",
+     "source": "readme",
+     "evidence": "| shannon   | Shannon chess engine | Pretty much an engine that maximizes mobility |"
+    },
+    {
+     "engine": "Rodent",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Rodent",
+     "source": "readme",
+     "evidence": "- HCE basis: material, piece/square tables, mobility, king safety, passers,"
+    }
+   ]
+  },
+  "kingsafety": {
+   "label": "King safety",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/King_Safety",
+   "ref": null,
+   "engines": 131,
+   "engines_pct": 12.1,
+   "strength_limited": 4,
+   "strength_limited_pct": 7.3,
+   "negated_or_planned": 8,
+   "examples": [
+    {
+     "engine": "Kreveta",
+     "strength_limited": true,
+     "url": "https://github.com/ZlomenyMesic/Kreveta",
+     "source": "readme",
+     "evidence": "- King safety based on friendly protection"
+    },
+    {
+     "engine": "Rodent",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Rodent",
+     "source": "readme",
+     "evidence": "- HCE basis: material, piece/square tables, mobility, king safety, passers,"
+    },
+    {
+     "engine": "Snail-Chess",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/SnailChess",
+     "source": "readme",
+     "evidence": "- Basic King Safety using king shield zone"
+    },
+    {
+     "engine": "Snaky",
+     "strength_limited": true,
+     "url": "https://github.com/Carleslc/Snaky",
+     "source": "readme",
+     "evidence": "pieces, space, territory, restriction, outposts, rook files, pawn structure and passed pawns, threats, king safety,"
+    }
+   ]
+  },
+  "pawnstruct": {
+   "label": "Pawn structure",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/Pawn_Structure",
+   "ref": null,
+   "engines": 145,
+   "engines_pct": 13.4,
+   "strength_limited": 4,
+   "strength_limited_pct": 7.3,
+   "negated_or_planned": 7,
+   "examples": [
+    {
+     "engine": "Kreveta",
+     "strength_limited": true,
+     "url": "https://github.com/ZlomenyMesic/Kreveta",
+     "source": "readme",
+     "evidence": "- Pawn structure (doubled, isolated, passed, etc.)"
+    },
+    {
+     "engine": "Rodent",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Rodent",
+     "source": "readme",
+     "evidence": "pawn structure, drawish endgames, interpolated game phase"
+    },
+    {
+     "engine": "Snail-Chess",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/SnailChess",
+     "source": "readme",
+     "evidence": "- Doubled pawns"
+    },
+    {
+     "engine": "Snaky",
+     "strength_limited": true,
+     "url": "https://github.com/Carleslc/Snaky",
+     "source": "readme",
+     "evidence": "pieces, space, territory, restriction, outposts, rook files, pawn structure and passed pawns, threats, king safety,"
+    }
+   ]
+  },
+  "passers": {
+   "label": "Passed pawns",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/Passed_Pawn",
+   "ref": null,
+   "engines": 106,
+   "engines_pct": 9.8,
+   "strength_limited": 3,
+   "strength_limited_pct": 5.5,
+   "negated_or_planned": 4,
+   "examples": [
+    {
+     "engine": "Rodent",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Rodent",
+     "source": "readme",
+     "evidence": "- HCE basis: material, piece/square tables, mobility, king safety, passers,"
+    },
+    {
+     "engine": "Snail-Chess",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/SnailChess",
+     "source": "readme",
+     "evidence": "- Passed pawns"
+    },
+    {
+     "engine": "Snaky",
+     "strength_limited": true,
+     "url": "https://github.com/Carleslc/Snaky",
+     "source": "readme",
+     "evidence": "pieces, space, territory, restriction, outposts, rook files, pawn structure and passed pawns, threats, king safety,"
+    },
+    {
+     "engine": "Amundsen",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Amundsen",
+     "source": "readme",
+     "evidence": "Fixed faulty detection of passed pawns. Improved quiescence search using a"
+    }
+   ]
+  },
+  "bishoppair": {
+   "label": "Bishop pair",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/Bishop_Pair",
+   "ref": null,
+   "engines": 76,
+   "engines_pct": 7.0,
+   "strength_limited": 2,
+   "strength_limited_pct": 3.6,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Reglisse",
+     "strength_limited": true,
+     "url": "https://github.com/PaulJeFi/reglisse-chess",
+     "source": "readme",
+     "evidence": "- [bishop pair] _to be readded_"
+    },
+    {
+     "engine": "Snaky",
+     "strength_limited": true,
+     "url": "https://github.com/Carleslc/Snaky",
+     "source": "readme",
+     "evidence": "bishop pair, tempo and winnable endgames, an incentive to make progress, and a cache of evaluations; `snaky eval` shows"
+    },
+    {
+     "engine": "ChessCore",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/ChessCore",
+     "source": "readme",
+     "evidence": "- Bishop pair, knight endgame discount, queen-out-early penalty"
+    },
+    {
+     "engine": "Myrddin",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Myrddin",
+     "source": "readme",
+     "evidence": "-- Adjusted bishop pair bonus from 20 to 30\\"
+    }
+   ]
+  },
+  "rookfile": {
+   "label": "Rook on open file",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/Rook_on_Open_File",
+   "ref": null,
+   "engines": 72,
+   "engines_pct": 6.7,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 4,
+   "examples": [
+    {
+     "engine": "Snaky",
+     "strength_limited": true,
+     "url": "https://github.com/Carleslc/Snaky",
+     "source": "readme",
+     "evidence": "| Open files and diagonals | 344 | 251 | 517 | 705 | **731** | 912 |"
+    },
+    {
+     "engine": "ChessCore",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/ChessCore",
+     "source": "readme",
+     "evidence": "- King safety: pawn-wall shelter, open / half-open file penalty, king-zone attack pressure (convex penalty for multiple attackers in the 3×3 box around the king"
+    },
+    {
+     "engine": "Myrddin",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Myrddin",
+     "source": "readme",
+     "evidence": "-- Evaluation improvements -- pawn structure, open and semi-open files for rooks, rooks behind passers, king safety\\"
+    },
+    {
+     "engine": "Fruit",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Fruit",
+     "source": "readme",
+     "evidence": "- added rook-on-open file bonus; thanks to Vincent Diepeveen for"
+    }
+   ]
+  },
+  "outposts": {
+   "label": "Outposts",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/Outposts",
+   "ref": null,
+   "engines": 39,
+   "engines_pct": 3.6,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 3,
+   "examples": [
+    {
+     "engine": "Snaky",
+     "strength_limited": true,
+     "url": "https://github.com/Carleslc/Snaky",
+     "source": "readme",
+     "evidence": "pieces, space, territory, restriction, outposts, rook files, pawn structure and passed pawns, threats, king safety,"
+    },
+    {
+     "engine": "Myrddin",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Myrddin",
+     "source": "readme",
+     "evidence": "-- Minor evaluation tuning adjustments, most notably adding code for Bishop Outposts and a significant increase for pawns on the 7th rank\\"
+    },
+    {
+     "engine": "FabChess",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/FabChess",
+     "source": "readme",
+     "evidence": "Outposts: 0 -> (0 , 0)"
+    },
+    {
+     "engine": "Grapefruit",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Grapefruit",
+     "source": "readme",
+     "evidence": "- improved evaluation of knight outpost   (eval_piece())"
+    }
+   ]
+  },
+  "kingtropism": {
+   "label": "King tropism",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/King_Safety#KingTropism",
+   "ref": null,
+   "engines": 13,
+   "engines_pct": 1.2,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 3,
+   "examples": [
+    {
+     "engine": "Amundsen",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Amundsen",
+     "source": "readme",
+     "evidence": "King safety added using simple tropism count after inspiration from Crafty."
+    },
+    {
+     "engine": "Gambit Fruit",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Gambit_Fruit",
+     "source": "readme",
+     "evidence": "* Values tuning (Pawn Shielding, King safety, tropism, etc);"
+    },
+    {
+     "engine": "Detroid",
+     "strength_limited": false,
+     "url": "https://github.com/ViktorC/DETROID",
+     "source": "readme",
+     "evidence": "The DETROID engine is a chess engine built onto the DETROID framework. It uses a magic bitboard-based position representation and [Zobrist] hashing. Furthermore"
+    },
+    {
+     "engine": "Euwe",
+     "strength_limited": false,
+     "url": "https://github.com/JoostHouben/Euwe-chess-engine",
+     "source": "readme",
+     "evidence": "- King tropism."
+    }
+   ]
+  },
+  "threats": {
+   "label": "Threats",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/Attacks",
+   "ref": null,
+   "engines": 18,
+   "engines_pct": 1.7,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "Rodent",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Rodent",
+     "source": "readme",
+     "evidence": "- HCE quirks: threat eval, additional pst tables based on central pawns position"
+    },
+    {
+     "engine": "Chess System Tal",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Chess_System_Tal",
+     "source": "readme",
+     "evidence": "\"Chess softwares, which been lowed their strenth to club level, seem not doing so. They reduce their playing strenth by hanging pieces or reduce searching time."
+    },
+    {
+     "engine": "Donna",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Donna",
+     "source": "readme",
+     "evidence": "- Threats and hanging pieces"
+    },
+    {
+     "engine": "Laser",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Laser",
+     "source": "readme",
+     "evidence": "- Basic threat detection and pressure on weak pieces"
+    }
+   ]
+  },
+  "tempo": {
+   "label": "Tempo bonus",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/Tempo",
+   "ref": null,
+   "engines": 53,
+   "engines_pct": 4.9,
+   "strength_limited": 2,
+   "strength_limited_pct": 3.6,
+   "negated_or_planned": 2,
+   "examples": [
+    {
+     "engine": "Snail-Chess",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/SnailChess",
+     "source": "readme",
+     "evidence": "- Tempo"
+    },
+    {
+     "engine": "Snaky",
+     "strength_limited": true,
+     "url": "https://github.com/Carleslc/Snaky",
+     "source": "readme",
+     "evidence": "bishop pair, tempo and winnable endgames, an incentive to make progress, and a cache of evaluations; `snaky eval` shows"
+    },
+    {
+     "engine": "ShashChess",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/ShashChess",
+     "source": "readme",
+     "evidence": "Match Play & Tournaments (OFF): Must be disabled during actual games or engine-vs-engine matches. In some specific scenarios (like pawn endgames), triangulating"
+    },
+    {
+     "engine": "ChessCore",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/ChessCore",
+     "source": "readme",
+     "evidence": "- Tempo bonus, castled bonus, lost-castling-rights penalty"
+    }
+   ]
+  },
+  "trapped": {
+   "label": "Trapped pieces",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/Trapped_Pieces",
+   "ref": null,
+   "engines": 9,
+   "engines_pct": 0.8,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 2,
+   "examples": [
+    {
+     "engine": "Snaky",
+     "strength_limited": true,
+     "url": "https://github.com/Carleslc/Snaky",
+     "source": "readme",
+     "evidence": "| | Opponent mobility | Space | Territory | Opponent trapped pieces | Wins behind in material |"
+    },
+    {
+     "engine": "Donna",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Donna",
+     "source": "readme",
+     "evidence": "- Trapped rooks and bishops"
+    },
+    {
+     "engine": "Chess4j",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Chess4j",
+     "source": "readme",
+     "evidence": "* Trapped bishop penalty"
+    },
+    {
+     "engine": "Dumb",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Dumb",
+     "source": "readme",
+     "evidence": "- simple evaluation function with knowledge limited to material, positional and tempo (no pawn structure, mobility, king safety, imbalance, trapped pieces, ...)"
+    }
+   ]
+  },
+  "center": {
+   "label": "Center control",
+   "area": "eval",
+   "cpw": "https://www.chessprogramming.org/Center_Control",
+   "ref": null,
+   "engines": 11,
+   "engines_pct": 1.0,
+   "strength_limited": 2,
+   "strength_limited_pct": 3.6,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Reglisse",
+     "strength_limited": true,
+     "url": "https://github.com/PaulJeFi/reglisse-chess",
+     "source": "readme",
+     "evidence": "- [Center control] : [Pawn center]"
+    },
+    {
+     "engine": "Snaky",
+     "strength_limited": true,
+     "url": "https://github.com/Carleslc/Snaky",
+     "source": "readme",
+     "evidence": "| Center control | 436 | 264 | 720 | **793** | **793** | 923 |"
+    },
+    {
+     "engine": "ShashChess",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/ShashChess",
+     "source": "readme",
+     "evidence": "| | Activity Metrics | Multiple factors: attacks, center control, king proximity | Not implemented | **Helps humans understand piece quality** |"
+    },
+    {
+     "engine": "Weini",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Weini",
+     "source": "readme",
+     "evidence": "* center control (too expensive)"
+    }
+   ]
+  },
+  "fixedlimits": {
+   "label": "Fixed depth/nodes/time",
+   "area": "time",
+   "cpw": "https://www.chessprogramming.org/Time_Management",
+   "ref": null,
+   "engines": 106,
+   "engines_pct": 9.8,
+   "strength_limited": 6,
+   "strength_limited_pct": 10.9,
+   "negated_or_planned": 2,
+   "examples": [
+    {
+     "engine": "Hypersion",
+     "strength_limited": true,
+     "url": "https://github.com/RenCopp/Hypersion",
+     "source": "readme",
+     "evidence": "Tactical suite results @ fixed depth (300 / 130 / 130 positions):"
+    },
+    {
+     "engine": "Kreveta",
+     "strength_limited": true,
+     "url": "https://github.com/ZlomenyMesic/Kreveta",
+     "source": "readme",
+     "evidence": "For user analysis, `go depth <d>` indicates how many moves to search ahead. Using `go movetime <t>` starts a search with a specified time budget. `go nodes <n>`"
+    },
+    {
+     "engine": "Minic",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Minic",
+     "source": "readme",
+     "evidence": "* First is classic play at fixed depth to generate PGN (I am using cutechess for this). Then convert it this way:"
+    },
+    {
+     "engine": "Patricia",
+     "strength_limited": true,
+     "url": "https://github.com/Adam-Kulju/Patricia",
+     "source": "readme",
+     "evidence": "`go movetime`: Search a position for a given number of milliseconds."
+    }
+   ]
+  },
+  "clock": {
+   "label": "Clock-based allocation",
+   "area": "time",
+   "cpw": "https://www.chessprogramming.org/Time_Management",
+   "ref": null,
+   "engines": 174,
+   "engines_pct": 16.1,
+   "strength_limited": 7,
+   "strength_limited_pct": 12.7,
+   "negated_or_planned": 10,
+   "examples": [
+    {
+     "engine": "Cheng",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheng",
+     "source": "readme",
+     "evidence": "v1.01\t\timproved time management"
+    },
+    {
+     "engine": "Kreveta",
+     "strength_limited": true,
+     "url": "https://github.com/ZlomenyMesic/Kreveta",
+     "source": "readme",
+     "evidence": "- Rational time management"
+    },
+    {
+     "engine": "Peras",
+     "strength_limited": true,
+     "url": "https://github.com/FirePlank/Peras",
+     "source": "readme",
+     "evidence": "go wtime 60000 btime 60000 winc 1000 binc 1000"
+    },
+    {
+     "engine": "Rodent",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Rodent",
+     "source": "readme",
+     "evidence": "| `uci.go`      | S12     | UCI protocol, time management, perft               |"
+    }
+   ]
+  },
+  "softhard": {
+   "label": "Soft/hard limits, stability",
+   "area": "time",
+   "cpw": "https://www.chessprogramming.org/Time_Management",
+   "ref": null,
+   "engines": 46,
+   "engines_pct": 4.3,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Snaky",
+     "strength_limited": true,
+     "url": "https://github.com/Carleslc/Snaky",
+     "source": "readme",
+     "evidence": "- **Time**: a soft limit (the clock over 30 moves plus 3/4 of the increment) and a hard limit (at most a third of the"
+    },
+    {
+     "engine": "NoaChess",
+     "strength_limited": false,
+     "url": "https://github.com/jcjimenezvadillo/NoaChess",
+     "source": "readme",
+     "evidence": "- **Time management**: soft/hard budgets, 85% increment use, conservative ply-adaptive horizon, movestogo support, GUI-latency safety margins, plus options that"
+    },
+    {
+     "engine": "Eloi",
+     "strength_limited": false,
+     "url": null,
+     "source": "readme",
+     "evidence": "Hard limits:"
+    },
+    {
+     "engine": "ZeroG",
+     "strength_limited": false,
+     "url": "https://github.com/KristianEkman/ZeroG",
+     "source": "readme",
+     "evidence": "- **Dynamic Soft Limit Scaling**: Reduces the soft limit by up to 50% if the best move at the root is highly stable across multiple depths, or expands it by 150"
+    }
+   ]
+  },
+  "ponder": {
+   "label": "Pondering",
+   "area": "time",
+   "cpw": "https://www.chessprogramming.org/Pondering",
+   "ref": null,
+   "engines": 146,
+   "engines_pct": 13.5,
+   "strength_limited": 14,
+   "strength_limited_pct": 25.5,
+   "negated_or_planned": 15,
+   "examples": [
+    {
+     "engine": "Arasan",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Arasan",
+     "source": "readme",
+     "evidence": "- Ponder - true to enable pondering (thinking on opponent's time)"
+    },
+    {
+     "engine": "Avalanche",
+     "strength_limited": true,
+     "url": "https://github.com/SnowballSH/Avalanche",
+     "source": "readme",
+     "evidence": "Supported features include Chess960 and Double Fischer Random Chess, pondering, MultiPV, `searchmoves`, `go mate`, Syzygy tablebases, `EvalFile`, a persistent N"
+    },
+    {
+     "engine": "CT800",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/CT800",
+     "source": "readme",
+     "evidence": "CT800 UCI version features complete UCI support except for pondering."
+    },
+    {
+     "engine": "Cheng",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheng",
+     "source": "readme",
+     "evidence": "SEE, transposition tables, adjustable skill level, insane time management, pondering, probably still many bugs,"
+    }
+   ]
+  },
+  "single": {
+   "label": "Single-threaded",
+   "area": "parallel",
+   "cpw": "https://www.chessprogramming.org/Parallel_Search",
+   "ref": null,
+   "engines": 47,
+   "engines_pct": 4.3,
+   "strength_limited": 2,
+   "strength_limited_pct": 3.6,
+   "negated_or_planned": 4,
+   "examples": [
+    {
+     "engine": "Demolito",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Demolito",
+     "source": "readme",
+     "evidence": "- **Threads**: Number of threads to use for SMP search (default 1 = single threaded search). Please"
+    },
+    {
+     "engine": "Minic",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Minic",
+     "source": "readme",
+     "evidence": "Here is 4 years of CCRL progress (single thread, chart as of 2022)"
+    },
+    {
+     "engine": "Chess System Tal",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Chess_System_Tal",
+     "source": "readme",
+     "evidence": "- **Fixed a per-`go` memory leak** in single-threaded search: an orphaned timer thread leaked roughly one thread stack per search (~40 KB/search), reclaimed onl"
+    },
+    {
+     "engine": "ChessCore",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/ChessCore",
+     "source": "readme",
+     "evidence": "The engine is a deliberately readable implementation — single-threaded, no"
+    }
+   ]
+  },
+  "lazysmp": {
+   "label": "Lazy SMP",
+   "area": "parallel",
+   "cpw": "https://www.chessprogramming.org/Lazy_SMP",
+   "ref": null,
+   "engines": 119,
+   "engines_pct": 11.0,
+   "strength_limited": 7,
+   "strength_limited_pct": 12.7,
+   "negated_or_planned": 10,
+   "examples": [
+    {
+     "engine": "Cheese",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheese",
+     "source": "readme",
+     "evidence": "lazy = Lazy SMP (Shared hashtable)."
+    },
+    {
+     "engine": "Gaia",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Gaia",
+     "source": "readme",
+     "evidence": "- Lazy SMP (shared TT, per-thread history)"
+    },
+    {
+     "engine": "Peras",
+     "strength_limited": true,
+     "url": "https://github.com/FirePlank/Peras",
+     "source": "readme",
+     "evidence": "- **Performance**: Lazy SMP up to 256 threads and time management that adapts to search stability."
+    },
+    {
+     "engine": "Sapling",
+     "strength_limited": true,
+     "url": "https://github.com/Timmoth/Sapling",
+     "source": "readme",
+     "evidence": "- Lazy SMP"
+    }
+   ]
+  },
+  "ybwc": {
+   "label": "YBWC",
+   "area": "parallel",
+   "cpw": "https://www.chessprogramming.org/Young_Brothers_Wait_Concept",
+   "ref": null,
+   "engines": 6,
+   "engines_pct": 0.6,
+   "strength_limited": 1,
+   "strength_limited_pct": 1.8,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "Cheese",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheese",
+     "source": "readme",
+     "evidence": "Maximum number of threads used for the search (1 to 64 on Windows, 1 to 256 on Linux, limited to 64 for YBWC)"
+    },
+    {
+     "engine": "Floyd",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Floyd",
+     "source": "readme",
+     "evidence": "still be added after v1.0. YBW-type is probably a bridge too far."
+    },
+    {
+     "engine": "GopherCheck",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/GopherCheck",
+     "source": "readme",
+     "evidence": "- Young-brothers wait concept (YBWC)"
+    },
+    {
+     "engine": "Scorpio",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Scorpio",
+     "source": "readme",
+     "evidence": "* [Parallel] : Experiments with parallel search algorithms such as YBW and ABDADA"
+    }
+   ]
+  },
+  "abdada": {
+   "label": "ABDADA",
+   "area": "parallel",
+   "cpw": "https://www.chessprogramming.org/ABDADA",
+   "ref": null,
+   "engines": 5,
+   "engines_pct": 0.5,
+   "strength_limited": 0,
+   "strength_limited_pct": 0.0,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "Scorpio",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Scorpio",
+     "source": "readme",
+     "evidence": "* [Parallel] : Experiments with parallel search algorithms such as YBW and ABDADA"
+    },
+    {
+     "engine": "Amy",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Amy",
+     "source": "readme",
+     "evidence": "Amy uses ABDADA as a parallel search algorithm. Please see 'search.c' for"
+    },
+    {
+     "engine": "Invictus",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Invictus",
+     "source": "readme",
+     "evidence": "* -one of the best multi-threading implementation out there, using a modified ABDADA algorithm that should scale well with large number of threads/processors"
+    },
+    {
+     "engine": "Detroid",
+     "strength_limited": false,
+     "url": "https://github.com/ViktorC/DETROID",
+     "source": "readme",
+     "evidence": "An important feature of the engine is its parallel search implementation. It is based on [Peter Österlund] and [Tom Kerrigan]'s descriptions of algorithms combi"
+    }
+   ]
+  },
+  "numa": {
+   "label": "NUMA awareness",
+   "area": "parallel",
+   "cpw": "https://www.chessprogramming.org/NUMA",
+   "ref": null,
+   "engines": 14,
+   "engines_pct": 1.3,
+   "strength_limited": 2,
+   "strength_limited_pct": 3.6,
+   "negated_or_planned": 0,
+   "examples": [
+    {
+     "engine": "Avalanche",
+     "strength_limited": true,
+     "url": "https://github.com/SnowballSH/Avalanche",
+     "source": "readme",
+     "evidence": "Supported features include Chess960 and Double Fischer Random Chess, pondering, MultiPV, `searchmoves`, `go mate`, Syzygy tablebases, `EvalFile`, a persistent N"
+    },
+    {
+     "engine": "Texel",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Texel",
+     "source": "readme",
+     "evidence": "NUMA"
+    },
+    {
+     "engine": "Ceres",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Ceres",
+     "source": "readme",
+     "evidence": "details such as memory alignment, false sharing, NUMA effects, locking primitives, prefetching,"
+    },
+    {
+     "engine": "Halogen",
+     "strength_limited": false,
+     "url": "https://chessprogramming.org/Halogen",
+     "source": "readme",
+     "evidence": "- **`make tournament`** - Tournament mode build with NUMA support"
+    }
+   ]
+  },
+  "strength": {
+   "label": "Strength limiting (skill level / UCI_Elo / caps / noise / random moves)",
+   "area": "strength",
+   "cpw": "https://www.chessprogramming.org/Playing_Strength",
+   "ref": "../strength-limited/strength-limiting-methods.md",
+   "engines": 127,
+   "engines_pct": 11.7,
+   "strength_limited": 39,
+   "strength_limited_pct": 70.9,
+   "negated_or_planned": 2,
+   "examples": [
+    {
+     "engine": "Alfil",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Alfil",
+     "source": "readme",
+     "evidence": ". UCI_LimitStrength and UCI_Elo ({0, 200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000, 2200, 2400, 2600, 2800, 3000})"
+    },
+    {
+     "engine": "Arasan",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Arasan",
+     "source": "readme",
+     "evidence": "- UCI_LimitStrength - true or false, default false. True to limit the engine"
+    },
+    {
+     "engine": "Avalanche",
+     "strength_limited": true,
+     "url": "https://github.com/SnowballSH/Avalanche",
+     "source": "readme",
+     "evidence": "Supported features include Chess960 and Double Fischer Random Chess, pondering, MultiPV, `searchmoves`, `go mate`, Syzygy tablebases, `EvalFile`, a persistent N"
+    },
+    {
+     "engine": "Beowulf",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Beowulf",
+     "source": "readme",
+     "evidence": "wskill<num>        - Set the skill level for white (1 to 10)"
+    }
+   ]
+  },
+  "uci": {
+   "label": "UCI",
+   "area": "iface",
+   "cpw": "https://www.chessprogramming.org/UCI",
+   "ref": null,
+   "engines": 744,
+   "engines_pct": 68.8,
+   "strength_limited": 36,
+   "strength_limited_pct": 65.5,
+   "negated_or_planned": 7,
+   "examples": [
+    {
+     "engine": "Alfil",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Alfil",
+     "source": "readme",
+     "evidence": "Chess Engine Alfil sf Battles in C# (new UCI protocol and modifications for Chessaria AICE ("
+    },
+    {
+     "engine": "Annie",
+     "strength_limited": true,
+     "url": "https://github.com/tsoj/Annie",
+     "source": "readme",
+     "evidence": "The resulting binary can be used as a UCI chess engine."
+    },
+    {
+     "engine": "Arasan",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Arasan",
+     "source": "readme",
+     "evidence": "[UCI]"
+    },
+    {
+     "engine": "Avalanche",
+     "strength_limited": true,
+     "url": "https://github.com/SnowballSH/Avalanche",
+     "source": "readme",
+     "evidence": "Avalanche is a strong UCI chess engine written in [Zig]."
+    }
+   ]
+  },
+  "xboard": {
+   "label": "XBoard / CECP",
+   "area": "iface",
+   "cpw": "https://www.chessprogramming.org/Chess_Engine_Communication_Protocol",
+   "ref": null,
+   "engines": 200,
+   "engines_pct": 18.5,
+   "strength_limited": 14,
+   "strength_limited_pct": 25.5,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Arasan",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Arasan",
+     "source": "readme",
+     "evidence": "with external interface programs such as [Winboard and"
+    },
+    {
+     "engine": "Beowulf",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Beowulf",
+     "source": "readme",
+     "evidence": "is also fully compatible with Xboard/Winboard graphical interfaces."
+    },
+    {
+     "engine": "CHEKMO-II",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/CHEKMO-II",
+     "source": "readme",
+     "evidence": "For example, in [XBoard], set up the engine with Menu – Engine – Edit Engine List. Append the following string to the list:"
+    },
+    {
+     "engine": "Cheese",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheese",
+     "source": "readme",
+     "evidence": "Cheese is a chess engine, running as a console based application compatible with UCI and CECP protocols."
+    }
+   ]
+  },
+  "book": {
+   "label": "Opening book",
+   "area": "iface",
+   "cpw": "https://www.chessprogramming.org/Opening_Book",
+   "ref": null,
+   "engines": 171,
+   "engines_pct": 15.8,
+   "strength_limited": 18,
+   "strength_limited_pct": 32.7,
+   "negated_or_planned": 24,
+   "examples": [
+    {
+     "engine": "Arasan",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Arasan",
+     "source": "readme",
+     "evidence": "produce more variety in book move selection."
+    },
+    {
+     "engine": "Beowulf",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Beowulf",
+     "source": "readme",
+     "evidence": "small opening book.  I do not provide a Makefile as I have found that the"
+    },
+    {
+     "engine": "CT800",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/CT800",
+     "source": "readme",
+     "evidence": "tools/booktool/ contains the opening book compiler that generates the"
+    },
+    {
+     "engine": "Cheese",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheese",
+     "source": "readme",
+     "evidence": "probe opening book for the FEN position"
+    }
+   ]
+  },
+  "polyglot": {
+   "label": "Polyglot book",
+   "area": "iface",
+   "cpw": "https://www.chessprogramming.org/PolyGlot",
+   "ref": null,
+   "engines": 100,
+   "engines_pct": 9.2,
+   "strength_limited": 13,
+   "strength_limited_pct": 23.6,
+   "negated_or_planned": 2,
+   "examples": [
+    {
+     "engine": "Alfil",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Alfil",
+     "source": "readme",
+     "evidence": "Book - Polyglot format (BOOK define)"
+    },
+    {
+     "engine": "CHEKMO-II",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/CHEKMO-II",
+     "source": "readme",
+     "evidence": "On Debian/Ubuntu you may will need to install `polyglot` manually:"
+    },
+    {
+     "engine": "Cheese",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Cheese",
+     "source": "readme",
+     "evidence": "Full path of the opening book, Polyglot format."
+    },
+    {
+     "engine": "CuckooChess",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/CuckooChess",
+     "source": "readme",
+     "evidence": "To use *polyglot*, *CTG* or *ABK* book files:"
+    }
+   ]
+  },
+  "c960flag": {
+   "label": "UCI_Chess960",
+   "area": "iface",
+   "cpw": "https://www.chessprogramming.org/Chess960",
+   "ref": null,
+   "engines": 61,
+   "engines_pct": 5.6,
+   "strength_limited": 5,
+   "strength_limited_pct": 9.1,
+   "negated_or_planned": 1,
+   "examples": [
+    {
+     "engine": "Demolito",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Demolito",
+     "source": "readme",
+     "evidence": "- **UCI_Chess960**: enable/disable Chess960 castling rules. Demolito accepts either Shredder-FEN"
+    },
+    {
+     "engine": "Minic",
+     "strength_limited": true,
+     "url": "https://chessprogramming.org/Minic",
+     "source": "readme",
+     "evidence": "* -FRC \\[0 or 1\\] (default is 0, protocol option is \"UCI_Chess960\"): activate Fischer random chess mode. This is useful for command-line analysis mode, for inst"
+    },
+    {
+     "engine": "Patricia",
+     "strength_limited": true,
+     "url": "https://github.com/Adam-Kulju/Patricia",
+     "source": "readme",
+     "evidence": "`UCI_Chess960`: Enabling this option allows Patricia to play FRC."
+    },
+    {
+     "engine": "Peras",
+     "strength_limited": true,
+     "url": "https://github.com/FirePlank/Peras",
+     "source": "readme",
+     "evidence": "| `UCI_Chess960`      | false      | Chess960 castling rules and notation           |"
+    }
+   ]
+  }
+ },
+ "note": "Counts = engines whose README states the feature (strength-area features also use reviewed option notes; source='options'). Absence means 'not stated', not 'absent'."
+}

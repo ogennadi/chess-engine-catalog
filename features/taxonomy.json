@@ -1,0 +1,2037 @@
+{
+ "about": "Chess engine feature taxonomy. 'match' = Python regexes (case-insensitive unless (?-i:...)) used by extract_readme_features.py on README text. 'cpw' = chessprogramming.org page title (may include #anchor); 'ref' = other reference URL. req = hard requirement, reqAny = needs one member of a group, soft = works better with, conflicts = mutually exclusive.",
+ "areas": [
+  {
+   "id": "board",
+   "label": "Board representation",
+   "color": "#dbeafe"
+  },
+  {
+   "id": "movegen",
+   "label": "Move generation",
+   "color": "#e0e7ff"
+  },
+  {
+   "id": "hash",
+   "label": "Hashing & tables",
+   "color": "#fae8ff"
+  },
+  {
+   "id": "search",
+   "label": "Search framework",
+   "color": "#dcfce7"
+  },
+  {
+   "id": "select",
+   "label": "Selectivity",
+   "color": "#ecfccb"
+  },
+  {
+   "id": "order",
+   "label": "Move ordering",
+   "color": "#fef9c3"
+  },
+  {
+   "id": "eval",
+   "label": "Evaluation",
+   "color": "#ffedd5"
+  },
+  {
+   "id": "time",
+   "label": "Time management",
+   "color": "#f1f5f9"
+  },
+  {
+   "id": "parallel",
+   "label": "Parallelism",
+   "color": "#e2e8f0"
+  },
+  {
+   "id": "strength",
+   "label": "Strength limiting",
+   "color": "#fee2e2"
+  },
+  {
+   "id": "iface",
+   "label": "Interface",
+   "color": "#ccfbf1"
+  }
+ ],
+ "groups": [
+  {
+   "id": "g_board",
+   "area": "board",
+   "kind": "one",
+   "required": true,
+   "label": "one of"
+  },
+  {
+   "id": "g_sliders",
+   "area": "board",
+   "kind": "any",
+   "label": "slider attacks (any)"
+  },
+  {
+   "id": "g_legal",
+   "area": "movegen",
+   "kind": "one",
+   "required": true,
+   "label": "one of"
+  },
+  {
+   "id": "g_makeundo",
+   "area": "movegen",
+   "kind": "one",
+   "required": true,
+   "label": "one of"
+  },
+  {
+   "id": "g_framework",
+   "area": "search",
+   "kind": "one",
+   "required": true,
+   "label": "one of",
+   "default": "negamax"
+  },
+  {
+   "id": "g_evalkind",
+   "area": "eval",
+   "kind": "one",
+   "required": true,
+   "label": "one of"
+  },
+  {
+   "id": "g_hce",
+   "area": "eval",
+   "kind": "any",
+   "label": "HCE terms (any)"
+  },
+  {
+   "id": "g_time",
+   "area": "time",
+   "kind": "one",
+   "required": true,
+   "label": "one of",
+   "default": "fixedlimits"
+  },
+  {
+   "id": "g_parallel",
+   "area": "parallel",
+   "kind": "one",
+   "required": true,
+   "label": "one of"
+  },
+  {
+   "id": "g_protocol",
+   "area": "iface",
+   "kind": "any",
+   "required": true,
+   "label": "protocols (any)"
+  },
+  {
+   "id": "g_egtbfmt",
+   "area": "hash",
+   "kind": "any",
+   "label": "tablebase formats (any)"
+  }
+ ],
+ "features": [
+  {
+   "id": "arr8x8",
+   "label": "8×8 array / mailbox",
+   "group": "g_board",
+   "cpw": "8x8 Board",
+   "match": [
+    "8\\s*x\\s*8 (board|array)",
+    "\\bmailbox\\b"
+   ]
+  },
+  {
+   "id": "mb10x12",
+   "label": "10×12 mailbox",
+   "group": "g_board",
+   "cpw": "10x12 Board",
+   "match": [
+    "10\\s*x\\s*12",
+    "12\\s*x\\s*10",
+    "120[- ]square"
+   ]
+  },
+  {
+   "id": "x88",
+   "label": "0x88",
+   "group": "g_board",
+   "cpw": "0x88",
+   "match": [
+    "\\b0x88\\b"
+   ]
+  },
+  {
+   "id": "bitboards",
+   "label": "Bitboards",
+   "group": "g_board",
+   "cpw": "Bitboards",
+   "match": [
+    "bit-?boards?"
+   ]
+  },
+  {
+   "id": "rotated",
+   "label": "Rotated BB",
+   "group": "g_sliders",
+   "req": [
+    "bitboards"
+   ],
+   "cpw": "Rotated Bitboards",
+   "match": [
+    "rotated bit-?boards?"
+   ]
+  },
+  {
+   "id": "magic",
+   "label": "Magic BB",
+   "group": "g_sliders",
+   "req": [
+    "bitboards"
+   ],
+   "cpw": "Magic Bitboards",
+   "match": [
+    "magic (bit-?boards?|move gen|numbers|lookup|attacks?)",
+    "(fancy|plain|black) magic"
+   ]
+  },
+  {
+   "id": "pext",
+   "label": "PEXT BB",
+   "group": "g_sliders",
+   "req": [
+    "bitboards"
+   ],
+   "cpw": "BMI2",
+   "match": [
+    "\\bpext\\b(?! instruction)",
+    "bmi2[^.\\n]{0,20}(bitboard|slid|attack|move gen|lookup)"
+   ]
+  },
+  {
+   "id": "kindergarten",
+   "label": "Kindergarten BB",
+   "group": "g_sliders",
+   "req": [
+    "bitboards"
+   ],
+   "cpw": "Kindergarten Bitboards",
+   "match": [
+    "kindergarten"
+   ]
+  },
+  {
+   "id": "piecelists",
+   "label": "Piece lists",
+   "area": "board",
+   "soft": [
+    "mb10x12",
+    "x88",
+    "arr8x8"
+   ],
+   "cpw": "Piece-Lists",
+   "match": [
+    "piece[- ]lists?"
+   ]
+  },
+  {
+   "id": "pseudolegal",
+   "label": "Pseudo-legal + check",
+   "group": "g_legal",
+   "cpw": "Pseudo-Legal Move",
+   "match": [
+    "pseudo[- ]?legal"
+   ]
+  },
+  {
+   "id": "legalgen",
+   "label": "Fully legal gen",
+   "group": "g_legal",
+   "cpw": "Legal Move",
+   "match": [
+    "(?<!pseudo-)(?<!pseudo )(?<!pseudo)\\blegal move gen",
+    "(fully|strictly) legal"
+   ]
+  },
+  {
+   "id": "makeunmake",
+   "label": "Make/unmake",
+   "group": "g_makeundo",
+   "cpw": "Unmake Move",
+   "match": [
+    "make[/ -]unmake",
+    "unmake ?move",
+    "undo ?move"
+   ]
+  },
+  {
+   "id": "copymake",
+   "label": "Copy-make",
+   "group": "g_makeundo",
+   "cpw": "Copy-Make",
+   "match": [
+    "copy[- ]?make"
+   ]
+  },
+  {
+   "id": "staged",
+   "label": "Staged generation",
+   "area": "movegen",
+   "soft": [
+    "ttmove",
+    "killers"
+   ],
+   "cpw": "Move Generation",
+   "match": [
+    "staged (move )?(gen|picker|picking)",
+    "move picker",
+    "lazy move gen"
+   ]
+  },
+  {
+   "id": "checkevasion",
+   "label": "Check evasion generator",
+   "area": "movegen",
+   "cpw": "Move Generation#Special Generators",
+   "match": [
+    "check evasions?"
+   ]
+  },
+  {
+   "id": "perft",
+   "label": "Perft",
+   "area": "movegen",
+   "cpw": "Perft",
+   "match": [
+    "\\bperft\\b"
+   ]
+  },
+  {
+   "id": "c960",
+   "label": "Chess960 castling",
+   "area": "movegen",
+   "cpw": "Chess960",
+   "match": [
+    "chess ?960",
+    "\\bd?frc\\b",
+    "fischer random"
+   ]
+  },
+  {
+   "id": "zobrist",
+   "label": "Zobrist keys",
+   "area": "hash",
+   "reqAny": [
+    "g_makeundo"
+   ],
+   "cpw": "Zobrist Hashing",
+   "match": [
+    "zobrist"
+   ]
+  },
+  {
+   "id": "poshist",
+   "label": "Position history",
+   "area": "hash",
+   "cpw": "Repetitions",
+   "match": [
+    "position history",
+    "history of positions"
+   ]
+  },
+  {
+   "id": "repetition",
+   "label": "Repetition detection",
+   "area": "hash",
+   "req": [
+    "poshist"
+   ],
+   "soft": [
+    "zobrist"
+   ],
+   "cpw": "Repetitions",
+   "match": [
+    "repetition",
+    "threefold",
+    "3-fold"
+   ]
+  },
+  {
+   "id": "cuckoo",
+   "label": "Upcoming repetition (cuckoo tables)",
+   "area": "hash",
+   "req": [
+    "zobrist",
+    "repetition"
+   ],
+   "ref": "http://marcelk.net/2013-04-06/paper/upcoming-rep-v2.pdf",
+   "match": [
+    "cuckoo (hash|table)",
+    "upcoming[- ]repetition",
+    "has_?game_?cycle",
+    "upcoming[- ]cycle"
+   ]
+  },
+  {
+   "id": "tt",
+   "label": "Transposition table",
+   "area": "hash",
+   "req": [
+    "zobrist"
+   ],
+   "cpw": "Transposition Table",
+   "match": [
+    "transposition",
+    "(?<!pawn )(?<!eval )(?<!evaluation )hash ?table",
+    "(?-i:\\bTT\\b)"
+   ]
+  },
+  {
+   "id": "ttreplace",
+   "label": "TT replacement / buckets",
+   "area": "hash",
+   "req": [
+    "tt"
+   ],
+   "cpw": "Transposition Table#Replacement Strategies",
+   "match": [
+    "replacement (scheme|strategy|policy)",
+    "bucket(s|ed)? (tt|hash|transposition)",
+    "\\baging\\b",
+    "always[- ]replace",
+    "depth[- ]preferred"
+   ]
+  },
+  {
+   "id": "etc",
+   "label": "Enhanced transposition cutoff",
+   "area": "hash",
+   "req": [
+    "tt"
+   ],
+   "cpw": "Enhanced Transposition Cutoff",
+   "match": [
+    "enhanced transposition cut"
+   ]
+  },
+  {
+   "id": "pawnhash",
+   "label": "Pawn hash table",
+   "area": "hash",
+   "req": [
+    "zobrist"
+   ],
+   "soft": [
+    "pawnstruct"
+   ],
+   "cpw": "Pawn Hash Table",
+   "match": [
+    "pawn (hash|cache)",
+    "pawn structure (hash|cache|table)"
+   ]
+  },
+  {
+   "id": "materialhash",
+   "label": "Material hash / tables",
+   "area": "hash",
+   "cpw": "Material Hash Table",
+   "match": [
+    "material (hash|tables?|key)",
+    "imbalance table"
+   ]
+  },
+  {
+   "id": "evalcache",
+   "label": "Eval cache",
+   "area": "hash",
+   "req": [
+    "zobrist"
+   ],
+   "cpw": "Evaluation Hash Table",
+   "match": [
+    "eval(uation)? (cache|hash)"
+   ]
+  },
+  {
+   "id": "egtb",
+   "label": "Endgame tablebases",
+   "area": "hash",
+   "cpw": "Endgame Tablebases",
+   "match": [
+    "tablebases?",
+    "syzygy",
+    "gaviota",
+    "nalimov",
+    "\\bfathom\\b",
+    "\\begtb"
+   ]
+  },
+  {
+   "id": "syzygy",
+   "label": "Syzygy",
+   "group": "g_egtbfmt",
+   "req": [
+    "egtb"
+   ],
+   "cpw": "Syzygy Bases",
+   "match": [
+    "syzygy",
+    "\\bfathom\\b",
+    "pyrrhic"
+   ]
+  },
+  {
+   "id": "gaviota",
+   "label": "Gaviota",
+   "group": "g_egtbfmt",
+   "req": [
+    "egtb"
+   ],
+   "cpw": "Gaviota Tablebases",
+   "match": [
+    "gaviota"
+   ]
+  },
+  {
+   "id": "nalimov",
+   "label": "Nalimov",
+   "group": "g_egtbfmt",
+   "req": [
+    "egtb"
+   ],
+   "cpw": "Nalimov Tablebases",
+   "match": [
+    "nalimov"
+   ]
+  },
+  {
+   "id": "bitbases",
+   "label": "Bitbases",
+   "group": "g_egtbfmt",
+   "req": [
+    "egtb"
+   ],
+   "cpw": "Endgame Bitbases",
+   "match": [
+    "bit[- ]?bases?"
+   ]
+  },
+  {
+   "id": "minimax",
+   "label": "Minimax",
+   "group": "g_framework",
+   "cpw": "Minimax",
+   "match": [
+    "\\bmini-?max\\b"
+   ]
+  },
+  {
+   "id": "negamax",
+   "label": "Negamax",
+   "group": "g_framework",
+   "cpw": "Negamax",
+   "match": [
+    "nega-?max"
+   ]
+  },
+  {
+   "id": "mcts",
+   "label": "Monte-Carlo tree search (UCT/PUCT)",
+   "group": "g_framework",
+   "cpw": "Monte-Carlo Tree Search",
+   "match": [
+    "monte[- ]carlo tree",
+    "(?-i:\\bMCTS\\b)",
+    "(?-i:\\bP?UCT\\b)"
+   ]
+  },
+  {
+   "id": "alphabeta",
+   "label": "Alpha-beta",
+   "area": "search",
+   "reqAny": [
+    "g_framework"
+   ],
+   "cpw": "Alpha-Beta",
+   "match": [
+    "alpha[- ]?beta",
+    "αβ"
+   ]
+  },
+  {
+   "id": "failsoft",
+   "label": "Fail-soft",
+   "area": "search",
+   "req": [
+    "alphabeta"
+   ],
+   "cpw": "Fail-Soft",
+   "match": [
+    "fail[- ]soft"
+   ]
+  },
+  {
+   "id": "pvs",
+   "label": "PVS / NegaScout",
+   "area": "search",
+   "req": [
+    "alphabeta"
+   ],
+   "soft": [
+    "ttmove",
+    "killers"
+   ],
+   "cpw": "Principal Variation Search",
+   "match": [
+    "principa?le? variation search",
+    "principal-variation search",
+    "(?-i:\\bPVS\\b)",
+    "nega-?scout"
+   ]
+  },
+  {
+   "id": "mtdf",
+   "label": "MTD(f)",
+   "area": "search",
+   "req": [
+    "alphabeta",
+    "tt",
+    "iterdeep"
+   ],
+   "conflicts": [
+    "pvs"
+   ],
+   "cpw": "MTD(f)",
+   "match": [
+    "mtd\\s*\\(f\\)",
+    "\\bmtdf\\b"
+   ]
+  },
+  {
+   "id": "iterdeep",
+   "label": "Iterative deepening",
+   "area": "search",
+   "cpw": "Iterative Deepening",
+   "match": [
+    "iterative deepening"
+   ]
+  },
+  {
+   "id": "aspiration",
+   "label": "Aspiration windows",
+   "area": "search",
+   "req": [
+    "iterdeep",
+    "alphabeta"
+   ],
+   "soft": [
+    "failsoft"
+   ],
+   "cpw": "Aspiration Windows",
+   "match": [
+    "aspiration"
+   ]
+  },
+  {
+   "id": "pvtrack",
+   "label": "PV tracking",
+   "area": "search",
+   "cpw": "Triangular PV-Table",
+   "match": [
+    "triangular pv",
+    "pv[- ]table",
+    "pv collection"
+   ]
+  },
+  {
+   "id": "multipv",
+   "label": "MultiPV",
+   "area": "search",
+   "req": [
+    "pvtrack"
+   ],
+   "cpw": "Principal Variation",
+   "match": [
+    "multi-?pv"
+   ]
+  },
+  {
+   "id": "qsearch",
+   "label": "Quiescence search",
+   "area": "search",
+   "req": [
+    "alphabeta"
+   ],
+   "cpw": "Quiescence Search",
+   "match": [
+    "quiescen",
+    "quiscen",
+    "quiesence",
+    "qsearch"
+   ]
+  },
+  {
+   "id": "standpat",
+   "label": "Stand-pat",
+   "area": "search",
+   "req": [
+    "qsearch"
+   ],
+   "cpw": "Quiescence Search#StandPat",
+   "match": [
+    "stand[- ]?pat"
+   ]
+  },
+  {
+   "id": "delta",
+   "label": "Delta pruning",
+   "area": "search",
+   "req": [
+    "qsearch"
+   ],
+   "cpw": "Delta Pruning",
+   "match": [
+    "delta pruning"
+   ]
+  },
+  {
+   "id": "qsee",
+   "label": "SEE pruning in QS",
+   "area": "search",
+   "req": [
+    "qsearch",
+    "see"
+   ],
+   "cpw": "Static Exchange Evaluation",
+   "match": [
+    "(qsearch|quiescence)[^.\\n]{0,25}(?-i:\\bSEE\\b)",
+    "(?-i:\\bSEE\\b)[^.\\n]{0,25}(qsearch|quiescence)"
+   ]
+  },
+  {
+   "id": "drawdetect",
+   "label": "Draw rules (50-move, insufficient material)",
+   "area": "search",
+   "cpw": "Draw",
+   "match": [
+    "draw detection",
+    "50[- ]move",
+    "fifty[- ]move",
+    "insufficient material"
+   ]
+  },
+  {
+   "id": "matesearch",
+   "label": "Mate search / proof-number",
+   "area": "search",
+   "cpw": "Mate Search",
+   "match": [
+    "proof[- ]number",
+    "mate (search|solver|finder)",
+    "(?-i:\\bPNS\\b)"
+   ]
+  },
+  {
+   "id": "nmp",
+   "label": "Null-move pruning",
+   "area": "select",
+   "req": [
+    "alphabeta"
+   ],
+   "cpw": "Null Move Pruning",
+   "match": [
+    "(?<!static )(?<!reverse )null[- ]?move"
+   ]
+  },
+  {
+   "id": "verifiednmp",
+   "label": "Verified null move",
+   "area": "select",
+   "req": [
+    "nmp"
+   ],
+   "cpw": "Null Move Pruning#Verification",
+   "match": [
+    "verif(ied|ication)[^.\\n]{0,20}null",
+    "null[^.\\n]{0,25}verification"
+   ]
+  },
+  {
+   "id": "rfp",
+   "label": "Reverse futility",
+   "area": "select",
+   "req": [
+    "alphabeta"
+   ],
+   "cpw": "Reverse Futility Pruning",
+   "match": [
+    "reverse futility",
+    "static null[- ]?move",
+    "(?-i:\\bRFP\\b)"
+   ]
+  },
+  {
+   "id": "futility",
+   "label": "Futility pruning",
+   "area": "select",
+   "req": [
+    "alphabeta"
+   ],
+   "cpw": "Futility Pruning",
+   "match": [
+    "(?<!reverse )futility"
+   ]
+  },
+  {
+   "id": "razoring",
+   "label": "Razoring",
+   "area": "select",
+   "req": [
+    "qsearch"
+   ],
+   "cpw": "Razoring",
+   "match": [
+    "razor"
+   ]
+  },
+  {
+   "id": "lmp",
+   "label": "Late move pruning",
+   "area": "select",
+   "req": [
+    "alphabeta"
+   ],
+   "soft": [
+    "history"
+   ],
+   "cpw": "Futility Pruning#MoveCountBasedPruning",
+   "match": [
+    "late[- ]move pruning",
+    "(?-i:\\bLMP\\b)",
+    "move ?count (based )?pruning"
+   ]
+  },
+  {
+   "id": "histprune",
+   "label": "History pruning",
+   "area": "select",
+   "req": [
+    "history"
+   ],
+   "cpw": "History Leaf Pruning",
+   "match": [
+    "history (based |leaf )?pruning"
+   ]
+  },
+  {
+   "id": "seeprune",
+   "label": "SEE pruning",
+   "area": "select",
+   "req": [
+    "see"
+   ],
+   "cpw": "Static Exchange Evaluation",
+   "match": [
+    "(?-i:\\bSEE\\b)[- ]?(based )?pruning",
+    "static exchange evaluation\\s*(\\(see\\))?\\s*pruning"
+   ]
+  },
+  {
+   "id": "probcut",
+   "label": "ProbCut",
+   "area": "select",
+   "req": [
+    "alphabeta"
+   ],
+   "soft": [
+    "tt"
+   ],
+   "cpw": "ProbCut",
+   "match": [
+    "prob-?cut"
+   ]
+  },
+  {
+   "id": "nmr",
+   "label": "Null-move reductions",
+   "area": "select",
+   "req": [
+    "alphabeta"
+   ],
+   "cpw": "Null Move Reductions",
+   "match": [
+    "null[- ]move reductions?"
+   ]
+  },
+  {
+   "id": "fhr",
+   "label": "Fail-high reductions",
+   "area": "select",
+   "req": [
+    "alphabeta"
+   ],
+   "cpw": "Fail-High Reductions",
+   "match": [
+    "fail[- ]high reductions?"
+   ]
+  },
+  {
+   "id": "aelprune",
+   "label": "AEL pruning",
+   "area": "select",
+   "req": [
+    "alphabeta"
+   ],
+   "cpw": "AEL-Pruning",
+   "match": [
+    "(?-i:\\bAEL\\b)[- ]?pruning"
+   ]
+  },
+  {
+   "id": "multicut",
+   "label": "Multi-cut",
+   "area": "select",
+   "req": [
+    "alphabeta"
+   ],
+   "cpw": "Multi-Cut",
+   "match": [
+    "multi-?cut"
+   ]
+  },
+  {
+   "id": "mdp",
+   "label": "Mate distance pruning",
+   "area": "select",
+   "req": [
+    "alphabeta"
+   ],
+   "cpw": "Mate Distance Pruning",
+   "match": [
+    "mate[- ]distance pruning"
+   ]
+  },
+  {
+   "id": "improving",
+   "label": "Improving heuristic",
+   "area": "select",
+   "soft": [
+    "rfp",
+    "lmp"
+   ],
+   "cpw": "Improving",
+   "match": [
+    "improving (heuristic|flag)",
+    "[\"'`]improving[\"'`]"
+   ]
+  },
+  {
+   "id": "lmr",
+   "label": "Late move reductions",
+   "area": "select",
+   "req": [
+    "alphabeta"
+   ],
+   "soft": [
+    "history",
+    "pvs"
+   ],
+   "cpw": "Late Move Reductions",
+   "match": [
+    "late[- ]move reductions?",
+    "(?-i:\\bLMR\\b)"
+   ]
+  },
+  {
+   "id": "iir",
+   "label": "Internal iter. reductions",
+   "area": "select",
+   "req": [
+    "tt",
+    "iterdeep"
+   ],
+   "cpw": "Internal Iterative Reductions",
+   "match": [
+    "internal iterative reductions?",
+    "(?-i:\\bIIR\\b)"
+   ]
+  },
+  {
+   "id": "checkext",
+   "label": "Check extensions",
+   "area": "select",
+   "cpw": "Check Extensions",
+   "match": [
+    "check extensions?",
+    "in-?check extension"
+   ]
+  },
+  {
+   "id": "singular",
+   "label": "Singular extensions",
+   "area": "select",
+   "req": [
+    "tt",
+    "alphabeta"
+   ],
+   "cpw": "Singular Extensions",
+   "match": [
+    "singular extensions?",
+    "singular (move|search)"
+   ]
+  },
+  {
+   "id": "multiext",
+   "label": "Double / negative extensions",
+   "area": "select",
+   "req": [
+    "singular"
+   ],
+   "cpw": "Singular Extensions",
+   "match": [
+    "double extensions?",
+    "negative extensions?",
+    "triple extensions?"
+   ]
+  },
+  {
+   "id": "otherext",
+   "label": "Recapture / passer ext.",
+   "area": "select",
+   "cpw": "Extensions",
+   "match": [
+    "recapture extensions?",
+    "passed[- ]pawn extensions?",
+    "one[- ]reply extensions?"
+   ]
+  },
+  {
+   "id": "onereply",
+   "label": "One-reply extension",
+   "area": "select",
+   "cpw": "One Reply Extensions",
+   "match": [
+    "(one|single)[- ]reply ext"
+   ]
+  },
+  {
+   "id": "matethreatext",
+   "label": "Mate-threat extension",
+   "area": "select",
+   "req": [
+    "nmp"
+   ],
+   "cpw": "Mate Threat Extensions",
+   "match": [
+    "mate[- ]threat ext"
+   ]
+  },
+  {
+   "id": "ttmove",
+   "label": "TT / hash move",
+   "area": "order",
+   "req": [
+    "tt"
+   ],
+   "cpw": "Hash Move",
+   "match": [
+    "hash move",
+    "tt[- ]move",
+    "transposition table move"
+   ]
+  },
+  {
+   "id": "mvvlva",
+   "label": "MVV-LVA",
+   "area": "order",
+   "cpw": "MVV-LVA",
+   "match": [
+    "mvv[- /]?lva"
+   ]
+  },
+  {
+   "id": "see",
+   "label": "Static exchange eval",
+   "area": "order",
+   "soft": [
+    "bitboards"
+   ],
+   "cpw": "Static Exchange Evaluation",
+   "match": [
+    "static exchange",
+    "(?-i:\\bSEE\\b)"
+   ]
+  },
+  {
+   "id": "killers",
+   "label": "Killer moves",
+   "area": "order",
+   "req": [
+    "alphabeta"
+   ],
+   "cpw": "Killer Heuristic",
+   "match": [
+    "killer"
+   ]
+  },
+  {
+   "id": "matekillers",
+   "label": "Mate killers",
+   "area": "order",
+   "req": [
+    "killers"
+   ],
+   "cpw": "Mate Killers",
+   "match": [
+    "mate[- ]killers?"
+   ]
+  },
+  {
+   "id": "history",
+   "label": "History heuristic",
+   "area": "order",
+   "req": [
+    "alphabeta"
+   ],
+   "cpw": "History Heuristic",
+   "match": [
+    "history heuristics?",
+    "butterfly history",
+    "quiet history",
+    "history table",
+    "history (move )?ordering"
+   ]
+  },
+  {
+   "id": "relhist",
+   "label": "Butterfly / relative history",
+   "area": "order",
+   "req": [
+    "history"
+   ],
+   "cpw": "Relative History Heuristic",
+   "match": [
+    "relative history",
+    "butterfly (board|table|heuristic|history)"
+   ]
+  },
+  {
+   "id": "conthist",
+   "label": "Continuation history",
+   "area": "order",
+   "req": [
+    "history"
+   ],
+   "cpw": "History Heuristic",
+   "match": [
+    "continuation histor",
+    "follow-?up history",
+    "counter-?move history",
+    "1-ply continuation"
+   ]
+  },
+  {
+   "id": "caphist",
+   "label": "Capture history",
+   "area": "order",
+   "req": [
+    "history"
+   ],
+   "cpw": "History Heuristic",
+   "match": [
+    "capture history",
+    "noisy history",
+    "tactical history"
+   ]
+  },
+  {
+   "id": "countermove",
+   "label": "Countermove",
+   "area": "order",
+   "req": [
+    "alphabeta"
+   ],
+   "cpw": "Countermove Heuristic",
+   "match": [
+    "counter[- ]?moves?(?! history)"
+   ]
+  },
+  {
+   "id": "lastbestreply",
+   "label": "Last best reply",
+   "area": "order",
+   "cpw": "Last Best Reply",
+   "match": [
+    "last[- ]best[- ]reply"
+   ]
+  },
+  {
+   "id": "refutation",
+   "label": "Refutation table",
+   "area": "order",
+   "cpw": "Refutation Table",
+   "match": [
+    "refutation table"
+   ]
+  },
+  {
+   "id": "iid",
+   "label": "Internal iter. deepening",
+   "area": "order",
+   "req": [
+    "iterdeep"
+   ],
+   "cpw": "Internal Iterative Deepening",
+   "match": [
+    "internal iterative deepening",
+    "(?-i:\\bIID\\b)"
+   ]
+  },
+  {
+   "id": "hce",
+   "label": "Handcrafted (HCE)",
+   "group": "g_evalkind",
+   "cpw": "Evaluation",
+   "match": [
+    "hand[- ]?crafted",
+    "(?-i:\\bHCE\\b)",
+    "classical eval"
+   ]
+  },
+  {
+   "id": "pesto",
+   "label": "PeSTO tables",
+   "group": "g_evalkind",
+   "req": [
+    "tapered"
+   ],
+   "cpw": "PeSTO's Evaluation Function",
+   "match": [
+    "pesto"
+   ]
+  },
+  {
+   "id": "nnue",
+   "label": "NNUE",
+   "group": "g_evalkind",
+   "soft": [
+    "increval"
+   ],
+   "cpw": "NNUE",
+   "match": [
+    "\\bnnue\\b",
+    "halfkp",
+    "halfka"
+   ]
+  },
+  {
+   "id": "othernn",
+   "label": "Other neural net",
+   "group": "g_evalkind",
+   "cpw": "Neural Networks",
+   "excludeIf": [
+    "nnue"
+   ],
+   "match": [
+    "neural net",
+    "policy network",
+    "value network"
+   ]
+  },
+  {
+   "id": "material",
+   "label": "Material",
+   "area": "eval",
+   "cpw": "Material",
+   "match": [
+    "\\bmaterial\\b"
+   ]
+  },
+  {
+   "id": "pst",
+   "label": "Piece-square tables",
+   "area": "eval",
+   "req": [
+    "material"
+   ],
+   "cpw": "Piece-Square Tables",
+   "match": [
+    "piece[- ]square",
+    "(?-i:\\bPSTs?\\b)",
+    "(?-i:\\bPSQTs?\\b)"
+   ]
+  },
+  {
+   "id": "tapered",
+   "label": "Tapered eval",
+   "area": "eval",
+   "req": [
+    "pst"
+   ],
+   "cpw": "Tapered Eval",
+   "match": [
+    "tapered",
+    "phase interpolation"
+   ]
+  },
+  {
+   "id": "nnue_kingbuckets",
+   "label": "NNUE king/input buckets",
+   "area": "eval",
+   "req": [
+    "nnue"
+   ],
+   "cpw": "NNUE",
+   "match": [
+    "king buckets?",
+    "input buckets?",
+    "halfk[ap]"
+   ]
+  },
+  {
+   "id": "nnue_outbuckets",
+   "label": "NNUE output buckets",
+   "area": "eval",
+   "req": [
+    "nnue"
+   ],
+   "cpw": "NNUE",
+   "match": [
+    "output buckets?",
+    "material buckets?"
+   ]
+  },
+  {
+   "id": "nnue_threats",
+   "label": "NNUE threat inputs",
+   "area": "eval",
+   "req": [
+    "nnue"
+   ],
+   "cpw": "NNUE",
+   "match": [
+    "threat[- ](inputs?|features?)",
+    "threat[- ]input"
+   ]
+  },
+  {
+   "id": "nnue_mirror",
+   "label": "NNUE horizontal mirroring",
+   "area": "eval",
+   "req": [
+    "nnue"
+   ],
+   "cpw": "NNUE",
+   "match": [
+    "horizontal(ly)? mirror"
+   ]
+  },
+  {
+   "id": "simd",
+   "label": "SIMD inference (AVX2/NEON)",
+   "area": "eval",
+   "soft": [
+    "nnue"
+   ],
+   "cpw": "SIMD and SWAR Techniques",
+   "match": [
+    "\\bsimd\\b",
+    "\\bavx-?(2|512)\\b[^.\\n]{0,30}(infer|eval|nnue|accumul)",
+    "(infer|eval|nnue|accumul)\\w*[^.\\n]{0,30}\\bavx-?(2|512)\\b"
+   ]
+  },
+  {
+   "id": "increval",
+   "label": "Incremental eval",
+   "area": "eval",
+   "reqAny": [
+    "g_makeundo"
+   ],
+   "cpw": "Incremental Updates",
+   "match": [
+    "incremental(ly)? (eval|updat|accumulat|material|psqt|pst)",
+    "efficiently updat"
+   ]
+  },
+  {
+   "id": "lazyeval",
+   "label": "Lazy evaluation",
+   "area": "eval",
+   "cpw": "Lazy Evaluation",
+   "match": [
+    "lazy eval"
+   ]
+  },
+  {
+   "id": "contempt",
+   "label": "Contempt",
+   "area": "eval",
+   "cpw": "Contempt Factor",
+   "match": [
+    "contempt"
+   ]
+  },
+  {
+   "id": "asymeval",
+   "label": "Asymmetric evaluation",
+   "area": "eval",
+   "cpw": "Asymmetric Evaluation",
+   "match": [
+    "asymmetric eval"
+   ]
+  },
+  {
+   "id": "corrhist",
+   "label": "Correction history",
+   "area": "eval",
+   "soft": [
+    "rfp"
+   ],
+   "cpw": "Static Evaluation Correction History",
+   "match": [
+    "correction histor",
+    "eval(uation)? correction"
+   ]
+  },
+  {
+   "id": "tuning",
+   "label": "Texel / SPSA tuning",
+   "area": "eval",
+   "soft": [
+    "hce"
+   ],
+   "cpw": "Texel's Tuning Method",
+   "match": [
+    "texel",
+    "(?-i:\\bSPSA\\b)",
+    "automatic(ally)? tun",
+    "gradient descent"
+   ]
+  },
+  {
+   "id": "mobility",
+   "label": "Mobility",
+   "group": "g_hce",
+   "req": [
+    "hce"
+   ],
+   "soft": [
+    "bitboards"
+   ],
+   "cpw": "Mobility",
+   "match": [
+    "mobility"
+   ]
+  },
+  {
+   "id": "kingsafety",
+   "label": "King safety",
+   "group": "g_hce",
+   "req": [
+    "hce"
+   ],
+   "soft": [
+    "bitboards"
+   ],
+   "cpw": "King Safety",
+   "match": [
+    "king safety",
+    "pawn shield",
+    "king shelter",
+    "pawn storm"
+   ]
+  },
+  {
+   "id": "pawnstruct",
+   "label": "Pawn structure",
+   "group": "g_hce",
+   "req": [
+    "hce"
+   ],
+   "soft": [
+    "pawnhash"
+   ],
+   "cpw": "Pawn Structure",
+   "match": [
+    "pawn structure",
+    "doubled pawns?",
+    "isolated pawns?",
+    "backward pawns?",
+    "pawn islands?",
+    "connected pawns?"
+   ]
+  },
+  {
+   "id": "passers",
+   "label": "Passed pawns",
+   "group": "g_hce",
+   "req": [
+    "hce"
+   ],
+   "cpw": "Passed Pawn",
+   "match": [
+    "passed pawns?",
+    "\\bpassers?\\b"
+   ]
+  },
+  {
+   "id": "bishoppair",
+   "label": "Bishop pair",
+   "group": "g_hce",
+   "req": [
+    "hce"
+   ],
+   "cpw": "Bishop Pair",
+   "match": [
+    "bishop pair"
+   ]
+  },
+  {
+   "id": "rookfile",
+   "label": "Rook on open file",
+   "group": "g_hce",
+   "req": [
+    "hce"
+   ],
+   "cpw": "Rook on Open File",
+   "match": [
+    "rooks? on (the |an )?(semi-?)?open files?",
+    "(semi-)?open file"
+   ]
+  },
+  {
+   "id": "outposts",
+   "label": "Outposts",
+   "group": "g_hce",
+   "req": [
+    "hce"
+   ],
+   "cpw": "Outposts",
+   "match": [
+    "outposts?"
+   ]
+  },
+  {
+   "id": "kingtropism",
+   "label": "King tropism",
+   "group": "g_hce",
+   "req": [
+    "hce"
+   ],
+   "cpw": "King Safety#KingTropism",
+   "match": [
+    "tropism"
+   ]
+  },
+  {
+   "id": "threats",
+   "label": "Threats",
+   "group": "g_hce",
+   "req": [
+    "hce"
+   ],
+   "cpw": "Attacks",
+   "match": [
+    "threats? (eval|bonus|penalt|terms?|detection)",
+    "(bonus|penalt)\\w*[^.\\n]{0,20}threats?",
+    "threat eval",
+    "hanging pieces?",
+    "attacked by (a )?(lesser|pawn)"
+   ]
+  },
+  {
+   "id": "tempo",
+   "label": "Tempo bonus",
+   "group": "g_hce",
+   "req": [
+    "hce"
+   ],
+   "cpw": "Tempo",
+   "match": [
+    "\\btempo\\b"
+   ]
+  },
+  {
+   "id": "trapped",
+   "label": "Trapped pieces",
+   "group": "g_hce",
+   "req": [
+    "hce"
+   ],
+   "cpw": "Trapped Pieces",
+   "match": [
+    "trapped (pieces?|bishops?|rooks?|knights?)"
+   ]
+  },
+  {
+   "id": "center",
+   "label": "Center control",
+   "group": "g_hce",
+   "req": [
+    "hce"
+   ],
+   "cpw": "Center Control",
+   "match": [
+    "cent(er|re) control"
+   ]
+  },
+  {
+   "id": "fixedlimits",
+   "label": "Fixed depth/nodes/time",
+   "group": "g_time",
+   "cpw": "Time Management",
+   "match": [
+    "\\bmovetime\\b",
+    "fixed (depth|nodes|time)"
+   ]
+  },
+  {
+   "id": "clock",
+   "label": "Clock-based allocation",
+   "group": "g_time",
+   "req": [
+    "iterdeep"
+   ],
+   "cpw": "Time Management",
+   "match": [
+    "time management",
+    "time allocation",
+    "\\bwtime\\b"
+   ]
+  },
+  {
+   "id": "softhard",
+   "label": "Soft/hard limits, stability",
+   "area": "time",
+   "req": [
+    "clock"
+   ],
+   "cpw": "Time Management",
+   "match": [
+    "soft (time )?(limit|bound)",
+    "hard (time )?(limit|bound)",
+    "soft/hard",
+    "node[- ]?tm\\b",
+    "(best[- ])?move stability"
+   ]
+  },
+  {
+   "id": "ponder",
+   "label": "Pondering",
+   "area": "time",
+   "reqAny": [
+    "g_protocol"
+   ],
+   "cpw": "Pondering",
+   "match": [
+    "ponder"
+   ]
+  },
+  {
+   "id": "single",
+   "label": "Single-threaded",
+   "group": "g_parallel",
+   "cpw": "Parallel Search",
+   "match": [
+    "single[- ]thread"
+   ]
+  },
+  {
+   "id": "lazysmp",
+   "label": "Lazy SMP",
+   "group": "g_parallel",
+   "req": [
+    "tt"
+   ],
+   "cpw": "Lazy SMP",
+   "match": [
+    "lazy ?smp"
+   ]
+  },
+  {
+   "id": "ybwc",
+   "label": "YBWC",
+   "group": "g_parallel",
+   "req": [
+    "alphabeta"
+   ],
+   "cpw": "Young Brothers Wait Concept",
+   "match": [
+    "(?-i:\\bYBWC?\\b)",
+    "young brothers"
+   ]
+  },
+  {
+   "id": "abdada",
+   "label": "ABDADA",
+   "group": "g_parallel",
+   "req": [
+    "tt"
+   ],
+   "cpw": "ABDADA",
+   "match": [
+    "abdada"
+   ]
+  },
+  {
+   "id": "numa",
+   "label": "NUMA awareness",
+   "area": "parallel",
+   "soft": [
+    "lazysmp"
+   ],
+   "cpw": "NUMA",
+   "match": [
+    "(?-i:\\bNUMA\\b)"
+   ]
+  },
+  {
+   "id": "strength",
+   "label": "Strength limiting (skill level / UCI_Elo / caps / noise / random moves)",
+   "area": "strength",
+   "ref": "../strength-limited/strength-limiting-methods.md",
+   "cpw": "Playing Strength",
+   "match": [
+    "(limit|cap|restrict)\\w* (the )?(search )?depth",
+    "depth[- ]limited (play|levels?|strength)",
+    "(max|maximum) (search )?depth[^.\\n]{0,30}(level|skill|strength|elo)",
+    "(level|skill|elo)[^.\\n]{0,40}(max(imum)? )?(search )?depth",
+    "depth (limit|cap)",
+    "(limit|cap)\\w* (the )?(number of )?nodes",
+    "node[- ]limit",
+    "(level|skill|elo)[^.\\n]{0,40}nodes",
+    "nodes? (limit|cap|budget)",
+    "(random|noise)[^.\\n]{0,25}eval",
+    "eval\\w*[^.\\n]{0,25}(noise|randomi)",
+    "eval(uation)? (noise|error|randomi)",
+    "(add|inject)\\w* (random )?noise",
+    "random mover",
+    "plays? (a )?random (legal )?moves?",
+    "random (legal )?move (selection|choice|picking)",
+    "picks? (a )?random",
+    "multi-?pv[^.\\n]{0,60}(pick|choose|select|weak|skill)",
+    "(deliberate|intentional|random|occasional)\\w* blunders?",
+    "blunders? (rate|chance|probability|percent|on purpose)",
+    "(deliberate|intentional) (mistake|error)s?",
+    "on purpose",
+    "move vision",
+    "prun\\w* (random|some) moves",
+    "ignor\\w* (random|some) (moves|captures)",
+    "(level|skill|weak)[^.\\n]{0,40}overlook",
+    "skill[ _-]?level",
+    "difficulty level",
+    "uci_?elo",
+    "limit_?strength",
+    "(skill|level|strength|weak)[^.\\n]{0,40}\\bseed",
+    "\\bseed\\b[^.\\n]{0,40}(skill|level|strength|weak)"
+   ]
+  },
+  {
+   "id": "uci",
+   "label": "UCI",
+   "group": "g_protocol",
+   "cpw": "UCI",
+   "match": [
+    "\\buci\\b"
+   ]
+  },
+  {
+   "id": "xboard",
+   "label": "XBoard / CECP",
+   "group": "g_protocol",
+   "cpw": "Chess Engine Communication Protocol",
+   "match": [
+    "xboard",
+    "winboard",
+    "\\bcecp\\b"
+   ]
+  },
+  {
+   "id": "book",
+   "label": "Opening book",
+   "area": "iface",
+   "cpw": "Opening Book",
+   "match": [
+    "opening book",
+    "\\bbook moves?\\b"
+   ]
+  },
+  {
+   "id": "polyglot",
+   "label": "Polyglot book",
+   "area": "iface",
+   "req": [
+    "book",
+    "zobrist"
+   ],
+   "cpw": "PolyGlot",
+   "match": [
+    "polyglot"
+   ]
+  },
+  {
+   "id": "c960flag",
+   "label": "UCI_Chess960",
+   "area": "iface",
+   "req": [
+    "c960",
+    "uci"
+   ],
+   "cpw": "Chess960",
+   "match": [
+    "uci_chess960"
+   ]
+  }
+ ],
+ "presets": {
+  "Minimal (Pedagog)": [
+   "x88",
+   "pseudolegal",
+   "makeunmake",
+   "negamax",
+   "alphabeta",
+   "iterdeep",
+   "pvtrack",
+   "hce",
+   "material",
+   "pst",
+   "tapered",
+   "zobrist",
+   "poshist",
+   "repetition",
+   "clock",
+   "single",
+   "uci",
+   "c960",
+   "c960flag",
+   "perft",
+   "strength"
+  ],
+  "Classic club engine": [
+   "mb10x12",
+   "piecelists",
+   "pseudolegal",
+   "makeunmake",
+   "negamax",
+   "alphabeta",
+   "failsoft",
+   "pvs",
+   "iterdeep",
+   "aspiration",
+   "pvtrack",
+   "qsearch",
+   "standpat",
+   "delta",
+   "drawdetect",
+   "zobrist",
+   "poshist",
+   "repetition",
+   "tt",
+   "ttreplace",
+   "pawnhash",
+   "ttmove",
+   "mvvlva",
+   "killers",
+   "history",
+   "nmp",
+   "checkext",
+   "hce",
+   "material",
+   "pst",
+   "tapered",
+   "mobility",
+   "kingsafety",
+   "pawnstruct",
+   "passers",
+   "bishoppair",
+   "rookfile",
+   "clock",
+   "single",
+   "uci",
+   "xboard",
+   "book"
+  ],
+  "Modern top engine": [
+   "bitboards",
+   "magic",
+   "pext",
+   "pseudolegal",
+   "makeunmake",
+   "staged",
+   "perft",
+   "c960",
+   "negamax",
+   "alphabeta",
+   "failsoft",
+   "pvs",
+   "iterdeep",
+   "aspiration",
+   "pvtrack",
+   "qsearch",
+   "standpat",
+   "qsee",
+   "drawdetect",
+   "zobrist",
+   "poshist",
+   "repetition",
+   "tt",
+   "ttreplace",
+   "egtb",
+   "ttmove",
+   "mvvlva",
+   "see",
+   "killers",
+   "history",
+   "conthist",
+   "caphist",
+   "countermove",
+   "nmp",
+   "rfp",
+   "futility",
+   "razoring",
+   "lmp",
+   "histprune",
+   "seeprune",
+   "probcut",
+   "mdp",
+   "improving",
+   "lmr",
+   "iir",
+   "checkext",
+   "singular",
+   "multiext",
+   "nnue",
+   "material",
+   "increval",
+   "corrhist",
+   "clock",
+   "softhard",
+   "ponder",
+   "lazysmp",
+   "uci",
+   "multipv",
+   "c960flag",
+   "book",
+   "polyglot",
+   "strength"
+  ],
+  "Maximal (every compatible feature)": [
+   "bitboards",
+   "rotated",
+   "magic",
+   "pext",
+   "kindergarten",
+   "piecelists",
+   "pseudolegal",
+   "makeunmake",
+   "staged",
+   "checkevasion",
+   "perft",
+   "c960",
+   "zobrist",
+   "poshist",
+   "repetition",
+   "cuckoo",
+   "tt",
+   "ttreplace",
+   "etc",
+   "pawnhash",
+   "materialhash",
+   "evalcache",
+   "egtb",
+   "syzygy",
+   "gaviota",
+   "nalimov",
+   "bitbases",
+   "negamax",
+   "alphabeta",
+   "failsoft",
+   "pvs",
+   "iterdeep",
+   "aspiration",
+   "pvtrack",
+   "multipv",
+   "qsearch",
+   "standpat",
+   "delta",
+   "qsee",
+   "drawdetect",
+   "matesearch",
+   "nmp",
+   "verifiednmp",
+   "rfp",
+   "futility",
+   "razoring",
+   "lmp",
+   "histprune",
+   "seeprune",
+   "probcut",
+   "nmr",
+   "fhr",
+   "aelprune",
+   "multicut",
+   "mdp",
+   "improving",
+   "lmr",
+   "iir",
+   "checkext",
+   "singular",
+   "multiext",
+   "otherext",
+   "onereply",
+   "matethreatext",
+   "ttmove",
+   "mvvlva",
+   "see",
+   "killers",
+   "matekillers",
+   "history",
+   "relhist",
+   "conthist",
+   "caphist",
+   "countermove",
+   "lastbestreply",
+   "refutation",
+   "iid",
+   "hce",
+   "material",
+   "pst",
+   "tapered",
+   "simd",
+   "increval",
+   "lazyeval",
+   "contempt",
+   "asymeval",
+   "corrhist",
+   "tuning",
+   "mobility",
+   "kingsafety",
+   "pawnstruct",
+   "passers",
+   "bishoppair",
+   "rookfile",
+   "outposts",
+   "kingtropism",
+   "threats",
+   "tempo",
+   "trapped",
+   "center",
+   "clock",
+   "softhard",
+   "ponder",
+   "lazysmp",
+   "numa",
+   "strength",
+   "uci",
+   "xboard",
+   "book",
+   "polyglot",
+   "c960flag"
+  ]
+ }
+}

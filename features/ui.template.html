@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Engine Builder – feature selector (sketch)</title>
+<style>
+  :root { --auto:#7c3aed; --warn:#b45309; --err:#dc2626; --ok:#15803d; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:13px/1.35 system-ui, Segoe UI, Helvetica, sans-serif; color:#0f172a; background:#f8fafc; }
+  header { display:flex; gap:12px; align-items:center; padding:10px 16px; background:#0f172a; color:white; }
+  header h1 { font-size:16px; margin:0 12px 0 0; }
+  header select, header button { font:inherit; padding:4px 8px; border-radius:6px; border:1px solid #475569; background:#1e293b; color:white; }
+  header .spacer { flex:1; }
+  main { display:grid; grid-template-columns: 1fr 340px; gap:12px; padding:12px; }
+  #areas { columns: 3 300px; column-gap:12px; }
+  .area { break-inside: avoid; margin:0 0 12px; border-radius:10px; border:1px solid #cbd5e1; padding:8px 10px; }
+  .area h2 { margin:0 0 6px; font-size:13px; display:flex; justify-content:space-between; }
+  .area h2 small { font-weight:normal; color:#475569; }
+  .area h2.toggle { cursor:pointer; user-select:none; margin:0; }
+  .area .summary { font-size:11px; color:#334155; margin-top:4px; }
+  fieldset { border:1px dashed #94a3b8; border-radius:8px; margin:4px 0 6px; padding:2px 8px 4px; }
+  fieldset.one { border-color:#1d4ed8; }
+  legend { font-size:11px; font-style:italic; color:#475569; padding:0 4px; }
+  .feat { display:flex; align-items:baseline; gap:6px; padding:1px 0; flex-wrap:wrap; }
+  .feat label { cursor:pointer; }
+  .feat.auto label { color:var(--auto); }
+  .feat.auto label::after { content:" auto"; font-size:10px; background:#ede9fe; border-radius:4px; padding:0 4px; margin-left:4px; }
+  .feat.blocked label { color:#94a3b8; text-decoration:line-through; cursor:not-allowed; }
+  .hint { font-size:11px; color:var(--warn); }
+  .hint a { color:inherit; cursor:pointer; text-decoration:underline dotted; }
+  .why { font-size:11px; color:#64748b; }
+  .ref { font-size:10px; text-decoration:none; color:#1d4ed8; }
+  .eg { flex-basis:100%; padding-left:20px; font-size:10.5px; color:#475569; }
+  .eg a { color:#334155; }
+  body.compact .eg { display:none; }
+  aside { position:sticky; top:12px; align-self:start; display:flex; flex-direction:column; gap:12px; }
+  .card { background:white; border:1px solid #cbd5e1; border-radius:10px; padding:10px 12px; }
+  .card h3 { margin:0 0 6px; font-size:13px; }
+  .bar { display:flex; align-items:center; gap:6px; font-size:11px; margin:2px 0; }
+  .bar span:first-child { width:110px; color:#475569; }
+  .bar .track { flex:1; height:8px; background:#e2e8f0; border-radius:4px; overflow:hidden; }
+  .bar .fill { height:100%; }
+  ul.issues { margin:0; padding-left:16px; }
+  ul.issues li.err { color:var(--err); }
+  ul.issues li.warn { color:var(--warn); }
+  ul.issues li.ok { color:var(--ok); list-style:"✓ "; }
+  pre { margin:0; font-size:11px; background:#f1f5f9; padding:6px; border-radius:6px; max-height:180px; overflow:auto; white-space:pre-wrap; }
+  .play { display:flex; gap:6px; flex-wrap:wrap; }
+  .play button { font:inherit; padding:6px 10px; border-radius:6px; border:1px solid #0f172a; background:#0f172a; color:white; cursor:pointer; }
+  .play button.secondary { background:white; color:#0f172a; }
+  .play select { font:inherit; }
+</style>
+</head>
+<body>
+<header>
+  <h1>♞ Engine Builder <small style="font-weight:normal;opacity:.7">feature selector sketch</small></h1>
+  <label>Preset <select id="preset"><option value="">— custom —</option></select></label>
+  <button id="reset">Reset to default</button>
+  <button id="expandAll">Expand/collapse all</button>
+  <label><input type="checkbox" id="details" checked> Examples</label>
+  <span class="spacer"></span>
+  <span id="count"></span>
+</header>
+<main>
+  <section id="areas"></section>
+  <aside>
+    <div class="card"><h3>Validation</h3><ul class="issues" id="issues"></ul></div>
+    <div class="card"><h3>Coverage by area</h3><div id="bars"></div></div>
+    <div class="card"><h3>Play this build</h3>
+      <div class="play">
+        <select><option>vs Human</option><option>vs another build</option><option>Gauntlet vs presets</option></select>
+        <select><option>5+0</option><option>1+0</option><option>Fixed depth 6</option></select>
+        <button id="play">▶ Play</button>
+        <button class="secondary" id="export">Export UCI</button>
+      </div>
+      <p class="why">Runtime not built yet: Play would launch the modular engine with this config; Export shows the generated <code>setoption</code> lines.</p>
+      <pre id="config"></pre>
+    </div>
+  </aside>
+</main>
+<script>
+const DATA = __DATA__;
+const F = Object.fromEntries(DATA.features.map(f => [f.id, f]));
+const G = Object.fromEntries(DATA.groups.map(g => [g.id, g]));
+const areaOf = f => f.area ?? G[f.group].area;
+const members = gid => DATA.features.filter(f => f.group === gid).map(f => f.id);
+const defaults = () => new Set(DATA.groups.filter(g => g.required).map(g => g.default ?? members(g.id)[0]));
+let explicit = defaults();
+const expanded = new Set();
+const esc = t => String(t).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+document.getElementById("details").addEventListener("change", e => document.body.classList.toggle("compact", !e.target.checked));
+
+function closure(seed) {
+  const eff = new Set(seed), why = {};
+  let changed = true;
+  while (changed) {
+    changed = false;
+    for (const id of [...eff]) {
+      const f = F[id];
+      for (const r of f.req ?? []) if (!eff.has(r)) { eff.add(r); why[r] = id; changed = true; }
+      for (const g of f.reqAny ?? []) {
+        if (!members(g).some(m => eff.has(m))) { const d = G[g].default ?? members(g)[0]; eff.add(d); why[d] = id; changed = true; }
+      }
+    }
+  }
+  return { eff, why };
+}
+
+function toggle(id, on) {
+  if (on) {
+    const add = closure([id]).eff, forbidden = new Set();
+    for (const a of add) {
+      const f = F[a];
+      if (f.group && G[f.group].kind === "one") for (const m of members(f.group)) if (m !== a) forbidden.add(m);
+      for (const c of f.conflicts ?? []) forbidden.add(c);
+    }
+    for (const e of [...explicit]) {
+      const ce = closure([e]).eff;
+      if ([...ce].some(x => forbidden.has(x) || (F[x].conflicts ?? []).some(c => add.has(c)))) explicit.delete(e);
+    }
+    explicit.add(id);
+  } else explicit.delete(id);
+  render();
+}
+
+function render() {
+  const { eff, why } = closure(explicit);
+  const blockedBy = {};
+  for (const id of eff) for (const c of F[id].conflicts ?? []) blockedBy[c] = id;
+  for (const f of DATA.features) for (const c of f.conflicts ?? []) if (eff.has(c)) blockedBy[f.id] = c;
+
+  const root = document.getElementById("areas");
+  root.innerHTML = "";
+  for (const area of DATA.areas) {
+    const feats = DATA.features.filter(f => areaOf(f) === area.id);
+    const on = feats.filter(f => eff.has(f.id)).length;
+    const div = document.createElement("div");
+    div.className = "area"; div.style.background = area.color;
+    const open = expanded.has(area.id);
+    div.innerHTML = `<h2 class="toggle">${open ? "▾" : "▸"} ${area.label}<small>${on}/${feats.length}</small></h2>`;
+    div.querySelector("h2").addEventListener("click", () => { open ? expanded.delete(area.id) : expanded.add(area.id); render(); });
+    if (!open) {
+      const chosen = feats.filter(f => eff.has(f.id)).map(f => F[f.id].label);
+      div.insertAdjacentHTML("beforeend", `<div class="summary">${chosen.length ? chosen.map(esc).join(" · ") : "<i>none</i>"}</div>`);
+      root.appendChild(div);
+      continue;
+    }
+    const row = f => {
+      const isOne = f.group && G[f.group].kind === "one";
+      const el = document.createElement("div");
+      const auto = eff.has(f.id) && !explicit.has(f.id);
+      const blocked = blockedBy[f.id] && !eff.has(f.id);
+      el.className = "feat" + (auto ? " auto" : "") + (blocked ? " blocked" : "");
+      const needs = [...(f.req ?? []).map(r => F[r].label), ...(f.reqAny ?? []).map(g => `any ${G[g].area} choice`)];
+      el.title = (needs.length ? "Requires: " + needs.join(", ") : "No hard requirements")
+        + (blocked ? `\nConflicts with ${F[blockedBy[f.id]].label}` : "")
+        + (auto ? `\nPulled in by ${F[why[f.id]]?.label ?? "requirement"}` : "");
+      el.innerHTML = `<input type="${isOne ? "radio" : "checkbox"}" id="f_${f.id}" ${eff.has(f.id) ? "checked" : ""} ${blocked || auto ? "disabled" : ""}>
+        <label for="f_${f.id}">${f.label}</label>`;
+      const s = DATA.stats?.features?.[f.id];
+      const link = s?.cpw ?? s?.ref;
+      if (link) el.insertAdjacentHTML("beforeend", `<a class="ref" href="${link}" target="_blank" title="${s.cpw ? "Chess Programming Wiki" : "Reference"}">${s.cpw ? "CPW↗" : "ref↗"}</a>`);
+      if (s) {
+        if (s.examples.length) el.insertAdjacentHTML("beforeend", `<span class="eg">e.g. ${s.examples.map(x =>
+          `${x.strength_limited ? "★" : ""}<a href="${x.url ?? "#"}" target="_blank" title="${esc(x.evidence)}${x.source === "options" ? " [option notes]" : ""}">${esc(x.engine)}</a>`).join(", ")}</span>`);
+      }
+      if (needs.length && !eff.has(f.id)) el.insertAdjacentHTML("beforeend", `<span class="why">needs ${needs.join(", ")}</span>`);
+      const missingSoft = eff.has(f.id) ? (f.soft ?? []).filter(s => !eff.has(s)) : [];
+      if (missingSoft.length) el.insertAdjacentHTML("beforeend",
+        `<span class="hint">better with ${missingSoft.map(s => `<a data-add="${s}">${F[s].label}</a>`).join(", ")}</span>`);
+      el.querySelector("input").addEventListener("change", e => toggle(f.id, e.target.checked || isOne));
+      el.querySelectorAll("a[data-add]").forEach(a => a.addEventListener("click", () => toggle(a.dataset.add, true)));
+      return el;
+    };
+    for (const g of DATA.groups.filter(g => g.area === area.id)) {
+      const fs = document.createElement("fieldset");
+      fs.className = g.kind;
+      fs.innerHTML = `<legend>${g.label}${g.required ? " · required" : ""}</legend>`;
+      feats.filter(f => f.group === g.id).forEach(f => fs.appendChild(row(f)));
+      div.appendChild(fs);
+    }
+    feats.filter(f => !f.group).forEach(f => div.appendChild(row(f)));
+    root.appendChild(div);
+  }
+
+  const issues = [];
+  for (const g of DATA.groups) {
+    const n = members(g.id).filter(m => eff.has(m)).length;
+    if (g.required && n === 0) issues.push(["err", `${DATA.areas.find(a => a.id === g.area).label}: choose ${g.kind === "one" ? "one" : "at least one"} (${members(g.id).map(m => F[m].label).join(" / ")})`]);
+    if (g.kind === "one" && n > 1) issues.push(["err", `Only one allowed: ${members(g.id).filter(m => eff.has(m)).map(m => F[m].label).join(" vs ")}`]);
+  }
+  for (const id of eff) for (const c of F[id].conflicts ?? []) if (eff.has(c)) issues.push(["err", `${F[id].label} conflicts with ${F[c].label}`]);
+  const soft = [...eff].flatMap(id => (F[id].soft ?? []).filter(s => !eff.has(s)).map(s => `${F[id].label} → ${F[s].label}`));
+  if (soft.length) issues.push(["warn", `${soft.length} "works better with" hints, e.g. ${soft.slice(0, 2).join("; ")}`]);
+  if (!issues.some(i => i[0] === "err")) issues.unshift(["ok", "Valid build: every requirement satisfied"]);
+  document.getElementById("issues").innerHTML = issues.map(([k, t]) => `<li class="${k}">${t}</li>`).join("");
+
+  document.getElementById("bars").innerHTML = DATA.areas.map(a => {
+    const fs = DATA.features.filter(f => areaOf(f) === a.id);
+    const pct = 100 * fs.filter(f => eff.has(f.id)).length / fs.length;
+    return `<div class="bar"><span>${a.label}</span><div class="track"><div class="fill" style="width:${pct}%;background:${a.color};filter:saturate(4) brightness(.85)"></div></div></div>`;
+  }).join("");
+
+  const autoN = [...eff].filter(id => !explicit.has(id)).length;
+  document.getElementById("count").textContent = `${eff.size} features (${explicit.size} chosen, ${autoN} auto)`;
+  document.getElementById("config").textContent =
+    `id name Modular build (${eff.size} features)\n` +
+    [...eff].map(id => `setoption name Feature_${id} value true`).join("\n");
+}
+
+const sel = document.getElementById("preset");
+for (const name of Object.keys(DATA.presets)) sel.insertAdjacentHTML("beforeend", `<option>${name}</option>`);
+sel.addEventListener("change", () => { explicit = new Set(DATA.presets[sel.value] ?? []); render(); });
+document.getElementById("reset").addEventListener("click", () => { explicit = defaults(); sel.value = ""; render(); });
+document.getElementById("expandAll").addEventListener("click", () => {
+  if (expanded.size === DATA.areas.length) expanded.clear(); else DATA.areas.forEach(a => expanded.add(a.id));
+  render();
+});
+document.getElementById("play").addEventListener("click", () => alert("Sketch only: the modular engine runtime is not built yet."));
+document.getElementById("export").addEventListener("click", () => navigator.clipboard?.writeText(document.getElementById("config").textContent));
+
+const initial = decodeURIComponent(location.hash.slice(1));
+if (DATA.presets[initial]) { sel.value = initial; explicit = new Set(DATA.presets[initial]); }
+render();
+</script>
+</body>
+</html>
