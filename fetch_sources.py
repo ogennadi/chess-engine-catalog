@@ -21,6 +21,7 @@ import json
 import os
 import re
 import shutil
+import stat
 import subprocess
 import sys
 import tarfile
@@ -46,7 +47,8 @@ CODE_EXT = re.compile(r"\.(c|cc|cpp|cxx|h|hpp|java|py|pas|bas|asm|s|js|rs|go|cs|
 # Seconds between requests to the same host.
 HOST_DELAY = {"archive.softwareheritage.org": 7.0}
 DEFAULT_DELAY = 2.0
-GIT_TIMEOUT = 3600
+# Per-download limit in seconds (--timeout); slower downloads are abandoned and reported as "timeout".
+TIMEOUT = 300
 
 GIT_ENV = {**os.environ, "GIT_TERMINAL_PROMPT": "0", "GCM_INTERACTIVE": "never"}
 GIT = ["git", "-c", "credential.helper=", "-c", "core.longpaths=true"]
@@ -220,10 +222,53 @@ def http_json(url, method="GET"):
         return json.load(response)
 
 
+class DownloadTimeout(Exception):
+    pass
+
+
+def remove_dir(directory):
+    """rmtree that also clears the read-only flag git puts on object files on Windows."""
+    def retry(func, path, _):
+        os.chmod(path, stat.S_IWRITE)
+        func(path)
+    for _ in range(5):
+        if not Path(directory).exists():
+            return
+        try:
+            shutil.rmtree(directory, onexc=retry)
+        except OSError:
+            time.sleep(1)
+
+
+def set_timeout(seconds):
+    global TIMEOUT
+    TIMEOUT = seconds
+
+
+def kill_tree(process):
+    if os.name == "nt":
+        subprocess.run(["taskkill", "/F", "/T", "/PID", str(process.pid)], capture_output=True)
+    else:
+        process.kill()
+
+
 def run_git(*args, cwd=None):
-    result = subprocess.run([*GIT, *args], cwd=cwd, env=GIT_ENV, capture_output=True, text=True,
-                            encoding="utf-8", errors="replace", timeout=GIT_TIMEOUT)
-    return result.returncode, (result.stderr or result.stdout).strip().splitlines()[-1:] or [""]
+    process = subprocess.Popen([*GIT, *args], cwd=cwd, env=GIT_ENV, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                               text=True, encoding="utf-8", errors="replace")
+    try:
+        stdout, stderr = process.communicate(timeout=TIMEOUT)
+    except subprocess.TimeoutExpired:
+        kill_tree(process)
+        process.communicate()
+        raise DownloadTimeout(f"git {args[0]} took longer than {TIMEOUT}s")
+    return process.returncode, (stderr or stdout).strip().splitlines()[-1:] or [""]
+
+
+def copy_until(response, out, deadline):
+    while chunk := response.read(1 << 16):
+        if time.monotonic() > deadline:
+            raise DownloadTimeout(f"download took longer than {TIMEOUT}s")
+        out.write(chunk)
 
 
 def existing_remotes():
@@ -262,7 +307,11 @@ def fetch_git(clone, directory, update):
             code, msg = run_git("fetch", "--quiet", "--tags", "--prune", cwd=directory)
             return ("updated" if code == 0 else "error"), msg[0]
         return "present", ""
-    code, msg = run_git("clone", "--quiet", clone, str(directory))
+    try:
+        code, msg = run_git("clone", "--quiet", clone, str(directory))
+    except DownloadTimeout:
+        remove_dir(directory)
+        raise
     if code == 0:
         return "cloned", ""
     if (directory / ".git").exists():
@@ -290,6 +339,7 @@ def sourceforge_repos(target):
 
 def fetch_swh(target, directory):
     """Clone a Software Heritage origin's HEAD history via the vault's git-bare cooker."""
+    deadline = time.monotonic() + TIMEOUT
     origin = urllib.parse.quote(target["origin"], safe="")
     visit = http_json(f"{SWH_API}/origin/{origin}/visit/latest/?require_snapshot=true")
     branches = http_json(f"{SWH_API}/snapshot/{visit['snapshot']}/")["branches"]
@@ -301,23 +351,28 @@ def fetch_swh(target, directory):
     swhid = f"swh:1:rev:{head['target']}"
     cook = f"{SWH_API}/vault/git-bare/{swhid}/"
     job = http_json(cook, "POST")
-    deadline = time.monotonic() + 3600
-    while job["status"] in {"new", "pending"} and time.monotonic() < deadline:
+    while job["status"] in {"new", "pending"}:
+        if time.monotonic() + 30 > deadline:
+            raise DownloadTimeout(f"Software Heritage vault not ready within {TIMEOUT}s")
         time.sleep(30)
         job = http_json(cook)
     if job["status"] != "done":
         return "error", f"vault status {job['status']}: {job.get('progress_message') or ''}"
     with tempfile.TemporaryDirectory() as temp:
         bundle = Path(temp) / "bare.tar.gz"
-        with http(job["fetch_url"], timeout=600) as response, open(bundle, "wb") as out:
-            shutil.copyfileobj(response, out)
+        with http(job["fetch_url"]) as response, open(bundle, "wb") as out:
+            copy_until(response, out, deadline)
         with tarfile.open(bundle) as tar:
             members = tar.getmembers()
             for member in members:  # SWHIDs contain ':', which Windows paths cannot
                 member.name = member.name.replace(":", "_")
             tar.extractall(temp, members=members, filter="data")
         bare = next(Path(temp).glob("*.git"))
-        code, msg = run_git("clone", "--quiet", str(bare), str(directory))
+        try:
+            code, msg = run_git("clone", "--quiet", str(bare), str(directory))
+        except DownloadTimeout:
+            remove_dir(directory)
+            raise
         if code != 0:
             return "error", msg[0]
         run_git("remote", "set-url", "origin", target["origin"], cwd=directory)
@@ -348,8 +403,12 @@ def fetch_file(target, base, update):
     archive = ARCHIVES / base / dir_name(target["filename"])
     if not archive.exists() or update:
         archive.parent.mkdir(parents=True, exist_ok=True)
-        with http(target["fetch"], timeout=600) as response, open(archive, "wb") as out:
-            shutil.copyfileobj(response, out)
+        try:
+            with http(target["fetch"]) as response, open(archive, "wb") as out:
+                copy_until(response, out, time.monotonic() + TIMEOUT)
+        except DownloadTimeout:
+            archive.unlink(missing_ok=True)
+            raise
         state = "downloaded"
     else:
         state = "present"
@@ -415,6 +474,8 @@ def fetch_family(engine, remotes, args):
                     continue
                 state, note = fetch_file(target, base, args.update)
                 results.append({"url": target["url"], "state": state, "note": note})
+        except DownloadTimeout as timeout:
+            results.append({"url": target["url"], "state": "timeout", "note": str(timeout)})
         except RefusedInternetArchive as refused:
             results.append({"url": target["url"], "state": "manual", "note": refused.url})
         except Exception as error:  # noqa: BLE001 - one bad link must not stop a full run
@@ -492,6 +553,8 @@ def main(argv=None):
     parser.add_argument("--update", action="store_true", help="fetch new commits / re-download existing files")
     parser.add_argument("--every", action="store_true", help="fetch every distinct link, not just the main repository")
     parser.add_argument("--jobs", type=int, default=4, help="families fetched in parallel (default 4)")
+    parser.add_argument("--timeout", type=int, default=TIMEOUT,
+                        help=f"skip any download that takes longer than this many seconds (default {TIMEOUT})")
     parser.add_argument("--dry-run", action="store_true", help="show what would be fetched")
     args = parser.parse_args(argv)
     if hasattr(sys.stdout, "reconfigure"):
@@ -507,6 +570,7 @@ def main(argv=None):
     if not args.all and not args.families:
         parser.error("name one or more families, or use --all or --list")
     set_dest(args.dest)
+    set_timeout(args.timeout)
 
     if args.all:
         chosen = engines
