@@ -1062,6 +1062,20 @@
   ],
   "related_families": [
     {
+      "family": "RobboLito",
+      "relation": "derived_from",
+      "related": "Ippolit",
+      "note": "Second engine of the Ippolit series (CPW lists it under Engines > Ippolit). Separate family because it was developed further under its own name, including GPL-licensed versions by Norman Schmidt and Sentinel.",
+      "evidence_url": "https://chessprogramming.org/RobboLito"
+    },
+    {
+      "family": "Igorrit",
+      "relation": "derived_from",
+      "related": "RobboLito",
+      "note": "Third engine of the Ippolit/RobboLito series and the first in the series with parallel search (January 2010); its source still uses RobboLito.h. Separate family because it adds SMP and its own tablebases.",
+      "evidence_url": "https://chessprogramming.org/Igorrit"
+    },
+    {
       "family": "Chess 0.5X",
       "relation": "derived_from",
       "related": "Chess 0.5",
